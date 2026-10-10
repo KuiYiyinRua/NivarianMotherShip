@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <ModMetaData>
-  <name>涅瓦莲母舰指挥官支援</name>
+  <name>Nivarian Race: NivarianMotherShip</name>
   <author>Local project</author>
   <packageId>local.nivarian.mothership.commander</packageId>
   <supportedVersions>
