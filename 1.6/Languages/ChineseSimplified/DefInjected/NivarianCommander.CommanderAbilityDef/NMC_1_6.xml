@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_S01.label>折跃能量场</NMC_S01.label>
+  <NMC_S01.group>防御与生产</NMC_S01.group>
+  <NMC_S01.description>在指定位置建立折跃能量场，为半径8格内的友方设备供电，并为友方单位补充能量。能量场总供电能力为10000W，范围内单位每秒恢复其能量上限的20%。
+
+同一时间只能维持一处能量场。首次部署消耗1000P和500V；已有能量场时，花费100P和50V可将其迁至新位置。运行期间每0.1天消耗1P和1V，储备不足时自动关闭。
+
+完成“跨域人员折跃”研究后，殖民者可以直接折跃至能量场。此后，部署或迁移能量场的冷却时间延长为1天。</NMC_S01.description>
+  <NMC_S01.researchLabel>折跃能量场支援协议</NMC_S01.researchLabel>
+  <NMC_S02.label>轨道轰炸</NMC_S02.label>
+  <NMC_S02.group>轨道火力</NMC_S02.group>
+  <NMC_S02.description>指引母舰对选定位置进行轨道打击。进入瞄准后，可连续点击指定落点；每次成功开火分别消耗能量，结束瞄准即可停止攻击。
+
+每发打击影响半径3格，造成30点基础伤害，护甲穿透率为35%，对建筑的伤害提高至5倍。爆炸伤害不会随距离衰减。轨道火力无法用于地下，也无法直接打击厚山岩顶下的目标。
+
+完成“精确友军识别”研究后，指挥官直接火力将避开己方和盟友。</NMC_S02.description>
+  <NMC_S02.researchLabel>轨道轰炸支援协议</NMC_S02.researchLabel>
+  <NMC_S02.extraCost>按每次成功开火扣费</NMC_S02.extraCost>
+  <NMC_S03.label>护盾超载</NMC_S03.label>
+  <NMC_S03.group>防御与生产</NMC_S03.group>
+  <NMC_S03.description>为当前地图上施放时在场的友方单位与建筑提供临时护盾，持续30秒。每个目标获得200点护盾，用于吸收护甲抵挡后仍会造成的伤害。
+
+后来进入地图的友军不会获得这次护盾。建筑若同时受到建筑超载保护，两种护盾可共同生效，总量最多400点。可以提前结束护盾，但已消耗的能量和冷却时间不会返还。</NMC_S03.description>
+  <NMC_S03.researchLabel>护盾超载支援协议</NMC_S03.researchLabel>
+  <NMC_S04.label>太阳轰炸</NMC_S04.label>
+  <NMC_S04.group>轨道火力</NMC_S04.group>
+  <NMC_S04.description>呼叫母舰对指定区域实施持续轨道轰炸。在30秒内，300发能量弹将陆续落入半径13格的区域。每发影响半径5格，造成30点基础伤害，对建筑的伤害提高至5倍；爆炸伤害不会随距离衰减。
+
+适合摧毁密集阵地。攻击一旦开始便无法中止，请先让友军远离轰炸区域。无法用于地下，也无法直接打击厚山岩顶下的目标。</NMC_S04.description>
+  <NMC_S04.researchLabel>太阳轰炸支援协议</NMC_S04.researchLabel>
+  <NMC_S05.label>太阳能射线枪</NMC_S05.label>
+  <NMC_S05.group>轨道火力</NMC_S05.group>
+  <NMC_S05.description>让母舰投射三道太阳能射线，持续扫射8秒。射线优先分头追踪敌人，敌人较少时可以集中攻击同一目标。沿途目标会持续受到能量冲击与灼烧伤害。
+
+选择起点后开始攻击，也可提前结束当前地图上的射线。无法用于地下，厚山岩顶会阻挡打击。结束攻击不会返还已消耗的能量，也不会重置冷却。</NMC_S05.description>
+  <NMC_S05.researchLabel>太阳能射线枪支援协议</NMC_S05.researchLabel>
+  <NMC_S06.label>时空波动</NMC_S06.label>
+  <NMC_S06.group>防御与生产</NMC_S06.group>
+  <NMC_S06.description>短暂加速各处殖民地的生产活动，使友方单位的研究、建造、种植、制造等工作速度提高至平时的5倍，持续60秒。超维空间巨石的攻击频率也会同步提高。
+
+这项支援不会加快母舰资源的产出。各处殖民地的效果随当地时间持续，可以从指挥面板提前结束。</NMC_S06.description>
+  <NMC_S06.researchLabel>时空波动支援协议</NMC_S06.researchLabel>
+  <NMC_S07.label>净化光束</NMC_S07.label>
+  <NMC_S07.group>轨道火力</NMC_S07.group>
+  <NMC_S07.description>从轨道投下一道能够移动的净化光束。光束影响半径4格，持续20秒，以每秒3格的速度自动追踪敌人，对沿途目标持续造成能量与灼烧伤害。
+
+可以征召光束，手动指定它的移动方向；解除征召后恢复自动追击。无法用于地下，厚山岩顶会阻挡打击。可以提前结束光束，但能量和冷却时间不会返还。</NMC_S07.description>
+  <NMC_S07.researchLabel>净化光束支援协议</NMC_S07.researchLabel>
+  <NMC_S08.label>暗影核心</NMC_S08.label>
+  <NMC_S08.group>暗影与控制</NMC_S08.group>
+  <NMC_S08.description>在指定位置部署暗影核心。殖民者交齐钢铁、零部件和龙晶后，母舰会自动将其建成暗影能源塔。
+
+能源塔每天向母舰输送120P和80V，并使半径7格内的友军隐形。塔身不会被自身的暗影场隐藏。可以建造多座能源塔，各自生产资源。</NMC_S08.description>
+  <NMC_S08.researchLabel>暗影核心支援协议</NMC_S08.researchLabel>
+  <NMC_S08.extraCost>钢铁 150 · 零部件 4 · 龙晶 25</NMC_S08.extraCost>
+  <NMC_S09.label>暗影卫队</NMC_S09.label>
+  <NMC_S09.group>暗影与控制</NMC_S09.group>
+  <NMC_S09.description>请求四名暗影卫队成员折跃增援，协助作战120秒。卫队擅长近身突击，配备大师品质的生物编码武器与幽灵装甲，能够在隐形状态下攻击。侦测隐形的手段仍可发现她们。
+
+需要世界上仍有与殖民地非敌对的涅瓦莲幸存者派系。卫队自行选择目标，无法被征召；支援结束后，成员及仍随身携带的装备撤离。</NMC_S09.description>
+  <NMC_S09.researchLabel>暗影卫队支援协议</NMC_S09.researchLabel>
+  <NMC_S10.label>黑洞</NMC_S10.label>
+  <NMC_S10.group>暗影与控制</NMC_S10.group>
+  <NMC_S10.description>制造一个持续8秒的引力涡旋，将半径8格内的敌人拉向中心，并暂时消除其护甲防护。牵引速度为每秒12格，也能影响倒地和空中的敌人。
+
+黑洞本身不造成伤害，适合将分散的敌人聚集起来，配合其他火力攻击。可以提前结束黑洞。</NMC_S10.description>
+  <NMC_S10.researchLabel>黑洞支援协议</NMC_S10.researchLabel>
+  <NMC_S11.label>时间停止</NMC_S11.label>
+  <NMC_S11.group>暗影与控制</NMC_S11.group>
+  <NMC_S11.description>使各处殖民地在施放时已经在场的敌人停止移动和攻击，持续30秒。可影响敌方生物、机械体、无人机与炮塔。
+
+效果不会波及后来抵达的敌人；目标离开战场或不再敌对后，束缚立即解除。时间停止不会阻止伤势、疾病等状态继续变化。可以提前结束所有殖民地的效果。</NMC_S11.description>
+  <NMC_S11.researchLabel>时间停止支援协议</NMC_S11.researchLabel>
+  <NMC_S12.label>建筑超载</NMC_S12.label>
+  <NMC_S12.group>防御与生产</NMC_S12.group>
+  <NMC_S12.description>将一座友方建筑临时变为防御火力点，赋予200点护盾和蓝色激光武器，持续45秒。激光每0.5秒攻击一次，造成10点基础伤害。
+
+每次使用需要消耗1次超载充能。充能从零开始积累，每3天恢复1次，最多储存3次。可以提前取消超载，但能量、充能与已经开始的冷却不会返还。</NMC_S12.description>
+  <NMC_S12.researchLabel>建筑超载支援协议</NMC_S12.researchLabel>
+  <NMC_S12.extraCost>每次另消耗 1 次超载充能</NMC_S12.extraCost>
+  <NMC_S13.label>涅瓦莲舰队</NMC_S13.label>
+  <NMC_S13.group>远征援军</NMC_S13.group>
+  <NMC_S13.description>呼叫一艘战术母舰和八艘驱逐舰。舰队自动飞行作战，全队抵达后驻留120秒。
+
+战术母舰使用激光与能量弹轰击敌人。驱逐舰持续发射棱晶光束，连续命中同一目标时伤害逐渐提高，换目标或中断攻击后恢复初始强度。驱逐舰光束不造成冰冻。
+
+支援舰艇能够被敌方火力击毁。支援结束后，舰艇、残骸及掉落物一并撤回。</NMC_S13.description>
+  <NMC_S13.researchLabel>涅瓦莲舰队支援协议</NMC_S13.researchLabel>
+  <NMC_S14.label>特布鲁斯军团</NMC_S14.label>
+  <NMC_S14.group>远征援军</NMC_S14.group>
+  <NMC_S14.description>请求特布鲁斯率领十名近战战士增援，协助作战120秒。特布鲁斯使用灵能脉冲枪，并在敌人聚集时施放灵能风暴；风暴灼伤敌人，同时治疗范围内的友军。
+
+除能量费用外，还需交付2000白银；白银不足时改为交付200黄金。物资必须位于当前地图已供电的轨道交易信标范围内。
+
+需要非敌对的涅瓦莲幸存者派系。军团自行作战，无法征召；撤离时会收回成员与专属装备。三个远征军团共用7天冷却时间。</NMC_S14.description>
+  <NMC_S14.researchLabel>特布鲁斯军团支援协议</NMC_S14.researchLabel>
+  <NMC_S14.extraCost>白银 2,000 或黄金 200</NMC_S14.extraCost>
+  <NMC_S15.label>佐拉亚军团</NMC_S15.label>
+  <NMC_S15.group>远征援军</NMC_S15.group>
+  <NMC_S15.description>呼叫指挥舰佐拉亚和四艘辉光舰。全队抵达后自动作战120秒，以棱晶光束持续攻击敌人。光束附带冰冻效果，连续锁定同一目标时伤害逐渐提高。
+
+除能量费用外，还需交付2000白银；白银不足时改为交付200黄金。物资必须位于当前地图已供电的轨道交易信标范围内。
+
+需要非敌对的涅瓦莲幸存者派系。支援结束后，舰艇、残骸与掉落物一并撤回。三个远征军团共用7天冷却时间。</NMC_S15.description>
+  <NMC_S15.researchLabel>佐拉亚军团支援协议</NMC_S15.researchLabel>
+  <NMC_S15.extraCost>白银 2,000 或黄金 200</NMC_S15.extraCost>
+  <NMC_S16.label>赛达斯军团</NMC_S16.label>
+  <NMC_S16.group>远征援军</NMC_S16.group>
+  <NMC_S16.description>请求赛达斯与三名黑暗执政官增援，协助作战120秒。她们以心灵支配瓦解敌军，优先控制价值较高的敌人，使其加入涅瓦莲幸存者派系。受到控制的单位不会成为你的殖民者，军团撤离后也不会恢复敌对归属。
+
+除能量费用外，还需交付2000白银；白银不足时改为交付200黄金。物资必须位于当前地图已供电的轨道交易信标范围内。
+
+需要非敌对的涅瓦莲幸存者派系。军团自行作战，无法征召；撤离时收回四名成员及专属装备。三个远征军团共用7天冷却时间。</NMC_S16.description>
+  <NMC_S16.researchLabel>赛达斯军团支援协议</NMC_S16.researchLabel>
+  <NMC_S16.extraCost>白银 2,000 或黄金 200</NMC_S16.extraCost>
+  <NMC_S17.label>超维空间巨石</NMC_S17.label>
+  <NMC_S17.group>设施与投射</NMC_S17.group>
+  <NMC_S17.description>在指定位置部署超维空间巨石核心。交齐钢铁、零部件和龙晶后，母舰自动完成施工，建成可长期使用的防御设施。
+
+巨石需要1000W电力，无需弹药。它每2秒可同时攻击60格内最多10名敌人，每个目标受到3点基础伤害并眩晕1秒，适合阻滞大批敌人的推进。</NMC_S17.description>
+  <NMC_S17.researchLabel>超维空间巨石支援协议</NMC_S17.researchLabel>
+  <NMC_S17.extraCost>钢铁 300 · 零部件 10 · 龙晶 60</NMC_S17.extraCost>
+  <NMC_S18.label>虚空抑制晶体</NMC_S18.label>
+  <NMC_S18.group>暗影与控制</NMC_S18.group>
+  <NMC_S18.description>在指定位置折跃一座虚空抑制晶体，持续30秒。半径13格内，敌人的移动和攻击速度降至平时的30%，敌方炮塔停止射击。
+
+晶体不会被攻击摧毁。敌人离开影响范围后立即恢复，同类晶体的抑制效果不会叠加。可以提前撤回晶体。</NMC_S18.description>
+  <NMC_S18.researchLabel>虚空抑制晶体支援协议</NMC_S18.researchLabel>
+  <NMC_S19.label>超维空间矩阵投射</NMC_S19.label>
+  <NMC_S19.group>设施与投射</NMC_S19.group>
+  <NMC_S19.description>将已登记的己方炮塔投射到指定区域，部署范围为中心周围20格。投影需要5秒形成，随后可作战60秒；空间不足时，只投射能够安置的炮塔。
+
+投影以本体当前生命值的一半出现，使用本体的电力、燃料和弹药。本体在投射期间停止射击，仍可受伤和维修。投影承受的损伤也会施加到本体，请谨慎选择部署位置。
+
+投影无法维修或搬迁。可在炮塔上登记、取消登记或提前撤回投影；提前撤回不会返还能量或冷却时间。</NMC_S19.description>
+  <NMC_S19.researchLabel>超维空间矩阵投射支援协议</NMC_S19.researchLabel>
+</LanguageData>

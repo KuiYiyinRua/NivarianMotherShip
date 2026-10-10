@@ -1,0 +1,57 @@
+<Defs>
+  <PawnKindDef Name="NMC_LegionPawnBase" ParentName="Nivarian_PawnKindBase" Abstract="True">
+    <defaultFactionType>NivarianSurvivorTeam</defaultFactionType><isFighter>true</isFighter>
+    <apparelMoney>0</apparelMoney><weaponMoney>0</weaponMoney><invNutrition>0</invNutrition>
+    <initialResistanceRange>10~26</initialResistanceRange><initialWillRange>0.5~1</initialWillRange>
+    <xenotypeSet Inherit="False"><xenotypeChances><LuminNivarian MayRequire="Ludeon.RimWorld.Biotech">1</LuminNivarian></xenotypeChances></xenotypeSet>
+  </PawnKindDef>
+  <PawnKindDef ParentName="NMC_LegionPawnBase"><defName>NMC_Tebrus</defName><label>特布鲁斯</label><combatPower>350</combatPower></PawnKindDef>
+  <PawnKindDef ParentName="NMC_LegionPawnBase"><defName>NMC_LegionWarrior</defName><label>涅瓦莲军团战士</label><combatPower>140</combatPower></PawnKindDef>
+  <HediffDef><defName>NMC_LegionIdentity</defName><label>母舰远征军团</label><description>涅瓦莲幸存者派来的临时远征军成员。部队自行选择目标并参加战斗，无法被殖民地征召。支援结束后，成员与专属装备会折跃撤离。</description><hediffClass>NivarianCommander.Hediff_LegionIdentity</hediffClass><isBad>false</isBad><initialSeverity>1</initialSeverity></HediffDef>
+  <DutyDef><defName>NMC_LegionAssault</defName><alwaysShowWeapon>true</alwaysShowWeapon><thinkNode Class="NivarianCommander.ThinkNode_CommanderDuty"><subNodes><li Class="NivarianCommander.JobGiver_LegionAssault" /></subNodes></thinkNode></DutyDef>
+  <ThingDef Name="NMC_LegionApparelBase" ParentName="ApparelNoQualityBase" Abstract="True">
+    <techLevel>Spacer</techLevel><tradeability>None</tradeability><generateCommonality>0</generateCommonality><smeltable>false</smeltable><burnableByRecipe>false</burnableByRecipe>
+    <thingCategories><li>Apparel</li></thingCategories>
+    <statBases><MaxHitPoints>180</MaxHitPoints><Mass>3</Mass><Flammability>0</Flammability><MarketValue>0</MarketValue><ArmorRating_Sharp>0.9</ArmorRating_Sharp><ArmorRating_Blunt>0.45</ArmorRating_Blunt><ArmorRating_Heat>0.5</ArmorRating_Heat></statBases>
+    <comps><li Class="NivarianCommander.CompProperties_LegionEquipment" /></comps>
+  </ThingDef>
+  <ThingDef Name="NMC_TebrusRaimentBase" ParentName="NMC_LegionApparelBase" Abstract="True">
+    <statBases><ArmorRating_Sharp>1.5</ArmorRating_Sharp><ArmorRating_Blunt>0.7</ArmorRating_Blunt><ArmorRating_Heat>0.9</ArmorRating_Heat></statBases>
+  </ThingDef>
+  <ThingDef ParentName="NMC_TebrusRaimentBase">
+    <defName>NMC_TebrusRobe</defName><label>特布鲁斯灵能礼服</label><description>特布鲁斯的青白色长裙法袍，柔软布料中织有灵能纹路，为穿戴者提供较强的锐器、钝器和热能防护。
+
+礼服属于军团的专属装备，无法出售或拆炼，支援结束后由军团收回。</description>
+    <graphicData><texPath>NMC/LegionEquipment/tebrus_robe_Thin_south</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <apparel><bodyPartGroups><li>Torso</li><li>Arms</li><li>Legs</li><li>Hands</li><li>Feet</li><li>Nivarian_Tail</li></bodyPartGroups><layers><li>Shell</li></layers><wornGraphicPath>NMC/LegionEquipment/tebrus_robe</wornGraphicPath><drawData><scale>1</scale><dataEast><offset>(-0.07,0,-0.025)</offset></dataEast><dataWest><offset>(0.07,0,-0.025)</offset></dataWest></drawData><developmentalStageFilter>Adult</developmentalStageFilter></apparel>
+  </ThingDef>
+  <ThingDef ParentName="NMC_TebrusRaimentBase">
+    <defName>NMC_TebrusCirclet</defName><label>特布鲁斯灵能头环</label><description>特布鲁斯的开放式灵能晶饰，为头部提供防护。它与礼服同属军团装备，支援结束后一并收回。</description><graphicData><texPath>NMC/GhostEquipment/ghost_circlet_south</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <apparel><bodyPartGroups><li>FullHead</li></bodyPartGroups><layers><li>Overhead</li></layers><wornGraphicPath>NMC/GhostEquipment/ghost_circlet</wornGraphicPath><renderSkipFlags><li>None</li></renderSkipFlags><drawData><scale>0.72</scale><defaultData><offset>(0,0,0.10)</offset></defaultData></drawData><developmentalStageFilter>Adult</developmentalStageFilter></apparel>
+  </ThingDef>
+  <ThingDef ParentName="NMC_LegionApparelBase">
+    <defName>NMC_LegionSuit</defName><label>涅瓦莲军团装甲</label><description>涅瓦莲近战军团战士的专属装甲，为突击中的穿戴者提供锐器、钝器和热能防护。支援结束后由军团收回。</description><graphicData><texPath>NMC/GhostEquipment/ghost_suit_fitted2_Thin_south</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <apparel><bodyPartGroups><li>Torso</li><li>Arms</li><li>Legs</li><li>Hands</li><li>Feet</li><li>Nivarian_Tail</li></bodyPartGroups><layers><li>Shell</li></layers><wornGraphicPath>NMC/GhostEquipment/ghost_suit_fitted2</wornGraphicPath><drawData><dataEast><offset>(-0.07,0,-0.025)</offset></dataEast><dataWest><offset>(0.07,0,-0.025)</offset></dataWest></drawData><developmentalStageFilter>Adult</developmentalStageFilter></apparel>
+  </ThingDef>
+  <ThingDef ParentName="NMC_LegionApparelBase">
+    <defName>NMC_LegionCirclet</defName><label>涅瓦莲军团头环</label><description>军团战士使用的开放式防护头环，与军团装甲配套。支援结束后随部队撤离。</description><graphicData><texPath>NMC/GhostEquipment/ghost_circlet_south</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <apparel><bodyPartGroups><li>FullHead</li></bodyPartGroups><layers><li>Overhead</li></layers><wornGraphicPath>NMC/GhostEquipment/ghost_circlet</wornGraphicPath><renderSkipFlags><li>None</li></renderSkipFlags><drawData><scale>0.72</scale><defaultData><offset>(0,0,0.10)</offset></defaultData></drawData><developmentalStageFilter>Adult</developmentalStageFilter></apparel>
+  </ThingDef>
+  <ThingDef ParentName="BaseWeapon">
+    <defName>NMC_LegionBlade</defName><label>军团相位长刃</label><description>涅瓦莲军团战士使用的相位长刃，适合近身斩击，并有较强的穿甲能力。军团携带的长刃为精良品质，支援结束后收回。</description><techLevel>Spacer</techLevel><tradeability>None</tradeability><generateCommonality>0</generateCommonality><smeltable>false</smeltable><burnableByRecipe>false</burnableByRecipe>
+    <thingCategories><li>WeaponsMelee</li></thingCategories><weaponClasses><li>Melee</li></weaponClasses>
+    <statBases><MaxHitPoints>150</MaxHitPoints><Mass>2</Mass><Flammability>0</Flammability><MarketValue>0</MarketValue></statBases><graphicData><texPath>NMC/GhostEquipment/shadow_lance</texPath><graphicClass>Graphic_Single</graphicClass></graphicData><equippedAngleOffset>-65</equippedAngleOffset>
+    <comps><li><compClass>CompQuality</compClass></li><li Class="CompProperties_Biocodable" /><li Class="NivarianCommander.CompProperties_LegionEquipment" /></comps><tools><li><label>相位刃</label><capacities><li>Cut</li></capacities><power>30</power><cooldownTime>1.5</cooldownTime><armorPenetration>0.5</armorPenetration></li></tools>
+  </ThingDef>
+  <DamageDef><defName>NMC_TebrusPulseDamage</defName><label>灵能脉冲</label><workerClass>Verse.DamageWorker_AddInjury</workerClass><externalViolence>true</externalViolence><isRanged>true</isRanged><armorCategory>Sharp</armorCategory><hediff>Burn</hediff><hediffSolid>Crack</hediffSolid><defaultDamage>16</defaultDamage><defaultArmorPenetration>0.3</defaultArmorPenetration></DamageDef>
+  <ThingDef ParentName="BaseBullet"><defName>NMC_TebrusPulse</defName><label>灵能脉冲</label><graphicData><texPath>Things/Projectile/Charge_Small</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Transparent</shaderType><color>(0.35,0.9,1)</color></graphicData><projectile><damageDef>NMC_TebrusPulseDamage</damageDef><damageAmountBase>16</damageAmountBase><armorPenetrationBase>0.3</armorPenetrationBase><speed>80</speed></projectile></ThingDef>
+  <ThingDef ParentName="BaseWeapon">
+    <defName>NMC_TebrusPulseGun</defName><label>特布鲁斯灵能脉冲枪</label><description>特布鲁斯使用的灵能脉冲枪，射程35格。每轮连续射出三发脉冲，每发造成16点基础伤害，护甲穿透率为30%。射击结束后需要短暂调整，再次开火。
+
+脉冲枪属于军团的专属装备，支援结束后收回。</description><techLevel>Spacer</techLevel><tradeability>None</tradeability><generateCommonality>0</generateCommonality><smeltable>false</smeltable><burnableByRecipe>false</burnableByRecipe><thingCategories><li>WeaponsRanged</li></thingCategories><weaponClasses><li>RangedLight</li></weaponClasses>
+    <statBases><MaxHitPoints>180</MaxHitPoints><Mass>2</Mass><Flammability>0</Flammability><MarketValue>0</MarketValue><RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown><AccuracyTouch>0.85</AccuracyTouch><AccuracyShort>0.9</AccuracyShort><AccuracyMedium>0.9</AccuracyMedium><AccuracyLong>0.85</AccuracyLong></statBases><graphicData><texPath>NMC/LegionEquipment/tebrus_pulse_gun</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.25,0.6)</drawSize></graphicData>
+    <comps><li><compClass>CompQuality</compClass></li><li Class="CompProperties_Biocodable" /><li Class="NivarianCommander.CompProperties_LegionEquipment" /></comps>
+    <verbs><li><verbClass>Verb_Shoot</verbClass><hasStandardCommand>true</hasStandardCommand><defaultProjectile>NMC_TebrusPulse</defaultProjectile><warmupTime>0.5</warmupTime><range>35</range><burstShotCount>3</burstShotCount><ticksBetweenBurstShots>6</ticksBetweenBurstShots><soundCast>Shot_ChargeRifle</soundCast><soundCastTail>GunTail_Medium</soundCastTail><muzzleFlashScale>6</muzzleFlashScale></li></verbs>
+    <tools><li><label>握柄</label><capacities><li>Blunt</li></capacities><power>6</power><cooldownTime>2</cooldownTime></li></tools>
+  </ThingDef>
+</Defs>

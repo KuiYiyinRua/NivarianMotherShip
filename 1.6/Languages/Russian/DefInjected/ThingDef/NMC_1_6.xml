@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_Carrier.label>Авианосец нивариан</NMC_Carrier.label>
+  <NMC_Carrier.description>Тяжёлый авианосец нивариан: 5000 ОЗ, грузоподъёмность 10 000 кг. Собственного оружия нет, сражается перехватчиками.
+
+Загружайте драконью морозную сталь в груз: резерв до 1000 единиц. Перехватчик требует 10 стали и строится 15 секунд на земле или в полёте. Всего до 8 в ангаре и в бою, по 150 ОЗ.
+
+В полёте обнаруживает врагов в радиусе 60 клеток и выпускает один аппарат в секунду. За пределами 80 клеток от авианосца они возвращаются. Приказ посадки прекращает вылеты и отзывает всех.
+
+Запас 10 000 химтоплива; местный полёт расходует 1 в секунду. Расход в мире как у челнока, дальность ограничена топливом. Дополнительной перезарядки взлёта нет; сверху не должно быть крыши, для посадки нужно свободное место.
+
+С Milira Race на земле доступно улучшение двигателя: поселенцы установят 10 батарей милира. Затем взлёт стоит 200 химтоплива, непрерывного расхода на карте и в мире нет. Прогресс сохраняется, установленные батареи расходуются.</NMC_Carrier.description>
+  <NMC_CarrierIncoming.label>Авианосец нивариан (посадка)</NMC_CarrierIncoming.label>
+  <NMC_CarrierLeaving.label>Авианосец нивариан (взлёт)</NMC_CarrierLeaving.label>
+  <NMC_GravityFrigate.label>Гравитационный корабль нивариан</NMC_GravityFrigate.label>
+  <NMC_GravityFrigate.description>Корабль ПВО нивариан для лёгких перевозок. Размер 3×3, 600 ОЗ, грузоподъёмность 300 кг.
+
+В полёте два призматических лазера атакуют воздушные цели в радиусе 16 клеток раз в секунду. Каждый луч: урон 12, бронепробитие 50%, тройной урон зданиям, без заморозки. Наземные цели напрямую не атакует.
+
+Гравитационный луч поднимает и оглушает наземного врага в радиусе 16 на 5 секунд, делая его целью лазера. Ресурсы не нужны, перезарядка 8 секунд. Ручное или автоматическое применение.
+
+Запас 600 химтоплива. На карте расход 1 каждые 5 секунд. В мире расход вдвое меньше челнока, дальность зависит от топлива. Нет дополнительной перезарядки взлёта; нужна открытая крыша и место посадки.
+
+С Milira Race на земле можно улучшить двигатель: установить 2 батареи милира. После этого взлёт стоит 100 химтоплива, непрерывного расхода на карте и в мире нет. Прогресс сохраняется, батареи расходуются.</NMC_GravityFrigate.description>
+  <NMC_GravityFrigateIncoming.label>Гравитационный корабль (посадка)</NMC_GravityFrigateIncoming.label>
+  <NMC_GravityFrigateLeaving.label>Гравитационный корабль (взлёт)</NMC_GravityFrigateLeaving.label>
+  <NMC_CarrierInterceptor.label>Перехватчик нивариан</NMC_CarrierInterceptor.label>
+  <NMC_CarrierInterceptor.description>Беспилотный перехватчик авианосца нивариан. Автоматически атакует лёгкими боеприпасами. 150 ОЗ.
+
+Вылетает только при воздушном бое авианосца. Возвращается за пределами 80 клеток или по приказу отзыва и посадки. Зависит от авианосца, самостоятельные перевозки невозможны.</NMC_CarrierInterceptor.description>
+  <NMC_InterceptorFallbackRound.label>Лёгкий снаряд перехватчика</NMC_InterceptorFallbackRound.label>
+  <NMC_ContinuumRelay.label>Узел связи Континуума</NMC_ContinuumRelay.label>
+  <NMC_ContinuumRelay.description>Центр связи и данных базы. Уничтожьте его и очистите базу от гарнизона и турелей для получения данных этапа. Одного ядра недостаточно.</NMC_ContinuumRelay.description>
+  <NMC_ContinuumPowerCore.label>Энергетическое ядро Континуума</NMC_ContinuumPowerCore.label>
+  <NMC_ContinuumPowerCore.description>Питает защиту базы. Уничтожение отключает связанную сеть и зависящие от неё турели.</NMC_ContinuumPowerCore.description>
+  <NMC_OverloadBolt.label>Энергоснаряд перегрузки</NMC_OverloadBolt.label>
+  <NMC_TacticalMothership.label>Тактический корабль-матка</NMC_TacticalMothership.label>
+  <NMC_TacticalMothership.description>Тактический корабль-матка подавляет наземных врагов: лазер раз в секунду с уроном 15 и энергоснаряд каждые 2 секунды с базовым взрывным уроном 20, особенно эффективный против зданий.
+
+Автоматически сражается в полёте, уязвим для дальних атак и взрывов. Потеря временного корабля не влияет на ресурсы орбитального корабля-матки. Уходит после поддержки.</NMC_TacticalMothership.description>
+  <NMC_FleetDestroyer.label>Эсминец флота</NMC_FleetDestroyer.label>
+  <NMC_FleetDestroyer.description>Автоматический эскортный эсминец. Луч наносит урон каждые 0,5 секунды, начиная с 4 и усиливаясь при попаданиях в одну цель. Смена или потеря цели сбрасывает силу.
+
+Заморозки нет. Сам выбирает врагов и уходит после поддержки.</NMC_FleetDestroyer.description>
+  <NMC_FleetMothershipGun.label>Энергопушка корабля-матки</NMC_FleetMothershipGun.label>
+  <NMC_FleetDestroyerGun.label>Энергопушка эсминца</NMC_FleetDestroyerGun.label>
+  <NMC_FleetMothershipBolt.label>Энергоснаряд корабля-матки</NMC_FleetMothershipBolt.label>
+  <NMC_FleetDestroyerBolt.label>Энергоснаряд эсминца</NMC_FleetDestroyerBolt.label>
+  <NMC_FleetWreck.label>Временные обломки корабля</NMC_FleetWreck.label>
+  <NMC_FleetWreck.description>Обломки сбитого корабля поддержки. Нельзя разобрать. Забираются после поддержки; переноска и хранение не позволяют оставить их навсегда.</NMC_FleetWreck.description>
+  <NMC_PhaseTwinBlade.label>Парные фазовые клинки</NMC_PhaseTwinBlade.label>
+  <NMC_PhaseTwinBlade.description>Парные фазовые клинки для быстрых ударов. Оружие гвардии качества «шедевр», биокодировано владельцу; другим недоступно.</NMC_PhaseTwinBlade.description>
+  <NMC_PhaseTwinBlade.tools.0.label>Фазовый клинок</NMC_PhaseTwinBlade.tools.0.label>
+  <NMC_VoidHeavyBlade.label>Тяжёлый клинок пустоты</NMC_VoidHeavyBlade.label>
+  <NMC_VoidHeavyBlade.description>Тяжёлое оружие гвардии. Медленные, мощные удары по защищённым целям. Качество «шедевр», биокодировано владельцу.</NMC_VoidHeavyBlade.description>
+  <NMC_VoidHeavyBlade.tools.0.label>Клинок пустоты</NMC_VoidHeavyBlade.tools.0.label>
+  <NMC_ShadowLance.label>Теневое копьё</NMC_ShadowLance.label>
+  <NMC_ShadowLance.description>Древковое оружие гвардии, сочетающее быстрые уколы и бронепробитие. Качество «шедевр», биокодировано владельцу.</NMC_ShadowLance.description>
+  <NMC_ShadowLance.tools.0.label>Наконечник теневого копья</NMC_ShadowLance.tools.0.label>
+  <NMC_GhostSuit.label>Призрачная броня нивариан</NMC_GhostSuit.label>
+  <NMC_GhostSuit.description>Особая броня гвардии: невидимость и защита от острого, тупого и теплового урона.
+
+При смерти носителя особое снаряжение при нём уничтожается; отделённое не затронуто. При окончании поддержки оставшееся снаряжение уходит с бойцом.</NMC_GhostSuit.description>
+  <NMC_GhostHelmet.label>Призрачный обруч нивариан</NMC_GhostHelmet.label>
+  <NMC_GhostHelmet.description>Открытый обруч к призрачной броне. Не закрывает лицо и защищает голову от острого, тупого и теплового урона. Особое снаряжение гвардии.</NMC_GhostHelmet.description>
+  <NMC_VoidRay.label>Сияющий корабль</NMC_VoidRay.label>
+  <NMC_VoidRay.description>Эскорт Зораи с замораживающими лучами. Удар каждые 0,5 секунды, начальный урон 4, растёт по одной цели. Потеря или смена цели сбрасывает силу.
+
+Автоматический выбор врагов для длительного подавления. Уходит с легионом.</NMC_VoidRay.description>
+  <NMC_VoidRayGun.label>Луч сияющего корабля</NMC_VoidRayGun.label>
+  <NMC_Zoraya.label>Зорая</NMC_Zoraya.label>
+  <NMC_Zoraya.description>Командный корабль Зорая с мощным лучом. Удар каждые 0,5 секунды, начальный урон 8 с заморозкой. Урон растёт по одной цели, смена или потеря сбрасывает его.
+
+Сражается и уходит вместе с эскортом.</NMC_Zoraya.description>
+  <NMC_ZorayaRayGun.label>Сияющий луч Зораи</NMC_ZorayaRayGun.label>
+  <NMC_ArchonRobe.label>Одеяние тёмного архонта</NMC_ArchonRobe.label>
+  <NMC_ArchonRobe.description>Многослойное одеяние с длинными лентами. Пси-защита от острого, тупого и теплового урона. Имущество легиона, возвращается после поддержки.</NMC_ArchonRobe.description>
+  <NMC_SeydasRobe.label>Пси-одеяние Сейдаса</NMC_SeydasRobe.label>
+  <NMC_SeydasRobe.description>Многослойное одеяние Сейдаса с длинными лентами. Защита от острого, тупого и теплового урона сильнее обычного одеяния. Возвращается после поддержки.</NMC_SeydasRobe.description>
+  <NMC_ArchonCirclet.label>Обруч тёмного архонта</NMC_ArchonCirclet.label>
+  <NMC_ArchonCirclet.description>Открытый пси-обруч в комплекте с одеянием. Уходит с легионом после поддержки.</NMC_ArchonCirclet.description>
+  <NMC_SeydasCirclet.label>Пси-обруч Сейдаса</NMC_SeydasCirclet.label>
+  <NMC_SeydasCirclet.description>Пси-кристальный обруч Сейдаса усиливает защиту головы. Особое снаряжение легиона, возвращается с одеянием.</NMC_SeydasCirclet.description>
+  <NMC_ArchonFocus.label>Пси-посох архонта</NMC_ArchonFocus.label>
+  <NMC_ArchonFocus.description>Фокусирует силу подчинения архонта. Даёт лишь ограниченную самозащиту в ближнем бою, не подходит как основное оружие. Возвращается легиону.</NMC_ArchonFocus.description>
+  <NMC_ArchonFocus.tools.0.label>Древко посоха</NMC_ArchonFocus.tools.0.label>
+  <NMC_ShadowCore.label>Теневое ядро нивариан</NMC_ShadowCore.label>
+  <NMC_ShadowCore.description>Ядро теневой башни. Доставьте 150 стали, 4 компонента и 25 драконьих кристаллов. Корабль-матка построит башню за 20 секунд.
+
+Отмена возвращает материалы, но не энергию и перезарядку.</NMC_ShadowCore.description>
+  <NMC_MonolithCore.label>Ядро гиперпространственного монолита</NMC_MonolithCore.label>
+  <NMC_MonolithCore.description>Ядро монолита. Доставьте 300 стали, 10 компонентов и 60 драконьих кристаллов. Корабль-матка построит его за 45 секунд.
+
+Отмена возвращает материалы, но не энергию и перезарядку.</NMC_MonolithCore.description>
+  <NMC_ShadowEnergyTower.label>Теневая энергетическая башня нивариан</NMC_ShadowEnergyTower.label>
+  <NMC_ShadowEnergyTower.description>Строится из теневого ядра. Даёт 120 P и 80 V в день, скрывает союзников в радиусе 7. Атаки и урон не снимают невидимость, но обнаружение действует.
+
+Себя не скрывает, нуждается в защите. Несколько башен производят независимо.</NMC_ShadowEnergyTower.description>
+  <NMC_HyperdimensionalMonolith.label>Гиперпространственный монолит</NMC_HyperdimensionalMonolith.label>
+  <NMC_HyperdimensionalMonolith.description>Крупное укрепление с гиперпространственным контролем. Дальность 60; каждые 2 секунды до 10 врагов получают 3 урона и оглушение на 1 секунду.
+
+Нужны сеть и 1000 Вт, не боеприпасы. Колебание пространства-времени ускоряет огонь в 5 раз.</NMC_HyperdimensionalMonolith.description>
+  <NMC_TebrusRobe.label>Пси-одеяние Тебруса</NMC_TebrusRobe.label>
+  <NMC_TebrusRobe.description>Бело-голубое одеяние Тебруса с пси-узорами для защиты от острого, тупого и теплового урона.
+
+Особое снаряжение легиона: нельзя продать или переплавить. Возвращается после поддержки.</NMC_TebrusRobe.description>
+  <NMC_TebrusCirclet.label>Пси-обруч Тебруса</NMC_TebrusCirclet.label>
+  <NMC_TebrusCirclet.description>Открытый пси-кристальный обруч Тебруса защищает голову. Возвращается с одеянием после поддержки.</NMC_TebrusCirclet.description>
+  <NMC_LegionSuit.label>Броня легиона нивариан</NMC_LegionSuit.label>
+  <NMC_LegionSuit.description>Особая броня бойцов ближнего боя защищает от острого, тупого и теплового урона. Возвращается после поддержки.</NMC_LegionSuit.description>
+  <NMC_LegionCirclet.label>Обруч легиона нивариан</NMC_LegionCirclet.label>
+  <NMC_LegionCirclet.description>Открытый защитный обруч к броне легиона. Уходит с войсками после поддержки.</NMC_LegionCirclet.description>
+  <NMC_LegionBlade.label>Длинный фазовый клинок легиона</NMC_LegionBlade.label>
+  <NMC_LegionBlade.description>Клинок легиона с высоким бронепробитием. Качество «отличное», возвращается после поддержки.</NMC_LegionBlade.description>
+  <NMC_LegionBlade.tools.0.label>Фазовый клинок</NMC_LegionBlade.tools.0.label>
+  <NMC_TebrusPulse.label>Пси-импульс</NMC_TebrusPulse.label>
+  <NMC_TebrusPulseGun.label>Пси-импульсная пушка Тебруса</NMC_TebrusPulseGun.label>
+  <NMC_TebrusPulseGun.description>Пушка Тебруса: дальность 35, очередь из трёх импульсов по 16 урона и 30% бронепробития. Краткая пауза между очередями.
+
+Особое снаряжение, возвращается после поддержки.</NMC_TebrusPulseGun.description>
+  <NMC_TebrusPulseGun.tools.0.label>Рукоять</NMC_TebrusPulseGun.tools.0.label>
+  <NMC_VoidSuppressionCrystal.label>Кристалл подавления пустоты</NMC_VoidSuppressionCrystal.label>
+  <NMC_VoidSuppressionCrystal.description>Временный контрольный прибор. В радиусе 13 скорость движения и атак врагов падает до 30%, турели не стреляют. Выход восстанавливает их; кристаллы не складываются.
+
+Неуязвим для атак, исчезает через 30 секунд или отзывается досрочно.</NMC_VoidSuppressionCrystal.description>
+  <NMC_NutrientEnergyTower.label>Энергетическая башня нивариан</NMC_NutrientEnergyTower.label>
+  <NMC_NutrientEnergyTower.description>Питает резонансные кристаллы для постоянного производства P и 700 Вт в сеть. Нужна регулярная доставка пищи.
+
+Поселенцы доставляют разрешённую еду в запас питания. Настройте виды еды во вкладке питания; расход и выход видны при выборе. Выключение, нехватка питания или остановка прекращают выпуск энергии.
+
+Разверните ядро, доставьте материалы для автоматической стройки. Только энергетическая функция, без выращивания людей и эмбрионов.</NMC_NutrientEnergyTower.description>
+</LanguageData>

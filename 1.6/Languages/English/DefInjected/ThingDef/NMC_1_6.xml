@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_Carrier.label>Nivarian carrier</NMC_Carrier.label>
+  <NMC_Carrier.description>A heavy Nivarian carrier with 5,000 HP and 10,000 kg cargo capacity. It has no direct weapons and fights using interceptors.
+
+Load dragonfrost steel as cargo to fill a 1,000-unit production reserve. Each interceptor costs 10 steel and takes 15 seconds, whether landed or flying. Hangar and deployed aircraft total at most 8, each with 150 HP.
+
+In aerial combat, detects enemies within 60 cells and launches one interceptor per second. Interceptors return beyond 80 cells from their carrier. Landing orders stop launches and recall all aircraft.
+
+Stores 10,000 chemfuel and consumes 1 per second in local flight. World travel uses shuttle fuel rules, with range limited by fuel. No extra takeoff cooldown; clear roofs above and enough ground space for landing.
+
+With Milira Race enabled, choose “Upgrade starship propulsion” while landed. Colonists install 10 Milira starship batteries. Then each takeoff costs 200 chemfuel, with no continuous fuel use locally or on the world map. Upgrade progress is saved; installed batteries are consumed.</NMC_Carrier.description>
+  <NMC_CarrierIncoming.label>Nivarian carrier (landing)</NMC_CarrierIncoming.label>
+  <NMC_CarrierLeaving.label>Nivarian carrier (takeoff)</NMC_CarrierLeaving.label>
+  <NMC_GravityFrigate.label>Nivarian gravity ship</NMC_GravityFrigate.label>
+  <NMC_GravityFrigate.description>A Nivarian anti-air ship with light transport capability. Footprint 3×3, 600 HP, cargo capacity 300 kg.
+
+While airborne, fires twin prism lasers at airborne enemies within 16 cells, once per second. Each beam deals 12 base damage, penetrates 50% armor and deals triple damage to buildings, without freezing. Cannot directly target ground enemies.
+
+The gravity beam lifts and stuns a ground enemy within 16 cells for 5 seconds, making it a valid laser target. No extra resource cost; cooldown 8 seconds. Manual or automatic use.
+
+Stores 600 chemfuel. Local flight consumes 1 every 5 seconds. World travel costs half a shuttle's fuel; range is fuel-limited. No extra takeoff cooldown; unroofed launch and clear landing space required.
+
+With Milira Race enabled, landed ships can upgrade propulsion. Colonists install 2 Milira batteries. Then takeoff costs 100 chemfuel with no continuous consumption locally or worldwide. Progress is saved; installed batteries are consumed.</NMC_GravityFrigate.description>
+  <NMC_GravityFrigateIncoming.label>Nivarian gravity ship (landing)</NMC_GravityFrigateIncoming.label>
+  <NMC_GravityFrigateLeaving.label>Nivarian gravity ship (takeoff)</NMC_GravityFrigateLeaving.label>
+  <NMC_CarrierInterceptor.label>Nivarian interceptor</NMC_CarrierInterceptor.label>
+  <NMC_CarrierInterceptor.description>An unmanned interceptor built and controlled by a Nivarian carrier. Automatically attacks with light ammunition. 150 HP.
+
+Launches only while the carrier is in aerial combat. Returns beyond 80 cells from its carrier or on recall and landing orders. Depends on its carrier and cannot transport independently.</NMC_CarrierInterceptor.description>
+  <NMC_InterceptorFallbackRound.label>Interceptor light round</NMC_InterceptorFallbackRound.label>
+  <NMC_ContinuumRelay.label>Continuum communications core</NMC_ContinuumRelay.label>
+  <NMC_ContinuumRelay.description>The base's communications and data hub. Destroy it and clear defenders and turrets to recover this stage's research data. Destroying only the core is not enough.</NMC_ContinuumRelay.description>
+  <NMC_ContinuumPowerCore.label>Continuum power core</NMC_ContinuumPowerCore.label>
+  <NMC_ContinuumPowerCore.description>Powers the base's defenses. Destroying it cuts the connected grid and disables turrets that depend on it.</NMC_ContinuumPowerCore.description>
+  <NMC_OverloadBolt.label>Overload energy round</NMC_OverloadBolt.label>
+  <NMC_TacticalMothership.label>Tactical mothership</NMC_TacticalMothership.label>
+  <NMC_TacticalMothership.description>The support fleet's tactical mothership suppresses ground enemies with lasers and energy shells. Fires a laser each second for 15 base damage and a shell every 2 seconds for 20 base blast damage, especially effective against buildings.
+
+Fights automatically in flight and can be hit by ranged and explosive attacks. Losing this temporary support ship does not affect the orbital mothership's resources. Leaves when support ends.</NMC_TacticalMothership.description>
+  <NMC_FleetDestroyer.label>Fleet destroyer</NMC_FleetDestroyer.label>
+  <NMC_FleetDestroyer.description>An automatic escort destroyer. Its prism beam deals damage every 0.5 seconds, starting at 4 and increasing with successive hits on the same target. Changing targets or losing lock resets it.
+
+The beam does not freeze. The ship finds enemies automatically and leaves after its support duration.</NMC_FleetDestroyer.description>
+  <NMC_FleetMothershipGun.label>Mothership energy cannon</NMC_FleetMothershipGun.label>
+  <NMC_FleetDestroyerGun.label>Destroyer energy cannon</NMC_FleetDestroyerGun.label>
+  <NMC_FleetMothershipBolt.label>Mothership energy shell</NMC_FleetMothershipBolt.label>
+  <NMC_FleetDestroyerBolt.label>Destroyer energy shell</NMC_FleetDestroyerBolt.label>
+  <NMC_FleetWreck.label>Temporary ship wreck</NMC_FleetWreck.label>
+  <NMC_FleetWreck.description>Wreckage of a destroyed support ship. Cannot be deconstructed. Recovered when support ends; hauling or storage cannot keep it permanently.</NMC_FleetWreck.description>
+  <NMC_PhaseTwinBlade.label>Phase twinblades</NMC_PhaseTwinBlade.label>
+  <NMC_PhaseTwinBlade.description>Paired phase blades for rapid melee strikes. Shadow guard weapons are masterwork and biocoded to their wielder; others cannot use them.</NMC_PhaseTwinBlade.description>
+  <NMC_PhaseTwinBlade.tools.0.label>Phase blade</NMC_PhaseTwinBlade.tools.0.label>
+  <NMC_VoidHeavyBlade.label>Void heavyblade</NMC_VoidHeavyBlade.label>
+  <NMC_VoidHeavyBlade.description>A heavy shadow guard melee weapon. Slow but powerful strikes against armored targets. Masterwork and biocoded to the wielder.</NMC_VoidHeavyBlade.description>
+  <NMC_VoidHeavyBlade.tools.0.label>Void blade</NMC_VoidHeavyBlade.tools.0.label>
+  <NMC_ShadowLance.label>Shadow lance</NMC_ShadowLance.label>
+  <NMC_ShadowLance.description>A shadow guard polearm combining quick thrusts and armor penetration. Masterwork and biocoded to its wielder.</NMC_ShadowLance.description>
+  <NMC_ShadowLance.tools.0.label>Shadow spearhead</NMC_ShadowLance.tools.0.label>
+  <NMC_GhostSuit.label>Nivarian ghost armor</NMC_GhostSuit.label>
+  <NMC_GhostSuit.description>Exclusive shadow guard armor, preserving invisible combat and protecting against sharp, blunt and heat damage.
+
+On the wearer's death, exclusive gear still carried is destroyed; separated gear is unaffected. Gear still carried leaves with the member when support ends.</NMC_GhostSuit.description>
+  <NMC_GhostHelmet.label>Nivarian ghost circlet</NMC_GhostHelmet.label>
+  <NMC_GhostHelmet.description>An open protective circlet matching ghost armor. Preserves facial visibility and protects the head against sharp, blunt and heat damage. Exclusive shadow guard gear.</NMC_GhostHelmet.description>
+  <NMC_VoidRay.label>Glowship</NMC_VoidRay.label>
+  <NMC_VoidRay.description>Zoraya's escort ship, firing freezing prism beams. Hits every 0.5 seconds, starting at 4 damage and increasing on successive hits to one target. Losing lock or switching targets resets the beam.
+
+Targets automatically, useful for sustained pressure on tough enemies. Leaves with the legion.</NMC_VoidRay.description>
+  <NMC_VoidRayGun.label>Glowship beam</NMC_VoidRayGun.label>
+  <NMC_Zoraya.label>Zoraya</NMC_Zoraya.label>
+  <NMC_Zoraya.description>Zoraya's command ship with a stronger prism beam. Hits every 0.5 seconds, starting at 8 damage with freezing. Repeated hits on one target increase damage; switching or losing lock resets it.
+
+Fights alongside escorts and withdraws with them.</NMC_Zoraya.description>
+  <NMC_ZorayaRayGun.label>Zoraya glowbeam</NMC_ZorayaRayGun.label>
+  <NMC_ArchonRobe.label>Dark archon robes</NMC_ArchonRobe.label>
+  <NMC_ArchonRobe.description>Layered archon robes with long drapes. Psionic protection against sharp, blunt and heat damage. Legion property, recovered after support.</NMC_ArchonRobe.description>
+  <NMC_SeydasRobe.label>Seydas psionic robes</NMC_SeydasRobe.label>
+  <NMC_SeydasRobe.description>Seydas's layered robes and long drapes. Stronger psionic protection than regular archon robes against sharp, blunt and heat damage. Recovered after support.</NMC_SeydasRobe.description>
+  <NMC_ArchonCirclet.label>Dark archon circlet</NMC_ArchonCirclet.label>
+  <NMC_ArchonCirclet.description>An open psionic circlet complementing archon robes. Leaves with the legion after support.</NMC_ArchonCirclet.description>
+  <NMC_SeydasCirclet.label>Seydas psionic circlet</NMC_SeydasCirclet.label>
+  <NMC_SeydasCirclet.description>Seydas's psionic crystal circlet provides enhanced head protection. Exclusive legion gear, recovered with the robes after support.</NMC_SeydasCirclet.description>
+  <NMC_ArchonFocus.label>Archon psionic staff</NMC_ArchonFocus.label>
+  <NMC_ArchonFocus.description>Focuses an archon's mind-control power. Offers only limited melee self-defense, unsuitable as a main melee weapon. Recovered by the legion after support.</NMC_ArchonFocus.description>
+  <NMC_ArchonFocus.tools.0.label>Staff shaft</NMC_ArchonFocus.tools.0.label>
+  <NMC_ShadowCore.label>Nivarian shadow core</NMC_ShadowCore.label>
+  <NMC_ShadowCore.description>Construction core for a shadow energy tower. Deliver 150 steel, 4 components and 25 dragon crystals. The mothership then builds the tower in 20 seconds.
+
+Cancelling returns delivered materials, but not deployment energy or cooldown.</NMC_ShadowCore.description>
+  <NMC_MonolithCore.label>Hyperdimensional monolith core</NMC_MonolithCore.label>
+  <NMC_MonolithCore.description>Construction core for a monolith. Deliver 300 steel, 10 components and 60 dragon crystals. The mothership then builds it in 45 seconds.
+
+Cancelling returns delivered materials, but not deployment energy or cooldown.</NMC_MonolithCore.description>
+  <NMC_ShadowEnergyTower.label>Nivarian shadow energy tower</NMC_ShadowEnergyTower.label>
+  <NMC_ShadowEnergyTower.description>Built from a shadow core. Each tower sends 120 P and 80 V daily and cloaks allies within 7 cells. Attacks and damage do not end cloaking, but detection works.
+
+The tower does not cloak itself and needs other defenses. Multiple towers produce independently.</NMC_ShadowEnergyTower.description>
+  <NMC_HyperdimensionalMonolith.label>Hyperdimensional monolith</NMC_HyperdimensionalMonolith.label>
+  <NMC_HyperdimensionalMonolith.description>A large defense structure that delays enemies with a hyperdimensional control array. Range 60; every 2 seconds, hits up to 10 enemies for 3 base damage and a 1-second stun each.
+
+Requires grid connection and 1,000 W continuously, no ammunition. Spacetime fluctuation increases firing speed to ×5.</NMC_HyperdimensionalMonolith.description>
+  <NMC_TebrusRobe.label>Tebrus psionic robes</NMC_TebrusRobe.label>
+  <NMC_TebrusRobe.description>Tebrus's cyan-white gown, woven with psionic patterns that strongly protect against sharp, blunt and heat damage.
+
+Exclusive legion gear. Cannot be sold or smelted; recovered after support.</NMC_TebrusRobe.description>
+  <NMC_TebrusCirclet.label>Tebrus psionic circlet</NMC_TebrusCirclet.label>
+  <NMC_TebrusCirclet.description>Tebrus's open psionic crystal circlet protects the head. Legion gear, recovered with the robes after support.</NMC_TebrusCirclet.description>
+  <NMC_LegionSuit.label>Nivarian legion armor</NMC_LegionSuit.label>
+  <NMC_LegionSuit.description>Exclusive melee legion armor protecting against sharp, blunt and heat damage during assaults. Recovered after support.</NMC_LegionSuit.description>
+  <NMC_LegionCirclet.label>Nivarian legion circlet</NMC_LegionCirclet.label>
+  <NMC_LegionCirclet.description>An open protective circlet matching legion armor. Withdraws with the troops after support.</NMC_LegionCirclet.description>
+  <NMC_LegionBlade.label>Legion phase longblade</NMC_LegionBlade.label>
+  <NMC_LegionBlade.description>A legion melee blade with strong armor penetration. Legion-issued blades are excellent quality and recovered after support.</NMC_LegionBlade.description>
+  <NMC_LegionBlade.tools.0.label>Phase blade</NMC_LegionBlade.tools.0.label>
+  <NMC_TebrusPulse.label>Psionic pulse</NMC_TebrusPulse.label>
+  <NMC_TebrusPulseGun.label>Tebrus psionic pulse gun</NMC_TebrusPulseGun.label>
+  <NMC_TebrusPulseGun.description>Tebrus's pulse gun has range 35 and fires three-shot bursts. Each pulse deals 16 base damage with 30% armor penetration. Brief recovery between bursts.
+
+Exclusive legion gear, recovered after support.</NMC_TebrusPulseGun.description>
+  <NMC_TebrusPulseGun.tools.0.label>Grip</NMC_TebrusPulseGun.tools.0.label>
+  <NMC_VoidSuppressionCrystal.label>Void suppression crystal</NMC_VoidSuppressionCrystal.label>
+  <NMC_VoidSuppressionCrystal.description>A temporary control device from the mothership. Within 13 cells, enemies' movement and attack speeds fall to 30% and turrets stop firing. Leaving range restores them; multiple crystals do not stack.
+
+Cannot be destroyed by attacks. Dissipates after 30 seconds or can be recalled early.</NMC_VoidSuppressionCrystal.description>
+  <NMC_NutrientEnergyTower.label>Nivarian energy tower</NMC_NutrientEnergyTower.label>
+  <NMC_NutrientEnergyTower.description>Nutrient-fed resonant crystals continuously supply P points to the mothership and up to 700 W to the colony grid. Regular food replenishment is required.
+
+Colonists deliver allowed foods, converted into nutrient reserves. Adjust food types in the Nutrition tab; inspect consumption and output when selected. Turning off, running out of nutrients or stopping operation also stops energy production.
+
+Deploy a core, deliver materials and let the mothership build it. This facility only supplies energy; it cannot grow people or embryos.</NMC_NutrientEnergyTower.description>
+</LanguageData>

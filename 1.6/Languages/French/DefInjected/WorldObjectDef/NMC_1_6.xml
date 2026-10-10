@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_CarrierFlying.label>Porte-aéronefs nivarian</NMC_CarrierFlying.label>
+  <NMC_CarrierFlying.description>Porte-aéronefs nivarian en voyage lointain, transportant personnes, fret et intercepteurs.</NMC_CarrierFlying.description>
+  <NMC_GravityFrigateFlying.label>Vaisseau gravitationnel nivarian</NMC_GravityFrigateFlying.label>
+  <NMC_GravityFrigateFlying.description>Vaisseau gravitationnel nivarian en voyage lointain avec personnes et fret.</NMC_GravityFrigateFlying.description>
+</LanguageData>

@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_Carrier.label>ニヴァリアン空母</NMC_Carrier.label>
+  <NMC_Carrier.description>耐久5000、積載10000 kgの大型空母。直接攻撃兵器はなく艦載機で戦闘します。
+
+龍霜鋼を貨物として搬入し、最大1000の製造備蓄を補充できます。1機につき龍霜鋼10、製造15秒で、停泊中も飛行中も製造可能。格納庫と出撃中を合わせ最大8機、各耐久150。
+
+飛行戦闘時は60マス以内の敵を見つけ、毎秒1機出撃。空母から80マス離れると帰還します。着陸命令で出撃を止め全機回収します。
+
+化学燃料最大10000、マップ内飛行中は毎秒1消費。ワールド移動はシャトルと同じ消費で燃料が航続距離を制限します。追加離陸クールダウンなし。上の屋根を除き、着陸用空間を確保してください。
+
+ミリラ種族有効時、停泊中に星艦動力改良を選べます。入植者がバッテリー10個を設置すると、離陸ごとに燃料200を消費し、マップ・ワールドで継続消費しません。進捗は保存され、設置済みバッテリーは消費されます。</NMC_Carrier.description>
+  <NMC_CarrierIncoming.label>ニヴァリアン空母（着陸）</NMC_CarrierIncoming.label>
+  <NMC_CarrierLeaving.label>ニヴァリアン空母（離陸）</NMC_CarrierLeaving.label>
+  <NMC_GravityFrigate.label>ニヴァリアン重力艦</NMC_GravityFrigate.label>
+  <NMC_GravityFrigate.description>対空迎撃と軽輸送用のニヴァリアン艦。占有3×3、耐久600、積載300 kg。
+
+飛行中は16マス以内の空中敵へ双発プリズムレーザーを毎秒斉射。各ビームは基礎ダメージ12、貫通50%、建物ダメージ3倍で凍結なし。地上対象は直接攻撃できません。
+
+重力ビームで16マス以内の地上敵1体を持ち上げ5秒気絶させるとレーザーで攻撃可能。追加資源不要、クールダウン8秒。手動・自動で発動できます。
+
+化学燃料最大600、マップ内飛行中は5秒ごとに1消費。ワールド移動はシャトルの半分の消費で燃料が航続距離を制限。追加離陸クールダウンなし。屋根のない離陸地点と十分な着陸空間が必要。
+
+ミリラ種族有効時、停泊中にバッテリー2個を設置して改良可能。完了後は離陸ごと燃料100で、マップ・ワールドの継続消費なし。進捗保存、設置済みバッテリーは消費されます。</NMC_GravityFrigate.description>
+  <NMC_GravityFrigateIncoming.label>ニヴァリアン重力艦（着陸）</NMC_GravityFrigateIncoming.label>
+  <NMC_GravityFrigateLeaving.label>ニヴァリアン重力艦（離陸）</NMC_GravityFrigateLeaving.label>
+  <NMC_CarrierInterceptor.label>ニヴァリアン艦載機</NMC_CarrierInterceptor.label>
+  <NMC_CarrierInterceptor.description>空母が製造・制御する無人艦載機。軽弾で自動攻撃し、耐久150。
+
+空母の飛行戦闘中のみ出撃。空母から80マス離れると帰還し、回収・着陸命令にも従います。空母が必要で、独立した遠距離輸送はできません。</NMC_CarrierInterceptor.description>
+  <NMC_InterceptorFallbackRound.label>艦載機軽弾</NMC_InterceptorFallbackRound.label>
+  <NMC_ContinuumRelay.label>連続体通信コア</NMC_ContinuumRelay.label>
+  <NMC_ContinuumRelay.description>基地の通信・資料中枢。破壊し、守備隊と砲塔を排除すると段階の研究資料を得ます。コア破壊だけでは任務未完了です。</NMC_ContinuumRelay.description>
+  <NMC_ContinuumPowerCore.label>連続体電源コア</NMC_ContinuumPowerCore.label>
+  <NMC_ContinuumPowerCore.description>基地の防衛設備に給電します。破壊すると接続電網が切れ、依存する砲塔が停止します。</NMC_ContinuumPowerCore.description>
+  <NMC_OverloadBolt.label>過負荷エネルギー弾</NMC_OverloadBolt.label>
+  <NMC_TacticalMothership.label>戦術母艦</NMC_TacticalMothership.label>
+  <NMC_TacticalMothership.description>レーザーとエネルギー弾で地上敵を制圧する支援母艦。毎秒レーザーで基礎ダメージ15、2秒ごとの弾で爆発ダメージ20。建物に特に有効。
+
+自動飛行戦闘し、遠隔・爆発攻撃を受けます。臨時支援艦の損失は軌道母艦の資源に影響せず、支援終了後に撤退します。</NMC_TacticalMothership.description>
+  <NMC_FleetDestroyer.label>艦隊駆逐艦</NMC_FleetDestroyer.label>
+  <NMC_FleetDestroyer.description>自動護衛駆逐艦。プリズムビームは0.5秒ごとに初期4ダメージ。同一対象への連続命中で強化し、対象変更や捕捉喪失で初期値へ戻ります。
+
+凍結効果はありません。自動で敵を探し、滞在時間終了後に撤退します。</NMC_FleetDestroyer.description>
+  <NMC_FleetMothershipGun.label>母艦エネルギー砲</NMC_FleetMothershipGun.label>
+  <NMC_FleetDestroyerGun.label>駆逐艦エネルギー砲</NMC_FleetDestroyerGun.label>
+  <NMC_FleetMothershipBolt.label>母艦エネルギー弾</NMC_FleetMothershipBolt.label>
+  <NMC_FleetDestroyerBolt.label>駆逐艦エネルギー弾</NMC_FleetDestroyerBolt.label>
+  <NMC_FleetWreck.label>臨時艦艇残骸</NMC_FleetWreck.label>
+  <NMC_FleetWreck.description>破壊された支援艦の残骸。解体不可。支援終了時に回収され、運搬や保管でも恒久的には残せません。</NMC_FleetWreck.description>
+  <NMC_PhaseTwinBlade.label>位相双刃</NMC_PhaseTwinBlade.label>
+  <NMC_PhaseTwinBlade.description>素早い連続斬撃用の位相双刃。衛隊の武器は名品で使用者にバイオコード化され、他人は使用できません。</NMC_PhaseTwinBlade.description>
+  <NMC_PhaseTwinBlade.tools.0.label>位相刃</NMC_PhaseTwinBlade.tools.0.label>
+  <NMC_VoidHeavyBlade.label>ヴォイド重刃</NMC_VoidHeavyBlade.label>
+  <NMC_VoidHeavyBlade.description>衛隊用重近接兵器。攻撃は遅いが一撃が強く、重装対象に適します。名品品質で使用者にバイオコード化。</NMC_VoidHeavyBlade.description>
+  <NMC_VoidHeavyBlade.tools.0.label>ヴォイド刃</NMC_VoidHeavyBlade.tools.0.label>
+  <NMC_ShadowLance.label>シャドウランス</NMC_ShadowLance.label>
+  <NMC_ShadowLance.description>速度と貫通を両立する衛隊の長柄刺突兵器。名品品質で使用者にバイオコード化。</NMC_ShadowLance.description>
+  <NMC_ShadowLance.tools.0.label>シャドウ槍先</NMC_ShadowLance.tools.0.label>
+  <NMC_GhostSuit.label>ニヴァリアンゴースト装甲</NMC_GhostSuit.label>
+  <NMC_GhostSuit.description>透明戦闘を維持し、斬撃・打撃・熱から守る衛隊専用装甲。
+
+隊員死亡時、携行中の専用装備は破壊されます。すでに離れた装備は対象外。支援終了時は携行中の装備とともに撤退します。</NMC_GhostSuit.description>
+  <NMC_GhostHelmet.label>ニヴァリアンゴーストサークレット</NMC_GhostHelmet.label>
+  <NMC_GhostHelmet.description>ゴースト装甲用の開放型頭環。顔の視界を保ち、頭を斬撃・打撃・熱から守る衛隊専用装備。</NMC_GhostHelmet.description>
+  <NMC_VoidRay.label>輝光艦</NMC_VoidRay.label>
+  <NMC_VoidRay.description>ゾラヤ軍団の護衛艦。凍結プリズムビームは0.5秒ごと初期4ダメージ。同一対象への連続命中で強化し、捕捉喪失・対象変更で初期化。
+
+自動索敵し、堅い敵の継続制圧に適します。軍団とともに撤退。</NMC_VoidRay.description>
+  <NMC_VoidRayGun.label>輝光艦ビーム</NMC_VoidRayGun.label>
+  <NMC_Zoraya.label>ゾラヤ</NMC_Zoraya.label>
+  <NMC_Zoraya.description>ゾラヤ指揮艦の強化プリズムビームは0.5秒ごと初期8ダメージと凍結。同一対象への連続命中で強化し、捕捉喪失・変更で初期化。
+
+護衛艦と協同戦闘し、ともに撤退します。</NMC_Zoraya.description>
+  <NMC_ZorayaRayGun.label>ゾラヤ輝光ビーム</NMC_ZorayaRayGun.label>
+  <NMC_ArchonRobe.label>ダークアルコン礼装</NMC_ArchonRobe.label>
+  <NMC_ArchonRobe.description>長い肩布を持つ多層礼装。霊能で斬撃・打撃・熱から守ります。軍団所有で支援終了後回収。</NMC_ArchonRobe.description>
+  <NMC_SeydasRobe.label>セイダス霊能礼装</NMC_SeydasRobe.label>
+  <NMC_SeydasRobe.description>多層裙袍と長い肩布の礼装。通常の執政官装束より強い霊能防護で斬撃・打撃・熱を防ぎます。支援後回収。</NMC_SeydasRobe.description>
+  <NMC_ArchonCirclet.label>ダークアルコンサークレット</NMC_ArchonCirclet.label>
+  <NMC_ArchonCirclet.description>礼装と組み合わせる開放型霊能頭環。支援終了後に軍団と撤退。</NMC_ArchonCirclet.description>
+  <NMC_SeydasCirclet.label>セイダス霊能サークレット</NMC_SeydasCirclet.label>
+  <NMC_SeydasCirclet.description>頭部を強化保護する霊能結晶頭環。軍団専用で支援終了後に礼装とともに回収。</NMC_SeydasCirclet.description>
+  <NMC_ArchonFocus.label>執政官霊能杖</NMC_ArchonFocus.label>
+  <NMC_ArchonFocus.description>精神支配を集中する杖。近接自衛能力は限定的で主武器には不向き。支援後に軍団が回収。</NMC_ArchonFocus.description>
+  <NMC_ArchonFocus.tools.0.label>杖の柄</NMC_ArchonFocus.tools.0.label>
+  <NMC_ShadowCore.label>ニヴァリアンシャドウコア</NMC_ShadowCore.label>
+  <NMC_ShadowCore.description>シャドウタワー施工コア。スチール150、コンポーネント4、龍晶25を搬入すると母艦が20秒で建設。
+
+取消時に納入済み材料は返しますが、配置費用とクールダウンは戻りません。</NMC_ShadowCore.description>
+  <NMC_MonolithCore.label>超次元モノリスコア</NMC_MonolithCore.label>
+  <NMC_MonolithCore.description>モノリス施工コア。スチール300、コンポーネント10、龍晶60を搬入すると母艦が45秒で建設。
+
+取消時に納入済み材料は返しますが、配置費用とクールダウンは戻りません。</NMC_MonolithCore.description>
+  <NMC_ShadowEnergyTower.label>ニヴァリアンシャドウエネルギータワー</NMC_ShadowEnergyTower.label>
+  <NMC_ShadowEnergyTower.description>コアから建設する母艦施設。毎日120 Pと80 Vを送り、半径7マスの友軍を隠します。攻撃・被弾で解除されませんが探知は有効。
+
+自身は隠れず防衛が必要。複数が独立生産できます。</NMC_ShadowEnergyTower.description>
+  <NMC_HyperdimensionalMonolith.label>超次元モノリス</NMC_HyperdimensionalMonolith.label>
+  <NMC_HyperdimensionalMonolith.description>超次元制御で敵を阻止する大型防衛設備。射程60、2秒ごとに最大10体へダメージ3と気絶1秒。
+
+電網接続と1000 Wが必要で弾薬不要。時空変動中は攻撃速度5倍。</NMC_HyperdimensionalMonolith.description>
+  <NMC_TebrusRobe.label>テブルス霊能礼装</NMC_TebrusRobe.label>
+  <NMC_TebrusRobe.description>青白の長い法衣。霊能模様を織り込み、斬撃・打撃・熱から強く保護します。
+
+軍団専用で売却・溶解不可。支援後回収。</NMC_TebrusRobe.description>
+  <NMC_TebrusCirclet.label>テブルス霊能サークレット</NMC_TebrusCirclet.label>
+  <NMC_TebrusCirclet.description>開放型霊能結晶頭環で頭を保護します。礼装と同じ軍団装備で支援後に回収。</NMC_TebrusCirclet.description>
+  <NMC_LegionSuit.label>ニヴァリアン軍団装甲</NMC_LegionSuit.label>
+  <NMC_LegionSuit.description>近接軍団の専用装甲。突撃中の斬撃・打撃・熱を防ぎ、支援後回収。</NMC_LegionSuit.description>
+  <NMC_LegionCirclet.label>ニヴァリアン軍団サークレット</NMC_LegionCirclet.label>
+  <NMC_LegionCirclet.description>軍団装甲に合わせた開放型防護頭環。支援終了後部隊と撤退。</NMC_LegionCirclet.description>
+  <NMC_LegionBlade.label>軍団位相長刃</NMC_LegionBlade.label>
+  <NMC_LegionBlade.description>強い貫通力の近接長刃。軍団装備は秀品品質で支援後回収。</NMC_LegionBlade.description>
+  <NMC_LegionBlade.tools.0.label>位相刃</NMC_LegionBlade.tools.0.label>
+  <NMC_TebrusPulse.label>霊能パルス</NMC_TebrusPulse.label>
+  <NMC_TebrusPulseGun.label>テブルス霊能パルス銃</NMC_TebrusPulseGun.label>
+  <NMC_TebrusPulseGun.description>射程35のパルス銃。3発連射し各ダメージ16、貫通30%。射撃後は短い調整が必要。
+
+軍団専用で支援後回収。</NMC_TebrusPulseGun.description>
+  <NMC_TebrusPulseGun.tools.0.label>握り</NMC_TebrusPulseGun.tools.0.label>
+  <NMC_VoidSuppressionCrystal.label>ヴォイド抑制結晶</NMC_VoidSuppressionCrystal.label>
+  <NMC_VoidSuppressionCrystal.description>母艦の臨時制御装置。半径13の敵の移動・攻撃速度を30%にし、砲塔停火。範囲外で回復し、複数結晶は重複なし。
+
+攻撃破壊不可。30秒で消散または早期撤収可能。</NMC_VoidSuppressionCrystal.description>
+  <NMC_NutrientEnergyTower.label>ニヴァリアンエネルギータワー</NMC_NutrientEnergyTower.label>
+  <NMC_NutrientEnergyTower.description>栄養液で共鳴結晶を育て、母艦へPポイントと入植地電網へ700 Wを供給します。定期的な食料補充が必要。
+
+入植者が許可食料を搬入して栄養備蓄に変えます。「栄養」タブで種類を設定し、選択時に消費と産量を確認できます。停止・栄養切れ・非稼働で産出も停止。
+
+コア配置後に材料を搬入し母艦が自動建設します。給電専用で人員や胚を培養できません。</NMC_NutrientEnergyTower.description>
+</LanguageData>

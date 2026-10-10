@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_FieldTrainingChildhood.title>Mothership apprentice</NMC_FieldTrainingChildhood.title>
+  <NMC_FieldTrainingChildhood.titleShort>Apprentice</NMC_FieldTrainingChildhood.titleShort>
+  <NMC_FieldTrainingChildhood.baseDesc>[PAWN_nameDef] studied battlefield discipline and basic tactics aboard the mothership.</NMC_FieldTrainingChildhood.baseDesc>
+  <NMC_FieldTrainingAdulthood.title>Warp combatant</NMC_FieldTrainingAdulthood.title>
+  <NMC_FieldTrainingAdulthood.titleShort>Combatant</NMC_FieldTrainingAdulthood.titleShort>
+  <NMC_FieldTrainingAdulthood.baseDesc>[PAWN_nameDef] received dedicated combat training and answered the mothership's warp summons.</NMC_FieldTrainingAdulthood.baseDesc>
+</LanguageData>

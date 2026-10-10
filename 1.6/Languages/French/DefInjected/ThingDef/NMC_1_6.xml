@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_Carrier.label>Porte-aéronefs nivarian</NMC_Carrier.label>
+  <NMC_Carrier.description>Grand porte-aéronefs nivarian : 5 000 PV, capacité 10 000 kg. Sans arme directe, il combat avec ses intercepteurs.
+
+Chargez l'acier dracogivré en fret pour remplir une réserve de 1 000 unités. Chaque appareil coûte 10 acier et prend 15 secondes, posé ou en vol. Maximum 8 au total, hangar et combat, chacun avec 150 PV.
+
+En vol de combat, repère les ennemis à moins de 60 cases et lance un appareil par seconde. Ils reviennent au-delà de 80 cases du porteur. L'ordre d'atterrissage arrête les lancements et rappelle tous les appareils.
+
+Réserve de 10 000 carburant chimique ; vol local : 1 par seconde. Voyage mondial comme une navette, portée limitée par le carburant. Aucune recharge de décollage supplémentaire ; zone sans toit et espace libre pour atterrir requis.
+
+Avec Milira Race, améliorez la propulsion à l'arrêt. Les colons installent 10 batteries Milira : chaque décollage coûte ensuite 200 carburant, sans consommation continue locale ou mondiale. Progression sauvegardée ; batteries installées consommées.</NMC_Carrier.description>
+  <NMC_CarrierIncoming.label>Porte-aéronefs nivarian (atterrissage)</NMC_CarrierIncoming.label>
+  <NMC_CarrierLeaving.label>Porte-aéronefs nivarian (décollage)</NMC_CarrierLeaving.label>
+  <NMC_GravityFrigate.label>Vaisseau gravitationnel nivarian</NMC_GravityFrigate.label>
+  <NMC_GravityFrigate.description>Vaisseau nivarian d'interception et transport léger. Taille 3×3, 600 PV, capacité 300 kg.
+
+En vol, tire deux lasers prismatiques chaque seconde sur les ennemis aériens à moins de 16 cases. Chaque rayon : 12 dégâts, pénétration 50 %, dégâts aux bâtiments triplés, sans gel. Ne vise pas directement le sol.
+
+Le rayon gravitationnel soulève et étourdit un ennemi terrestre à moins de 16 cases pendant 5 secondes, le rendant ciblable. Aucun coût supplémentaire, recharge 8 secondes. Usage manuel ou automatique.
+
+Réserve 600 carburant chimique. Vol local : 1 toutes les 5 secondes. Voyage mondial : moitié du coût d'une navette, portée limitée par le carburant. Pas de recharge de décollage supplémentaire ; toit absent et place libre pour atterrir requis.
+
+Avec Milira Race, amélioration à l'arrêt avec 2 batteries. Ensuite, chaque décollage coûte 100 carburant, sans consommation continue locale ou mondiale. Progression sauvegardée ; batteries installées consommées.</NMC_GravityFrigate.description>
+  <NMC_GravityFrigateIncoming.label>Vaisseau gravitationnel (atterrissage)</NMC_GravityFrigateIncoming.label>
+  <NMC_GravityFrigateLeaving.label>Vaisseau gravitationnel (décollage)</NMC_GravityFrigateLeaving.label>
+  <NMC_CarrierInterceptor.label>Intercepteur nivarian</NMC_CarrierInterceptor.label>
+  <NMC_CarrierInterceptor.description>Intercepteur sans pilote construit et contrôlé par un porte-aéronefs nivarian. Attaques automatiques avec munitions légères. 150 PV.
+
+Décolle seulement pendant le combat aérien du porteur. Retour au-delà de 80 cases ou sur ordre de rappel ou d'atterrissage. Dépend du porteur ; aucun transport indépendant.</NMC_CarrierInterceptor.description>
+  <NMC_InterceptorFallbackRound.label>Projectile léger d'intercepteur</NMC_InterceptorFallbackRound.label>
+  <NMC_ContinuumRelay.label>Noyau de communication du Continuum</NMC_ContinuumRelay.label>
+  <NMC_ContinuumRelay.description>Centre de communication et de données. Détruisez-le puis éliminez défenseurs et tourelles pour obtenir les données de l'étape. Le noyau seul ne suffit pas.</NMC_ContinuumRelay.description>
+  <NMC_ContinuumPowerCore.label>Noyau d'alimentation du Continuum</NMC_ContinuumPowerCore.label>
+  <NMC_ContinuumPowerCore.description>Alimente les défenses de la base. Sa destruction coupe le réseau relié et arrête les tourelles qui en dépendent.</NMC_ContinuumPowerCore.description>
+  <NMC_OverloadBolt.label>Projectile énergétique de surcharge</NMC_OverloadBolt.label>
+  <NMC_TacticalMothership.label>Vaisseau-mère tactique</NMC_TacticalMothership.label>
+  <NMC_TacticalMothership.description>Vaisseau-mère de soutien contre les ennemis au sol. Laser chaque seconde pour 15 dégâts de base ; obus toutes les 2 secondes pour 20 dégâts explosifs, surtout efficaces contre les bâtiments.
+
+Combat aérien automatique, vulnérable aux tirs et explosions. La perte de ce vaisseau temporaire n'affecte pas les ressources du vaisseau-mère orbital. Retrait en fin de soutien.</NMC_TacticalMothership.description>
+  <NMC_FleetDestroyer.label>Destroyer de flotte</NMC_FleetDestroyer.label>
+  <NMC_FleetDestroyer.description>Destroyer d'escorte automatique. Rayon prismatique toutes les 0,5 seconde, dégâts initiaux 4 puis croissants sur une même cible. Changement ou perte de cible réinitialise la puissance.
+
+Aucun gel. Ciblage automatique et départ en fin de soutien.</NMC_FleetDestroyer.description>
+  <NMC_FleetMothershipGun.label>Canon énergétique du vaisseau-mère</NMC_FleetMothershipGun.label>
+  <NMC_FleetDestroyerGun.label>Canon énergétique du destroyer</NMC_FleetDestroyerGun.label>
+  <NMC_FleetMothershipBolt.label>Obus énergétique du vaisseau-mère</NMC_FleetMothershipBolt.label>
+  <NMC_FleetDestroyerBolt.label>Obus énergétique du destroyer</NMC_FleetDestroyerBolt.label>
+  <NMC_FleetWreck.label>Épave de soutien temporaire</NMC_FleetWreck.label>
+  <NMC_FleetWreck.description>Épave d'un vaisseau de soutien détruit. Non démontable. Récupérée en fin de soutien ; transport et stockage ne permettent pas de la conserver.</NMC_FleetWreck.description>
+  <NMC_PhaseTwinBlade.label>Lames phasiques jumelles</NMC_PhaseTwinBlade.label>
+  <NMC_PhaseTwinBlade.description>Paire de lames pour frappes rapides. Armes de maître biocodées à leur utilisatrice ; inutilisables par autrui.</NMC_PhaseTwinBlade.description>
+  <NMC_PhaseTwinBlade.tools.0.label>Lame phasique</NMC_PhaseTwinBlade.tools.0.label>
+  <NMC_VoidHeavyBlade.label>Lame lourde du vide</NMC_VoidHeavyBlade.label>
+  <NMC_VoidHeavyBlade.description>Arme lourde de la garde. Frappes lentes mais puissantes contre les cibles protégées. Qualité de maître, biocodée.</NMC_VoidHeavyBlade.description>
+  <NMC_VoidHeavyBlade.tools.0.label>Lame du vide</NMC_VoidHeavyBlade.tools.0.label>
+  <NMC_ShadowLance.label>Lance d'ombre</NMC_ShadowLance.label>
+  <NMC_ShadowLance.description>Arme d'hast de la garde mêlant vitesse et pénétration d'armure. Qualité de maître, biocodée.</NMC_ShadowLance.description>
+  <NMC_ShadowLance.tools.0.label>Pointe de lance d'ombre</NMC_ShadowLance.tools.0.label>
+  <NMC_GhostSuit.label>Armure fantôme nivariane</NMC_GhostSuit.label>
+  <NMC_GhostSuit.description>Armure exclusive de la garde, permettant le combat invisible et protégeant des dégâts tranchants, contondants et thermiques.
+
+À la mort, l'équipement exclusif encore porté est détruit ; les pièces séparées sont épargnées. En fin de soutien, le matériel porté repart avec la garde.</NMC_GhostSuit.description>
+  <NMC_GhostHelmet.label>Diadème fantôme nivarian</NMC_GhostHelmet.label>
+  <NMC_GhostHelmet.description>Diadème ouvert assorti à l'armure fantôme. Préserve la vue et protège la tête des dégâts tranchants, contondants et thermiques. Équipement exclusif de la garde.</NMC_GhostHelmet.description>
+  <NMC_VoidRay.label>Vaisseau lumineux</NMC_VoidRay.label>
+  <NMC_VoidRay.description>Escorte de Zoraya avec rayons prismatiques gelants. Toutes les 0,5 seconde, dégâts initiaux 4, croissants sur la même cible. Perte ou changement de cible réinitialise.
+
+Ciblage automatique, pression durable sur cibles résistantes. Retrait avec la légion.</NMC_VoidRay.description>
+  <NMC_VoidRayGun.label>Rayon du vaisseau lumineux</NMC_VoidRayGun.label>
+  <NMC_Zoraya.label>Zoraya</NMC_Zoraya.label>
+  <NMC_Zoraya.description>Vaisseau de commandement Zoraya avec rayon renforcé. Toutes les 0,5 seconde, dégâts initiaux 8 et gel. Dégâts croissants sur une même cible ; changement ou perte réinitialise.
+
+Combat et se retire avec ses escortes.</NMC_Zoraya.description>
+  <NMC_ZorayaRayGun.label>Rayon lumineux de Zoraya</NMC_ZorayaRayGun.label>
+  <NMC_ArchonRobe.label>Robe d'archonte noir</NMC_ArchonRobe.label>
+  <NMC_ArchonRobe.description>Robe multicouche à longs drapés. Protection psionique tranchante, contondante et thermique. Propriété de la légion, récupérée après soutien.</NMC_ArchonRobe.description>
+  <NMC_SeydasRobe.label>Robe psionique de Seydas</NMC_SeydasRobe.label>
+  <NMC_SeydasRobe.description>Robe multicouche de Seydas à longs drapés. Protection psionique renforcée contre dégâts tranchants, contondants et thermiques. Récupérée après soutien.</NMC_SeydasRobe.description>
+  <NMC_ArchonCirclet.label>Diadème d'archonte noir</NMC_ArchonCirclet.label>
+  <NMC_ArchonCirclet.description>Diadème psionique ouvert assorti à la robe. Repart avec la légion.</NMC_ArchonCirclet.description>
+  <NMC_SeydasCirclet.label>Diadème psionique de Seydas</NMC_SeydasCirclet.label>
+  <NMC_SeydasCirclet.description>Diadème de cristal psionique de Seydas protégeant la tête. Équipement exclusif récupéré avec la robe après soutien.</NMC_SeydasCirclet.description>
+  <NMC_ArchonFocus.label>Bâton psionique d'archonte</NMC_ArchonFocus.label>
+  <NMC_ArchonFocus.description>Concentre le contrôle mental. Autodéfense de mêlée limitée, inadapté comme arme principale. Récupéré après soutien.</NMC_ArchonFocus.description>
+  <NMC_ArchonFocus.tools.0.label>Hampe du bâton</NMC_ArchonFocus.tools.0.label>
+  <NMC_ShadowCore.label>Noyau d'ombre nivarian</NMC_ShadowCore.label>
+  <NMC_ShadowCore.description>Noyau de construction de tour d'ombre. Livrez 150 acier, 4 composants et 25 cristaux draconiques. Construction en 20 secondes.
+
+Annuler rend les matériaux, pas l'énergie ni la recharge.</NMC_ShadowCore.description>
+  <NMC_MonolithCore.label>Noyau de monolithe hyperdimensionnel</NMC_MonolithCore.label>
+  <NMC_MonolithCore.description>Noyau de construction du monolithe. Livrez 300 acier, 10 composants et 60 cristaux draconiques. Construction en 45 secondes.
+
+Annuler rend les matériaux, pas l'énergie ni la recharge.</NMC_MonolithCore.description>
+  <NMC_ShadowEnergyTower.label>Tour d'énergie d'ombre nivariane</NMC_ShadowEnergyTower.label>
+  <NMC_ShadowEnergyTower.description>Construite depuis un noyau d'ombre. Fournit 120 P et 80 V par jour, camoufle les alliés à moins de 7 cases. Attaques et dégâts ne révèlent pas, mais la détection fonctionne.
+
+Ne se camoufle pas elle-même. Plusieurs tours produisent indépendamment.</NMC_ShadowEnergyTower.description>
+  <NMC_HyperdimensionalMonolith.label>Monolithe hyperdimensionnel</NMC_HyperdimensionalMonolith.label>
+  <NMC_HyperdimensionalMonolith.description>Grande défense de contrôle hyperdimensionnel. Portée 60 ; toutes les 2 secondes, frappe jusqu'à 10 ennemis pour 3 dégâts et 1 seconde d'étourdissement.
+
+Réseau et 1 000 W continus requis, aucune munition. Fluctuation spatiotemporelle : tirs ×5.</NMC_HyperdimensionalMonolith.description>
+  <NMC_TebrusRobe.label>Robe psionique de Tebrus</NMC_TebrusRobe.label>
+  <NMC_TebrusRobe.description>Robe blanche et cyan de Tebrus, tissée de motifs psioniques protégeant des dégâts tranchants, contondants et thermiques.
+
+Équipement exclusif, invendable et non fondable. Récupéré après soutien.</NMC_TebrusRobe.description>
+  <NMC_TebrusCirclet.label>Diadème psionique de Tebrus</NMC_TebrusCirclet.label>
+  <NMC_TebrusCirclet.description>Diadème ouvert en cristal psionique de Tebrus. Protège la tête et repart avec la robe.</NMC_TebrusCirclet.description>
+  <NMC_LegionSuit.label>Armure de légion nivariane</NMC_LegionSuit.label>
+  <NMC_LegionSuit.description>Armure exclusive de mêlée protégeant des dégâts tranchants, contondants et thermiques. Récupérée après soutien.</NMC_LegionSuit.description>
+  <NMC_LegionCirclet.label>Diadème de légion nivarian</NMC_LegionCirclet.label>
+  <NMC_LegionCirclet.description>Diadème ouvert assorti à l'armure de légion. Repart avec les troupes.</NMC_LegionCirclet.description>
+  <NMC_LegionBlade.label>Longue lame phasique de légion</NMC_LegionBlade.label>
+  <NMC_LegionBlade.description>Lame de mêlée à forte pénétration. Qualité excellente, récupérée après soutien.</NMC_LegionBlade.description>
+  <NMC_LegionBlade.tools.0.label>Lame phasique</NMC_LegionBlade.tools.0.label>
+  <NMC_TebrusPulse.label>Impulsion psionique</NMC_TebrusPulse.label>
+  <NMC_TebrusPulseGun.label>Fusil à impulsions psioniques de Tebrus</NMC_TebrusPulseGun.label>
+  <NMC_TebrusPulseGun.description>Fusil de Tebrus : portée 35, rafales de trois impulsions à 16 dégâts et 30 % de pénétration. Courte récupération entre rafales.
+
+Équipement exclusif récupéré après soutien.</NMC_TebrusPulseGun.description>
+  <NMC_TebrusPulseGun.tools.0.label>Poignée</NMC_TebrusPulseGun.tools.0.label>
+  <NMC_VoidSuppressionCrystal.label>Cristal de suppression du vide</NMC_VoidSuppressionCrystal.label>
+  <NMC_VoidSuppressionCrystal.description>Dispositif temporaire du vaisseau-mère. À moins de 13 cases, déplacements et attaques ennemis à 30 %, tourelles arrêtées. Récupération hors portée ; effets non cumulables.
+
+Indestructible par attaque. Disparaît après 30 secondes ou peut être rappelé.</NMC_VoidSuppressionCrystal.description>
+  <NMC_NutrientEnergyTower.label>Tour d'énergie nivariane</NMC_NutrientEnergyTower.label>
+  <NMC_NutrientEnergyTower.description>Cristaux résonants nourris pour fournir des P au vaisseau-mère et 700 W au réseau. Réapprovisionnement régulier en nourriture requis.
+
+Les colons apportent les aliments autorisés, convertis en réserve nutritive. Réglez-les dans l'onglet Nutrition ; consultez consommation et production en sélectionnant la tour. Arrêt ou manque de nutriments interrompt la production.
+
+Déployez un noyau et livrez les matériaux pour la construction automatique. Fournit seulement de l'énergie, sans culture de personnes ni d'embryons.</NMC_NutrientEnergyTower.description>
+</LanguageData>

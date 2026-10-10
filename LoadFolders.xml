@@ -1,0 +1,1 @@
+<loadFolders><v1.6><li>1.6</li><li IfModNotActive="Ludeon.RimWorld.Royalty">NoRoyalty</li><li IfModActive="Ludeon.RimWorld.Royalty">Royalty</li><li IfModActive="rwmt.Multiplayer">Multiplayer</li></v1.6></loadFolders>

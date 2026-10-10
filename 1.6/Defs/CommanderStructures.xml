@@ -1,0 +1,82 @@
+<Defs>
+  <!-- Independent draft only. No designation category, minification or native auto-builder extension. -->
+  <ThingDef Name="NMC_CoreBase" ParentName="BuildingBase" Abstract="True">
+    <thingClass>NivarianCommander.Building_CommanderStructure</thingClass>
+    <tickerType>Normal</tickerType><useHitPoints>true</useHitPoints><selectable>true</selectable>
+    <rotatable>false</rotatable><altitudeLayer>Building</altitudeLayer><passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent><terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled><resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <costList />
+    <statBases><WorkToBuild>0</WorkToBuild><Flammability>0</Flammability></statBases>
+    <graphicData><texPath>Nivarian/Building/cryo_forge</texPath><graphicClass>Graphic_Single</graphicClass><color>(0.65, 0.85, 1)</color><drawSize>(2.8,2.8)</drawSize></graphicData>
+    <comps><li Class="Nivarian_Race.Code.Comps.BuildingComps.CompProperties_UniversalContainer" /><li Class="CompProperties_Forbiddable" /></comps>
+  </ThingDef>
+  <ThingDef ParentName="NMC_CoreBase">
+    <defName>NMC_ShadowCore</defName><label>涅瓦莲暗影核心</label>
+    <description>暗影能源塔的施工核心。殖民者需要运入150钢铁、4零部件和25龙晶。材料备齐后，母舰会自动施工，20秒后建成能源塔。
+
+取消施工会返还已经交入的材料，但部署核心消耗的能量和冷却时间不会返还。</description>
+    <size>(2,2)</size><statBases><MaxHitPoints>800</MaxHitPoints></statBases>
+    <comps><li Class="NivarianCommander.CompProperties_CommanderConstruction">
+      <completedDef>NMC_ShadowEnergyTower</completedDef><constructionTicks>1200</constructionTicks><cloakImmune>true</cloakImmune>
+      <ingredients><Steel>150</Steel><ComponentIndustrial>4</ComponentIndustrial><Nivarian_DragonCrystal>25</Nivarian_DragonCrystal></ingredients>
+    </li></comps>
+  </ThingDef>
+  <ThingDef ParentName="NMC_CoreBase">
+    <defName>NMC_MonolithCore</defName><label>超维空间巨石核心</label>
+    <description>超维空间巨石的施工核心。殖民者需要运入300钢铁、10零部件和60龙晶。材料备齐后，母舰会自动施工，45秒后建成巨石。
+
+取消施工会返还已经交入的材料，但部署核心消耗的能量和冷却时间不会返还。</description>
+    <size>(3,3)</size><statBases><MaxHitPoints>1800</MaxHitPoints></statBases>
+    <graphicData><texPath>NMC/Buildings/hyperdimensional_monolith</texPath><graphicClass>Graphic_Single</graphicClass><color>(1,1,1)</color><drawSize>(3.6,3.6)</drawSize></graphicData>
+    <comps><li Class="NivarianCommander.CompProperties_CommanderConstruction">
+      <completedDef>NMC_HyperdimensionalMonolith</completedDef><constructionTicks>2700</constructionTicks>
+      <ingredients><Steel>300</Steel><ComponentIndustrial>10</ComponentIndustrial><Nivarian_DragonCrystal>60</Nivarian_DragonCrystal></ingredients>
+    </li></comps>
+  </ThingDef>
+  <ThingDef Name="NMC_StructureBase" ParentName="BuildingBase" Abstract="True">
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <thingClass>NivarianCommander.Building_CommanderStructure</thingClass>
+    <tickerType>Normal</tickerType><useHitPoints>true</useHitPoints><selectable>true</selectable>
+    <rotatable>false</rotatable><altitudeLayer>Building</altitudeLayer><passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent><terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled><resourcesFractionWhenDeconstructed>0.5</resourcesFractionWhenDeconstructed>
+    <statBases><WorkToBuild>0</WorkToBuild><Flammability>0</Flammability></statBases>
+  </ThingDef>
+  <ThingDef ParentName="NMC_StructureBase">
+    <defName>NMC_ShadowEnergyTower</defName><label>涅瓦莲暗影能源塔</label>
+    <description>由暗影核心建成的母舰能源设施。每座塔每天输送120P和80V，并使半径7格内的友军隐形。攻击和受伤不会主动解除隐形，但反隐手段仍然有效。
+
+塔身本身不会被自己的暗影场隐藏，需要其他防御设施保护。可以建造多座能源塔，各自持续生产资源。</description>
+    <size>(2,2)</size><statBases><MaxHitPoints>800</MaxHitPoints></statBases>
+    <graphicData><texPath>NMC/Buildings/shadow_energy_tower</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(3,3)</drawSize></graphicData>
+    <costList><Steel>150</Steel><ComponentIndustrial>4</ComponentIndustrial><Nivarian_DragonCrystal>25</Nivarian_DragonCrystal></costList>
+    <comps><li Class="NivarianCommander.CompProperties_CommanderStructure"><incomePower>120</incomePower><incomeVolatile>80</incomeVolatile><incomeIntervalTicks>60000</incomeIntervalTicks><cloakRadius>7</cloakRadius><cloakImmune>true</cloakImmune></li></comps>
+  </ThingDef>
+  <ThingDef ParentName="NMC_StructureBase">
+    <defName>NMC_HyperdimensionalMonolith</defName><label>超维空间巨石</label>
+    <description>以超维控制阵列阻滞敌人的大型防御设施。射程60格，每2秒同时打击最多10名敌人，分别造成3点基础伤害和1秒眩晕。
+
+巨石需要连接电网，持续消耗1000W电力，无需弹药。受到时空波动支援时，攻击速度提高至平时的5倍。</description>
+    <size>(3,3)</size><statBases><MaxHitPoints>1800</MaxHitPoints></statBases>
+    <graphicData><texPath>NMC/Buildings/hyperdimensional_monolith</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(3.6,3.6)</drawSize></graphicData>
+    <costList><Steel>300</Steel><ComponentIndustrial>10</ComponentIndustrial><Nivarian_DragonCrystal>60</Nivarian_DragonCrystal></costList>
+    <comps>
+      <li Class="NivarianCommander.CompProperties_CommanderStructure" />
+      <li Class="NivarianCommander.CompProperties_MonolithWeapon">
+        <turretGraphic><texPath>NMC/Buildings/hyperdimensional_monolith_head</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(3,3)</drawSize></turretGraphic>
+        <turretPivot>(0.5,0.605)</turretPivot>
+        <turretMuzzleOffset>1.43</turretMuzzleOffset>
+      </li>
+      <li Class="CompProperties_Power"><compClass>CompPowerTrader</compClass><basePowerConsumption>1000</basePowerConsumption><transmitsPower>true</transmitsPower></li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+  </ThingDef>
+  <NivarianCommander.SupportDamageDef>
+    <defName>NMC_MonolithEnergy</defName><label>超维控制束</label>
+    <workerClass>DamageWorker_AddInjury</workerClass><externalViolence>true</externalViolence><isRanged>true</isRanged>
+    <armorCategory>Sharp</armorCategory><hediff>Burn</hediff><hediffSolid>Crack</hediffSolid>
+    <defaultDamage>3</defaultDamage><defaultArmorPenetration>0</defaultArmorPenetration>
+    <buildingDamageFactor>1</buildingDamageFactor><buildingDamageFactorPassable>1</buildingDamageFactorPassable><buildingDamageFactorImpassable>1</buildingDamageFactorImpassable>
+  </NivarianCommander.SupportDamageDef>
+</Defs>

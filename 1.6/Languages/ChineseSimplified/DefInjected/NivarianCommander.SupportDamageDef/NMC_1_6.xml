@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_FrigateBeamDamage.label>引力舰棱晶激光</NMC_FrigateBeamDamage.label>
+  <NMC_OrbitalEnergy.label>轨道能量打击</NMC_OrbitalEnergy.label>
+  <NMC_SolarBombEnergy.label>太阳轰炸能量</NMC_SolarBombEnergy.label>
+  <NMC_SolarRayEnergy.label>太阳能射线能量</NMC_SolarRayEnergy.label>
+  <NMC_SolarRayBurn.label>太阳能射线灼烧</NMC_SolarRayBurn.label>
+  <NMC_PurificationEnergy.label>净化光束能量</NMC_PurificationEnergy.label>
+  <NMC_PurificationBurn.label>净化光束灼烧</NMC_PurificationBurn.label>
+  <NMC_OverloadEnergy.label>超载蓝色激光</NMC_OverloadEnergy.label>
+  <NMC_FleetMothershipEnergy.label>母舰能量伤害</NMC_FleetMothershipEnergy.label>
+  <NMC_FleetDestroyerEnergy.label>驱逐舰能量伤害</NMC_FleetDestroyerEnergy.label>
+  <NMC_FleetMothershipLaser.label>母舰棱晶激光</NMC_FleetMothershipLaser.label>
+  <NMC_FleetRayEnergy.label>辉光能量伤害</NMC_FleetRayEnergy.label>
+  <NMC_MonolithEnergy.label>超维控制束</NMC_MonolithEnergy.label>
+</LanguageData>

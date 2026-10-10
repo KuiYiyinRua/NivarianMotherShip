@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_MothershipPointShop.label>Mothership shop</NMC_MothershipPointShop.label>
+  <NMC_MothershipPointShop.description>A supply trade terminal. Buy with P points or donate supplies within orbital beacon range for P rewards.
+
+Restocks every 7 days with at most 60 random goods across the whole shop. All colonies share stock. Select a delivery colony and goods; confirmed purchases are dropped near its beacon. Requires a powered orbital trade beacon and a valid open-air drop site.</NMC_MothershipPointShop.description>
+</LanguageData>

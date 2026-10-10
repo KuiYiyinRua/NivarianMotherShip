@@ -1,0 +1,18 @@
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>NMC_VoidSuppressionCrystal</defName><label>虚空抑制晶体</label>
+    <description>母舰临时投下的控制装置。半径13格内，敌人的移动和攻击速度降至平时的30%，敌方炮塔停止射击。离开影响范围即可恢复，多个晶体不会进一步叠加抑制效果。
+
+晶体不会被攻击摧毁，30秒后自行消散，也可由指挥官提前撤回。</description>
+    <thingClass>NivarianCommander.Building_VoidCrystal</thingClass>
+    <category>Building</category><size>(1,1)</size><rotatable>false</rotatable>
+    <tickerType>Never</tickerType><useHitPoints>false</useHitPoints><destroyable>true</destroyable>
+    <selectable>true</selectable><drawerType>MapMeshOnly</drawerType><altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability><fillPercent>0.1</fillPercent>
+    <scatterableOnMapGen>false</scatterableOnMapGen><leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <noRightClickDraftAttack>true</noRightClickDraftAttack><filthLeaving IsNull="True" />
+    <statBases><Flammability>0</Flammability><WorkToBuild>0</WorkToBuild></statBases>
+    <graphicData><texPath>NMC/Buildings/void_crystal</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.6,1.6)</drawSize><shaderType>Cutout</shaderType></graphicData>
+    <building><isTargetable>false</isTargetable><deconstructible>false</deconstructible><claimable>false</claimable><displayAttackToDestroyOnInspectPane>false</displayAttackToDestroyOnInspectPane></building>
+  </ThingDef>
+</Defs>

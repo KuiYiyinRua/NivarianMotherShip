@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_Support01</defName>
+    <label>折跃能量场支援协议</label>
+    <description>建立可从母舰远程部署的折跃能量场，为周围的友方设施与单位提供能源。已有能量场可以迁移，适合前沿防御和临时作业。
+
+通过上行链路研究终端交付所需材料并完成研究。完成研究后即可在指挥官支援面板调用。</description>
+    <baseCost>1500</baseCost>
+    <prerequisites>
+      <li>Nivarian_MothershipSupportInterface</li>
+    </prerequisites>
+    <researchViewX>0</researchViewX>
+    <researchViewY>3</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li>
+            <thingDef>Steel</thingDef>
+            <count>150</count>
+          </li>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <count>4</count>
+          </li>
+        </requiredMaterials>
+      </li>
+      <li Class="NivarianCommander.CommanderResearchExtension">
+        <requiredStage>0</requiredStage>
+        <mothershipLevel>0</mothershipLevel>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_Support02</defName>
+    <label>轨道轰炸支援协议</label>
+    <description>开放轨道轰炸，使指挥官能够连续标记落点，调用母舰火力攻击地面目标。每次开火分别消耗能量。
+
+通过上行链路研究终端交付所需材料并完成研究。完成研究后即可在指挥官支援面板调用。</description>
+    <baseCost>1500</baseCost>
+    <prerequisites>
+      <li>Nivarian_MothershipSupportInterface</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>3</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li>
+            <thingDef>Steel</thingDef>
+            <count>150</count>
+          </li>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <count>4</count>
+          </li>
+        </requiredMaterials>
+      </li>
+      <li Class="NivarianCommander.CommanderResearchExtension">
+        <requiredStage>0</requiredStage>
+        <mothershipLevel>0</mothershipLevel>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_Support03</defName>
+    <label>护盾超载支援协议</label>
+    <description>允许母舰在短时间内为整张地图上的友军提供护盾，吸收战斗伤害。
+
+通过上行链路研究终端交付所需材料并完成研究。母舰达到1级后，方可调用这项支援。</description>
+    <baseCost>1500</baseCost>
+    <prerequisites>
+      <li>NMC_Support01</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>3</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li>
+            <thingDef>Steel</thingDef>
+            <count>150</count>
+          </li>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <count>4</count>
+          </li>
+        </requiredMaterials>
+      </li>
+      <li Class="NivarianCommander.CommanderResearchExtension">
+        <requiredStage>0</requiredStage>
+        <mothershipLevel>1</mothershipLevel>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_Support04</defName>
+    <label>太阳轰炸支援协议</label>
+    <description>开放大范围太阳轰炸。在指定区域持续投下能量弹，摧毁密集敌军与建筑。攻击开始后无法中止。
+
+通过上行链路研究终端交付所需材料并完成研究。母舰达到4级后，方可调用这项支援。
+
+若已开启连续体任务，须先完成第8阶段“太阳轰炸”，取得研究资料。</description>
+    <baseCost>3000</baseCost>
+    <prerequisites>
+      <li>NMC_Support07</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>3</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li>
+            <thingDef>Steel</thingDef>
+            <count>250</count>
+          </li>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <count>8</count>
+          </li>
+          <li>
+            <thingDef>Nivarian_DragonCrystal</thingDef>
+            <count>30</count>
+          </li>
+        </requiredMaterials>
+      </li>
+      <li Class="NivarianCommander.CommanderResearchExtension">
+        <requiredStage>8</requiredStage>
+        <mothershipLevel>4</mothershipLevel>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_Support05</defName>
+    <label>太阳能射线枪支援协议</label>
+    <description>开放太阳能射线枪。母舰可同时投下三道追踪射线，持续扫射地面敌人。
+
+通过上行链路研究终端交付所需材料并完成研究。母舰达到2级后，方可调用这项支援。</description>
+    <baseCost>3000</baseCost>
+    <prerequisites>
+      <li>NMC_Support02</li>
+    </prerequisites>
+    <researchViewX>4</researchViewX>
+    <researchViewY>3</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li>
+            <thingDef>Steel</thingDef>
+            <count>250</count>
+          </li>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <count>8</count>
+          </li>
+          <li>
+            <thingDef>Nivarian_DragonCrystal</thingDef>
+            <count>30</count>
+          </li>
+        </requiredMaterials>
+      </li>
+      <li Class="NivarianCommander.CommanderResearchExtension">
+        <requiredStage>0</requiredStage>
+        <mothershipLevel>2</mothershipLevel>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_Support06</defName>
+    <label>时空波动支援协议</label>
+    <description>使母舰能够暂时加快各处殖民地的生产活动，并提高超维空间巨石的攻击频率。
+
+通过上行链路研究终端交付所需材料并完成研究。母舰达到2级后，方可调用这项支援。</description>
+    <baseCost>4500</baseCost>
+    <prerequisites>
+      <li>NMC_Support01</li>
+    </prerequisites>
+    <researchViewX>0</researchViewX>
+    <researchViewY>4</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li>
+            <thingDef>Steel</thingDef>
+            <count>300</count>
+          </li>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <count>10</count>
+          </li>
+          <li>
+            <thingDef>Nivarian_DragonCrystal</thingDef>
+            <count>50</count>
+          </li>
+        </requiredMaterials>
+      </li>
+      <li Class="NivarianCommander.CommanderResearchExtension">
+        <requiredStage>0</requiredStage>
+        <mothershipLevel>2</mothershipLevel>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_Support07</defName>
+    <label>净化光束支援协议</label>
+    <description>开放可移动的净化光束。光束能够自动追击，也可以接受指挥官的移动命令。
+
+通过上行链路研究终端交付所需材料并完成研究。母舰达到4级后，方可调用这项支援。
+
+若已开启连续体任务，须先完成第7阶段“净化光束”，取得研究资料。</description>
+    <baseCost>3000</baseCost>
+    <prerequisites>
+      <li>NMC_Support05</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>4</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li>
+            <thingDef>Steel</thingDef>
+            <count>250</count>
+          </li>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <count>8</count>
+          </li>
+          <li>
+            <thingDef>Nivarian_DragonCrystal</thingDef>
+            <count>30</count>
+          </li>
+        </requiredMaterials>
+      </li>
+      <li Class="NivarianCommander.CommanderResearchExtension">
+        <requiredStage>7</requiredStage>
+        <mothershipLevel>4</mothershipLevel>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_Support08</defName>
+    <label>暗影核心支援协议</label>
+    <description>允许部署暗影核心，建成可持续输送母舰资源、隐藏周围友军的暗影能源塔。部署后仍需运入建材。
+
+通过上行链路研究终端交付所需材料并完成研究。母舰达到1级后，方可调用这项支援。
+
+若已开启连续体任务，须先完成第1阶段“暗影水晶塔”，取得研究资料。</description>
+    <baseCost>2500</baseCost>
+    <prerequisites>
+      <li>NMC_Support01</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>4</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li>
+            <thingDef>Steel</thingDef>
+            <count>200</count>
+          </li>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <count>6</count>
+          </li>
+          <li>
+            <thingDef>Nivarian_DragonCrystal</thingDef>
+            <count>25</count>
+          </li>
+        </requiredMaterials>
+      </li>
+      <li Class="NivarianCommander.CommanderResearchExtension">
+        <requiredStage>1</requiredStage>
+        <mothershipLevel>1</mothershipLevel>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_Support09</defName>
+    <label>暗影卫队支援协议</label>
+    <description>建立与暗影卫队的折跃联络。完成研究后，可请求四名隐形近战战士临时增援。
+
+通过上行链路研究终端交付所需材料并完成研究。母舰达到2级后，方可调用这项支援。
+
+若已开启连续体任务，须先完成第2阶段“暗影援军”，取得研究资料。</description>
+    <baseCost>2500</baseCost>
+    <prerequisites>
+      <li>NMC_Support08</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>4</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li>
+            <thingDef>Steel</thingDef>
+            <count>200</count>
+          </li>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <count>6</count>
+          </li>
+          <li>
+            <thingDef>Nivarian_DragonCrystal</thingDef>
+            <count>25</count>
+          </li>
+        </requiredMaterials>
+      </li>
+      <li Class="NivarianCommander.CommanderResearchExtension">
+        <requiredStage>2</requiredStage>
+        <mothershipLevel>2</mothershipLevel>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_Support10</defName>
+    <label>黑洞支援协议</label>
+    <description>使母舰能够在战场制造短暂的引力涡旋，聚集敌人并削弱其护甲，便于集中火力。
+
+通过上行链路研究终端交付所需材料并完成研究。母舰达到2级后，方可调用这项支援。</description>
+    <baseCost>2500</baseCost>
+    <prerequisites>
+      <li>NMC_Support06</li>
+    </prerequisites>
+    <researchViewX>4</researchViewX>
+    <researchViewY>4</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li>
+            <thingDef>Steel</thingDef>
+            <count>200</count>
+          </li>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <count>6</count>
+          </li>
+          <li>
+            <thingDef>Nivarian_DragonCrystal</thingDef>
+            <count>25</count>
+          </li>
+        </requiredMaterials>
+      </li>
+      <li Class="NivarianCommander.CommanderResearchExtension">
+        <requiredStage>0</requiredStage>
+        <mothershipLevel>2</mothershipLevel>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_Support11</defName>
+    <label>时间停止支援协议</label>
+    <description>允许母舰暂时阻止各处殖民地内现有敌人的移动和攻击，为防御或撤退争取时间。
+
+通过上行链路研究终端交付所需材料并完成研究。母舰达到4级后，方可调用这项支援。</description>
+    <baseCost>4500</baseCost>
+    <prerequisites>
+      <li>NMC_Support06</li>
+      <li>NMC_Support10</li>
+    </prerequisites>
+    <researchViewX>0</researchViewX>
+    <researchViewY>5</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li>
+            <thingDef>Steel</thingDef>
+            <count>300</count>
+          </li>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <count>10</count>
+          </li>
+          <li>
+            <thingDef>Nivarian_DragonCrystal</thingDef>
+            <count>50</count>
+          </li>
+        </requiredMaterials>
+      </li>
+      <li Class="NivarianCommander.CommanderResearchExtension">
+        <requiredStage>0</requiredStage>
+        <mothershipLevel>4</mothershipLevel>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_Support12</defName>
+    <label>建筑超载支援协议</label>
+    <description>开放建筑超载，为友方建筑临时附加护盾与激光武器。使用时需要消耗定期恢复的超载充能。
+
+通过上行链路研究终端交付所需材料并完成研究。母舰达到1级后，方可调用这项支援。</description>
+    <baseCost>1500</baseCost>
+    <prerequisites>
+      <li>NMC_Support03</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>5</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li>
+            <thingDef>Steel</thingDef>
+            <count>150</count>
+          </li>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <count>4</count>
+          </li>
+        </requiredMaterials>
+      </li>
+      <li Class="NivarianCommander.CommanderResearchExtension">
+        <requiredStage>0</requiredStage>
+        <mothershipLevel>1</mothershipLevel>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_Support13</defName>
+    <label>涅瓦莲舰队支援协议</label>
+    <description>建立战术舰队折跃航道，可请求一艘母舰和八艘驱逐舰临时支援战场。
+
+通过上行链路研究终端交付所需材料并完成研究。母舰达到4级后，方可调用这项支援。
+
+若已开启连续体任务，须先完成第6阶段“舰队支援”，取得研究资料。</description>
+    <baseCost>6000</baseCost>
+    <prerequisites>
+      <li>NMC_Support15</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>5</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li>
+            <thingDef>Steel</thingDef>
+            <count>500</count>
+          </li>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <count>16</count>
+          </li>
+          <li>
+            <thingDef>Nivarian_DragonCrystal</thingDef>
+            <count>90</count>
+          </li>
+        </requiredMaterials>
+      </li>
+      <li Class="NivarianCommander.CommanderResearchExtension">
+        <requiredStage>6</requiredStage>
+        <mothershipLevel>4</mothershipLevel>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_Support14</defName>
+    <label>特布鲁斯军团支援协议</label>
+    <description>建立与特布鲁斯军团的联络，允许请求特布鲁斯和十名近战战士增援。除能量外，军团还需要信标范围内的白银或黄金作为支援报酬。
+
+通过上行链路研究终端交付所需材料并完成研究。母舰达到2级后，方可调用这项支援。
+
+若已开启连续体任务，须先完成第3阶段“远征军团”，取得研究资料。</description>
+    <baseCost>3500</baseCost>
+    <prerequisites>
+      <li>NMC_Support09</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>5</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li>
+            <thingDef>Steel</thingDef>
+            <count>250</count>
+          </li>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <count>8</count>
+          </li>
+          <li>
+            <thingDef>Nivarian_DragonCrystal</thingDef>
+            <count>40</count>
+          </li>
+        </requiredMaterials>
+      </li>
+      <li Class="NivarianCommander.CommanderResearchExtension">
+        <requiredStage>3</requiredStage>
+        <mothershipLevel>2</mothershipLevel>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_Support15</defName>
+    <label>佐拉亚军团支援协议</label>
+    <description>建立与佐拉亚军团的联络，允许请求指挥舰佐拉亚和四艘辉光舰增援。除能量外，军团还需要信标范围内的白银或黄金作为支援报酬。
+
+通过上行链路研究终端交付所需材料并完成研究。母舰达到3级后，方可调用这项支援。
+
+若已开启连续体任务，须先完成第3阶段“远征军团”，取得研究资料。</description>
+    <baseCost>3500</baseCost>
+    <prerequisites>
+      <li>NMC_Support09</li>
+    </prerequisites>
+    <researchViewX>4</researchViewX>
+    <researchViewY>5</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li>
+            <thingDef>Steel</thingDef>
+            <count>250</count>
+          </li>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <count>8</count>
+          </li>
+          <li>
+            <thingDef>Nivarian_DragonCrystal</thingDef>
+            <count>40</count>
+          </li>
+        </requiredMaterials>
+      </li>
+      <li Class="NivarianCommander.CommanderResearchExtension">
+        <requiredStage>3</requiredStage>
+        <mothershipLevel>3</mothershipLevel>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_Support16</defName>
+    <label>赛达斯军团支援协议</label>
+    <description>建立与赛达斯军团的联络，允许请求赛达斯和三名黑暗执政官增援，以心灵支配转化敌人。除能量外，军团还需要信标范围内的白银或黄金作为支援报酬。
+
+通过上行链路研究终端交付所需材料并完成研究。母舰达到3级后，方可调用这项支援。
+
+若已开启连续体任务，须先完成第3阶段“远征军团”，取得研究资料。</description>
+    <baseCost>3500</baseCost>
+    <prerequisites>
+      <li>NMC_Support09</li>
+    </prerequisites>
+    <researchViewX>0</researchViewX>
+    <researchViewY>6</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li>
+            <thingDef>Steel</thingDef>
+            <count>250</count>
+          </li>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <count>8</count>
+          </li>
+          <li>
+            <thingDef>Nivarian_DragonCrystal</thingDef>
+            <count>40</count>
+          </li>
+        </requiredMaterials>
+      </li>
+      <li Class="NivarianCommander.CommanderResearchExtension">
+        <requiredStage>3</requiredStage>
+        <mothershipLevel>3</mothershipLevel>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_Support17</defName>
+    <label>超维空间巨石支援协议</label>
+    <description>允许部署超维空间巨石核心，建成可同时攻击多个目标、使其眩晕的远程防御设施。部署后仍需运入建材和接通电力。
+
+通过上行链路研究终端交付所需材料并完成研究。母舰达到3级后，方可调用这项支援。
+
+若已开启连续体任务，须先完成第4阶段“超维空间巨石”，取得研究资料。</description>
+    <baseCost>5000</baseCost>
+    <prerequisites>
+      <li>NMC_Support12</li>
+    </prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>6</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li>
+            <thingDef>Steel</thingDef>
+            <count>400</count>
+          </li>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <count>12</count>
+          </li>
+          <li>
+            <thingDef>Nivarian_DragonCrystal</thingDef>
+            <count>70</count>
+          </li>
+        </requiredMaterials>
+      </li>
+      <li Class="NivarianCommander.CommanderResearchExtension">
+        <requiredStage>4</requiredStage>
+        <mothershipLevel>3</mothershipLevel>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_Support18</defName>
+    <label>虚空抑制晶体支援协议</label>
+    <description>开放虚空抑制晶体，暂时减缓敌人的移动与攻击，并使范围内的敌方炮塔停火。
+
+通过上行链路研究终端交付所需材料并完成研究。母舰达到3级后，方可调用这项支援。</description>
+    <baseCost>4500</baseCost>
+    <prerequisites>
+      <li>NMC_Support10</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>6</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li>
+            <thingDef>Steel</thingDef>
+            <count>300</count>
+          </li>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <count>10</count>
+          </li>
+          <li>
+            <thingDef>Nivarian_DragonCrystal</thingDef>
+            <count>50</count>
+          </li>
+        </requiredMaterials>
+      </li>
+      <li Class="NivarianCommander.CommanderResearchExtension">
+        <requiredStage>0</requiredStage>
+        <mothershipLevel>3</mothershipLevel>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_Support19</defName>
+    <label>超维空间矩阵投射支援协议</label>
+    <description>开放跨殖民地炮塔投射。已登记炮塔可在远处形成临时战斗投影，本体为其提供能源和弹药，也会承受投影受到的损伤。
+
+通过上行链路研究终端交付所需材料并完成研究。母舰达到4级后，方可调用这项支援。
+
+若已开启连续体任务，须先完成第5阶段“超维空间投影”，取得研究资料。</description>
+    <baseCost>5000</baseCost>
+    <prerequisites>
+      <li>NMC_Support17</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>6</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li>
+            <thingDef>Steel</thingDef>
+            <count>400</count>
+          </li>
+          <li>
+            <thingDef>ComponentIndustrial</thingDef>
+            <count>12</count>
+          </li>
+          <li>
+            <thingDef>Nivarian_DragonCrystal</thingDef>
+            <count>70</count>
+          </li>
+        </requiredMaterials>
+      </li>
+      <li Class="NivarianCommander.CommanderResearchExtension">
+        <requiredStage>5</requiredStage>
+        <mothershipLevel>4</mothershipLevel>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_ParallelParticleCollectors</defName>
+    <label>粒子收集器并行阵列</label>
+    <description>协调多座粒子收集器的工作，消除它们之间的干扰。完成研究后，可以同时运行多座收集器，分别生产V点。
+
+每座收集器仍需独立供电和补充燃料，产量取决于各自的运行状态。</description>
+    <baseCost>6000</baseCost>
+    <prerequisites>
+      <li>NMC_Support06</li>
+    </prerequisites>
+    <researchViewX>5</researchViewX>
+    <researchViewY>3</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li>
+            <thingDef>Steel</thingDef>
+            <count>500</count>
+          </li>
+          <li>
+            <thingDef>ComponentSpacer</thingDef>
+            <count>6</count>
+          </li>
+          <li>
+            <thingDef>Nivarian_DragonCrystal</thingDef>
+            <count>120</count>
+          </li>
+        </requiredMaterials>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_GravityFrigateResearch</defName>
+    <label>涅瓦莲引力舰</label>
+    <description>解锁涅瓦莲引力舰的建造。它是一种兼顾轻型运输与对空拦截的舰船，可以用引力束将地面敌人举起，再以双束激光攻击。
+
+引力舰载重300千克，可在地图内升空作战，也可消耗化合燃料往返不同地点。</description>
+    <baseCost>6000</baseCost>
+    <prerequisites>
+      <li>NMC_Support05</li>
+    </prerequisites>
+    <researchViewX>5</researchViewX>
+    <researchViewY>4</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li>
+            <thingDef>Steel</thingDef>
+            <count>600</count>
+          </li>
+          <li>
+            <thingDef>ComponentSpacer</thingDef>
+            <count>12</count>
+          </li>
+          <li>
+            <thingDef>Nivarian_DragonCrystal</thingDef>
+            <count>180</count>
+          </li>
+        </requiredMaterials>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_CarrierResearch</defName>
+    <label>涅瓦莲航母</label>
+    <description>解锁涅瓦莲航母的建造。这种大型舰船以舰载机作战，自身不装备直接攻击武器，适合在战线后方提供持续航空支援。
+
+航母载重10000千克，能够用龙霜钢制造并维持最多8架舰载机。建造成本高昂，还需持续补充化合燃料与舰载机材料。</description>
+    <baseCost>15000</baseCost>
+    <prerequisites>
+      <li>NMC_GravityFrigateResearch</li>
+      <li>NMC_Support13</li>
+      <li>NMC_Support19</li>
+    </prerequisites>
+    <researchViewX>5</researchViewX>
+    <researchViewY>5</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li>
+            <thingDef>Nivarian_DragonfrostSteel</thingDef>
+            <count>2000</count>
+          </li>
+          <li>
+            <thingDef>ComponentSpacer</thingDef>
+            <count>40</count>
+          </li>
+          <li>
+            <thingDef>Nivarian_DragonCrystal</thingDef>
+            <count>800</count>
+          </li>
+        </requiredMaterials>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+</Defs>

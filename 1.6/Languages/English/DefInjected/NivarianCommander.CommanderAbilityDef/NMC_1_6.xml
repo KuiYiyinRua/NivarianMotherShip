@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_S01.label>Warp energy field</NMC_S01.label>
+  <NMC_S01.group>Defense and production</NMC_S01.group>
+  <NMC_S01.description>Establish a warp energy field at the selected position, powering friendly devices within 8 cells and restoring allies' energy. Total output is 10,000 W; units recover 20% of their maximum energy per second.
+
+Only one field can exist at a time. Initial deployment costs 1,000 P and 500 V; relocating an existing field costs 100 P and 50 V. Upkeep is 1 P and 1 V every 0.1 day. The field shuts down if reserves are insufficient.
+
+After researching cross-domain personnel warp, colonists can warp directly to the field. Deployment and relocation cooldown then increases to 1 day.</NMC_S01.description>
+  <NMC_S01.researchLabel>Warp energy field support protocol</NMC_S01.researchLabel>
+  <NMC_S02.label>Orbital strike</NMC_S02.label>
+  <NMC_S02.group>Orbital firepower</NMC_S02.group>
+  <NMC_S02.description>Direct the mothership's orbital strikes. While aiming, click repeatedly to choose impact points. Each successful shot costs energy; ending targeting stops the attack.
+
+Each shot affects a radius of 3 cells, deals 30 base damage, penetrates 35% armor and deals 5 times damage to buildings. Blast damage does not fall off with distance. Cannot be used underground or directly hit targets under thick rock roofs.
+
+After researching precision ally recognition, the commander's direct fire avoids your faction and allies.</NMC_S02.description>
+  <NMC_S02.researchLabel>Orbital strike support protocol</NMC_S02.researchLabel>
+  <NMC_S02.extraCost>Charged per successful shot</NMC_S02.extraCost>
+  <NMC_S03.label>Shield overload</NMC_S03.label>
+  <NMC_S03.group>Defense and production</NMC_S03.group>
+  <NMC_S03.description>Give temporary shields to friendly units and buildings present on this map when cast, for 30 seconds. Each receives 200 shield points to absorb damage remaining after armor.
+
+Allies arriving later receive no shield. A building also under building overload can have both shields, up to 400 total. Shields can be ended early, without refunding energy or cooldown.</NMC_S03.description>
+  <NMC_S03.researchLabel>Shield overload support protocol</NMC_S03.researchLabel>
+  <NMC_S04.label>Solar bombardment</NMC_S04.label>
+  <NMC_S04.group>Orbital firepower</NMC_S04.group>
+  <NMC_S04.description>Call sustained orbital bombardment. Over 30 seconds, 300 energy shells strike an area with radius 13. Each blast has radius 5, deals 30 base damage and 5 times damage to buildings, with no distance falloff.
+
+Useful against dense fortifications. Once started, it cannot be stopped; move allies away first. Cannot be used underground or directly strike targets under thick rock roofs.</NMC_S04.description>
+  <NMC_S04.researchLabel>Solar bombardment support protocol</NMC_S04.researchLabel>
+  <NMC_S05.label>Solar ray gun</NMC_S05.label>
+  <NMC_S05.group>Orbital firepower</NMC_S05.group>
+  <NMC_S05.description>Project three solar rays for 8 seconds. They prefer separate enemy targets but may converge on one when few remain. Targets along their path take continuous energy and burn damage.
+
+Choose an origin to begin. Rays on the current map can be ended early. Cannot be used underground; thick rock roofs block strikes. Ending does not refund energy or reset cooldown.</NMC_S05.description>
+  <NMC_S05.researchLabel>Solar ray gun support protocol</NMC_S05.researchLabel>
+  <NMC_S06.label>Spacetime fluctuation</NMC_S06.label>
+  <NMC_S06.group>Defense and production</NMC_S06.group>
+  <NMC_S06.description>Accelerate production across all colonies. Friendly research, construction, growing, crafting and other work runs at 5 times normal speed for 60 seconds. Hyperdimensional monolith attack frequency also increases.
+
+Mothership resource income is not accelerated. Each colony's effect follows local time and can be ended early from the commander panel.</NMC_S06.description>
+  <NMC_S06.researchLabel>Spacetime fluctuation support protocol</NMC_S06.researchLabel>
+  <NMC_S07.label>Purification beam</NMC_S07.label>
+  <NMC_S07.group>Orbital firepower</NMC_S07.group>
+  <NMC_S07.description>Drop a mobile purification beam from orbit. Radius 4, duration 20 seconds, movement 3 cells per second. It pursues enemies automatically and deals continuous energy and burn damage along its path.
+
+Draft it to direct movement manually; undrafting restores automatic pursuit. Cannot be used underground; thick rock blocks strikes. Early termination does not refund energy or cooldown.</NMC_S07.description>
+  <NMC_S07.researchLabel>Purification beam support protocol</NMC_S07.researchLabel>
+  <NMC_S08.label>Shadow core</NMC_S08.label>
+  <NMC_S08.group>Shadow and control</NMC_S08.group>
+  <NMC_S08.description>Deploy a shadow core. Once colonists supply steel, components and dragon crystals, the mothership builds it into a shadow energy tower.
+
+The tower sends 120 P and 80 V to the mothership per day and cloaks allies within 7 cells. It does not cloak itself. Multiple towers can produce resources independently.</NMC_S08.description>
+  <NMC_S08.researchLabel>Shadow core support protocol</NMC_S08.researchLabel>
+  <NMC_S08.extraCost>Steel 150 · Components 4 · Dragon crystals 25</NMC_S08.extraCost>
+  <NMC_S09.label>Shadow guard</NMC_S09.label>
+  <NMC_S09.group>Shadow and control</NMC_S09.group>
+  <NMC_S09.description>Request four shadow guards for 120 seconds. These melee specialists wear ghost armor and carry biocoded masterwork weapons. They can attack while invisible, but detection still reveals them.
+
+Requires a surviving, non-hostile Nivarian survivors faction. Guards choose their own targets and cannot be drafted. Members and equipment still carried withdraw when support ends.</NMC_S09.description>
+  <NMC_S09.researchLabel>Shadow guard support protocol</NMC_S09.researchLabel>
+  <NMC_S10.label>Black hole</NMC_S10.label>
+  <NMC_S10.group>Shadow and control</NMC_S10.group>
+  <NMC_S10.description>Create an 8-second gravity vortex. Enemies within 8 cells are pulled to its center at 12 cells per second and temporarily lose all armor. Downed and airborne enemies are affected too.
+
+The black hole itself deals no damage. Use it to gather scattered enemies for other attacks. It can be ended early.</NMC_S10.description>
+  <NMC_S10.researchLabel>Black hole support protocol</NMC_S10.researchLabel>
+  <NMC_S11.label>Time stop</NMC_S11.label>
+  <NMC_S11.group>Shadow and control</NMC_S11.group>
+  <NMC_S11.description>Stop movement and attacks of enemies present in all colonies when cast, for 30 seconds. Affects enemy creatures, mechanoids, drones and turrets.
+
+Enemies arriving later are unaffected. Restraint ends immediately if a target leaves or becomes friendly. Injuries and diseases continue progressing. All colonies' effects can be ended early.</NMC_S11.description>
+  <NMC_S11.researchLabel>Time stop support protocol</NMC_S11.researchLabel>
+  <NMC_S12.label>Building overload</NMC_S12.label>
+  <NMC_S12.group>Defense and production</NMC_S12.group>
+  <NMC_S12.description>Turn a friendly building into a defensive firing point for 45 seconds, with a 200-point shield and blue laser. The laser attacks every 0.5 seconds for 10 base damage.
+
+Each use consumes one overload charge. Charges start at zero, recover one every 3 days, and cap at three. Cancelling early does not refund energy, charges or cooldown.</NMC_S12.description>
+  <NMC_S12.researchLabel>Building overload support protocol</NMC_S12.researchLabel>
+  <NMC_S12.extraCost>Also consumes 1 overload charge per use</NMC_S12.extraCost>
+  <NMC_S13.label>Nivarian fleet</NMC_S13.label>
+  <NMC_S13.group>Expedition reinforcements</NMC_S13.group>
+  <NMC_S13.description>Call one tactical mothership and eight destroyers. The fleet fights automatically in flight and stays for 120 seconds after all ships arrive.
+
+The mothership attacks with lasers and energy shells. Destroyer prism beams gain damage while continuously hitting the same target, resetting after switching targets or interruption. They do not freeze targets.
+
+Support ships can be destroyed by enemy fire. Ships, wrecks and dropped items are recalled when support ends.</NMC_S13.description>
+  <NMC_S13.researchLabel>Nivarian fleet support protocol</NMC_S13.researchLabel>
+  <NMC_S14.label>Tebrus legion</NMC_S14.label>
+  <NMC_S14.group>Expedition reinforcements</NMC_S14.group>
+  <NMC_S14.description>Request Tebrus and ten melee warriors for 120 seconds. Tebrus uses a psionic pulse gun and casts psionic storms against clustered enemies. Storms burn enemies and heal allies within range.
+
+Besides energy, pay 2,000 silver, or 200 gold if silver is insufficient. Supplies must be in range of a powered orbital trade beacon on this map.
+
+Requires non-hostile Nivarian survivors. The legion fights independently and cannot be drafted. Members and exclusive equipment are recovered on departure. All three expedition legions share a 7-day cooldown.</NMC_S14.description>
+  <NMC_S14.researchLabel>Tebrus legion support protocol</NMC_S14.researchLabel>
+  <NMC_S14.extraCost>2,000 silver or 200 gold</NMC_S14.extraCost>
+  <NMC_S15.label>Zoraya legion</NMC_S15.label>
+  <NMC_S15.group>Expedition reinforcements</NMC_S15.group>
+  <NMC_S15.description>Call command ship Zoraya and four glowships. They fight automatically for 120 seconds after arrival, using prism beams that freeze enemies and gain damage while locked on one target.
+
+Besides energy, pay 2,000 silver or, if insufficient, 200 gold, within range of a powered orbital trade beacon on this map.
+
+Requires non-hostile Nivarian survivors. Ships, wrecks and dropped items are recovered afterwards. All three expedition legions share a 7-day cooldown.</NMC_S15.description>
+  <NMC_S15.researchLabel>Zoraya legion support protocol</NMC_S15.researchLabel>
+  <NMC_S15.extraCost>2,000 silver or 200 gold</NMC_S15.extraCost>
+  <NMC_S16.label>Seydas legion</NMC_S16.label>
+  <NMC_S16.group>Expedition reinforcements</NMC_S16.group>
+  <NMC_S16.description>Request Seydas and three dark archons for 120 seconds. They use mind control, preferring valuable enemies, to recruit them into the Nivarian survivors faction. Controlled units do not become your colonists and remain with that faction after the legion leaves.
+
+Besides energy, pay 2,000 silver or, if insufficient, 200 gold, within range of a powered orbital trade beacon on this map.
+
+Requires non-hostile Nivarian survivors. Autonomous combat, no drafting. The four members and exclusive gear are recovered when leaving. All three legions share a 7-day cooldown.</NMC_S16.description>
+  <NMC_S16.researchLabel>Seydas legion support protocol</NMC_S16.researchLabel>
+  <NMC_S16.extraCost>2,000 silver or 200 gold</NMC_S16.extraCost>
+  <NMC_S17.label>Hyperdimensional monolith</NMC_S17.label>
+  <NMC_S17.group>Structures and projections</NMC_S17.group>
+  <NMC_S17.description>Deploy a hyperdimensional monolith core. After steel, components and dragon crystals are delivered, the mothership completes this permanent defense structure.
+
+Requires 1,000 W, no ammunition. Every 2 seconds it attacks up to 10 enemies within 60 cells, dealing 3 base damage and stunning each for 1 second. Useful for delaying mass advances.</NMC_S17.description>
+  <NMC_S17.researchLabel>Hyperdimensional monolith support protocol</NMC_S17.researchLabel>
+  <NMC_S17.extraCost>Steel 300 · Components 10 · Dragon crystals 60</NMC_S17.extraCost>
+  <NMC_S18.label>Void suppression crystal</NMC_S18.label>
+  <NMC_S18.group>Shadow and control</NMC_S18.group>
+  <NMC_S18.description>Warp in a void suppression crystal for 30 seconds. Within 13 cells, enemies' movement and attack speeds drop to 30%, and enemy turrets stop firing.
+
+The crystal cannot be destroyed by attacks. Enemies recover immediately on leaving range. Effects of multiple crystals do not stack. Crystals can be recalled early.</NMC_S18.description>
+  <NMC_S18.researchLabel>Void suppression crystal support protocol</NMC_S18.researchLabel>
+  <NMC_S19.label>Hyperdimensional matrix projection</NMC_S19.label>
+  <NMC_S19.group>Structures and projections</NMC_S19.group>
+  <NMC_S19.description>Project registered friendly turrets within 20 cells of the chosen center. Projections form in 5 seconds and fight for 60 seconds. If space is limited, only turrets that fit are projected.
+
+Projections start with half their source's current HP and use its power, fuel and ammunition. Sources cease fire during projection but can still be damaged and repaired. Projection damage is also applied to the source; choose positions carefully.
+
+Projections cannot be repaired or moved. Register, unregister or recall them from the turret. Early recall refunds neither energy nor cooldown.</NMC_S19.description>
+  <NMC_S19.researchLabel>Hyperdimensional matrix projection support protocol</NMC_S19.researchLabel>
+</LanguageData>

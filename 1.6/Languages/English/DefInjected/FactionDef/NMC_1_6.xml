@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_Continuum.label>Continuum combat network</NMC_Continuum.label>
+  <NMC_Continuum.fixedName>Continuum</NMC_Continuum.fixedName>
+  <NMC_Continuum.description>A hostile network of Continuum bases commanding mechanoids and Nira combat units to guard tactical data. Attacked bases may receive drop reinforcements.</NMC_Continuum.description>
+  <NMC_Continuum.pawnSingular>Continuum combat unit</NMC_Continuum.pawnSingular>
+  <NMC_Continuum.pawnsPlural>Continuum combat unit</NMC_Continuum.pawnsPlural>
+</LanguageData>

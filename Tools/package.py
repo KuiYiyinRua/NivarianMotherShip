@@ -1,0 +1,30 @@
+import argparse,hashlib,json,zipfile,xml.etree.ElementTree as ET
+from pathlib import Path
+mod=Path(__file__).resolve().parent.parent
+parser=argparse.ArgumentParser(description='Package only the loadable mod and player documentation.')
+parser.add_argument('--output',type=Path,default=mod/'dist')
+args=parser.parse_args()
+out=args.output.resolve()
+out.mkdir(parents=True,exist_ok=True)
+version=ET.parse(mod/'About/About.xml').findtext('modVersion')
+files=[]
+for folder in ['1.6','About','Royalty','NoRoyalty','Multiplayer']:
+ for p in (mod/folder).rglob('*'):
+  if p.is_file() and 'Source' not in p.relative_to(mod).parts and p.suffix.lower() not in ['.pdb','.log']:
+   files.append(p)
+files.extend([mod/'LoadFolders.xml',mod/'README.md',mod/'CHANGELOG.md'])
+files.extend(p for p in (mod/'Docs').glob('*.md'))
+manifest={str(p.relative_to(mod)).replace('\\','/'):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(files)}
+archive=out/f'NivarianMotherShip-v{version}.zip'
+with zipfile.ZipFile(archive,'w',compression=zipfile.ZIP_DEFLATED) as z:
+ for p in sorted(files):z.write(p,'NivarianMotherShip/'+str(p.relative_to(mod)).replace('\\','/'))
+ z.writestr('NivarianMotherShip/package-manifest.json',json.dumps(manifest,ensure_ascii=False,indent=2))
+with zipfile.ZipFile(archive) as z:
+ assert z.testzip() is None
+ assert len(z.namelist())==len(manifest)+1
+ for rel,digest in manifest.items():
+  assert hashlib.sha256(z.read('NivarianMotherShip/'+rel)).hexdigest()==digest
+digest=hashlib.sha256(archive.read_bytes()).hexdigest()
+(out/'SHA256SUMS.txt').write_text(digest+'  '+archive.name+'\n',encoding='utf-8')
+(out/'package-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
+print(json.dumps({'archive':archive.name,'files':len(manifest),'sha256':digest}))

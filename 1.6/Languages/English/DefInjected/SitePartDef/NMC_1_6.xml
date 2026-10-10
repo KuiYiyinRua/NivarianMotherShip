@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_ContinuumBase.label>Continuum base</NMC_ContinuumBase.label>
+  <NMC_ContinuumBase.description>A Continuum base storing mothership tactical data. Loot and artillery supplies lie in the core, behind sandbags and layered turret positions.
+
+Light outer turrets delay attackers; drones and heavy weapons occupy the middle; the inner ring guards the communications core and mortars. Destroying power cores disables connected electric turrets, but defenders and drop reinforcements keep fighting. Later bases grow in size and firepower.</NMC_ContinuumBase.description>
+</LanguageData>

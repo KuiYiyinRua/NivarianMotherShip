@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_ContinuumBase.label>連続体基地</NMC_ContinuumBase.label>
+  <NMC_ContinuumBase.description>母艦の戦術資料を保管する連続体基地。戦利品と砲兵補給は中心にあり、土嚢と多層砲塔で守られています。
+
+外周の軽砲塔が侵攻を妨げ、中層にドローンと重火力、内周に通信コアと迫撃砲。電源コア破壊で接続砲塔は停止しますが、守備隊と空挺援軍は戦闘を続けます。後の基地ほど規模と火力が増します。</NMC_ContinuumBase.description>
+</LanguageData>

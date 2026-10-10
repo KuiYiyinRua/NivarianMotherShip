@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_FieldRecall</defName>
+    <label>跨域人员折跃</label>
+    <description>将折跃能量场改造为人员接收信标。完成研究后，选中地图上的己方殖民者，即可使用“折跃至能量场”命令，立即前往已部署的能量场，也可跨越不同殖民地。
+
+若中心位置被占用，将改在场内最近的安全空地抵达。折跃不额外消耗能量，也没有人员折跃冷却；殖民者会中止手头工作、放下搬运中的物品，随身装备和背包一并带走。
+
+研究完成后，部署或迁移能量场的冷却时间延长为1天。</description>
+    <baseCost>2500</baseCost>
+    <prerequisites><li>NMC_TacticalProtocol</li></prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li><thingDef>Steel</thingDef><count>200</count></li>
+          <li><thingDef>ComponentIndustrial</thingDef><count>6</count></li>
+          <li><thingDef>Nivarian_DragonCrystal</thingDef><count>25</count></li>
+        </requiredMaterials>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+</Defs>

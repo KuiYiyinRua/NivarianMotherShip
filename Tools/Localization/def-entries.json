@@ -1,0 +1,1760 @@
+[
+  {
+    "folder": "1.6",
+    "type": "JobDef",
+    "path": "NMC_InstallStarshipBattery.reportString",
+    "id": 482
+  },
+  {
+    "folder": "1.6",
+    "type": "WorkGiverDef",
+    "path": "NMC_UpgradeAircraftStarship.label",
+    "id": 483
+  },
+  {
+    "folder": "1.6",
+    "type": "WorkGiverDef",
+    "path": "NMC_UpgradeAircraftStarship.verb",
+    "id": 484
+  },
+  {
+    "folder": "1.6",
+    "type": "WorkGiverDef",
+    "path": "NMC_UpgradeAircraftStarship.gerund",
+    "id": 484
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S01.label",
+    "id": 485
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S01.group",
+    "id": 76
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S01.description",
+    "id": 486
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S01.researchLabel",
+    "id": 487
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S02.label",
+    "id": 488
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S02.group",
+    "id": 75
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S02.description",
+    "id": 489
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S02.researchLabel",
+    "id": 490
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S02.extraCost",
+    "id": 491
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S03.label",
+    "id": 492
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S03.group",
+    "id": 76
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S03.description",
+    "id": 493
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S03.researchLabel",
+    "id": 494
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S04.label",
+    "id": 222
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S04.group",
+    "id": 75
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S04.description",
+    "id": 495
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S04.researchLabel",
+    "id": 496
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S05.label",
+    "id": 497
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S05.group",
+    "id": 75
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S05.description",
+    "id": 498
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S05.researchLabel",
+    "id": 499
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S06.label",
+    "id": 500
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S06.group",
+    "id": 76
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S06.description",
+    "id": 501
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S06.researchLabel",
+    "id": 502
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S07.label",
+    "id": 221
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S07.group",
+    "id": 75
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S07.description",
+    "id": 503
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S07.researchLabel",
+    "id": 504
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S08.label",
+    "id": 505
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S08.group",
+    "id": 77
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S08.description",
+    "id": 506
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S08.researchLabel",
+    "id": 507
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S08.extraCost",
+    "id": 508
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S09.label",
+    "id": 509
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S09.group",
+    "id": 77
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S09.description",
+    "id": 510
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S09.researchLabel",
+    "id": 511
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S10.label",
+    "id": 512
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S10.group",
+    "id": 77
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S10.description",
+    "id": 513
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S10.researchLabel",
+    "id": 514
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S11.label",
+    "id": 515
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S11.group",
+    "id": 77
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S11.description",
+    "id": 516
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S11.researchLabel",
+    "id": 517
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S12.label",
+    "id": 518
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S12.group",
+    "id": 76
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S12.description",
+    "id": 519
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S12.researchLabel",
+    "id": 520
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S12.extraCost",
+    "id": 521
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S13.label",
+    "id": 522
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S13.group",
+    "id": 78
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S13.description",
+    "id": 523
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S13.researchLabel",
+    "id": 524
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S14.label",
+    "id": 525
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S14.group",
+    "id": 78
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S14.description",
+    "id": 526
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S14.researchLabel",
+    "id": 527
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S14.extraCost",
+    "id": 528
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S15.label",
+    "id": 529
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S15.group",
+    "id": 78
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S15.description",
+    "id": 530
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S15.researchLabel",
+    "id": 531
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S15.extraCost",
+    "id": 528
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S16.label",
+    "id": 532
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S16.group",
+    "id": 78
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S16.description",
+    "id": 533
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S16.researchLabel",
+    "id": 534
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S16.extraCost",
+    "id": 528
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S17.label",
+    "id": 218
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S17.group",
+    "id": 79
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S17.description",
+    "id": 535
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S17.researchLabel",
+    "id": 536
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S17.extraCost",
+    "id": 537
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S18.label",
+    "id": 538
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S18.group",
+    "id": 77
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S18.description",
+    "id": 539
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S18.researchLabel",
+    "id": 540
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S19.label",
+    "id": 541
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S19.group",
+    "id": 79
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S19.description",
+    "id": 542
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.CommanderAbilityDef",
+    "path": "NMC_S19.researchLabel",
+    "id": 543
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_Carrier.label",
+    "id": 544
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_Carrier.description",
+    "id": 545
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_CarrierIncoming.label",
+    "id": 546
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_CarrierLeaving.label",
+    "id": 547
+  },
+  {
+    "folder": "1.6",
+    "type": "TransportShipDef",
+    "path": "NMC_CarrierShip.label",
+    "id": 544
+  },
+  {
+    "folder": "1.6",
+    "type": "WorldObjectDef",
+    "path": "NMC_CarrierFlying.label",
+    "id": 544
+  },
+  {
+    "folder": "1.6",
+    "type": "WorldObjectDef",
+    "path": "NMC_CarrierFlying.description",
+    "id": 548
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_GravityFrigate.label",
+    "id": 549
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_GravityFrigate.description",
+    "id": 550
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_GravityFrigateIncoming.label",
+    "id": 551
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_GravityFrigateLeaving.label",
+    "id": 552
+  },
+  {
+    "folder": "1.6",
+    "type": "TransportShipDef",
+    "path": "NMC_GravityFrigateShip.label",
+    "id": 549
+  },
+  {
+    "folder": "1.6",
+    "type": "WorldObjectDef",
+    "path": "NMC_GravityFrigateFlying.label",
+    "id": 549
+  },
+  {
+    "folder": "1.6",
+    "type": "WorldObjectDef",
+    "path": "NMC_GravityFrigateFlying.description",
+    "id": 553
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_CarrierInterceptor.label",
+    "id": 554
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_CarrierInterceptor.description",
+    "id": 555
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_InterceptorFallbackRound.label",
+    "id": 556
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.SupportDamageDef",
+    "path": "NMC_FrigateBeamDamage.label",
+    "id": 557
+  },
+  {
+    "folder": "1.6",
+    "type": "HediffDef",
+    "path": "NMC_ShadowInvisibility.label",
+    "id": 558
+  },
+  {
+    "folder": "1.6",
+    "type": "HediffDef",
+    "path": "NMC_ShadowInvisibility.description",
+    "id": 559
+  },
+  {
+    "folder": "1.6",
+    "type": "FactionDef",
+    "path": "NMC_Continuum.label",
+    "id": 560
+  },
+  {
+    "folder": "1.6",
+    "type": "FactionDef",
+    "path": "NMC_Continuum.fixedName",
+    "id": 561
+  },
+  {
+    "folder": "1.6",
+    "type": "FactionDef",
+    "path": "NMC_Continuum.description",
+    "id": 562
+  },
+  {
+    "folder": "1.6",
+    "type": "FactionDef",
+    "path": "NMC_Continuum.pawnSingular",
+    "id": 563
+  },
+  {
+    "folder": "1.6",
+    "type": "FactionDef",
+    "path": "NMC_Continuum.pawnsPlural",
+    "id": 563
+  },
+  {
+    "folder": "1.6",
+    "type": "SitePartDef",
+    "path": "NMC_ContinuumBase.label",
+    "id": 564
+  },
+  {
+    "folder": "1.6",
+    "type": "SitePartDef",
+    "path": "NMC_ContinuumBase.description",
+    "id": 565
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_ContinuumRelay.label",
+    "id": 566
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_ContinuumRelay.description",
+    "id": 567
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_ContinuumPowerCore.label",
+    "id": 568
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_ContinuumPowerCore.description",
+    "id": 569
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.SupportDamageDef",
+    "path": "NMC_OrbitalEnergy.label",
+    "id": 570
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.SupportDamageDef",
+    "path": "NMC_SolarBombEnergy.label",
+    "id": 571
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.SupportDamageDef",
+    "path": "NMC_SolarRayEnergy.label",
+    "id": 572
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.SupportDamageDef",
+    "path": "NMC_SolarRayBurn.label",
+    "id": 573
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.SupportDamageDef",
+    "path": "NMC_PurificationEnergy.label",
+    "id": 574
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.SupportDamageDef",
+    "path": "NMC_PurificationBurn.label",
+    "id": 575
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.SupportDamageDef",
+    "path": "NMC_OverloadEnergy.label",
+    "id": 576
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_OverloadBolt.label",
+    "id": 577
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_FieldRecall.label",
+    "id": 578
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_FieldRecall.description",
+    "id": 579
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_TacticalMothership.label",
+    "id": 580
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_TacticalMothership.description",
+    "id": 581
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_FleetDestroyer.label",
+    "id": 582
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_FleetDestroyer.description",
+    "id": 583
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_FleetMothershipGun.label",
+    "id": 584
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_FleetDestroyerGun.label",
+    "id": 585
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_FleetMothershipBolt.label",
+    "id": 586
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_FleetDestroyerBolt.label",
+    "id": 587
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.SupportDamageDef",
+    "path": "NMC_FleetMothershipEnergy.label",
+    "id": 588
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.SupportDamageDef",
+    "path": "NMC_FleetDestroyerEnergy.label",
+    "id": 589
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.SupportDamageDef",
+    "path": "NMC_FleetMothershipLaser.label",
+    "id": 590
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_FleetWreck.label",
+    "id": 591
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_FleetWreck.description",
+    "id": 592
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_PreciseFriendlyIdentification.label",
+    "id": 716
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_PreciseFriendlyIdentification.description",
+    "id": 717
+  },
+  {
+    "folder": "1.6",
+    "type": "PawnKindDef",
+    "path": "NMC_GhostGuard.label",
+    "id": 593
+  },
+  {
+    "folder": "1.6",
+    "type": "HediffDef",
+    "path": "NMC_GhostIdentity.label",
+    "id": 594
+  },
+  {
+    "folder": "1.6",
+    "type": "HediffDef",
+    "path": "NMC_GhostIdentity.description",
+    "id": 595
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_PhaseTwinBlade.label",
+    "id": 596
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_PhaseTwinBlade.description",
+    "id": 597
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_PhaseTwinBlade.tools.0.label",
+    "id": 598
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_VoidHeavyBlade.label",
+    "id": 599
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_VoidHeavyBlade.description",
+    "id": 600
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_VoidHeavyBlade.tools.0.label",
+    "id": 601
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_ShadowLance.label",
+    "id": 602
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_ShadowLance.description",
+    "id": 603
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_ShadowLance.tools.0.label",
+    "id": 604
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_GhostSuit.label",
+    "id": 605
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_GhostSuit.description",
+    "id": 606
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_GhostHelmet.label",
+    "id": 607
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_GhostHelmet.description",
+    "id": 608
+  },
+  {
+    "folder": "1.6",
+    "type": "BackstoryDef",
+    "path": "NMC_FieldTrainingChildhood.title",
+    "id": 609
+  },
+  {
+    "folder": "1.6",
+    "type": "BackstoryDef",
+    "path": "NMC_FieldTrainingChildhood.titleShort",
+    "id": 610
+  },
+  {
+    "folder": "1.6",
+    "type": "BackstoryDef",
+    "path": "NMC_FieldTrainingChildhood.baseDesc",
+    "id": 611
+  },
+  {
+    "folder": "1.6",
+    "type": "BackstoryDef",
+    "path": "NMC_FieldTrainingAdulthood.title",
+    "id": 612
+  },
+  {
+    "folder": "1.6",
+    "type": "BackstoryDef",
+    "path": "NMC_FieldTrainingAdulthood.titleShort",
+    "id": 613
+  },
+  {
+    "folder": "1.6",
+    "type": "BackstoryDef",
+    "path": "NMC_FieldTrainingAdulthood.baseDesc",
+    "id": 614
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support01.label",
+    "id": 487
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support01.description",
+    "id": 615
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support02.label",
+    "id": 490
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support02.description",
+    "id": 616
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support03.label",
+    "id": 494
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support03.description",
+    "id": 617
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support04.label",
+    "id": 496
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support04.description",
+    "id": 618
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support05.label",
+    "id": 499
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support05.description",
+    "id": 619
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support06.label",
+    "id": 502
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support06.description",
+    "id": 620
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support07.label",
+    "id": 504
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support07.description",
+    "id": 621
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support08.label",
+    "id": 507
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support08.description",
+    "id": 622
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support09.label",
+    "id": 511
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support09.description",
+    "id": 623
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support10.label",
+    "id": 514
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support10.description",
+    "id": 624
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support11.label",
+    "id": 517
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support11.description",
+    "id": 625
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support12.label",
+    "id": 520
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support12.description",
+    "id": 626
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support13.label",
+    "id": 524
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support13.description",
+    "id": 627
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support14.label",
+    "id": 527
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support14.description",
+    "id": 628
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support15.label",
+    "id": 531
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support15.description",
+    "id": 629
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support16.label",
+    "id": 534
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support16.description",
+    "id": 630
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support17.label",
+    "id": 536
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support17.description",
+    "id": 631
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support18.label",
+    "id": 540
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support18.description",
+    "id": 632
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support19.label",
+    "id": 543
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Support19.description",
+    "id": 633
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_ParallelParticleCollectors.label",
+    "id": 634
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_ParallelParticleCollectors.description",
+    "id": 635
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_GravityFrigateResearch.label",
+    "id": 549
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_GravityFrigateResearch.description",
+    "id": 636
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_CarrierResearch.label",
+    "id": 544
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_CarrierResearch.description",
+    "id": 637
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_VoidRay.label",
+    "id": 638
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_VoidRay.description",
+    "id": 639
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_VoidRayGun.label",
+    "id": 640
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_Zoraya.label",
+    "id": 641
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_Zoraya.description",
+    "id": 642
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_ZorayaRayGun.label",
+    "id": 643
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.SupportDamageDef",
+    "path": "NMC_FleetRayEnergy.label",
+    "id": 644
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_TacticalProtocol.label",
+    "id": 645
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_TacticalProtocol.description",
+    "id": 646
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_LightWeapons.label",
+    "id": 647
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_LightWeapons.description",
+    "id": 648
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_ShadowWarp.label",
+    "id": 649
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_ShadowWarp.description",
+    "id": 650
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Spacetime.label",
+    "id": 651
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_Spacetime.description",
+    "id": 652
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_LegionContact.label",
+    "id": 653
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_LegionContact.description",
+    "id": 654
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_HigherDimensions.label",
+    "id": 655
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_HigherDimensions.description",
+    "id": 656
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_FleetBeacon.label",
+    "id": 657
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_FleetBeacon.description",
+    "id": 658
+  },
+  {
+    "folder": "1.6",
+    "type": "PawnKindDef",
+    "path": "NMC_Seydas.label",
+    "id": 452
+  },
+  {
+    "folder": "1.6",
+    "type": "PawnKindDef",
+    "path": "NMC_DarkArchon.label",
+    "id": 659
+  },
+  {
+    "folder": "1.6",
+    "type": "HediffDef",
+    "path": "NMC_SeydasConversion.label",
+    "id": 454
+  },
+  {
+    "folder": "1.6",
+    "type": "HediffDef",
+    "path": "NMC_SeydasConversion.description",
+    "id": 660
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_ArchonRobe.label",
+    "id": 661
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_ArchonRobe.description",
+    "id": 662
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_SeydasRobe.label",
+    "id": 663
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_SeydasRobe.description",
+    "id": 664
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_ArchonCirclet.label",
+    "id": 665
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_ArchonCirclet.description",
+    "id": 666
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_SeydasCirclet.label",
+    "id": 667
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_SeydasCirclet.description",
+    "id": 668
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_ArchonFocus.label",
+    "id": 669
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_ArchonFocus.description",
+    "id": 670
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_ArchonFocus.tools.0.label",
+    "id": 671
+  },
+  {
+    "folder": "1.6",
+    "type": "AbilityDef",
+    "path": "NMC_SeydasControlFallback.label",
+    "id": 672
+  },
+  {
+    "folder": "1.6",
+    "type": "AbilityDef",
+    "path": "NMC_SeydasControlFallback.description",
+    "id": 673
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_ShadowCore.label",
+    "id": 674
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_ShadowCore.description",
+    "id": 675
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_MonolithCore.label",
+    "id": 676
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_MonolithCore.description",
+    "id": 677
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_ShadowEnergyTower.label",
+    "id": 678
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_ShadowEnergyTower.description",
+    "id": 679
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_HyperdimensionalMonolith.label",
+    "id": 218
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_HyperdimensionalMonolith.description",
+    "id": 680
+  },
+  {
+    "folder": "1.6",
+    "type": "NivarianCommander.SupportDamageDef",
+    "path": "NMC_MonolithEnergy.label",
+    "id": 681
+  },
+  {
+    "folder": "1.6",
+    "type": "Nivarian_Race.Code.Defs.NivarianMSSRTabDef",
+    "path": "NMC_Commander.label",
+    "id": 682
+  },
+  {
+    "folder": "1.6",
+    "type": "PawnKindDef",
+    "path": "NMC_Tebrus.label",
+    "id": 472
+  },
+  {
+    "folder": "1.6",
+    "type": "PawnKindDef",
+    "path": "NMC_LegionWarrior.label",
+    "id": 683
+  },
+  {
+    "folder": "1.6",
+    "type": "HediffDef",
+    "path": "NMC_LegionIdentity.label",
+    "id": 684
+  },
+  {
+    "folder": "1.6",
+    "type": "HediffDef",
+    "path": "NMC_LegionIdentity.description",
+    "id": 685
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_TebrusRobe.label",
+    "id": 686
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_TebrusRobe.description",
+    "id": 687
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_TebrusCirclet.label",
+    "id": 688
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_TebrusCirclet.description",
+    "id": 689
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_LegionSuit.label",
+    "id": 690
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_LegionSuit.description",
+    "id": 691
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_LegionCirclet.label",
+    "id": 692
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_LegionCirclet.description",
+    "id": 693
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_LegionBlade.label",
+    "id": 694
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_LegionBlade.description",
+    "id": 695
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_LegionBlade.tools.0.label",
+    "id": 598
+  },
+  {
+    "folder": "1.6",
+    "type": "DamageDef",
+    "path": "NMC_TebrusPulseDamage.label",
+    "id": 696
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_TebrusPulse.label",
+    "id": 696
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_TebrusPulseGun.label",
+    "id": 697
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_TebrusPulseGun.description",
+    "id": 698
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_TebrusPulseGun.tools.0.label",
+    "id": 699
+  },
+  {
+    "folder": "1.6",
+    "type": "AbilityDef",
+    "path": "NMC_TebrusStormFallback.label",
+    "id": 700
+  },
+  {
+    "folder": "1.6",
+    "type": "AbilityDef",
+    "path": "NMC_TebrusStormFallback.description",
+    "id": 701
+  },
+  {
+    "folder": "1.6",
+    "type": "DamageDef",
+    "path": "NMC_TebrusStormDamage.label",
+    "id": 702
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_VoidSuppressionCrystal.label",
+    "id": 538
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_VoidSuppressionCrystal.description",
+    "id": 703
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_NutrientEnergyTower.label",
+    "id": 704
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_NutrientEnergyTower.description",
+    "id": 705
+  },
+  {
+    "folder": "1.6",
+    "type": "WorkGiverDef",
+    "path": "NMC_FillNutrientEnergyTower.label",
+    "id": 706
+  },
+  {
+    "folder": "1.6",
+    "type": "WorkGiverDef",
+    "path": "NMC_FillNutrientEnergyTower.verb",
+    "id": 707
+  },
+  {
+    "folder": "1.6",
+    "type": "WorkGiverDef",
+    "path": "NMC_FillNutrientEnergyTower.gerund",
+    "id": 708
+  },
+  {
+    "folder": "1.6",
+    "type": "MainButtonDef",
+    "path": "NMC_MothershipPointShop.label",
+    "id": 709
+  },
+  {
+    "folder": "1.6",
+    "type": "MainButtonDef",
+    "path": "NMC_MothershipPointShop.description",
+    "id": 710
+  },
+  {
+    "folder": "Royalty",
+    "type": "AbilityDef",
+    "path": "NMC_SeydasControlNative.label",
+    "id": 672
+  },
+  {
+    "folder": "Royalty",
+    "type": "AbilityDef",
+    "path": "NMC_SeydasControlNative.description",
+    "id": 673
+  },
+  {
+    "folder": "Royalty",
+    "type": "AbilityDef",
+    "path": "NMC_TebrusStormNative.label",
+    "id": 700
+  },
+  {
+    "folder": "Royalty",
+    "type": "AbilityDef",
+    "path": "NMC_TebrusStormNative.description",
+    "id": 701
+  }
+]

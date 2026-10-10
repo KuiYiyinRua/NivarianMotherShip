@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_FieldRecall.label>Distorsion interzone du personnel</NMC_FieldRecall.label>
+  <NMC_FieldRecall.description>Transforme le champ en balise de réception du personnel. Sélectionnez votre colon et utilisez le déplacement vers le champ, instantanément, même entre colonies.
+
+Si le centre est occupé, arrivée sur la case libre sûre la plus proche du champ. Aucun coût énergétique ni recharge du personnel. Le colon interrompt son travail, pose son chargement et emporte équipement et inventaire.
+
+La recherche augmente la recharge du déploiement et du déplacement du champ à 1 jour.</NMC_FieldRecall.description>
+  <NMC_PreciseFriendlyIdentification.label>Identification précise des alliés</NMC_PreciseFriendlyIdentification.label>
+  <NMC_PreciseFriendlyIdentification.description>Améliore l'identification ami-ennemi pour épargner vos unités, bâtiments et alliés. Les armes exclusives de la garde et des légions suivent aussi ce protocole.
+
+Livrez les matériaux et terminez la recherche au terminal de liaison montante. Effet permanent ensuite, sans achat supplémentaire dans le panneau.</NMC_PreciseFriendlyIdentification.description>
+  <NMC_Support01.label>Protocole de soutien du champ de distorsion</NMC_Support01.label>
+  <NMC_Support01.description>Crée un champ déployable à distance pour alimenter structures et unités alliées. Un champ existant peut être déplacé pour défendre le front ou travailler temporairement.
+
+Livrez les matériaux et terminez la recherche au terminal de liaison montante. Le soutien devient accessible depuis le panneau du commandant.</NMC_Support01.description>
+  <NMC_Support02.label>Protocole de frappe orbitale</NMC_Support02.label>
+  <NMC_Support02.description>Débloque les frappes orbitales. Le commandant peut marquer successivement des cibles au sol. Chaque tir coûte de l'énergie.
+
+Livrez les matériaux et terminez la recherche au terminal de liaison montante. Le soutien devient accessible depuis le panneau du commandant.</NMC_Support02.description>
+  <NMC_Support03.label>Protocole de surcharge de bouclier</NMC_Support03.label>
+  <NMC_Support03.description>Permet au vaisseau-mère de protéger temporairement les alliés de la carte avec des boucliers.
+
+Livrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 1 du vaisseau-mère requis.</NMC_Support03.description>
+  <NMC_Support04.label>Protocole de bombardement solaire</NMC_Support04.label>
+  <NMC_Support04.description>Débloque le bombardement solaire de zone, déversant des obus sur ennemis et bâtiments regroupés. Impossible à interrompre après lancement.
+
+Livrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 4 du vaisseau-mère requis.
+
+Si la campagne du Continuum est active, terminez d’abord l’étape 8 (« Bombardement solaire ») pour obtenir les données.</NMC_Support04.description>
+  <NMC_Support05.label>Protocole du canon à rayons solaires</NMC_Support05.label>
+  <NMC_Support05.description>Débloque le canon à rayons solaires, projetant trois rayons de poursuite sur les ennemis au sol.
+
+Livrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 2 du vaisseau-mère requis.</NMC_Support05.description>
+  <NMC_Support06.label>Protocole de fluctuation spatiotemporelle</NMC_Support06.label>
+  <NMC_Support06.description>Accélère temporairement la production des colonies et la fréquence d'attaque du monolithe.
+
+Livrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 2 du vaisseau-mère requis.</NMC_Support06.description>
+  <NMC_Support07.label>Protocole du rayon purificateur</NMC_Support07.label>
+  <NMC_Support07.description>Débloque un rayon purificateur mobile, en poursuite automatique ou dirigé par le commandant.
+
+Livrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 4 du vaisseau-mère requis.
+
+Si la campagne du Continuum est active, terminez d’abord l’étape 7 (« Rayon purificateur ») pour obtenir les données.</NMC_Support07.description>
+  <NMC_Support08.label>Protocole du noyau d'ombre</NMC_Support08.label>
+  <NMC_Support08.description>Permet de déployer des noyaux pour construire des tours fournissant ressources et camouflage allié. Matériaux à livrer après déploiement.
+
+Livrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 1 du vaisseau-mère requis.
+
+Si la campagne du Continuum est active, terminez d’abord l’étape 1 (« Tour de cristal d'ombre ») pour obtenir les données.</NMC_Support08.description>
+  <NMC_Support09.label>Protocole de la garde de l'ombre</NMC_Support09.label>
+  <NMC_Support09.description>Établit une liaison avec la garde de l'ombre pour appeler quatre guerrières de mêlée invisibles.
+
+Livrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 2 du vaisseau-mère requis.
+
+Si la campagne du Continuum est active, terminez d’abord l’étape 2 (« Renforts de l'ombre ») pour obtenir les données.</NMC_Support09.description>
+  <NMC_Support10.label>Protocole du trou noir</NMC_Support10.label>
+  <NMC_Support10.description>Permet de créer des vortex brefs regroupant les ennemis et affaiblissant leur armure.
+
+Livrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 2 du vaisseau-mère requis.</NMC_Support10.description>
+  <NMC_Support11.label>Protocole d'arrêt du temps</NMC_Support11.label>
+  <NMC_Support11.description>Arrête temporairement déplacements et attaques des ennemis présents dans les colonies, pour défendre ou se retirer.
+
+Livrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 4 du vaisseau-mère requis.</NMC_Support11.description>
+  <NMC_Support12.label>Protocole de surcharge de bâtiment</NMC_Support12.label>
+  <NMC_Support12.description>Débloque la surcharge, ajoutant temporairement boucliers et lasers aux bâtiments alliés. Consomme des charges régénérées périodiquement.
+
+Livrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 1 du vaisseau-mère requis.</NMC_Support12.description>
+  <NMC_Support13.label>Protocole de flotte nivariane</NMC_Support13.label>
+  <NMC_Support13.description>Établit des routes de distorsion pour appeler un vaisseau-mère et huit destroyers en soutien temporaire.
+
+Livrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 4 du vaisseau-mère requis.
+
+Si la campagne du Continuum est active, terminez d’abord l’étape 6 (« Soutien de flotte ») pour obtenir les données.</NMC_Support13.description>
+  <NMC_Support14.label>Protocole de la légion de Tebrus</NMC_Support14.label>
+  <NMC_Support14.description>Contacte la légion de Tebrus pour appeler Tebrus et dix guerriers de mêlée. Outre l'énergie, paiement en argent ou or à portée de balise.
+
+Livrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 2 du vaisseau-mère requis.
+
+Si la campagne du Continuum est active, terminez d’abord l’étape 3 (« Légion expéditionnaire ») pour obtenir les données.</NMC_Support14.description>
+  <NMC_Support15.label>Protocole de la légion de Zoraya</NMC_Support15.label>
+  <NMC_Support15.description>Contacte la légion de Zoraya pour appeler le vaisseau de commandement et quatre vaisseaux lumineux. Outre l'énergie, argent ou or à portée de balise requis.
+
+Livrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 3 du vaisseau-mère requis.
+
+Si la campagne du Continuum est active, terminez d’abord l’étape 3 (« Légion expéditionnaire ») pour obtenir les données.</NMC_Support15.description>
+  <NMC_Support16.label>Protocole de la légion de Seydas</NMC_Support16.label>
+  <NMC_Support16.description>Contacte Seydas et trois archontes noirs pour convertir les ennemis par contrôle mental. Outre l'énergie, argent ou or à portée de balise requis.
+
+Livrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 3 du vaisseau-mère requis.
+
+Si la campagne du Continuum est active, terminez d’abord l’étape 3 (« Légion expéditionnaire ») pour obtenir les données.</NMC_Support16.description>
+  <NMC_Support17.label>Protocole du monolithe hyperdimensionnel</NMC_Support17.label>
+  <NMC_Support17.description>Déploie des noyaux de monolithes attaquant et étourdissant plusieurs cibles à distance. Matériaux et alimentation requis après déploiement.
+
+Livrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 3 du vaisseau-mère requis.
+
+Si la campagne du Continuum est active, terminez d’abord l’étape 4 (« Monolithe hyperdimensionnel ») pour obtenir les données.</NMC_Support17.description>
+  <NMC_Support18.label>Protocole du cristal de suppression du vide</NMC_Support18.label>
+  <NMC_Support18.description>Débloque les cristaux du vide ralentissant les ennemis et arrêtant les tourelles ennemies proches.
+
+Livrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 3 du vaisseau-mère requis.</NMC_Support18.description>
+  <NMC_Support19.label>Protocole de projection matricielle hyperdimensionnelle</NMC_Support19.label>
+  <NMC_Support19.description>Débloque la projection de tourelles entre colonies. Copies de combat temporaires à distance ; originaux fournissant énergie et munitions et recevant leurs dégâts.
+
+Livrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 4 du vaisseau-mère requis.
+
+Si la campagne du Continuum est active, terminez d’abord l’étape 5 (« Projection hyperdimensionnelle ») pour obtenir les données.</NMC_Support19.description>
+  <NMC_ParallelParticleCollectors.label>Réseau parallèle de collecteurs de particules</NMC_ParallelParticleCollectors.label>
+  <NMC_ParallelParticleCollectors.description>Supprime les interférences entre collecteurs. Plusieurs fonctionnent ensemble et produisent chacun des V.
+
+Chacun nécessite son énergie et carburant. Production selon son état.</NMC_ParallelParticleCollectors.description>
+  <NMC_GravityFrigateResearch.label>Vaisseau gravitationnel nivarian</NMC_GravityFrigateResearch.label>
+  <NMC_GravityFrigateResearch.description>Débloque le vaisseau gravitationnel : transport léger et interception, soulevant les ennemis au sol pour ses deux lasers.
+
+Capacité 300 kg, combat local en vol et voyages au carburant chimique.</NMC_GravityFrigateResearch.description>
+  <NMC_CarrierResearch.label>Porte-aéronefs nivarian</NMC_CarrierResearch.label>
+  <NMC_CarrierResearch.description>Débloque les porte-aéronefs nivarians. Sans armes directes, ils combattent avec leurs intercepteurs depuis l'arrière du front.
+
+Capacité 10 000 kg, jusqu'à 8 appareils fabriqués avec de l'acier dracogivré. Construction coûteuse, besoins continus en carburant et matériaux.</NMC_CarrierResearch.description>
+  <NMC_TacticalProtocol.label>Protocole de soutien tactique</NMC_TacticalProtocol.label>
+  <NMC_TacticalProtocol.description>Protocole de soutien tactique du commandant. Livrez les matériaux et terminez la recherche au terminal de liaison montante nivarian.</NMC_TacticalProtocol.description>
+  <NMC_LightWeapons.label>Réseau d'armes lumineuses</NMC_LightWeapons.label>
+  <NMC_LightWeapons.description>Réseau d'armes lumineuses du commandant. Livrez les matériaux et terminez la recherche au terminal nivarian.</NMC_LightWeapons.description>
+  <NMC_ShadowWarp.label>Technologie de distorsion d'ombre</NMC_ShadowWarp.label>
+  <NMC_ShadowWarp.description>Technologie de distorsion d'ombre du commandant. Livrez les matériaux et terminez la recherche au terminal nivarian.</NMC_ShadowWarp.description>
+  <NMC_Spacetime.label>Protocole de coordination spatiotemporelle</NMC_Spacetime.label>
+  <NMC_Spacetime.description>Protocole de coordination spatiotemporelle. Livrez les matériaux et terminez la recherche au terminal nivarian.</NMC_Spacetime.description>
+  <NMC_LegionContact.label>Contact des légions expéditionnaires</NMC_LegionContact.label>
+  <NMC_LegionContact.description>Contact des légions du commandant. Livrez les matériaux et terminez la recherche au terminal nivarian.</NMC_LegionContact.description>
+  <NMC_HigherDimensions.label>Ingénierie des dimensions supérieures</NMC_HigherDimensions.label>
+  <NMC_HigherDimensions.description>Ingénierie des dimensions supérieures du commandant. Livrez les matériaux et terminez la recherche au terminal nivarian.</NMC_HigherDimensions.description>
+  <NMC_FleetBeacon.label>Protocole de balise de distorsion de flotte</NMC_FleetBeacon.label>
+  <NMC_FleetBeacon.description>Protocole de balise de flotte du commandant. Livrez les matériaux et terminez la recherche au terminal nivarian.</NMC_FleetBeacon.description>
+</LanguageData>

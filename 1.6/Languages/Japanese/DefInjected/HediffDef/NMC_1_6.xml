@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_ShadowInvisibility.label>シャドウワープ透明化</NMC_ShadowInvisibility.label>
+  <NMC_ShadowInvisibility.description>シャドウフィールドまたはゴースト装甲で透明化します。攻撃・被弾では解除されません。探知は有効で、可視化効果終了後に透明化源が残っていれば再び隠れます。</NMC_ShadowInvisibility.description>
+  <NMC_GhostIdentity.label>シャドウガード所属</NMC_GhostIdentity.label>
+  <NMC_GhostIdentity.description>母艦のシャドウガード。自動戦闘し徴兵不可。透明化で接近できますが探知で発見されます。支援終了後ワープ撤退。</NMC_GhostIdentity.description>
+  <NMC_SeydasConversion.label>精神的帰属</NMC_SeydasConversion.label>
+  <NMC_SeydasConversion.description>精神支配でニヴァリアン生存者派閥に加入しました。元の生活・行動を保ち、あなたの入植者にはならず、セイダス軍団撤退後も所属が残ります。</NMC_SeydasConversion.description>
+  <NMC_LegionIdentity.label>母艦遠征軍団</NMC_LegionIdentity.label>
+  <NMC_LegionIdentity.description>生存者派閥の臨時遠征隊員。自動索敵・戦闘し徴兵不可。支援終了後に隊員と専用装備がワープ撤退します。</NMC_LegionIdentity.description>
+</LanguageData>

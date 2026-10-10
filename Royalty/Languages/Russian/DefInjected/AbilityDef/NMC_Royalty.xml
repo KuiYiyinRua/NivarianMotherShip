@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_SeydasControlNative.label>Психическое подчинение</NMC_SeydasControlNative.label>
+  <NMC_SeydasControlNative.description>Переводит врага в пределах 20 клеток к выжившим нивариан. Предпочитает ценные цели; механоиды и лидеры тоже возможны. Цена 50 концентрации, перезарядка 8 секунд.
+
+Принадлежность сохраняется после ухода легиона. Это не ваши поселенцы.</NMC_SeydasControlNative.description>
+  <NMC_TebrusStormNative.label>Пси-шторм Тебруса</NMC_TebrusStormNative.label>
+  <NMC_TebrusStormNative.description>Создаёт пси-шторм радиусом 6 в пределах 30 клеток при наличии минимум трёх врагов. Цена 35 концентрации, перезарядка 12 секунд.
+
+Длится 4 секунды. Каждую секунду враги получают 30 ожогового урона, союзники лечатся до 30 урона или прочности дрона. Действует на лежачих и невидимых, не на здания.
+
+Не убирает шрамы, не восстанавливает конечности и не лечит болезни.</NMC_TebrusStormNative.description>
+</LanguageData>

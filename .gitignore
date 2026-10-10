@@ -1,0 +1,12 @@
+/BuildValidation/
+/策划/
+/实施/
+**/obj/
+**/bin/
+*.pdb
+*.log
+*.rws
+__pycache__/
+*.pyc
+.vs/
+/dist/

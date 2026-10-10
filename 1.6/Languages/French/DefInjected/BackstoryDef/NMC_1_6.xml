@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_FieldTrainingChildhood.title>Apprenti du vaisseau-mère</NMC_FieldTrainingChildhood.title>
+  <NMC_FieldTrainingChildhood.titleShort>Apprenti</NMC_FieldTrainingChildhood.titleShort>
+  <NMC_FieldTrainingChildhood.baseDesc>[PAWN_nameDef] a étudié la discipline militaire et les tactiques de base à bord du vaisseau-mère.</NMC_FieldTrainingChildhood.baseDesc>
+  <NMC_FieldTrainingAdulthood.title>Combattant de distorsion</NMC_FieldTrainingAdulthood.title>
+  <NMC_FieldTrainingAdulthood.titleShort>Combattant</NMC_FieldTrainingAdulthood.titleShort>
+  <NMC_FieldTrainingAdulthood.baseDesc>[PAWN_nameDef] a reçu une formation de combat spécialisée et répondu aux convocations du vaisseau-mère.</NMC_FieldTrainingAdulthood.baseDesc>
+</LanguageData>

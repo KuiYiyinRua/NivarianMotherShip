@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_ContinuumBase.label>Base du Continuum</NMC_ContinuumBase.label>
+  <NMC_ContinuumBase.description>Base du Continuum contenant des données tactiques. Butin et réserves d'artillerie sont au centre, derrière sacs de sable et lignes de tourelles.
+
+Tourelles légères à l'extérieur, drones et armes lourdes au milieu, noyau de communication et mortiers à l'intérieur. Détruire l'alimentation arrête les tourelles reliées, mais défenseurs et renforts continuent. Les bases ultérieures gagnent en taille et puissance.</NMC_ContinuumBase.description>
+</LanguageData>

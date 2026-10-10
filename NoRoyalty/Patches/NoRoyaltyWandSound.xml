@@ -1,0 +1,6 @@
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Nivarian_Weapon_ObsidianWand"]/soundInteract</xpath>
+    <value><soundInteract>Interact_ChargeRifle</soundInteract></value>
+  </Operation>
+</Patch>

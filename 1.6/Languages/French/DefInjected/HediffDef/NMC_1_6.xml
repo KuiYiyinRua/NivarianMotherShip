@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_ShadowInvisibility.label>Invisibilité par distorsion d'ombre</NMC_ShadowInvisibility.label>
+  <NMC_ShadowInvisibility.description>Un champ d'ombre ou une armure fantôme camoufle la cible. Attaquer ou subir des dégâts n'annule pas l'effet. La détection peut la révéler ; une fois terminée, l'invisibilité revient si sa source existe toujours.</NMC_ShadowInvisibility.description>
+  <NMC_GhostIdentity.label>Identité de garde de l'ombre</NMC_GhostIdentity.label>
+  <NMC_GhostIdentity.description>Garde de l'ombre du vaisseau-mère. Combat autonome, sans mobilisation. L'invisibilité facilite l'approche mais reste détectable. Retrait par distorsion en fin de soutien.</NMC_GhostIdentity.description>
+  <NMC_SeydasConversion.label>Allégeance mentale</NMC_SeydasConversion.label>
+  <NMC_SeydasConversion.description>Le contrôle mental a recruté cette unité chez les survivants nivarians. Son mode de vie reste inchangé, elle ne devient pas votre colon et conserve sa faction après le départ de Seydas.</NMC_SeydasConversion.description>
+  <NMC_LegionIdentity.label>Légion expéditionnaire du vaisseau-mère</NMC_LegionIdentity.label>
+  <NMC_LegionIdentity.description>Membre temporaire envoyé par les survivants nivarians. Combat et ciblage autonomes, sans mobilisation. Membres et équipement exclusif repartent par distorsion.</NMC_LegionIdentity.description>
+</LanguageData>

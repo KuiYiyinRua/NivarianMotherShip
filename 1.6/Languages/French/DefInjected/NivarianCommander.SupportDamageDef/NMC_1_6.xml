@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_FrigateBeamDamage.label>Laser prismatique gravitationnel</NMC_FrigateBeamDamage.label>
+  <NMC_OrbitalEnergy.label>Frappe énergétique orbitale</NMC_OrbitalEnergy.label>
+  <NMC_SolarBombEnergy.label>Énergie de bombardement solaire</NMC_SolarBombEnergy.label>
+  <NMC_SolarRayEnergy.label>Énergie du rayon solaire</NMC_SolarRayEnergy.label>
+  <NMC_SolarRayBurn.label>Brûlure du rayon solaire</NMC_SolarRayBurn.label>
+  <NMC_PurificationEnergy.label>Énergie du rayon purificateur</NMC_PurificationEnergy.label>
+  <NMC_PurificationBurn.label>Brûlure du rayon purificateur</NMC_PurificationBurn.label>
+  <NMC_OverloadEnergy.label>Laser bleu de surcharge</NMC_OverloadEnergy.label>
+  <NMC_FleetMothershipEnergy.label>Dégâts énergétiques du vaisseau-mère</NMC_FleetMothershipEnergy.label>
+  <NMC_FleetDestroyerEnergy.label>Dégâts énergétiques du destroyer</NMC_FleetDestroyerEnergy.label>
+  <NMC_FleetMothershipLaser.label>Laser prismatique du vaisseau-mère</NMC_FleetMothershipLaser.label>
+  <NMC_FleetRayEnergy.label>Dégâts d'énergie lumineuse</NMC_FleetRayEnergy.label>
+  <NMC_MonolithEnergy.label>Rayon de contrôle hyperdimensionnel</NMC_MonolithEnergy.label>
+</LanguageData>

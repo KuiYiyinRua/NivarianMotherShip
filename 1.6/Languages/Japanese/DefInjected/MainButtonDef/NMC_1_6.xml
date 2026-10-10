@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_MothershipPointShop.label>母艦ショップ</NMC_MothershipPointShop.label>
+  <NMC_MothershipPointShop.description>Pポイントで物資を購入し、軌道交易ビーコン範囲内の物資を寄付してPを得る交易端末。
+
+7日ごとに全店最大60種のランダム商品を補充。在庫は全入植地共通。受発送先と商品を選び、確定後にビーコン付近へ投下。通電中のビーコンと屋外投下地点が必要です。</NMC_MothershipPointShop.description>
+</LanguageData>

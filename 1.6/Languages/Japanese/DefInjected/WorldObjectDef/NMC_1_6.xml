@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_CarrierFlying.label>ニヴァリアン空母</NMC_CarrierFlying.label>
+  <NMC_CarrierFlying.description>人員、貨物、艦載機を目的地へ運ぶ遠距離航行中のニヴァリアン空母。</NMC_CarrierFlying.description>
+  <NMC_GravityFrigateFlying.label>ニヴァリアン重力艦</NMC_GravityFrigateFlying.label>
+  <NMC_GravityFrigateFlying.description>人員と貨物を目的地へ運ぶ遠距離航行中のニヴァリアン重力艦。</NMC_GravityFrigateFlying.description>
+</LanguageData>

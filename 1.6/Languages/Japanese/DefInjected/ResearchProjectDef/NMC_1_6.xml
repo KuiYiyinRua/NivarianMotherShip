@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_FieldRecall.label>領域間人員ワープ</NMC_FieldRecall.label>
+  <NMC_FieldRecall.description>ワープエネルギーフィールドを人員受信ビーコンへ改良します。マップ上の自派閥入植者を選び「エネルギーフィールドへワープ」で即時移動。入植地間も可能。
+
+中心が埋まっている場合は場内の最も近い安全な空きマスへ到着。追加費用と人員クールダウンなし。作業を中止して運搬品を下ろし、装備と所持品を持参します。
+
+研究完了後、フィールド配置・移設のクールダウンが1日に延びます。</NMC_FieldRecall.description>
+  <NMC_PreciseFriendlyIdentification.label>精密友軍識別</NMC_PreciseFriendlyIdentification.label>
+  <NMC_PreciseFriendlyIdentification.description>敵味方識別を改良し、支援火力が自軍ユニット、建物、同盟軍を避けるようにします。衛隊と遠征軍団の専用武器も従います。
+
+上行リンク研究端末で材料を納入し研究を完了すると恒久的に有効。支援パネルでの追加購入は不要です。</NMC_PreciseFriendlyIdentification.description>
+  <NMC_Support01.label>ワープエネルギーフィールド支援プロトコル</NMC_Support01.label>
+  <NMC_Support01.description>周囲の友軍施設とユニットに給電する遠隔ワープフィールドを開発します。既存フィールドは移設でき、前線防衛や臨時作業に適します。
+
+上行リンク研究端末で必要材料を納入して研究を完了してください。 完了後、司令官支援パネルで利用できます。</NMC_Support01.description>
+  <NMC_Support02.label>軌道爆撃支援プロトコル</NMC_Support02.label>
+  <NMC_Support02.description>軌道爆撃を解放。司令官が地上の着弾点を連続指定し、各射撃ごとにエネルギーを消費します。
+
+上行リンク研究端末で必要材料を納入して研究を完了してください。 完了後、司令官支援パネルで利用できます。</NMC_Support02.description>
+  <NMC_Support03.label>シールド過負荷支援プロトコル</NMC_Support03.label>
+  <NMC_Support03.description>母艦がマップ全体の友軍に一時的なシールドを与え、戦闘ダメージを吸収できるようにします。
+
+上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル1が必要です。</NMC_Support03.description>
+  <NMC_Support04.label>太陽爆撃支援プロトコル</NMC_Support04.label>
+  <NMC_Support04.description>広範囲太陽爆撃を解放。密集した敵と建物へエネルギー弾を継続投下します。開始後中止不可。
+
+上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル4が必要です。
+
+連続体任務が有効なら、先に第8段階「太陽爆撃」を完了し資料を取得してください。</NMC_Support04.description>
+  <NMC_Support05.label>太陽光線砲支援プロトコル</NMC_Support05.label>
+  <NMC_Support05.description>太陽光線砲を解放。3本の追尾ビームで地上敵を継続掃射します。
+
+上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル2が必要です。</NMC_Support05.description>
+  <NMC_Support06.label>時空変動支援プロトコル</NMC_Support06.label>
+  <NMC_Support06.description>各入植地の生産を一時加速し、超次元モノリスの攻撃頻度も高めます。
+
+上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル2が必要です。</NMC_Support06.description>
+  <NMC_Support07.label>浄化ビーム支援プロトコル</NMC_Support07.label>
+  <NMC_Support07.description>自動追撃または司令官の移動命令に従う移動式浄化ビームを解放します。
+
+上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル4が必要です。
+
+連続体任務が有効なら、先に第7段階「浄化ビーム」を完了し資料を取得してください。</NMC_Support07.description>
+  <NMC_Support08.label>シャドウコア支援プロトコル</NMC_Support08.label>
+  <NMC_Support08.description>母艦資源を生産し周囲の友軍を隠すシャドウタワーのコアを配置可能にします。配置後も建材搬入が必要です。
+
+上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル1が必要です。
+
+連続体任務が有効なら、先に第1段階「シャドウ結晶塔」を完了し資料を取得してください。</NMC_Support08.description>
+  <NMC_Support09.label>シャドウガード支援プロトコル</NMC_Support09.label>
+  <NMC_Support09.description>シャドウガードとのワープ連絡を確立し、透明近接戦士4名を臨時要請できます。
+
+上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル2が必要です。
+
+連続体任務が有効なら、先に第2段階「シャドウ援軍」を完了し資料を取得してください。</NMC_Support09.description>
+  <NMC_Support10.label>ブラックホール支援プロトコル</NMC_Support10.label>
+  <NMC_Support10.description>短時間の重力渦で敵を集め装甲を弱め、集中攻撃を支援します。
+
+上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル2が必要です。</NMC_Support10.description>
+  <NMC_Support11.label>時間停止支援プロトコル</NMC_Support11.label>
+  <NMC_Support11.description>各入植地の既存敵の移動と攻撃を一時停止し、防衛や撤退の時間を作ります。
+
+上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル4が必要です。</NMC_Support11.description>
+  <NMC_Support12.label>建物過負荷支援プロトコル</NMC_Support12.label>
+  <NMC_Support12.description>建物過負荷を解放し、友軍建物へシールドとレーザーを一時追加します。定期回復するチャージを消費します。
+
+上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル1が必要です。</NMC_Support12.description>
+  <NMC_Support13.label>ニヴァリアン艦隊支援プロトコル</NMC_Support13.label>
+  <NMC_Support13.description>艦隊ワープ航路を確立し、母艦1隻と駆逐艦8隻を臨時要請できます。
+
+上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル4が必要です。
+
+連続体任務が有効なら、先に第6段階「艦隊支援」を完了し資料を取得してください。</NMC_Support13.description>
+  <NMC_Support14.label>テブルス軍団支援プロトコル</NMC_Support14.label>
+  <NMC_Support14.description>テブルス軍団と連絡し、テブルスと近接戦士10名を要請可能にします。エネルギー以外にビーコン範囲内の銀か金が必要です。
+
+上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル2が必要です。
+
+連続体任務が有効なら、先に第3段階「遠征軍団」を完了し資料を取得してください。</NMC_Support14.description>
+  <NMC_Support15.label>ゾラヤ軍団支援プロトコル</NMC_Support15.label>
+  <NMC_Support15.description>ゾラヤ軍団と連絡し、指揮艦と輝光艦4隻を要請可能にします。エネルギー以外にビーコン範囲内の銀か金が必要です。
+
+上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル3が必要です。
+
+連続体任務が有効なら、先に第3段階「遠征軍団」を完了し資料を取得してください。</NMC_Support15.description>
+  <NMC_Support16.label>セイダス軍団支援プロトコル</NMC_Support16.label>
+  <NMC_Support16.description>セイダスとダークアルコン3名を要請し、精神支配で敵を転属させます。エネルギー以外にビーコン範囲内の銀か金が必要です。
+
+上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル3が必要です。
+
+連続体任務が有効なら、先に第3段階「遠征軍団」を完了し資料を取得してください。</NMC_Support16.description>
+  <NMC_Support17.label>超次元モノリス支援プロトコル</NMC_Support17.label>
+  <NMC_Support17.description>複数対象を攻撃・気絶させる遠距離防衛モノリスコアを配置可能にします。配置後に建材と電力が必要です。
+
+上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル3が必要です。
+
+連続体任務が有効なら、先に第4段階「超次元モノリス」を完了し資料を取得してください。</NMC_Support17.description>
+  <NMC_Support18.label>ヴォイド抑制結晶支援プロトコル</NMC_Support18.label>
+  <NMC_Support18.description>ヴォイド抑制結晶を解放し、敵の移動・攻撃を減速して範囲内の敵砲塔を停火させます。
+
+上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル3が必要です。</NMC_Support18.description>
+  <NMC_Support19.label>超次元マトリクス投射支援プロトコル</NMC_Support19.label>
+  <NMC_Support19.description>入植地間の砲塔投射を解放。登録砲塔を遠方へ仮戦闘投影として展開します。本体は電力・弾薬を供給し、投影の損傷も受けます。
+
+上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル4が必要です。
+
+連続体任務が有効なら、先に第5段階「超次元投影」を完了し資料を取得してください。</NMC_Support19.description>
+  <NMC_ParallelParticleCollectors.label>粒子収集器並列アレイ</NMC_ParallelParticleCollectors.label>
+  <NMC_ParallelParticleCollectors.description>粒子収集器間の干渉をなくし、複数同時稼働で各自Vポイントを生産できます。
+
+各収集器に独立した電力と燃料が必要で、稼働状態により産量が変わります。</NMC_ParallelParticleCollectors.description>
+  <NMC_GravityFrigateResearch.label>ニヴァリアン重力艦</NMC_GravityFrigateResearch.label>
+  <NMC_GravityFrigateResearch.description>ニヴァリアン重力艦の建造を解放。軽輸送と対空迎撃を担い、重力ビームで地上敵を浮かせて双発レーザーで攻撃します。
+
+積載300 kg、マップ内飛行戦闘と燃料を使う地点間移動が可能。</NMC_GravityFrigateResearch.description>
+  <NMC_CarrierResearch.label>ニヴァリアン空母</NMC_CarrierResearch.label>
+  <NMC_CarrierResearch.description>空母建造を解放。直接兵器なしで艦載機を使い、戦線後方から継続航空支援を行います。
+
+積載10000 kg、龍霜鋼で最大8機を製造維持。高い建造費に加え、燃料と艦載機材料の継続補給が必要です。</NMC_CarrierResearch.description>
+  <NMC_TacticalProtocol.label>戦術支援プロトコル</NMC_TacticalProtocol.label>
+  <NMC_TacticalProtocol.description>母艦司令官の戦術支援プロトコル。ニヴァリアン上行リンク研究端末で材料を納入し研究を完了してください。</NMC_TacticalProtocol.description>
+  <NMC_LightWeapons.label>光兵器アレイ</NMC_LightWeapons.label>
+  <NMC_LightWeapons.description>母艦司令官の光兵器アレイ。ニヴァリアン上行リンク研究端末で材料を納入し研究を完了してください。</NMC_LightWeapons.description>
+  <NMC_ShadowWarp.label>シャドウワープ技術</NMC_ShadowWarp.label>
+  <NMC_ShadowWarp.description>母艦司令官のシャドウワープ技術。ニヴァリアン上行リンク研究端末で材料を納入し研究を完了してください。</NMC_ShadowWarp.description>
+  <NMC_Spacetime.label>時空調整プロトコル</NMC_Spacetime.label>
+  <NMC_Spacetime.description>母艦司令官の時空調整プロトコル。ニヴァリアン上行リンク研究端末で材料を納入し研究を完了してください。</NMC_Spacetime.description>
+  <NMC_LegionContact.label>遠征軍団連絡</NMC_LegionContact.label>
+  <NMC_LegionContact.description>母艦司令官の遠征軍団連絡。ニヴァリアン上行リンク研究端末で材料を納入し研究を完了してください。</NMC_LegionContact.description>
+  <NMC_HigherDimensions.label>高次元工学</NMC_HigherDimensions.label>
+  <NMC_HigherDimensions.description>母艦司令官の高次元工学。ニヴァリアン上行リンク研究端末で材料を納入し研究を完了してください。</NMC_HigherDimensions.description>
+  <NMC_FleetBeacon.label>艦隊ワープビーコンプロトコル</NMC_FleetBeacon.label>
+  <NMC_FleetBeacon.description>母艦司令官の艦隊ワープビーコンプロトコル。ニヴァリアン上行リンク研究端末で材料を納入し研究を完了してください。</NMC_FleetBeacon.description>
+</LanguageData>

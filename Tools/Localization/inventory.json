@@ -1,0 +1,5857 @@
+[
+  {
+    "id": 1,
+    "zh": "升空作战",
+    "key": "NMC_Text0001",
+    "contexts": [
+      "AircraftActions.cs:86",
+      "NivarianAircraft.cs:252"
+    ]
+  },
+  {
+    "id": 2,
+    "zh": "从当前位置起飞，在地图内飞行作战。起飞消耗{0}化合燃料，飞行不再耗油。起飞区域上方须无屋顶。",
+    "key": "NMC_Text0002",
+    "contexts": [
+      "AircraftActions.cs:87"
+    ]
+  },
+  {
+    "id": 3,
+    "zh": "从当前位置起飞，在地图内飞行作战。起飞区域上方须无屋顶，升空期间持续消耗化合燃料。",
+    "key": "NMC_Text0003",
+    "contexts": [
+      "AircraftActions.cs:88"
+    ]
+  },
+  {
+    "id": 4,
+    "zh": "起飞需要{0}化合燃料",
+    "key": "NMC_Text0004",
+    "contexts": [
+      "AircraftActions.cs:89"
+    ]
+  },
+  {
+    "id": 5,
+    "zh": "化合燃料不足",
+    "key": "NMC_Text0005",
+    "contexts": [
+      "AircraftActions.cs:89"
+    ]
+  },
+  {
+    "id": 6,
+    "zh": "顶部有屋顶",
+    "key": "NMC_Text0006",
+    "contexts": [
+      "AircraftActions.cs:90"
+    ]
+  },
+  {
+    "id": 7,
+    "zh": "飞往位置",
+    "key": "NMC_Text0007",
+    "contexts": [
+      "AircraftActions.cs:95"
+    ]
+  },
+  {
+    "id": 8,
+    "zh": "选择本地图的飞行目的地。",
+    "key": "NMC_Text0008",
+    "contexts": [
+      "AircraftActions.cs:95"
+    ]
+  },
+  {
+    "id": 9,
+    "zh": "正在起降",
+    "key": "NMC_Text0009",
+    "contexts": [
+      "AircraftActions.cs:98"
+    ]
+  },
+  {
+    "id": 10,
+    "zh": "降落",
+    "key": "NMC_Text0010",
+    "contexts": [
+      "AircraftActions.cs:100"
+    ]
+  },
+  {
+    "id": 11,
+    "zh": "停止空中作战并降落。航母会停止派出舰载机，并召回已出击的编队。请先清空舰船下方的建筑、人员和屋顶。",
+    "key": "NMC_Text0011",
+    "contexts": [
+      "AircraftActions.cs:100"
+    ]
+  },
+  {
+    "id": 12,
+    "zh": "下方有障碍物、人员或屋顶，请先移动到空地。",
+    "key": "NMC_Text0012",
+    "contexts": [
+      "AircraftActions.cs:101"
+    ]
+  },
+  {
+    "id": 13,
+    "zh": "舰载机制造：开启",
+    "key": "NMC_Text0013",
+    "contexts": [
+      "AircraftActions.cs:106"
+    ]
+  },
+  {
+    "id": 14,
+    "zh": "舰载机制造：暂停",
+    "key": "NMC_Text0014",
+    "contexts": [
+      "AircraftActions.cs:106"
+    ]
+  },
+  {
+    "id": 15,
+    "zh": "每架需要{0}龙霜钢，制造用时15秒，飞行期间也能制造。通过“装载货物”运入龙霜钢，可补充最多1000单位材料。机库和出击中的舰载机合计最多{1}架。",
+    "key": "NMC_Text0015",
+    "contexts": [
+      "AircraftActions.cs:107"
+    ]
+  },
+  {
+    "id": 16,
+    "zh": "收回舰载机",
+    "key": "NMC_Text0016",
+    "contexts": [
+      "AircraftActions.cs:109"
+    ]
+  },
+  {
+    "id": 17,
+    "zh": "命令所有出击中的舰载机返回机库。若航母仍在升空作战且附近有敌人，舰载机之后仍会继续出击。",
+    "key": "NMC_Text0017",
+    "contexts": [
+      "AircraftActions.cs:109"
+    ]
+  },
+  {
+    "id": 18,
+    "zh": "引力束",
+    "key": "NMC_Text0018",
+    "contexts": [
+      "AircraftActions.cs:113"
+    ]
+  },
+  {
+    "id": 19,
+    "zh": "选择16格内的一名地面敌人，将其举起并眩晕5秒。升空后的目标可被本舰激光攻击。引力束冷却8秒，无需额外资源。",
+    "key": "NMC_Text0019",
+    "contexts": [
+      "AircraftActions.cs:113"
+    ]
+  },
+  {
+    "id": 20,
+    "zh": "需要升空作战",
+    "key": "NMC_Text0020",
+    "contexts": [
+      "AircraftActions.cs:117"
+    ]
+  },
+  {
+    "id": 21,
+    "zh": "引力束冷却中",
+    "key": "NMC_Text0021",
+    "contexts": [
+      "AircraftActions.cs:118"
+    ]
+  },
+  {
+    "id": 22,
+    "zh": "自动引力束：开启",
+    "key": "NMC_Text0022",
+    "contexts": [
+      "AircraftActions.cs:120"
+    ]
+  },
+  {
+    "id": 23,
+    "zh": "自动引力束：关闭",
+    "key": "NMC_Text0023",
+    "contexts": [
+      "AircraftActions.cs:120"
+    ]
+  },
+  {
+    "id": 24,
+    "zh": "升空作战时，自动用引力束举起16格内最近的地面敌人。关闭后仍可手动指定目标。",
+    "key": "NMC_Text0024",
+    "contexts": [
+      "AircraftActions.cs:121"
+    ]
+  },
+  {
+    "id": 25,
+    "zh": "星舰动力：已升级",
+    "key": "NMC_Text0025",
+    "contexts": [
+      "AircraftStarshipUpgrade.cs:30"
+    ]
+  },
+  {
+    "id": 26,
+    "zh": "星舰电池：{0}/{1}",
+    "key": "NMC_Text0026",
+    "contexts": [
+      "AircraftStarshipUpgrade.cs:31"
+    ]
+  },
+  {
+    "id": 27,
+    "zh": "升级星舰动力",
+    "key": "NMC_Text0027",
+    "contexts": [
+      "AircraftStarshipUpgrade.cs:31"
+    ]
+  },
+  {
+    "id": 28,
+    "zh": "殖民者将搬运并安装{0}个米莉拉星舰电池。完成后，每次起飞消耗{1}化合燃料，地图内作战与世界航行均不再持续耗油。电池安装后永久消耗；须停泊才能运入。",
+    "key": "NMC_Text0028",
+    "contexts": [
+      "AircraftStarshipUpgrade.cs:32"
+    ]
+  },
+  {
+    "id": 29,
+    "zh": "星舰电池已安装",
+    "key": "NMC_Text0029",
+    "contexts": [
+      "AircraftStarshipUpgrade.cs:37"
+    ]
+  },
+  {
+    "id": 30,
+    "zh": "等待殖民者搬运电池（搬运工作）",
+    "key": "NMC_Text0030",
+    "contexts": [
+      "AircraftStarshipUpgrade.cs:38"
+    ]
+  },
+  {
+    "id": 31,
+    "zh": "请先降落",
+    "key": "NMC_Text0031",
+    "contexts": [
+      "AircraftStarshipUpgrade.cs:39"
+    ]
+  },
+  {
+    "id": 32,
+    "zh": "{0}已完成星舰动力升级。",
+    "key": "NMC_Text0032",
+    "contexts": [
+      "AircraftStarshipUpgrade.cs:54"
+    ]
+  },
+  {
+    "id": 33,
+    "zh": "没有可搬运的米莉拉星舰电池",
+    "key": "NMC_Text0033",
+    "contexts": [
+      "AircraftStarshipUpgrade.cs:70"
+    ]
+  },
+  {
+    "id": 34,
+    "zh": "目标地点已不可用，请重新选择",
+    "key": "NMC_Text0034",
+    "contexts": [
+      "BlackHole.cs:298",
+      "CommanderActions.cs:35",
+      "DefenseActions.cs:11",
+      "FleetActions.cs:21",
+      "PurificationBeam.cs:13",
+      "RayFleetActions.cs:19",
+      "SeydasLegionActions.cs:30",
+      "SolarBombardment.cs:12",
+      "SolarRay.cs:13",
+      "TebrusLegionActions.cs:28",
+      "VoidCrystal.cs:81"
+    ]
+  },
+  {
+    "id": 35,
+    "zh": "冷却剩余：{0}",
+    "key": "NMC_Text0035",
+    "contexts": [
+      "BlackHole.cs:300",
+      "DefenseActions.cs:14",
+      "PurificationBeam.cs:19",
+      "SolarBombardment.cs:18",
+      "SolarRay.cs:19",
+      "SpacetimeWave.cs:40",
+      "TimeStop.cs:132"
+    ]
+  },
+  {
+    "id": 36,
+    "zh": "需要 {0} P + {1} V",
+    "key": "NMC_Text0036",
+    "contexts": [
+      "BlackHole.cs:303",
+      "DefenseActions.cs:17",
+      "PurificationBeam.cs:21",
+      "SolarBombardment.cs:20",
+      "SolarRay.cs:21",
+      "SpacetimeWave.cs:42",
+      "TimeStop.cs:134"
+    ]
+  },
+  {
+    "id": 37,
+    "zh": "黑洞中心需要已探索、可站立的格子",
+    "key": "NMC_Text0037",
+    "contexts": [
+      "BlackHole.cs:310"
+    ]
+  },
+  {
+    "id": 38,
+    "zh": "母舰能量不足",
+    "key": "NMC_Text0038",
+    "contexts": [
+      "BlackHole.cs:312",
+      "CommanderActions.cs:69",
+      "DefenseActions.cs:27",
+      "Ghosts.cs:151",
+      "PurificationBeam.cs:33",
+      "SolarBombardment.cs:31",
+      "SolarRay.cs:33",
+      "SpacetimeWave.cs:51",
+      "StructureActions.cs:49",
+      "TimeStop.cs:146",
+      "VoidCrystal.cs:173"
+    ]
+  },
+  {
+    "id": 39,
+    "zh": "黑洞：护甲暂时归零",
+    "key": "NMC_Text0039",
+    "contexts": [
+      "BlackHole.cs:332"
+    ]
+  },
+  {
+    "id": 40,
+    "zh": "黑洞  ·  {0} P + {1} V  ·  半径 8 / 8 秒  ·  左键部署，右键 / Esc 取消",
+    "key": "NMC_Text0040",
+    "contexts": [
+      "BlackHoleTargeting.cs:43"
+    ]
+  },
+  {
+    "id": 41,
+    "zh": "无",
+    "key": "NMC_Text0041",
+    "contexts": [
+      "CarrierInterceptor.cs:77",
+      "ProjectionLifecycle.cs:111"
+    ]
+  },
+  {
+    "id": 42,
+    "zh": "正在返回",
+    "key": "NMC_Text0042",
+    "contexts": [
+      "CarrierInterceptor.cs:77"
+    ]
+  },
+  {
+    "id": 43,
+    "zh": "自动拦截",
+    "key": "NMC_Text0043",
+    "contexts": [
+      "CarrierInterceptor.cs:77"
+    ]
+  },
+  {
+    "id": 44,
+    "zh": "所属航母：{0}\n{1}",
+    "key": "NMC_Text0044",
+    "contexts": [
+      "CarrierInterceptor.cs:77"
+    ]
+  },
+  {
+    "id": 45,
+    "zh": "需要研究：{0}",
+    "key": "NMC_Text0045",
+    "contexts": [
+      "CommanderActions.cs:17"
+    ]
+  },
+  {
+    "id": 46,
+    "zh": "需要母舰等级 {0}",
+    "key": "NMC_Text0046",
+    "contexts": [
+      "CommanderActions.cs:19"
+    ]
+  },
+  {
+    "id": 47,
+    "zh": "地底无法使用轨道武器",
+    "key": "NMC_Text0047",
+    "contexts": [
+      "CommanderActions.cs:37"
+    ]
+  },
+  {
+    "id": 48,
+    "zh": "能量不足：需要 {0} P + {1} V",
+    "key": "NMC_Text0048",
+    "contexts": [
+      "CommanderActions.cs:38"
+    ]
+  },
+  {
+    "id": 49,
+    "zh": "没有可用的轨道落点：厚山岩顶下禁止直接打击",
+    "key": "NMC_Text0049",
+    "contexts": [
+      "CommanderActions.cs:68"
+    ]
+  },
+  {
+    "id": 50,
+    "zh": "精确友军识别已启用",
+    "key": "NMC_Text0050",
+    "contexts": [
+      "CommanderActions.cs:80",
+      "CommanderActions.cs:86"
+    ]
+  },
+  {
+    "id": 51,
+    "zh": "需要 600 P + 250 V",
+    "key": "NMC_Text0051",
+    "contexts": []
+  },
+  {
+    "id": 52,
+    "zh": "舰",
+    "key": "NMC_Text0052",
+    "contexts": [
+      "CommanderHud.cs:216"
+    ]
+  },
+  {
+    "id": 53,
+    "zh": "展开母舰指挥官快捷面板\n按住并拖动可调整位置",
+    "key": "NMC_Text0053",
+    "contexts": [
+      "CommanderHud.cs:218"
+    ]
+  },
+  {
+    "id": 54,
+    "zh": "快捷槽 {0}\n点击添加已解锁的支援\n按住并拖动可调整面板位置",
+    "key": "NMC_Text0054",
+    "contexts": [
+      "CommanderHud.cs:240"
+    ]
+  },
+  {
+    "id": 55,
+    "zh": "母舰指挥官",
+    "key": "NMC_Text0055",
+    "contexts": [
+      "CommanderHud.cs:244"
+    ]
+  },
+  {
+    "id": 56,
+    "zh": "能量单元 P：{0}\n烈性反应物 V：{1}\n按住并拖动可调整面板位置",
+    "key": "NMC_Text0056",
+    "contexts": [
+      "CommanderHud.cs:249"
+    ]
+  },
+  {
+    "id": 57,
+    "zh": "总面板",
+    "key": "NMC_Text0057",
+    "contexts": [
+      "CommanderHud.cs:250"
+    ]
+  },
+  {
+    "id": 58,
+    "zh": "打开母舰指挥官总面板",
+    "key": "NMC_Text0058",
+    "contexts": [
+      "CommanderHud.cs:250"
+    ]
+  },
+  {
+    "id": 59,
+    "zh": "收缩为小按钮；点击小按钮重新展开",
+    "key": "NMC_Text0059",
+    "contexts": [
+      "CommanderHud.cs:251"
+    ]
+  },
+  {
+    "id": 60,
+    "zh": "支援",
+    "key": "NMC_Text0060",
+    "contexts": [
+      "CommanderHud.cs:303",
+      "CommanderPanel.cs:115"
+    ]
+  },
+  {
+    "id": 61,
+    "zh": "点击立即施放",
+    "key": "NMC_Text0061",
+    "contexts": [
+      "CommanderHud.cs:318"
+    ]
+  },
+  {
+    "id": 62,
+    "zh": "点击选择目标位置",
+    "key": "NMC_Text0062",
+    "contexts": [
+      "CommanderHud.cs:318"
+    ]
+  },
+  {
+    "id": 63,
+    "zh": "\n剩余冷却：{0}",
+    "key": "NMC_Text0063",
+    "contexts": [
+      "CommanderHud.cs:321"
+    ]
+  },
+  {
+    "id": 64,
+    "zh": "{0}\n{1} P / {2} V{3}\n{4}{5}\n右键更换或清空；长按拖动面板",
+    "key": "NMC_Text0064",
+    "contexts": [
+      "CommanderHud.cs:320"
+    ]
+  },
+  {
+    "id": 65,
+    "zh": "清空快捷槽 {0}",
+    "key": "NMC_Text0065",
+    "contexts": [
+      "CommanderHud.cs:423"
+    ]
+  },
+  {
+    "id": 66,
+    "zh": "（当前）",
+    "key": "NMC_Text0066",
+    "contexts": [
+      "CommanderHud.cs:428"
+    ]
+  },
+  {
+    "id": 67,
+    "zh": "（从槽 {0} 移入）",
+    "key": "NMC_Text0067",
+    "contexts": [
+      "CommanderHud.cs:431"
+    ]
+  },
+  {
+    "id": 68,
+    "zh": "暂无已解锁的支援",
+    "key": "NMC_Text0068",
+    "contexts": [
+      "CommanderHud.cs:434"
+    ]
+  },
+  {
+    "id": 69,
+    "zh": "{0}亿",
+    "key": "NMC_Text0069",
+    "contexts": [
+      "CommanderHud.cs:456"
+    ]
+  },
+  {
+    "id": 70,
+    "zh": "{0}万",
+    "key": "NMC_Text0070",
+    "contexts": [
+      "CommanderHud.cs:457"
+    ]
+  },
+  {
+    "id": 71,
+    "zh": "{0}天",
+    "key": "NMC_Text0071",
+    "contexts": [
+      "CommanderHud.cs:458"
+    ]
+  },
+  {
+    "id": 72,
+    "zh": "{0}分",
+    "key": "NMC_Text0072",
+    "contexts": [
+      "CommanderHud.cs:459"
+    ]
+  },
+  {
+    "id": 73,
+    "zh": "{0}秒",
+    "key": "NMC_Text0073",
+    "contexts": [
+      "CommanderHud.cs:459"
+    ]
+  },
+  {
+    "id": 74,
+    "zh": "全部支援",
+    "key": "NMC_Text0074",
+    "contexts": [
+      "CommanderPanel.cs:51",
+      "CommanderPanel.cs:52",
+      "CommanderPanel.cs:99"
+    ]
+  },
+  {
+    "id": 75,
+    "zh": "轨道火力",
+    "key": "NMC_Text0075",
+    "contexts": [
+      "CommanderPanel.cs:51",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S02.group",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S04.group",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S05.group",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S07.group"
+    ]
+  },
+  {
+    "id": 76,
+    "zh": "防御与生产",
+    "key": "NMC_Text0076",
+    "contexts": [
+      "CommanderPanel.cs:51",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S01.group",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S03.group",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S06.group",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S12.group"
+    ]
+  },
+  {
+    "id": 77,
+    "zh": "暗影与控制",
+    "key": "NMC_Text0077",
+    "contexts": [
+      "CommanderPanel.cs:51",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S08.group",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S09.group",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S10.group",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S11.group",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S18.group"
+    ]
+  },
+  {
+    "id": 78,
+    "zh": "远征援军",
+    "key": "NMC_Text0078",
+    "contexts": [
+      "CommanderPanel.cs:51",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S13.group",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S14.group",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S15.group",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S16.group"
+    ]
+  },
+  {
+    "id": 79,
+    "zh": "设施与投射",
+    "key": "NMC_Text0079",
+    "contexts": [
+      "CommanderPanel.cs:51",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S17.group",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S19.group"
+    ]
+  },
+  {
+    "id": 80,
+    "zh": "涅瓦莲 · 母舰指挥官",
+    "key": "NMC_Text0080",
+    "contexts": [
+      "CommanderPanel.cs:78"
+    ]
+  },
+  {
+    "id": 81,
+    "zh": "调用轨道火力、地面设施与远征增援",
+    "key": "NMC_Text0081",
+    "contexts": [
+      "CommanderPanel.cs:79"
+    ]
+  },
+  {
+    "id": 82,
+    "zh": "能量单元 P",
+    "key": "NMC_Text0082",
+    "contexts": [
+      "CommanderPanel.cs:81"
+    ]
+  },
+  {
+    "id": 83,
+    "zh": "烈性反应物 V",
+    "key": "NMC_Text0083",
+    "contexts": [
+      "CommanderPanel.cs:82"
+    ]
+  },
+  {
+    "id": 84,
+    "zh": "母舰等级",
+    "key": "NMC_Text0084",
+    "contexts": [
+      "CommanderPanel.cs:83"
+    ]
+  },
+  {
+    "id": 85,
+    "zh": "超载充能",
+    "key": "NMC_Text0085",
+    "contexts": [
+      "CommanderPanel.cs:84"
+    ]
+  },
+  {
+    "id": 86,
+    "zh": "支援分类",
+    "key": "NMC_Text0086",
+    "contexts": [
+      "CommanderPanel.cs:91"
+    ]
+  },
+  {
+    "id": 87,
+    "zh": "19项战术支援\n研究后逐步开放\n需达到母舰等级",
+    "key": "NMC_Text0087",
+    "contexts": [
+      "CommanderPanel.cs:98"
+    ]
+  },
+  {
+    "id": 88,
+    "zh": "返回母舰支援",
+    "key": "NMC_Text0088",
+    "contexts": [
+      "CommanderPanel.cs:123"
+    ]
+  },
+  {
+    "id": 89,
+    "zh": "显示母舰快捷面板",
+    "key": "NMC_Text0089",
+    "contexts": [
+      "CommanderPanel.cs:125"
+    ]
+  },
+  {
+    "id": 90,
+    "zh": "母舰支援 · 暗影与超维控制",
+    "key": "NMC_Text0090",
+    "contexts": [
+      "CommanderPanel.cs:127"
+    ]
+  },
+  {
+    "id": 91,
+    "zh": "\n维持：每0.1天消耗1P和1V",
+    "key": "NMC_Text0091",
+    "contexts": [
+      "CommanderPanel.cs:145"
+    ]
+  },
+  {
+    "id": 92,
+    "zh": "充能已满",
+    "key": "NMC_Text0092",
+    "contexts": [
+      "CommanderPanel.cs:148"
+    ]
+  },
+  {
+    "id": 93,
+    "zh": "每3天恢复1次，下次恢复：{0}",
+    "key": "NMC_Text0093",
+    "contexts": [
+      "CommanderPanel.cs:148"
+    ]
+  },
+  {
+    "id": 94,
+    "zh": "剩余 {0}",
+    "key": "NMC_Text0094",
+    "contexts": [
+      "CommanderPanel.cs:149",
+      "Fleet.cs:108"
+    ]
+  },
+  {
+    "id": 95,
+    "zh": "支援费用",
+    "key": "NMC_Text0095",
+    "contexts": [
+      "CommanderPanel.cs:163"
+    ]
+  },
+  {
+    "id": 96,
+    "zh": "冷却 / 充能",
+    "key": "NMC_Text0096",
+    "contexts": [
+      "CommanderPanel.cs:164"
+    ]
+  },
+  {
+    "id": 97,
+    "zh": "使用条件",
+    "key": "NMC_Text0097",
+    "contexts": [
+      "CommanderPanel.cs:165"
+    ]
+  },
+  {
+    "id": 98,
+    "zh": "所需物资",
+    "key": "NMC_Text0098",
+    "contexts": [
+      "CommanderPanel.cs:166"
+    ]
+  },
+  {
+    "id": 99,
+    "zh": "精确友军识别 · 已启用",
+    "key": "NMC_Text0099",
+    "contexts": [
+      "CommanderPanel.cs:175"
+    ]
+  },
+  {
+    "id": 100,
+    "zh": "精确友军识别  600 P / 250 V",
+    "key": "NMC_Text0100",
+    "contexts": []
+  },
+  {
+    "id": 101,
+    "zh": "永久启用友军识别，使指挥官的直接火力避开己方和盟友。购买后立即生效。",
+    "key": "NMC_Text0101",
+    "contexts": []
+  },
+  {
+    "id": 102,
+    "zh": "半径3格 · 伤害30 · 穿甲35%",
+    "key": "NMC_Text0102",
+    "contexts": [
+      "CommanderPanel.cs:180"
+    ]
+  },
+  {
+    "id": 103,
+    "zh": "瞄准轨道轰炸",
+    "key": "NMC_Text0103",
+    "contexts": [
+      "CommanderPanel.cs:182"
+    ]
+  },
+  {
+    "id": 104,
+    "zh": "供电中 · {0} / 10,000 W",
+    "key": "NMC_Text0104",
+    "contexts": [
+      "CommanderPanel.cs:190"
+    ]
+  },
+  {
+    "id": 105,
+    "zh": "能量场位于其他地图 · 可迁移",
+    "key": "NMC_Text0105",
+    "contexts": [
+      "CommanderPanel.cs:190"
+    ]
+  },
+  {
+    "id": 106,
+    "zh": "半径8格 · 尚未部署",
+    "key": "NMC_Text0106",
+    "contexts": [
+      "CommanderPanel.cs:190"
+    ]
+  },
+  {
+    "id": 107,
+    "zh": "现有友军 · 200点护盾 · 30秒",
+    "key": "NMC_Text0107",
+    "contexts": [
+      "CommanderPanel.cs:191"
+    ]
+  },
+  {
+    "id": 108,
+    "zh": "200点护盾 · 激光支援45秒",
+    "key": "NMC_Text0108",
+    "contexts": [
+      "CommanderPanel.cs:191"
+    ]
+  },
+  {
+    "id": 109,
+    "zh": "选中受到保护的目标，可查看各项护盾和剩余时间。提前结束支援不会返还能量、冷却或充能。",
+    "key": "NMC_Text0109",
+    "contexts": [
+      "CommanderPanel.cs:193"
+    ]
+  },
+  {
+    "id": 110,
+    "zh": "支援已就绪",
+    "key": "NMC_Text0110",
+    "contexts": [
+      "CommanderPanel.cs:194"
+    ]
+  },
+  {
+    "id": 111,
+    "zh": "选择能量场位置",
+    "key": "NMC_Text0111",
+    "contexts": [
+      "CommanderPanel.cs:196"
+    ]
+  },
+  {
+    "id": 112,
+    "zh": "保护当前地图的友军",
+    "key": "NMC_Text0112",
+    "contexts": [
+      "CommanderPanel.cs:196"
+    ]
+  },
+  {
+    "id": 113,
+    "zh": "选择超载建筑",
+    "key": "NMC_Text0113",
+    "contexts": [
+      "CommanderPanel.cs:196"
+    ]
+  },
+  {
+    "id": 114,
+    "zh": "关闭当前地图能量场",
+    "key": "NMC_Text0114",
+    "contexts": [
+      "CommanderPanel.cs:200"
+    ]
+  },
+  {
+    "id": 115,
+    "zh": "结束当前地图护盾",
+    "key": "NMC_Text0115",
+    "contexts": [
+      "CommanderPanel.cs:200"
+    ]
+  },
+  {
+    "id": 116,
+    "zh": "选择建筑取消超载",
+    "key": "NMC_Text0116",
+    "contexts": [
+      "CommanderPanel.cs:200"
+    ]
+  },
+  {
+    "id": 117,
+    "zh": "轰炸半径13格 · 持续30秒",
+    "key": "NMC_Text0117",
+    "contexts": [
+      "CommanderPanel.cs:210"
+    ]
+  },
+  {
+    "id": 118,
+    "zh": "当前地图轰炸进行中 · 不可中止",
+    "key": "NMC_Text0118",
+    "contexts": [
+      "CommanderPanel.cs:211"
+    ]
+  },
+  {
+    "id": 119,
+    "zh": "已就绪 · 选择位置后开始轰炸",
+    "key": "NMC_Text0119",
+    "contexts": [
+      "CommanderPanel.cs:211"
+    ]
+  },
+  {
+    "id": 120,
+    "zh": "选择太阳轰炸中心",
+    "key": "NMC_Text0120",
+    "contexts": [
+      "CommanderPanel.cs:213"
+    ]
+  },
+  {
+    "id": 121,
+    "zh": "三道追踪射线 · 持续8秒",
+    "key": "NMC_Text0121",
+    "contexts": [
+      "CommanderPanel.cs:222"
+    ]
+  },
+  {
+    "id": 122,
+    "zh": "正在扫射当前地图",
+    "key": "NMC_Text0122",
+    "contexts": [
+      "CommanderPanel.cs:223"
+    ]
+  },
+  {
+    "id": 123,
+    "zh": "已就绪 · 冷却时间半天",
+    "key": "NMC_Text0123",
+    "contexts": [
+      "CommanderPanel.cs:223"
+    ]
+  },
+  {
+    "id": 124,
+    "zh": "选择射线起点",
+    "key": "NMC_Text0124",
+    "contexts": [
+      "CommanderPanel.cs:226"
+    ]
+  },
+  {
+    "id": 125,
+    "zh": "结束当前地图射线",
+    "key": "NMC_Text0125",
+    "contexts": [
+      "CommanderPanel.cs:228"
+    ]
+  },
+  {
+    "id": 126,
+    "zh": "尚未生效",
+    "key": "NMC_Text0126",
+    "contexts": [
+      "CommanderPanel.cs:236"
+    ]
+  },
+  {
+    "id": 127,
+    "zh": "{0}处生效 · 此处剩余 {1}",
+    "key": "NMC_Text0127",
+    "contexts": [
+      "CommanderPanel.cs:237"
+    ]
+  },
+  {
+    "id": 128,
+    "zh": "工作速度提高至5倍 · 60秒",
+    "key": "NMC_Text0128",
+    "contexts": [
+      "CommanderPanel.cs:238"
+    ]
+  },
+  {
+    "id": 129,
+    "zh": "已就绪 · 作用于各处殖民地",
+    "key": "NMC_Text0129",
+    "contexts": [
+      "CommanderPanel.cs:239"
+    ]
+  },
+  {
+    "id": 130,
+    "zh": "施放时空波动",
+    "key": "NMC_Text0130",
+    "contexts": [
+      "CommanderPanel.cs:241"
+    ]
+  },
+  {
+    "id": 131,
+    "zh": "结束时空波动",
+    "key": "NMC_Text0131",
+    "contexts": [
+      "CommanderPanel.cs:243"
+    ]
+  },
+  {
+    "id": 132,
+    "zh": "半径4格 · 自动追击20秒",
+    "key": "NMC_Text0132",
+    "contexts": [
+      "CommanderPanel.cs:252"
+    ]
+  },
+  {
+    "id": 133,
+    "zh": "已就绪 · 请选择起点",
+    "key": "NMC_Text0133",
+    "contexts": [
+      "CommanderPanel.cs:253"
+    ]
+  },
+  {
+    "id": 134,
+    "zh": "已征召",
+    "key": "NMC_Text0134",
+    "contexts": [
+      "CommanderPanel.cs:254"
+    ]
+  },
+  {
+    "id": 135,
+    "zh": "自动追敌",
+    "key": "NMC_Text0135",
+    "contexts": [
+      "CommanderPanel.cs:254"
+    ]
+  },
+  {
+    "id": 136,
+    "zh": "{0} · 剩余 {1}",
+    "key": "NMC_Text0136",
+    "contexts": [
+      "CommanderPanel.cs:254"
+    ]
+  },
+  {
+    "id": 137,
+    "zh": "选择净化光束起点",
+    "key": "NMC_Text0137",
+    "contexts": [
+      "CommanderPanel.cs:257"
+    ]
+  },
+  {
+    "id": 138,
+    "zh": "解除征召，自动追击",
+    "key": "NMC_Text0138",
+    "contexts": [
+      "CommanderPanel.cs:259"
+    ]
+  },
+  {
+    "id": 139,
+    "zh": "征召当前净化光束",
+    "key": "NMC_Text0139",
+    "contexts": [
+      "CommanderPanel.cs:259"
+    ]
+  },
+  {
+    "id": 140,
+    "zh": "选择移动目的地",
+    "key": "NMC_Text0140",
+    "contexts": [
+      "CommanderPanel.cs:262"
+    ]
+  },
+  {
+    "id": 141,
+    "zh": "结束当前地图净化光束",
+    "key": "NMC_Text0141",
+    "contexts": [
+      "CommanderPanel.cs:264"
+    ]
+  },
+  {
+    "id": 142,
+    "zh": "2×2 · 800耐久 · 材料齐后20秒施工",
+    "key": "NMC_Text0142",
+    "contexts": [
+      "CommanderPanel.cs:272"
+    ]
+  },
+  {
+    "id": 143,
+    "zh": "3×3 · 1,800耐久 · 材料齐后45秒施工",
+    "key": "NMC_Text0143",
+    "contexts": [
+      "CommanderPanel.cs:272"
+    ]
+  },
+  {
+    "id": 144,
+    "zh": "部署核心，运入材料后自动施工",
+    "key": "NMC_Text0144",
+    "contexts": [
+      "CommanderPanel.cs:273"
+    ]
+  },
+  {
+    "id": 145,
+    "zh": "部署暗影核心",
+    "key": "NMC_Text0145",
+    "contexts": [
+      "CommanderPanel.cs:275"
+    ]
+  },
+  {
+    "id": 146,
+    "zh": "部署巨石核心",
+    "key": "NMC_Text0146",
+    "contexts": [
+      "CommanderPanel.cs:275"
+    ]
+  },
+  {
+    "id": 147,
+    "zh": "四名暗影卫队 · 支援120秒",
+    "key": "NMC_Text0147",
+    "contexts": [
+      "CommanderPanel.cs:283"
+    ]
+  },
+  {
+    "id": 148,
+    "zh": "隐形近战部队 · 大师品质武器",
+    "key": "NMC_Text0148",
+    "contexts": [
+      "CommanderPanel.cs:284"
+    ]
+  },
+  {
+    "id": 149,
+    "zh": "部署暗影卫队",
+    "key": "NMC_Text0149",
+    "contexts": [
+      "CommanderPanel.cs:286"
+    ]
+  },
+  {
+    "id": 150,
+    "zh": "半径8格 · 牵引敌人8秒",
+    "key": "NMC_Text0150",
+    "contexts": [
+      "CommanderPanel.cs:295"
+    ]
+  },
+  {
+    "id": 151,
+    "zh": "已就绪 · 请选择位置",
+    "key": "NMC_Text0151",
+    "contexts": [
+      "CommanderPanel.cs:296"
+    ]
+  },
+  {
+    "id": 152,
+    "zh": "牵引 {0} 个敌方 · 剩余 {1}",
+    "key": "NMC_Text0152",
+    "contexts": [
+      "CommanderPanel.cs:297"
+    ]
+  },
+  {
+    "id": 153,
+    "zh": "选择黑洞中心",
+    "key": "NMC_Text0153",
+    "contexts": [
+      "CommanderPanel.cs:299"
+    ]
+  },
+  {
+    "id": 154,
+    "zh": "结束当前地图黑洞",
+    "key": "NMC_Text0154",
+    "contexts": [
+      "CommanderPanel.cs:301"
+    ]
+  },
+  {
+    "id": 155,
+    "zh": "各处殖民地的现有敌人 · {0}秒",
+    "key": "NMC_Text0155",
+    "contexts": [
+      "CommanderPanel.cs:310"
+    ]
+  },
+  {
+    "id": 156,
+    "zh": "控制 {0}个敌人 · 此处剩余 {1}",
+    "key": "NMC_Text0156",
+    "contexts": [
+      "CommanderPanel.cs:312"
+    ]
+  },
+  {
+    "id": 157,
+    "zh": "已就绪 · 阻止敌人移动和攻击",
+    "key": "NMC_Text0157",
+    "contexts": [
+      "CommanderPanel.cs:313"
+    ]
+  },
+  {
+    "id": 158,
+    "zh": "施放时间停止",
+    "key": "NMC_Text0158",
+    "contexts": [
+      "CommanderPanel.cs:315"
+    ]
+  },
+  {
+    "id": 159,
+    "zh": "结束时间停止",
+    "key": "NMC_Text0159",
+    "contexts": [
+      "CommanderPanel.cs:317"
+    ]
+  },
+  {
+    "id": 160,
+    "zh": "半径13格 · 持续30秒",
+    "key": "NMC_Text0160",
+    "contexts": [
+      "CommanderPanel.cs:326"
+    ]
+  },
+  {
+    "id": 161,
+    "zh": "当前地图 {0}座晶体 · 正在抑制敌人",
+    "key": "NMC_Text0161",
+    "contexts": [
+      "CommanderPanel.cs:328"
+    ]
+  },
+  {
+    "id": 162,
+    "zh": "已就绪 · 减缓敌人并使炮塔停火",
+    "key": "NMC_Text0162",
+    "contexts": [
+      "CommanderPanel.cs:329"
+    ]
+  },
+  {
+    "id": 163,
+    "zh": "选择虚空晶体落点",
+    "key": "NMC_Text0163",
+    "contexts": [
+      "CommanderPanel.cs:331"
+    ]
+  },
+  {
+    "id": 164,
+    "zh": "移除当前地图所有晶体",
+    "key": "NMC_Text0164",
+    "contexts": [
+      "CommanderPanel.cs:333"
+    ]
+  },
+  {
+    "id": 165,
+    "zh": "母舰与8艘驱逐舰 · 支援120秒",
+    "key": "NMC_Text0165",
+    "contexts": [
+      "CommanderPanel.cs:342"
+    ]
+  },
+  {
+    "id": 166,
+    "zh": "当前地图 {0} 支舰队 · 存活 {1}",
+    "key": "NMC_Text0166",
+    "contexts": [
+      "CommanderPanel.cs:344"
+    ]
+  },
+  {
+    "id": 167,
+    "zh": "已就绪 · 舰队自动作战",
+    "key": "NMC_Text0167",
+    "contexts": [
+      "CommanderPanel.cs:345"
+    ]
+  },
+  {
+    "id": 168,
+    "zh": "选择战术舰队落点",
+    "key": "NMC_Text0168",
+    "contexts": [
+      "CommanderPanel.cs:347"
+    ]
+  },
+  {
+    "id": 169,
+    "zh": "支援结束后收回舰艇及残骸",
+    "key": "NMC_Text0169",
+    "contexts": [
+      "CommanderPanel.cs:349",
+      "CommanderPanel.cs:381"
+    ]
+  },
+  {
+    "id": 170,
+    "zh": "特布鲁斯与10名战士 · 120秒",
+    "key": "NMC_Text0170",
+    "contexts": [
+      "CommanderPanel.cs:357"
+    ]
+  },
+  {
+    "id": 171,
+    "zh": "当前地图 {0} 支军团 · 存活 {1}",
+    "key": "NMC_Text0171",
+    "contexts": [
+      "CommanderPanel.cs:359",
+      "CommanderPanel.cs:375",
+      "CommanderPanel.cs:391"
+    ]
+  },
+  {
+    "id": 172,
+    "zh": "已就绪 · 三军团共用7天冷却",
+    "key": "NMC_Text0172",
+    "contexts": [
+      "CommanderPanel.cs:360",
+      "CommanderPanel.cs:376",
+      "CommanderPanel.cs:392"
+    ]
+  },
+  {
+    "id": 173,
+    "zh": "将2000白银放在当前地图已供电的轨道交易信标范围内。白银不足时，会改为收取200黄金。",
+    "key": "NMC_Text0173",
+    "contexts": [
+      "CommanderPanel.cs:361",
+      "CommanderPanel.cs:377"
+    ]
+  },
+  {
+    "id": 174,
+    "zh": "选择特布鲁斯军团落点",
+    "key": "NMC_Text0174",
+    "contexts": [
+      "CommanderPanel.cs:363"
+    ]
+  },
+  {
+    "id": 175,
+    "zh": "支援结束后收回成员与专属装备",
+    "key": "NMC_Text0175",
+    "contexts": [
+      "CommanderPanel.cs:365"
+    ]
+  },
+  {
+    "id": 176,
+    "zh": "佐拉亚与4艘辉光舰 · 120秒",
+    "key": "NMC_Text0176",
+    "contexts": [
+      "CommanderPanel.cs:373"
+    ]
+  },
+  {
+    "id": 177,
+    "zh": "选择佐拉亚军团落点",
+    "key": "NMC_Text0177",
+    "contexts": [
+      "CommanderPanel.cs:379"
+    ]
+  },
+  {
+    "id": 178,
+    "zh": "赛达斯与3名执政官 · 120秒",
+    "key": "NMC_Text0178",
+    "contexts": [
+      "CommanderPanel.cs:389"
+    ]
+  },
+  {
+    "id": 179,
+    "zh": "需交付信标范围内的2000白银，白银不足时改收200黄金。被控制的敌人加入涅瓦莲幸存者派系，不会成为你的殖民者。",
+    "key": "NMC_Text0179",
+    "contexts": [
+      "CommanderPanel.cs:393"
+    ]
+  },
+  {
+    "id": 180,
+    "zh": "选择赛达斯军团落点",
+    "key": "NMC_Text0180",
+    "contexts": [
+      "CommanderPanel.cs:395"
+    ]
+  },
+  {
+    "id": 181,
+    "zh": "被控制的单位不会随军团撤离",
+    "key": "NMC_Text0181",
+    "contexts": [
+      "CommanderPanel.cs:397"
+    ]
+  },
+  {
+    "id": 182,
+    "zh": "可投射炮塔：{0}座 · 作战60秒",
+    "key": "NMC_Text0182",
+    "contexts": [
+      "CommanderPanel.cs:403"
+    ]
+  },
+  {
+    "id": 183,
+    "zh": "投影受损时，本体也会受伤",
+    "key": "NMC_Text0183",
+    "contexts": [
+      "CommanderPanel.cs:404"
+    ]
+  },
+  {
+    "id": 184,
+    "zh": "选择矩阵投射中心",
+    "key": "NMC_Text0184",
+    "contexts": [
+      "CommanderPanel.cs:406"
+    ]
+  },
+  {
+    "id": 185,
+    "zh": "登记全部炮塔",
+    "key": "NMC_Text0185",
+    "contexts": [
+      "CommanderPanel.cs:408"
+    ]
+  },
+  {
+    "id": 186,
+    "zh": "清空登记",
+    "key": "NMC_Text0186",
+    "contexts": [
+      "CommanderPanel.cs:409"
+    ]
+  },
+  {
+    "id": 187,
+    "zh": "可以登记各处殖民地的炮塔。投影需要5秒形成，由本体提供能源和弹药。选中本体或投影可提前撤回，已消耗的能量不会返还。",
+    "key": "NMC_Text0187",
+    "contexts": [
+      "CommanderPanel.cs:411"
+    ]
+  },
+  {
+    "id": 188,
+    "zh": "这项支援暂时无法使用",
+    "key": "NMC_Text0188",
+    "contexts": [
+      "CommanderPanel.cs:413"
+    ]
+  },
+  {
+    "id": 189,
+    "zh": "顺序前移",
+    "key": "NMC_Text0189",
+    "contexts": [
+      "CommanderPanel.cs:414"
+    ]
+  },
+  {
+    "id": 190,
+    "zh": "顺序后移",
+    "key": "NMC_Text0190",
+    "contexts": [
+      "CommanderPanel.cs:415"
+    ]
+  },
+  {
+    "id": 191,
+    "zh": "可调整支援在列表中的顺序",
+    "key": "NMC_Text0191",
+    "contexts": [
+      "CommanderPanel.cs:416"
+    ]
+  },
+  {
+    "id": 192,
+    "zh": "已就绪",
+    "key": "NMC_Text0192",
+    "contexts": [
+      "CommanderPanel.cs:430"
+    ]
+  },
+  {
+    "id": 193,
+    "zh": "{0} 天",
+    "key": "NMC_Text0193",
+    "contexts": [
+      "CommanderPanel.cs:430"
+    ]
+  },
+  {
+    "id": 194,
+    "zh": "{0} 秒",
+    "key": "NMC_Text0194",
+    "contexts": [
+      "CommanderPanel.cs:430"
+    ]
+  },
+  {
+    "id": 195,
+    "zh": "连续点射",
+    "key": "NMC_Text0195",
+    "contexts": [
+      "CommanderPanel.cs:431"
+    ]
+  },
+  {
+    "id": 196,
+    "zh": "每3天恢复1次",
+    "key": "NMC_Text0196",
+    "contexts": [
+      "CommanderPanel.cs:431"
+    ]
+  },
+  {
+    "id": 197,
+    "zh": "（军团共享）",
+    "key": "NMC_Text0197",
+    "contexts": [
+      "CommanderPanel.cs:431"
+    ]
+  },
+  {
+    "id": 198,
+    "zh": "需先完成连续体任务第{0}阶段：{1}",
+    "key": "NMC_Text0198",
+    "contexts": [
+      "CommanderProgression.cs:29"
+    ]
+  },
+  {
+    "id": 199,
+    "zh": " · 已完成",
+    "key": "NMC_Text0199",
+    "contexts": [
+      "CommanderProgression.cs:35"
+    ]
+  },
+  {
+    "id": 200,
+    "zh": " · 未完成",
+    "key": "NMC_Text0200",
+    "contexts": [
+      "CommanderProgression.cs:35"
+    ]
+  },
+  {
+    "id": 201,
+    "zh": "{0}{1}\n需要母舰等级：{2}（当前 {3}）{4}",
+    "key": "NMC_Text0201",
+    "contexts": [
+      "CommanderProgression.cs:35"
+    ]
+  },
+  {
+    "id": 202,
+    "zh": "母舰支援尚未就绪",
+    "key": "NMC_Text0202",
+    "contexts": [
+      "CommanderQuickActions.cs:15"
+    ]
+  },
+  {
+    "id": 203,
+    "zh": "请先进入目标地图",
+    "key": "NMC_Text0203",
+    "contexts": [
+      "CommanderQuickActions.cs:18"
+    ]
+  },
+  {
+    "id": 204,
+    "zh": "该能力尚无快捷入口",
+    "key": "NMC_Text0204",
+    "contexts": [
+      "CommanderQuickActions.cs:37"
+    ]
+  },
+  {
+    "id": 205,
+    "zh": "轨道轰炸  ·  每次 {0} P + {1} V  ·  左键连续点射  ·  右键 / Esc 结束",
+    "key": "NMC_Text0205",
+    "contexts": [
+      "CommanderTargeting.cs:42"
+    ]
+  },
+  {
+    "id": 206,
+    "zh": "施工定义缺失或期限无效",
+    "key": "NMC_Text0206",
+    "contexts": [
+      "Construction.cs:39"
+    ]
+  },
+  {
+    "id": 207,
+    "zh": "施工核心缺少原生建材容器",
+    "key": "NMC_Text0207",
+    "contexts": [
+      "Construction.cs:41"
+    ]
+  },
+  {
+    "id": 208,
+    "zh": "核心占地、生命或实际材料残留定义无效",
+    "key": "NMC_Text0208",
+    "contexts": [
+      "Construction.cs:46"
+    ]
+  },
+  {
+    "id": 209,
+    "zh": "施工材料定义缺失、重复或数量无效",
+    "key": "NMC_Text0209",
+    "contexts": [
+      "Construction.cs:50"
+    ]
+  },
+  {
+    "id": 210,
+    "zh": "母舰施工：{0} 秒",
+    "key": "NMC_Text0210",
+    "contexts": [
+      "Construction.cs:114"
+    ]
+  },
+  {
+    "id": 211,
+    "zh": "等待运入建材",
+    "key": "NMC_Text0211",
+    "contexts": [
+      "Construction.cs:115"
+    ]
+  },
+  {
+    "id": 212,
+    "zh": "取消母舰施工",
+    "key": "NMC_Text0212",
+    "contexts": [
+      "Construction.cs:121"
+    ]
+  },
+  {
+    "id": 213,
+    "zh": "取消施工并退回已运入的建材。部署核心消耗的能量和冷却时间不会返还。",
+    "key": "NMC_Text0213",
+    "contexts": [
+      "Construction.cs:122"
+    ]
+  },
+  {
+    "id": 214,
+    "zh": "连续体空投增援抵达：机械体与涅拉战斗单元",
+    "key": "NMC_Text0214",
+    "contexts": [
+      "ContinuumBattlefield.cs:40"
+    ]
+  },
+  {
+    "id": 215,
+    "zh": "暗影水晶塔",
+    "key": "NMC_Text0215",
+    "contexts": [
+      "ContinuumCampaign.cs:12"
+    ]
+  },
+  {
+    "id": 216,
+    "zh": "暗影援军",
+    "key": "NMC_Text0216",
+    "contexts": [
+      "ContinuumCampaign.cs:12"
+    ]
+  },
+  {
+    "id": 217,
+    "zh": "远征军团",
+    "key": "NMC_Text0217",
+    "contexts": [
+      "ContinuumCampaign.cs:12"
+    ]
+  },
+  {
+    "id": 218,
+    "zh": "超维空间巨石",
+    "key": "NMC_Text0218",
+    "contexts": [
+      "ContinuumCampaign.cs:12",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S17.label",
+      "1.6\\Defs\\CommanderStructures.xml:NMC_HyperdimensionalMonolith.label"
+    ]
+  },
+  {
+    "id": 219,
+    "zh": "超维空间投影",
+    "key": "NMC_Text0219",
+    "contexts": [
+      "ContinuumCampaign.cs:12"
+    ]
+  },
+  {
+    "id": 220,
+    "zh": "舰队支援",
+    "key": "NMC_Text0220",
+    "contexts": [
+      "ContinuumCampaign.cs:12"
+    ]
+  },
+  {
+    "id": 221,
+    "zh": "净化光束",
+    "key": "NMC_Text0221",
+    "contexts": [
+      "ContinuumCampaign.cs:12",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S07.label"
+    ]
+  },
+  {
+    "id": 222,
+    "zh": "太阳轰炸",
+    "key": "NMC_Text0222",
+    "contexts": [
+      "ContinuumCampaign.cs:12",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S04.label"
+    ]
+  },
+  {
+    "id": 223,
+    "zh": "连续体基地（第{0}阶段）",
+    "key": "NMC_Text0223",
+    "contexts": [
+      "ContinuumCampaign.cs:90"
+    ]
+  },
+  {
+    "id": 224,
+    "zh": "连续体：{0}（{1}/8）",
+    "key": "NMC_Text0224",
+    "contexts": [
+      "ContinuumCampaign.cs:95"
+    ]
+  },
+  {
+    "id": 225,
+    "zh": "成功后，母舰会继续寻找下一处基地。",
+    "key": "NMC_Text0225",
+    "contexts": [
+      "ContinuumCampaign.cs:96"
+    ]
+  },
+  {
+    "id": 226,
+    "zh": "这是最后一个阶段，完成后即可取得全部连续体研究资料。",
+    "key": "NMC_Text0226",
+    "contexts": [
+      "ContinuumCampaign.cs:96"
+    ]
+  },
+  {
+    "id": 227,
+    "zh": "母舰截获了殖民地附近的连续体通讯，定位到一处存放战术资料的基地。派遣部队前往，摧毁通讯核心，并击败守军、摧毁防御炮塔，即可取得资料。只摧毁核心还不足以完成任务。\n\n战利品集中在阵地中央，周围由多层炮塔和沙袋掩体守卫。守军还会呼叫空投增援，其中包括机械体和配备涅瓦莲武器的涅拉战斗单元。\n\n你有12天时间完成进攻。进入战场后，若在达成目标前全部撤离，或超过期限，任务将失败。母舰会在3天后重新定位同一阶段的基地；此前取得的研究资料仍然保留。\n\n本次取得的资料将开放以下研究：\n{0}\n\n取得资料后，仍需通过上行链路研究终端交付材料、完成研究，并达到相应母舰等级，才能调用支援。{1}",
+    "key": "NMC_Text0227",
+    "contexts": [
+      "ContinuumCampaign.cs:96"
+    ]
+  },
+  {
+    "id": 228,
+    "zh": "取得连续体研究资料",
+    "key": "NMC_Text0228",
+    "contexts": [
+      "ContinuumCampaign.cs:118"
+    ]
+  },
+  {
+    "id": 229,
+    "zh": "\n\n母舰正在定位下一处连续体基地。",
+    "key": "NMC_Text0229",
+    "contexts": [
+      "ContinuumCampaign.cs:120"
+    ]
+  },
+  {
+    "id": 230,
+    "zh": "\n\n连续体的全部八个阶段均已完成，所有相关研究资料都已取得。",
+    "key": "NMC_Text0230",
+    "contexts": [
+      "ContinuumCampaign.cs:120"
+    ]
+  },
+  {
+    "id": 231,
+    "zh": "母舰已破解从基地取得的资料，现在可以研究：\n{0}\n\n请通过上行链路研究终端交付所需材料并完成研究。调用支援还需要达到相应的母舰等级。{1}",
+    "key": "NMC_Text0231",
+    "contexts": [
+      "ContinuumCampaign.cs:118"
+    ]
+  },
+  {
+    "id": 232,
+    "zh": "连续体行动未能完成",
+    "key": "NMC_Text0232",
+    "contexts": [
+      "ContinuumCampaign.cs:126"
+    ]
+  },
+  {
+    "id": 233,
+    "zh": "未能从第{0}阶段的基地取得研究资料。母舰将在3天后重新定位同一阶段的目标。\n\n此前已经取得的资料和完成的研究不会丢失。",
+    "key": "NMC_Text0233",
+    "contexts": [
+      "ContinuumCampaign.cs:126"
+    ]
+  },
+  {
+    "id": 234,
+    "zh": "查看连续体基地",
+    "key": "NMC_Text0234",
+    "contexts": [
+      "ContinuumCampaign.cs:152"
+    ]
+  },
+  {
+    "id": 235,
+    "zh": "连续体：立即定位当前阶段",
+    "key": "NMC_Text0235",
+    "contexts": [
+      "ContinuumCampaign.cs:160"
+    ]
+  },
+  {
+    "id": 236,
+    "zh": "连续体：完成当前阶段",
+    "key": "NMC_Text0236",
+    "contexts": [
+      "ContinuumCampaign.cs:162"
+    ]
+  },
+  {
+    "id": 237,
+    "zh": "连续体：失败并等待3日",
+    "key": "NMC_Text0237",
+    "contexts": [
+      "ContinuumCampaign.cs:164"
+    ]
+  },
+  {
+    "id": 238,
+    "zh": "建筑超载充能不足",
+    "key": "NMC_Text0238",
+    "contexts": [
+      "DefenseActions.cs:15"
+    ]
+  },
+  {
+    "id": 239,
+    "zh": "能源场中心必须在地图内",
+    "key": "NMC_Text0239",
+    "contexts": [
+      "DefenseActions.cs:35"
+    ]
+  },
+  {
+    "id": 240,
+    "zh": "请选择本地图的友方建筑",
+    "key": "NMC_Text0240",
+    "contexts": [
+      "DefenseActions.cs:52"
+    ]
+  },
+  {
+    "id": 241,
+    "zh": "母舰支援 · 护盾总量 {0} / 400",
+    "key": "NMC_Text0241",
+    "contexts": [
+      "DefenseStatus.cs:23"
+    ]
+  },
+  {
+    "id": 242,
+    "zh": "护盾超载：{0}护盾 · {1} 秒",
+    "key": "NMC_Text0242",
+    "contexts": [
+      "DefenseStatus.cs:24"
+    ]
+  },
+  {
+    "id": 243,
+    "zh": "建筑超载：{0}护盾 · {1} 秒",
+    "key": "NMC_Text0243",
+    "contexts": [
+      "DefenseStatus.cs:25"
+    ]
+  },
+  {
+    "id": 244,
+    "zh": "折跃能量场已关闭：维持能量不足，需要 1 P 和 1 V。",
+    "key": "NMC_Text0244",
+    "contexts": [
+      "EnergyField.cs:54"
+    ]
+  },
+  {
+    "id": 245,
+    "zh": "需要研究：跨域人员折跃",
+    "key": "NMC_Text0245",
+    "contexts": [
+      "FieldRecall.cs:25"
+    ]
+  },
+  {
+    "id": 246,
+    "zh": "请选择地图上的己方殖民者",
+    "key": "NMC_Text0246",
+    "contexts": [
+      "FieldRecall.cs:26"
+    ]
+  },
+  {
+    "id": 247,
+    "zh": "当前没有折跃能量场",
+    "key": "NMC_Text0247",
+    "contexts": [
+      "FieldRecall.cs:27"
+    ]
+  },
+  {
+    "id": 248,
+    "zh": "殖民者已离开原地图，请重新选择。",
+    "key": "NMC_Text0248",
+    "contexts": [
+      "FieldRecall.cs:60"
+    ]
+  },
+  {
+    "id": 249,
+    "zh": "折跃能量场已被替换，请重新选择折跃。",
+    "key": "NMC_Text0249",
+    "contexts": [
+      "FieldRecall.cs:63"
+    ]
+  },
+  {
+    "id": 250,
+    "zh": "能量场内没有安全空格。",
+    "key": "NMC_Text0250",
+    "contexts": [
+      "FieldRecall.cs:66"
+    ]
+  },
+  {
+    "id": 251,
+    "zh": "殖民者已在能量场接收位置。",
+    "key": "NMC_Text0251",
+    "contexts": [
+      "FieldRecall.cs:68"
+    ]
+  },
+  {
+    "id": 252,
+    "zh": "无法安全放下正在搬运的对象，请先停止搬运。",
+    "key": "NMC_Text0252",
+    "contexts": [
+      "FieldRecall.cs:72"
+    ]
+  },
+  {
+    "id": 253,
+    "zh": "{0}已折跃至能量场。",
+    "key": "NMC_Text0253",
+    "contexts": [
+      "FieldRecall.cs:101"
+    ]
+  },
+  {
+    "id": 254,
+    "zh": "殖民者已抵达能量场，请确认其状态后重新安排工作。",
+    "key": "NMC_Text0254",
+    "contexts": [
+      "FieldRecall.cs:116"
+    ]
+  },
+  {
+    "id": 255,
+    "zh": "折跃未能完成，请确认殖民者当前的位置后再试。",
+    "key": "NMC_Text0255",
+    "contexts": [
+      "FieldRecall.cs:116"
+    ]
+  },
+  {
+    "id": 256,
+    "zh": "折跃至能量场",
+    "key": "NMC_Text0256",
+    "contexts": [
+      "FieldRecall.cs:150"
+    ]
+  },
+  {
+    "id": 257,
+    "zh": "立即前往已部署的折跃能量场，也可跨越不同殖民地。若中心位置被占用，将在场内最近的安全空地抵达。\n\n折跃不额外消耗能量，也无需等待冷却。殖民者会中止当前工作，放下搬运中的物品，随身装备和背包一并带走。",
+    "key": "NMC_Text0257",
+    "contexts": [
+      "FieldRecall.cs:151"
+    ]
+  },
+  {
+    "id": 258,
+    "zh": "佐拉亚军团 · ",
+    "key": "NMC_Text0258",
+    "contexts": [
+      "Fleet.cs:107"
+    ]
+  },
+  {
+    "id": 259,
+    "zh": "战术舰队 · ",
+    "key": "NMC_Text0259",
+    "contexts": [
+      "Fleet.cs:107"
+    ]
+  },
+  {
+    "id": 260,
+    "zh": "回收中",
+    "key": "NMC_Text0260",
+    "contexts": [
+      "Fleet.cs:107"
+    ]
+  },
+  {
+    "id": 261,
+    "zh": " · 入场损失 {0}",
+    "key": "NMC_Text0261",
+    "contexts": [
+      "Fleet.cs:109"
+    ]
+  },
+  {
+    "id": 262,
+    "zh": "入场 {0} / {1}{2}",
+    "key": "NMC_Text0262",
+    "contexts": [
+      "Fleet.cs:109"
+    ]
+  },
+  {
+    "id": 263,
+    "zh": "{0}{1} / {2} 耐久\n{3}",
+    "key": "NMC_Text0263",
+    "contexts": [
+      "Fleet.cs:107"
+    ]
+  },
+  {
+    "id": 264,
+    "zh": "九舰落点必须避开地图最外圈",
+    "key": "NMC_Text0264",
+    "contexts": [
+      "FleetActions.cs:24"
+    ]
+  },
+  {
+    "id": 265,
+    "zh": "九舰落点不能位于战争迷雾中",
+    "key": "NMC_Text0265",
+    "contexts": [
+      "FleetActions.cs:25"
+    ]
+  },
+  {
+    "id": 266,
+    "zh": "九舰落点不能位于厚山顶下",
+    "key": "NMC_Text0266",
+    "contexts": [
+      "FleetActions.cs:26"
+    ]
+  },
+  {
+    "id": 267,
+    "zh": "九舰落点不能位于墙体或不可通行地形中",
+    "key": "NMC_Text0267",
+    "contexts": [
+      "FleetActions.cs:27"
+    ]
+  },
+  {
+    "id": 268,
+    "zh": "落点已被另一艘舰艇占用",
+    "key": "NMC_Text0268",
+    "contexts": [
+      "FleetActions.cs:28",
+      "RayFleetActions.cs:26"
+    ]
+  },
+  {
+    "id": 269,
+    "zh": "舰队入场失败；未扣费、未开始冷却",
+    "key": "NMC_Text0269",
+    "contexts": [
+      "FleetActions.cs:72"
+    ]
+  },
+  {
+    "id": 270,
+    "zh": "母舰能量不足；本次舰队支援已取消",
+    "key": "NMC_Text0270",
+    "contexts": [
+      "FleetActions.cs:77"
+    ]
+  },
+  {
+    "id": 271,
+    "zh": "战术舰队折跃入场：1艘母舰 + 8艘驱逐舰；全队入场后驻留120秒",
+    "key": "NMC_Text0271",
+    "contexts": [
+      "FleetActions.cs:80"
+    ]
+  },
+  {
+    "id": 272,
+    "zh": "战术舰队 · {0} P + {1} V · 1母舰 + 8驱逐舰 · 左键部署，右键 / Esc取消",
+    "key": "NMC_Text0272",
+    "contexts": [
+      "FleetTargeting.cs:38"
+    ]
+  },
+  {
+    "id": 273,
+    "zh": "暗影卫队移动速度修正：{0}",
+    "key": "NMC_Text0273",
+    "contexts": [
+      "Ghosts.cs:27"
+    ]
+  },
+  {
+    "id": 274,
+    "zh": "需要现存且非敌对的涅瓦莲幸存者派系",
+    "key": "NMC_Text0274",
+    "contexts": [
+      "Ghosts.cs:116"
+    ]
+  },
+  {
+    "id": 275,
+    "zh": "暗影卫队暂时无法派遣",
+    "key": "NMC_Text0275",
+    "contexts": [
+      "Ghosts.cs:119"
+    ]
+  },
+  {
+    "id": 276,
+    "zh": "暗影卫队的装备不可用，暂时无法派遣",
+    "key": "NMC_Text0276",
+    "contexts": [
+      "Ghosts.cs:123"
+    ]
+  },
+  {
+    "id": 277,
+    "zh": "暗影卫队的武器尚未准备完成",
+    "key": "NMC_Text0277",
+    "contexts": [
+      "Ghosts.cs:125"
+    ]
+  },
+  {
+    "id": 278,
+    "zh": "附近需要四处可站立、已探索且没有厚山岩顶的空地",
+    "key": "NMC_Text0278",
+    "contexts": [
+      "Ghosts.cs:142"
+    ]
+  },
+  {
+    "id": 279,
+    "zh": "部队落点已被占用",
+    "key": "NMC_Text0279",
+    "contexts": [
+      "Ghosts.cs:149"
+    ]
+  },
+  {
+    "id": 280,
+    "zh": "远征军团移动速度修正：{0}",
+    "key": "NMC_Text0280",
+    "contexts": [
+      "LegionLifecycle.cs:33"
+    ]
+  },
+  {
+    "id": 281,
+    "zh": "涅瓦莲幸存者军团不存在、已覆灭或与殖民地敌对",
+    "key": "NMC_Text0281",
+    "contexts": [
+      "LegionPurchase.cs:24"
+    ]
+  },
+  {
+    "id": 282,
+    "zh": "请在当前地图已供电的轨道交易信标范围内准备2000白银或200黄金",
+    "key": "NMC_Text0282",
+    "contexts": [
+      "LegionPurchase.cs:28"
+    ]
+  },
+  {
+    "id": 283,
+    "zh": "超维控制阵列：运行",
+    "key": "NMC_Text0283",
+    "contexts": [
+      "MonolithWeapon.cs:89"
+    ]
+  },
+  {
+    "id": 284,
+    "zh": "超维控制阵列：断电",
+    "key": "NMC_Text0284",
+    "contexts": [
+      "MonolithWeapon.cs:89"
+    ]
+  },
+  {
+    "id": 285,
+    "zh": " · 每0.4秒攻击一次",
+    "key": "NMC_Text0285",
+    "contexts": [
+      "MonolithWeapon.cs:90"
+    ]
+  },
+  {
+    "id": 286,
+    "zh": " · 每2秒攻击一次",
+    "key": "NMC_Text0286",
+    "contexts": [
+      "MonolithWeapon.cs:90"
+    ]
+  },
+  {
+    "id": 287,
+    "zh": "{0}{1} · 射程60格 · 最多10个目标",
+    "key": "NMC_Text0287",
+    "contexts": [
+      "MonolithWeapon.cs:89"
+    ]
+  },
+  {
+    "id": 288,
+    "zh": "{0}燃料耗尽，已紧急降落。",
+    "key": "NMC_Text0288",
+    "contexts": [
+      "NivarianAircraft.cs:216"
+    ]
+  },
+  {
+    "id": 289,
+    "zh": "停泊",
+    "key": "NMC_Text0289",
+    "contexts": [
+      "NivarianAircraft.cs:252"
+    ]
+  },
+  {
+    "id": 290,
+    "zh": " · 星舰动力：每次起飞消耗{0}化合燃料，飞行不耗油",
+    "key": "NMC_Text0290",
+    "contexts": [
+      "NivarianAircraft.cs:253"
+    ]
+  },
+  {
+    "id": 291,
+    "zh": "每秒1单位",
+    "key": "NMC_Text0291",
+    "contexts": [
+      "NivarianAircraft.cs:254"
+    ]
+  },
+  {
+    "id": 292,
+    "zh": "每5秒1单位",
+    "key": "NMC_Text0292",
+    "contexts": [
+      "NivarianAircraft.cs:254"
+    ]
+  },
+  {
+    "id": 293,
+    "zh": " · 升空耗油：{0}",
+    "key": "NMC_Text0293",
+    "contexts": [
+      "NivarianAircraft.cs:254"
+    ]
+  },
+  {
+    "id": 294,
+    "zh": "\n星舰电池升级：{0}/{1}（等待搬运）",
+    "key": "NMC_Text0294",
+    "contexts": [
+      "NivarianAircraft.cs:256"
+    ]
+  },
+  {
+    "id": 295,
+    "zh": " · 制造剩余 {0} 秒",
+    "key": "NMC_Text0295",
+    "contexts": [
+      "NivarianAircraft.cs:258"
+    ]
+  },
+  {
+    "id": 296,
+    "zh": "\n舰载机：{0}/{1}（机库{2}，出击{3}）\n龙霜钢：{4}/1000{5}",
+    "key": "NMC_Text0296",
+    "contexts": [
+      "NivarianAircraft.cs:257"
+    ]
+  },
+  {
+    "id": 297,
+    "zh": "\n引力束冷却：{0} 秒",
+    "key": "NMC_Text0297",
+    "contexts": [
+      "NivarianAircraft.cs:259"
+    ]
+  },
+  {
+    "id": 298,
+    "zh": "请先结束空中作战并降落；航母还需收回舰载机。",
+    "key": "NMC_Text0298",
+    "contexts": [
+      "NivarianAircraft.cs:308"
+    ]
+  },
+  {
+    "id": 299,
+    "zh": "起飞需要{0}化合燃料。",
+    "key": "NMC_Text0299",
+    "contexts": [
+      "NivarianAircraft.cs:311"
+    ]
+  },
+  {
+    "id": 300,
+    "zh": "已关闭",
+    "key": "NMC_Text0300",
+    "contexts": [
+      "NutrientEnergyTower.cs:156"
+    ]
+  },
+  {
+    "id": 301,
+    "zh": "等待补充营养",
+    "key": "NMC_Text0301",
+    "contexts": [
+      "NutrientEnergyTower.cs:156"
+    ]
+  },
+  {
+    "id": 302,
+    "zh": "暂停运行",
+    "key": "NMC_Text0302",
+    "contexts": [
+      "NutrientEnergyTower.cs:157"
+    ]
+  },
+  {
+    "id": 303,
+    "zh": "正在为母舰供能",
+    "key": "NMC_Text0303",
+    "contexts": [
+      "NutrientEnergyTower.cs:157"
+    ]
+  },
+  {
+    "id": 304,
+    "zh": "{0}营养储备：{1}（补给目标 {2}）\n营养消耗：{3} / 游戏日\n母舰能量：{4} P / 游戏日\n{5} · 额定发电 700 W",
+    "key": "NMC_Text0304",
+    "contexts": [
+      "NutrientEnergyTower.cs:158"
+    ]
+  },
+  {
+    "id": 305,
+    "zh": "其他商品",
+    "key": "NMC_Text0305",
+    "contexts": [
+      "PointShopCatalog.cs:30"
+    ]
+  },
+  {
+    "id": 306,
+    "zh": "涅拉",
+    "key": "NMC_Text0306",
+    "contexts": [
+      "PointShopNira.cs:16"
+    ]
+  },
+  {
+    "id": 307,
+    "zh": "你好，指挥官。货单已经整理好了，今天想给殖民地添些什么？",
+    "key": "NMC_Text0307",
+    "contexts": [
+      "PointShopNira.cs:25"
+    ]
+  },
+  {
+    "id": 308,
+    "zh": "欢迎回来。我在这里陪你慢慢挑，不用急。",
+    "key": "NMC_Text0308",
+    "contexts": [
+      "PointShopNira.cs:25"
+    ]
+  },
+  {
+    "id": 309,
+    "zh": "母舰补给频道已接通。先看看库存吧，遇到合适的东西再带回家。",
+    "key": "NMC_Text0309",
+    "contexts": [
+      "PointShopNira.cs:25"
+    ]
+  },
+  {
+    "id": 310,
+    "zh": "今天有好好吃饭吗？采购清单再长，也要记得休息。",
+    "key": "NMC_Text0310",
+    "contexts": [
+      "PointShopNira.cs:27"
+    ]
+  },
+  {
+    "id": 311,
+    "zh": "母舰上很安静。能听你聊一聊殖民地的日常，我还挺喜欢的。",
+    "key": "NMC_Text0311",
+    "contexts": [
+      "PointShopNira.cs:27"
+    ]
+  },
+  {
+    "id": 312,
+    "zh": "仓库里也该留一点空位。等需要的东西送来，就不用临时搬箱子了。",
+    "key": "NMC_Text0312",
+    "contexts": [
+      "PointShopNira.cs:28"
+    ]
+  },
+  {
+    "id": 313,
+    "zh": "我在想，下一次靠港的时候，要不要给大家带点甜食？",
+    "key": "NMC_Text0313",
+    "contexts": [
+      "PointShopNira.cs:28"
+    ]
+  },
+  {
+    "id": 314,
+    "zh": "天气好的时候，替我看看地面的天空吧。轨道上的景色和那里很不一样。",
+    "key": "NMC_Text0314",
+    "contexts": [
+      "PointShopNira.cs:29"
+    ]
+  },
+  {
+    "id": 315,
+    "zh": "整理补给的空隙，我会读一会儿书。你最近有喜欢的故事吗？",
+    "key": "NMC_Text0315",
+    "contexts": [
+      "PointShopNira.cs:29"
+    ]
+  },
+  {
+    "id": 316,
+    "zh": "别担心，我会守着这个频道。你慢慢挑。",
+    "key": "NMC_Text0316",
+    "contexts": [
+      "PointShopNira.cs:30"
+    ]
+  },
+  {
+    "id": 317,
+    "zh": "一盏灯、一顿热饭，有时候就是让人安心的小东西。",
+    "key": "NMC_Text0317",
+    "contexts": [
+      "PointShopNira.cs:30"
+    ]
+  },
+  {
+    "id": 318,
+    "zh": "订单收到了。货物会从轨道送下来，记得给仓库留个位置。",
+    "key": "NMC_Text0318",
+    "contexts": [
+      "PointShopNira.cs:31"
+    ]
+  },
+  {
+    "id": 319,
+    "zh": "这几样已经为你安排好了。希望它们能派上用场。",
+    "key": "NMC_Text0319",
+    "contexts": [
+      "PointShopNira.cs:31"
+    ]
+  },
+  {
+    "id": 320,
+    "zh": "补给已交给投送系统。忙完以后，也别忘了休息。",
+    "key": "NMC_Text0320",
+    "contexts": [
+      "PointShopNira.cs:31"
+    ]
+  },
+  {
+    "id": 321,
+    "zh": "采购完成。等箱子落地，我们再看看还缺什么。",
+    "key": "NMC_Text0321",
+    "contexts": [
+      "PointShopNira.cs:31"
+    ]
+  },
+  {
+    "id": 322,
+    "zh": "谢谢你。这些补给会在母舰上继续发挥作用。",
+    "key": "NMC_Text0322",
+    "contexts": [
+      "PointShopNira.cs:32"
+    ]
+  },
+  {
+    "id": 323,
+    "zh": "捐赠清单收到了，P点也已记好。替我向搬运的大家道声辛苦。",
+    "key": "NMC_Text0323",
+    "contexts": [
+      "PointShopNira.cs:32"
+    ]
+  },
+  {
+    "id": 324,
+    "zh": "多余的物资也能帮上忙。谢谢你惦记着母舰。",
+    "key": "NMC_Text0324",
+    "contexts": [
+      "PointShopNira.cs:32"
+    ]
+  },
+  {
+    "id": 325,
+    "zh": "已经收好了。仓库腾出空间，是不是也轻松一些？",
+    "key": "NMC_Text0325",
+    "contexts": [
+      "PointShopNira.cs:32"
+    ]
+  },
+  {
+    "id": 326,
+    "zh": "新一轮货单到了。我已经替你整理好分类，看看有没有需要的吧。",
+    "key": "NMC_Text0326",
+    "contexts": [
+      "PointShopNira.cs:33"
+    ]
+  },
+  {
+    "id": 327,
+    "zh": "库存刚刚更新了。这次会遇到什么好东西呢？",
+    "key": "NMC_Text0327",
+    "contexts": [
+      "PointShopNira.cs:33"
+    ]
+  },
+  {
+    "id": 328,
+    "zh": "这笔订单还没有完成。先看看提示，我们把问题处理好再继续。",
+    "key": "NMC_Text0328",
+    "contexts": [
+      "PointShopNira.cs:34"
+    ]
+  },
+  {
+    "id": 329,
+    "zh": "别急，确认一下数量和P点就好。我会等你。",
+    "key": "NMC_Text0329",
+    "contexts": [
+      "PointShopNira.cs:34"
+    ]
+  },
+  {
+    "id": 330,
+    "zh": "{0}：{1}\n点击头像闲聊；点击文字显示整句。",
+    "key": "NMC_Text0330",
+    "contexts": [
+      "PointShopNira.cs:90"
+    ]
+  },
+  {
+    "id": 331,
+    "zh": "母舰正在整理货单，请在游戏继续运行后稍候片刻。",
+    "key": "NMC_Text0331",
+    "contexts": [
+      "PointShopTrade.cs:39"
+    ]
+  },
+  {
+    "id": 332,
+    "zh": "请选择己方殖民地作为收发地点。",
+    "key": "NMC_Text0332",
+    "contexts": [
+      "PointShopTrade.cs:43"
+    ]
+  },
+  {
+    "id": 333,
+    "zh": "母舰能源账户尚未连接。",
+    "key": "NMC_Text0333",
+    "contexts": [
+      "PointShopTrade.cs:44"
+    ]
+  },
+  {
+    "id": 334,
+    "zh": "该殖民地需要至少一个已供电的轨道交易信标。",
+    "key": "NMC_Text0334",
+    "contexts": [
+      "PointShopTrade.cs:45"
+    ]
+  },
+  {
+    "id": 335,
+    "zh": "订单无效，请重新打开商店。",
+    "key": "NMC_Text0335",
+    "contexts": [
+      "PointShopTrade.cs:99"
+    ]
+  },
+  {
+    "id": 336,
+    "zh": "这笔订单已经处理过了。",
+    "key": "NMC_Text0336",
+    "contexts": [
+      "PointShopTrade.cs:100"
+    ]
+  },
+  {
+    "id": 337,
+    "zh": "订单的物品或数量无效。",
+    "key": "NMC_Text0337",
+    "contexts": [
+      "PointShopTrade.cs:109"
+    ]
+  },
+  {
+    "id": 338,
+    "zh": "物品或库存已变化，请检查订单后重试。",
+    "key": "NMC_Text0338",
+    "contexts": [
+      "PointShopTrade.cs:114"
+    ]
+  },
+  {
+    "id": 339,
+    "zh": "清单中有物品暂时无法估价，请移除后重试。",
+    "key": "NMC_Text0339",
+    "contexts": [
+      "PointShopTrade.cs:117"
+    ]
+  },
+  {
+    "id": 340,
+    "zh": "物品报价已变化，请重新核对清单。",
+    "key": "NMC_Text0340",
+    "contexts": [
+      "PointShopTrade.cs:121"
+    ]
+  },
+  {
+    "id": 341,
+    "zh": "商品已刷新，请重新选购。",
+    "key": "NMC_Text0341",
+    "contexts": [
+      "PointShopTrade.cs:172"
+    ]
+  },
+  {
+    "id": 342,
+    "zh": "P点不足，暂时无法支付这笔订单。",
+    "key": "NMC_Text0342",
+    "contexts": [
+      "PointShopTrade.cs:176"
+    ]
+  },
+  {
+    "id": 343,
+    "zh": "信标附近没有可投送的露天落点，本次未扣费。",
+    "key": "NMC_Text0343",
+    "contexts": [
+      "PointShopTrade.cs:177"
+    ]
+  },
+  {
+    "id": 344,
+    "zh": "暂时无法使用母舰P点，请稍后重试。",
+    "key": "NMC_Text0344",
+    "contexts": [
+      "PointShopTrade.cs:179",
+      "PointShopTrade.cs:213"
+    ]
+  },
+  {
+    "id": 345,
+    "zh": "物品转移未完成，订单已取消且未扣费。",
+    "key": "NMC_Text0345",
+    "contexts": [
+      "PointShopTrade.cs:193"
+    ]
+  },
+  {
+    "id": 346,
+    "zh": "购买完成，共支付 {0}P。货物已安排轨道投送。",
+    "key": "NMC_Text0346",
+    "contexts": [
+      "PointShopTrade.cs:200"
+    ]
+  },
+  {
+    "id": 347,
+    "zh": "这笔捐赠将超过P点账户上限，请减少数量。",
+    "key": "NMC_Text0347",
+    "contexts": [
+      "PointShopTrade.cs:211"
+    ]
+  },
+  {
+    "id": 348,
+    "zh": "物品转移未完成，捐赠已取消。",
+    "key": "NMC_Text0348",
+    "contexts": [
+      "PointShopTrade.cs:219"
+    ]
+  },
+  {
+    "id": 349,
+    "zh": "捐赠完成，获得 {0}P。谢谢你的补给。",
+    "key": "NMC_Text0349",
+    "contexts": [
+      "PointShopTrade.cs:224"
+    ]
+  },
+  {
+    "id": 350,
+    "zh": "母舰点数商店",
+    "key": "NMC_Text0350",
+    "contexts": [
+      "PointShopTrade.cs:240",
+      "PointShopWindow.cs:91"
+    ]
+  },
+  {
+    "id": 351,
+    "zh": "未选择殖民地",
+    "key": "NMC_Text0351",
+    "contexts": [
+      "PointShopWindow.cs:65"
+    ]
+  },
+  {
+    "id": 352,
+    "zh": "关闭",
+    "key": "NMC_Text0352",
+    "contexts": [
+      "PointShopWindow.cs:92"
+    ]
+  },
+  {
+    "id": 353,
+    "zh": "正在整理货单",
+    "key": "NMC_Text0353",
+    "contexts": [
+      "PointShopWindow.cs:94"
+    ]
+  },
+  {
+    "id": 354,
+    "zh": "下次补货：{0}天 {1}时",
+    "key": "NMC_Text0354",
+    "contexts": [
+      "PointShopWindow.cs:94"
+    ]
+  },
+  {
+    "id": 355,
+    "zh": "每7天补货 · 最多60种商品 · 各殖民地共用库存",
+    "key": "NMC_Text0355",
+    "contexts": [
+      "PointShopWindow.cs:96"
+    ]
+  },
+  {
+    "id": 356,
+    "zh": "新货单已到，旧采购清单已清空。",
+    "key": "NMC_Text0356",
+    "contexts": [
+      "PointShopWindow.cs:104"
+    ]
+  },
+  {
+    "id": 357,
+    "zh": "选择信标范围内的物资，查看捐赠可获得的P点。",
+    "key": "NMC_Text0357",
+    "contexts": [
+      "PointShopWindow.cs:133"
+    ]
+  },
+  {
+    "id": 358,
+    "zh": "选择商品和数量。点击物品图标可查看详细信息。",
+    "key": "NMC_Text0358",
+    "contexts": [
+      "PointShopWindow.cs:133"
+    ]
+  },
+  {
+    "id": 359,
+    "zh": "购买商品",
+    "key": "NMC_Text0359",
+    "contexts": [
+      "PointShopWindow.cs:160"
+    ]
+  },
+  {
+    "id": 360,
+    "zh": "◆ 购买商品",
+    "key": "NMC_Text0360",
+    "contexts": [
+      "PointShopWindow.cs:160"
+    ]
+  },
+  {
+    "id": 361,
+    "zh": "◆ 捐赠物资",
+    "key": "NMC_Text0361",
+    "contexts": [
+      "PointShopWindow.cs:161"
+    ]
+  },
+  {
+    "id": 362,
+    "zh": "捐赠物资",
+    "key": "NMC_Text0362",
+    "contexts": [
+      "PointShopWindow.cs:161"
+    ]
+  },
+  {
+    "id": 363,
+    "zh": "收发地：{0}",
+    "key": "NMC_Text0363",
+    "contexts": [
+      "PointShopWindow.cs:162",
+      "PointShopWindow.cs:339"
+    ]
+  },
+  {
+    "id": 364,
+    "zh": "按物品名称或所属模组搜索。",
+    "key": "NMC_Text0364",
+    "contexts": [
+      "PointShopWindow.cs:172"
+    ]
+  },
+  {
+    "id": 365,
+    "zh": "搜索商品 / 模组",
+    "key": "NMC_Text0365",
+    "contexts": [
+      "PointShopWindow.cs:173"
+    ]
+  },
+  {
+    "id": 366,
+    "zh": "全部分类",
+    "key": "NMC_Text0366",
+    "contexts": [
+      "PointShopWindow.cs:177",
+      "PointShopWindow.cs:179"
+    ]
+  },
+  {
+    "id": 367,
+    "zh": "全部来源",
+    "key": "NMC_Text0367",
+    "contexts": [
+      "PointShopWindow.cs:185",
+      "PointShopWindow.cs:187"
+    ]
+  },
+  {
+    "id": 368,
+    "zh": "商品分类",
+    "key": "NMC_Text0368",
+    "contexts": [
+      "PointShopWindow.cs:198"
+    ]
+  },
+  {
+    "id": 369,
+    "zh": "全部商品",
+    "key": "NMC_Text0369",
+    "contexts": [
+      "PointShopWindow.cs:207"
+    ]
+  },
+  {
+    "id": 370,
+    "zh": "{0} 种",
+    "key": "NMC_Text0370",
+    "contexts": [
+      "PointShopWindow.cs:209"
+    ]
+  },
+  {
+    "id": 371,
+    "zh": "信标覆盖物资",
+    "key": "NMC_Text0371",
+    "contexts": [
+      "PointShopWindow.cs:221"
+    ]
+  },
+  {
+    "id": 372,
+    "zh": "在售商品",
+    "key": "NMC_Text0372",
+    "contexts": [
+      "PointShopWindow.cs:221"
+    ]
+  },
+  {
+    "id": 373,
+    "zh": "没有可捐赠的物资。请检查信标供电、覆盖范围和筛选条件。",
+    "key": "NMC_Text0373",
+    "contexts": [
+      "PointShopWindow.cs:225"
+    ]
+  },
+  {
+    "id": 374,
+    "zh": "没有符合筛选条件的商品。可更改筛选，或等待下次补货。",
+    "key": "NMC_Text0374",
+    "contexts": [
+      "PointShopWindow.cs:225"
+    ]
+  },
+  {
+    "id": 375,
+    "zh": "可捐赠 {0} 件",
+    "key": "NMC_Text0375",
+    "contexts": [
+      "PointShopWindow.cs:242"
+    ]
+  },
+  {
+    "id": 376,
+    "zh": "{0} / 件  ·  库存 {1}",
+    "key": "NMC_Text0376",
+    "contexts": [
+      "PointShopWindow.cs:242"
+    ]
+  },
+  {
+    "id": 377,
+    "zh": "选择数量后，可在捐赠清单中查看获得的P点。",
+    "key": "NMC_Text0377",
+    "contexts": [
+      "PointShopWindow.cs:245"
+    ]
+  },
+  {
+    "id": 378,
+    "zh": "单价：{0}",
+    "key": "NMC_Text0378",
+    "contexts": [
+      "PointShopWindow.cs:245"
+    ]
+  },
+  {
+    "id": 379,
+    "zh": "{0}\n{1}\n{2}\n点击图标查看详细信息。\n按住Shift点击加减按钮，可一次调整10件。",
+    "key": "NMC_Text0379",
+    "contexts": [
+      "PointShopWindow.cs:244"
+    ]
+  },
+  {
+    "id": 380,
+    "zh": "余额  {0} P",
+    "key": "NMC_Text0380",
+    "contexts": [
+      "PointShopWindow.cs:266"
+    ]
+  },
+  {
+    "id": 381,
+    "zh": "当前可用于购买商品的P点，包含之前交易留下的余额。\n向母舰捐赠物资可以获得P点回馈。",
+    "key": "NMC_Text0381",
+    "contexts": [
+      "PointShopWindow.cs:267"
+    ]
+  },
+  {
+    "id": 382,
+    "zh": "捐赠物资，为母舰补充储备。\n确认前可核对物品与回馈。",
+    "key": "NMC_Text0382",
+    "contexts": [
+      "PointShopWindow.cs:270"
+    ]
+  },
+  {
+    "id": 383,
+    "zh": "选购所需物资。\n货物将空投至所选殖民地。",
+    "key": "NMC_Text0383",
+    "contexts": [
+      "PointShopWindow.cs:270"
+    ]
+  },
+  {
+    "id": 384,
+    "zh": "预计获得  ",
+    "key": "NMC_Text0384",
+    "contexts": [
+      "PointShopWindow.cs:283"
+    ]
+  },
+  {
+    "id": 385,
+    "zh": "订单合计  ",
+    "key": "NMC_Text0385",
+    "contexts": [
+      "PointShopWindow.cs:283"
+    ]
+  },
+  {
+    "id": 386,
+    "zh": "{0} 项已选",
+    "key": "NMC_Text0386",
+    "contexts": [
+      "PointShopWindow.cs:284"
+    ]
+  },
+  {
+    "id": 387,
+    "zh": "清空",
+    "key": "NMC_Text0387",
+    "contexts": [
+      "PointShopWindow.cs:285"
+    ]
+  },
+  {
+    "id": 388,
+    "zh": "等待交易结果",
+    "key": "NMC_Text0388",
+    "contexts": [
+      "PointShopWindow.cs:289"
+    ]
+  },
+  {
+    "id": 389,
+    "zh": "核对捐赠清单",
+    "key": "NMC_Text0389",
+    "contexts": [
+      "PointShopWindow.cs:289"
+    ]
+  },
+  {
+    "id": 390,
+    "zh": "核对购买清单",
+    "key": "NMC_Text0390",
+    "contexts": [
+      "PointShopWindow.cs:289"
+    ]
+  },
+  {
+    "id": 391,
+    "zh": "P点不足",
+    "key": "NMC_Text0391",
+    "contexts": [
+      "PointShopWindow.cs:290"
+    ]
+  },
+  {
+    "id": 392,
+    "zh": "先核对物品与金额，再确认交易。",
+    "key": "NMC_Text0392",
+    "contexts": [
+      "PointShopWindow.cs:290"
+    ]
+  },
+  {
+    "id": 393,
+    "zh": "订单已发送，正在等待交易结果。",
+    "key": "NMC_Text0393",
+    "contexts": [
+      "PointShopWindow.cs:310"
+    ]
+  },
+  {
+    "id": 394,
+    "zh": "确认捐赠物资",
+    "key": "NMC_Text0394",
+    "contexts": [
+      "PointShopWindow.cs:335"
+    ]
+  },
+  {
+    "id": 395,
+    "zh": "确认购买商品",
+    "key": "NMC_Text0395",
+    "contexts": [
+      "PointShopWindow.cs:335"
+    ]
+  },
+  {
+    "id": 396,
+    "zh": "确认后，清单中的物资将交给母舰，并获得所示P点。捐赠完成后无法取回物资，请确认数量。",
+    "key": "NMC_Text0396",
+    "contexts": [
+      "PointShopWindow.cs:341"
+    ]
+  },
+  {
+    "id": 397,
+    "zh": "确认后支付所示P点。货物将通过轨道空投送至所选殖民地的交易信标附近，请为投送留出露天空间。",
+    "key": "NMC_Text0397",
+    "contexts": [
+      "PointShopWindow.cs:341"
+    ]
+  },
+  {
+    "id": 398,
+    "zh": "本次捐赠不会获得P点。确认后仍会交出清单中的物资，且无法取回。",
+    "key": "NMC_Text0398",
+    "contexts": [
+      "PointShopWindow.cs:342"
+    ]
+  },
+  {
+    "id": 399,
+    "zh": "\n遗体所携带的装备和物品也会一并交出，不会额外增加P点回馈。请先取下需要保留的物品。",
+    "key": "NMC_Text0399",
+    "contexts": [
+      "PointShopWindow.cs:343"
+    ]
+  },
+  {
+    "id": 400,
+    "zh": "确认后交给母舰",
+    "key": "NMC_Text0400",
+    "contexts": [
+      "PointShopWindow.cs:356"
+    ]
+  },
+  {
+    "id": 401,
+    "zh": "小计：{0} P",
+    "key": "NMC_Text0401",
+    "contexts": [
+      "PointShopWindow.cs:356"
+    ]
+  },
+  {
+    "id": 402,
+    "zh": "获得P点：",
+    "key": "NMC_Text0402",
+    "contexts": [
+      "PointShopWindow.cs:361"
+    ]
+  },
+  {
+    "id": 403,
+    "zh": "支付P点：",
+    "key": "NMC_Text0403",
+    "contexts": [
+      "PointShopWindow.cs:361"
+    ]
+  },
+  {
+    "id": 404,
+    "zh": "返回修改",
+    "key": "NMC_Text0404",
+    "contexts": [
+      "PointShopWindow.cs:363"
+    ]
+  },
+  {
+    "id": 405,
+    "zh": "确认捐赠 · {0}P",
+    "key": "NMC_Text0405",
+    "contexts": [
+      "PointShopWindow.cs:364"
+    ]
+  },
+  {
+    "id": 406,
+    "zh": "确认购买",
+    "key": "NMC_Text0406",
+    "contexts": [
+      "PointShopWindow.cs:364"
+    ]
+  },
+  {
+    "id": 407,
+    "zh": "请先登记一座尚可运作的炮塔，本体生命值至少为2",
+    "key": "NMC_Text0407",
+    "contexts": [
+      "Projection.cs:217"
+    ]
+  },
+  {
+    "id": 408,
+    "zh": "所选位置周围20格内无法安置炮塔，请另选位置。本次未扣费",
+    "key": "NMC_Text0408",
+    "contexts": [
+      "Projection.cs:260"
+    ]
+  },
+  {
+    "id": 409,
+    "zh": "本次投射需要 {0} P + {1} V",
+    "key": "NMC_Text0409",
+    "contexts": [
+      "Projection.cs:264"
+    ]
+  },
+  {
+    "id": 410,
+    "zh": "投影武器组件数量不一致",
+    "key": "NMC_Text0410",
+    "contexts": [
+      "Projection.cs:280"
+    ]
+  },
+  {
+    "id": 411,
+    "zh": "投影武器组件来源不一致",
+    "key": "NMC_Text0411",
+    "contexts": [
+      "Projection.cs:285"
+    ]
+  },
+  {
+    "id": 412,
+    "zh": "共享账本付款失败",
+    "key": "NMC_Text0412",
+    "contexts": [
+      "Projection.cs:291"
+    ]
+  },
+  {
+    "id": 413,
+    "zh": "投射未能建立，临时投影已撤回。本次未扣费。",
+    "key": "NMC_Text0413",
+    "contexts": [
+      "Projection.cs:297"
+    ]
+  },
+  {
+    "id": 414,
+    "zh": "撤回此投影",
+    "key": "NMC_Text0414",
+    "contexts": [
+      "ProjectionHooks.cs:327"
+    ]
+  },
+  {
+    "id": 415,
+    "zh": "撤回这座投影，使本体恢复作战。投影造成的损伤不会恢复，已消耗的能量和冷却时间不会返还。",
+    "key": "NMC_Text0415",
+    "contexts": [
+      "ProjectionHooks.cs:327"
+    ]
+  },
+  {
+    "id": 416,
+    "zh": "矩阵投射登记",
+    "key": "NMC_Text0416",
+    "contexts": [
+      "ProjectionHooks.cs:333"
+    ]
+  },
+  {
+    "id": 417,
+    "zh": "允许母舰将这座炮塔投射到远处。投影需5秒形成，随后作战60秒。期间本体停止射击，为投影提供能源和弹药；投影受损也会伤及本体。",
+    "key": "NMC_Text0417",
+    "contexts": [
+      "ProjectionHooks.cs:333"
+    ]
+  },
+  {
+    "id": 418,
+    "zh": "撤回关联投影",
+    "key": "NMC_Text0418",
+    "contexts": [
+      "ProjectionHooks.cs:338"
+    ]
+  },
+  {
+    "id": 419,
+    "zh": "撤回这座炮塔的投影，使本体恢复作战。已造成的损伤仍然保留，能量和冷却时间不会返还。",
+    "key": "NMC_Text0419",
+    "contexts": [
+      "ProjectionHooks.cs:338"
+    ]
+  },
+  {
+    "id": 420,
+    "zh": "形成 {0}",
+    "key": "NMC_Text0420",
+    "contexts": [
+      "ProjectionHooks.cs:348"
+    ]
+  },
+  {
+    "id": 421,
+    "zh": "作战 {0}",
+    "key": "NMC_Text0421",
+    "contexts": [
+      "ProjectionHooks.cs:348"
+    ]
+  },
+  {
+    "id": 422,
+    "zh": "\n矩阵投影 · {0}秒\n本体：{1} · 投影不可维修",
+    "key": "NMC_Text0422",
+    "contexts": [
+      "ProjectionHooks.cs:348"
+    ]
+  },
+  {
+    "id": 423,
+    "zh": "\n矩阵投射中：本体停火，可受击和维修",
+    "key": "NMC_Text0423",
+    "contexts": [
+      "ProjectionHooks.cs:350"
+    ]
+  },
+  {
+    "id": 424,
+    "zh": "临时投影无法卸载或搬迁。请先撤回投影，再搬迁炮塔本体",
+    "key": "NMC_Text0424",
+    "contexts": [
+      "ProjectionLifecycle.cs:12"
+    ]
+  },
+  {
+    "id": 425,
+    "zh": "本体已不可用，正在撤回投影",
+    "key": "NMC_Text0425",
+    "contexts": [
+      "ProjectionLifecycle.cs:108"
+    ]
+  },
+  {
+    "id": 426,
+    "zh": "矩阵形成中：暂不开火",
+    "key": "NMC_Text0426",
+    "contexts": [
+      "ProjectionLifecycle.cs:109"
+    ]
+  },
+  {
+    "id": 427,
+    "zh": "本体供电正常",
+    "key": "NMC_Text0427",
+    "contexts": [
+      "ProjectionLifecycle.cs:110"
+    ]
+  },
+  {
+    "id": 428,
+    "zh": "本体断电：投影停火",
+    "key": "NMC_Text0428",
+    "contexts": [
+      "ProjectionLifecycle.cs:110"
+    ]
+  },
+  {
+    "id": 429,
+    "zh": "位置不明",
+    "key": "NMC_Text0429",
+    "contexts": [
+      "ProjectionLifecycle.cs:111"
+    ]
+  },
+  {
+    "id": 430,
+    "zh": "供电来源：{0}（{1}）\n{2}\n投影使用本体的电力与补给",
+    "key": "NMC_Text0430",
+    "contexts": [
+      "ProjectionLifecycle.cs:111"
+    ]
+  },
+  {
+    "id": 431,
+    "zh": "地底无法使用净化光束",
+    "key": "NMC_Text0431",
+    "contexts": [
+      "PurificationBeam.cs:14"
+    ]
+  },
+  {
+    "id": 432,
+    "zh": "母舰支援暂时无法连接",
+    "key": "NMC_Text0432",
+    "contexts": [
+      "PurificationBeam.cs:17",
+      "SolarBombardment.cs:16",
+      "SolarRay.cs:17"
+    ]
+  },
+  {
+    "id": 433,
+    "zh": "没有露天净化光束起点",
+    "key": "NMC_Text0433",
+    "contexts": [
+      "PurificationBeam.cs:31"
+    ]
+  },
+  {
+    "id": 434,
+    "zh": "净化光束  ·  700 P + 550 V  ·  左键选择起点 / 自动追敌  ·  右键 / Esc 取消",
+    "key": "NMC_Text0434",
+    "contexts": [
+      "PurificationTargeting.cs:67"
+    ]
+  },
+  {
+    "id": 435,
+    "zh": "净化光束已征召  ·  左键指定移动目的地  ·  右键 / Esc 取消命令",
+    "key": "NMC_Text0435",
+    "contexts": [
+      "PurificationTargeting.cs:68"
+    ]
+  },
+  {
+    "id": 436,
+    "zh": "五舰落点必须避开地图最外圈",
+    "key": "NMC_Text0436",
+    "contexts": [
+      "RayFleetActions.cs:22"
+    ]
+  },
+  {
+    "id": 437,
+    "zh": "五舰落点不能位于战争迷雾中",
+    "key": "NMC_Text0437",
+    "contexts": [
+      "RayFleetActions.cs:23"
+    ]
+  },
+  {
+    "id": 438,
+    "zh": "五舰落点不能位于厚山顶下",
+    "key": "NMC_Text0438",
+    "contexts": [
+      "RayFleetActions.cs:24"
+    ]
+  },
+  {
+    "id": 439,
+    "zh": "五舰落点不能位于墙体或不可通行地形中",
+    "key": "NMC_Text0439",
+    "contexts": [
+      "RayFleetActions.cs:25"
+    ]
+  },
+  {
+    "id": 440,
+    "zh": "佐拉亚军团入场失败；未扣费、未开始冷却",
+    "key": "NMC_Text0440",
+    "contexts": [
+      "RayFleetActions.cs:70"
+    ]
+  },
+  {
+    "id": 441,
+    "zh": "已无法联络军团，本次增援已取消",
+    "key": "NMC_Text0441",
+    "contexts": [
+      "RayFleetActions.cs:76",
+      "SeydasLegionActions.cs:62",
+      "TebrusLegionActions.cs:60"
+    ]
+  },
+  {
+    "id": 442,
+    "zh": "信标范围内的物资已变化，请重新核对。本次未扣费，也未开始冷却",
+    "key": "NMC_Text0442",
+    "contexts": [
+      "RayFleetActions.cs:82",
+      "SeydasLegionActions.cs:66",
+      "TebrusLegionActions.cs:64"
+    ]
+  },
+  {
+    "id": 443,
+    "zh": "母舰能量不足；物资退回，本次增援已取消",
+    "key": "NMC_Text0443",
+    "contexts": [
+      "RayFleetActions.cs:88",
+      "SeydasLegionActions.cs:71",
+      "TebrusLegionActions.cs:69"
+    ]
+  },
+  {
+    "id": 444,
+    "zh": "佐拉亚军团折跃入场：1艘佐拉亚 + 4艘虚空辉光舰；交付{0}{1}，全队入场后驻留120秒",
+    "key": "NMC_Text0444",
+    "contexts": [
+      "RayFleetActions.cs:93"
+    ]
+  },
+  {
+    "id": 445,
+    "zh": "佐拉亚军团 · {0} P + {1} V · 2000白银或200黄金 · 左键部署，右键 / Esc取消",
+    "key": "NMC_Text0445",
+    "contexts": [
+      "RayFleetTargeting.cs:38"
+    ]
+  },
+  {
+    "id": 446,
+    "zh": "太阳能射线枪  ·  300 P + 180 V  ·  左键启动三束 / 8 秒  ·  右键 / Esc 取消",
+    "key": "NMC_Text0446",
+    "contexts": [
+      "RayTargeting.cs:46"
+    ]
+  },
+  {
+    "id": 447,
+    "zh": "军团装备尚未准备完成，暂时无法增援",
+    "key": "NMC_Text0447",
+    "contexts": [
+      "SeydasLegionActions.cs:18",
+      "TebrusLegionActions.cs:18"
+    ]
+  },
+  {
+    "id": 448,
+    "zh": "军团部队暂时无法派遣",
+    "key": "NMC_Text0448",
+    "contexts": [
+      "SeydasLegionActions.cs:24",
+      "TebrusLegionActions.cs:22"
+    ]
+  },
+  {
+    "id": 449,
+    "zh": "附近需要四处已探索、可站立且没有厚山岩顶的空地",
+    "key": "NMC_Text0449",
+    "contexts": [
+      "SeydasLegionActions.cs:30"
+    ]
+  },
+  {
+    "id": 450,
+    "zh": "赛达斯军团入场失败；未扣费、未开始冷却",
+    "key": "NMC_Text0450",
+    "contexts": [
+      "SeydasLegionActions.cs:59"
+    ]
+  },
+  {
+    "id": 451,
+    "zh": "赛达斯军团抵达：赛达斯 + 3黑暗执政官；交付{0}{1}，120秒后折跃撤离",
+    "key": "NMC_Text0451",
+    "contexts": [
+      "SeydasLegionActions.cs:76"
+    ]
+  },
+  {
+    "id": 452,
+    "zh": "赛达斯",
+    "key": "NMC_Text0452",
+    "contexts": [
+      "SeydasLegionActions.cs:88",
+      "1.6\\Defs\\CommanderSeydasLegion.xml:NMC_Seydas.label"
+    ]
+  },
+  {
+    "id": 453,
+    "zh": "赛达斯军团 · {0} P + {1} V · 2000白银或200黄金 · 左键部署，右键 / Esc取消",
+    "key": "NMC_Text0453",
+    "contexts": [
+      "SeydasLegionTargeting.cs:38"
+    ]
+  },
+  {
+    "id": 454,
+    "zh": "心灵归附",
+    "key": "NMC_Text0454",
+    "contexts": [
+      "SeydasMindControl.cs:72",
+      "1.6\\Defs\\CommanderSeydasLegion.xml:NMC_SeydasConversion.label"
+    ]
+  },
+  {
+    "id": 455,
+    "zh": "地底无法使用太阳轰炸",
+    "key": "NMC_Text0455",
+    "contexts": [
+      "SolarBombardment.cs:13"
+    ]
+  },
+  {
+    "id": 456,
+    "zh": "没有可用的太阳轰炸中心：厚山岩顶下禁止直接打击",
+    "key": "NMC_Text0456",
+    "contexts": [
+      "SolarBombardment.cs:29"
+    ]
+  },
+  {
+    "id": 457,
+    "zh": "太阳轰炸已结束：范围内没有可用的轨道落点",
+    "key": "NMC_Text0457",
+    "contexts": [
+      "SolarBombardment.cs:143"
+    ]
+  },
+  {
+    "id": 458,
+    "zh": "地底无法使用太阳能射线枪",
+    "key": "NMC_Text0458",
+    "contexts": [
+      "SolarRay.cs:14"
+    ]
+  },
+  {
+    "id": 459,
+    "zh": "没有可用的太阳能射线起点：厚山岩顶下不可直接命中",
+    "key": "NMC_Text0459",
+    "contexts": [
+      "SolarRay.cs:31"
+    ]
+  },
+  {
+    "id": 460,
+    "zh": "太阳轰炸  ·  {0} P + {1} V  ·  左键启动 300 发  ·  右键 / Esc 取消瞄准",
+    "key": "NMC_Text0460",
+    "contexts": [
+      "SolarTargeting.cs:46"
+    ]
+  },
+  {
+    "id": 461,
+    "zh": "需要至少一处可用的殖民地",
+    "key": "NMC_Text0461",
+    "contexts": [
+      "SpacetimeWave.cs:38",
+      "TimeStop.cs:130"
+    ]
+  },
+  {
+    "id": 462,
+    "zh": "时空波动：工作速度提高至5倍",
+    "key": "NMC_Text0462",
+    "contexts": [
+      "SpacetimeWave.cs:89"
+    ]
+  },
+  {
+    "id": 463,
+    "zh": "无法部署这项设施",
+    "key": "NMC_Text0463",
+    "contexts": [
+      "StructureActions.cs:12"
+    ]
+  },
+  {
+    "id": 464,
+    "zh": "施工核心暂时不可用，无法部署",
+    "key": "NMC_Text0464",
+    "contexts": [
+      "StructureActions.cs:14"
+    ]
+  },
+  {
+    "id": 465,
+    "zh": "无法在此处部署施工核心",
+    "key": "NMC_Text0465",
+    "contexts": [
+      "StructureActions.cs:18"
+    ]
+  },
+  {
+    "id": 466,
+    "zh": "核心占地不能触及地图最外圈",
+    "key": "NMC_Text0466",
+    "contexts": [
+      "StructureActions.cs:22"
+    ]
+  },
+  {
+    "id": 467,
+    "zh": "核心占地必须已探索",
+    "key": "NMC_Text0467",
+    "contexts": [
+      "StructureActions.cs:23"
+    ]
+  },
+  {
+    "id": 468,
+    "zh": "所选位置有建筑、人员或物品，请先清空",
+    "key": "NMC_Text0468",
+    "contexts": [
+      "StructureActions.cs:26"
+    ]
+  },
+  {
+    "id": 469,
+    "zh": "附近需要11处已探索、可站立且没有厚山岩顶的空地",
+    "key": "NMC_Text0469",
+    "contexts": [
+      "TebrusLegionActions.cs:28"
+    ]
+  },
+  {
+    "id": 470,
+    "zh": "特布鲁斯军团入场失败；未扣费、未开始冷却",
+    "key": "NMC_Text0470",
+    "contexts": [
+      "TebrusLegionActions.cs:57"
+    ]
+  },
+  {
+    "id": 471,
+    "zh": "特布鲁斯军团抵达：特布鲁斯 + 10近战战士；交付{0}{1}，120秒后折跃撤离",
+    "key": "NMC_Text0471",
+    "contexts": [
+      "TebrusLegionActions.cs:74"
+    ]
+  },
+  {
+    "id": 472,
+    "zh": "特布鲁斯",
+    "key": "NMC_Text0472",
+    "contexts": [
+      "TebrusLegionActions.cs:86",
+      "TemplateMigration.cs:23",
+      "1.6\\Defs\\CommanderTebrusLegion.xml:NMC_Tebrus.label"
+    ]
+  },
+  {
+    "id": 473,
+    "zh": "特布鲁斯军团 · {0} P + {1} V · 2000白银或200黄金 · 左键部署，右键 / Esc取消",
+    "key": "NMC_Text0473",
+    "contexts": [
+      "TebrusLegionTargeting.cs:38"
+    ]
+  },
+  {
+    "id": 474,
+    "zh": "虚空抑制 · 不可受击破坏\n半径13 · 敌人移动与攻击速度降至30% · 炮塔停火\n剩余：{0}",
+    "key": "NMC_Text0474",
+    "contexts": [
+      "VoidCrystal.cs:43"
+    ]
+  },
+  {
+    "id": 475,
+    "zh": "晶体不能位于地图最外圈",
+    "key": "NMC_Text0475",
+    "contexts": [
+      "VoidCrystal.cs:84"
+    ]
+  },
+  {
+    "id": 476,
+    "zh": "晶体落点必须已探索",
+    "key": "NMC_Text0476",
+    "contexts": [
+      "VoidCrystal.cs:85"
+    ]
+  },
+  {
+    "id": 477,
+    "zh": "落点被建筑、人员或物品占用，请另选位置",
+    "key": "NMC_Text0477",
+    "contexts": [
+      "VoidCrystal.cs:89"
+    ]
+  },
+  {
+    "id": 478,
+    "zh": "虚空抑制晶体暂时无法部署",
+    "key": "NMC_Text0478",
+    "contexts": [
+      "VoidCrystal.cs:155"
+    ]
+  },
+  {
+    "id": 479,
+    "zh": "晶体无法放置在此处",
+    "key": "NMC_Text0479",
+    "contexts": [
+      "VoidCrystal.cs:169"
+    ]
+  },
+  {
+    "id": 480,
+    "zh": "虚空抑制晶体 · {0} P + {1} V · 半径13 / 30秒 · 左键部署，右键 / Esc取消",
+    "key": "NMC_Text0480",
+    "contexts": [
+      "VoidCrystalTargeting.cs:42"
+    ]
+  },
+  {
+    "id": 481,
+    "zh": "虚空抑制晶体 · {0}",
+    "key": "NMC_Text0481",
+    "contexts": [
+      "VoidCrystalTargeting.cs:43"
+    ]
+  },
+  {
+    "id": 482,
+    "zh": "正在为TargetA安装星舰电池。",
+    "key": "NMC_Text0482",
+    "contexts": [
+      "1.6\\Defs\\AircraftStarshipUpgrade.xml:NMC_InstallStarshipBattery.reportString"
+    ]
+  },
+  {
+    "id": 483,
+    "zh": "为舰船运送星舰电池",
+    "key": "NMC_Text0483",
+    "contexts": [
+      "1.6\\Defs\\AircraftStarshipUpgrade.xml:NMC_UpgradeAircraftStarship.label"
+    ]
+  },
+  {
+    "id": 484,
+    "zh": "安装星舰电池",
+    "key": "NMC_Text0484",
+    "contexts": [
+      "1.6\\Defs\\AircraftStarshipUpgrade.xml:NMC_UpgradeAircraftStarship.verb",
+      "1.6\\Defs\\AircraftStarshipUpgrade.xml:NMC_UpgradeAircraftStarship.gerund"
+    ]
+  },
+  {
+    "id": 485,
+    "zh": "折跃能量场",
+    "key": "NMC_Text0485",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S01.label"
+    ]
+  },
+  {
+    "id": 486,
+    "zh": "在指定位置建立折跃能量场，为半径8格内的友方设备供电，并为友方单位补充能量。能量场总供电能力为10000W，范围内单位每秒恢复其能量上限的20%。\n\n同一时间只能维持一处能量场。首次部署消耗1000P和500V；已有能量场时，花费100P和50V可将其迁至新位置。运行期间每0.1天消耗1P和1V，储备不足时自动关闭。\n\n完成“跨域人员折跃”研究后，殖民者可以直接折跃至能量场。此后，部署或迁移能量场的冷却时间延长为1天。",
+    "key": "NMC_Text0486",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S01.description"
+    ]
+  },
+  {
+    "id": 487,
+    "zh": "折跃能量场支援协议",
+    "key": "NMC_Text0487",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S01.researchLabel",
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support01.label"
+    ]
+  },
+  {
+    "id": 488,
+    "zh": "轨道轰炸",
+    "key": "NMC_Text0488",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S02.label"
+    ]
+  },
+  {
+    "id": 489,
+    "zh": "指引母舰对选定位置进行轨道打击。进入瞄准后，可连续点击指定落点；每次成功开火分别消耗能量，结束瞄准即可停止攻击。\n\n每发打击影响半径3格，造成30点基础伤害，护甲穿透率为35%，对建筑的伤害提高至5倍。爆炸伤害不会随距离衰减。轨道火力无法用于地下，也无法直接打击厚山岩顶下的目标。\n\n完成“精确友军识别”研究后，指挥官直接火力将避开己方和盟友。",
+    "key": "NMC_Text0489",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S02.description"
+    ]
+  },
+  {
+    "id": 490,
+    "zh": "轨道轰炸支援协议",
+    "key": "NMC_Text0490",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S02.researchLabel",
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support02.label"
+    ]
+  },
+  {
+    "id": 491,
+    "zh": "按每次成功开火扣费",
+    "key": "NMC_Text0491",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S02.extraCost"
+    ]
+  },
+  {
+    "id": 492,
+    "zh": "护盾超载",
+    "key": "NMC_Text0492",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S03.label"
+    ]
+  },
+  {
+    "id": 493,
+    "zh": "为当前地图上施放时在场的友方单位与建筑提供临时护盾，持续30秒。每个目标获得200点护盾，用于吸收护甲抵挡后仍会造成的伤害。\n\n后来进入地图的友军不会获得这次护盾。建筑若同时受到建筑超载保护，两种护盾可共同生效，总量最多400点。可以提前结束护盾，但已消耗的能量和冷却时间不会返还。",
+    "key": "NMC_Text0493",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S03.description"
+    ]
+  },
+  {
+    "id": 494,
+    "zh": "护盾超载支援协议",
+    "key": "NMC_Text0494",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S03.researchLabel",
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support03.label"
+    ]
+  },
+  {
+    "id": 495,
+    "zh": "呼叫母舰对指定区域实施持续轨道轰炸。在30秒内，300发能量弹将陆续落入半径13格的区域。每发影响半径5格，造成30点基础伤害，对建筑的伤害提高至5倍；爆炸伤害不会随距离衰减。\n\n适合摧毁密集阵地。攻击一旦开始便无法中止，请先让友军远离轰炸区域。无法用于地下，也无法直接打击厚山岩顶下的目标。",
+    "key": "NMC_Text0495",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S04.description"
+    ]
+  },
+  {
+    "id": 496,
+    "zh": "太阳轰炸支援协议",
+    "key": "NMC_Text0496",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S04.researchLabel",
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support04.label"
+    ]
+  },
+  {
+    "id": 497,
+    "zh": "太阳能射线枪",
+    "key": "NMC_Text0497",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S05.label"
+    ]
+  },
+  {
+    "id": 498,
+    "zh": "让母舰投射三道太阳能射线，持续扫射8秒。射线优先分头追踪敌人，敌人较少时可以集中攻击同一目标。沿途目标会持续受到能量冲击与灼烧伤害。\n\n选择起点后开始攻击，也可提前结束当前地图上的射线。无法用于地下，厚山岩顶会阻挡打击。结束攻击不会返还已消耗的能量，也不会重置冷却。",
+    "key": "NMC_Text0498",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S05.description"
+    ]
+  },
+  {
+    "id": 499,
+    "zh": "太阳能射线枪支援协议",
+    "key": "NMC_Text0499",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S05.researchLabel",
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support05.label"
+    ]
+  },
+  {
+    "id": 500,
+    "zh": "时空波动",
+    "key": "NMC_Text0500",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S06.label"
+    ]
+  },
+  {
+    "id": 501,
+    "zh": "短暂加速各处殖民地的生产活动，使友方单位的研究、建造、种植、制造等工作速度提高至平时的5倍，持续60秒。超维空间巨石的攻击频率也会同步提高。\n\n这项支援不会加快母舰资源的产出。各处殖民地的效果随当地时间持续，可以从指挥面板提前结束。",
+    "key": "NMC_Text0501",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S06.description"
+    ]
+  },
+  {
+    "id": 502,
+    "zh": "时空波动支援协议",
+    "key": "NMC_Text0502",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S06.researchLabel",
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support06.label"
+    ]
+  },
+  {
+    "id": 503,
+    "zh": "从轨道投下一道能够移动的净化光束。光束影响半径4格，持续20秒，以每秒3格的速度自动追踪敌人，对沿途目标持续造成能量与灼烧伤害。\n\n可以征召光束，手动指定它的移动方向；解除征召后恢复自动追击。无法用于地下，厚山岩顶会阻挡打击。可以提前结束光束，但能量和冷却时间不会返还。",
+    "key": "NMC_Text0503",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S07.description"
+    ]
+  },
+  {
+    "id": 504,
+    "zh": "净化光束支援协议",
+    "key": "NMC_Text0504",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S07.researchLabel",
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support07.label"
+    ]
+  },
+  {
+    "id": 505,
+    "zh": "暗影核心",
+    "key": "NMC_Text0505",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S08.label"
+    ]
+  },
+  {
+    "id": 506,
+    "zh": "在指定位置部署暗影核心。殖民者交齐钢铁、零部件和龙晶后，母舰会自动将其建成暗影能源塔。\n\n能源塔每天向母舰输送120P和80V，并使半径7格内的友军隐形。塔身不会被自身的暗影场隐藏。可以建造多座能源塔，各自生产资源。",
+    "key": "NMC_Text0506",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S08.description"
+    ]
+  },
+  {
+    "id": 507,
+    "zh": "暗影核心支援协议",
+    "key": "NMC_Text0507",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S08.researchLabel",
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support08.label"
+    ]
+  },
+  {
+    "id": 508,
+    "zh": "钢铁 150 · 零部件 4 · 龙晶 25",
+    "key": "NMC_Text0508",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S08.extraCost"
+    ]
+  },
+  {
+    "id": 509,
+    "zh": "暗影卫队",
+    "key": "NMC_Text0509",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S09.label"
+    ]
+  },
+  {
+    "id": 510,
+    "zh": "请求四名暗影卫队成员折跃增援，协助作战120秒。卫队擅长近身突击，配备大师品质的生物编码武器与幽灵装甲，能够在隐形状态下攻击。侦测隐形的手段仍可发现她们。\n\n需要世界上仍有与殖民地非敌对的涅瓦莲幸存者派系。卫队自行选择目标，无法被征召；支援结束后，成员及仍随身携带的装备撤离。",
+    "key": "NMC_Text0510",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S09.description"
+    ]
+  },
+  {
+    "id": 511,
+    "zh": "暗影卫队支援协议",
+    "key": "NMC_Text0511",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S09.researchLabel",
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support09.label"
+    ]
+  },
+  {
+    "id": 512,
+    "zh": "黑洞",
+    "key": "NMC_Text0512",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S10.label"
+    ]
+  },
+  {
+    "id": 513,
+    "zh": "制造一个持续8秒的引力涡旋，将半径8格内的敌人拉向中心，并暂时消除其护甲防护。牵引速度为每秒12格，也能影响倒地和空中的敌人。\n\n黑洞本身不造成伤害，适合将分散的敌人聚集起来，配合其他火力攻击。可以提前结束黑洞。",
+    "key": "NMC_Text0513",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S10.description"
+    ]
+  },
+  {
+    "id": 514,
+    "zh": "黑洞支援协议",
+    "key": "NMC_Text0514",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S10.researchLabel",
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support10.label"
+    ]
+  },
+  {
+    "id": 515,
+    "zh": "时间停止",
+    "key": "NMC_Text0515",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S11.label"
+    ]
+  },
+  {
+    "id": 516,
+    "zh": "使各处殖民地在施放时已经在场的敌人停止移动和攻击，持续30秒。可影响敌方生物、机械体、无人机与炮塔。\n\n效果不会波及后来抵达的敌人；目标离开战场或不再敌对后，束缚立即解除。时间停止不会阻止伤势、疾病等状态继续变化。可以提前结束所有殖民地的效果。",
+    "key": "NMC_Text0516",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S11.description"
+    ]
+  },
+  {
+    "id": 517,
+    "zh": "时间停止支援协议",
+    "key": "NMC_Text0517",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S11.researchLabel",
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support11.label"
+    ]
+  },
+  {
+    "id": 518,
+    "zh": "建筑超载",
+    "key": "NMC_Text0518",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S12.label"
+    ]
+  },
+  {
+    "id": 519,
+    "zh": "将一座友方建筑临时变为防御火力点，赋予200点护盾和蓝色激光武器，持续45秒。激光每0.5秒攻击一次，造成10点基础伤害。\n\n每次使用需要消耗1次超载充能。充能从零开始积累，每3天恢复1次，最多储存3次。可以提前取消超载，但能量、充能与已经开始的冷却不会返还。",
+    "key": "NMC_Text0519",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S12.description"
+    ]
+  },
+  {
+    "id": 520,
+    "zh": "建筑超载支援协议",
+    "key": "NMC_Text0520",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S12.researchLabel",
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support12.label"
+    ]
+  },
+  {
+    "id": 521,
+    "zh": "每次另消耗 1 次超载充能",
+    "key": "NMC_Text0521",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S12.extraCost"
+    ]
+  },
+  {
+    "id": 522,
+    "zh": "涅瓦莲舰队",
+    "key": "NMC_Text0522",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S13.label"
+    ]
+  },
+  {
+    "id": 523,
+    "zh": "呼叫一艘战术母舰和八艘驱逐舰。舰队自动飞行作战，全队抵达后驻留120秒。\n\n战术母舰使用激光与能量弹轰击敌人。驱逐舰持续发射棱晶光束，连续命中同一目标时伤害逐渐提高，换目标或中断攻击后恢复初始强度。驱逐舰光束不造成冰冻。\n\n支援舰艇能够被敌方火力击毁。支援结束后，舰艇、残骸及掉落物一并撤回。",
+    "key": "NMC_Text0523",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S13.description"
+    ]
+  },
+  {
+    "id": 524,
+    "zh": "涅瓦莲舰队支援协议",
+    "key": "NMC_Text0524",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S13.researchLabel",
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support13.label"
+    ]
+  },
+  {
+    "id": 525,
+    "zh": "特布鲁斯军团",
+    "key": "NMC_Text0525",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S14.label"
+    ]
+  },
+  {
+    "id": 526,
+    "zh": "请求特布鲁斯率领十名近战战士增援，协助作战120秒。特布鲁斯使用灵能脉冲枪，并在敌人聚集时施放灵能风暴；风暴灼伤敌人，同时治疗范围内的友军。\n\n除能量费用外，还需交付2000白银；白银不足时改为交付200黄金。物资必须位于当前地图已供电的轨道交易信标范围内。\n\n需要非敌对的涅瓦莲幸存者派系。军团自行作战，无法征召；撤离时会收回成员与专属装备。三个远征军团共用7天冷却时间。",
+    "key": "NMC_Text0526",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S14.description"
+    ]
+  },
+  {
+    "id": 527,
+    "zh": "特布鲁斯军团支援协议",
+    "key": "NMC_Text0527",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S14.researchLabel",
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support14.label"
+    ]
+  },
+  {
+    "id": 528,
+    "zh": "白银 2,000 或黄金 200",
+    "key": "NMC_Text0528",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S14.extraCost",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S15.extraCost",
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S16.extraCost"
+    ]
+  },
+  {
+    "id": 529,
+    "zh": "佐拉亚军团",
+    "key": "NMC_Text0529",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S15.label"
+    ]
+  },
+  {
+    "id": 530,
+    "zh": "呼叫指挥舰佐拉亚和四艘辉光舰。全队抵达后自动作战120秒，以棱晶光束持续攻击敌人。光束附带冰冻效果，连续锁定同一目标时伤害逐渐提高。\n\n除能量费用外，还需交付2000白银；白银不足时改为交付200黄金。物资必须位于当前地图已供电的轨道交易信标范围内。\n\n需要非敌对的涅瓦莲幸存者派系。支援结束后，舰艇、残骸与掉落物一并撤回。三个远征军团共用7天冷却时间。",
+    "key": "NMC_Text0530",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S15.description"
+    ]
+  },
+  {
+    "id": 531,
+    "zh": "佐拉亚军团支援协议",
+    "key": "NMC_Text0531",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S15.researchLabel",
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support15.label"
+    ]
+  },
+  {
+    "id": 532,
+    "zh": "赛达斯军团",
+    "key": "NMC_Text0532",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S16.label"
+    ]
+  },
+  {
+    "id": 533,
+    "zh": "请求赛达斯与三名黑暗执政官增援，协助作战120秒。她们以心灵支配瓦解敌军，优先控制价值较高的敌人，使其加入涅瓦莲幸存者派系。受到控制的单位不会成为你的殖民者，军团撤离后也不会恢复敌对归属。\n\n除能量费用外，还需交付2000白银；白银不足时改为交付200黄金。物资必须位于当前地图已供电的轨道交易信标范围内。\n\n需要非敌对的涅瓦莲幸存者派系。军团自行作战，无法征召；撤离时收回四名成员及专属装备。三个远征军团共用7天冷却时间。",
+    "key": "NMC_Text0533",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S16.description"
+    ]
+  },
+  {
+    "id": 534,
+    "zh": "赛达斯军团支援协议",
+    "key": "NMC_Text0534",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S16.researchLabel",
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support16.label"
+    ]
+  },
+  {
+    "id": 535,
+    "zh": "在指定位置部署超维空间巨石核心。交齐钢铁、零部件和龙晶后，母舰自动完成施工，建成可长期使用的防御设施。\n\n巨石需要1000W电力，无需弹药。它每2秒可同时攻击60格内最多10名敌人，每个目标受到3点基础伤害并眩晕1秒，适合阻滞大批敌人的推进。",
+    "key": "NMC_Text0535",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S17.description"
+    ]
+  },
+  {
+    "id": 536,
+    "zh": "超维空间巨石支援协议",
+    "key": "NMC_Text0536",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S17.researchLabel",
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support17.label"
+    ]
+  },
+  {
+    "id": 537,
+    "zh": "钢铁 300 · 零部件 10 · 龙晶 60",
+    "key": "NMC_Text0537",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S17.extraCost"
+    ]
+  },
+  {
+    "id": 538,
+    "zh": "虚空抑制晶体",
+    "key": "NMC_Text0538",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S18.label",
+      "1.6\\Defs\\CommanderVoidCrystal.xml:NMC_VoidSuppressionCrystal.label"
+    ]
+  },
+  {
+    "id": 539,
+    "zh": "在指定位置折跃一座虚空抑制晶体，持续30秒。半径13格内，敌人的移动和攻击速度降至平时的30%，敌方炮塔停止射击。\n\n晶体不会被攻击摧毁。敌人离开影响范围后立即恢复，同类晶体的抑制效果不会叠加。可以提前撤回晶体。",
+    "key": "NMC_Text0539",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S18.description"
+    ]
+  },
+  {
+    "id": 540,
+    "zh": "虚空抑制晶体支援协议",
+    "key": "NMC_Text0540",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S18.researchLabel",
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support18.label"
+    ]
+  },
+  {
+    "id": 541,
+    "zh": "超维空间矩阵投射",
+    "key": "NMC_Text0541",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S19.label"
+    ]
+  },
+  {
+    "id": 542,
+    "zh": "将已登记的己方炮塔投射到指定区域，部署范围为中心周围20格。投影需要5秒形成，随后可作战60秒；空间不足时，只投射能够安置的炮塔。\n\n投影以本体当前生命值的一半出现，使用本体的电力、燃料和弹药。本体在投射期间停止射击，仍可受伤和维修。投影承受的损伤也会施加到本体，请谨慎选择部署位置。\n\n投影无法维修或搬迁。可在炮塔上登记、取消登记或提前撤回投影；提前撤回不会返还能量或冷却时间。",
+    "key": "NMC_Text0542",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S19.description"
+    ]
+  },
+  {
+    "id": 543,
+    "zh": "超维空间矩阵投射支援协议",
+    "key": "NMC_Text0543",
+    "contexts": [
+      "1.6\\Defs\\CommanderAbilities.xml:NMC_S19.researchLabel",
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support19.label"
+    ]
+  },
+  {
+    "id": 544,
+    "zh": "涅瓦莲航母",
+    "key": "NMC_Text0544",
+    "contexts": [
+      "1.6\\Defs\\CommanderAircraft.xml:NMC_Carrier.label",
+      "1.6\\Defs\\CommanderAircraft.xml:NMC_CarrierShip.label",
+      "1.6\\Defs\\CommanderAircraft.xml:NMC_CarrierFlying.label",
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_CarrierResearch.label"
+    ]
+  },
+  {
+    "id": 545,
+    "zh": "涅瓦莲的大型航空母舰，兼具重型运输和舰载机支援能力。舰体生命值5000，载重10000千克。自身没有直接攻击武器，需要依靠舰载机应战。\n\n通过“装载货物”运入龙霜钢，即可补充最多1000单位的制造储备。每架舰载机消耗10龙霜钢，制造需要15秒；停泊和飞行时均可制造。机库与出击中的舰载机合计最多8架，每架生命值150。\n\n升空作战后，航母会发现60格内的敌人，每秒派出一架舰载机。舰载机飞离航母80格后自动返回；接到降落命令时，航母停止出击并召回全部舰载机。\n\n最多储存10000化合燃料，在地图内升空期间每秒消耗1单位。远程航行的耗油与穿梭机相同，航程受燃料储备限制。起飞无需等待额外冷却，但必须清除舰船上方的屋顶；降落需要足够的空地。\n\n同时启用米莉拉种族后，可在停泊时选择“升级星舰动力”。殖民者会搬运并安装10个米莉拉星舰电池；完成后，每次起飞消耗200化合燃料，地图内飞行和世界地图航行均不再持续耗油。升级进度会保留，电池安装后消耗。",
+    "key": "NMC_Text0545",
+    "contexts": [
+      "1.6\\Defs\\CommanderAircraft.xml:NMC_Carrier.description"
+    ]
+  },
+  {
+    "id": 546,
+    "zh": "涅瓦莲航母（降落）",
+    "key": "NMC_Text0546",
+    "contexts": [
+      "1.6\\Defs\\CommanderAircraft.xml:NMC_CarrierIncoming.label"
+    ]
+  },
+  {
+    "id": 547,
+    "zh": "涅瓦莲航母（起飞）",
+    "key": "NMC_Text0547",
+    "contexts": [
+      "1.6\\Defs\\CommanderAircraft.xml:NMC_CarrierLeaving.label"
+    ]
+  },
+  {
+    "id": 548,
+    "zh": "正在远程航行的涅瓦莲航母，携带人员、货物与舰载机前往目的地。",
+    "key": "NMC_Text0548",
+    "contexts": [
+      "1.6\\Defs\\CommanderAircraft.xml:NMC_CarrierFlying.description"
+    ]
+  },
+  {
+    "id": 549,
+    "zh": "涅瓦莲引力舰",
+    "key": "NMC_Text0549",
+    "contexts": [
+      "1.6\\Defs\\CommanderAircraft.xml:NMC_GravityFrigate.label",
+      "1.6\\Defs\\CommanderAircraft.xml:NMC_GravityFrigateShip.label",
+      "1.6\\Defs\\CommanderAircraft.xml:NMC_GravityFrigateFlying.label",
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_GravityFrigateResearch.label"
+    ]
+  },
+  {
+    "id": 550,
+    "zh": "擅长对空拦截的涅瓦莲舰船，也能执行轻型运输。占地3×3格，舰体生命值600，载重300千克。\n\n升空后，以双束棱晶激光攻击16格内的空中敌人，每秒齐射一次。每束造成12点基础伤害，护甲穿透率为50%，对建筑的伤害提高至3倍，不附带冰冻效果。舰船不能直接攻击地面目标。\n\n引力束可将16格内的一名地面敌人举起并眩晕5秒，使其成为激光能够攻击的空中目标。引力束无需额外资源，冷却8秒；可以手动选择目标，也可允许舰船自动施放。\n\n最多储存600化合燃料，在地图内升空期间每5秒消耗1单位。远程航行的耗油为穿梭机的一半，航程受燃料储备限制。起飞无需等待额外冷却，上方须无屋顶；降落需要足够的空地。\n\n同时启用米莉拉种族后，可在停泊时选择“升级星舰动力”。殖民者会搬运并安装2个米莉拉星舰电池；完成后，每次起飞消耗100化合燃料，地图内飞行和世界地图航行均不再持续耗油。升级进度会保留，电池安装后消耗。",
+    "key": "NMC_Text0550",
+    "contexts": [
+      "1.6\\Defs\\CommanderAircraft.xml:NMC_GravityFrigate.description"
+    ]
+  },
+  {
+    "id": 551,
+    "zh": "涅瓦莲引力舰（降落）",
+    "key": "NMC_Text0551",
+    "contexts": [
+      "1.6\\Defs\\CommanderAircraft.xml:NMC_GravityFrigateIncoming.label"
+    ]
+  },
+  {
+    "id": 552,
+    "zh": "涅瓦莲引力舰（起飞）",
+    "key": "NMC_Text0552",
+    "contexts": [
+      "1.6\\Defs\\CommanderAircraft.xml:NMC_GravityFrigateLeaving.label"
+    ]
+  },
+  {
+    "id": 553,
+    "zh": "正在远程航行的涅瓦莲引力舰，携带人员与货物前往目的地。",
+    "key": "NMC_Text0553",
+    "contexts": [
+      "1.6\\Defs\\CommanderAircraft.xml:NMC_GravityFrigateFlying.description"
+    ]
+  },
+  {
+    "id": 554,
+    "zh": "涅瓦莲舰载机",
+    "key": "NMC_Text0554",
+    "contexts": [
+      "1.6\\Defs\\CommanderAircraft.xml:NMC_CarrierInterceptor.label"
+    ]
+  },
+  {
+    "id": 555,
+    "zh": "由涅瓦莲航母制造和控制的无人舰载机，使用轻型弹药自动攻击敌人，生命值150。\n\n舰载机只在航母升空作战时出击。飞离所属航母80格后会自动返回，也会响应航母的回收和降落命令。它需要依托航母行动，无法独立执行远程运输。",
+    "key": "NMC_Text0555",
+    "contexts": [
+      "1.6\\Defs\\CommanderAircraft.xml:NMC_CarrierInterceptor.description"
+    ]
+  },
+  {
+    "id": 556,
+    "zh": "舰载机轻型弹",
+    "key": "NMC_Text0556",
+    "contexts": [
+      "1.6\\Defs\\CommanderAircraft.xml:NMC_InterceptorFallbackRound.label"
+    ]
+  },
+  {
+    "id": 557,
+    "zh": "引力舰棱晶激光",
+    "key": "NMC_Text0557",
+    "contexts": [
+      "1.6\\Defs\\CommanderAircraft.xml:NMC_FrigateBeamDamage.label"
+    ]
+  },
+  {
+    "id": 558,
+    "zh": "暗影折跃隐形",
+    "key": "NMC_Text0558",
+    "contexts": [
+      "1.6\\Defs\\CommanderCloak.xml:NMC_ShadowInvisibility.label"
+    ]
+  },
+  {
+    "id": 559,
+    "zh": "暗影场或幽灵装甲使目标隐形，攻击和受伤不会主动解除这一效果。侦测隐形的能力仍可发现目标；使其显形的效果结束后，若隐形来源仍在，目标会再次隐去。",
+    "key": "NMC_Text0559",
+    "contexts": [
+      "1.6\\Defs\\CommanderCloak.xml:NMC_ShadowInvisibility.description"
+    ]
+  },
+  {
+    "id": 560,
+    "zh": "连续体作战网络",
+    "key": "NMC_Text0560",
+    "contexts": [
+      "1.6\\Defs\\CommanderContinuumCampaign.xml:NMC_Continuum.label"
+    ]
+  },
+  {
+    "id": 561,
+    "zh": "连续体",
+    "key": "NMC_Text0561",
+    "contexts": [
+      "1.6\\Defs\\CommanderContinuumCampaign.xml:NMC_Continuum.fixedName"
+    ]
+  },
+  {
+    "id": 562,
+    "zh": "由连续体基地组成的敌对作战网络，指挥机械体和涅拉战斗单元守卫战术资料。基地遇袭后可能通过空投补充兵力。",
+    "key": "NMC_Text0562",
+    "contexts": [
+      "1.6\\Defs\\CommanderContinuumCampaign.xml:NMC_Continuum.description"
+    ]
+  },
+  {
+    "id": 563,
+    "zh": "连续体战斗单元",
+    "key": "NMC_Text0563",
+    "contexts": [
+      "1.6\\Defs\\CommanderContinuumCampaign.xml:NMC_Continuum.pawnSingular",
+      "1.6\\Defs\\CommanderContinuumCampaign.xml:NMC_Continuum.pawnsPlural"
+    ]
+  },
+  {
+    "id": 564,
+    "zh": "连续体基地",
+    "key": "NMC_Text0564",
+    "contexts": [
+      "1.6\\Defs\\CommanderContinuumCampaign.xml:NMC_ContinuumBase.label"
+    ]
+  },
+  {
+    "id": 565,
+    "zh": "一处存放母舰战术资料的连续体基地。战利品与炮兵补给集中在核心区域，外围由沙袋掩体和多层炮塔阵地守卫。\n\n外圈轻型炮塔阻滞进攻，中层部署无人机与重型火力，内圈保护通讯核心和迫击炮阵地。切断供能核心可使相连的电力炮塔停机，但守军和空投增援仍会继续作战。随着对连续体的追击深入，后续基地的规模与火力也会增强。",
+    "key": "NMC_Text0565",
+    "contexts": [
+      "1.6\\Defs\\CommanderContinuumCampaign.xml:NMC_ContinuumBase.description"
+    ]
+  },
+  {
+    "id": 566,
+    "zh": "连续体通讯核心",
+    "key": "NMC_Text0566",
+    "contexts": [
+      "1.6\\Defs\\CommanderContinuumCampaign.xml:NMC_ContinuumRelay.label"
+    ]
+  },
+  {
+    "id": 567,
+    "zh": "连续体基地的通讯与资料中枢。摧毁它，并清除基地守军和炮塔，即可取得本阶段的母舰研究资料。仅摧毁通讯核心还不足以完成任务。",
+    "key": "NMC_Text0567",
+    "contexts": [
+      "1.6\\Defs\\CommanderContinuumCampaign.xml:NMC_ContinuumRelay.description"
+    ]
+  },
+  {
+    "id": 568,
+    "zh": "连续体供能核心",
+    "key": "NMC_Text0568",
+    "contexts": [
+      "1.6\\Defs\\CommanderContinuumCampaign.xml:NMC_ContinuumPowerCore.label"
+    ]
+  },
+  {
+    "id": 569,
+    "zh": "为连续体基地的防御设施供应电力。摧毁供能核心可以切断相连电网，使依赖这条电网的炮塔停止工作。",
+    "key": "NMC_Text0569",
+    "contexts": [
+      "1.6\\Defs\\CommanderContinuumCampaign.xml:NMC_ContinuumPowerCore.description"
+    ]
+  },
+  {
+    "id": 570,
+    "zh": "轨道能量打击",
+    "key": "NMC_Text0570",
+    "contexts": [
+      "1.6\\Defs\\CommanderDamage.xml:NMC_OrbitalEnergy.label"
+    ]
+  },
+  {
+    "id": 571,
+    "zh": "太阳轰炸能量",
+    "key": "NMC_Text0571",
+    "contexts": [
+      "1.6\\Defs\\CommanderDamage.xml:NMC_SolarBombEnergy.label"
+    ]
+  },
+  {
+    "id": 572,
+    "zh": "太阳能射线能量",
+    "key": "NMC_Text0572",
+    "contexts": [
+      "1.6\\Defs\\CommanderDamage.xml:NMC_SolarRayEnergy.label"
+    ]
+  },
+  {
+    "id": 573,
+    "zh": "太阳能射线灼烧",
+    "key": "NMC_Text0573",
+    "contexts": [
+      "1.6\\Defs\\CommanderDamage.xml:NMC_SolarRayBurn.label"
+    ]
+  },
+  {
+    "id": 574,
+    "zh": "净化光束能量",
+    "key": "NMC_Text0574",
+    "contexts": [
+      "1.6\\Defs\\CommanderDamage.xml:NMC_PurificationEnergy.label"
+    ]
+  },
+  {
+    "id": 575,
+    "zh": "净化光束灼烧",
+    "key": "NMC_Text0575",
+    "contexts": [
+      "1.6\\Defs\\CommanderDamage.xml:NMC_PurificationBurn.label"
+    ]
+  },
+  {
+    "id": 576,
+    "zh": "超载蓝色激光",
+    "key": "NMC_Text0576",
+    "contexts": [
+      "1.6\\Defs\\CommanderDefense.xml:NMC_OverloadEnergy.label"
+    ]
+  },
+  {
+    "id": 577,
+    "zh": "超载能量弹",
+    "key": "NMC_Text0577",
+    "contexts": [
+      "1.6\\Defs\\CommanderDefense.xml:NMC_OverloadBolt.label"
+    ]
+  },
+  {
+    "id": 578,
+    "zh": "跨域人员折跃",
+    "key": "NMC_Text0578",
+    "contexts": [
+      "1.6\\Defs\\CommanderFieldRecall.xml:NMC_FieldRecall.label"
+    ]
+  },
+  {
+    "id": 579,
+    "zh": "将折跃能量场改造为人员接收信标。完成研究后，选中地图上的己方殖民者，即可使用“折跃至能量场”命令，立即前往已部署的能量场，也可跨越不同殖民地。\n\n若中心位置被占用，将改在场内最近的安全空地抵达。折跃不额外消耗能量，也没有人员折跃冷却；殖民者会中止手头工作、放下搬运中的物品，随身装备和背包一并带走。\n\n研究完成后，部署或迁移能量场的冷却时间延长为1天。",
+    "key": "NMC_Text0579",
+    "contexts": [
+      "1.6\\Defs\\CommanderFieldRecall.xml:NMC_FieldRecall.description"
+    ]
+  },
+  {
+    "id": 580,
+    "zh": "战术母舰",
+    "key": "NMC_Text0580",
+    "contexts": [
+      "1.6\\Defs\\CommanderFleet.xml:NMC_TacticalMothership.label"
+    ]
+  },
+  {
+    "id": 581,
+    "zh": "涅瓦莲支援舰队的战术母舰，负责以激光和能量弹压制地面敌人。每秒发射一道激光，造成15点基础伤害；每2秒投下一枚能量弹，造成20点基础爆炸伤害，对建筑尤为有效。\n\n母舰自动飞行作战，也会受到敌方远程和爆炸攻击。它是临时派遣的支援舰，损失不会影响轨道母舰的资源储备；支援结束后撤离。",
+    "key": "NMC_Text0581",
+    "contexts": [
+      "1.6\\Defs\\CommanderFleet.xml:NMC_TacticalMothership.description"
+    ]
+  },
+  {
+    "id": 582,
+    "zh": "舰队驱逐舰",
+    "key": "NMC_Text0582",
+    "contexts": [
+      "1.6\\Defs\\CommanderFleet.xml:NMC_FleetDestroyer.label"
+    ]
+  },
+  {
+    "id": 583,
+    "zh": "为战术母舰护航的自动驱逐舰。棱晶光束每0.5秒造成一次伤害，初始为4点；连续命中同一目标时，伤害逐次提高。更换目标或失去锁定后，光束恢复初始强度。\n\n这型光束不会使目标冰冻。舰艇在支援期间自动寻找敌人，驻留结束后撤离。",
+    "key": "NMC_Text0583",
+    "contexts": [
+      "1.6\\Defs\\CommanderFleet.xml:NMC_FleetDestroyer.description"
+    ]
+  },
+  {
+    "id": 584,
+    "zh": "母舰能量炮",
+    "key": "NMC_Text0584",
+    "contexts": [
+      "1.6\\Defs\\CommanderFleet.xml:NMC_FleetMothershipGun.label"
+    ]
+  },
+  {
+    "id": 585,
+    "zh": "驱逐舰能量炮",
+    "key": "NMC_Text0585",
+    "contexts": [
+      "1.6\\Defs\\CommanderFleet.xml:NMC_FleetDestroyerGun.label"
+    ]
+  },
+  {
+    "id": 586,
+    "zh": "母舰能量弹",
+    "key": "NMC_Text0586",
+    "contexts": [
+      "1.6\\Defs\\CommanderFleet.xml:NMC_FleetMothershipBolt.label"
+    ]
+  },
+  {
+    "id": 587,
+    "zh": "驱逐舰能量弹",
+    "key": "NMC_Text0587",
+    "contexts": [
+      "1.6\\Defs\\CommanderFleet.xml:NMC_FleetDestroyerBolt.label"
+    ]
+  },
+  {
+    "id": 588,
+    "zh": "母舰能量伤害",
+    "key": "NMC_Text0588",
+    "contexts": [
+      "1.6\\Defs\\CommanderFleet.xml:NMC_FleetMothershipEnergy.label"
+    ]
+  },
+  {
+    "id": 589,
+    "zh": "驱逐舰能量伤害",
+    "key": "NMC_Text0589",
+    "contexts": [
+      "1.6\\Defs\\CommanderFleet.xml:NMC_FleetDestroyerEnergy.label"
+    ]
+  },
+  {
+    "id": 590,
+    "zh": "母舰棱晶激光",
+    "key": "NMC_Text0590",
+    "contexts": [
+      "1.6\\Defs\\CommanderFleet.xml:NMC_FleetMothershipLaser.label"
+    ]
+  },
+  {
+    "id": 591,
+    "zh": "临时舰艇残骸",
+    "key": "NMC_Text0591",
+    "contexts": [
+      "1.6\\Defs\\CommanderFleet.xml:NMC_FleetWreck.label"
+    ]
+  },
+  {
+    "id": 592,
+    "zh": "一艘支援舰艇被击毁后留下的残骸。残骸无法拆解；母舰会在本次支援结束时将其回收，搬运或储藏也不能将它永久留下。",
+    "key": "NMC_Text0592",
+    "contexts": [
+      "1.6\\Defs\\CommanderFleet.xml:NMC_FleetWreck.description"
+    ]
+  },
+  {
+    "id": 593,
+    "zh": "幽灵涅瓦莲",
+    "key": "NMC_Text0593",
+    "contexts": [
+      "1.6\\Defs\\CommanderGhosts.xml:NMC_GhostGuard.label"
+    ]
+  },
+  {
+    "id": 594,
+    "zh": "暗影卫队身份",
+    "key": "NMC_Text0594",
+    "contexts": [
+      "1.6\\Defs\\CommanderGhosts.xml:NMC_GhostIdentity.label"
+    ]
+  },
+  {
+    "id": 595,
+    "zh": "来自涅瓦莲母舰的暗影卫队成员。她会自行作战，无法被殖民地征召。隐形能力让她能够接近敌人，但仍可能被反隐手段发现。支援结束后，她将折跃撤离。",
+    "key": "NMC_Text0595",
+    "contexts": [
+      "1.6\\Defs\\CommanderGhosts.xml:NMC_GhostIdentity.description"
+    ]
+  },
+  {
+    "id": 596,
+    "zh": "相位双刃",
+    "key": "NMC_Text0596",
+    "contexts": [
+      "1.6\\Defs\\CommanderGhosts.xml:NMC_PhaseTwinBlade.label"
+    ]
+  },
+  {
+    "id": 597,
+    "zh": "暗影卫队使用的成对相位刃，擅长快速连续的近身斩击。卫队携带的武器为大师品质，并与使用者进行生物编码绑定，其他人无法使用。",
+    "key": "NMC_Text0597",
+    "contexts": [
+      "1.6\\Defs\\CommanderGhosts.xml:NMC_PhaseTwinBlade.description"
+    ]
+  },
+  {
+    "id": 598,
+    "zh": "相位刃",
+    "key": "NMC_Text0598",
+    "contexts": [
+      "1.6\\Defs\\CommanderGhosts.xml:NMC_PhaseTwinBlade.tools.0.label",
+      "1.6\\Defs\\CommanderTebrusLegion.xml:NMC_LegionBlade.tools.0.label"
+    ]
+  },
+  {
+    "id": 599,
+    "zh": "虚空重刃",
+    "key": "NMC_Text0599",
+    "contexts": [
+      "1.6\\Defs\\CommanderGhosts.xml:NMC_VoidHeavyBlade.label"
+    ]
+  },
+  {
+    "id": 600,
+    "zh": "暗影卫队使用的重型近战兵器。挥击速度较慢，但单次斩击威力大，适合对付防护厚重的目标。卫队携带的武器为大师品质，并以生物编码绑定使用者。",
+    "key": "NMC_Text0600",
+    "contexts": [
+      "1.6\\Defs\\CommanderGhosts.xml:NMC_VoidHeavyBlade.description"
+    ]
+  },
+  {
+    "id": 601,
+    "zh": "虚空刃",
+    "key": "NMC_Text0601",
+    "contexts": [
+      "1.6\\Defs\\CommanderGhosts.xml:NMC_VoidHeavyBlade.tools.0.label"
+    ]
+  },
+  {
+    "id": 602,
+    "zh": "暗影长枪",
+    "key": "NMC_Text0602",
+    "contexts": [
+      "1.6\\Defs\\CommanderGhosts.xml:NMC_ShadowLance.label"
+    ]
+  },
+  {
+    "id": 603,
+    "zh": "暗影卫队使用的长柄近战兵器，以穿刺攻击对付敌人，兼顾出手速度和穿甲能力。卫队携带的武器为大师品质，并以生物编码绑定使用者。",
+    "key": "NMC_Text0603",
+    "contexts": [
+      "1.6\\Defs\\CommanderGhosts.xml:NMC_ShadowLance.description"
+    ]
+  },
+  {
+    "id": 604,
+    "zh": "暗影枪尖",
+    "key": "NMC_Text0604",
+    "contexts": [
+      "1.6\\Defs\\CommanderGhosts.xml:NMC_ShadowLance.tools.0.label"
+    ]
+  },
+  {
+    "id": 605,
+    "zh": "涅瓦莲幽灵装甲",
+    "key": "NMC_Text0605",
+    "contexts": [
+      "1.6\\Defs\\CommanderGhosts.xml:NMC_GhostSuit.label"
+    ]
+  },
+  {
+    "id": 606,
+    "zh": "暗影卫队的专属装甲，在保持隐形作战能力的同时提供锐器、钝器和热能防护。\n\n卫队成员阵亡时，仍由她携带的专属装备会一并销毁；已脱离其携带的装备不受这一效果影响。支援结束时，仍随身携带的装备随成员撤离。",
+    "key": "NMC_Text0606",
+    "contexts": [
+      "1.6\\Defs\\CommanderGhosts.xml:NMC_GhostSuit.description"
+    ]
+  },
+  {
+    "id": 607,
+    "zh": "涅瓦莲幽灵头环",
+    "key": "NMC_Text0607",
+    "contexts": [
+      "1.6\\Defs\\CommanderGhosts.xml:NMC_GhostHelmet.label"
+    ]
+  },
+  {
+    "id": 608,
+    "zh": "与幽灵装甲配套的开放式防护头环。它保留面部视野，并为头部提供锐器、钝器和热能防护。属于暗影卫队的专属装备。",
+    "key": "NMC_Text0608",
+    "contexts": [
+      "1.6\\Defs\\CommanderGhosts.xml:NMC_GhostHelmet.description"
+    ]
+  },
+  {
+    "id": 609,
+    "zh": "母舰学徒",
+    "key": "NMC_Text0609",
+    "contexts": [
+      "1.6\\Defs\\CommanderGhosts.xml:NMC_FieldTrainingChildhood.title"
+    ]
+  },
+  {
+    "id": 610,
+    "zh": "学徒",
+    "key": "NMC_Text0610",
+    "contexts": [
+      "1.6\\Defs\\CommanderGhosts.xml:NMC_FieldTrainingChildhood.titleShort"
+    ]
+  },
+  {
+    "id": 611,
+    "zh": "[PAWN_nameDef]在母舰上学习战场纪律与基础战术。",
+    "key": "NMC_Text0611",
+    "contexts": [
+      "1.6\\Defs\\CommanderGhosts.xml:NMC_FieldTrainingChildhood.baseDesc"
+    ]
+  },
+  {
+    "id": 612,
+    "zh": "折跃战斗员",
+    "key": "NMC_Text0612",
+    "contexts": [
+      "1.6\\Defs\\CommanderGhosts.xml:NMC_FieldTrainingAdulthood.title"
+    ]
+  },
+  {
+    "id": 613,
+    "zh": "战斗员",
+    "key": "NMC_Text0613",
+    "contexts": [
+      "1.6\\Defs\\CommanderGhosts.xml:NMC_FieldTrainingAdulthood.titleShort"
+    ]
+  },
+  {
+    "id": 614,
+    "zh": "[PAWN_nameDef]接受专职作战训练，响应母舰的折跃召集。",
+    "key": "NMC_Text0614",
+    "contexts": [
+      "1.6\\Defs\\CommanderGhosts.xml:NMC_FieldTrainingAdulthood.baseDesc"
+    ]
+  },
+  {
+    "id": 615,
+    "zh": "建立可从母舰远程部署的折跃能量场，为周围的友方设施与单位提供能源。已有能量场可以迁移，适合前沿防御和临时作业。\n\n通过上行链路研究终端交付所需材料并完成研究。完成研究后即可在指挥官支援面板调用。",
+    "key": "NMC_Text0615",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support01.description"
+    ]
+  },
+  {
+    "id": 616,
+    "zh": "开放轨道轰炸，使指挥官能够连续标记落点，调用母舰火力攻击地面目标。每次开火分别消耗能量。\n\n通过上行链路研究终端交付所需材料并完成研究。完成研究后即可在指挥官支援面板调用。",
+    "key": "NMC_Text0616",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support02.description"
+    ]
+  },
+  {
+    "id": 617,
+    "zh": "允许母舰在短时间内为整张地图上的友军提供护盾，吸收战斗伤害。\n\n通过上行链路研究终端交付所需材料并完成研究。母舰达到1级后，方可调用这项支援。",
+    "key": "NMC_Text0617",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support03.description"
+    ]
+  },
+  {
+    "id": 618,
+    "zh": "开放大范围太阳轰炸。在指定区域持续投下能量弹，摧毁密集敌军与建筑。攻击开始后无法中止。\n\n通过上行链路研究终端交付所需材料并完成研究。母舰达到4级后，方可调用这项支援。\n\n若已开启连续体任务，须先完成第8阶段“太阳轰炸”，取得研究资料。",
+    "key": "NMC_Text0618",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support04.description"
+    ]
+  },
+  {
+    "id": 619,
+    "zh": "开放太阳能射线枪。母舰可同时投下三道追踪射线，持续扫射地面敌人。\n\n通过上行链路研究终端交付所需材料并完成研究。母舰达到2级后，方可调用这项支援。",
+    "key": "NMC_Text0619",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support05.description"
+    ]
+  },
+  {
+    "id": 620,
+    "zh": "使母舰能够暂时加快各处殖民地的生产活动，并提高超维空间巨石的攻击频率。\n\n通过上行链路研究终端交付所需材料并完成研究。母舰达到2级后，方可调用这项支援。",
+    "key": "NMC_Text0620",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support06.description"
+    ]
+  },
+  {
+    "id": 621,
+    "zh": "开放可移动的净化光束。光束能够自动追击，也可以接受指挥官的移动命令。\n\n通过上行链路研究终端交付所需材料并完成研究。母舰达到4级后，方可调用这项支援。\n\n若已开启连续体任务，须先完成第7阶段“净化光束”，取得研究资料。",
+    "key": "NMC_Text0621",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support07.description"
+    ]
+  },
+  {
+    "id": 622,
+    "zh": "允许部署暗影核心，建成可持续输送母舰资源、隐藏周围友军的暗影能源塔。部署后仍需运入建材。\n\n通过上行链路研究终端交付所需材料并完成研究。母舰达到1级后，方可调用这项支援。\n\n若已开启连续体任务，须先完成第1阶段“暗影水晶塔”，取得研究资料。",
+    "key": "NMC_Text0622",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support08.description"
+    ]
+  },
+  {
+    "id": 623,
+    "zh": "建立与暗影卫队的折跃联络。完成研究后，可请求四名隐形近战战士临时增援。\n\n通过上行链路研究终端交付所需材料并完成研究。母舰达到2级后，方可调用这项支援。\n\n若已开启连续体任务，须先完成第2阶段“暗影援军”，取得研究资料。",
+    "key": "NMC_Text0623",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support09.description"
+    ]
+  },
+  {
+    "id": 624,
+    "zh": "使母舰能够在战场制造短暂的引力涡旋，聚集敌人并削弱其护甲，便于集中火力。\n\n通过上行链路研究终端交付所需材料并完成研究。母舰达到2级后，方可调用这项支援。",
+    "key": "NMC_Text0624",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support10.description"
+    ]
+  },
+  {
+    "id": 625,
+    "zh": "允许母舰暂时阻止各处殖民地内现有敌人的移动和攻击，为防御或撤退争取时间。\n\n通过上行链路研究终端交付所需材料并完成研究。母舰达到4级后，方可调用这项支援。",
+    "key": "NMC_Text0625",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support11.description"
+    ]
+  },
+  {
+    "id": 626,
+    "zh": "开放建筑超载，为友方建筑临时附加护盾与激光武器。使用时需要消耗定期恢复的超载充能。\n\n通过上行链路研究终端交付所需材料并完成研究。母舰达到1级后，方可调用这项支援。",
+    "key": "NMC_Text0626",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support12.description"
+    ]
+  },
+  {
+    "id": 627,
+    "zh": "建立战术舰队折跃航道，可请求一艘母舰和八艘驱逐舰临时支援战场。\n\n通过上行链路研究终端交付所需材料并完成研究。母舰达到4级后，方可调用这项支援。\n\n若已开启连续体任务，须先完成第6阶段“舰队支援”，取得研究资料。",
+    "key": "NMC_Text0627",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support13.description"
+    ]
+  },
+  {
+    "id": 628,
+    "zh": "建立与特布鲁斯军团的联络，允许请求特布鲁斯和十名近战战士增援。除能量外，军团还需要信标范围内的白银或黄金作为支援报酬。\n\n通过上行链路研究终端交付所需材料并完成研究。母舰达到2级后，方可调用这项支援。\n\n若已开启连续体任务，须先完成第3阶段“远征军团”，取得研究资料。",
+    "key": "NMC_Text0628",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support14.description"
+    ]
+  },
+  {
+    "id": 629,
+    "zh": "建立与佐拉亚军团的联络，允许请求指挥舰佐拉亚和四艘辉光舰增援。除能量外，军团还需要信标范围内的白银或黄金作为支援报酬。\n\n通过上行链路研究终端交付所需材料并完成研究。母舰达到3级后，方可调用这项支援。\n\n若已开启连续体任务，须先完成第3阶段“远征军团”，取得研究资料。",
+    "key": "NMC_Text0629",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support15.description"
+    ]
+  },
+  {
+    "id": 630,
+    "zh": "建立与赛达斯军团的联络，允许请求赛达斯和三名黑暗执政官增援，以心灵支配转化敌人。除能量外，军团还需要信标范围内的白银或黄金作为支援报酬。\n\n通过上行链路研究终端交付所需材料并完成研究。母舰达到3级后，方可调用这项支援。\n\n若已开启连续体任务，须先完成第3阶段“远征军团”，取得研究资料。",
+    "key": "NMC_Text0630",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support16.description"
+    ]
+  },
+  {
+    "id": 631,
+    "zh": "允许部署超维空间巨石核心，建成可同时攻击多个目标、使其眩晕的远程防御设施。部署后仍需运入建材和接通电力。\n\n通过上行链路研究终端交付所需材料并完成研究。母舰达到3级后，方可调用这项支援。\n\n若已开启连续体任务，须先完成第4阶段“超维空间巨石”，取得研究资料。",
+    "key": "NMC_Text0631",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support17.description"
+    ]
+  },
+  {
+    "id": 632,
+    "zh": "开放虚空抑制晶体，暂时减缓敌人的移动与攻击，并使范围内的敌方炮塔停火。\n\n通过上行链路研究终端交付所需材料并完成研究。母舰达到3级后，方可调用这项支援。",
+    "key": "NMC_Text0632",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support18.description"
+    ]
+  },
+  {
+    "id": 633,
+    "zh": "开放跨殖民地炮塔投射。已登记炮塔可在远处形成临时战斗投影，本体为其提供能源和弹药，也会承受投影受到的损伤。\n\n通过上行链路研究终端交付所需材料并完成研究。母舰达到4级后，方可调用这项支援。\n\n若已开启连续体任务，须先完成第5阶段“超维空间投影”，取得研究资料。",
+    "key": "NMC_Text0633",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_Support19.description"
+    ]
+  },
+  {
+    "id": 634,
+    "zh": "粒子收集器并行阵列",
+    "key": "NMC_Text0634",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_ParallelParticleCollectors.label"
+    ]
+  },
+  {
+    "id": 635,
+    "zh": "协调多座粒子收集器的工作，消除它们之间的干扰。完成研究后，可以同时运行多座收集器，分别生产V点。\n\n每座收集器仍需独立供电和补充燃料，产量取决于各自的运行状态。",
+    "key": "NMC_Text0635",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_ParallelParticleCollectors.description"
+    ]
+  },
+  {
+    "id": 636,
+    "zh": "解锁涅瓦莲引力舰的建造。它是一种兼顾轻型运输与对空拦截的舰船，可以用引力束将地面敌人举起，再以双束激光攻击。\n\n引力舰载重300千克，可在地图内升空作战，也可消耗化合燃料往返不同地点。",
+    "key": "NMC_Text0636",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_GravityFrigateResearch.description"
+    ]
+  },
+  {
+    "id": 637,
+    "zh": "解锁涅瓦莲航母的建造。这种大型舰船以舰载机作战，自身不装备直接攻击武器，适合在战线后方提供持续航空支援。\n\n航母载重10000千克，能够用龙霜钢制造并维持最多8架舰载机。建造成本高昂，还需持续补充化合燃料与舰载机材料。",
+    "key": "NMC_Text0637",
+    "contexts": [
+      "1.6\\Defs\\CommanderIndividualResearch.xml:NMC_CarrierResearch.description"
+    ]
+  },
+  {
+    "id": 638,
+    "zh": "辉光舰",
+    "key": "NMC_Text0638",
+    "contexts": [
+      "1.6\\Defs\\CommanderRayFleet.xml:NMC_VoidRay.label"
+    ]
+  },
+  {
+    "id": 639,
+    "zh": "佐拉亚军团的护航舰，使用带有冰冻效果的棱晶光束持续攻击敌人。光束每0.5秒造成一次伤害，初始为4点；连续命中同一目标时逐渐增强，失去锁定或更换目标后恢复初始强度。\n\n辉光舰自动选择敌人，适合持续压制坚固目标。支援结束后随军团撤离。",
+    "key": "NMC_Text0639",
+    "contexts": [
+      "1.6\\Defs\\CommanderRayFleet.xml:NMC_VoidRay.description"
+    ]
+  },
+  {
+    "id": 640,
+    "zh": "辉光舰光束",
+    "key": "NMC_Text0640",
+    "contexts": [
+      "1.6\\Defs\\CommanderRayFleet.xml:NMC_VoidRayGun.label"
+    ]
+  },
+  {
+    "id": 641,
+    "zh": "佐拉亚",
+    "key": "NMC_Text0641",
+    "contexts": [
+      "1.6\\Defs\\CommanderRayFleet.xml:NMC_Zoraya.label"
+    ]
+  },
+  {
+    "id": 642,
+    "zh": "佐拉亚军团的指挥舰，装备更强的棱晶光束。每0.5秒造成一次伤害，初始为8点，并附带冰冻效果；持续命中同一目标时伤害逐渐增强，失去锁定或更换目标后恢复初始强度。\n\n佐拉亚与护航舰协同作战，支援结束后一同撤离。",
+    "key": "NMC_Text0642",
+    "contexts": [
+      "1.6\\Defs\\CommanderRayFleet.xml:NMC_Zoraya.description"
+    ]
+  },
+  {
+    "id": 643,
+    "zh": "佐拉亚辉光束",
+    "key": "NMC_Text0643",
+    "contexts": [
+      "1.6\\Defs\\CommanderRayFleet.xml:NMC_ZorayaRayGun.label"
+    ]
+  },
+  {
+    "id": 644,
+    "zh": "辉光能量伤害",
+    "key": "NMC_Text0644",
+    "contexts": [
+      "1.6\\Defs\\CommanderRayFleet.xml:NMC_FleetRayEnergy.label"
+    ]
+  },
+  {
+    "id": 645,
+    "zh": "战术支援协议",
+    "key": "NMC_Text0645",
+    "contexts": [
+      "1.6\\Defs\\CommanderResearch.xml:NMC_TacticalProtocol.label"
+    ]
+  },
+  {
+    "id": 646,
+    "zh": "母舰指挥官的战术支援协议。通过涅瓦莲上行链路研究终端交付材料并完成研究。",
+    "key": "NMC_Text0646",
+    "contexts": [
+      "1.6\\Defs\\CommanderResearch.xml:NMC_TacticalProtocol.description"
+    ]
+  },
+  {
+    "id": 647,
+    "zh": "光能武器阵列",
+    "key": "NMC_Text0647",
+    "contexts": [
+      "1.6\\Defs\\CommanderResearch.xml:NMC_LightWeapons.label"
+    ]
+  },
+  {
+    "id": 648,
+    "zh": "母舰指挥官的光能武器阵列。通过涅瓦莲上行链路研究终端交付材料并完成研究。",
+    "key": "NMC_Text0648",
+    "contexts": [
+      "1.6\\Defs\\CommanderResearch.xml:NMC_LightWeapons.description"
+    ]
+  },
+  {
+    "id": 649,
+    "zh": "暗影折跃技术",
+    "key": "NMC_Text0649",
+    "contexts": [
+      "1.6\\Defs\\CommanderResearch.xml:NMC_ShadowWarp.label"
+    ]
+  },
+  {
+    "id": 650,
+    "zh": "母舰指挥官的暗影折跃技术。通过涅瓦莲上行链路研究终端交付材料并完成研究。",
+    "key": "NMC_Text0650",
+    "contexts": [
+      "1.6\\Defs\\CommanderResearch.xml:NMC_ShadowWarp.description"
+    ]
+  },
+  {
+    "id": 651,
+    "zh": "时空协调协议",
+    "key": "NMC_Text0651",
+    "contexts": [
+      "1.6\\Defs\\CommanderResearch.xml:NMC_Spacetime.label"
+    ]
+  },
+  {
+    "id": 652,
+    "zh": "母舰指挥官的时空协调协议。通过涅瓦莲上行链路研究终端交付材料并完成研究。",
+    "key": "NMC_Text0652",
+    "contexts": [
+      "1.6\\Defs\\CommanderResearch.xml:NMC_Spacetime.description"
+    ]
+  },
+  {
+    "id": 653,
+    "zh": "远征军团联络",
+    "key": "NMC_Text0653",
+    "contexts": [
+      "1.6\\Defs\\CommanderResearch.xml:NMC_LegionContact.label"
+    ]
+  },
+  {
+    "id": 654,
+    "zh": "母舰指挥官的远征军团联络。通过涅瓦莲上行链路研究终端交付材料并完成研究。",
+    "key": "NMC_Text0654",
+    "contexts": [
+      "1.6\\Defs\\CommanderResearch.xml:NMC_LegionContact.description"
+    ]
+  },
+  {
+    "id": 655,
+    "zh": "高维空间工程",
+    "key": "NMC_Text0655",
+    "contexts": [
+      "1.6\\Defs\\CommanderResearch.xml:NMC_HigherDimensions.label"
+    ]
+  },
+  {
+    "id": 656,
+    "zh": "母舰指挥官的高维空间工程。通过涅瓦莲上行链路研究终端交付材料并完成研究。",
+    "key": "NMC_Text0656",
+    "contexts": [
+      "1.6\\Defs\\CommanderResearch.xml:NMC_HigherDimensions.description"
+    ]
+  },
+  {
+    "id": 657,
+    "zh": "舰队折跃信标协议",
+    "key": "NMC_Text0657",
+    "contexts": [
+      "1.6\\Defs\\CommanderResearch.xml:NMC_FleetBeacon.label"
+    ]
+  },
+  {
+    "id": 658,
+    "zh": "母舰指挥官的舰队折跃信标协议。通过涅瓦莲上行链路研究终端交付材料并完成研究。",
+    "key": "NMC_Text0658",
+    "contexts": [
+      "1.6\\Defs\\CommanderResearch.xml:NMC_FleetBeacon.description"
+    ]
+  },
+  {
+    "id": 659,
+    "zh": "涅瓦莲黑暗执政官",
+    "key": "NMC_Text0659",
+    "contexts": [
+      "1.6\\Defs\\CommanderSeydasLegion.xml:NMC_DarkArchon.label"
+    ]
+  },
+  {
+    "id": 660,
+    "zh": "心灵支配使这个单位加入了涅瓦莲幸存者派系。它保留原有的生活和行动方式，不会成为你的殖民者。赛达斯军团撤离后，这一派系归属仍然保留。",
+    "key": "NMC_Text0660",
+    "contexts": [
+      "1.6\\Defs\\CommanderSeydasLegion.xml:NMC_SeydasConversion.description"
+    ]
+  },
+  {
+    "id": 661,
+    "zh": "黑暗执政官礼服",
+    "key": "NMC_Text0661",
+    "contexts": [
+      "1.6\\Defs\\CommanderSeydasLegion.xml:NMC_ArchonRobe.label"
+    ]
+  },
+  {
+    "id": 662,
+    "zh": "黑暗执政官的多层礼服，配有长披帛。灵能护持为穿戴者提供锐器、钝器和热能防护。礼服属于军团，支援结束后随部队收回。",
+    "key": "NMC_Text0662",
+    "contexts": [
+      "1.6\\Defs\\CommanderSeydasLegion.xml:NMC_ArchonRobe.description"
+    ]
+  },
+  {
+    "id": 663,
+    "zh": "赛达斯灵能礼服",
+    "key": "NMC_Text0663",
+    "contexts": [
+      "1.6\\Defs\\CommanderSeydasLegion.xml:NMC_SeydasRobe.label"
+    ]
+  },
+  {
+    "id": 664,
+    "zh": "赛达斯穿着的灵能礼服，由多层裙袍和长披帛构成。其灵能护持强于普通执政官礼服，能够抵御锐器、钝器和热能伤害。支援结束后由军团收回。",
+    "key": "NMC_Text0664",
+    "contexts": [
+      "1.6\\Defs\\CommanderSeydasLegion.xml:NMC_SeydasRobe.description"
+    ]
+  },
+  {
+    "id": 665,
+    "zh": "黑暗执政官头环",
+    "key": "NMC_Text0665",
+    "contexts": [
+      "1.6\\Defs\\CommanderSeydasLegion.xml:NMC_ArchonCirclet.label"
+    ]
+  },
+  {
+    "id": 666,
+    "zh": "黑暗执政官的开放式灵能头环，与礼服共同构成防护装备。支援结束后随军团撤离。",
+    "key": "NMC_Text0666",
+    "contexts": [
+      "1.6\\Defs\\CommanderSeydasLegion.xml:NMC_ArchonCirclet.description"
+    ]
+  },
+  {
+    "id": 667,
+    "zh": "赛达斯灵能头环",
+    "key": "NMC_Text0667",
+    "contexts": [
+      "1.6\\Defs\\CommanderSeydasLegion.xml:NMC_SeydasCirclet.label"
+    ]
+  },
+  {
+    "id": 668,
+    "zh": "赛达斯的灵能晶饰头环，为头部提供强化防护。它属于军团的专属装备，支援结束后与礼服一同收回。",
+    "key": "NMC_Text0668",
+    "contexts": [
+      "1.6\\Defs\\CommanderSeydasLegion.xml:NMC_SeydasCirclet.description"
+    ]
+  },
+  {
+    "id": 669,
+    "zh": "执政官灵能权杖",
+    "key": "NMC_Text0669",
+    "contexts": [
+      "1.6\\Defs\\CommanderSeydasLegion.xml:NMC_ArchonFocus.label"
+    ]
+  },
+  {
+    "id": 670,
+    "zh": "执政官用来聚焦心灵支配力量的权杖。它只能提供有限的近战自卫能力，不适合用作主要近战武器。支援结束后由军团收回。",
+    "key": "NMC_Text0670",
+    "contexts": [
+      "1.6\\Defs\\CommanderSeydasLegion.xml:NMC_ArchonFocus.description"
+    ]
+  },
+  {
+    "id": 671,
+    "zh": "杖柄",
+    "key": "NMC_Text0671",
+    "contexts": [
+      "1.6\\Defs\\CommanderSeydasLegion.xml:NMC_ArchonFocus.tools.0.label"
+    ]
+  },
+  {
+    "id": 672,
+    "zh": "心灵支配",
+    "key": "NMC_Text0672",
+    "contexts": [
+      "1.6\\Defs\\CommanderSeydasLegion.xml:NMC_SeydasControlFallback.label",
+      "Royalty\\Defs\\CommanderSeydasControlNative.xml:NMC_SeydasControlNative.label"
+    ]
+  },
+  {
+    "id": 673,
+    "zh": "以心灵支配使20格内的一名敌人加入涅瓦莲幸存者派系。施法者会优先选择价值较高的目标，机械体与首领也可能受到控制。每次需要50点专注，冷却8秒。\n\n归附效果持续保留，军团撤离也不会解除。但受到控制的单位仍属于涅瓦莲幸存者，不会成为你的殖民者。",
+    "key": "NMC_Text0673",
+    "contexts": [
+      "1.6\\Defs\\CommanderSeydasLegion.xml:NMC_SeydasControlFallback.description",
+      "Royalty\\Defs\\CommanderSeydasControlNative.xml:NMC_SeydasControlNative.description"
+    ]
+  },
+  {
+    "id": 674,
+    "zh": "涅瓦莲暗影核心",
+    "key": "NMC_Text0674",
+    "contexts": [
+      "1.6\\Defs\\CommanderStructures.xml:NMC_ShadowCore.label"
+    ]
+  },
+  {
+    "id": 675,
+    "zh": "暗影能源塔的施工核心。殖民者需要运入150钢铁、4零部件和25龙晶。材料备齐后，母舰会自动施工，20秒后建成能源塔。\n\n取消施工会返还已经交入的材料，但部署核心消耗的能量和冷却时间不会返还。",
+    "key": "NMC_Text0675",
+    "contexts": [
+      "1.6\\Defs\\CommanderStructures.xml:NMC_ShadowCore.description"
+    ]
+  },
+  {
+    "id": 676,
+    "zh": "超维空间巨石核心",
+    "key": "NMC_Text0676",
+    "contexts": [
+      "1.6\\Defs\\CommanderStructures.xml:NMC_MonolithCore.label"
+    ]
+  },
+  {
+    "id": 677,
+    "zh": "超维空间巨石的施工核心。殖民者需要运入300钢铁、10零部件和60龙晶。材料备齐后，母舰会自动施工，45秒后建成巨石。\n\n取消施工会返还已经交入的材料，但部署核心消耗的能量和冷却时间不会返还。",
+    "key": "NMC_Text0677",
+    "contexts": [
+      "1.6\\Defs\\CommanderStructures.xml:NMC_MonolithCore.description"
+    ]
+  },
+  {
+    "id": 678,
+    "zh": "涅瓦莲暗影能源塔",
+    "key": "NMC_Text0678",
+    "contexts": [
+      "1.6\\Defs\\CommanderStructures.xml:NMC_ShadowEnergyTower.label"
+    ]
+  },
+  {
+    "id": 679,
+    "zh": "由暗影核心建成的母舰能源设施。每座塔每天输送120P和80V，并使半径7格内的友军隐形。攻击和受伤不会主动解除隐形，但反隐手段仍然有效。\n\n塔身本身不会被自己的暗影场隐藏，需要其他防御设施保护。可以建造多座能源塔，各自持续生产资源。",
+    "key": "NMC_Text0679",
+    "contexts": [
+      "1.6\\Defs\\CommanderStructures.xml:NMC_ShadowEnergyTower.description"
+    ]
+  },
+  {
+    "id": 680,
+    "zh": "以超维控制阵列阻滞敌人的大型防御设施。射程60格，每2秒同时打击最多10名敌人，分别造成3点基础伤害和1秒眩晕。\n\n巨石需要连接电网，持续消耗1000W电力，无需弹药。受到时空波动支援时，攻击速度提高至平时的5倍。",
+    "key": "NMC_Text0680",
+    "contexts": [
+      "1.6\\Defs\\CommanderStructures.xml:NMC_HyperdimensionalMonolith.description"
+    ]
+  },
+  {
+    "id": 681,
+    "zh": "超维控制束",
+    "key": "NMC_Text0681",
+    "contexts": [
+      "1.6\\Defs\\CommanderStructures.xml:NMC_MonolithEnergy.label"
+    ]
+  },
+  {
+    "id": 682,
+    "zh": "指挥官支援",
+    "key": "NMC_Text0682",
+    "contexts": [
+      "1.6\\Defs\\CommanderTab.xml:NMC_Commander.label"
+    ]
+  },
+  {
+    "id": 683,
+    "zh": "涅瓦莲军团战士",
+    "key": "NMC_Text0683",
+    "contexts": [
+      "1.6\\Defs\\CommanderTebrusLegion.xml:NMC_LegionWarrior.label"
+    ]
+  },
+  {
+    "id": 684,
+    "zh": "母舰远征军团",
+    "key": "NMC_Text0684",
+    "contexts": [
+      "1.6\\Defs\\CommanderTebrusLegion.xml:NMC_LegionIdentity.label"
+    ]
+  },
+  {
+    "id": 685,
+    "zh": "涅瓦莲幸存者派来的临时远征军成员。部队自行选择目标并参加战斗，无法被殖民地征召。支援结束后，成员与专属装备会折跃撤离。",
+    "key": "NMC_Text0685",
+    "contexts": [
+      "1.6\\Defs\\CommanderTebrusLegion.xml:NMC_LegionIdentity.description"
+    ]
+  },
+  {
+    "id": 686,
+    "zh": "特布鲁斯灵能礼服",
+    "key": "NMC_Text0686",
+    "contexts": [
+      "1.6\\Defs\\CommanderTebrusLegion.xml:NMC_TebrusRobe.label"
+    ]
+  },
+  {
+    "id": 687,
+    "zh": "特布鲁斯的青白色长裙法袍，柔软布料中织有灵能纹路，为穿戴者提供较强的锐器、钝器和热能防护。\n\n礼服属于军团的专属装备，无法出售或拆炼，支援结束后由军团收回。",
+    "key": "NMC_Text0687",
+    "contexts": [
+      "1.6\\Defs\\CommanderTebrusLegion.xml:NMC_TebrusRobe.description"
+    ]
+  },
+  {
+    "id": 688,
+    "zh": "特布鲁斯灵能头环",
+    "key": "NMC_Text0688",
+    "contexts": [
+      "1.6\\Defs\\CommanderTebrusLegion.xml:NMC_TebrusCirclet.label"
+    ]
+  },
+  {
+    "id": 689,
+    "zh": "特布鲁斯的开放式灵能晶饰，为头部提供防护。它与礼服同属军团装备，支援结束后一并收回。",
+    "key": "NMC_Text0689",
+    "contexts": [
+      "1.6\\Defs\\CommanderTebrusLegion.xml:NMC_TebrusCirclet.description"
+    ]
+  },
+  {
+    "id": 690,
+    "zh": "涅瓦莲军团装甲",
+    "key": "NMC_Text0690",
+    "contexts": [
+      "1.6\\Defs\\CommanderTebrusLegion.xml:NMC_LegionSuit.label"
+    ]
+  },
+  {
+    "id": 691,
+    "zh": "涅瓦莲近战军团战士的专属装甲，为突击中的穿戴者提供锐器、钝器和热能防护。支援结束后由军团收回。",
+    "key": "NMC_Text0691",
+    "contexts": [
+      "1.6\\Defs\\CommanderTebrusLegion.xml:NMC_LegionSuit.description"
+    ]
+  },
+  {
+    "id": 692,
+    "zh": "涅瓦莲军团头环",
+    "key": "NMC_Text0692",
+    "contexts": [
+      "1.6\\Defs\\CommanderTebrusLegion.xml:NMC_LegionCirclet.label"
+    ]
+  },
+  {
+    "id": 693,
+    "zh": "军团战士使用的开放式防护头环，与军团装甲配套。支援结束后随部队撤离。",
+    "key": "NMC_Text0693",
+    "contexts": [
+      "1.6\\Defs\\CommanderTebrusLegion.xml:NMC_LegionCirclet.description"
+    ]
+  },
+  {
+    "id": 694,
+    "zh": "军团相位长刃",
+    "key": "NMC_Text0694",
+    "contexts": [
+      "1.6\\Defs\\CommanderTebrusLegion.xml:NMC_LegionBlade.label"
+    ]
+  },
+  {
+    "id": 695,
+    "zh": "涅瓦莲军团战士使用的相位长刃，适合近身斩击，并有较强的穿甲能力。军团携带的长刃为精良品质，支援结束后收回。",
+    "key": "NMC_Text0695",
+    "contexts": [
+      "1.6\\Defs\\CommanderTebrusLegion.xml:NMC_LegionBlade.description"
+    ]
+  },
+  {
+    "id": 696,
+    "zh": "灵能脉冲",
+    "key": "NMC_Text0696",
+    "contexts": [
+      "1.6\\Defs\\CommanderTebrusLegion.xml:NMC_TebrusPulseDamage.label",
+      "1.6\\Defs\\CommanderTebrusLegion.xml:NMC_TebrusPulse.label"
+    ]
+  },
+  {
+    "id": 697,
+    "zh": "特布鲁斯灵能脉冲枪",
+    "key": "NMC_Text0697",
+    "contexts": [
+      "1.6\\Defs\\CommanderTebrusLegion.xml:NMC_TebrusPulseGun.label"
+    ]
+  },
+  {
+    "id": 698,
+    "zh": "特布鲁斯使用的灵能脉冲枪，射程35格。每轮连续射出三发脉冲，每发造成16点基础伤害，护甲穿透率为30%。射击结束后需要短暂调整，再次开火。\n\n脉冲枪属于军团的专属装备，支援结束后收回。",
+    "key": "NMC_Text0698",
+    "contexts": [
+      "1.6\\Defs\\CommanderTebrusLegion.xml:NMC_TebrusPulseGun.description"
+    ]
+  },
+  {
+    "id": 699,
+    "zh": "握柄",
+    "key": "NMC_Text0699",
+    "contexts": [
+      "1.6\\Defs\\CommanderTebrusLegion.xml:NMC_TebrusPulseGun.tools.0.label"
+    ]
+  },
+  {
+    "id": 700,
+    "zh": "特布鲁斯灵能风暴",
+    "key": "NMC_Text0700",
+    "contexts": [
+      "1.6\\Defs\\CommanderTebrusStorm.xml:NMC_TebrusStormFallback.label",
+      "Royalty\\Defs\\CommanderTebrusStormNative.xml:NMC_TebrusStormNative.label"
+    ]
+  },
+  {
+    "id": 701,
+    "zh": "在30格内选择敌人聚集的位置，制造半径6格的灵能风暴。范围内至少有三名敌人时才会施放，每次消耗35点专注，冷却12秒。\n\n风暴持续4秒，每秒对敌人造成30点基础灼烧伤害，同时为友方单位治疗最多30点伤势，或修复无人机耐久。倒地和隐形单位也会受到影响，建筑不受影响。\n\n治疗不能消除永久伤疤、再生断肢或治愈疾病。",
+    "key": "NMC_Text0701",
+    "contexts": [
+      "1.6\\Defs\\CommanderTebrusStorm.xml:NMC_TebrusStormFallback.description",
+      "Royalty\\Defs\\CommanderTebrusStormNative.xml:NMC_TebrusStormNative.description"
+    ]
+  },
+  {
+    "id": 702,
+    "zh": "灵能风暴",
+    "key": "NMC_Text0702",
+    "contexts": [
+      "1.6\\Defs\\CommanderTebrusStorm.xml:NMC_TebrusStormDamage.label"
+    ]
+  },
+  {
+    "id": 703,
+    "zh": "母舰临时投下的控制装置。半径13格内，敌人的移动和攻击速度降至平时的30%，敌方炮塔停止射击。离开影响范围即可恢复，多个晶体不会进一步叠加抑制效果。\n\n晶体不会被攻击摧毁，30秒后自行消散，也可由指挥官提前撤回。",
+    "key": "NMC_Text0703",
+    "contexts": [
+      "1.6\\Defs\\CommanderVoidCrystal.xml:NMC_VoidSuppressionCrystal.description"
+    ]
+  },
+  {
+    "id": 704,
+    "zh": "涅瓦莲能量塔",
+    "key": "NMC_Text0704",
+    "contexts": [
+      "1.6\\Defs\\NutrientEnergyTower.xml:NMC_NutrientEnergyTower.label"
+    ]
+  },
+  {
+    "id": 705,
+    "zh": "用营养液滋养共鸣晶体，持续为母舰输送P点的能源设施，同时可向殖民地电网供应700W电力。需要定期补充食物来维持运行。\n\n殖民者会将允许的食物运入设施，转化为营养储备。可在“营养”页调整食物种类，并在选中设施时查看当前消耗和产量。设施关闭、营养耗尽或停止运行时，母舰能量也会停止产出。\n\n建造时先部署核心，再运入所需材料，由母舰自动完成施工。这座设施只用于供能，不能培养人员或胚胎。",
+    "key": "NMC_Text0705",
+    "contexts": [
+      "1.6\\Defs\\NutrientEnergyTower.xml:NMC_NutrientEnergyTower.description"
+    ]
+  },
+  {
+    "id": 706,
+    "zh": "为涅瓦莲能量塔补充营养",
+    "key": "NMC_Text0706",
+    "contexts": [
+      "1.6\\Defs\\NutrientEnergyTower.xml:NMC_FillNutrientEnergyTower.label"
+    ]
+  },
+  {
+    "id": 707,
+    "zh": "填充",
+    "key": "NMC_Text0707",
+    "contexts": [
+      "1.6\\Defs\\NutrientEnergyTower.xml:NMC_FillNutrientEnergyTower.verb"
+    ]
+  },
+  {
+    "id": 708,
+    "zh": "填充营养",
+    "key": "NMC_Text0708",
+    "contexts": [
+      "1.6\\Defs\\NutrientEnergyTower.xml:NMC_FillNutrientEnergyTower.gerund"
+    ]
+  },
+  {
+    "id": 709,
+    "zh": "母舰商店",
+    "key": "NMC_Text0709",
+    "contexts": [
+      "1.6\\Defs\\PointShop.xml:NMC_MothershipPointShop.label"
+    ]
+  },
+  {
+    "id": 710,
+    "zh": "与母舰交换补给的贸易终端。使用P点购买商品，也可捐赠轨道交易信标覆盖范围内的物资，获得母舰的P点回馈。\n\n商店每7天补充一批随机商品，全店最多供应60种，所有殖民地共用库存。选择收发殖民地后即可挑选物品；确认购买后，货物将空投至该殖民地的信标附近。收发地点需要已供电的轨道交易信标和可用的露天落点。",
+    "key": "NMC_Text0710",
+    "contexts": [
+      "1.6\\Defs\\PointShop.xml:NMC_MothershipPointShop.description"
+    ]
+  },
+  {
+    "id": 711,
+    "zh": "需要研究：精确友军识别",
+    "key": "NMC_Text0711",
+    "contexts": [
+      "CommanderActions.cs:81"
+    ]
+  },
+  {
+    "id": 712,
+    "zh": "请通过上行链路研究终端研究精确友军识别",
+    "key": "NMC_Text0712",
+    "contexts": [
+      "CommanderActions.cs:87"
+    ]
+  },
+  {
+    "id": 713,
+    "zh": "精确友军识别 · 未研究",
+    "key": "NMC_Text0713",
+    "contexts": [
+      "CommanderPanel.cs:175"
+    ]
+  },
+  {
+    "id": 714,
+    "zh": "指挥官支援火力会保护己方和盟友。",
+    "key": "NMC_Text0714",
+    "contexts": [
+      "CommanderPanel.cs:177"
+    ]
+  },
+  {
+    "id": 715,
+    "zh": "{0}。通过上行链路研究终端交付材料，完成后自动启用。",
+    "key": "NMC_Text0715",
+    "contexts": [
+      "CommanderPanel.cs:178"
+    ]
+  },
+  {
+    "id": 716,
+    "zh": "精确友军识别",
+    "key": "NMC_Text0716",
+    "contexts": [
+      "1.6\\Defs\\CommanderFriendlyIdentification.xml:NMC_PreciseFriendlyIdentification.label"
+    ]
+  },
+  {
+    "id": 717,
+    "zh": "完善母舰的敌我识别协议，使指挥官的支援火力避开己方单位、建筑和盟友。暗影卫队与远征军团的专属武器也会遵循这一协议。\n\n通过上行链路研究终端交付所需材料并完成研究。研究完成后永久生效，无需在支援面板额外购买。",
+    "key": "NMC_Text0717",
+    "contexts": [
+      "1.6\\Defs\\CommanderFriendlyIdentification.xml:NMC_PreciseFriendlyIdentification.description"
+    ]
+  }
+]

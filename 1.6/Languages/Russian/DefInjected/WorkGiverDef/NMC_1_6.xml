@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_UpgradeAircraftStarship.label>Доставлять батареи кораблям</NMC_UpgradeAircraftStarship.label>
+  <NMC_UpgradeAircraftStarship.verb>Устанавливать батареи звездолёта</NMC_UpgradeAircraftStarship.verb>
+  <NMC_UpgradeAircraftStarship.gerund>Устанавливать батареи звездолёта</NMC_UpgradeAircraftStarship.gerund>
+  <NMC_FillNutrientEnergyTower.label>Пополнять питание энергетической башни</NMC_FillNutrientEnergyTower.label>
+  <NMC_FillNutrientEnergyTower.verb>Заполнять</NMC_FillNutrientEnergyTower.verb>
+  <NMC_FillNutrientEnergyTower.gerund>Пополнять питание</NMC_FillNutrientEnergyTower.gerund>
+</LanguageData>

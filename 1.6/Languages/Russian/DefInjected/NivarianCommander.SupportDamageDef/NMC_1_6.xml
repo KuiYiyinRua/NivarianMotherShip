@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_FrigateBeamDamage.label>Призматический лазер гравитационного корабля</NMC_FrigateBeamDamage.label>
+  <NMC_OrbitalEnergy.label>Орбитальный энергетический удар</NMC_OrbitalEnergy.label>
+  <NMC_SolarBombEnergy.label>Энергия солнечного обстрела</NMC_SolarBombEnergy.label>
+  <NMC_SolarRayEnergy.label>Энергия солнечного луча</NMC_SolarRayEnergy.label>
+  <NMC_SolarRayBurn.label>Ожог солнечного луча</NMC_SolarRayBurn.label>
+  <NMC_PurificationEnergy.label>Энергия очищающего луча</NMC_PurificationEnergy.label>
+  <NMC_PurificationBurn.label>Ожог очищающего луча</NMC_PurificationBurn.label>
+  <NMC_OverloadEnergy.label>Синий лазер перегрузки</NMC_OverloadEnergy.label>
+  <NMC_FleetMothershipEnergy.label>Энергоурон корабля-матки</NMC_FleetMothershipEnergy.label>
+  <NMC_FleetDestroyerEnergy.label>Энергоурон эсминца</NMC_FleetDestroyerEnergy.label>
+  <NMC_FleetMothershipLaser.label>Призматический лазер корабля-матки</NMC_FleetMothershipLaser.label>
+  <NMC_FleetRayEnergy.label>Сияющий энергоурон</NMC_FleetRayEnergy.label>
+  <NMC_MonolithEnergy.label>Гиперпространственный контрольный луч</NMC_MonolithEnergy.label>
+</LanguageData>

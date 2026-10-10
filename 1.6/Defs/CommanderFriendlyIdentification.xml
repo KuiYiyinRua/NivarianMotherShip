@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_PreciseFriendlyIdentification</defName>
+    <label>精确友军识别</label>
+    <description>完善母舰的敌我识别协议，使指挥官的支援火力避开己方单位、建筑和盟友。暗影卫队与远征军团的专属武器也会遵循这一协议。
+
+通过上行链路研究终端交付所需材料并完成研究。研究完成后永久生效，无需在支援面板额外购买。</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>NMC_Support02</li>
+    </prerequisites>
+    <researchViewX>6</researchViewX>
+    <researchViewY>3</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li><thingDef>Steel</thingDef><count>250</count></li>
+          <li><thingDef>ComponentIndustrial</thingDef><count>8</count></li>
+          <li><thingDef>Nivarian_DragonCrystal</thingDef><count>30</count></li>
+        </requiredMaterials>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+</Defs>

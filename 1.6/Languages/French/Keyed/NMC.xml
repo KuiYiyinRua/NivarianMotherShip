@@ -1,0 +1,539 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_Text0001>Décoller</NMC_Text0001>
+  <NMC_Text0002>Décoller ici et combattre sur cette carte. Le décollage consomme {0} de carburant chimique ; le vol n'en consomme plus. La zone de décollage doit être sans toit.</NMC_Text0002>
+  <NMC_Text0003>Décoller ici et combattre sur cette carte. La zone doit être sans toit. Le vol consomme du carburant chimique en continu.</NMC_Text0003>
+  <NMC_Text0004>Le décollage nécessite {0} de carburant chimique</NMC_Text0004>
+  <NMC_Text0005>Carburant chimique insuffisant</NMC_Text0005>
+  <NMC_Text0006>Un toit couvre le vaisseau</NMC_Text0006>
+  <NMC_Text0007>Voler vers une position</NMC_Text0007>
+  <NMC_Text0008>Choisissez une destination sur cette carte.</NMC_Text0008>
+  <NMC_Text0009>Décollage ou atterrissage en cours</NMC_Text0009>
+  <NMC_Text0010>Atterrir</NMC_Text0010>
+  <NMC_Text0011>Cesser le combat aérien et atterrir. Le porte-aéronefs arrête les lancements et rappelle les escadrilles. Dégagez d'abord les bâtiments, personnes et toits sous le vaisseau.</NMC_Text0011>
+  <NMC_Text0012>Des obstacles, personnes ou toits se trouvent dessous. Rejoignez d'abord un terrain dégagé.</NMC_Text0012>
+  <NMC_Text0013>Production d'intercepteurs : activée</NMC_Text0013>
+  <NMC_Text0014>Production d'intercepteurs : suspendue</NMC_Text0014>
+  <NMC_Text0015>Chaque intercepteur coûte {0} d'acier dracogivré et se construit en 15 secondes, même en vol. Utilisez le chargement de fret pour fournir jusqu'à 1 000 unités de matériau. Le hangar et les appareils déployés sont limités à {1} au total.</NMC_Text0015>
+  <NMC_Text0016>Rappeler les intercepteurs</NMC_Text0016>
+  <NMC_Text0017>Rappeler tous les intercepteurs au hangar. Ils pourront repartir si le porte-aéronefs reste en vol avec des ennemis à proximité.</NMC_Text0017>
+  <NMC_Text0018>Rayon gravitationnel</NMC_Text0018>
+  <NMC_Text0019>Choisissez un ennemi au sol à moins de 16 cases. Il est soulevé et étourdi pendant 5 secondes, permettant au laser du vaisseau de le viser. Recharge : 8 secondes. Aucun coût supplémentaire.</NMC_Text0019>
+  <NMC_Text0020>Le vaisseau doit être en vol</NMC_Text0020>
+  <NMC_Text0021>Rayon gravitationnel en recharge</NMC_Text0021>
+  <NMC_Text0022>Rayon automatique : activé</NMC_Text0022>
+  <NMC_Text0023>Rayon automatique : désactivé</NMC_Text0023>
+  <NMC_Text0024>En vol, soulever automatiquement l'ennemi au sol le plus proche à moins de 16 cases. Le ciblage manuel reste possible si cette option est désactivée.</NMC_Text0024>
+  <NMC_Text0025>Propulsion stellaire : améliorée</NMC_Text0025>
+  <NMC_Text0026>Batteries stellaires : {0}/{1}</NMC_Text0026>
+  <NMC_Text0027>Améliorer la propulsion</NMC_Text0027>
+  <NMC_Text0028>Les colons transporteront et installeront {0} batteries stellaires Milira. Ensuite, chaque décollage consommera {1} de carburant chimique, sans consommation continue en combat local ni en voyage mondial. Les batteries installées sont consommées définitivement ; le vaisseau doit être posé pour les recevoir.</NMC_Text0028>
+  <NMC_Text0029>Batteries stellaires installées</NMC_Text0029>
+  <NMC_Text0030>En attente du transport des batteries par les colons</NMC_Text0030>
+  <NMC_Text0031>Atterrissez d'abord</NMC_Text0031>
+  <NMC_Text0032>L'amélioration de la propulsion de {0} est terminée.</NMC_Text0032>
+  <NMC_Text0033>Aucune batterie stellaire Milira accessible</NMC_Text0033>
+  <NMC_Text0034>Destination indisponible. Choisissez-en une autre</NMC_Text0034>
+  <NMC_Text0035>Recharge restante : {0}</NMC_Text0035>
+  <NMC_Text0036>Nécessite {0} P + {1} V</NMC_Text0036>
+  <NMC_Text0037>Le centre du trou noir doit être exploré et praticable</NMC_Text0037>
+  <NMC_Text0038>Énergie du vaisseau-mère insuffisante</NMC_Text0038>
+  <NMC_Text0039>Trou noir : armure temporairement réduite à zéro</NMC_Text0039>
+  <NMC_Text0040>Trou noir · {0} P + {1} V · Rayon 8 / 8 secondes · Clic gauche : déployer ; clic droit / Échap : annuler</NMC_Text0040>
+  <NMC_Text0041>Aucun</NMC_Text0041>
+  <NMC_Text0042>Retour</NMC_Text0042>
+  <NMC_Text0043>Interception automatique</NMC_Text0043>
+  <NMC_Text0044>Porte-aéronefs : {0}
+{1}</NMC_Text0044>
+  <NMC_Text0045>Recherche requise : {0}</NMC_Text0045>
+  <NMC_Text0046>Niveau {0} du vaisseau-mère requis</NMC_Text0046>
+  <NMC_Text0047>Armes orbitales inutilisables sous terre</NMC_Text0047>
+  <NMC_Text0048>Énergie insuffisante : {0} P + {1} V requis</NMC_Text0048>
+  <NMC_Text0049>Aucune cible orbitale valide : les toits rocheux épais bloquent les frappes directes</NMC_Text0049>
+  <NMC_Text0050>Identification précise des alliés activée</NMC_Text0050>
+  <NMC_Text0052>VM</NMC_Text0052>
+  <NMC_Text0053>Déployer le panneau du commandant
+Maintenez et faites glisser pour le déplacer</NMC_Text0053>
+  <NMC_Text0054>Emplacement {0}
+Cliquez pour ajouter un soutien débloqué
+Maintenez et faites glisser le panneau</NMC_Text0054>
+  <NMC_Text0055>Commandant du vaisseau-mère</NMC_Text0055>
+  <NMC_Text0056>Unités d'énergie P : {0}
+Réactifs volatils V : {1}
+Maintenez et faites glisser le panneau</NMC_Text0056>
+  <NMC_Text0057>Vue d'ensemble</NMC_Text0057>
+  <NMC_Text0058>Ouvrir la vue d'ensemble du commandant</NMC_Text0058>
+  <NMC_Text0059>Réduire en bouton ; cliquez dessus pour redéployer</NMC_Text0059>
+  <NMC_Text0060>Soutien</NMC_Text0060>
+  <NMC_Text0061>Cliquez pour activer</NMC_Text0061>
+  <NMC_Text0062>Cliquez pour choisir une position</NMC_Text0062>
+  <NMC_Text0063>
+Recharge restante : {0}</NMC_Text0063>
+  <NMC_Text0064>{0}
+{1} P / {2} V{3}
+{4}{5}
+Clic droit : remplacer ou vider ; maintenez pour déplacer</NMC_Text0064>
+  <NMC_Text0065>Vider l'emplacement {0}</NMC_Text0065>
+  <NMC_Text0066> (actuel)</NMC_Text0066>
+  <NMC_Text0067> (depuis l'emplacement {0})</NMC_Text0067>
+  <NMC_Text0068>Aucun soutien débloqué</NMC_Text0068>
+  <NMC_Text0069>{0} ×100 M</NMC_Text0069>
+  <NMC_Text0070>{0} ×10 k</NMC_Text0070>
+  <NMC_Text0071>{0}j</NMC_Text0071>
+  <NMC_Text0072>{0}min</NMC_Text0072>
+  <NMC_Text0073>{0}s</NMC_Text0073>
+  <NMC_Text0074>Tous les soutiens</NMC_Text0074>
+  <NMC_Text0075>Puissance orbitale</NMC_Text0075>
+  <NMC_Text0076>Défense et production</NMC_Text0076>
+  <NMC_Text0077>Ombre et contrôle</NMC_Text0077>
+  <NMC_Text0078>Renforts expéditionnaires</NMC_Text0078>
+  <NMC_Text0079>Structures et projections</NMC_Text0079>
+  <NMC_Text0080>Nivarian · Commandant du vaisseau-mère</NMC_Text0080>
+  <NMC_Text0081>Demandez des tirs orbitaux, des structures et des renforts</NMC_Text0081>
+  <NMC_Text0082>Unités d'énergie P</NMC_Text0082>
+  <NMC_Text0083>Réactifs volatils V</NMC_Text0083>
+  <NMC_Text0084>Niveau du vaisseau-mère</NMC_Text0084>
+  <NMC_Text0085>Charges de surcharge</NMC_Text0085>
+  <NMC_Text0086>Catégories de soutien</NMC_Text0086>
+  <NMC_Text0087>19 soutiens tactiques
+Débloqués par la recherche
+Niveau du vaisseau-mère requis</NMC_Text0087>
+  <NMC_Text0088>Retour aux soutiens</NMC_Text0088>
+  <NMC_Text0089>Afficher le panneau rapide</NMC_Text0089>
+  <NMC_Text0090>Soutien du vaisseau-mère · Ombre et contrôle hyperdimensionnel</NMC_Text0090>
+  <NMC_Text0091>
+Entretien : 1 P et 1 V par 0,1 jour</NMC_Text0091>
+  <NMC_Text0092>Charges au maximum</NMC_Text0092>
+  <NMC_Text0093>Une charge tous les 3 jours. Prochaine : {0}</NMC_Text0093>
+  <NMC_Text0094>Reste : {0}</NMC_Text0094>
+  <NMC_Text0095>Coût du soutien</NMC_Text0095>
+  <NMC_Text0096>Recharge / charges</NMC_Text0096>
+  <NMC_Text0097>Conditions</NMC_Text0097>
+  <NMC_Text0098>Matériaux requis</NMC_Text0098>
+  <NMC_Text0099>Identification précise des alliés · Activée</NMC_Text0099>
+  <NMC_Text0102>Rayon 3 · Dégâts 30 · Pénétration 35 %</NMC_Text0102>
+  <NMC_Text0103>Viser une frappe orbitale</NMC_Text0103>
+  <NMC_Text0104>Alimentation · {0} / 10 000 W</NMC_Text0104>
+  <NMC_Text0105>Champ sur une autre carte · Déplacement possible</NMC_Text0105>
+  <NMC_Text0106>Rayon 8 · Non déployé</NMC_Text0106>
+  <NMC_Text0107>Alliés présents · Bouclier 200 · 30 secondes</NMC_Text0107>
+  <NMC_Text0108>Bouclier 200 · Soutien laser 45 secondes</NMC_Text0108>
+  <NMC_Text0109>Sélectionnez une cible protégée pour voir ses boucliers et durées restantes. Interrompre le soutien ne rembourse ni énergie, ni recharge, ni charges.</NMC_Text0109>
+  <NMC_Text0110>Soutien prêt</NMC_Text0110>
+  <NMC_Text0111>Choisir la position du champ</NMC_Text0111>
+  <NMC_Text0112>Protéger les alliés de cette carte</NMC_Text0112>
+  <NMC_Text0113>Choisir un bâtiment à surcharger</NMC_Text0113>
+  <NMC_Text0114>Désactiver le champ de cette carte</NMC_Text0114>
+  <NMC_Text0115>Arrêter les boucliers de cette carte</NMC_Text0115>
+  <NMC_Text0116>Choisir un bâtiment pour annuler la surcharge</NMC_Text0116>
+  <NMC_Text0117>Rayon de bombardement 13 · 30 secondes</NMC_Text0117>
+  <NMC_Text0118>Bombardement en cours · Impossible à interrompre</NMC_Text0118>
+  <NMC_Text0119>Prêt · Choisissez une position pour commencer</NMC_Text0119>
+  <NMC_Text0120>Choisir le centre du bombardement solaire</NMC_Text0120>
+  <NMC_Text0121>Trois rayons de poursuite · 8 secondes</NMC_Text0121>
+  <NMC_Text0122>Balayage de cette carte en cours</NMC_Text0122>
+  <NMC_Text0123>Prêt · Recharge d'une demi-journée</NMC_Text0123>
+  <NMC_Text0124>Choisir l'origine du rayon</NMC_Text0124>
+  <NMC_Text0125>Arrêter les rayons de cette carte</NMC_Text0125>
+  <NMC_Text0126>Inactif</NMC_Text0126>
+  <NMC_Text0127>Actif dans {0} lieux · Reste ici : {1}</NMC_Text0127>
+  <NMC_Text0128>Vitesse de travail ×5 · 60 secondes</NMC_Text0128>
+  <NMC_Text0129>Prêt · Affecte toutes les colonies</NMC_Text0129>
+  <NMC_Text0130>Déclencher la fluctuation spatiotemporelle</NMC_Text0130>
+  <NMC_Text0131>Arrêter la fluctuation spatiotemporelle</NMC_Text0131>
+  <NMC_Text0132>Rayon 4 · Poursuite automatique 20 secondes</NMC_Text0132>
+  <NMC_Text0133>Prêt · Choisissez un point de départ</NMC_Text0133>
+  <NMC_Text0134>Mobilisé</NMC_Text0134>
+  <NMC_Text0135>Poursuite automatique</NMC_Text0135>
+  <NMC_Text0136>{0} · Reste : {1}</NMC_Text0136>
+  <NMC_Text0137>Choisir l'origine du rayon purificateur</NMC_Text0137>
+  <NMC_Text0138>Démobiliser et poursuivre automatiquement</NMC_Text0138>
+  <NMC_Text0139>Mobiliser le rayon purificateur</NMC_Text0139>
+  <NMC_Text0140>Choisir une destination</NMC_Text0140>
+  <NMC_Text0141>Arrêter le rayon purificateur de cette carte</NMC_Text0141>
+  <NMC_Text0142>2×2 · 800 PV · 20 secondes après livraison</NMC_Text0142>
+  <NMC_Text0143>3×3 · 1 800 PV · 45 secondes après livraison</NMC_Text0143>
+  <NMC_Text0144>Déployez un noyau ; construction après livraison des matériaux</NMC_Text0144>
+  <NMC_Text0145>Déployer un noyau d'ombre</NMC_Text0145>
+  <NMC_Text0146>Déployer un noyau de monolithe</NMC_Text0146>
+  <NMC_Text0147>Quatre gardes de l'ombre · Soutien 120 secondes</NMC_Text0147>
+  <NMC_Text0148>Troupes de mêlée invisibles · Armes de maître</NMC_Text0148>
+  <NMC_Text0149>Déployer la garde de l'ombre</NMC_Text0149>
+  <NMC_Text0150>Rayon 8 · Attraction des ennemis 8 secondes</NMC_Text0150>
+  <NMC_Text0151>Prêt · Choisissez une position</NMC_Text0151>
+  <NMC_Text0152>Attraction de {0} ennemis · Reste : {1}</NMC_Text0152>
+  <NMC_Text0153>Choisir le centre du trou noir</NMC_Text0153>
+  <NMC_Text0154>Arrêter le trou noir de cette carte</NMC_Text0154>
+  <NMC_Text0155>Ennemis présents dans toutes les colonies · {0} secondes</NMC_Text0155>
+  <NMC_Text0156>{0} ennemis contrôlés · Reste ici : {1}</NMC_Text0156>
+  <NMC_Text0157>Prêt · Bloque déplacements et attaques ennemis</NMC_Text0157>
+  <NMC_Text0158>Arrêter le temps</NMC_Text0158>
+  <NMC_Text0159>Mettre fin à l'arrêt du temps</NMC_Text0159>
+  <NMC_Text0160>Rayon 13 · 30 secondes</NMC_Text0160>
+  <NMC_Text0161>{0} cristaux sur cette carte · Ennemis neutralisés</NMC_Text0161>
+  <NMC_Text0162>Prêt · Ralentit les ennemis et bloque les tourelles</NMC_Text0162>
+  <NMC_Text0163>Choisir la position du cristal du vide</NMC_Text0163>
+  <NMC_Text0164>Retirer tous les cristaux de cette carte</NMC_Text0164>
+  <NMC_Text0165>Vaisseau-mère et 8 destroyers · 120 secondes</NMC_Text0165>
+  <NMC_Text0166>{0} flottes sur cette carte · {1} survivants</NMC_Text0166>
+  <NMC_Text0167>Prêt · Combat automatique de la flotte</NMC_Text0167>
+  <NMC_Text0168>Choisir l'arrivée de la flotte tactique</NMC_Text0168>
+  <NMC_Text0169>Vaisseaux et épaves récupérés en fin de soutien</NMC_Text0169>
+  <NMC_Text0170>Tebrus et 10 guerriers · 120 secondes</NMC_Text0170>
+  <NMC_Text0171>{0} légions sur cette carte · {1} survivants</NMC_Text0171>
+  <NMC_Text0172>Prêt · Recharge commune de 7 jours pour les trois légions</NMC_Text0172>
+  <NMC_Text0173>Placez 2 000 d'argent dans la portée d'une balise de commerce orbitale alimentée sur cette carte. Si l'argent manque, 200 d'or seront prélevés.</NMC_Text0173>
+  <NMC_Text0174>Choisir l'arrivée de la légion de Tebrus</NMC_Text0174>
+  <NMC_Text0175>Membres et équipement exclusif récupérés en fin de soutien</NMC_Text0175>
+  <NMC_Text0176>Zoraya et 4 vaisseaux lumineux · 120 secondes</NMC_Text0176>
+  <NMC_Text0177>Choisir l'arrivée de la légion de Zoraya</NMC_Text0177>
+  <NMC_Text0178>Seydas et 3 archontes · 120 secondes</NMC_Text0178>
+  <NMC_Text0179>Nécessite 2 000 d'argent à portée de la balise, ou 200 d'or si l'argent manque. Les ennemis contrôlés rejoignent les survivants nivarians, pas votre colonie.</NMC_Text0179>
+  <NMC_Text0180>Choisir l'arrivée de la légion de Seydas</NMC_Text0180>
+  <NMC_Text0181>Les unités contrôlées restent après le retrait de la légion</NMC_Text0181>
+  <NMC_Text0182>Tourelles projetables : {0} · Combat 60 secondes</NMC_Text0182>
+  <NMC_Text0183>Les dégâts d'une projection blessent aussi son original</NMC_Text0183>
+  <NMC_Text0184>Choisir le centre de projection matricielle</NMC_Text0184>
+  <NMC_Text0185>Inscrire toutes les tourelles</NMC_Text0185>
+  <NMC_Text0186>Effacer les inscriptions</NMC_Text0186>
+  <NMC_Text0187>Les tourelles de toutes les colonies peuvent être inscrites. Les projections se forment en 5 secondes et utilisent l'énergie et les munitions de leur original. Sélectionnez l'un ou l'autre pour un rappel anticipé. L'énergie dépensée n'est pas remboursée.</NMC_Text0187>
+  <NMC_Text0188>Ce soutien est actuellement indisponible</NMC_Text0188>
+  <NMC_Text0189>Avancer</NMC_Text0189>
+  <NMC_Text0190>Reculer</NMC_Text0190>
+  <NMC_Text0191>Modifier la position de ce soutien dans la liste</NMC_Text0191>
+  <NMC_Text0192>Prêt</NMC_Text0192>
+  <NMC_Text0193>{0} jours</NMC_Text0193>
+  <NMC_Text0194>{0} secondes</NMC_Text0194>
+  <NMC_Text0195>Tirs continus</NMC_Text0195>
+  <NMC_Text0196>Une charge tous les 3 jours</NMC_Text0196>
+  <NMC_Text0197> (commune aux légions)</NMC_Text0197>
+  <NMC_Text0198>Terminez d'abord l'étape {0} du Continuum : {1}</NMC_Text0198>
+  <NMC_Text0199> · Terminée</NMC_Text0199>
+  <NMC_Text0200> · Non terminée</NMC_Text0200>
+  <NMC_Text0201>{0}{1}
+Niveau requis : {2} (actuel : {3}){4}</NMC_Text0201>
+  <NMC_Text0202>Soutien du vaisseau-mère non prêt</NMC_Text0202>
+  <NMC_Text0203>Ouvrez d'abord la carte cible</NMC_Text0203>
+  <NMC_Text0204>Aucune action rapide pour cette capacité</NMC_Text0204>
+  <NMC_Text0205>Frappe orbitale · {0} P + {1} V par tir · Clic gauche : tirs répétés · Clic droit / Échap : terminer</NMC_Text0205>
+  <NMC_Text0206>Définition de construction absente ou durée invalide</NMC_Text0206>
+  <NMC_Text0207>Le noyau de construction n'a pas de conteneur de matériaux</NMC_Text0207>
+  <NMC_Text0208>Dimensions, points de vie ou définition des restes de matériaux invalides</NMC_Text0208>
+  <NMC_Text0209>Matériaux de construction absents, dupliqués ou invalides</NMC_Text0209>
+  <NMC_Text0210>Construction du vaisseau-mère : {0} secondes</NMC_Text0210>
+  <NMC_Text0211>En attente des matériaux</NMC_Text0211>
+  <NMC_Text0212>Annuler la construction</NMC_Text0212>
+  <NMC_Text0213>Annuler la construction et rendre les matériaux livrés. L'énergie et la recharge utilisées pour déployer le noyau ne sont pas remboursées.</NMC_Text0213>
+  <NMC_Text0214>Renforts aéroportés du Continuum : mécanoïdes et unités de combat Nira</NMC_Text0214>
+  <NMC_Text0215>Tour de cristal d'ombre</NMC_Text0215>
+  <NMC_Text0216>Renforts de l'ombre</NMC_Text0216>
+  <NMC_Text0217>Légion expéditionnaire</NMC_Text0217>
+  <NMC_Text0218>Monolithe hyperdimensionnel</NMC_Text0218>
+  <NMC_Text0219>Projection hyperdimensionnelle</NMC_Text0219>
+  <NMC_Text0220>Soutien de flotte</NMC_Text0220>
+  <NMC_Text0221>Rayon purificateur</NMC_Text0221>
+  <NMC_Text0222>Bombardement solaire</NMC_Text0222>
+  <NMC_Text0223>Base du Continuum (étape {0})</NMC_Text0223>
+  <NMC_Text0224>Continuum : {0} ({1}/8)</NMC_Text0224>
+  <NMC_Text0225>Après la réussite, le vaisseau-mère cherchera la base suivante.</NMC_Text0225>
+  <NMC_Text0226>C'est la dernière étape. Son achèvement donne toutes les données de recherche du Continuum.</NMC_Text0226>
+  <NMC_Text0227>Le vaisseau-mère a intercepté des communications du Continuum près de la colonie et repéré une base contenant des données tactiques. Envoyez des troupes détruire le noyau de communication, vaincre la garnison et détruire les tourelles défensives pour récupérer les données. Détruire le noyau seul ne suffit pas.
+
+Le butin est au centre, protégé par plusieurs lignes de tourelles et de sacs de sable. Les défenseurs appelleront des renforts aéroportés, dont des mécanoïdes et des unités Nira équipées d'armes nivarianes.
+
+Vous avez 12 jours pour attaquer. Après votre entrée sur le champ de bataille, retirer tout le monde avant d'atteindre les objectifs ou dépasser le délai fait échouer la mission. Le vaisseau-mère repérera une base du même stade après 3 jours ; les données déjà obtenues sont conservées.
+
+Les données débloquent ces recherches :
+{0}
+
+Il faut encore livrer les matériaux et terminer les recherches au terminal de liaison montante, puis atteindre le niveau requis du vaisseau-mère pour utiliser les soutiens.{1}</NMC_Text0227>
+  <NMC_Text0228>Données de recherche du Continuum obtenues</NMC_Text0228>
+  <NMC_Text0229>
+
+Le vaisseau-mère cherche la prochaine base du Continuum.</NMC_Text0229>
+  <NMC_Text0230>
+
+Les huit étapes du Continuum sont terminées. Toutes les données de recherche associées ont été obtenues.</NMC_Text0230>
+  <NMC_Text0231>Le vaisseau-mère a déchiffré les données récupérées. Ces recherches sont désormais disponibles :
+{0}
+
+Livrez les matériaux requis et terminez les recherches au terminal de liaison montante. Le niveau correspondant du vaisseau-mère reste nécessaire.{1}</NMC_Text0231>
+  <NMC_Text0232>Opération contre le Continuum échouée</NMC_Text0232>
+  <NMC_Text0233>Aucune donnée obtenue de la base de l'étape {0}. Le vaisseau-mère repérera une autre cible du même stade dans 3 jours.
+
+Les données acquises et recherches terminées sont conservées.</NMC_Text0233>
+  <NMC_Text0234>Voir la base du Continuum</NMC_Text0234>
+  <NMC_Text0238>Charges de surcharge insuffisantes</NMC_Text0238>
+  <NMC_Text0239>Le centre du champ doit être sur la carte</NMC_Text0239>
+  <NMC_Text0240>Choisissez un bâtiment allié sur cette carte</NMC_Text0240>
+  <NMC_Text0241>Soutien du vaisseau-mère · Bouclier total {0} / 400</NMC_Text0241>
+  <NMC_Text0242>Surcharge de bouclier : {0} · {1} secondes</NMC_Text0242>
+  <NMC_Text0243>Surcharge de bâtiment : bouclier {0} · {1} secondes</NMC_Text0243>
+  <NMC_Text0244>Champ d'énergie de distorsion désactivé : entretien de 1 P et 1 V requis.</NMC_Text0244>
+  <NMC_Text0245>Recherche requise : distorsion interzone du personnel</NMC_Text0245>
+  <NMC_Text0246>Choisissez un de vos colons sur une carte</NMC_Text0246>
+  <NMC_Text0247>Aucun champ d'énergie de distorsion déployé</NMC_Text0247>
+  <NMC_Text0248>Le colon a quitté sa carte d'origine. Sélectionnez à nouveau.</NMC_Text0248>
+  <NMC_Text0249>Le champ d'énergie a été remplacé. Sélectionnez à nouveau la distorsion.</NMC_Text0249>
+  <NMC_Text0250>Aucune case libre sûre dans le champ.</NMC_Text0250>
+  <NMC_Text0251>Le colon est déjà au point de réception.</NMC_Text0251>
+  <NMC_Text0252>Impossible de poser l'objet transporté en sécurité. Arrêtez d'abord le transport.</NMC_Text0252>
+  <NMC_Text0253>{0} a rejoint le champ par distorsion.</NMC_Text0253>
+  <NMC_Text0254>Le colon est arrivé. Vérifiez son état et réaffectez son travail.</NMC_Text0254>
+  <NMC_Text0255>Échec de la distorsion. Vérifiez la position du colon et réessayez.</NMC_Text0255>
+  <NMC_Text0256>Rejoindre le champ par distorsion</NMC_Text0256>
+  <NMC_Text0257>Rejoindre instantanément le champ d'énergie déployé, même entre colonies. Si le centre est occupé, l'arrivée se fait sur la case libre sûre la plus proche dans le champ.
+
+Aucun coût énergétique ni délai de recharge supplémentaire. Le colon interrompt son travail, pose les objets transportés et emporte équipement et inventaire.</NMC_Text0257>
+  <NMC_Text0258>Légion de Zoraya · </NMC_Text0258>
+  <NMC_Text0259>Flotte tactique · </NMC_Text0259>
+  <NMC_Text0260>Récupération</NMC_Text0260>
+  <NMC_Text0261> · Pertes à l'arrivée : {0}</NMC_Text0261>
+  <NMC_Text0262>Arrivée {0} / {1}{2}</NMC_Text0262>
+  <NMC_Text0263>{0}{1} / {2} PV
+{3}</NMC_Text0263>
+  <NMC_Text0264>L'arrivée des neuf vaisseaux doit éviter le bord de carte</NMC_Text0264>
+  <NMC_Text0265>L'arrivée des neuf vaisseaux doit être explorée</NMC_Text0265>
+  <NMC_Text0266>Les neuf vaisseaux ne peuvent arriver sous une roche épaisse</NMC_Text0266>
+  <NMC_Text0267>L'arrivée ne peut contenir murs ni terrain impraticable</NMC_Text0267>
+  <NMC_Text0268>Point d'arrivée occupé par un autre vaisseau</NMC_Text0268>
+  <NMC_Text0269>Arrivée de flotte échouée ; aucun coût ni recharge appliqués</NMC_Text0269>
+  <NMC_Text0270>Énergie insuffisante ; soutien de flotte annulé</NMC_Text0270>
+  <NMC_Text0271>Arrivée de la flotte : 1 vaisseau-mère et 8 destroyers. Soutien de 120 secondes après l'arrivée de tous.</NMC_Text0271>
+  <NMC_Text0272>Flotte tactique · {0} P + {1} V · 1 vaisseau-mère + 8 destroyers · Clic gauche : déployer ; clic droit / Échap : annuler</NMC_Text0272>
+  <NMC_Text0273>Modificateur de vitesse des gardes de l'ombre : {0}</NMC_Text0273>
+  <NMC_Text0274>Une faction survivante nivariane existante et non hostile est requise</NMC_Text0274>
+  <NMC_Text0275>Garde de l'ombre indisponible</NMC_Text0275>
+  <NMC_Text0276>Équipement de la garde indisponible ; déploiement impossible</NMC_Text0276>
+  <NMC_Text0277>Armes de la garde non prêtes</NMC_Text0277>
+  <NMC_Text0278>Quatre cases proches, explorées et praticables, sans toit rocheux épais sont requises</NMC_Text0278>
+  <NMC_Text0279>Point d'arrivée des troupes occupé</NMC_Text0279>
+  <NMC_Text0280>Modificateur de vitesse de la légion : {0}</NMC_Text0280>
+  <NMC_Text0281>La légion survivante nivariane est absente, détruite ou hostile</NMC_Text0281>
+  <NMC_Text0282>Préparez 2 000 d'argent ou 200 d'or à portée d'une balise de commerce orbitale alimentée sur cette carte</NMC_Text0282>
+  <NMC_Text0283>Réseau de contrôle hyperdimensionnel : actif</NMC_Text0283>
+  <NMC_Text0284>Réseau de contrôle hyperdimensionnel : sans courant</NMC_Text0284>
+  <NMC_Text0285> · Attaque toutes les 0,4 seconde</NMC_Text0285>
+  <NMC_Text0286> · Attaque toutes les 2 secondes</NMC_Text0286>
+  <NMC_Text0287>{0}{1} · Portée 60 · Jusqu'à 10 cibles</NMC_Text0287>
+  <NMC_Text0288>{0} a épuisé son carburant et effectué un atterrissage d'urgence.</NMC_Text0288>
+  <NMC_Text0289>Posé</NMC_Text0289>
+  <NMC_Text0290> · Propulsion stellaire : {0} de carburant par décollage ; aucune consommation en vol</NMC_Text0290>
+  <NMC_Text0291>1 unité par seconde</NMC_Text0291>
+  <NMC_Text0292>1 unité toutes les 5 secondes</NMC_Text0292>
+  <NMC_Text0293> · Consommation en vol : {0}</NMC_Text0293>
+  <NMC_Text0294>
+Amélioration par batteries : {0}/{1} (livraison attendue)</NMC_Text0294>
+  <NMC_Text0295> · Fabrication restante : {0} secondes</NMC_Text0295>
+  <NMC_Text0296>
+Intercepteurs : {0}/{1} (hangar {2}, déployés {3})
+Acier dracogivré : {4}/1000{5}</NMC_Text0296>
+  <NMC_Text0297>
+Recharge du rayon gravitationnel : {0} secondes</NMC_Text0297>
+  <NMC_Text0298>Cessez le combat aérien et atterrissez d'abord. Le porte-aéronefs doit aussi rappeler ses intercepteurs.</NMC_Text0298>
+  <NMC_Text0299>Le décollage nécessite {0} de carburant chimique.</NMC_Text0299>
+  <NMC_Text0300>Désactivé</NMC_Text0300>
+  <NMC_Text0301>En attente de nutriments</NMC_Text0301>
+  <NMC_Text0302>Fonctionnement suspendu</NMC_Text0302>
+  <NMC_Text0303>Alimentation du vaisseau-mère</NMC_Text0303>
+  <NMC_Text0304>{0}Réserve nutritive : {1} (objectif {2})
+Consommation : {3} / jour de jeu
+Énergie : {4} P / jour de jeu
+{5} · Puissance nominale 700 W</NMC_Text0304>
+  <NMC_Text0305>Autres marchandises</NMC_Text0305>
+  <NMC_Text0306>Nira</NMC_Text0306>
+  <NMC_Text0307>Bonjour, commandant. La liste est prête. Que souhaitez-vous apporter à la colonie aujourd'hui ?</NMC_Text0307>
+  <NMC_Text0308>Bon retour. Je vous tiens compagnie pendant que vous choisissez. Prenez votre temps.</NMC_Text0308>
+  <NMC_Text0309>Canal de ravitaillement connecté. Regardez les stocks et emportez ce qui vous convient.</NMC_Text0309>
+  <NMC_Text0310>Avez-vous bien mangé aujourd'hui ? Même avec une longue liste d'achats, pensez à vous reposer.</NMC_Text0310>
+  <NMC_Text0311>Le vaisseau-mère est calme. J'aime vous entendre parler du quotidien de la colonie.</NMC_Text0311>
+  <NMC_Text0312>Gardez de la place à l'entrepôt. À l'arrivée des fournitures, pas besoin de déplacer les caisses en urgence.</NMC_Text0312>
+  <NMC_Text0313>Je me demande si je devrais apporter des friandises à notre prochaine escale.</NMC_Text0313>
+  <NMC_Text0314>Quand il fait beau, regardez le ciel pour moi. La vue au sol est bien différente de celle en orbite.</NMC_Text0314>
+  <NMC_Text0315>Entre deux rangements, je lis un peu. Avez-vous découvert une histoire qui vous plaît ?</NMC_Text0315>
+  <NMC_Text0316>Ne vous inquiétez pas, je reste sur ce canal. Choisissez tranquillement.</NMC_Text0316>
+  <NMC_Text0317>Une lampe, un repas chaud. Ce sont parfois ces petites choses qui rassurent.</NMC_Text0317>
+  <NMC_Text0318>Commande reçue. Livraison depuis l'orbite. Gardez de la place à l'entrepôt.</NMC_Text0318>
+  <NMC_Text0319>J'ai tout préparé pour vous. J'espère que cela vous sera utile.</NMC_Text0319>
+  <NMC_Text0320>Les fournitures sont confiées à la livraison. Pensez à vous reposer après vos tâches.</NMC_Text0320>
+  <NMC_Text0321>Achats terminés. Une fois les caisses au sol, nous verrons ce qu'il manque encore.</NMC_Text0321>
+  <NMC_Text0322>Merci. Ces fournitures continueront à servir à bord du vaisseau-mère.</NMC_Text0322>
+  <NMC_Text0323>Don reçu, points P crédités. Remerciez de ma part tous ceux qui ont transporté les fournitures.</NMC_Text0323>
+  <NMC_Text0324>Les surplus peuvent aussi aider. Merci de penser au vaisseau-mère.</NMC_Text0324>
+  <NMC_Text0325>Tout est reçu. Un peu de place dans l'entrepôt, ça fait du bien, non ?</NMC_Text0325>
+  <NMC_Text0326>La nouvelle liste est arrivée. J'ai classé les catégories. Voyez si quelque chose vous intéresse.</NMC_Text0326>
+  <NMC_Text0327>Le stock vient d'être renouvelé. Qu'allons-nous trouver de bien cette fois ?</NMC_Text0327>
+  <NMC_Text0328>La commande n'est pas encore passée. Vérifions le message et réglons le problème avant de continuer.</NMC_Text0328>
+  <NMC_Text0329>Pas de précipitation. Vérifiez les quantités et les points P. Je vous attends.</NMC_Text0329>
+  <NMC_Text0330>{0} : {1}
+Cliquez sur le portrait pour discuter ; sur le texte pour afficher la phrase entière.</NMC_Text0330>
+  <NMC_Text0331>Le vaisseau-mère prépare la liste. Laissez le jeu avancer un instant.</NMC_Text0331>
+  <NMC_Text0332>Choisissez une de vos colonies pour les livraisons.</NMC_Text0332>
+  <NMC_Text0333>Compte énergétique du vaisseau-mère non connecté.</NMC_Text0333>
+  <NMC_Text0334>Cette colonie nécessite au moins une balise de commerce orbitale alimentée.</NMC_Text0334>
+  <NMC_Text0335>Commande invalide. Rouvrez la boutique.</NMC_Text0335>
+  <NMC_Text0336>Cette commande a déjà été traitée.</NMC_Text0336>
+  <NMC_Text0337>Articles ou quantités invalides.</NMC_Text0337>
+  <NMC_Text0338>Articles ou stock modifiés. Vérifiez la commande et réessayez.</NMC_Text0338>
+  <NMC_Text0339>Certains articles ne peuvent être évalués. Retirez-les et réessayez.</NMC_Text0339>
+  <NMC_Text0340>Les prix ont changé. Vérifiez la liste.</NMC_Text0340>
+  <NMC_Text0341>Stock renouvelé. Sélectionnez à nouveau vos achats.</NMC_Text0341>
+  <NMC_Text0342>Points P insuffisants pour cette commande.</NMC_Text0342>
+  <NMC_Text0343>Aucune zone de largage à ciel ouvert près de la balise. Aucun paiement prélevé.</NMC_Text0343>
+  <NMC_Text0344>Points P indisponibles. Réessayez plus tard.</NMC_Text0344>
+  <NMC_Text0345>Transfert échoué. Commande annulée sans paiement.</NMC_Text0345>
+  <NMC_Text0346>Achat terminé. {0} P payés. Livraison orbitale prévue.</NMC_Text0346>
+  <NMC_Text0347>Ce don dépasse le plafond du compte P. Réduisez la quantité.</NMC_Text0347>
+  <NMC_Text0348>Transfert échoué. Don annulé.</NMC_Text0348>
+  <NMC_Text0349>Don terminé. {0} P reçus. Merci pour les fournitures.</NMC_Text0349>
+  <NMC_Text0350>Boutique à points du vaisseau-mère</NMC_Text0350>
+  <NMC_Text0351>Aucune colonie sélectionnée</NMC_Text0351>
+  <NMC_Text0352>Fermer</NMC_Text0352>
+  <NMC_Text0353>Préparation de la liste</NMC_Text0353>
+  <NMC_Text0354>Réassort dans : {0} jours {1} heures</NMC_Text0354>
+  <NMC_Text0355>Réassort tous les 7 jours · Jusqu'à 60 articles · Stock commun aux colonies</NMC_Text0355>
+  <NMC_Text0356>Nouvelle liste reçue. Ancienne sélection effacée.</NMC_Text0356>
+  <NMC_Text0357>Sélectionnez des fournitures à portée de balise pour voir les points P du don.</NMC_Text0357>
+  <NMC_Text0358>Choisissez articles et quantités. Cliquez sur une icône pour les détails.</NMC_Text0358>
+  <NMC_Text0359>Acheter</NMC_Text0359>
+  <NMC_Text0360>◆ Acheter</NMC_Text0360>
+  <NMC_Text0361>◆ Donner</NMC_Text0361>
+  <NMC_Text0362>Donner des fournitures</NMC_Text0362>
+  <NMC_Text0363>Colonie de livraison : {0}</NMC_Text0363>
+  <NMC_Text0364>Rechercher par nom d'article ou mod d'origine.</NMC_Text0364>
+  <NMC_Text0365>Rechercher articles / mods</NMC_Text0365>
+  <NMC_Text0366>Toutes les catégories</NMC_Text0366>
+  <NMC_Text0367>Toutes les sources</NMC_Text0367>
+  <NMC_Text0368>Catégories d'articles</NMC_Text0368>
+  <NMC_Text0369>Tous les articles</NMC_Text0369>
+  <NMC_Text0370>{0} types</NMC_Text0370>
+  <NMC_Text0371>Fournitures à portée de balise</NMC_Text0371>
+  <NMC_Text0372>Articles en vente</NMC_Text0372>
+  <NMC_Text0373>Aucune fourniture à donner. Vérifiez alimentation, portée de balise et filtres.</NMC_Text0373>
+  <NMC_Text0374>Aucun article ne correspond. Modifiez les filtres ou attendez le réassort.</NMC_Text0374>
+  <NMC_Text0375>{0} disponibles pour don</NMC_Text0375>
+  <NMC_Text0376>{0} par unité · Stock {1}</NMC_Text0376>
+  <NMC_Text0377>Choisissez une quantité pour voir les points P dans votre liste de dons.</NMC_Text0377>
+  <NMC_Text0378>Prix unitaire : {0}</NMC_Text0378>
+  <NMC_Text0379>{0}
+{1}
+{2}
+Cliquez sur l'icône pour les détails.
+Maintenez Maj et cliquez sur + ou - pour ajuster par 10.</NMC_Text0379>
+  <NMC_Text0380>Solde  {0} P</NMC_Text0380>
+  <NMC_Text0381>Points P disponibles, dont le solde des échanges précédents.
+Donnez des fournitures au vaisseau-mère pour gagner des P.</NMC_Text0381>
+  <NMC_Text0382>Donnez des fournitures pour ravitailler le vaisseau-mère.
+Vérifiez articles et récompenses avant confirmation.</NMC_Text0382>
+  <NMC_Text0383>Achetez les fournitures nécessaires.
+Elles seront larguées dans la colonie choisie.</NMC_Text0383>
+  <NMC_Text0384>Récompense prévue  </NMC_Text0384>
+  <NMC_Text0385>Total  </NMC_Text0385>
+  <NMC_Text0386>{0} sélectionnés</NMC_Text0386>
+  <NMC_Text0387>Vider</NMC_Text0387>
+  <NMC_Text0388>Résultat attendu</NMC_Text0388>
+  <NMC_Text0389>Vérifier le don</NMC_Text0389>
+  <NMC_Text0390>Vérifier l'achat</NMC_Text0390>
+  <NMC_Text0391>Points P insuffisants</NMC_Text0391>
+  <NMC_Text0392>Vérifiez articles et montant avant de confirmer.</NMC_Text0392>
+  <NMC_Text0393>Commande envoyée. Résultat attendu.</NMC_Text0393>
+  <NMC_Text0394>Confirmer le don</NMC_Text0394>
+  <NMC_Text0395>Confirmer l'achat</NMC_Text0395>
+  <NMC_Text0396>Confirmer transfère les fournitures contre les P affichés. Les dons sont définitifs. Vérifiez les quantités.</NMC_Text0396>
+  <NMC_Text0397>Confirmer prélève les P affichés. Les biens sont largués près de la balise de la colonie choisie. Gardez une zone à ciel ouvert.</NMC_Text0397>
+  <NMC_Text0398>Ce don ne rapporte aucun P. Confirmer transfère quand même les fournitures définitivement.</NMC_Text0398>
+  <NMC_Text0399>
+Équipement et inventaire des corps sont aussi transférés sans P supplémentaires. Retirez d'abord ce que vous voulez garder.</NMC_Text0399>
+  <NMC_Text0400>Transférer au vaisseau-mère à la confirmation</NMC_Text0400>
+  <NMC_Text0401>Sous-total : {0} P</NMC_Text0401>
+  <NMC_Text0402>Points P gagnés :</NMC_Text0402>
+  <NMC_Text0403>Points P payés :</NMC_Text0403>
+  <NMC_Text0404>Modifier</NMC_Text0404>
+  <NMC_Text0405>Confirmer le don · {0} P</NMC_Text0405>
+  <NMC_Text0406>Confirmer l'achat</NMC_Text0406>
+  <NMC_Text0407>Inscrivez d'abord une tourelle fonctionnelle avec au moins 2 PV</NMC_Text0407>
+  <NMC_Text0408>Aucune place pour les tourelles à moins de 20 cases. Choisissez ailleurs. Aucun paiement prélevé</NMC_Text0408>
+  <NMC_Text0409>Projection : {0} P + {1} V requis</NMC_Text0409>
+  <NMC_Text0410>Nombre de composants d'arme de projection incohérent</NMC_Text0410>
+  <NMC_Text0411>Source des composants d'arme de projection incohérente</NMC_Text0411>
+  <NMC_Text0412>Paiement du compte partagé échoué</NMC_Text0412>
+  <NMC_Text0413>Projection échouée. Copies temporaires rappelées. Aucun paiement prélevé.</NMC_Text0413>
+  <NMC_Text0414>Rappeler cette projection</NMC_Text0414>
+  <NMC_Text0415>Rappeler la projection pour que l'original combatte à nouveau. Dégâts conservés ; énergie et recharge non remboursées.</NMC_Text0415>
+  <NMC_Text0416>Inscrire à la projection matricielle</NMC_Text0416>
+  <NMC_Text0417>Permettre la projection de cette tourelle ailleurs. Formation en 5 secondes, combat 60 secondes. L'original cesse de tirer, fournit énergie et munitions et subit les dégâts de la projection.</NMC_Text0417>
+  <NMC_Text0418>Rappeler la projection liée</NMC_Text0418>
+  <NMC_Text0419>Rappeler la projection pour reprendre le combat de l'original. Dégâts conservés ; énergie et recharge non remboursées.</NMC_Text0419>
+  <NMC_Text0420>Formation {0}</NMC_Text0420>
+  <NMC_Text0421>Combat {0}</NMC_Text0421>
+  <NMC_Text0422>
+Projection matricielle · {0} secondes
+Original : {1} · Projection irréparable</NMC_Text0422>
+  <NMC_Text0423>
+Projection active : original sans tirs ; dégâts et réparations possibles</NMC_Text0423>
+  <NMC_Text0424>Les projections temporaires ne peuvent être démontées ni déplacées. Rappelez-les avant de déplacer l'original</NMC_Text0424>
+  <NMC_Text0425>Original indisponible ; rappel</NMC_Text0425>
+  <NMC_Text0426>Matrice en formation : pas de tirs</NMC_Text0426>
+  <NMC_Text0427>Original alimenté</NMC_Text0427>
+  <NMC_Text0428>Original sans courant : projection sans tirs</NMC_Text0428>
+  <NMC_Text0429>Position inconnue</NMC_Text0429>
+  <NMC_Text0430>Source d'énergie : {0} ({1})
+{2}
+La projection utilise l'énergie et les fournitures de l'original</NMC_Text0430>
+  <NMC_Text0431>Rayon purificateur inutilisable sous terre</NMC_Text0431>
+  <NMC_Text0432>Soutien du vaisseau-mère temporairement déconnecté</NMC_Text0432>
+  <NMC_Text0433>Aucun départ à ciel ouvert pour le rayon purificateur</NMC_Text0433>
+  <NMC_Text0434>Rayon purificateur · 700 P + 550 V · Clic gauche : départ / poursuite · Clic droit / Échap : annuler</NMC_Text0434>
+  <NMC_Text0435>Rayon mobilisé · Clic gauche : destination · Clic droit / Échap : annuler l'ordre</NMC_Text0435>
+  <NMC_Text0436>L'arrivée des cinq vaisseaux doit éviter le bord de carte</NMC_Text0436>
+  <NMC_Text0437>L'arrivée des cinq vaisseaux doit être explorée</NMC_Text0437>
+  <NMC_Text0438>Les cinq vaisseaux ne peuvent arriver sous une roche épaisse</NMC_Text0438>
+  <NMC_Text0439>L'arrivée des cinq vaisseaux ne peut contenir murs ni terrain impraticable</NMC_Text0439>
+  <NMC_Text0440>Arrivée de Zoraya échouée ; aucun coût ni recharge</NMC_Text0440>
+  <NMC_Text0441>Contact avec la légion perdu. Renforts annulés</NMC_Text0441>
+  <NMC_Text0442>Fournitures à portée modifiées. Vérifiez à nouveau. Aucun coût ni recharge</NMC_Text0442>
+  <NMC_Text0443>Énergie insuffisante. Fournitures rendues ; renforts annulés</NMC_Text0443>
+  <NMC_Text0444>Arrivée de Zoraya et 4 vaisseaux lumineux du vide. {0}{1} livrés. Présence de 120 secondes après arrivée complète.</NMC_Text0444>
+  <NMC_Text0445>Légion de Zoraya · {0} P + {1} V · 2 000 argent ou 200 or · Clic gauche : déployer ; clic droit / Échap : annuler</NMC_Text0445>
+  <NMC_Text0446>Canon à rayons solaires · 300 P + 180 V · Clic gauche : trois rayons / 8 secondes · Clic droit / Échap : annuler</NMC_Text0446>
+  <NMC_Text0447>Équipement non prêt ; renforts indisponibles</NMC_Text0447>
+  <NMC_Text0448>Troupes de la légion indisponibles</NMC_Text0448>
+  <NMC_Text0449>Quatre cases proches, explorées et praticables, sans toit rocheux épais sont requises</NMC_Text0449>
+  <NMC_Text0450>Arrivée de Seydas échouée ; aucun coût ni recharge</NMC_Text0450>
+  <NMC_Text0451>Seydas et 3 archontes noirs arrivés. {0}{1} livrés. Retrait par distorsion après 120 secondes.</NMC_Text0451>
+  <NMC_Text0453>Légion de Seydas · {0} P + {1} V · 2 000 argent ou 200 or · Clic gauche : déployer ; clic droit / Échap : annuler</NMC_Text0453>
+  <NMC_Text0454>Allégeance mentale</NMC_Text0454>
+  <NMC_Text0455>Bombardement solaire inutilisable sous terre</NMC_Text0455>
+  <NMC_Text0456>Aucun centre valide : les toits rocheux épais bloquent les frappes</NMC_Text0456>
+  <NMC_Text0457>Bombardement terminé : aucun impact valide dans la zone</NMC_Text0457>
+  <NMC_Text0458>Canon à rayons solaires inutilisable sous terre</NMC_Text0458>
+  <NMC_Text0459>Aucune origine du rayon : les toits rocheux épais bloquent les impacts directs</NMC_Text0459>
+  <NMC_Text0460>Bombardement solaire · {0} P + {1} V · Clic gauche : 300 tirs · Clic droit / Échap : annuler la visée</NMC_Text0460>
+  <NMC_Text0461>Au moins une colonie disponible requise</NMC_Text0461>
+  <NMC_Text0462>Fluctuation spatiotemporelle : vitesse de travail ×5</NMC_Text0462>
+  <NMC_Text0463>Impossible de déployer cette structure</NMC_Text0463>
+  <NMC_Text0464>Noyau de construction indisponible</NMC_Text0464>
+  <NMC_Text0465>Impossible de déployer un noyau ici</NMC_Text0465>
+  <NMC_Text0466>Le noyau ne peut toucher le bord de carte</NMC_Text0466>
+  <NMC_Text0467>L'emplacement du noyau doit être exploré</NMC_Text0467>
+  <NMC_Text0468>Bâtiments, personnes ou objets présents. Dégagez d'abord</NMC_Text0468>
+  <NMC_Text0469>Onze cases proches, explorées et praticables, sans toit rocheux épais sont requises</NMC_Text0469>
+  <NMC_Text0470>Arrivée de Tebrus échouée ; aucun coût ni recharge</NMC_Text0470>
+  <NMC_Text0471>Tebrus et 10 guerriers de mêlée arrivés. {0}{1} livrés. Retrait par distorsion après 120 secondes.</NMC_Text0471>
+  <NMC_Text0473>Légion de Tebrus · {0} P + {1} V · 2 000 argent ou 200 or · Clic gauche : déployer ; clic droit / Échap : annuler</NMC_Text0473>
+  <NMC_Text0474>Suppression du vide · Indestructible
+Rayon 13 · Déplacement et attaque ennemis réduits à 30 % · Tourelles arrêtées
+Reste : {0}</NMC_Text0474>
+  <NMC_Text0475>Le cristal ne peut être au bord de carte</NMC_Text0475>
+  <NMC_Text0476>L'emplacement du cristal doit être exploré</NMC_Text0476>
+  <NMC_Text0477>Position occupée par bâtiments, personnes ou objets. Choisissez ailleurs</NMC_Text0477>
+  <NMC_Text0478>Cristal de suppression du vide indisponible</NMC_Text0478>
+  <NMC_Text0479>Impossible de placer un cristal ici</NMC_Text0479>
+  <NMC_Text0480>Cristal de suppression du vide · {0} P + {1} V · Rayon 13 / 30 secondes · Clic gauche : déployer ; clic droit / Échap : annuler</NMC_Text0480>
+  <NMC_Text0481>Cristal de suppression du vide · {0}</NMC_Text0481>
+  <NMC_Text0711>Recherche requise : identification précise des alliés</NMC_Text0711>
+  <NMC_Text0712>Recherchez l'identification précise des alliés au terminal de liaison montante</NMC_Text0712>
+  <NMC_Text0713>Identification précise des alliés · Non recherchée</NMC_Text0713>
+  <NMC_Text0714>Les tirs de soutien protègent votre faction et ses alliés.</NMC_Text0714>
+  <NMC_Text0715>{0}. Livrez les matériaux au terminal de liaison montante ; activation automatique à la fin.</NMC_Text0715>
+</LanguageData>

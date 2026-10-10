@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef ParentName="FactionBase">
+    <defName>NMC_Continuum</defName><label>连续体作战网络</label><fixedName>连续体</fixedName>
+    <description>由连续体基地组成的敌对作战网络，指挥机械体和涅拉战斗单元守卫战术资料。基地遇袭后可能通过空投补充兵力。</description>
+    <pawnSingular>连续体战斗单元</pawnSingular><pawnsPlural>连续体战斗单元</pawnsPlural>
+    <humanlikeFaction>true</humanlikeFaction><hidden>true</hidden><permanentEnemy>true</permanentEnemy>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart><maxConfigurableAtWorldCreation>0</maxConfigurableAtWorldCreation>
+    <displayInFactionSelection>false</displayInFactionSelection><canGenerateQuestSites>false</canGenerateQuestSites>
+    <raidsForbidden>true</raidsForbidden><autoFlee>false</autoFlee><techLevel>Ultra</techLevel>
+    <factionIconPath>World/WorldObjects/Expanding/Mechanoids</factionIconPath>
+    <backstoryFilters><li><categories><li>Offworld</li></categories></li></backstoryFilters>
+  </FactionDef>
+  <QuestScriptDef><defName>NMC_ContinuumCampaign</defName><rootSelectionWeight>0</rootSelectionWeight><autoAccept>true</autoAccept><root Class="QuestNode_Sequence"><nodes /></root></QuestScriptDef>
+  <SitePartDef><defName>NMC_ContinuumBase</defName><label>连续体基地</label><description>一处存放母舰战术资料的连续体基地。战利品与炮兵补给集中在核心区域，外围由沙袋掩体和多层炮塔阵地守卫。
+
+外圈轻型炮塔阻滞进攻，中层部署无人机与重型火力，内圈保护通讯核心和迫击炮阵地。切断供能核心可使相连的电力炮塔停机，但守军和空投增援仍会继续作战。随着对连续体的追击深入，后续基地的规模与火力也会增强。</description><workerClass>SitePartWorker</workerClass><siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture><forceExitAndRemoveMapCountdownDurationDays>6</forceExitAndRemoveMapCountdownDurationDays><gravShipsCanLandOn>true</gravShipsCanLandOn><tags><li>NMC_ContinuumBase</li></tags></SitePartDef>
+  <DutyDef><defName>NMC_ContinuumArtillery</defName><alwaysShowWeapon>true</alwaysShowWeapon><thinkNode Class="NivarianCommander.ThinkNode_CommanderDuty"><subNodes><li Class="NivarianCommander.JobGiver_ContinuumArtillery" /></subNodes></thinkNode></DutyDef>
+  <GenStepDef><defName>NMC_ContinuumBase</defName><linkWithSite>NMC_ContinuumBase</linkWithSite><order>460</order><genStep Class="NivarianCommander.ContinuumSiteGenerator" /></GenStepDef>
+  <ThingDef ParentName="BuildingBase"><defName>NMC_ContinuumRelay</defName><label>连续体通讯核心</label><description>连续体基地的通讯与资料中枢。摧毁它，并清除基地守军和炮塔，即可取得本阶段的母舰研究资料。仅摧毁通讯核心还不足以完成任务。</description><thingClass>Building</thingClass><tickerType>Normal</tickerType><graphicData><texPath>NMC/Buildings/void_crystal</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(3,3)</drawSize></graphicData><size>(2,2)</size><rotatable>false</rotatable><passability>Impassable</passability><statBases><MaxHitPoints>450</MaxHitPoints><Flammability>0</Flammability></statBases><building><isEdifice>true</isEdifice><claimable>false</claimable></building></ThingDef>
+  <ThingDef ParentName="BuildingBase"><defName>NMC_ContinuumPowerCore</defName><label>连续体供能核心</label><description>为连续体基地的防御设施供应电力。摧毁供能核心可以切断相连电网，使依赖这条电网的炮塔停止工作。</description><thingClass>Building</thingClass><tickerType>Normal</tickerType><graphicData><texPath>NMC/Buildings/shadow_energy_tower</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(2.5,2.5)</drawSize></graphicData><size>(2,2)</size><rotatable>false</rotatable><passability>Impassable</passability><statBases><MaxHitPoints>350</MaxHitPoints><Flammability>0</Flammability></statBases><building><isEdifice>true</isEdifice><claimable>false</claimable></building><comps><li Class="CompProperties_Power"><compClass>CompPowerPlant</compClass><basePowerConsumption>-12000</basePowerConsumption><transmitsPower>true</transmitsPower></li></comps></ThingDef>
+</Defs>
