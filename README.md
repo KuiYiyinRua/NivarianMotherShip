@@ -1,4 +1,4 @@
-# Nivarian Mother Ship Expanded
+# Nivarian Race: MotherShip
 
 [简体中文](Docs/README.zh-CN.md) · English · [Русский](Docs/README.ru.md) · [日本語](Docs/README.ja.md) · [Français](Docs/README.fr.md)
 
