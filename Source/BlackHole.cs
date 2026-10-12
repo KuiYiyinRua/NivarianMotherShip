@@ -54,14 +54,26 @@ namespace NivarianCommander
         public bool Active => active != null;
         public IReadOnlyList<BlackHoleTarget> Targets => active?.targets;
 
-        public static bool Controlled(Thing thing)
+        public static bool Controlled(Thing thing) => ControlledTarget(thing, out _) != null;
+
+        // Only component references are cached. Membership, diplomacy, position
+        // and line of sight remain live, including queries between local ticks.
+        static BlackHoleTarget ControlledTarget(Thing thing, out BlackHoleMap comp)
         {
-            if (thing == null || !thing.Spawned || thing.Destroyed || thing.Map == null ||
-                SupportDiplomacy.Friendly(thing) || !thing.HostileTo(Faction.OfPlayer)) return false;
-            var vortex = thing.Map.GetComponent<BlackHoleMap>()?.active;
-            return vortex != null && vortex.targets.Any(r => r.thing == thing) &&
-                thing.Position.InHorDistOf(vortex.center, Radius) &&
-                GenSight.LineOfSight(thing.Position, vortex.center, thing.Map, skipFirstCell: true);
+            comp = null;
+            if (thing == null || !thing.Spawned || thing.Destroyed) return null;
+            var map = thing.Map;
+            if (map == null) return null;
+            comp = CommanderPawnIndex.For(map).BlackHole;
+            var vortex = comp?.active;
+            if (vortex == null) return null;
+            BlackHoleTarget record = null;
+            for (int i = 0; i < vortex.targets.Count; i++)
+                if (vortex.targets[i].thing == thing) { record = vortex.targets[i]; break; }
+            if (record == null || SupportDiplomacy.Friendly(thing) || !thing.HostileTo(Faction.OfPlayer)
+                || !thing.Position.InHorDistOf(vortex.center, Radius)
+                || !GenSight.LineOfSight(thing.Position, vortex.center, map, skipFirstCell: true)) return null;
+            return record;
         }
 
         public static bool ValidCenter(Map map, IntVec3 center)
@@ -109,7 +121,7 @@ namespace NivarianCommander
         }
 
         static bool Enemy(Thing t) => t != null && t.Spawned && !t.Destroyed &&
-            !(t is Pawn pawn && pawn.Dead) &&
+            !(t is Pawn pawn && pawn.DeadOrDowned) &&
             (t is Pawn || t is NivarianDroneBase) &&
             !SupportDiplomacy.Friendly(t) && t.HostileTo(Faction.OfPlayer);
 
@@ -263,9 +275,8 @@ namespace NivarianCommander
         }
         public static Vector3 VisualPosition(Pawn pawn, Vector3 original)
         {
-            if (!Controlled(pawn)) return original;
-            var comp = pawn.Map.GetComponent<BlackHoleMap>();
-            var record = comp.active.targets.First(r => r.thing == pawn);
+            var record = ControlledTarget(pawn, out var comp);
+            if (record == null) return original;
             var next = comp.NextCell(pawn.Position, comp.active.center, pawn);
             if (!next.IsValid) return original;
             var position = pawn.Position.ToVector3Shifted();
@@ -358,11 +369,11 @@ namespace NivarianCommander
     [HarmonyPatch(typeof(StunHandler), "get_Stunned")]
     public static class BlackHoleNativeStun
     { static void Postfix(StunHandler __instance, ref bool __result)
-        { if (NativeMonolithStun.Primary(__instance.parent) == __instance && BlackHoleMap.Controlled(__instance.parent)) __result = true; } }
+        { if (!__result && BlackHoleMap.Controlled(__instance.parent) && NativeMonolithStun.Primary(__instance.parent) == __instance) __result = true; } }
     [HarmonyPatch(typeof(StunHandler), "get_StunTicksLeft")]
     public static class BlackHoleNativeStunDuration
     { static void Postfix(StunHandler __instance, ref int __result)
-        { if (NativeMonolithStun.Primary(__instance.parent) == __instance && BlackHoleMap.Controlled(__instance.parent)) __result = Math.Max(__result, 2); } }
+        { if (__result < 2 && BlackHoleMap.Controlled(__instance.parent) && NativeMonolithStun.Primary(__instance.parent) == __instance) __result = 2; } }
     [HarmonyPatch]
     public static class BlackHoleFactionChange
     {

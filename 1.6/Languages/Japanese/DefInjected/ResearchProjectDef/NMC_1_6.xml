@@ -73,19 +73,19 @@
 
 連続体任務が有効なら、先に第6段階「艦隊支援」を完了し資料を取得してください。</NMC_Support13.description>
   <NMC_Support14.label>テブルス軍団支援プロトコル</NMC_Support14.label>
-  <NMC_Support14.description>テブルス軍団と連絡し、テブルスと近接戦士10名を要請可能にします。エネルギー以外にビーコン範囲内の銀か金が必要です。
+  <NMC_Support14.description>テブルス軍団と連絡し、テブルスと近接戦士10名を要請可能にします。軍団支援はPとVのみを消費します。
 
 上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル2が必要です。
 
 連続体任務が有効なら、先に第3段階「遠征軍団」を完了し資料を取得してください。</NMC_Support14.description>
   <NMC_Support15.label>ゾラヤ軍団支援プロトコル</NMC_Support15.label>
-  <NMC_Support15.description>ゾラヤ軍団と連絡し、指揮艦と輝光艦4隻を要請可能にします。エネルギー以外にビーコン範囲内の銀か金が必要です。
+  <NMC_Support15.description>ゾラヤ軍団と連絡し、指揮艦と輝光艦4隻を要請可能にします。軍団支援はPとVのみを消費します。
 
 上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル3が必要です。
 
 連続体任務が有効なら、先に第3段階「遠征軍団」を完了し資料を取得してください。</NMC_Support15.description>
   <NMC_Support16.label>セイダス軍団支援プロトコル</NMC_Support16.label>
-  <NMC_Support16.description>セイダスとダークアルコン3名を要請し、精神支配で敵を転属させます。エネルギー以外にビーコン範囲内の銀か金が必要です。
+  <NMC_Support16.description>セイダスとダークアルコン3名を要請し、精神支配で敵を転属させます。軍団支援はPとVのみを消費します。
 
 上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル3が必要です。
 
@@ -117,7 +117,7 @@
   <NMC_CarrierResearch.label>ニヴァリアン空母</NMC_CarrierResearch.label>
   <NMC_CarrierResearch.description>空母建造を解放。直接兵器なしで艦載機を使い、戦線後方から継続航空支援を行います。
 
-積載10000 kg、龍霜鋼で最大8機を製造維持。高い建造費に加え、燃料と艦載機材料の継続補給が必要です。</NMC_CarrierResearch.description>
+積載10000 kg、龍霜鋼で最大6機を製造維持。高い建造費に加え、燃料と艦載機材料の継続補給が必要です。</NMC_CarrierResearch.description>
   <NMC_TacticalProtocol.label>戦術支援プロトコル</NMC_TacticalProtocol.label>
   <NMC_TacticalProtocol.description>母艦司令官の戦術支援プロトコル。ニヴァリアン上行リンク研究端末で材料を納入し研究を完了してください。</NMC_TacticalProtocol.description>
   <NMC_LightWeapons.label>光兵器アレイ</NMC_LightWeapons.label>
@@ -132,4 +132,18 @@
   <NMC_HigherDimensions.description>母艦司令官の高次元工学。ニヴァリアン上行リンク研究端末で材料を納入し研究を完了してください。</NMC_HigherDimensions.description>
   <NMC_FleetBeacon.label>艦隊ワープビーコンプロトコル</NMC_FleetBeacon.label>
   <NMC_FleetBeacon.description>母艦司令官の艦隊ワープビーコンプロトコル。ニヴァリアン上行リンク研究端末で材料を納入し研究を完了してください。</NMC_FleetBeacon.description>
+  <NMC_WarshipArmor1.label>ニヴァリアン戦艦装甲Ⅰ</NMC_WarshipArmor1.label>
+  <NMC_WarshipArmor1.description>ニヴァリアン戦艦・艦載機・援軍艦の船体を強化。各段階で基礎最大耐久の20%増加、累計+20%。既存艦の耐久割合を維持します。</NMC_WarshipArmor1.description>
+  <NMC_WarshipArmor2.label>ニヴァリアン戦艦装甲Ⅱ</NMC_WarshipArmor2.label>
+  <NMC_WarshipArmor2.description>ニヴァリアン戦艦・艦載機・援軍艦の船体を強化。各段階で基礎最大耐久の20%増加、累計+40%。既存艦の耐久割合を維持します。</NMC_WarshipArmor2.description>
+  <NMC_WarshipArmor3.label>ニヴァリアン戦艦装甲Ⅲ</NMC_WarshipArmor3.label>
+  <NMC_WarshipArmor3.description>ニヴァリアン戦艦・艦載機・援軍艦の船体を強化。各段階で基礎最大耐久の20%増加、累計+60%。既存艦の耐久割合を維持します。</NMC_WarshipArmor3.description>
+  <NMC_WarshipWeapon1.label>ニヴァリアン戦艦兵装Ⅰ</NMC_WarshipWeapon1.label>
+  <NMC_WarshipWeapon1.description>ニヴァリアン戦艦・艦載機・援軍艦の兵装を強化。各段階でダメージと全種貫通+20%、累計+20%。連続命中と凍結の仕組みは維持し、最終攻撃ダメージに研究補正を適用します。</NMC_WarshipWeapon1.description>
+  <NMC_WarshipWeapon2.label>ニヴァリアン戦艦兵装Ⅱ</NMC_WarshipWeapon2.label>
+  <NMC_WarshipWeapon2.description>ニヴァリアン戦艦・艦載機・援軍艦の兵装を強化。各段階でダメージと全種貫通+20%、累計+40%。連続命中と凍結の仕組みは維持し、最終攻撃ダメージに研究補正を適用します。</NMC_WarshipWeapon2.description>
+  <NMC_WarshipWeapon3.label>ニヴァリアン戦艦兵装Ⅲ</NMC_WarshipWeapon3.label>
+  <NMC_WarshipWeapon3.description>ニヴァリアン戦艦・艦載機・援軍艦の兵装を強化。各段階でダメージと全種貫通+20%、累計+60%。連続命中と凍結の仕組みは維持し、最終攻撃ダメージに研究補正を適用します。</NMC_WarshipWeapon3.description>
+  <NMC_CarrierHangarExpansion.label>空母艦載機格納庫拡張</NMC_CarrierHangarExpansion.label>
+  <NMC_CarrierHangarExpansion.description>艦載機の上限を6機から8機へ拡張。格納庫内と出撃中の合計です。</NMC_CarrierHangarExpansion.description>
 </LanguageData>

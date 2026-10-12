@@ -1,12 +1,12 @@
-# Extension du vaisseau-mère nivarian
+# Nivarian Race: MotherShip
 
-Version **0.9.6**, pour RimWorld **1.6**. Langues : chinois simplifié, anglais, russe, japonais et français.
+Version **0.9.8**, pour RimWorld **1.6**. Langues : chinois simplifié, anglais, russe, japonais et français.
 
 Ajoute 19 soutiens tactiques, une boutique à points, un porte-aéronefs, un vaisseau gravitationnel et une campagne du Continuum en huit étapes.
 
 ## Installation
 
-Téléchargez le ZIP du mod dans [Releases](https://github.com/KuiYiyinRua/NivarianMotherShip/releases), puis extrayez le dossier NivarianMotherShip dans le dossier Mods du jeu. Pour une mise à jour, remplacez l'ancienne copie.
+Téléchargez le ZIP du mod dans [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3817608894), puis extrayez le dossier NivarianMotherShip dans le dossier Mods du jeu. Pour une mise à jour, remplacez l'ancienne copie.
 
 Activez Harmony, Humanoid Alien Races, Nivarian Race et cette extension dans cet ordre. Respectez aussi les dépendances des mods de base. Elles ne sont pas incluses dans l'archive. Choisissez votre langue dans les paramètres de RimWorld et attendez le rechargement des données.
 
@@ -21,3 +21,7 @@ L'amélioration du porte-aéronefs nécessite dix batteries Milira, celle du vai
 En 0.9.6, l'identification précise des alliés est une recherche distincte après le soutien orbital : 3000 points de recherche, 250 unités d'acier, huit composants industriels et 30 cristaux de dragon. Elle active une protection permanente contre les tirs alliés. Une protection déjà achetée est conservée et la recherche correspondante est automatiquement terminée.
 
 [Développement et maintenance des traductions](../README.md)
+
+## Option de déblocage des recherches
+
+Auteur : 尹怨怨. Dans les options de Nivarian Race: MotherShip, le déblocage de toutes les technologies sans mission est désactivé par défaut. Activez-le et reprenez la partie pour terminer les 38 recherches de l'extension et ignorer les conditions de mission et de niveau du vaisseau-mère. Coûts et délais restent actifs. La désactivation conserve les recherches et rétablit les niveaux requis, sans modifier les autres mods ni les missions accomplies. En Multiplayer, le réglage du monde sauvegardé est synchronisé.

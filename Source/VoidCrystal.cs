@@ -46,7 +46,7 @@ namespace NivarianCommander
 
     public sealed class VoidCrystalMap : MapComponent
     {
-        public const int Radius = 13, Duration = 1800;
+        public const int Radius = 18, Duration = 1800;
         public int castsReceived, lastCompletedElapsed;
         List<Building_VoidCrystal> sources = new List<Building_VoidCrystal>();
         static Material ring;
@@ -69,25 +69,25 @@ namespace NivarianCommander
                     || t.TryGetComp<CompAttachTurret>() != null || t.TryGetComp<CompMonolithWeapon>() != null);
         public static bool Affected(Thing t)
         {
-            if (!Eligible(t)) return false;
-            var state = t.Map.GetComponent<VoidCrystalMap>();
+            if (t?.Map == null) return false;
+            var state = CommanderPawnIndex.For(t.Map).VoidCrystals;
+            if (state == null || state.sources.Count == 0 || !Eligible(t)) return false;
             // Dynamic lookup on a short source list: no whole-map target scan,
             // cached faction/membership, or multiplying overlapping crystals.
-            return state != null && state.sources.Any(c => state.Valid(c)
-                && t.Position.InHorDistOf(c.Position, Radius));
+            for (int i = 0; i < state.sources.Count; i++)
+            {
+                var crystal = state.sources[i];
+                if (state.Valid(crystal) && t.Position.InHorDistOf(crystal.Position, Radius)) return true;
+            }
+            return false;
         }
         public static string PlacementError(Map map, IntVec3 center)
         {
             if (map == null || !Find.Maps.Contains(map)) return NmcText.Get("NMC_Text0034");
-            if (!center.InBounds(map) || center.x <= 0 || center.z <= 0
-                || center.x >= map.Size.x - 1 || center.z >= map.Size.z - 1)
+            if (!center.InBounds(map))
                 return NmcText.Get("NMC_Text0475");
             if (center.Fogged(map)) return NmcText.Get("NMC_Text0476");
-            if (center.GetThingList(map).Any(t => t.def.category == ThingCategory.Building
-                || t.def.category == ThingCategory.Pawn || t.def.category == ThingCategory.Item
-                || t.def.category == ThingCategory.Plant || t.def.passability == Traversability.Impassable))
-                return NmcText.Get("NMC_Text0477");
-            // Ordinary roofs and thick mountain roofs are both allowed.
+            // The crystal overlaps existing things and needs no supporting terrain.
             return null;
         }
         public void Cancel()
@@ -184,6 +184,19 @@ namespace NivarianCommander
         {
             if (CommanderState.Current != null) CommanderState.Current.requestsRejected++;
             Messages.Message(reason, MessageTypeDefOf.RejectInput, false);
+        }
+    }
+
+    [HarmonyPatch(typeof(GenSpawn), nameof(GenSpawn.SpawningWipes))]
+    public static class VoidCrystalAllowOverlap
+    {
+        static bool Prefix(BuildableDef newEntDef, BuildableDef oldEntDef, ref bool __result)
+        {
+            if (!(newEntDef is ThingDef incoming && incoming.thingClass == typeof(Building_VoidCrystal))
+                && !(oldEntDef is ThingDef existing && existing.thingClass == typeof(Building_VoidCrystal)))
+                return true;
+            __result = false;
+            return false;
         }
     }
 

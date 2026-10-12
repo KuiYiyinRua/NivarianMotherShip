@@ -14,16 +14,15 @@ namespace NivarianCommander
         static void Prefix(Bill_Autonomous __instance)
         {
             var table = __instance.billStack?.billGiver as Building;
-            if (table == null || !table.Spawned || !SupportDiplomacy.Friendly(table)
-                || !SpacetimeWaveMap.ActiveFor(table.Map) || __instance.suspended
+            if (!SpacetimeBuildingWork.Applies(table) || __instance.suspended
                 || __instance.State != FormingState.Forming) return;
-            __instance.formingTicks -= 4f;
+            __instance.formingTicks -= SpacetimeWaveStats.WorkMultiplier - 1;
         }
     }
 
     // A gestator can query the mechanitor's recipe speed stat. Suppress the pawn
     // wave part for this one nested lookup, then multiply the completed multiplier
-    // once, so the gestator and its worker never compose into 25x.
+    // once, so the gestator and its worker never compose into 100x.
     [HarmonyPatch(typeof(Bill_Mech), "WorkSpeedMultiplier", MethodType.Getter)]
     public static class SpacetimeMechGestation
     {
@@ -36,8 +35,7 @@ namespace NivarianCommander
         {
             SpacetimeWaveStats.SuppressDepth = __state;
             var table = __instance.Gestator;
-            if (table != null && table.Spawned && SupportDiplomacy.Friendly(table)
-                && SpacetimeWaveMap.ActiveFor(table.Map)) __result *= 5f;
+            if (SpacetimeBuildingWork.Applies(table)) __result *= SpacetimeWaveStats.WorkMultiplier;
         }
         static Exception Finalizer(Exception __exception, int __state)
         {
@@ -54,11 +52,7 @@ namespace NivarianCommander
         static void Prefix(CompSpawner __instance, ref int interval)
         {
             var thing = __instance.parent;
-            if (thing is Building && thing.Spawned && SupportDiplomacy.Friendly(thing)
-                && SpacetimeWaveMap.ActiveFor(thing.Map)
-                && thing.TryGetComp<CompCommanderStructure>() == null
-                && thing.TryGetComp<CompCommanderConstruction>() == null)
-                interval *= 5;
+            if (SpacetimeBuildingWork.Applies(thing)) interval *= SpacetimeWaveStats.WorkMultiplier;
         }
     }
 
@@ -68,10 +62,9 @@ namespace NivarianCommander
         static void Prefix(Building_FermentingBarrel __instance, out float __state) => __state = __instance.Progress;
         static void Postfix(Building_FermentingBarrel __instance, float __state)
         {
-            if (!__instance.Spawned || !SupportDiplomacy.Friendly(__instance)
-                || !SpacetimeWaveMap.ActiveFor(__instance.Map)) return;
+            if (!SpacetimeBuildingWork.Applies(__instance)) return;
             float earned = __instance.Progress - __state;
-            if (earned > 0f) __instance.Progress = Mathf.Min(1f, __state + earned * 5f);
+            if (earned > 0f) __instance.Progress = Mathf.Min(1f, __state + earned * SpacetimeWaveStats.WorkMultiplier);
         }
     }
 
@@ -87,7 +80,7 @@ namespace NivarianCommander
             if (!egg.Spawned || !SpacetimeWaveMap.ActiveFor(egg.Map)) return;
             if (!__instance.InnerContainer.OfType<Pawn>().Any(p => p.Faction != null &&
                 (p.Faction == Faction.OfPlayer || p.Faction.RelationKindWith(Faction.OfPlayer) == FactionRelationKind.Ally))) return;
-            ticks *= 5;
+            ticks *= SpacetimeWaveStats.WorkMultiplier;
         }
     }
 }

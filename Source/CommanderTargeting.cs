@@ -33,7 +33,8 @@ namespace NivarianCommander
         static void Highlight(LocalTargetInfo target)
         {
             if (!Active || !target.Cell.InBounds(map)) return;
-            GenDraw.DrawRadiusRing(target.Cell, 3f, CommanderActions.ValidCenter(map, target.Cell) ? new Color(.35f, .85f, 1f) : Color.red);
+            GenDraw.DrawFieldEdges(OrbitalStrike.Cells(map, target.Cell),
+                CommanderActions.ValidCenter(map, target.Cell) ? new Color(.35f, .85f, 1f) : Color.red);
         }
         static void OnGUI(LocalTargetInfo target)
         {

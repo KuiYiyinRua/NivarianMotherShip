@@ -73,6 +73,15 @@ namespace NivarianCommander
             var stack = Find.WindowStack;
             if (stack == null) return;
             var current = stack.WindowOfType<CommanderHud>();
+            // Full mothership windows already expose the same resources and actions.
+            // Remove this input surface while they are open; saved slots/position stay local and intact.
+            foreach (var window in stack.Windows)
+                if (window is Nivarian_Race.Code.UI.Window_MothershipSupport ||
+                    window is Window_MothershipPointShop || window is Window_PointShopOrder)
+                {
+                    current?.Close(false);
+                    return;
+                }
             int mask = 0;
             if (CommanderMod.Settings?.showShortcut == true && Current.ProgramState == ProgramState.Playing &&
                 Current.Game != null && Find.ResearchManager != null && !LongEventHandler.ShouldWaitForEvent)

@@ -13,7 +13,7 @@ assert len({r['key'] for r in inv})==len(inv),'duplicate source key'
 assert set(translations)=={str(r['id']) for r in inv},'translation IDs differ'
 keys=set()
 for p in (mod/'Source').glob('*.cs'):
- keys.update(re.findall(r'NmcText.Get\("(NMC_Text\d+)"',p.read_text(encoding='utf-8-sig')))
+ keys.update(re.findall(r'"(NMC_(?:Text\d+|ResearchTask[A-Za-z]+|CarrierSteel[A-Za-z]+|Settings[A-Za-z]+))"',p.read_text(encoding='utf-8-sig')))
 assert keys<={r['key'] for r in inv},'source calls missing from catalog'
 def placeholders(s):return collections.Counter(re.findall(r'(?<!\{)\{(\d+)(?:,[^{}:]+)?(?::[^{}]+)?\}(?!\})',s))
 def marks(s):return collections.Counter(re.findall(r'</?(?:color|b|i|size)[^>]*>|\[[A-Z][A-Za-z0-9_]*\]',s))

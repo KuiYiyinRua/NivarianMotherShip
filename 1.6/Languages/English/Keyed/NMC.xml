@@ -10,15 +10,15 @@
   <NMC_Text0008>Choose a flight destination on this map.</NMC_Text0008>
   <NMC_Text0009>Taking off or landing</NMC_Text0009>
   <NMC_Text0010>Land</NMC_Text0010>
-  <NMC_Text0011>Stop aerial combat and land. The carrier stops launching interceptors and recalls deployed wings. Clear buildings, people and roofs beneath the ship first.</NMC_Text0011>
-  <NMC_Text0012>Obstacles, people or roofs below. Move to open ground first.</NMC_Text0012>
+  <NMC_Text0011>Choose a landing site, use the building rotation keys to set the heading, then click to confirm. The carrier recalls all deployed fighters before descending. The landing area must be clear of buildings, pawns, trees and roofs.</NMC_Text0011>
+  <NMC_Text0012>Cannot land here. Choose an area clear of buildings, pawns, trees and roofs.</NMC_Text0012>
   <NMC_Text0013>Interceptor production: on</NMC_Text0013>
   <NMC_Text0014>Interceptor production: paused</NMC_Text0014>
-  <NMC_Text0015>Each interceptor costs {0} dragonfrost steel and takes 15 seconds to build, even during flight. Use “Load cargo” to supply up to 1,000 material units. Hangar and deployed interceptors together are limited to {1}.</NMC_Text0015>
+  <NMC_Text0015>Each interceptor costs {0} dragonfrost steel and takes 15 seconds to build, even during flight. Set a target in “Dragonfrost steel reserve”; colonists refill it while grounded, up to 1,000 units. The hangar and deployed interceptors are limited to {1} in total.</NMC_Text0015>
   <NMC_Text0016>Recall interceptors</NMC_Text0016>
   <NMC_Text0017>Order all deployed interceptors back to the hangar. They may launch again if the carrier remains airborne with enemies nearby.</NMC_Text0017>
   <NMC_Text0018>Gravity beam</NMC_Text0018>
-  <NMC_Text0019>Choose a ground enemy within 16 cells. Lift and stun them for 5 seconds, allowing this ship's laser to target them. Cooldown: 8 seconds. No extra resources required.</NMC_Text0019>
+  <NMC_Text0019>Choose any living unit within 16 cells, including friendly, neutral and hostile units. Lift and stun it for 4 seconds. A unit cannot be affected by multiple gravity beams at once. Cooldown: 8 seconds. No extra resources. Automatic use still targets enemies only.</NMC_Text0019>
   <NMC_Text0020>Must be airborne</NMC_Text0020>
   <NMC_Text0021>Gravity beam cooling down</NMC_Text0021>
   <NMC_Text0022>Automatic gravity beam: on</NMC_Text0022>
@@ -111,7 +111,7 @@ Upkeep: 1 P and 1 V per 0.1 day</NMC_Text0091>
   <NMC_Text0097>Requirements</NMC_Text0097>
   <NMC_Text0098>Required supplies</NMC_Text0098>
   <NMC_Text0099>Precision ally recognition · Enabled</NMC_Text0099>
-  <NMC_Text0102>Radius 3 · Damage 30 · Armor penetration 35%</NMC_Text0102>
+  <NMC_Text0102>3×3 square · Damage 30 · Armor penetration 35%</NMC_Text0102>
   <NMC_Text0103>Aim orbital strike</NMC_Text0103>
   <NMC_Text0104>Supplying power · {0} / 10,000 W</NMC_Text0104>
   <NMC_Text0105>Field is on another map · Can be relocated</NMC_Text0105>
@@ -137,7 +137,7 @@ Upkeep: 1 P and 1 V per 0.1 day</NMC_Text0091>
   <NMC_Text0125>End rays on this map</NMC_Text0125>
   <NMC_Text0126>Inactive</NMC_Text0126>
   <NMC_Text0127>Active in {0} locations · {1} remaining here</NMC_Text0127>
-  <NMC_Text0128>Work speed ×5 · 60 seconds</NMC_Text0128>
+  <NMC_Text0128>Move ×2 · Work ×10 · Turrets ×3 · 60 s</NMC_Text0128>
   <NMC_Text0129>Ready · Affects all colonies</NMC_Text0129>
   <NMC_Text0130>Cast spacetime fluctuation</NMC_Text0130>
   <NMC_Text0131>End spacetime fluctuation</NMC_Text0131>
@@ -241,7 +241,7 @@ Mothership level required: {2} (current: {3}){4}</NMC_Text0201>
 
 Loot is concentrated in the center, guarded by multiple layers of turrets and sandbags. Defenders will call in drop reinforcements, including mechanoids and Nira combat units armed with Nivarian weapons.
 
-You have 12 days to attack. Once you enter the battlefield, withdrawing everyone before meeting the objectives or exceeding the deadline fails the mission. The mothership will locate another base of the same stage after 3 days; previously acquired data is retained.
+This base has no time limit and will not disappear while you wait. If all your troops leave the battlefield before completing the objective, the mission fails. The mothership will locate another base of the same stage in 3 days; previously acquired research data is retained.
 
 The recovered data unlocks these research projects:
 {0}
@@ -310,10 +310,9 @@ Warping costs no extra energy and has no cooldown. The colonist stops their curr
   <NMC_Text0279>Troop arrival point occupied</NMC_Text0279>
   <NMC_Text0280>Expedition legion movement speed modifier: {0}</NMC_Text0280>
   <NMC_Text0281>Nivarian survivors legion missing, defeated or hostile</NMC_Text0281>
-  <NMC_Text0282>Prepare 2,000 silver or 200 gold within range of a powered orbital trade beacon on this map</NMC_Text0282>
   <NMC_Text0283>Hyperdimensional control array: operational</NMC_Text0283>
   <NMC_Text0284>Hyperdimensional control array: unpowered</NMC_Text0284>
-  <NMC_Text0285> · Attacks every 0.4 seconds</NMC_Text0285>
+  <NMC_Text0285> · Attack cooldown reduced to one third</NMC_Text0285>
   <NMC_Text0286> · Attacks every 2 seconds</NMC_Text0286>
   <NMC_Text0287>{0}{1} · Range 60 · Up to 10 targets</NMC_Text0287>
   <NMC_Text0288>{0} ran out of fuel and made an emergency landing.</NMC_Text0288>
@@ -339,7 +338,7 @@ Gravity beam cooldown: {0} seconds</NMC_Text0297>
   <NMC_Text0304>{0}Nutrient reserve: {1} (target {2})
 Consumption: {3} / game day
 Mothership energy: {4} P / game day
-{5} · Rated power 700 W</NMC_Text0304>
+{5} · Rated power {6} W</NMC_Text0304>
   <NMC_Text0305>Other goods</NMC_Text0305>
   <NMC_Text0306>Nira</NMC_Text0306>
   <NMC_Text0307>Hello, commander. The manifest is ready. What would you like to bring to the colony today?</NMC_Text0307>
@@ -491,17 +490,16 @@ Projection uses source power and supplies</NMC_Text0430>
   <NMC_Text0439>Five-ship arrival cannot contain walls or impassable terrain</NMC_Text0439>
   <NMC_Text0440>Zoraya legion arrival failed; no payment or cooldown applied</NMC_Text0440>
   <NMC_Text0441>Legion contact lost. Reinforcements cancelled.</NMC_Text0441>
-  <NMC_Text0442>Supplies in beacon range changed. Check again. No payment or cooldown applied.</NMC_Text0442>
   <NMC_Text0443>Not enough energy. Supplies returned; reinforcements cancelled.</NMC_Text0443>
-  <NMC_Text0444>Zoraya legion arrived: Zoraya + 4 void glowships. Paid {0}{1}. Stays 120 seconds after all arrive.</NMC_Text0444>
-  <NMC_Text0445>Zoraya legion · {0} P + {1} V · 2,000 silver or 200 gold · Left click: deploy; right click / Esc: cancel</NMC_Text0445>
+  <NMC_Text0444>Zoraya legion arrived: Zoraya + 4 void glowships. Stays 120 seconds after all arrive.</NMC_Text0444>
+  <NMC_Text0445>Zoraya legion · {0} P + {1} V · Left click: deploy; right click / Esc: cancel</NMC_Text0445>
   <NMC_Text0446>Solar ray gun · 300 P + 180 V · Left click: three rays / 8 seconds · Right click / Esc: cancel</NMC_Text0446>
   <NMC_Text0447>Legion equipment not ready; reinforcements unavailable</NMC_Text0447>
   <NMC_Text0448>Legion troops unavailable for dispatch</NMC_Text0448>
   <NMC_Text0449>Requires four nearby explored, standable cells without thick rock roofs</NMC_Text0449>
   <NMC_Text0450>Seydas legion arrival failed; no payment or cooldown applied</NMC_Text0450>
-  <NMC_Text0451>Seydas legion arrived: Seydas + 3 dark archons. Paid {0}{1}. Warps out after 120 seconds.</NMC_Text0451>
-  <NMC_Text0453>Seydas legion · {0} P + {1} V · 2,000 silver or 200 gold · Left click: deploy; right click / Esc: cancel</NMC_Text0453>
+  <NMC_Text0451>Seydas legion arrived: Seydas + 3 dark archons. Warps out after 120 seconds.</NMC_Text0451>
+  <NMC_Text0453>Seydas legion · {0} P + {1} V · Left click: deploy; right click / Esc: cancel</NMC_Text0453>
   <NMC_Text0454>Mental allegiance</NMC_Text0454>
   <NMC_Text0455>Solar bombardment unavailable underground</NMC_Text0455>
   <NMC_Text0456>No solar bombardment center: thick rock roofs block direct strikes</NMC_Text0456>
@@ -510,7 +508,7 @@ Projection uses source power and supplies</NMC_Text0430>
   <NMC_Text0459>No solar ray origin: thick rock roofs block direct hits</NMC_Text0459>
   <NMC_Text0460>Solar bombardment · {0} P + {1} V · Left click: 300 shots · Right click / Esc: cancel aiming</NMC_Text0460>
   <NMC_Text0461>Requires at least one available colony</NMC_Text0461>
-  <NMC_Text0462>Spacetime fluctuation: work speed ×5</NMC_Text0462>
+  <NMC_Text0462>Spacetime fluctuation: work speed ×10</NMC_Text0462>
   <NMC_Text0463>Cannot deploy this structure</NMC_Text0463>
   <NMC_Text0464>Construction core unavailable</NMC_Text0464>
   <NMC_Text0465>Cannot deploy a core here</NMC_Text0465>
@@ -519,21 +517,36 @@ Projection uses source power and supplies</NMC_Text0430>
   <NMC_Text0468>Buildings, people or items here. Clear them first.</NMC_Text0468>
   <NMC_Text0469>Requires 11 nearby explored, standable cells without thick rock roofs</NMC_Text0469>
   <NMC_Text0470>Tebrus legion arrival failed; no payment or cooldown applied</NMC_Text0470>
-  <NMC_Text0471>Tebrus legion arrived: Tebrus + 10 melee warriors. Paid {0}{1}. Warps out after 120 seconds.</NMC_Text0471>
-  <NMC_Text0473>Tebrus legion · {0} P + {1} V · 2,000 silver or 200 gold · Left click: deploy; right click / Esc: cancel</NMC_Text0473>
+  <NMC_Text0471>Tebrus legion arrived: Tebrus + 10 melee warriors. Warps out after 120 seconds.</NMC_Text0471>
+  <NMC_Text0473>Tebrus legion · {0} P + {1} V · Left click: deploy; right click / Esc: cancel</NMC_Text0473>
   <NMC_Text0474>Void suppression · Indestructible
 Radius 13 · Enemy movement and attack speed reduced to 30% · Turrets cease fire
 Remaining: {0}</NMC_Text0474>
-  <NMC_Text0475>Crystal cannot be at map edge</NMC_Text0475>
+  <NMC_Text0475>The crystal must be within the map.</NMC_Text0475>
   <NMC_Text0476>Crystal position must be explored</NMC_Text0476>
-  <NMC_Text0477>Position occupied by buildings, people or items. Choose elsewhere.</NMC_Text0477>
   <NMC_Text0478>Void suppression crystal unavailable for deployment</NMC_Text0478>
   <NMC_Text0479>Cannot place a crystal here</NMC_Text0479>
-  <NMC_Text0480>Void suppression crystal · {0} P + {1} V · Radius 13 / 30 seconds · Left click: deploy; right click / Esc: cancel</NMC_Text0480>
+  <NMC_Text0480>Void suppression crystal · {0} P + {1} V · Radius 18 / 30 seconds · Left click: deploy; right click / Esc: cancel</NMC_Text0480>
   <NMC_Text0481>Void suppression crystal · {0}</NMC_Text0481>
   <NMC_Text0711>Research required: precision ally recognition</NMC_Text0711>
   <NMC_Text0712>Research precision ally recognition at an uplink terminal</NMC_Text0712>
   <NMC_Text0713>Precision ally recognition · Not researched</NMC_Text0713>
   <NMC_Text0714>Commander support fire protects your faction and allies.</NMC_Text0714>
   <NMC_Text0715>{0}. Deliver materials at an uplink research terminal; enabled automatically upon completion.</NMC_Text0715>
+  <NMC_ResearchTaskLocked>Required mission incomplete. Research cannot be unlocked yet.</NMC_ResearchTaskLocked>
+  <NMC_ResearchTaskProgress>Continuum progress: {0}/{1} stages completed. Complete the required stage in the Quests tab, then return to the uplink research terminal.</NMC_ResearchTaskProgress>
+  <NMC_ResearchTaskButton>Mission incomplete</NMC_ResearchTaskButton>
+  <NMC_ResearchTaskAndResearchButton>Mission and research incomplete</NMC_ResearchTaskAndResearchButton>
+  <NMC_CarrierSteelTitle>Dragonfrost steel reserve</NMC_CarrierSteelTitle>
+  <NMC_CarrierSteelTooltip>Target: {0}. Drag the reserve bar to adjust the target. Each interceptor costs {1} dragonfrost steel. Colonists refill the grounded carrier. Transport cargo is not automatically transferred into this reserve.</NMC_CarrierSteelTooltip>
+  <NMC_CarrierSteelAirborne>Refilling is unavailable in flight; interceptors can still be built using the existing reserve.</NMC_CarrierSteelAirborne>
+  <NMC_CarrierSteelAutoFill>Automatically refill dragonfrost steel. When disabled, you can still order a colonist to refill with a right-click.</NMC_CarrierSteelAutoFill>
+  <NMC_CarrierSteelMissing>No available dragonfrost steel</NMC_CarrierSteelMissing>
+  <NMC_SettingsShortcut>Show mothership commander HUD</NMC_SettingsShortcut>
+  <NMC_SettingsUnlockAll>Unlock all expansion technologies without missions</NMC_SettingsUnlockAll>
+  <NMC_SettingsUnlockAllHint>Off by default. When enabled, resuming the game completes every research project in this expansion and bypasses Continuum missions and support mothership-level requirements. Resource costs and cooldowns still apply. Turning it off keeps completed research and restores level requirements. Multiplayer changes are synchronized; joining players use the host save state.</NMC_SettingsUnlockAllHint>
+  <NMC_Text0748>Spacetime fluctuation: move speed ×2</NMC_Text0748>
+  <NMC_Text0749>Nutrition reserve</NMC_Text0749>
+  <NMC_Text0750>Target nutrition: {0}. Drag the reserve bar to adjust the target. Lowering it keeps existing nutrition; zero stops refilling. Choose food types in the Nutrition tab.</NMC_Text0750>
+  <NMC_Text0751>Automatically refill nutrition. Turning this off stops new automatic refill jobs; stored nutrition is still consumed. You can still right-click to order a colonist to refill.</NMC_Text0751>
 </LanguageData>

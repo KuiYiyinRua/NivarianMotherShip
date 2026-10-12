@@ -23,11 +23,11 @@
     <group>轨道火力</group>
     <description>指引母舰对选定位置进行轨道打击。进入瞄准后，可连续点击指定落点；每次成功开火分别消耗能量，结束瞄准即可停止攻击。
 
-每发打击影响半径3格，造成30点基础伤害，护甲穿透率为35%，对建筑的伤害提高至5倍。爆炸伤害不会随距离衰减。轨道火力无法用于地下，也无法直接打击厚山岩顶下的目标。
+每发打击影响以落点为中心的3×3方格（共9格），造成30点基础伤害，护甲穿透率为35%，对建筑的伤害提高至5倍。爆炸伤害不会随距离衰减。轨道火力无法用于地下，也无法直接打击厚山岩顶下的目标。
 
 完成“精确友军识别”研究后，指挥官直接火力将避开己方和盟友。</description>
-    <powerCost>10</powerCost>
-    <volatileCost>10</volatileCost>
+    <powerCost>15</powerCost>
+    <volatileCost>15</volatileCost>
     <cooldownTicks>0</cooldownTicks>
     <researchLabel>轨道轰炸支援协议</researchLabel>
     <extraCost>按每次成功开火扣费</extraCost>
@@ -51,7 +51,7 @@
     <number>4</number>
     <label>太阳轰炸</label>
     <group>轨道火力</group>
-    <description>呼叫母舰对指定区域实施持续轨道轰炸。在30秒内，300发能量弹将陆续落入半径13格的区域。每发影响半径5格，造成30点基础伤害，对建筑的伤害提高至5倍；爆炸伤害不会随距离衰减。
+    <description>呼叫母舰对指定区域实施持续轨道轰炸。在30秒内，300发能量弹将陆续落入半径13格的区域。每发影响以落点为中心的3×3方格（共9格），造成30点基础伤害，对建筑的伤害提高至5倍；爆炸伤害不会随距离衰减。
 
 适合摧毁密集阵地。攻击一旦开始便无法中止，请先让友军远离轰炸区域。无法用于地下，也无法直接打击厚山岩顶下的目标。</description>
     <powerCost>1000</powerCost>
@@ -68,7 +68,7 @@
     <description>让母舰投射三道太阳能射线，持续扫射8秒。射线优先分头追踪敌人，敌人较少时可以集中攻击同一目标。沿途目标会持续受到能量冲击与灼烧伤害。
 
 选择起点后开始攻击，也可提前结束当前地图上的射线。无法用于地下，厚山岩顶会阻挡打击。结束攻击不会返还已消耗的能量，也不会重置冷却。</description>
-    <powerCost>300</powerCost>
+    <powerCost>200</powerCost>
     <volatileCost>180</volatileCost>
     <cooldownTicks>30000</cooldownTicks>
     <researchLabel>太阳能射线枪支援协议</researchLabel>
@@ -79,9 +79,14 @@
     <number>6</number>
     <label>时空波动</label>
     <group>防御与生产</group>
-    <description>短暂加速各处殖民地的生产活动，使友方单位的研究、建造、种植、制造等工作速度提高至平时的5倍，持续60秒。超维空间巨石的攻击频率也会同步提高。
+    <description>在各处殖民地地图上持续60秒，提供以下加速：
 
-这项支援不会加快母舰资源的产出。各处殖民地的效果随当地时间持续，可以从指挥面板提前结束。</description>
+1. 所有友方Pawn及动物的移动速度 ×2。
+2. 所有友方单位的研究、建造、种植、采矿、医疗、制造等工作速度 ×10。
+3. 所有友方炮塔的攻击冷却缩短为原本的1/3，包括超维空间巨石。
+4. 涅瓦莲建筑的工作速度 ×10，包括上行链路研究及自动生产制造。
+
+能源塔、粒子收集器等设施产生P、V的速度不会提高。每张地图按当地时间计时，可在指挥面板提前结束。</description>
     <powerCost>350</powerCost>
     <volatileCost>80</volatileCost>
     <cooldownTicks>120000</cooldownTicks>
@@ -107,9 +112,13 @@
     <number>8</number>
     <label>暗影核心</label>
     <group>暗影与控制</group>
-    <description>在指定位置部署暗影核心。殖民者交齐钢铁、零部件和龙晶后，母舰会自动将其建成暗影能源塔。
+    <description>在指定位置部署暗影核心。殖民者交齐钢铁、零部件和龙晶后，母舰会自动将其建成涅瓦莲暗影能源塔。
 
-能源塔每天向母舰输送120P和80V，并使半径7格内的友军隐形。塔身不会被自身的暗影场隐藏。可以建造多座能源塔，各自生产资源。</description>
+用营养液滋养幽绿色共鸣晶体的母舰能源设施，占地2×2格。发电量为1400W，母舰P点产量和营养消耗均为涅瓦莲能源塔的2倍。殖民者会自动搬运允许的食物，可在“营养”页调整补给种类。
+
+运行时使半径7格内的友军隐形。营养不足、设施关闭或停止运行时，发电、P点产出和隐身场一同停止；补给后恢复。攻击和受伤不会主动解除隐形，但反隐手段仍然有效。
+
+塔身不会被自己的隐身场隐藏，需要其他防御设施保护。</description>
     <powerCost>800</powerCost>
     <volatileCost>300</volatileCost>
     <cooldownTicks>60000</cooldownTicks>
@@ -125,8 +134,8 @@
     <description>请求四名暗影卫队成员折跃增援，协助作战120秒。卫队擅长近身突击，配备大师品质的生物编码武器与幽灵装甲，能够在隐形状态下攻击。侦测隐形的手段仍可发现她们。
 
 需要世界上仍有与殖民地非敌对的涅瓦莲幸存者派系。卫队自行选择目标，无法被征召；支援结束后，成员及仍随身携带的装备撤离。</description>
-    <powerCost>400</powerCost>
-    <volatileCost>200</volatileCost>
+    <powerCost>700</powerCost>
+    <volatileCost>600</volatileCost>
     <cooldownTicks>600000</cooldownTicks>
     <researchLabel>暗影卫队支援协议</researchLabel>
   </NivarianCommander.CommanderAbilityDef>
@@ -139,8 +148,8 @@
     <description>制造一个持续8秒的引力涡旋，将半径8格内的敌人拉向中心，并暂时消除其护甲防护。牵引速度为每秒12格，也能影响倒地和空中的敌人。
 
 黑洞本身不造成伤害，适合将分散的敌人聚集起来，配合其他火力攻击。可以提前结束黑洞。</description>
-    <powerCost>150</powerCost>
-    <volatileCost>100</volatileCost>
+    <powerCost>200</powerCost>
+    <volatileCost>150</volatileCost>
     <cooldownTicks>600</cooldownTicks>
     <researchLabel>黑洞支援协议</researchLabel>
   </NivarianCommander.CommanderAbilityDef>
@@ -184,8 +193,8 @@
 战术母舰使用激光与能量弹轰击敌人。驱逐舰持续发射棱晶光束，连续命中同一目标时伤害逐渐提高，换目标或中断攻击后恢复初始强度。驱逐舰光束不造成冰冻。
 
 支援舰艇能够被敌方火力击毁。支援结束后，舰艇、残骸及掉落物一并撤回。</description>
-    <powerCost>1000</powerCost>
-    <volatileCost>1000</volatileCost>
+    <powerCost>2000</powerCost>
+    <volatileCost>2000</volatileCost>
     <cooldownTicks>1800000</cooldownTicks>
     <researchLabel>涅瓦莲舰队支援协议</researchLabel>
   </NivarianCommander.CommanderAbilityDef>
@@ -197,14 +206,11 @@
     <group>远征援军</group>
     <description>请求特布鲁斯率领十名近战战士增援，协助作战120秒。特布鲁斯使用灵能脉冲枪，并在敌人聚集时施放灵能风暴；风暴灼伤敌人，同时治疗范围内的友军。
 
-除能量费用外，还需交付2000白银；白银不足时改为交付200黄金。物资必须位于当前地图已供电的轨道交易信标范围内。
-
 需要非敌对的涅瓦莲幸存者派系。军团自行作战，无法征召；撤离时会收回成员与专属装备。三个远征军团共用7天冷却时间。</description>
-    <powerCost>100</powerCost>
-    <volatileCost>50</volatileCost>
+    <powerCost>900</powerCost>
+    <volatileCost>850</volatileCost>
     <cooldownTicks>420000</cooldownTicks>
     <researchLabel>特布鲁斯军团支援协议</researchLabel>
-    <extraCost>白银 2,000 或黄金 200</extraCost>
   </NivarianCommander.CommanderAbilityDef>
   <NivarianCommander.CommanderAbilityDef>
     <defName>NMC_S15</defName>
@@ -214,14 +220,11 @@
     <group>远征援军</group>
     <description>呼叫指挥舰佐拉亚和四艘辉光舰。全队抵达后自动作战120秒，以棱晶光束持续攻击敌人。光束附带冰冻效果，连续锁定同一目标时伤害逐渐提高。
 
-除能量费用外，还需交付2000白银；白银不足时改为交付200黄金。物资必须位于当前地图已供电的轨道交易信标范围内。
-
 需要非敌对的涅瓦莲幸存者派系。支援结束后，舰艇、残骸与掉落物一并撤回。三个远征军团共用7天冷却时间。</description>
-    <powerCost>100</powerCost>
-    <volatileCost>50</volatileCost>
+    <powerCost>900</powerCost>
+    <volatileCost>850</volatileCost>
     <cooldownTicks>420000</cooldownTicks>
     <researchLabel>佐拉亚军团支援协议</researchLabel>
-    <extraCost>白银 2,000 或黄金 200</extraCost>
   </NivarianCommander.CommanderAbilityDef>
   <NivarianCommander.CommanderAbilityDef>
     <defName>NMC_S16</defName>
@@ -231,14 +234,11 @@
     <group>远征援军</group>
     <description>请求赛达斯与三名黑暗执政官增援，协助作战120秒。她们以心灵支配瓦解敌军，优先控制价值较高的敌人，使其加入涅瓦莲幸存者派系。受到控制的单位不会成为你的殖民者，军团撤离后也不会恢复敌对归属。
 
-除能量费用外，还需交付2000白银；白银不足时改为交付200黄金。物资必须位于当前地图已供电的轨道交易信标范围内。
-
 需要非敌对的涅瓦莲幸存者派系。军团自行作战，无法征召；撤离时收回四名成员及专属装备。三个远征军团共用7天冷却时间。</description>
-    <powerCost>100</powerCost>
-    <volatileCost>50</volatileCost>
+    <powerCost>900</powerCost>
+    <volatileCost>850</volatileCost>
     <cooldownTicks>420000</cooldownTicks>
     <researchLabel>赛达斯军团支援协议</researchLabel>
-    <extraCost>白银 2,000 或黄金 200</extraCost>
   </NivarianCommander.CommanderAbilityDef>
   <NivarianCommander.CommanderAbilityDef>
     <defName>NMC_S17</defName>
@@ -261,9 +261,11 @@
     <number>18</number>
     <label>虚空抑制晶体</label>
     <group>暗影与控制</group>
-    <description>在指定位置折跃一座虚空抑制晶体，持续30秒。半径13格内，敌人的移动和攻击速度降至平时的30%，敌方炮塔停止射击。
+    <description>在指定位置折跃一座虚空抑制晶体，持续30秒。半径18格内，敌人的移动和攻击速度降至平时的30%，敌方炮塔停止射击。
 
-晶体不会被攻击摧毁。敌人离开影响范围后立即恢复，同类晶体的抑制效果不会叠加。可以提前撤回晶体。</description>
+晶体不会被攻击摧毁。敌人离开影响范围后立即恢复，同类晶体的抑制效果不会叠加。可以提前撤回晶体。
+
+晶体不占用地面空间，不阻挡移动，可在任意地形部署，并可与建筑、单位、物品及植物重叠。</description>
     <powerCost>100</powerCost>
     <volatileCost>50</volatileCost>
     <cooldownTicks>600000</cooldownTicks>

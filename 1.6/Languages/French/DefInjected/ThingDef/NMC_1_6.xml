@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
   <NMC_Carrier.label>Porte-aéronefs nivarian</NMC_Carrier.label>
-  <NMC_Carrier.description>Grand porte-aéronefs nivarian : 5 000 PV, capacité 10 000 kg. Sans arme directe, il combat avec ses intercepteurs.
+  <NMC_Carrier.description>Grand porte-aéronefs nivarian : 2 500 PV, capacité 10 000 kg. Sans arme directe, il combat avec ses intercepteurs.
 
-Chargez l'acier dracogivré en fret pour remplir une réserve de 1 000 unités. Chaque appareil coûte 10 acier et prend 15 secondes, posé ou en vol. Maximum 8 au total, hangar et combat, chacun avec 150 PV.
+Réglez la quantité souhaitée dans le panneau « Réserve d’acier givre-dragon ». Les colons apportent et chargent l’acier lorsque le porte-avions est au sol, jusqu’à 1 000 unités. L’acier de la soute de transport n’est pas automatiquement utilisé pour la fabrication.Chaque intercepteur coûte 10 unités d’acier givre-dragon et demande 5 secondes de fabrication, au sol comme en vol. Le hangar et les intercepteurs déployés sont limités à 6 au total ; chacun possède 125 points de vie.
 
 En vol de combat, repère les ennemis à moins de 60 cases et lance un appareil par seconde. Ils reviennent au-delà de 80 cases du porteur. L'ordre d'atterrissage arrête les lancements et rappelle tous les appareils.
 
@@ -15,9 +15,9 @@ Avec Milira Race, améliorez la propulsion à l'arrêt. Les colons installent 10
   <NMC_GravityFrigate.label>Vaisseau gravitationnel nivarian</NMC_GravityFrigate.label>
   <NMC_GravityFrigate.description>Vaisseau nivarian d'interception et transport léger. Taille 3×3, 600 PV, capacité 300 kg.
 
-En vol, tire deux lasers prismatiques chaque seconde sur les ennemis aériens à moins de 16 cases. Chaque rayon : 12 dégâts, pénétration 50 %, dégâts aux bâtiments triplés, sans gel. Ne vise pas directement le sol.
+En vol, tire deux lasers prismatiques chaque seconde sur les ennemis aériens à moins de 16 cases. Chaque rayon : 6 dégâts, pénétration 50 %, dégâts aux bâtiments triplés, sans gel. Ne vise pas directement le sol.
 
-Le rayon gravitationnel soulève et étourdit un ennemi terrestre à moins de 16 cases pendant 5 secondes, le rendant ciblable. Aucun coût supplémentaire, recharge 8 secondes. Usage manuel ou automatique.
+Le rayon gravitationnel soulève et étourdit un ennemi terrestre à moins de 16 cases pendant 4 secondes, le rendant ciblable. Aucun coût supplémentaire, recharge 8 secondes. Usage manuel ou automatique.
 
 Réserve 600 carburant chimique. Vol local : 1 toutes les 5 secondes. Voyage mondial : moitié du coût d'une navette, portée limitée par le carburant. Pas de recharge de décollage supplémentaire ; toit absent et place libre pour atterrir requis.
 
@@ -25,7 +25,7 @@ Avec Milira Race, amélioration à l'arrêt avec 2 batteries. Ensuite, chaque d�
   <NMC_GravityFrigateIncoming.label>Vaisseau gravitationnel (atterrissage)</NMC_GravityFrigateIncoming.label>
   <NMC_GravityFrigateLeaving.label>Vaisseau gravitationnel (décollage)</NMC_GravityFrigateLeaving.label>
   <NMC_CarrierInterceptor.label>Intercepteur nivarian</NMC_CarrierInterceptor.label>
-  <NMC_CarrierInterceptor.description>Intercepteur sans pilote construit et contrôlé par un porte-aéronefs nivarian. Attaques automatiques avec munitions légères. 150 PV.
+  <NMC_CarrierInterceptor.description>Intercepteur sans pilote construit et contrôlé par un porte-aéronefs nivarian. Attaques automatiques avec munitions légères. 125 PV.
 
 Décolle seulement pendant le combat aérien du porteur. Retour au-delà de 80 cases ou sur ordre de rappel ou d'atterrissage. Dépend du porteur ; aucun transport indépendant.</NMC_CarrierInterceptor.description>
   <NMC_InterceptorFallbackRound.label>Projectile léger d'intercepteur</NMC_InterceptorFallbackRound.label>
@@ -35,11 +35,11 @@ Décolle seulement pendant le combat aérien du porteur. Retour au-delà de 80 c
   <NMC_ContinuumPowerCore.description>Alimente les défenses de la base. Sa destruction coupe le réseau relié et arrête les tourelles qui en dépendent.</NMC_ContinuumPowerCore.description>
   <NMC_OverloadBolt.label>Projectile énergétique de surcharge</NMC_OverloadBolt.label>
   <NMC_TacticalMothership.label>Vaisseau-mère tactique</NMC_TacticalMothership.label>
-  <NMC_TacticalMothership.description>Vaisseau-mère de soutien contre les ennemis au sol. Laser chaque seconde pour 15 dégâts de base ; obus toutes les 2 secondes pour 20 dégâts explosifs, surtout efficaces contre les bâtiments.
+  <NMC_TacticalMothership.description>Vaisseau-mère de soutien contre les ennemis au sol. Laser chaque seconde pour 9 dégâts de base ; obus toutes les 2 secondes pour 12 dégâts explosifs, surtout efficaces contre les bâtiments.
 
 Combat aérien automatique, vulnérable aux tirs et explosions. La perte de ce vaisseau temporaire n'affecte pas les ressources du vaisseau-mère orbital. Retrait en fin de soutien.</NMC_TacticalMothership.description>
   <NMC_FleetDestroyer.label>Destroyer de flotte</NMC_FleetDestroyer.label>
-  <NMC_FleetDestroyer.description>Destroyer d'escorte automatique. Rayon prismatique toutes les 0,5 seconde, dégâts initiaux 4 puis croissants sur une même cible. Changement ou perte de cible réinitialise la puissance.
+  <NMC_FleetDestroyer.description>Destroyer d'escorte automatique. Rayon prismatique toutes les 0,5 seconde, dégâts initiaux 2.4 puis croissants sur une même cible. Changement ou perte de cible réinitialise la puissance.
 
 Aucun gel. Ciblage automatique et départ en fin de soutien.</NMC_FleetDestroyer.description>
   <NMC_FleetMothershipGun.label>Canon énergétique du vaisseau-mère</NMC_FleetMothershipGun.label>
@@ -69,7 +69,7 @@ Aucun gel. Ciblage automatique et départ en fin de soutien.</NMC_FleetDestroyer
 Ciblage automatique, pression durable sur cibles résistantes. Retrait avec la légion.</NMC_VoidRay.description>
   <NMC_VoidRayGun.label>Rayon du vaisseau lumineux</NMC_VoidRayGun.label>
   <NMC_Zoraya.label>Zoraya</NMC_Zoraya.label>
-  <NMC_Zoraya.description>Vaisseau de commandement Zoraya avec rayon renforcé. Toutes les 0,5 seconde, dégâts initiaux 8 et gel. Dégâts croissants sur une même cible ; changement ou perte réinitialise.
+  <NMC_Zoraya.description>Vaisseau de commandement Zoraya avec rayon renforcé. Toutes les 0,5 seconde, dégâts initiaux 4.8 et gel. Dégâts croissants sur une même cible ; changement ou perte réinitialise.
 
 Combat et se retire avec ses escortes.</NMC_Zoraya.description>
   <NMC_ZorayaRayGun.label>Rayon lumineux de Zoraya</NMC_ZorayaRayGun.label>
@@ -93,13 +93,15 @@ Annuler rend les matériaux, pas l'énergie ni la recharge.</NMC_ShadowCore.desc
 
 Annuler rend les matériaux, pas l'énergie ni la recharge.</NMC_MonolithCore.description>
   <NMC_ShadowEnergyTower.label>Tour d'énergie d'ombre nivariane</NMC_ShadowEnergyTower.label>
-  <NMC_ShadowEnergyTower.description>Construite depuis un noyau d'ombre. Fournit 120 P et 80 V par jour, camoufle les alliés à moins de 7 cases. Attaques et dégâts ne révèlent pas, mais la détection fonctionne.
+  <NMC_ShadowEnergyTower.description>Une installation alimentée en nutriments avec des cristaux vert spectral. Occupe 2×2 cases et produit 1400 W. La production de P et la consommation nutritive sont le double de celles de la tour nivariane ordinaire. Les colons livrent les aliments autorisés, configurables dans l’onglet Nutrition.
 
-Ne se camoufle pas elle-même. Plusieurs tours produisent indépendamment.</NMC_ShadowEnergyTower.description>
+En fonctionnement, elle camoufle les alliés dans un rayon de 7 cases. Une réserve nutritive insuffisante, l’arrêt ou une interruption suspendent ensemble l’électricité, les P et le camouflage. Le ravitaillement permet la reprise. Les attaques et dégâts ne rompent pas le camouflage, mais la détection reste efficace.
+
+La tour ne se camoufle pas elle-même et doit être protégée.</NMC_ShadowEnergyTower.description>
   <NMC_HyperdimensionalMonolith.label>Monolithe hyperdimensionnel</NMC_HyperdimensionalMonolith.label>
   <NMC_HyperdimensionalMonolith.description>Grande défense de contrôle hyperdimensionnel. Portée 60 ; toutes les 2 secondes, frappe jusqu'à 10 ennemis pour 3 dégâts et 1 seconde d'étourdissement.
 
-Réseau et 1 000 W continus requis, aucune munition. Fluctuation spatiotemporelle : tirs ×5.</NMC_HyperdimensionalMonolith.description>
+Réseau et 1 000 W continus requis, aucune munition. Fluctuation spatiotemporelle : tirs ×3.</NMC_HyperdimensionalMonolith.description>
   <NMC_TebrusRobe.label>Robe psionique de Tebrus</NMC_TebrusRobe.label>
   <NMC_TebrusRobe.description>Robe blanche et cyan de Tebrus, tissée de motifs psioniques protégeant des dégâts tranchants, contondants et thermiques.
 
@@ -120,9 +122,11 @@ Réseau et 1 000 W continus requis, aucune munition. Fluctuation spatiotemporell
 Équipement exclusif récupéré après soutien.</NMC_TebrusPulseGun.description>
   <NMC_TebrusPulseGun.tools.0.label>Poignée</NMC_TebrusPulseGun.tools.0.label>
   <NMC_VoidSuppressionCrystal.label>Cristal de suppression du vide</NMC_VoidSuppressionCrystal.label>
-  <NMC_VoidSuppressionCrystal.description>Dispositif temporaire du vaisseau-mère. À moins de 13 cases, déplacements et attaques ennemis à 30 %, tourelles arrêtées. Récupération hors portée ; effets non cumulables.
+  <NMC_VoidSuppressionCrystal.description>Dispositif temporaire du vaisseau-mère. À moins de 18 cases, déplacements et attaques ennemis à 30 %, tourelles arrêtées. Récupération hors portée ; effets non cumulables.
 
-Indestructible par attaque. Disparaît après 30 secondes ou peut être rappelé.</NMC_VoidSuppressionCrystal.description>
+Indestructible par attaque. Disparaît après 30 secondes ou peut être rappelé.
+
+Le cristal ne prend aucune place au sol et ne bloque pas les déplacements. Il peut être déployé sur tout terrain et se superposer aux bâtiments, unités, objets et plantes.</NMC_VoidSuppressionCrystal.description>
   <NMC_NutrientEnergyTower.label>Tour d'énergie nivariane</NMC_NutrientEnergyTower.label>
   <NMC_NutrientEnergyTower.description>Cristaux résonants nourris pour fournir des P au vaisseau-mère et 700 W au réseau. Réapprovisionnement régulier en nourriture requis.
 

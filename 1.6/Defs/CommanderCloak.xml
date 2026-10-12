@@ -7,6 +7,6 @@
     <comps><li Class="HediffCompProperties_Invisibility">
       <visibleToPlayer>true</visibleToPlayer><affectedByDisruptor>true</affectedByDisruptor>
       <fadeDurationTicks>60</fadeDurationTicks><recoverFromDisruptedTicks>180</recoverFromDisruptedTicks>
-    </li></comps>
+    </li><li Class="HediffCompProperties_DisappearsOnDeath" /></comps>
   </HediffDef>
 </Defs>

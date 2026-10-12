@@ -1,0 +1,20 @@
+[h1]English | Nivarian MotherShip[/h1]
+Bring the mothership to your colony. Adds 19 tactical supports, a customizable six-slot HUD, a points shop, a carrier and gravity ship, and an eight-stage Continuum campaign to Nivarian Race.
+[list]
+[*]Orbital strikes, solar bombardment, purification beams, shields and fields, shadow control, expedition legions and projected structures.
+[*]Call a temporary fleet of one mothership and eight destroyers. Transport people and cargo with the carrier and gravity ship.
+[*]Three armor and weapon research tiers give 20%/40%/60% bonuses; hangar research raises interceptor capacity from six to eight.
+[*]Buy, search and donate in the points shop. Requires a powered orbital trade beacon; restocks every seven days with up to 60 goods.
+[/list]
+[img]https://images.steamusercontent.com/ugc/16928666956641479643/FE270D44BC43AD0B1DCBB0E2AAC73274DACA54FF/[/img]
+[b]Getting started[/b]: Open the commander tab in the mothership support window and research protocols at the uplink terminal. With the military addon enabled, campaign missions gate research and later stages bring enemy ship reinforcements.
+[b]Free unlock[/b]: “Unlock all expansion technologies without missions” is off by default. Enable it and resume to finish every research project in this expansion and bypass campaign and support mothership-level requirements. Costs and cooldowns remain. Turning it off retains completed research and restores level requirements. Other mods' research and campaign completion records stay untouched.
+
+[h2]Dependencies / 依赖 / 必須MOD / Зависимости / Dépendances[/h2]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077]Harmony[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=839005762]Humanoid Alien Races[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3624805128]Nivarian Race[/url] → MotherShip.
+[b]Optional[/b]: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3735573834]Nivarian Draconic Military[/url] (campaign / 战役 / 戦役 / кампания / campagne); Royalty (psycasts); [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3256974620]Milira Race[/url] + Ancot Library (starship batteries).
+[b]RimWorld 1.6 • v0.9.8 • Author / 作者 / 作者 / Автор / Auteur: 尹怨怨[/b]
+Nivarian Race & original mothership assets: keeptpa. Required mods are separate downloads. / 原版素材归 keeptpa；前置模组需另行订阅。
+
+[h2]GitHub[/h2]
+[url=https://github.com/KuiYiyinRua/NivarianMotherShip]GitHub · 完整源码 / Full source[/url]

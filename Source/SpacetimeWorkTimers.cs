@@ -21,7 +21,7 @@ namespace NivarianCommander
                 || !SpacetimeWaveMap.ActiveFor(__instance.pawn.Map)) return;
             var toil = (Toil)CurrentToil.GetValue(__instance);
             if (toil?.defaultCompleteMode != ToilCompleteMode.Delay || toil.activeSkill?.Invoke() != SkillDefOf.Medicine) return;
-            __instance.ticksLeftThisToil -= 4;
+            __instance.ticksLeftThisToil -= SpacetimeWaveStats.WorkMultiplier - 1;
         }
     }
 
@@ -35,7 +35,7 @@ namespace NivarianCommander
             if (!(__instance is JobDriver_Mine) || __instance.pawn == null || !SupportDiplomacy.Friendly(__instance.pawn)
                 || !SpacetimeWaveMap.ActiveFor(__instance.pawn.Map)) return;
             int left = (int)Countdown.GetValue(__instance);
-            if (left > 0) Countdown.SetValue(__instance, left - 4 * delta);
+            if (left > 0) Countdown.SetValue(__instance, left - (SpacetimeWaveStats.WorkMultiplier - 1) * delta);
         }
     }
 }

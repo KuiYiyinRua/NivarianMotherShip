@@ -20,7 +20,7 @@ namespace NivarianCommander
         }
         public static bool Legal(Thing thing, Pawn caster, Map map)
             => thing != null && caster != null && thing != caster && thing.Spawned && !thing.Destroyed && thing.Map == map
-                && (thing is Pawn enemy ? !enemy.Dead : thing is NivarianDroneBase)
+                && (thing is Pawn enemy ? !enemy.DeadOrDowned : thing is NivarianDroneBase)
                 && thing.HostileTo(caster.Faction) && thing.HostileTo(Faction.OfPlayer)
                 && !SupportDiplomacy.Friendly(thing) && !CommanderCloak.HiddenFrom(thing, caster);
         public static List<Thing> Targets(Pawn caster, Map map, IntVec3 center)

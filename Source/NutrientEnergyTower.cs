@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.Xml;
+using HarmonyLib;
 using Nivarian_Race.Code.Comps.BuildingComps;
 using Nivarian_Race.Code.Defs;
 using RimWorld;
@@ -9,6 +11,11 @@ using Verse.AI;
 
 namespace NivarianCommander
 {
+    public sealed class NutrientEnergyTowerProperties : DefModExtension
+    {
+        public float rateMultiplier = 1f;
+    }
+
     // Growth-vat food storage and the vanilla HaulToContainer pipeline, with a
     // separate destination adapter because WorkGiver_HaulToGrowthVat hard-codes
     // Building_GrowthVat and its embryo/pawn requirements. No fake occupant.
@@ -19,6 +26,18 @@ namespace NivarianCommander
         StorageSettings nutritionSettings;
         double containedNutrition, pendingPower;
         int productionTicks;
+        public float nutritionTarget = Capacity;
+        public bool autoFillNutrition = true;
+        Gizmo_NutrientTowerNutrition nutritionGizmo;
+        internal Gizmo_NutrientTowerNutrition NutritionGizmo
+        {
+            get
+            {
+                if (nutritionGizmo == null || !nutritionGizmo.IsDragging)
+                    nutritionGizmo = new Gizmo_NutrientTowerNutrition(this);
+                return nutritionGizmo;
+            }
+        }
         CompPowerPlant_NutrientTower generator;
         static ThingDef raceDef, collectorDef;
         static LifeStageDef adultStage;
@@ -29,7 +48,7 @@ namespace NivarianCommander
         public bool StorageTabVisible => true;
         public bool IsContentsSuspended => true;
         bool EnabledForColony => Spawned && Faction == Faction.OfPlayer && FlickUtility.WantsToBeOn(this);
-        public bool HaulDestinationEnabled => EnabledForColony && NutritionNeeded > 2.5d;
+        public bool HaulDestinationEnabled => EnabledForColony && NutritionNeeded > 0d;
         public bool OperationPermitted => EnabledForColony && !this.IsBrokenDown() && !this.IsBurning() &&
             SupportUnlocked && NativeLedger.Component != null;
         static bool SupportUnlocked
@@ -63,12 +82,18 @@ namespace NivarianCommander
             get
             {
                 double amount = containedNutrition;
-                foreach (var item in food) amount += item.stackCount * (double)item.GetStatValue(StatDefOf.Nutrition);
+                foreach (var item in food)
+                    if (!item.IsNotFresh()) amount += item.stackCount * (double)item.GetStatValue(StatDefOf.Nutrition);
                 return amount;
             }
         }
-        public double NutritionNeeded => Math.Max(0d, Capacity - NutritionStored);
-        public bool HasNutrition => containedNutrition >= NutritionPerDay / 60000d || food.Count > 0;
+        public double NutritionNeeded => Math.Max(0d, Math.Min(Capacity, nutritionTarget) - NutritionStored);
+        public double RateMultiplier => def.GetModExtension<NutrientEnergyTowerProperties>()?.rateMultiplier ?? 1d;
+        public double DailyPower => PowerPerDay * RateMultiplier;
+        public double DailyNutrition => NutritionPerDay * RateMultiplier;
+        public float RatedWatts => -(def.GetCompProperties<CompProperties_Power>()?.PowerConsumption ?? 0f);
+        public bool HasNutrition => NutritionStored >= DailyNutrition / 60000d;
+        public bool IsOperating => OperationPermitted && HasNutrition && generator?.PowerOn == true;
 
         public override void PostMake()
         {
@@ -104,8 +129,11 @@ namespace NivarianCommander
         protected override void Tick()
         {
             base.Tick();
-            if (generator == null || !generator.PowerOn || !OperationPermitted) return;
-            double required = NutritionPerDay / 60000d;
+            if (generator == null) return;
+            if (!OperationPermitted || !HasNutrition) { generator.PowerOutput = 0f; return; }
+            if (generator.PowerOutput <= 0f) generator.UpdateDesiredPowerOutput();
+            if (!generator.PowerOn) return;
+            double required = DailyNutrition / 60000d;
             if (required <= 0d || double.IsNaN(required) || double.IsInfinity(required)) return;
             // Like the vat: convert a whole food unit into the numeric buffer
             // only when needed, retaining leftover nutrition for later ticks.
@@ -121,9 +149,10 @@ namespace NivarianCommander
             if (containedNutrition < required)
             { generator.PowerOutput = 0f; return; }
             containedNutrition = Math.Max(0d, containedNutrition - required);
+            if (!HasNutrition) generator.PowerOutput = 0f;
             if (++productionTicks >= 250)
             {
-                pendingPower += PowerPerDay * productionTicks / 60000d;
+                pendingPower += DailyPower * productionTicks / 60000d;
                 productionTicks = 0;
                 int whole = (int)Math.Min(int.MaxValue, Math.Floor(pendingPower));
                 if (whole > 0)
@@ -148,6 +177,7 @@ namespace NivarianCommander
         public override IEnumerable<Gizmo> GetGizmos()
         {
             foreach (var gizmo in base.GetGizmos()) yield return gizmo;
+            if (Faction == Faction.OfPlayer) yield return NutritionGizmo;
             foreach (var gizmo in StorageSettingsClipboard.CopyPasteGizmosFor(nutritionSettings)) yield return gizmo;
         }
         public override string GetInspectString()
@@ -156,7 +186,7 @@ namespace NivarianCommander
             if (!string.IsNullOrEmpty(text)) text += "\n";
             string status = !FlickUtility.WantsToBeOn(this) ? NmcText.Get("NMC_Text0300") : !HasNutrition ? NmcText.Get("NMC_Text0301") :
                 !OperationPermitted || generator?.PowerOn != true ? NmcText.Get("NMC_Text0302") : NmcText.Get("NMC_Text0303");
-            return NmcText.Get("NMC_Text0304", text, NutritionStored.ToString("0.###"), Capacity.ToString("0"), NutritionPerDay.ToString("0.###"), PowerPerDay.ToString("0.##"), status);
+            return NmcText.Get("NMC_Text0304", text, NutritionStored.ToString("0.###"), nutritionTarget.ToString("0.#"), DailyNutrition.ToString("0.###"), DailyPower.ToString("0.##"), status, RatedWatts.ToString("0"));
         }
         public override void ExposeData()
         {
@@ -166,6 +196,8 @@ namespace NivarianCommander
             Scribe_Values.Look(ref containedNutrition, "nmcContainedNutrition", 0d);
             Scribe_Values.Look(ref pendingPower, "nmcPendingPower", 0d);
             Scribe_Values.Look(ref productionTicks, "nmcProductionTicks", 0);
+            Scribe_Values.Look(ref nutritionTarget, "nmcNutritionTarget", Capacity);
+            Scribe_Values.Look(ref autoFillNutrition, "nmcAutoFillNutrition", true);
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 food = food ?? new NutrientTowerFoodContainer(this);
@@ -175,6 +207,7 @@ namespace NivarianCommander
                 if (double.IsNaN(containedNutrition) || double.IsInfinity(containedNutrition) || containedNutrition < 0d) containedNutrition = 0d;
                 if (double.IsNaN(pendingPower) || double.IsInfinity(pendingPower) || pendingPower < 0d) pendingPower = 0d;
                 productionTicks = Mathf.Clamp(productionTicks, 0, 249);
+                nutritionTarget = NutrientTowerSupply.ClampTarget(nutritionTarget);
             }
         }
     }
@@ -199,16 +232,26 @@ namespace NivarianCommander
             ? base.DesiredPowerOutput : 0f;
     }
 
-    // Same hauling category, reserve/reach checks, 2.5 nutrition refill threshold
+    // Same hauling category and reserve/reach checks, with a configurable target
     // and vanilla job/toils as WorkGiver_HaulToGrowthVat; only target type differs.
     public sealed class WorkGiver_FillNutrientEnergyTower : WorkGiver_Scanner
     {
-        public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForDef(DefDatabase<ThingDef>.GetNamed("NMC_NutrientEnergyTower"));
+        public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForGroup(ThingRequestGroup.BuildingArtificial);
+        public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
+        {
+            foreach (string name in new[] { "NMC_NutrientEnergyTower", "NMC_ShadowEnergyTower" })
+            {
+                var towerDef = DefDatabase<ThingDef>.GetNamedSilentFail(name);
+                if (towerDef != null)
+                    foreach (var tower in pawn.Map.listerThings.ThingsOfDef(towerDef)) yield return tower;
+            }
+        }
         public override PathEndMode PathEndMode => PathEndMode.Touch;
         public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
-            if (!(t is Building_NutrientEnergyTower tower) || !tower.HaulDestinationEnabled || tower.IsForbidden(pawn) ||
-                tower.IsBurning() || tower.NutritionNeeded <= 2.5d || !pawn.CanReserve(t, 1, -1, null, forced) ||
+            if (!(t is Building_NutrientEnergyTower tower) || !tower.HaulDestinationEnabled
+                || (!forced && !tower.autoFillNutrition) || pawn.Faction != tower.Faction || tower.IsForbidden(pawn) ||
+                tower.IsBurning() || !pawn.CanReserve(t, 1, -1, null, forced) ||
                 pawn.Map.designationManager.DesignationOn(t, DesignationDefOf.Deconstruct) != null) return false;
             if (FindFood(pawn, tower) != null) return true;
             JobFailReason.Is("NoFood".Translate());
@@ -216,7 +259,8 @@ namespace NivarianCommander
         }
         public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
-            if (!(t is Building_NutrientEnergyTower tower)) return null;
+            if (!HasJobOnThing(pawn, t, forced)) return null;
+            var tower = (Building_NutrientEnergyTower)t;
             Thing item = FindFood(pawn, tower);
             return item == null ? null : HaulAIUtility.HaulToContainerJob(pawn, item, tower);
         }
@@ -224,5 +268,19 @@ namespace NivarianCommander
             => GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForGroup(ThingRequestGroup.FoodSourceNotPlantOrTree),
                 PathEndMode.ClosestTouch, TraverseParms.For(pawn), 9999f,
                 item => !item.IsForbidden(pawn) && pawn.CanReserve(item) && tower.Accepts(item));
+    }
+
+    // Resolve only legacy shadow towers before Scribe instantiates their saved class.
+    // Thing IDs, faction, position and damage remain in the original serialized node.
+    [HarmonyPatch(typeof(BackCompatibility), nameof(BackCompatibility.GetBackCompatibleType))]
+    public static class ShadowEnergyTowerSaveCompatibility
+    {
+        static void Postfix(Type baseType, string providedClassName, XmlNode node, ref Type __result)
+        {
+            if (typeof(Thing).IsAssignableFrom(baseType)
+                && providedClassName == typeof(Building_CommanderStructure).FullName
+                && node?["def"]?.InnerText == "NMC_ShadowEnergyTower")
+                __result = typeof(Building_NutrientEnergyTower);
+        }
     }
 }

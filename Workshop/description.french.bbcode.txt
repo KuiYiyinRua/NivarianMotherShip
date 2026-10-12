@@ -1,0 +1,20 @@
+[h1]Français | Soutien du vaisseau-mère[/h1]
+La puissance du vaisseau-mère au service de votre colonie. Étend Nivarian Race avec 19 soutiens tactiques, une interface personnalisable à six emplacements, une boutique à points, un porte-aéronefs, un vaisseau gravitationnel et une campagne Continuum en huit étapes.
+[list]
+[*]Frappes orbitales, bombardement solaire, rayon de purification, boucliers, champs, contrôle des ombres, légions et structures projetées.
+[*]Une flotte temporaire de 1 vaisseau-mère et 8 destroyers. Transport de personnes et de marchandises par les deux vaisseaux constructibles.
+[*]Trois paliers d'armure et d'armement : +20%/40%/60%. Le hangar passe de 6 à 8 intercepteurs après recherche.
+[*]Achats, recherche et dons. Balise de commerce orbital alimentée requise ; jusqu'à 60 marchandises renouvelées tous les 7 jours.
+[/list]
+[img]https://images.steamusercontent.com/ugc/11192463098744122599/63F5233EEE3C234BE44C528039DF3E398514214B/[/img]
+[b]Premiers pas[/b] : Ouvrez l'onglet du commandant dans la fenêtre de soutien et recherchez les protocoles au terminal de liaison. L'extension militaire lie la recherche à la campagne, avec des renforts navals ennemis dans les dernières étapes.
+[b]Déblocage libre[/b] : L'option permettant de débloquer toutes les technologies de cette extension sans mission est désactivée par défaut. Activez-la puis reprenez la partie pour terminer ses recherches et ignorer les exigences de mission et de niveau du vaisseau-mère. Coûts et délais de recharge restent actifs. La désactiver conserve les recherches et rétablit les niveaux requis, sans modifier les autres mods ni les missions accomplies.
+
+[h2]Dependencies / 依赖 / 必須MOD / Зависимости / Dépendances[/h2]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077]Harmony[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=839005762]Humanoid Alien Races[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3624805128]Nivarian Race[/url] → MotherShip.
+[b]Optional[/b]: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3735573834]Nivarian Draconic Military[/url] (campaign / 战役 / 戦役 / кампания / campagne); Royalty (psycasts); [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3256974620]Milira Race[/url] + Ancot Library (starship batteries).
+[b]RimWorld 1.6 • v0.9.8 • Author / 作者 / 作者 / Автор / Auteur: 尹怨怨[/b]
+Nivarian Race & original mothership assets: keeptpa. Required mods are separate downloads. / 原版素材归 keeptpa；前置模组需另行订阅。
+
+[h2]GitHub[/h2]
+[url=https://github.com/KuiYiyinRua/NivarianMotherShip]GitHub · 完整源码 / Full source[/url]

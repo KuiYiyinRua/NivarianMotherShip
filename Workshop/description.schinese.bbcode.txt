@@ -1,0 +1,20 @@
+[h1]简体中文｜涅瓦莲母舰支援拓展[/h1]
+[b]把母舰的力量带到殖民地。[/b]为 Nivarian Race 增加19项战术支援、六格自定义快捷面板、母舰点数商店、航母与引力舰，以及八阶段连续体战役。
+[list]
+[*]轨道打击、太阳轰炸、净化光束、护盾与力场；暗影控制、远征军团和建筑投影。
+[*]呼叫1艘母舰与8艘驱逐舰组成的临时舰队；航母和引力舰可运送人员及货物。
+[*]舰体与武器三级研究各提供20%／40%／60%加成；机库研究把舰载机上限从6架提高到8架。
+[*]点数商店支持购买、搜索和捐赠，需要通电的轨道交易信标；每7天补货，最多60种商品。
+[/list]
+[img]https://images.steamusercontent.com/ugc/15680560357014141984/EF9A3799F1662E24393FEB7582FF700737D3EAC9/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img]
+[b]开始游玩[/b]：打开原版母舰支援窗口的指挥官页，用上行链路终端研究支援。安装军事拓展后，连续体任务参与科技推进，后期关卡会出现敌方舰艇增援。
+[b]自由解锁[/b]：设置中的“无需任务解锁全部扩展科技”默认关闭。开启并恢复游戏后，直接完成本扩展全部研究，跳过连续体任务和支援母舰等级要求；资源消耗与冷却照常。关闭后保留已完成科技并恢复等级门槛，不会伪造任务通关记录，也不解锁其他模组科技。
+
+[h2]Dependencies / 依赖 / 必須MOD / Зависимости / Dépendances[/h2]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077]Harmony[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=839005762]Humanoid Alien Races[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3624805128]Nivarian Race[/url] → MotherShip.
+[b]Optional[/b]: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3735573834]Nivarian Draconic Military[/url] (campaign / 战役 / 戦役 / кампания / campagne); Royalty (psycasts); [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3256974620]Milira Race[/url] + Ancot Library (starship batteries).
+[b]RimWorld 1.6 • v0.9.8 • Author / 作者 / 作者 / Автор / Auteur: 尹怨怨[/b]
+Nivarian Race & original mothership assets: keeptpa. Required mods are separate downloads. / 原版素材归 keeptpa；前置模组需另行订阅。
+
+[h2]GitHub[/h2]
+[url=https://github.com/KuiYiyinRua/NivarianMotherShip]GitHub · 完整源码 / Full source[/url]

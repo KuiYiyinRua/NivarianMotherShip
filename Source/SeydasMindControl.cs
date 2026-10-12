@@ -27,7 +27,7 @@ namespace NivarianCommander
             && caster.Spawned && !caster.Destroyed && !caster.Dead && !caster.Downed
             && !caster.stances.stunner.Stunned && TimeStopCombat.Progress(caster);
         public static bool Legal(Pawn target, Pawn caster) => Ready(caster) && target != null && target != caster
-            && target.Spawned && !target.Destroyed && !target.Dead && target.Map == caster.Map
+            && target.Spawned && !target.Destroyed && !target.DeadOrDowned && target.Map == caster.Map
             && target.Position.DistanceToSquared(caster.Position) <= Range * Range
             && target.HostileTo(caster.Faction) && target.HostileTo(Faction.OfPlayer)
             && !SupportDiplomacy.Friendly(target) && !CommanderCloak.HiddenFrom(target, caster)

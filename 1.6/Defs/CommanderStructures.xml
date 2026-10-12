@@ -45,19 +45,35 @@
   </ThingDef>
   <ThingDef ParentName="NMC_StructureBase">
     <defName>NMC_ShadowEnergyTower</defName><label>涅瓦莲暗影能源塔</label>
-    <description>由暗影核心建成的母舰能源设施。每座塔每天输送120P和80V，并使半径7格内的友军隐形。攻击和受伤不会主动解除隐形，但反隐手段仍然有效。
+    <description>用营养液滋养幽绿色共鸣晶体的母舰能源设施，占地2×2格。发电量为1400W，母舰P点产量和营养消耗均为涅瓦莲能源塔的2倍。殖民者会自动搬运允许的食物，可在“营养”页调整补给种类。
 
-塔身本身不会被自己的暗影场隐藏，需要其他防御设施保护。可以建造多座能源塔，各自持续生产资源。</description>
+运行时使半径7格内的友军隐形。营养不足、设施关闭或停止运行时，发电、P点产出和隐身场一同停止；补给后恢复。攻击和受伤不会主动解除隐形，但反隐手段仍然有效。
+
+塔身不会被自己的隐身场隐藏，需要其他防御设施保护。</description>
+    <thingClass>NivarianCommander.Building_NutrientEnergyTower</thingClass>
     <size>(2,2)</size><statBases><MaxHitPoints>800</MaxHitPoints></statBases>
-    <graphicData><texPath>NMC/Buildings/shadow_energy_tower</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(3,3)</drawSize></graphicData>
+    <graphicData><texPath>NMC/Buildings/shadow_energy_tower</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(2.2,2.2)</drawSize><shadowData IsNull="True"/></graphicData>
+    <passability>Impassable</passability><fillPercent>0.65</fillPercent><blockWind>true</blockWind>
+    <castEdgeShadows>false</castEdgeShadows><staticSunShadowHeight>0</staticSunShadowHeight><canOverlapZones>false</canOverlapZones>
+    <inspectorTabs><li>ITab_BiosculpterNutritionStorage</li></inspectorTabs>
+    <building>
+      <isEdifice>true</isEdifice><ai_chillDestination>false</ai_chillDestination><haulToContainerDuration>120</haulToContainerDuration>
+      <fixedStorageSettings><filter><categories><li>Foods</li></categories><specialFiltersToDisallow><li>AllowPlantFood</li></specialFiltersToDisallow></filter></fixedStorageSettings>
+      <defaultStorageSettings><filter><categories><li>Foods</li></categories><disallowedCategories><li>EggsFertilized</li></disallowedCategories><disallowedThingDefs><li>InsectJelly</li><li>MealLavish</li><li>MealLavish_Veg</li><li>MealLavish_Meat</li><li>HemogenPack</li><li>Chocolate</li></disallowedThingDefs></filter></defaultStorageSettings>
+    </building>
     <costList><Steel>150</Steel><ComponentIndustrial>4</ComponentIndustrial><Nivarian_DragonCrystal>25</Nivarian_DragonCrystal></costList>
-    <comps><li Class="NivarianCommander.CompProperties_CommanderStructure"><incomePower>120</incomePower><incomeVolatile>80</incomeVolatile><incomeIntervalTicks>60000</incomeIntervalTicks><cloakRadius>7</cloakRadius><cloakImmune>true</cloakImmune></li></comps>
+    <comps>
+      <li Class="NivarianCommander.CompProperties_CommanderStructure"><cloakRadius>7</cloakRadius><cloakImmune>true</cloakImmune></li>
+      <li Class="CompProperties_Power"><compClass>NivarianCommander.CompPowerPlant_NutrientTower</compClass><basePowerConsumption>-1400</basePowerConsumption><transmitsPower>true</transmitsPower></li>
+      <li Class="CompProperties_Flickable"/><li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <modExtensions><li Class="NivarianCommander.NutrientEnergyTowerProperties"><rateMultiplier>2</rateMultiplier></li></modExtensions>
   </ThingDef>
   <ThingDef ParentName="NMC_StructureBase">
     <defName>NMC_HyperdimensionalMonolith</defName><label>超维空间巨石</label>
     <description>以超维控制阵列阻滞敌人的大型防御设施。射程60格，每2秒同时打击最多10名敌人，分别造成3点基础伤害和1秒眩晕。
 
-巨石需要连接电网，持续消耗1000W电力，无需弹药。受到时空波动支援时，攻击速度提高至平时的5倍。</description>
+巨石需要连接电网，持续消耗1000W电力，无需弹药。受到时空波动支援时，攻击速度提高至平时的3倍。</description>
     <size>(3,3)</size><statBases><MaxHitPoints>1800</MaxHitPoints></statBases>
     <graphicData><texPath>NMC/Buildings/hyperdimensional_monolith</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(3.6,3.6)</drawSize></graphicData>
     <costList><Steel>300</Steel><ComponentIndustrial>10</ComponentIndustrial><Nivarian_DragonCrystal>60</Nivarian_DragonCrystal></costList>

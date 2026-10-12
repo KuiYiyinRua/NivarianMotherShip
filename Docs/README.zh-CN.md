@@ -1,12 +1,12 @@
-# 涅瓦莲母舰拓展
+# Nivarian Race: MotherShip
 
-版本 **0.9.6**，适用于 RimWorld **1.6**。支持简体中文、英语、俄语、日语、法语。
+版本 **0.9.8**，适用于 RimWorld **1.6**。支持简体中文、英语、俄语、日语、法语。
 
 拓展母舰的支援、生产和运输能力，包含 19 项战术支援、母舰积分商店、航母、引力舰，以及八阶段连续体任务。
 
 ## 安装
 
-从 [GitHub Releases](https://github.com/KuiYiyinRua/NivarianMotherShip/releases) 下载模组压缩包，将其中的 NivarianMotherShip 文件夹解压到 RimWorld 的 Mods 目录。更新时替换旧副本，避免重复加载。
+从 [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3817608894) 下载模组压缩包，将其中的 NivarianMotherShip 文件夹解压到 RimWorld 的 Mods 目录。更新时替换旧副本，避免重复加载。
 
 依次启用 Harmony、Humanoid Alien Races、Nivarian Race 和本拓展，并满足基础模组自身的依赖。依赖模组不随本包分发。在游戏设置中选择语言，等待游戏重新加载即可。
 
@@ -21,3 +21,7 @@ Royalty 启用原生灵能联动；没有 Royalty 时使用备用能力。启用
 0.9.6 将“精确友军识别”改为独立研究，前置为轨道轰炸支援协议，需要研究量 3000、钢铁 250、工业组件 8、龙晶 30。研究完成后永久启用友军伤害保护。旧档中已购买的保护保留，并自动补记研究完成。
 
 开发和翻译维护说明见仓库 [英文主页](../README.md) 与 [本地化维护说明](LOCALIZATION.md)。
+
+## 科技解锁配置
+
+作者：尹怨怨。模组设置 → Nivarian Race: MotherShip 中的“无需任务解锁全部扩展科技”默认关闭。开启并恢复游戏后完成本拓展全部38项研究，跳过连续体任务与支援母舰等级条件；资源和冷却仍有效。关闭后保留已完成科技并恢复等级要求。原版及其他模组研究不变，不会标记任务通关。联机使用同步的世界存档配置。

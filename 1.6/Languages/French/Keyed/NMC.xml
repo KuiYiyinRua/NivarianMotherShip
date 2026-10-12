@@ -10,15 +10,15 @@
   <NMC_Text0008>Choisissez une destination sur cette carte.</NMC_Text0008>
   <NMC_Text0009>Décollage ou atterrissage en cours</NMC_Text0009>
   <NMC_Text0010>Atterrir</NMC_Text0010>
-  <NMC_Text0011>Cesser le combat aérien et atterrir. Le porte-aéronefs arrête les lancements et rappelle les escadrilles. Dégagez d'abord les bâtiments, personnes et toits sous le vaisseau.</NMC_Text0011>
-  <NMC_Text0012>Des obstacles, personnes ou toits se trouvent dessous. Rejoignez d'abord un terrain dégagé.</NMC_Text0012>
+  <NMC_Text0011>Choisissez une zone d’atterrissage, réglez l’orientation avec les touches de rotation des bâtiments, puis cliquez pour confirmer. Le porte-avions rappelle tous ses chasseurs avant de descendre. La zone doit être libre de bâtiments, de personnages, d’arbres et de toits.</NMC_Text0011>
+  <NMC_Text0012>Impossible d’atterrir ici. Choisissez une zone sans bâtiments, personnages, arbres ni toits.</NMC_Text0012>
   <NMC_Text0013>Production d'intercepteurs : activée</NMC_Text0013>
   <NMC_Text0014>Production d'intercepteurs : suspendue</NMC_Text0014>
-  <NMC_Text0015>Chaque intercepteur coûte {0} d'acier dracogivré et se construit en 15 secondes, même en vol. Utilisez le chargement de fret pour fournir jusqu'à 1 000 unités de matériau. Le hangar et les appareils déployés sont limités à {1} au total.</NMC_Text0015>
+  <NMC_Text0015>Chaque intercepteur coûte {0} unités d’acier givre-dragon et demande 15 secondes de fabrication, même en vol. Réglez la cible dans « Réserve d’acier givre-dragon » ; les colons la remplissent au sol, jusqu’à 1 000 unités. Le hangar et les intercepteurs déployés sont limités à {1} au total.</NMC_Text0015>
   <NMC_Text0016>Rappeler les intercepteurs</NMC_Text0016>
   <NMC_Text0017>Rappeler tous les intercepteurs au hangar. Ils pourront repartir si le porte-aéronefs reste en vol avec des ennemis à proximité.</NMC_Text0017>
   <NMC_Text0018>Rayon gravitationnel</NMC_Text0018>
-  <NMC_Text0019>Choisissez un ennemi au sol à moins de 16 cases. Il est soulevé et étourdi pendant 5 secondes, permettant au laser du vaisseau de le viser. Recharge : 8 secondes. Aucun coût supplémentaire.</NMC_Text0019>
+  <NMC_Text0019>Choisissez une unité vivante à moins de 16 cases, alliée, neutre ou ennemie. Elle est soulevée et étourdie pendant 4 secondes. Une unité ne peut subir plusieurs rayons gravitationnels à la fois. Recharge : 8 secondes. Aucun coût supplémentaire. Le mode automatique ne vise toujours que les ennemis.</NMC_Text0019>
   <NMC_Text0020>Le vaisseau doit être en vol</NMC_Text0020>
   <NMC_Text0021>Rayon gravitationnel en recharge</NMC_Text0021>
   <NMC_Text0022>Rayon automatique : activé</NMC_Text0022>
@@ -111,7 +111,7 @@ Entretien : 1 P et 1 V par 0,1 jour</NMC_Text0091>
   <NMC_Text0097>Conditions</NMC_Text0097>
   <NMC_Text0098>Matériaux requis</NMC_Text0098>
   <NMC_Text0099>Identification précise des alliés · Activée</NMC_Text0099>
-  <NMC_Text0102>Rayon 3 · Dégâts 30 · Pénétration 35 %</NMC_Text0102>
+  <NMC_Text0102>Carré 3×3 · Dégâts 30 · Pénétration 35 %</NMC_Text0102>
   <NMC_Text0103>Viser une frappe orbitale</NMC_Text0103>
   <NMC_Text0104>Alimentation · {0} / 10 000 W</NMC_Text0104>
   <NMC_Text0105>Champ sur une autre carte · Déplacement possible</NMC_Text0105>
@@ -137,7 +137,7 @@ Entretien : 1 P et 1 V par 0,1 jour</NMC_Text0091>
   <NMC_Text0125>Arrêter les rayons de cette carte</NMC_Text0125>
   <NMC_Text0126>Inactif</NMC_Text0126>
   <NMC_Text0127>Actif dans {0} lieux · Reste ici : {1}</NMC_Text0127>
-  <NMC_Text0128>Vitesse de travail ×5 · 60 secondes</NMC_Text0128>
+  <NMC_Text0128>Déplacement ×2 · Travail ×10 · Tourelles ×3 · 60 s</NMC_Text0128>
   <NMC_Text0129>Prêt · Affecte toutes les colonies</NMC_Text0129>
   <NMC_Text0130>Déclencher la fluctuation spatiotemporelle</NMC_Text0130>
   <NMC_Text0131>Arrêter la fluctuation spatiotemporelle</NMC_Text0131>
@@ -241,7 +241,7 @@ Niveau requis : {2} (actuel : {3}){4}</NMC_Text0201>
 
 Le butin est au centre, protégé par plusieurs lignes de tourelles et de sacs de sable. Les défenseurs appelleront des renforts aéroportés, dont des mécanoïdes et des unités Nira équipées d'armes nivarianes.
 
-Vous avez 12 jours pour attaquer. Après votre entrée sur le champ de bataille, retirer tout le monde avant d'atteindre les objectifs ou dépasser le délai fait échouer la mission. Le vaisseau-mère repérera une base du même stade après 3 jours ; les données déjà obtenues sont conservées.
+Cette base n’a aucune limite de temps et ne disparaîtra pas pendant votre attente. Si toutes vos troupes quittent le champ de bataille avant d’avoir atteint l’objectif, la mission échoue. Le vaisseau-mère repérera une autre base du même stade dans 3 jours ; les données de recherche déjà acquises sont conservées.
 
 Les données débloquent ces recherches :
 {0}
@@ -310,10 +310,9 @@ Aucun coût énergétique ni délai de recharge supplémentaire. Le colon interr
   <NMC_Text0279>Point d'arrivée des troupes occupé</NMC_Text0279>
   <NMC_Text0280>Modificateur de vitesse de la légion : {0}</NMC_Text0280>
   <NMC_Text0281>La légion survivante nivariane est absente, détruite ou hostile</NMC_Text0281>
-  <NMC_Text0282>Préparez 2 000 d'argent ou 200 d'or à portée d'une balise de commerce orbitale alimentée sur cette carte</NMC_Text0282>
   <NMC_Text0283>Réseau de contrôle hyperdimensionnel : actif</NMC_Text0283>
   <NMC_Text0284>Réseau de contrôle hyperdimensionnel : sans courant</NMC_Text0284>
-  <NMC_Text0285> · Attaque toutes les 0,4 seconde</NMC_Text0285>
+  <NMC_Text0285> · Délai entre attaques réduit au tiers</NMC_Text0285>
   <NMC_Text0286> · Attaque toutes les 2 secondes</NMC_Text0286>
   <NMC_Text0287>{0}{1} · Portée 60 · Jusqu'à 10 cibles</NMC_Text0287>
   <NMC_Text0288>{0} a épuisé son carburant et effectué un atterrissage d'urgence.</NMC_Text0288>
@@ -339,7 +338,7 @@ Recharge du rayon gravitationnel : {0} secondes</NMC_Text0297>
   <NMC_Text0304>{0}Réserve nutritive : {1} (objectif {2})
 Consommation : {3} / jour de jeu
 Énergie : {4} P / jour de jeu
-{5} · Puissance nominale 700 W</NMC_Text0304>
+{5} · Puissance nominale {6} W</NMC_Text0304>
   <NMC_Text0305>Autres marchandises</NMC_Text0305>
   <NMC_Text0306>Nira</NMC_Text0306>
   <NMC_Text0307>Bonjour, commandant. La liste est prête. Que souhaitez-vous apporter à la colonie aujourd'hui ?</NMC_Text0307>
@@ -491,17 +490,16 @@ La projection utilise l'énergie et les fournitures de l'original</NMC_Text0430>
   <NMC_Text0439>L'arrivée des cinq vaisseaux ne peut contenir murs ni terrain impraticable</NMC_Text0439>
   <NMC_Text0440>Arrivée de Zoraya échouée ; aucun coût ni recharge</NMC_Text0440>
   <NMC_Text0441>Contact avec la légion perdu. Renforts annulés</NMC_Text0441>
-  <NMC_Text0442>Fournitures à portée modifiées. Vérifiez à nouveau. Aucun coût ni recharge</NMC_Text0442>
   <NMC_Text0443>Énergie insuffisante. Fournitures rendues ; renforts annulés</NMC_Text0443>
-  <NMC_Text0444>Arrivée de Zoraya et 4 vaisseaux lumineux du vide. {0}{1} livrés. Présence de 120 secondes après arrivée complète.</NMC_Text0444>
-  <NMC_Text0445>Légion de Zoraya · {0} P + {1} V · 2 000 argent ou 200 or · Clic gauche : déployer ; clic droit / Échap : annuler</NMC_Text0445>
+  <NMC_Text0444>Arrivée de Zoraya et 4 vaisseaux lumineux du vide. Présence de 120 secondes après arrivée complète.</NMC_Text0444>
+  <NMC_Text0445>Légion de Zoraya · {0} P + {1} V · Clic gauche : déployer ; clic droit / Échap : annuler</NMC_Text0445>
   <NMC_Text0446>Canon à rayons solaires · 300 P + 180 V · Clic gauche : trois rayons / 8 secondes · Clic droit / Échap : annuler</NMC_Text0446>
   <NMC_Text0447>Équipement non prêt ; renforts indisponibles</NMC_Text0447>
   <NMC_Text0448>Troupes de la légion indisponibles</NMC_Text0448>
   <NMC_Text0449>Quatre cases proches, explorées et praticables, sans toit rocheux épais sont requises</NMC_Text0449>
   <NMC_Text0450>Arrivée de Seydas échouée ; aucun coût ni recharge</NMC_Text0450>
-  <NMC_Text0451>Seydas et 3 archontes noirs arrivés. {0}{1} livrés. Retrait par distorsion après 120 secondes.</NMC_Text0451>
-  <NMC_Text0453>Légion de Seydas · {0} P + {1} V · 2 000 argent ou 200 or · Clic gauche : déployer ; clic droit / Échap : annuler</NMC_Text0453>
+  <NMC_Text0451>Seydas et 3 archontes noirs arrivés. Retrait par distorsion après 120 secondes.</NMC_Text0451>
+  <NMC_Text0453>Légion de Seydas · {0} P + {1} V · Clic gauche : déployer ; clic droit / Échap : annuler</NMC_Text0453>
   <NMC_Text0454>Allégeance mentale</NMC_Text0454>
   <NMC_Text0455>Bombardement solaire inutilisable sous terre</NMC_Text0455>
   <NMC_Text0456>Aucun centre valide : les toits rocheux épais bloquent les frappes</NMC_Text0456>
@@ -510,7 +508,7 @@ La projection utilise l'énergie et les fournitures de l'original</NMC_Text0430>
   <NMC_Text0459>Aucune origine du rayon : les toits rocheux épais bloquent les impacts directs</NMC_Text0459>
   <NMC_Text0460>Bombardement solaire · {0} P + {1} V · Clic gauche : 300 tirs · Clic droit / Échap : annuler la visée</NMC_Text0460>
   <NMC_Text0461>Au moins une colonie disponible requise</NMC_Text0461>
-  <NMC_Text0462>Fluctuation spatiotemporelle : vitesse de travail ×5</NMC_Text0462>
+  <NMC_Text0462>Fluctuation spatiotemporelle : vitesse de travail ×10</NMC_Text0462>
   <NMC_Text0463>Impossible de déployer cette structure</NMC_Text0463>
   <NMC_Text0464>Noyau de construction indisponible</NMC_Text0464>
   <NMC_Text0465>Impossible de déployer un noyau ici</NMC_Text0465>
@@ -519,21 +517,36 @@ La projection utilise l'énergie et les fournitures de l'original</NMC_Text0430>
   <NMC_Text0468>Bâtiments, personnes ou objets présents. Dégagez d'abord</NMC_Text0468>
   <NMC_Text0469>Onze cases proches, explorées et praticables, sans toit rocheux épais sont requises</NMC_Text0469>
   <NMC_Text0470>Arrivée de Tebrus échouée ; aucun coût ni recharge</NMC_Text0470>
-  <NMC_Text0471>Tebrus et 10 guerriers de mêlée arrivés. {0}{1} livrés. Retrait par distorsion après 120 secondes.</NMC_Text0471>
-  <NMC_Text0473>Légion de Tebrus · {0} P + {1} V · 2 000 argent ou 200 or · Clic gauche : déployer ; clic droit / Échap : annuler</NMC_Text0473>
+  <NMC_Text0471>Tebrus et 10 guerriers de mêlée arrivés. Retrait par distorsion après 120 secondes.</NMC_Text0471>
+  <NMC_Text0473>Légion de Tebrus · {0} P + {1} V · Clic gauche : déployer ; clic droit / Échap : annuler</NMC_Text0473>
   <NMC_Text0474>Suppression du vide · Indestructible
 Rayon 13 · Déplacement et attaque ennemis réduits à 30 % · Tourelles arrêtées
 Reste : {0}</NMC_Text0474>
-  <NMC_Text0475>Le cristal ne peut être au bord de carte</NMC_Text0475>
+  <NMC_Text0475>Le cristal doit être placé dans les limites de la carte.</NMC_Text0475>
   <NMC_Text0476>L'emplacement du cristal doit être exploré</NMC_Text0476>
-  <NMC_Text0477>Position occupée par bâtiments, personnes ou objets. Choisissez ailleurs</NMC_Text0477>
   <NMC_Text0478>Cristal de suppression du vide indisponible</NMC_Text0478>
   <NMC_Text0479>Impossible de placer un cristal ici</NMC_Text0479>
-  <NMC_Text0480>Cristal de suppression du vide · {0} P + {1} V · Rayon 13 / 30 secondes · Clic gauche : déployer ; clic droit / Échap : annuler</NMC_Text0480>
+  <NMC_Text0480>Cristal de suppression du vide · {0} P + {1} V · Rayon 18 / 30 secondes · Clic gauche : déployer ; clic droit / Échap : annuler</NMC_Text0480>
   <NMC_Text0481>Cristal de suppression du vide · {0}</NMC_Text0481>
   <NMC_Text0711>Recherche requise : identification précise des alliés</NMC_Text0711>
   <NMC_Text0712>Recherchez l'identification précise des alliés au terminal de liaison montante</NMC_Text0712>
   <NMC_Text0713>Identification précise des alliés · Non recherchée</NMC_Text0713>
   <NMC_Text0714>Les tirs de soutien protègent votre faction et ses alliés.</NMC_Text0714>
   <NMC_Text0715>{0}. Livrez les matériaux au terminal de liaison montante ; activation automatique à la fin.</NMC_Text0715>
+  <NMC_ResearchTaskLocked>Mission préalable inachevée. La recherche ne peut pas encore être débloquée.</NMC_ResearchTaskLocked>
+  <NMC_ResearchTaskProgress>Progression du Continuum : {0}/{1} étapes terminées. Terminez l'étape requise dans l'onglet Quêtes, puis revenez au terminal de recherche.</NMC_ResearchTaskProgress>
+  <NMC_ResearchTaskButton>Mission préalable inachevée</NMC_ResearchTaskButton>
+  <NMC_ResearchTaskAndResearchButton>Mission et recherche requises</NMC_ResearchTaskAndResearchButton>
+  <NMC_CarrierSteelTitle>Réserve d’acier givre-dragon</NMC_CarrierSteelTitle>
+  <NMC_CarrierSteelTooltip>Cible : {0}. Faites glisser la barre pour régler la cible. Chaque intercepteur coûte {1} unités d’acier givre-dragon. Les colons remplissent le porte-avions au sol. Le fret n’est pas automatiquement transféré dans cette réserve.</NMC_CarrierSteelTooltip>
+  <NMC_CarrierSteelAirborne>Le remplissage est impossible en vol ; la réserve existante reste utilisable pour fabriquer des intercepteurs.</NMC_CarrierSteelAirborne>
+  <NMC_CarrierSteelAutoFill>Remplir automatiquement la réserve. Si désactivé, vous pouvez toujours ordonner le remplissage à un colon avec un clic droit.</NMC_CarrierSteelAutoFill>
+  <NMC_CarrierSteelMissing>Aucun acier givre-dragon disponible</NMC_CarrierSteelMissing>
+  <NMC_SettingsShortcut>Afficher le panneau de commandement</NMC_SettingsShortcut>
+  <NMC_SettingsUnlockAll>Débloquer toutes les technologies de cette extension sans missions</NMC_SettingsUnlockAll>
+  <NMC_SettingsUnlockAllHint>Désactivé par défaut. Une fois activé et la partie reprise, toutes les recherches de cette extension sont terminées, sans missions du Continuum ni niveau de vaisseau-mère requis pour les soutiens. Les coûts et délais de recharge restent actifs. La désactivation conserve les recherches et rétablit les exigences de niveau. En multijoueur, le changement est synchronisé et les nouveaux joueurs utilisent l’état de la sauvegarde de l’hôte.</NMC_SettingsUnlockAllHint>
+  <NMC_Text0748>Fluctuation spatiotemporelle : vitesse de déplacement ×2</NMC_Text0748>
+  <NMC_Text0749>Réserve nutritive</NMC_Text0749>
+  <NMC_Text0750>Objectif nutritif : {0}. Faites glisser la barre pour le modifier. Réduire l’objectif conserve la réserve ; zéro arrête le remplissage. Choisissez les aliments dans l’onglet Nutrition.</NMC_Text0750>
+  <NMC_Text0751>Remplir automatiquement la réserve. Désactiver cette option arrête les nouvelles tâches automatiques ; la réserve reste consommée. Un clic droit permet toujours d’ordonner le remplissage.</NMC_Text0751>
 </LanguageData>

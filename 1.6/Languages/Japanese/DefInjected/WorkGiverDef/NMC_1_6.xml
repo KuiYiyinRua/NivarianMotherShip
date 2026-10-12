@@ -6,4 +6,7 @@
   <NMC_FillNutrientEnergyTower.label>ニヴァリアンエネルギータワーへ栄養補給</NMC_FillNutrientEnergyTower.label>
   <NMC_FillNutrientEnergyTower.verb>補充</NMC_FillNutrientEnergyTower.verb>
   <NMC_FillNutrientEnergyTower.gerund>栄養を補充</NMC_FillNutrientEnergyTower.gerund>
+  <NMC_RefillCarrierDragonSteel.label>空母に龍霜鋼を補充</NMC_RefillCarrierDragonSteel.label>
+  <NMC_RefillCarrierDragonSteel.verb>龍霜鋼を補充</NMC_RefillCarrierDragonSteel.verb>
+  <NMC_RefillCarrierDragonSteel.gerund>龍霜鋼を補充</NMC_RefillCarrierDragonSteel.gerund>
 </LanguageData>

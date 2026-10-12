@@ -453,7 +453,7 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_Support14</defName>
     <label>特布鲁斯军团支援协议</label>
-    <description>建立与特布鲁斯军团的联络，允许请求特布鲁斯和十名近战战士增援。除能量外，军团还需要信标范围内的白银或黄金作为支援报酬。
+    <description>建立与特布鲁斯军团的联络，允许请求特布鲁斯和十名近战战士增援。军团支援只消耗P和V。
 
 通过上行链路研究终端交付所需材料并完成研究。母舰达到2级后，方可调用这项支援。
 
@@ -490,7 +490,7 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_Support15</defName>
     <label>佐拉亚军团支援协议</label>
-    <description>建立与佐拉亚军团的联络，允许请求指挥舰佐拉亚和四艘辉光舰增援。除能量外，军团还需要信标范围内的白银或黄金作为支援报酬。
+    <description>建立与佐拉亚军团的联络，允许请求指挥舰佐拉亚和四艘辉光舰增援。军团支援只消耗P和V。
 
 通过上行链路研究终端交付所需材料并完成研究。母舰达到3级后，方可调用这项支援。
 
@@ -527,7 +527,7 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_Support16</defName>
     <label>赛达斯军团支援协议</label>
-    <description>建立与赛达斯军团的联络，允许请求赛达斯和三名黑暗执政官增援，以心灵支配转化敌人。除能量外，军团还需要信标范围内的白银或黄金作为支援报酬。
+    <description>建立与赛达斯军团的联络，允许请求赛达斯和三名黑暗执政官增援，以心灵支配转化敌人。军团支援只消耗P和V。
 
 通过上行链路研究终端交付所需材料并完成研究。母舰达到3级后，方可调用这项支援。
 
@@ -737,7 +737,7 @@
     <label>涅瓦莲航母</label>
     <description>解锁涅瓦莲航母的建造。这种大型舰船以舰载机作战，自身不装备直接攻击武器，适合在战线后方提供持续航空支援。
 
-航母载重10000千克，能够用龙霜钢制造并维持最多8架舰载机。建造成本高昂，还需持续补充化合燃料与舰载机材料。</description>
+航母载重10000千克，能够用龙霜钢制造并维持最多6架舰载机。建造成本高昂，还需持续补充化合燃料与舰载机材料。</description>
     <baseCost>15000</baseCost>
     <prerequisites>
       <li>NMC_GravityFrigateResearch</li>
@@ -751,15 +751,15 @@
         <requiredMaterials>
           <li>
             <thingDef>Nivarian_DragonfrostSteel</thingDef>
-            <count>2000</count>
+            <count>500</count>
           </li>
           <li>
             <thingDef>ComponentSpacer</thingDef>
-            <count>40</count>
+            <count>10</count>
           </li>
           <li>
             <thingDef>Nivarian_DragonCrystal</thingDef>
-            <count>800</count>
+            <count>200</count>
           </li>
         </requiredMaterials>
       </li>

@@ -1,4 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
   <NMC_InstallStarshipBattery.reportString>Installing starship batteries in TargetA.</NMC_InstallStarshipBattery.reportString>
+  <NMC_FillCarrierDragonSteel.reportString>Refilling TargetA with dragonfrost steel.</NMC_FillCarrierDragonSteel.reportString>
 </LanguageData>

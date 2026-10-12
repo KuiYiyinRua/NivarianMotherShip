@@ -2,7 +2,7 @@
 <Defs>
   <ThingDef ParentName="BuildingBase" MayRequire="Ludeon.RimWorld.Biotech">
     <defName>NMC_NutrientEnergyTower</defName>
-    <label>涅瓦莲能量塔</label>
+    <label>涅瓦莲能源塔</label>
     <description>用营养液滋养共鸣晶体，持续为母舰输送P点的能源设施，同时可向殖民地电网供应700W电力。需要定期补充食物来维持运行。
 
 殖民者会将允许的食物运入设施，转化为营养储备。可在“营养”页调整食物种类，并在选中设施时查看当前消耗和产量。设施关闭、营养耗尽或停止运行时，母舰能量也会停止产出。
@@ -13,8 +13,8 @@
     <graphicData>
       <texPath>NMC/Buildings/nutrient_energy_tower</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(2.6,2.6)</drawSize>
-      <drawOffset>(0,0,0.3)</drawOffset>
+      <drawSize>(2.2,2.2)</drawSize>
+      <shadowData IsNull="True"/>
     </graphicData>
     <size>(2,2)</size>
     <rotatable>false</rotatable>
@@ -22,13 +22,12 @@
     <passability>Impassable</passability>
     <fillPercent>0.65</fillPercent>
     <blockWind>true</blockWind>
-    <castEdgeShadows>true</castEdgeShadows>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
     <canOverlapZones>false</canOverlapZones>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories><li>NivarianBuildings</li></thingCategories>
-    <hasInteractionCell>true</hasInteractionCell>
-    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <inspectorTabs><li>ITab_BiosculpterNutritionStorage</li></inspectorTabs>
     <statBases>
       <MaxHitPoints>350</MaxHitPoints>
@@ -85,9 +84,9 @@
       </li>
     </modExtensions>
   </ThingDef>
-  <WorkGiverDef MayRequire="Ludeon.RimWorld.Biotech">
+  <WorkGiverDef>
     <defName>NMC_FillNutrientEnergyTower</defName>
-    <label>为涅瓦莲能量塔补充营养</label>
+    <label>为涅瓦莲能源塔补充营养</label>
     <giverClass>NivarianCommander.WorkGiver_FillNutrientEnergyTower</giverClass>
     <workType>Hauling</workType>
     <verb>填充</verb>

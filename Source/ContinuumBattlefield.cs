@@ -13,6 +13,7 @@ namespace NivarianCommander
     {
         public int stage, elapsed, waves;
         public bool hadPlayer, cleared, retreated;
+        public bool airReinforcementsSpawned;
         public Thing relay;
         public List<Thing> defenders = new List<Thing>();
         public ContinuumBattlefield(Map map) : base(map) { }
@@ -24,8 +25,10 @@ namespace NivarianCommander
             if (!hadPlayer) return;
             elapsed++;
             if (!playerHere && elapsed > 600) { retreated = true; return; }
+            if (playerHere && stage >= 6 && !airReinforcementsSpawned && elapsed % 60 == 1)
+                airReinforcementsSpawned = ContinuumAirReinforcements.TrySpawn(this, map);
             bool coreGone = relay == null || relay.Destroyed || !relay.Spawned || !relay.HostileTo(Faction.OfPlayer);
-            bool guarded = defenders.Any(t => t != null && !t.Destroyed && t.HostileTo(Faction.OfPlayer)
+            bool guarded = stage >= 6 && !airReinforcementsSpawned || defenders.Any(t => t != null && !t.Destroyed && t.HostileTo(Faction.OfPlayer)
                 && (!(t is Pawn p) || (!p.Dead && !p.Downed)));
             if (coreGone && !guarded) { cleared = true; return; }
             if (waves < 1 + stage / 3 && elapsed >= 1800 + waves * 2400)
@@ -46,6 +49,7 @@ namespace NivarianCommander
             base.ExposeData(); Scribe_Values.Look(ref stage, "nmcBaseStage"); Scribe_Values.Look(ref elapsed, "nmcBaseElapsed");
             Scribe_Values.Look(ref waves, "nmcBaseWaves"); Scribe_Values.Look(ref hadPlayer, "nmcBaseHadPlayer");
             Scribe_Values.Look(ref cleared, "nmcBaseCleared"); Scribe_Values.Look(ref retreated, "nmcBaseRetreated");
+            Scribe_Values.Look(ref airReinforcementsSpawned, "nmcBaseAirReinforcementsSpawned");
             Scribe_References.Look(ref relay, "nmcBaseRelay"); Scribe_Collections.Look(ref defenders, "nmcBaseDefenders", LookMode.Reference);
             if (Scribe.mode == LoadSaveMode.PostLoadInit) defenders = defenders ?? new List<Thing>();
         }

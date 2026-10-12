@@ -31,7 +31,7 @@ namespace NivarianCommander
             // Stable target selection; only damage resolution uses simulation randomness.
             var enemy = map.listerThings.AllThings.Where(t => t.Spawned && !t.Destroyed && t != source
                 && (t is Pawn || t is Building || t is NivarianDroneBase)
-                && (!(t is Pawn p) || !p.Dead)
+                && (!(t is Pawn p) || !p.DeadOrDowned)
                 && t.HostileTo(source.Faction ?? Faction.OfPlayer)
                 && !SupportDiplomacy.Friendly(t)
                 && !CommanderCloak.HiddenFrom(t, source)

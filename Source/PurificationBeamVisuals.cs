@@ -16,6 +16,7 @@ namespace NivarianCommander
         const int MaxTraces = 256;
         const int EndingLifetime = 30;
         const int ShaftSteps = 64;
+        const float FootprintRadius = PurificationBeamMap.DamageRadius;
         static readonly Vector3 ShaftAxis = new Vector3(-.18f, 0f, 1f);
         static readonly Vector3 ShaftSide = new Vector3(1f, 0f, .18f).normalized;
         static readonly float[] Profile = { -1f, -.76f, -.51f, -.30f, -.16f, 0f, .16f, .30f, .51f, .76f, 1f };
@@ -206,6 +207,7 @@ namespace NivarianCommander
             float power = MainPower(beam.elapsed);
             float pilot = Mathf.Clamp01((beam.elapsed - 18f) / 18f);
             float height = Mathf.Max(30f, viewTop - at.z + 6f);
+            DrawFootprint(at, seconds, .65f + .35f * power);
             if (beam.elapsed < 78) DrawArrival(at, beam.elapsed, seconds);
             if (pilot > 0f)
             {
@@ -215,16 +217,35 @@ namespace NivarianCommander
             DrawContact(at, seconds, beam.serial, .10f + .9f * power);
         }
 
+        void DrawFootprint(Vector3 at, float seconds, float strength)
+        {
+            // A world-space circle follows the exact damage radius. Do not squash
+            // z for perspective: the map camera already projects the ground plane.
+            at.y = AltitudeLayer.MoteOverhead.AltitudeFor() - .03f;
+            light.Disc(at, FootprintRadius, new Color(1f,.79f,.35f,.22f * strength));
+            light.Glow(at, FootprintRadius, FootprintRadius,
+                new Color(1f,.91f,.62f,.40f * strength));
+            float pulse = .85f + .15f * Mathf.Sin(seconds * 5f);
+            for (int i = 0; i < 96; i++)
+            {
+                float angle = i * Mathf.PI * 2f / 96f;
+                float next = (i + 1) * Mathf.PI * 2f / 96f;
+                light.Stroke(at + new Vector3(Mathf.Cos(angle), 0f, Mathf.Sin(angle)) * FootprintRadius,
+                    at + new Vector3(Mathf.Cos(next), 0f, Mathf.Sin(next)) * FootprintRadius,
+                    .045f, new Color(1f,.91f,.64f,.50f * strength * pulse));
+            }
+        }
+
         void DrawArrival(Vector3 at, int elapsed, float seconds)
         {
             float fade = 1f - Mathf.SmoothStep(0f, 1f, Mathf.Clamp01((elapsed - 40f) / 38f));
-            float radius = Mathf.Lerp(3.3f, 2.65f, Mathf.Clamp01(elapsed / 60f));
+            float radius = FootprintRadius;
             for (int i = 0; i < 96; i++)
             {
                 float theta = i * Mathf.PI * 2f / 96f;
-                float wave = .12f * Mathf.Sin(theta * 6f + seconds * 5f);
+                float wave = -.12f * (.5f + .5f * Mathf.Sin(theta * 6f + seconds * 5f));
                 Vector3 p = at + new Vector3(Mathf.Cos(theta) * (radius + wave), 0f,
-                    Mathf.Sin(theta) * (radius + wave) * .70f);
+                    Mathf.Sin(theta) * (radius + wave));
                 float tall = .20f + .21f * (.5f + .5f * Mathf.Sin(theta * 6f + seconds * 3f));
                 light.Stroke(p, p + Vector3.forward * tall, .025f,
                     new Color(1f,.90f,.64f,.36f * fade));
@@ -254,7 +275,7 @@ namespace NivarianCommander
                     .020f * Mathf.Sin(distance * 5.3f - seconds * 10f);
                 Vector3 middle = at + ShaftAxis * distance + ShaftSide * sway * power;
                 float flux = .93f + .05f * Mathf.Sin(distance * 4.3f + seconds * 17f);
-                float halfWidth = (1.20f + .25f * Mathf.Clamp01(distance / 16f)) * widthScale * flux;
+                float halfWidth = (FootprintRadius + .25f * Mathf.Clamp01(distance / 16f)) * widthScale * flux;
                 for (int col = 0; col < Profile.Length; col++)
                     light.Vertex(middle + ShaftSide * (Profile[col] * halfWidth),
                         Opacity(ProfileColors[col], intensity * flux));
@@ -288,7 +309,7 @@ namespace NivarianCommander
                     float depth = Mathf.Sin(angle);
                     Vector3 radial = new Vector3(Mathf.Cos(angle), 0f, depth * .33f);
                     Vector3 tangent = new Vector3(-depth, 0f, Mathf.Cos(angle) * .33f);
-                    Vector3 root = center + radial * (1.52f + band * .12f);
+                    Vector3 root = center + radial * (FootprintRadius + .32f + band * .12f);
                     root.y += depth < 0f ? .016f : -.008f;
                     Batch batch = depth < 0f ? frontFacets : backFacets;
                     Vector3 a = root + radial * .58f + Vector3.forward * .82f;
@@ -317,10 +338,10 @@ namespace NivarianCommander
         void DrawContact(Vector3 at, float seconds, int seed, float strength)
         {
             float pulse = .94f + .045f * Mathf.Sin(seconds * 19f) + .015f * Mathf.Sin(seconds * 37f);
-            light.Glow(at, 4.5f, 3.25f, new Color(1f,.65f,.23f,.16f * strength));
-            light.Glow(at, 2.80f, 2.12f, new Color(1f,.91f,.57f,.43f * strength * pulse));
-            light.Glow(at, 1.63f, 1.28f, new Color(1f,1f,.94f,.96f * strength));
-            light.Glow(at, .75f, .69f, new Color(1f,1f,1f,strength));
+            light.Glow(at, FootprintRadius * 1.15f, FootprintRadius * 1.15f, new Color(1f,.65f,.23f,.16f * strength));
+            light.Glow(at, FootprintRadius, FootprintRadius, new Color(1f,.91f,.57f,.43f * strength * pulse));
+            light.Glow(at, FootprintRadius * .82f, FootprintRadius * .82f, new Color(1f,1f,.94f,.72f * strength));
+            light.Glow(at, FootprintRadius * .45f, FootprintRadius * .45f, new Color(1f,1f,1f,strength));
             // Two long, tapered horizontal streaks seen across the reference impact.
             light.Glow(at, 7.2f, .045f, new Color(1f,.97f,.81f,.55f * strength), 24);
             light.Glow(at + Vector3.forward * .20f, 5.7f, .026f,
@@ -519,6 +540,24 @@ namespace NivarianCommander
                         Indices(inner + side, outer + side, outer + next);
                         Indices(inner + side, outer + next, inner + next);
                     }
+                }
+            }
+            internal void Disc(Vector3 at, float radius, Color color)
+            {
+                int center = VertexCount;
+                Vertex(at, color);
+                // Keep most of the footprint luminous, fading only near its rim.
+                for (int ring = 0; ring < 2; ring++)
+                    foreach (var point in Circle24)
+                        Vertex(at + new Vector3(point.x, 0f, point.y) * radius * (ring == 0 ? .88f : 1f),
+                            ring == 0 ? color : Opacity(color, 0f));
+                for (int side = 0; side < Circle24.Length; side++)
+                {
+                    int next = (side + 1) % Circle24.Length;
+                    int inner = center + 1, outer = inner + Circle24.Length;
+                    Indices(center, inner + side, inner + next);
+                    Indices(inner + side, outer + side, outer + next);
+                    Indices(inner + side, outer + next, inner + next);
                 }
             }
             internal void Draw(Material material)

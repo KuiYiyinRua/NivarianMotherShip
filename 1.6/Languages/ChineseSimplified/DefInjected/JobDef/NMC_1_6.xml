@@ -1,4 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
   <NMC_InstallStarshipBattery.reportString>正在为TargetA安装星舰电池。</NMC_InstallStarshipBattery.reportString>
+  <NMC_FillCarrierDragonSteel.reportString>正在为TargetA填装龙霜钢。</NMC_FillCarrierDragonSteel.reportString>
 </LanguageData>

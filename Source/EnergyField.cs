@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Reflection.Emit;
+using System.Runtime.CompilerServices;
 using HarmonyLib;
 using Nivarian;
 using Nivarian.NivarianDrones.NivarianDroneComps;
@@ -21,10 +22,19 @@ namespace NivarianCommander
         public IntVec3 center = IntVec3.Invalid;
         public int revision;
         public int upkeepRemaining = FieldEconomy.UpkeepInterval;
-        public CommanderField(World world) : base(world) { }
-        public static CommanderField Current => Find.World?.GetComponent<CommanderField>();
+        static readonly ConditionalWeakTable<World, CommanderField> worlds = new ConditionalWeakTable<World, CommanderField>();
+        public CommanderField(World world) : base(world)
+        { if (world != null) { worlds.Remove(world); worlds.Add(world, this); } }
+        public static CommanderField Current
+        {
+            get
+            {
+                var world = Find.World;
+                return world == null ? null : worlds.TryGetValue(world, out var currentField) ? currentField : world.GetComponent<CommanderField>();
+            }
+        }
         public bool Exists => fieldMap != null && Find.Maps.Contains(fieldMap) && center.IsValid && center.InBounds(fieldMap);
-        public bool Contains(Thing t) => t != null && t.Spawned && !ProjectionRegistry.IsProjection(t) && t.Map == fieldMap && center.IsValid && t.Position.InHorDistOf(center, 8f) && SupportDiplomacy.Friendly(t);
+        public bool Contains(Thing t) => t != null && t.Spawned && t.Map == fieldMap && center.IsValid && t.Position.InHorDistOf(center, 8f) && !ProjectionRegistry.IsProjection(t) && SupportDiplomacy.Friendly(t);
         public void Deploy(Map map, IntVec3 cell)
         {
             if (!Exists) upkeepRemaining = FieldEconomy.UpkeepInterval;
@@ -75,6 +85,13 @@ namespace NivarianCommander
         // A powered wireless adapter is not proof that its native gauge paid for it.
         // Preserve source ownership through paused-map saves and cold joins.
         public List<ThingWithComps> wirelessOverrides = new List<ThingWithComps>();
+        // Saved lists retain their order. Query indexes change at the same lease
+        // boundaries and are rebuilt after reference resolution, never by a getter.
+        readonly Dictionary<ThingWithComps, FieldPowerLease> leaseIndex = new Dictionary<ThingWithComps, FieldPowerLease>();
+        readonly HashSet<ThingWithComps> gridLeaseIndex = new HashSet<ThingWithComps>();
+        readonly HashSet<ThingWithComps> wirelessIndex = new HashSet<ThingWithComps>();
+        static readonly ConditionalWeakTable<Map, FieldEnergy> maps = new ConditionalWeakTable<Map, FieldEnergy>();
+        internal bool HasPowerLeases => leases.Count != 0 || gridLeases.Count != 0;
         readonly Dictionary<PowerNet, float> netWatts = new Dictionary<PowerNet, float>();
         readonly Dictionary<CompPowerTrader, float> directWatts = new Dictionary<CompPowerTrader, float>();
         readonly HashSet<string> unsupported = new HashSet<string>();
@@ -83,19 +100,50 @@ namespace NivarianCommander
         readonly FieldGroundOverlay groundOverlay = new FieldGroundOverlay();
         static readonly Action<Need_NiraEnergy> UpdateNira = AccessTools.MethodDelegate<Action<Need_NiraEnergy>>(AccessTools.Method(typeof(Need_NiraEnergy), "UpdateHediff"));
         static readonly System.Reflection.FieldInfo MechShutdown = AccessTools.Field(typeof(Need_MechEnergy), "selfShutdown");
-        static readonly System.Reflection.FieldInfo RawPowerOn = AccessTools.Field(typeof(CompPowerTrader), "powerOnInt");
-        public FieldEnergy(Map map) : base(map) { }
+        static readonly AccessTools.FieldRef<CompPowerTrader, bool> RawPowerOn = AccessTools.FieldRefAccess<CompPowerTrader, bool>("powerOnInt");
+        public FieldEnergy(Map map) : base(map)
+        { if (map != null) { maps.Remove(map); maps.Add(map, this); } }
+        public static FieldEnergy For(Map map)
+            => map == null ? null : maps.TryGetValue(map, out var energy) ? energy : map.GetComponent<FieldEnergy>();
         public float AllocatedWatts => netWatts.Values.Sum() + directWatts.Values.Sum();
         public float NetWatts(PowerNet net) => Active && cacheRevision == CommanderField.Current.revision && netWatts.TryGetValue(net, out float w) ? w : 0f;
-        public bool Active => CommanderField.Current?.Exists == true && CommanderField.Current.fieldMap == map;
+        public bool Active
+        { get { var currentField = CommanderField.Current; return currentField != null && currentField.fieldMap == map && currentField.Exists; } }
         static bool Working(CompPowerTrader comp) => comp?.parent?.Spawned == true && FlickUtility.WantsToBeOn(comp.parent) && !comp.parent.IsBrokenDown() && !comp.parent.Map.gameConditionManager.ElectricityDisabled(comp.parent.Map) && !EMP(comp);
         bool Eligible(CompPowerTrader comp) => Working(comp) && SupportDiplomacy.Friendly(comp.parent);
         static bool EMP(CompPowerTrader comp)
         { var stun = comp.parent.GetComp<CompStunnable>()?.StunHandler; return stun != null && stun.Stunned && stun.StunFromEMP; }
         public bool DirectGrant(CompPowerTrader comp)
-            => !restoring && Active && CommanderField.Current.Contains(comp.parent) && comp.PowerNet == null && Eligible(comp)
-                && (cacheRevision == -1 ? HasLease(comp) : cacheRevision == CommanderField.Current.revision && directWatts.TryGetValue(comp, out float w) && w > 0);
-        public bool HasLease(CompPowerTrader comp) => leases.Any(l => l.target == comp.parent);
+        {
+            if (restoring) return false;
+            var field = CommanderField.Current;
+            return field != null && field.fieldMap == map && field.Exists && comp.PowerNet == null && field.Contains(comp.parent) && Eligible(comp)
+                && (cacheRevision == -1 ? HasLease(comp) : cacheRevision == field.revision && directWatts.TryGetValue(comp, out float w) && w > 0);
+        }
+        public bool HasLease(CompPowerTrader comp) => leaseIndex.ContainsKey(comp.parent);
+        void AddLease(FieldPowerLease lease)
+        { leases.Add(lease); if (lease.target != null && !leaseIndex.ContainsKey(lease.target)) leaseIndex.Add(lease.target, lease); }
+        void RemoveLeaseAt(int index)
+        {
+            var target = leases[index].target; leases.RemoveAt(index);
+            if (target == null) return;
+            leaseIndex.Remove(target);
+            for (int i = 0; i < leases.Count; i++)
+                if (leases[i].target == target) { leaseIndex.Add(target, leases[i]); break; }
+        }
+        void RemoveGridLeaseAt(int index)
+        {
+            var target = gridLeases[index]; gridLeases.RemoveAt(index);
+            if (!gridLeases.Contains(target)) gridLeaseIndex.Remove(target);
+        }
+        void RebuildLeaseIndexes()
+        {
+            leaseIndex.Clear(); gridLeaseIndex.Clear(); wirelessIndex.Clear();
+            foreach (var lease in leases)
+                if (lease.target != null && !leaseIndex.ContainsKey(lease.target)) leaseIndex.Add(lease.target, lease);
+            foreach (var target in gridLeases) gridLeaseIndex.Add(target);
+            foreach (var target in wirelessOverrides) wirelessIndex.Add(target);
+        }
         static bool NativeWireReady(CompPowerTrader comp)
         {
             var adapter = comp?.parent?.GetComp<Comp_NivarianWirelessPowerAdapter>();
@@ -104,27 +152,31 @@ namespace NivarianCommander
                 && DefDatabase<ResearchProjectDef>.GetNamedSilentFail("Nivarian_DirectionalPowerTransmission")?.IsFinished == true
                 && wireless.UnreservedEnergy >= -comp.EnergyOutputPerTick;
         }
-        bool NativeWireFunded(CompPowerTrader comp) => !wirelessOverrides.Contains(comp.parent) && (bool)RawPowerOn.GetValue(comp) && NativeWireReady(comp);
+        bool NativeWireFunded(CompPowerTrader comp) => !wirelessIndex.Contains(comp.parent) && RawPowerOn(comp) && NativeWireReady(comp);
         public bool RestorePrevious(CompPowerTrader comp)
         {
-            var lease = leases.FirstOrDefault(l => l.target == comp.parent);
+            leaseIndex.TryGetValue(comp.parent, out var lease);
             return Working(comp) && (NativeWireReady(comp) || (lease?.previous == true && !lease.previousWireless));
         }
         public bool OwnWirelessSupply(CompPowerTrader comp)
         {
-            if (comp == null || !wirelessOverrides.Contains(comp.parent) || !Active || !Eligible(comp)) return false;
+            if (comp == null || !wirelessIndex.Contains(comp.parent) || !Active || !Eligible(comp)) return false;
             if (comp.PowerNet == null)
                 return CommanderField.Current.Contains(comp.parent) && (cacheRevision != CommanderField.Current.revision ? HasLease(comp) : DirectGrant(comp));
             return HasFieldConnector(comp.PowerNet) && (cacheRevision != CommanderField.Current.revision || NetWatts(comp.PowerNet) > 0f);
         }
         bool HasFieldConnector(PowerNet net)
         {
-            if (!Active || net == null || map.gameConditionManager.ElectricityDisabled(map)) return false;
-            foreach (var cp in net.transmitters.Concat(net.connectors))
-                if (CommanderField.Current.Contains(cp.parent) && FlickUtility.WantsToBeOn(cp.parent) && !cp.parent.IsBrokenDown()
-                    && (!(cp is CompPowerTrader p) || !EMP(p)) && (!(cp is CompPowerBattery b) || !b.StunnedByEMP)) return true;
+            if (net == null) return false;
+            var field = CommanderField.Current;
+            if (field == null || field.fieldMap != map || !field.Exists || map.gameConditionManager.ElectricityDisabled(map)) return false;
+            for (int i = 0; i < net.transmitters.Count; i++) if (WorkingConnector(net.transmitters[i], field)) return true;
+            for (int i = 0; i < net.connectors.Count; i++) if (WorkingConnector(net.connectors[i], field)) return true;
             return false;
         }
+        static bool WorkingConnector(CompPower cp, CommanderField field)
+            => field.Contains(cp.parent) && FlickUtility.WantsToBeOn(cp.parent) && !cp.parent.IsBrokenDown()
+                && (!(cp is CompPowerTrader p) || !EMP(p)) && (!(cp is CompPowerBattery b) || !b.StunnedByEMP);
         static bool HasNativeSource(PowerNet net)
         {
             if (net == null) return false;
@@ -132,7 +184,7 @@ namespace NivarianCommander
             float balance = 0f;
             foreach (var p in net.powerComps.OrderBy(p => p.parent.thingIDNumber))
             {
-                if (!Working(p) || !(bool)RawPowerOn.GetValue(p)) continue;
+                if (!Working(p) || !RawPowerOn(p)) continue;
                 balance += p.EnergyOutputPerTick;
                 // Native wireless cancels only this adapter's consumption. It cannot
                 // be counted as an unlimited source for the remaining consumers.
@@ -142,7 +194,7 @@ namespace NivarianCommander
         }
         public bool GridSupplyLost(CompPowerTrader comp)
         {
-            if (ProjectionRegistry.IsProjection(comp.parent) || !gridLeases.Contains(comp.parent)) return false;
+            if (!gridLeaseIndex.Contains(comp.parent) || ProjectionRegistry.IsProjection(comp.parent)) return false;
             if (!Working(comp)) return true;
             return !HasFieldConnector(comp.PowerNet) && !NativeWireReady(comp) && !HasNativeSource(comp.PowerNet);
         }
@@ -218,13 +270,13 @@ namespace NivarianCommander
                 var l = leases[i]; var p = l.target?.GetComp<CompPowerTrader>();
                 if (p != null && directWatts.ContainsKey(p)) continue;
                 if (p != null && l.target.Spawned && l.target.Map == map && p.PowerNet == null) p.PowerOn = RestorePrevious(p);
-                leases.RemoveAt(i);
+                RemoveLeaseAt(i);
             }
             restoring = false;
             foreach (var pair in directWatts)
             {
                 var p = pair.Key;
-                if (!HasLease(p)) leases.Add(new FieldPowerLease { target = p.parent, previous = p.PowerOn, previousWireless = p.parent.GetComp<Comp_NivarianWirelessPowerAdapter>()?.WirelessMode == true });
+                if (!HasLease(p)) AddLease(new FieldPowerLease { target = p.parent, previous = p.PowerOn, previousWireless = p.parent.GetComp<Comp_NivarianWirelessPowerAdapter>()?.WirelessMode == true });
                 p.PowerOn = true;
             }
             // Queries only mask lost field power. Emit native stop callbacks here, in
@@ -234,18 +286,20 @@ namespace NivarianCommander
                 var t = gridLeases[i]; var p = t?.GetComp<CompPowerTrader>();
                 // A projected transmitter may share the lamp network, but borrows
                 // power only from its original. Drop legacy leases without callbacks.
-                if (ProjectionRegistry.IsProjection(t)) { gridLeases.RemoveAt(i); continue; }
+                if (ProjectionRegistry.IsProjection(t)) { RemoveGridLeaseAt(i); continue; }
                 if (p != null && t.Spawned && t.Map == map && p.PowerNet != null && netWatts.ContainsKey(p.PowerNet)) continue;
                 if (p != null && t.Spawned && t.Map == map && GridSupplyLost(p)) p.PowerOn = false;
-                gridLeases.RemoveAt(i);
+                RemoveGridLeaseAt(i);
             }
             foreach (var net in netWatts.Keys)
                 foreach (var p in net.powerComps.OrderBy(p => p.parent.thingIDNumber))
-                    if (!ProjectionRegistry.IsProjection(p.parent) && p.Props.PowerConsumption > 0f && !gridLeases.Contains(p.parent)) gridLeases.Add(p.parent);
+                    if (!ProjectionRegistry.IsProjection(p.parent) && p.Props.PowerConsumption > 0f && gridLeaseIndex.Add(p.parent)) gridLeases.Add(p.parent);
             var ownedWireless = new List<ThingWithComps>();
             foreach (var p in directWatts.Keys.Concat(netWatts.Keys.SelectMany(n => n.powerComps)).OrderBy(p => p.parent.thingIDNumber))
                 if (p.PowerOutput < 0f && p.parent.GetComp<Comp_NivarianWirelessPowerAdapter>() != null && !NativeWireFunded(p) && !ownedWireless.Contains(p.parent)) ownedWireless.Add(p.parent);
             wirelessOverrides = ownedWireless;
+            wirelessIndex.Clear();
+            foreach (var target in wirelessOverrides) wirelessIndex.Add(target);
         }
         public void PreTick()
         {
@@ -292,7 +346,7 @@ namespace NivarianCommander
             Scribe_Collections.Look(ref gridLeases, "nmcFieldGridLeases", LookMode.Reference);
             Scribe_Collections.Look(ref wirelessOverrides, "nmcFieldWirelessOverrides", LookMode.Reference);
             Scribe_Values.Look(ref chargeClock, "nmcFieldChargeClock");
-            if (Scribe.mode == LoadSaveMode.PostLoadInit) { leases = leases ?? new List<FieldPowerLease>(); gridLeases = gridLeases ?? new List<ThingWithComps>(); wirelessOverrides = wirelessOverrides ?? new List<ThingWithComps>(); netWatts.Clear(); directWatts.Clear(); cacheRevision = -1; }
+            if (Scribe.mode == LoadSaveMode.PostLoadInit) { leases = leases ?? new List<FieldPowerLease>(); gridLeases = gridLeases ?? new List<ThingWithComps>(); wirelessOverrides = wirelessOverrides ?? new List<ThingWithComps>(); RebuildLeaseIndexes(); netWatts.Clear(); directWatts.Clear(); cacheRevision = -1; }
         }
         public override void MapComponentUpdate()
         {
@@ -302,31 +356,30 @@ namespace NivarianCommander
         public override void MapRemoved() => groundOverlay.Clear();
     }
     [HarmonyPatch(typeof(Map), nameof(Map.MapPreTick))]
-    public static class FieldChargingTick { static void Prefix(Map __instance) => __instance.GetComponent<FieldEnergy>().PreTick(); }
+    public static class FieldChargingTick { static void Prefix(Map __instance) => FieldEnergy.For(__instance).PreTick(); }
     [HarmonyPatch(typeof(Map), nameof(Map.MapPostTick))]
-    public static class FieldPowerTick { static void Prefix(Map __instance) => __instance.GetComponent<FieldEnergy>().Rebuild(); }
+    public static class FieldPowerTick { static void Prefix(Map __instance) => FieldEnergy.For(__instance).Rebuild(); }
     [HarmonyPatch(typeof(PowerNet), nameof(PowerNet.CurrentEnergyGainRate))]
     public static class FieldGridPower
     {
         [HarmonyPriority(Priority.Normal)]
-        static void Postfix(PowerNet __instance, ref float __result) => __result += __instance.Map.GetComponent<FieldEnergy>().NetWatts(__instance) * CompPower.WattsToWattDaysPerTick;
+        static void Postfix(PowerNet __instance, ref float __result) => __result += FieldEnergy.For(__instance.Map).NetWatts(__instance) * CompPower.WattsToWattDaysPerTick;
     }
     [HarmonyPatch(typeof(CompPowerTrader), nameof(CompPowerTrader.PowerOn), MethodType.Setter)]
     public static class FieldHoldOffGridPower
     {
         static bool Prefix(CompPowerTrader __instance, bool value)
-            => value || __instance.parent.Map == null || !__instance.parent.Map.GetComponent<FieldEnergy>().DirectGrant(__instance);
+            => value || FieldEnergy.For(__instance.parent.Map)?.DirectGrant(__instance) != true;
     }
     [HarmonyPatch(typeof(CompPowerTrader), nameof(CompPowerTrader.PowerOn), MethodType.Getter)]
     public static class FieldLogicalPower
     {
         static bool Prefix(CompPowerTrader __instance, ref bool __result)
         {
-            var energy = __instance.parent.Map?.GetComponent<FieldEnergy>();
-            if (energy == null) return true;
+            var energy = FieldEnergy.For(__instance.parent.Map);
+            if (energy == null || !energy.HasPowerLeases) return true;
             if (energy.GridSupplyLost(__instance)) { __result = false; return false; }
-            if (!energy.HasLease(__instance) || energy.DirectGrant(__instance)) return true;
-            if (__instance.PowerNet != null) return true;
+            if (__instance.PowerNet != null || !energy.HasLease(__instance) || energy.DirectGrant(__instance)) return true;
             __result = energy.RestorePrevious(__instance);
             return false;
         }
@@ -334,11 +387,11 @@ namespace NivarianCommander
     [HarmonyPatch]
     public static class FieldWirelessPowerOn
     {
-        static MethodBase TargetMethod() => AccessTools.Method(typeof(Nivarian_Race.Code.Patches.Patch_CompPowerTrader_PowerOnSetter_WirelessPower), "Prefix");
+        static MethodBase TargetMethod() => FieldWirelessTargets.Resolve("Patch_CompPowerTrader_PowerOnSetter_WirelessPower", "Prefix");
         static bool Prefix([HarmonyArgument(0)] CompPowerTrader trader, [HarmonyArgument(1)] bool value, ref bool __result)
         {
             if (!value) return true;
-            var energy = trader.parent.Map?.GetComponent<FieldEnergy>();
+            var energy = FieldEnergy.For(trader.parent.Map);
             // The native prefix normally requires the wireless gauge to fund startup.
             // A real field allocation is a second source, with the same native setter
             // and callbacks. Do not bypass the native guard for unfunded consumers.
@@ -354,7 +407,7 @@ namespace NivarianCommander
         static bool Prefix(Comp_NivarianWirelessPowerAdapter __instance, ref float __result)
         {
             var p = __instance.parent.GetComp<CompPowerTrader>();
-            if (__instance.parent.Map?.GetComponent<FieldEnergy>().OwnWirelessSupply(p) != true) return true;
+            if (FieldEnergy.For(__instance.parent.Map)?.OwnWirelessSupply(p) != true) return true;
             __result = 0f;
             return false;
         }
@@ -362,8 +415,8 @@ namespace NivarianCommander
     [HarmonyPatch]
     public static class FieldWirelessNetCredit
     {
-        static MethodBase TargetMethod() => AccessTools.Method(typeof(Nivarian_Race.Code.Patches.Patch_PowerNet_CurrentEnergyGainRate_WirelessPower), "Postfix");
-        public static bool CreditPowered(CompPowerTrader p) => p.PowerOn && p.parent.Map?.GetComponent<FieldEnergy>().OwnWirelessSupply(p) != true;
+        static MethodBase TargetMethod() => FieldWirelessTargets.Resolve("Patch_PowerNet_CurrentEnergyGainRate_WirelessPower", "Postfix");
+        public static bool CreditPowered(CompPowerTrader p) => p.PowerOn && FieldEnergy.For(p.parent.Map)?.OwnWirelessSupply(p) != true;
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
             int count = 0;
@@ -374,6 +427,16 @@ namespace NivarianCommander
                 yield return instruction;
             }
             if (count != 1) throw new InvalidOperationException("[NMC] Native wireless credit target changed: expected one PowerOn getter, found " + count);
+        }
+    }
+    static class FieldWirelessTargets
+    {
+        internal static MethodBase Resolve(string name, string method)
+        {
+            var type = AccessTools.TypeByName("Nivarian_Race.Code.Features.WirelessPower.Patches." + name)
+                ?? AccessTools.TypeByName("Nivarian_Race.Code.Patches." + name);
+            return AccessTools.Method(type, method)
+                ?? throw new MissingMethodException("[NMC] Native wireless target unresolved: " + name + "." + method);
         }
     }
 }

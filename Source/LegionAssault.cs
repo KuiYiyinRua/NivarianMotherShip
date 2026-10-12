@@ -27,7 +27,7 @@ namespace NivarianCommander
             if (marker.hero && TebrusStorm.CastJob(pawn) is Job storm) return storm;
             var target = pawn.Map.listerThings.AllThings.Where(t => t != pawn && t.Spawned && !t.Destroyed
                 && (t is Pawn || t is Building || marker.hero && t is Nivarian.NivarianDrones.NivarianDroneBase)
-                && (!(t is Pawn enemy) || !enemy.Dead) && t.HostileTo(pawn.Faction) && t.HostileTo(Faction.OfPlayer)
+                && (!(t is Pawn enemy) || !enemy.DeadOrDowned) && t.HostileTo(pawn.Faction) && t.HostileTo(Faction.OfPlayer)
                 && !SupportDiplomacy.Friendly(t) && !CommanderCloak.HiddenFrom(t, pawn)
                 && pawn.CanReach(t, PathEndMode.Touch, Danger.Deadly))
                 .OrderBy(t => t.Position.DistanceToSquared(pawn.Position)).ThenBy(t => t.thingIDNumber).FirstOrDefault();

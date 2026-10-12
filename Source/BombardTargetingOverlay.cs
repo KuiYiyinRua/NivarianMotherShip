@@ -19,7 +19,8 @@ namespace NivarianCommander
             var old = GUI.color;
             try
             {
-                GUI.color = new Color(1, 1, 1, .62f);
+                // Armor is opaque like CommanderHud; the texture alpha keeps the map viewport open.
+                GUI.color = Color.white;
                 GUI.DrawTexture(new Rect(2, 2, UI.screenWidth - 4, UI.screenHeight - 38), frame, ScaleMode.StretchToFill, true);
             }
             finally { GUI.color = old; }

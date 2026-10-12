@@ -18,7 +18,7 @@ inv[488]['zh']=inv[488]['zh'].replace(old,new)
 (root/'inventory.json').write_text(json.dumps(inv,ensure_ascii=False,indent=2),encoding='utf-8')
 active=set()
 for file in (mod/'Source').glob('*.cs'):
- active.update(re.findall(r'NmcText.Get\("(NMC_Text\d+)"',file.read_text(encoding='utf-8-sig')))
+ active.update(re.findall(r'"(NMC_(?:Text\d+|ResearchTask[A-Za-z]+|CarrierSteel[A-Za-z]+|Settings[A-Za-z]+))"',file.read_text(encoding='utf-8-sig')))
 rows={r['id']:r for r in inv}
 def save(path,items):
  path.parent.mkdir(parents=True,exist_ok=True)
@@ -39,7 +39,7 @@ for ix,locale in enumerate(locales):
   save(mod/folder/'Languages'/locale/'DefInjected'/typ/('NMC_'+folder.replace('.','_')+'.xml'),items)
  # Localized metadata for in-game tooling that reads standard keyed labels.
  save(mod/'1.6/Languages'/locale/'Keyed/ModInfo.xml',[
-  ('NMC_ModName',['涅瓦莲母舰指挥官拓展','Nivarian Mother Ship Expanded','Нивариан: расширение корабля-матки','ニヴァリアン母艦拡張','Extension du vaisseau-mère nivarian'][ix]),
+  ('NMC_ModName','Nivarian Race: MotherShip'),
   ('NMC_ModDescription',[
    '扩展涅瓦莲母舰的战术支援、生产和运输能力。包含19项支援、连续体任务、母舰商店、舰船与米莉拉星舰电池联动。精确友军识别通过独立研究解锁。',
    'Expands Nivarian mothership support, production and transport. Includes 19 supports, the Continuum campaign, points shop, ships and Milira battery upgrades. Precision ally recognition is unlocked by research.',
@@ -51,7 +51,6 @@ for ix,locale in enumerate(locales):
 p=mod/'About/About.xml'
 tree=ET.parse(p)
 tree.find('description').text='Nivarian mothership expansion for RimWorld 1.6. Includes 19 tactical supports, a Continuum campaign, a shared points shop, carrier and gravity ship, and optional Milira starship battery upgrades. Precision ally recognition unlocks through research. Languages: 简体中文 / English / Русский / 日本語 / Français.'
-tree.find('modVersion').text='0.9.6'
 ET.indent(tree,space='  ')
 tree.write(p,encoding='utf-8',xml_declaration=True)
 print(json.dumps({'languages':locales,'runtime_keys':len(active),'def_injections':len(defs),'unique_active_strings':len(active|{rows[d['id']]['key'] for d in defs})},ensure_ascii=False))

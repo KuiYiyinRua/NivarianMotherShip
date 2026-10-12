@@ -153,7 +153,7 @@ namespace NivarianCommander
         Pawn FindEnemy(PurificationBeam beam)
         {
             return map.mapPawns.AllPawnsSpawned
-                .Where(p => !p.Dead && !p.Destroyed && p.HostileTo(Faction.OfPlayer) &&
+                .Where(p => !p.DeadOrDowned && !p.Destroyed && p.HostileTo(Faction.OfPlayer) &&
                     p.Position.GetRoof(map)?.isThickRoof != true &&
                     (new Vector2(p.Position.x, p.Position.z) - beam.position).sqrMagnitude <= SearchRadius * SearchRadius)
                 .OrderBy(p => (new Vector2(p.Position.x, p.Position.z) - beam.position).sqrMagnitude)

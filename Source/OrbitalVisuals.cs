@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using UnityEngine;
 using Verse;
 
 namespace NivarianCommander
@@ -7,19 +6,31 @@ namespace NivarianCommander
     public sealed class OrbitalPulse : IExposable
     {
         public IntVec3 center;
-        public int remaining = 36;
+        public const int Lifetime = 240;
+        public int remaining = Lifetime;
+        public int duration = Lifetime;
         public OrbitalPulse() { }
         public OrbitalPulse(IntVec3 c) { center = c; }
-        public void ExposeData() { Scribe_Values.Look(ref center, "center"); Scribe_Values.Look(ref remaining, "remaining", 36); }
+        public void ExposeData()
+        {
+            Scribe_Values.Look(ref center, "center");
+            // Old saves have only remaining and used a 36-tick pulse.
+            Scribe_Values.Look(ref remaining, "remaining", 36);
+            Scribe_Values.Look(ref duration, "duration", 36);
+        }
     }
     // Saved, map-clock-driven presentation. Rendering never consumes simulation randomness.
     public sealed class OrbitalVisuals : MapComponent
     {
         List<OrbitalPulse> pulses = new List<OrbitalPulse>();
-        static Material outer, core, ring;
+        OrbitalStrikeRenderer renderer;
         public OrbitalVisuals(Map map) : base(map) { }
         public int Count => pulses.Count;
         public void Add(IntVec3 c) => pulses.Add(new OrbitalPulse(c));
+        internal void AddLegacySolar(IntVec3 c, int remaining)
+        {
+            if (remaining > 0) pulses.Add(new OrbitalPulse(c) { remaining = remaining, duration = 32 });
+        }
         public override void ExposeData()
         {
             Scribe_Collections.Look(ref pulses, "commanderOrbitalPulses", LookMode.Deep);
@@ -31,23 +42,13 @@ namespace NivarianCommander
         }
         public override void MapComponentUpdate()
         {
-            if (Find.CurrentMap != map || pulses.Count == 0) return;
-            if (outer == null)
+            if (!OrbitalStrikeRenderer.CanView(map) || pulses.Count == 0)
             {
-                outer = SolidColorMaterials.SimpleSolidColorMaterial(new Color(.15f, .65f, 1f, .38f), true);
-                core = SolidColorMaterials.SimpleSolidColorMaterial(new Color(.82f, .97f, 1f, .9f), true);
-                ring = SolidColorMaterials.SimpleSolidColorMaterial(new Color(.3f, .85f, 1f, .75f), true);
+                renderer?.Dispose(); renderer = null; return;
             }
-            foreach (var p in pulses)
-            {
-                float fade = Mathf.Clamp01(p.remaining / 12f);
-                var at = p.center.ToVector3Shifted(); at.y = AltitudeLayer.MetaOverlays.AltitudeFor();
-                var beam = at + new Vector3(0, 0, 13);
-                Graphics.DrawMesh(MeshPool.plane10, Matrix4x4.TRS(beam, Quaternion.identity, new Vector3(.85f * fade, 1, 26)), outer, 0);
-                beam.y += .01f;
-                Graphics.DrawMesh(MeshPool.plane10, Matrix4x4.TRS(beam, Quaternion.identity, new Vector3(.18f * fade, 1, 26)), core, 0);
-                GenDraw.DrawCircleOutline(at, 3f * (1f - p.remaining / 48f), ring);
-            }
+            if (renderer == null || renderer.Disposed) renderer = new OrbitalStrikeRenderer(map);
+            renderer.Draw(pulses);
         }
+        public override void MapRemoved() { renderer?.Dispose(); renderer = null; pulses.Clear(); }
     }
 }

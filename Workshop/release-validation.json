@@ -1,0 +1,27 @@
+{
+  "version": "0.9.8",
+  "author": "尹怨怨",
+  "workshop": "https://steamcommunity.com/sharedfiles/filedetails/?id=3817608894",
+  "github": "https://github.com/KuiYiyinRua/NivarianMotherShip",
+  "core": "1CB2DA9D50B36E720CEA84C821850D949BF93754956D86AB89BBC145B6EE4843",
+  "adapter": "552E48477C20B373C8F9752FFB1C8C07158342EB35ECB6079D7C9CDFDEFBCE45",
+  "build": "PASS: isolated core and Multiplayer builds, zero warnings/errors; five-language verification: 491 runtime keys and 308 definition fields.",
+  "source_authority": "Before the 0.9.8 change, the current complete sources rebuilt byte-for-byte to the integrated 0.9.7 core 9D71FBD6AE9F6EC159529094BF82C040771EA48F43AC7FF37FF315A70883AFFA and adapter E0041E9313C17FB523221C4F01B227BB000122073695D0EC495E25EE1656AE39.",
+  "multiplayer_previous_integrated_build": {
+    "status": "USER_STOPPED",
+    "core": "9D71FBD6AE9F6EC159529094BF82C040771EA48F43AC7FF37FF315A70883AFFA",
+    "adapter": "E0041E9313C17FB523221C4F01B227BB000122073695D0EC495E25EE1656AE39",
+    "shared_ticks_checked": 10006,
+    "players": 2,
+    "maps": 2,
+    "actual_nonhost_casts": 3,
+    "cancel_commands": 3,
+    "exact_state_rand_receipt_pairs": 8,
+    "observed_desync": false,
+    "scope": "Focused clean native Nivarian two-map loadout. First two casts cancelled; third naturally expired before empty cancel."
+  },
+  "changes_after_runtime": "Carrier interceptor manufacture now advances 10 work ticks per simulation tick during eligible S06; clamps remaining work to zero. Version metadata updated to 0.9.8. Reviewed and decompiled; no subsequent game test.",
+  "runtime_final_098": "UNVERIFIED_BY_USER_REQUEST: the user explicitly ended testing and authorized local/GitHub/Workshop deployment.",
+  "limits": "No new 120000-shared-tick S06 soak, cold rejoin, async-time regression, full 249-mod user-save test or exhaustive gameplay/layout test. Earlier feature-specific tests are historical evidence and do not prove final 0.9.8 runtime.",
+  "restart_required": "All peers must fully exit RimWorld and start the same updated mod version."
+}

@@ -87,7 +87,6 @@ namespace NivarianCommander
         List<SolarImpact> impacts = new List<SolarImpact>();
         public int lastCompletedShots;
         public int lastCompletedHash;
-        static Material beamOuter, beamCore, impactRing;
 
         public SolarBombardmentMap(Map map) : base(map) { }
         public int ActiveCount => salvos.Count;
@@ -116,7 +115,14 @@ namespace NivarianCommander
 
         public override void MapComponentTick()
         {
-            for (int i = impacts.Count - 1; i >= 0; i--) if (--impacts[i].remaining <= 0) impacts.RemoveAt(i);
+            // Retain the old serialized type, transferring its current phase once
+            // on a map tick. New solar shots use the shared orbital pulse list.
+            if (impacts.Count > 0)
+            {
+                var visuals = map.GetComponent<OrbitalVisuals>();
+                foreach (var impact in impacts) visuals.AddLegacySolar(impact.cell, impact.remaining);
+                impacts.Clear();
+            }
             for (int i = salvos.Count - 1; i >= 0; i--)
             {
                 var salvo = salvos[i];
@@ -156,34 +162,15 @@ namespace NivarianCommander
             IntVec3 impact = legalCells[(int)(sample % count)];
             salvo.fired++;
             salvo.sequenceHash = unchecked((salvo.sequenceHash * 31 + impact.x) * 31 + impact.z);
-            impacts.Add(new SolarImpact(impact));
             var damage = DefDatabase<DamageDef>.GetNamed("NMC_SolarBombEnergy");
-            GenExplosion.DoExplosion(impact, map, 5f, damage, null,
-                damAmount: damage.defaultDamage, armorPenetration: .30f, chanceToStartFire: 0f, damageFalloff: false,
-                applyDamageToExplosionCellsNeighbors: false);
+            OrbitalStrike.Execute(map, impact, damage, .30f);
             return true;
         }
 
         public override void MapComponentUpdate()
         {
-            if (Find.CurrentMap != map || (salvos.Count == 0 && impacts.Count == 0)) return;
-            if (beamOuter == null)
-            {
-                beamOuter = SolidColorMaterials.SimpleSolidColorMaterial(new Color(.13f, .65f, .9f, .32f), true);
-                beamCore = SolidColorMaterials.SimpleSolidColorMaterial(new Color(1f, .9f, .52f, .9f), true);
-                impactRing = SolidColorMaterials.SimpleSolidColorMaterial(new Color(.4f, .88f, 1f, .8f), true);
-            }
+            if (!OrbitalStrikeRenderer.CanView(map) || salvos.Count == 0) return;
             foreach (var salvo in salvos) GenDraw.DrawRadiusRing(salvo.center, 13f, new Color(.22f, .77f, .95f, .4f));
-            foreach (var pulse in impacts)
-            {
-                float fade = Mathf.Clamp01(pulse.remaining / 12f);
-                var at = pulse.cell.ToVector3Shifted(); at.y = AltitudeLayer.MetaOverlays.AltitudeFor();
-                var beam = at + new Vector3(0, 0, 13);
-                Graphics.DrawMesh(MeshPool.plane10, Matrix4x4.TRS(beam, Quaternion.identity, new Vector3(.8f * fade, 1, 26)), beamOuter, 0);
-                beam.y += .01f;
-                Graphics.DrawMesh(MeshPool.plane10, Matrix4x4.TRS(beam, Quaternion.identity, new Vector3(.16f * fade, 1, 26)), beamCore, 0);
-                GenDraw.DrawCircleOutline(at, 5f * (1f - pulse.remaining / 48f), impactRing);
-            }
         }
     }
 
@@ -191,7 +178,8 @@ namespace NivarianCommander
     {
         public override void ExplosionAffectCell(Explosion explosion, IntVec3 cell, List<Thing> damagedThings, List<Thing> ignoredThings, bool canThrowMotes)
         {
-            if (!cell.InBounds(explosion.Map) || cell.GetRoof(explosion.Map)?.isThickRoof == true) return;
+            if (!cell.InBounds(explosion.Map) || !OrbitalStrike.Contains(explosion.Position, cell)
+                || cell.GetRoof(explosion.Map)?.isThickRoof == true) return;
             int original = explosion.damAmount;
             try
             {

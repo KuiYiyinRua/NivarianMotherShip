@@ -41,7 +41,8 @@ namespace NivarianCommander
             if (core.GetCompProperties<CompProperties_UniversalContainer>() == null)
                 return NmcText.Get("NMC_Text0207");
             if (!typeof(Building_CommanderStructure).IsAssignableFrom(core.thingClass)
-                || !typeof(Building_CommanderStructure).IsAssignableFrom(construction.completedDef.thingClass)
+                || !(typeof(Building_CommanderStructure).IsAssignableFrom(construction.completedDef.thingClass)
+                    || typeof(Building_NutrientEnergyTower).IsAssignableFrom(construction.completedDef.thingClass))
                 || core.Size != construction.completedDef.Size || !core.useHitPoints || !core.leaveResourcesWhenKilled
                 || core.costList?.Count > 0)
                 return NmcText.Get("NMC_Text0208");

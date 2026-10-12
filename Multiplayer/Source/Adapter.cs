@@ -17,9 +17,15 @@ namespace NivarianCommander.MultiplayerAdapter
         static Bootstrap()
         {
             if (!MP.enabled) return;
+            CommanderResearchAccess.MultiplayerActive = () => MP.IsInMultiplayer;
+            MP.RegisterSyncMethod(typeof(CommanderResearchAccess), nameof(CommanderResearchAccess.SetEnabled));
             MP.RegisterSyncMethod(typeof(CommanderActions), nameof(CommanderActions.Fire), new SyncType[] { new SyncType(typeof(Map)) { contextMap = true }, typeof(IntVec3) });
             MP.RegisterSyncMethod(typeof(CommanderActions), nameof(CommanderActions.PurchaseProtection));
             var mapType = new SyncType(typeof(Map)) { contextMap = true };
+            MP.RegisterSyncMethod(typeof(NutrientTowerSupply), nameof(NutrientTowerSupply.SetTarget), new SyncType[] { mapType, typeof(Building_NutrientEnergyTower), typeof(float) }).CancelIfAnyArgNull();
+            MP.RegisterSyncMethod(typeof(NutrientTowerSupply), nameof(NutrientTowerSupply.SetAutoFill), new SyncType[] { mapType, typeof(Building_NutrientEnergyTower), typeof(bool) }).CancelIfAnyArgNull();
+            MP.RegisterSyncMethod(typeof(CarrierDragonSteelSupply), nameof(CarrierDragonSteelSupply.SetTarget), new SyncType[] { mapType, typeof(Building_NivarianAircraft), typeof(int) }).CancelIfAnyArgNull();
+            MP.RegisterSyncMethod(typeof(CarrierDragonSteelSupply), nameof(CarrierDragonSteelSupply.SetAutoFill), new SyncType[] { mapType, typeof(Building_NivarianAircraft), typeof(bool) }).CancelIfAnyArgNull();
             ContinuumWorldBridge.Install();
             MP.RegisterSyncMethod(typeof(ContinuumDebug), nameof(ContinuumDebug.Spawn)).SetDebugOnly();
             MP.RegisterSyncMethod(typeof(ContinuumDebug), nameof(ContinuumDebug.Complete)).SetDebugOnly();
@@ -27,7 +33,7 @@ namespace NivarianCommander.MultiplayerAdapter
             MP.RegisterSyncMethod(typeof(AircraftActions), nameof(AircraftActions.Takeoff), new SyncType[] { mapType, typeof(Building_NivarianAircraft) }).CancelIfAnyArgNull();
             MP.RegisterSyncMethod(typeof(AircraftStarshipUpgrade), nameof(AircraftStarshipUpgrade.Request), new SyncType[] { mapType, typeof(Building_NivarianAircraft) }).CancelIfAnyArgNull();
             MP.RegisterSyncMethod(typeof(AircraftActions), nameof(AircraftActions.Move), new SyncType[] { mapType, typeof(Building_NivarianAircraft), typeof(IntVec3) }).CancelIfAnyArgNull();
-            MP.RegisterSyncMethod(typeof(AircraftActions), nameof(AircraftActions.Land), new SyncType[] { mapType, typeof(Building_NivarianAircraft) }).CancelIfAnyArgNull();
+            MP.RegisterSyncMethod(typeof(AircraftActions), nameof(AircraftActions.Land), new SyncType[] { mapType, typeof(Building_NivarianAircraft), typeof(IntVec3), typeof(Rot4) }).CancelIfAnyArgNull();
             MP.RegisterSyncMethod(typeof(AircraftActions), nameof(AircraftActions.Recall), new SyncType[] { mapType, typeof(Building_NivarianAircraft) }).CancelIfAnyArgNull();
             MP.RegisterSyncMethod(typeof(AircraftActions), nameof(AircraftActions.Gravity), new SyncType[] { mapType, typeof(Building_NivarianAircraft), typeof(Thing) }).CancelIfAnyArgNull();
             MP.RegisterSyncMethod(typeof(AircraftActions), nameof(AircraftActions.ToggleManufacture), new SyncType[] { mapType, typeof(Building_NivarianAircraft) }).CancelIfAnyArgNull();

@@ -380,12 +380,6 @@
   {
     "folder": "1.6",
     "type": "NivarianCommander.CommanderAbilityDef",
-    "path": "NMC_S14.extraCost",
-    "id": 528
-  },
-  {
-    "folder": "1.6",
-    "type": "NivarianCommander.CommanderAbilityDef",
     "path": "NMC_S15.label",
     "id": 529
   },
@@ -410,12 +404,6 @@
   {
     "folder": "1.6",
     "type": "NivarianCommander.CommanderAbilityDef",
-    "path": "NMC_S15.extraCost",
-    "id": 528
-  },
-  {
-    "folder": "1.6",
-    "type": "NivarianCommander.CommanderAbilityDef",
     "path": "NMC_S16.label",
     "id": 532
   },
@@ -436,12 +424,6 @@
     "type": "NivarianCommander.CommanderAbilityDef",
     "path": "NMC_S16.researchLabel",
     "id": 534
-  },
-  {
-    "folder": "1.6",
-    "type": "NivarianCommander.CommanderAbilityDef",
-    "path": "NMC_S16.extraCost",
-    "id": 528
   },
   {
     "folder": "1.6",
@@ -1756,5 +1738,113 @@
     "type": "AbilityDef",
     "path": "NMC_TebrusStormNative.description",
     "id": 701
+  },
+  {
+    "folder": "1.6",
+    "type": "JobDef",
+    "path": "NMC_FillCarrierDragonSteel.reportString",
+    "id": 727
+  },
+  {
+    "folder": "1.6",
+    "type": "WorkGiverDef",
+    "path": "NMC_RefillCarrierDragonSteel.label",
+    "id": 728
+  },
+  {
+    "folder": "1.6",
+    "type": "WorkGiverDef",
+    "path": "NMC_RefillCarrierDragonSteel.verb",
+    "id": 729
+  },
+  {
+    "folder": "1.6",
+    "type": "WorkGiverDef",
+    "path": "NMC_RefillCarrierDragonSteel.gerund",
+    "id": 730
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_WarshipArmor1.label",
+    "id": 731
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_WarshipArmor1.description",
+    "id": 732
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_WarshipArmor2.label",
+    "id": 733
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_WarshipArmor2.description",
+    "id": 734
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_WarshipArmor3.label",
+    "id": 735
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_WarshipArmor3.description",
+    "id": 736
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_WarshipWeapon1.label",
+    "id": 737
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_WarshipWeapon1.description",
+    "id": 738
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_WarshipWeapon2.label",
+    "id": 739
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_WarshipWeapon2.description",
+    "id": 740
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_WarshipWeapon3.label",
+    "id": 741
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_WarshipWeapon3.description",
+    "id": 742
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_CarrierHangarExpansion.label",
+    "id": 743
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_CarrierHangarExpansion.description",
+    "id": 744
   }
 ]

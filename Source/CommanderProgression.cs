@@ -25,6 +25,7 @@ namespace NivarianCommander
         public static bool IsLegacy(ResearchProjectDef def) => def != null && Legacy.Any(n => def.defName == "NMC_" + n);
         public static string ResearchBlocked(ResearchProjectDef def)
         {
+            if (CommanderResearchAccess.Current?.enabled == true) return null;
             int stage = def?.GetModExtension<CommanderResearchExtension>()?.requiredStage ?? 0;
             return CampaignEnabled && stage > (ContinuumCampaign.Current?.completedStage ?? 0)
                 ? NmcText.Get("NMC_Text0198", stage, ContinuumCampaign.StageNames[stage - 1]) : null;

@@ -1,18 +1,23 @@
 <Defs>
   <ThingDef ParentName="BuildingBase">
     <defName>NMC_VoidSuppressionCrystal</defName><label>虚空抑制晶体</label>
-    <description>母舰临时投下的控制装置。半径13格内，敌人的移动和攻击速度降至平时的30%，敌方炮塔停止射击。离开影响范围即可恢复，多个晶体不会进一步叠加抑制效果。
+    <description>母舰临时投下的控制装置。半径18格内，敌人的移动和攻击速度降至平时的30%，敌方炮塔停止射击。离开影响范围即可恢复，多个晶体不会进一步叠加抑制效果。
 
-晶体不会被攻击摧毁，30秒后自行消散，也可由指挥官提前撤回。</description>
+晶体不会被攻击摧毁，30秒后自行消散，也可由指挥官提前撤回。
+
+晶体不占用地面空间，不阻挡移动，可在任意地形部署，并可与建筑、单位、物品及植物重叠。</description>
     <thingClass>NivarianCommander.Building_VoidCrystal</thingClass>
     <category>Building</category><size>(1,1)</size><rotatable>false</rotatable>
     <tickerType>Never</tickerType><useHitPoints>false</useHitPoints><destroyable>true</destroyable>
     <selectable>true</selectable><drawerType>MapMeshOnly</drawerType><altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability><fillPercent>0.1</fillPercent>
+    <passability>Standable</passability><fillPercent>0</fillPercent><pathCost>0</pathCost>
+    <terrainAffordanceNeeded IsNull="True"/><canOverlapZones>true</canOverlapZones>
+    <blockPlants>false</blockPlants><wipesPlants>false</wipesPlants><blockWind>false</blockWind>
+    <castEdgeShadows>false</castEdgeShadows><staticSunShadowHeight>0</staticSunShadowHeight>
     <scatterableOnMapGen>false</scatterableOnMapGen><leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <noRightClickDraftAttack>true</noRightClickDraftAttack><filthLeaving IsNull="True" />
     <statBases><Flammability>0</Flammability><WorkToBuild>0</WorkToBuild></statBases>
-    <graphicData><texPath>NMC/Buildings/void_crystal</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.6,1.6)</drawSize><shaderType>Cutout</shaderType></graphicData>
-    <building><isTargetable>false</isTargetable><deconstructible>false</deconstructible><claimable>false</claimable><displayAttackToDestroyOnInspectPane>false</displayAttackToDestroyOnInspectPane></building>
+    <graphicData><texPath>NMC/Buildings/void_stasis_crystal</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(3,3)</drawSize><shaderType>Cutout</shaderType><shadowData IsNull="True"/></graphicData>
+    <building><isEdifice>false</isEdifice><isTargetable>false</isTargetable><deconstructible>false</deconstructible><claimable>false</claimable><displayAttackToDestroyOnInspectPane>false</displayAttackToDestroyOnInspectPane></building>
   </ThingDef>
 </Defs>

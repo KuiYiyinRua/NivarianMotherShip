@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using HarmonyLib;
 using Nivarian_Race.Code.Comps.ThingComps;
 using RimWorld;
@@ -38,22 +39,47 @@ namespace NivarianCommander
         public List<ProjectionLink> links = new List<ProjectionLink>();
         readonly Dictionary<Thing, ProjectionLink> bySource = new Dictionary<Thing, ProjectionLink>();
         readonly Dictionary<Thing, ProjectionLink> byProjection = new Dictionary<Thing, ProjectionLink>();
+        readonly Dictionary<Map, List<ProjectionLink>> byTargetMap = new Dictionary<Map, List<ProjectionLink>>();
+        // Weak identity indexes keep ordinary Things out of world-component scans.
+        // A positive lookup still verifies the current world, including during load.
+        sealed class IndexedLink
+        {
+            internal readonly ProjectionRegistry owner;
+            internal readonly ProjectionLink link;
+            internal IndexedLink(ProjectionRegistry owner, ProjectionLink link) { this.owner = owner; this.link = link; }
+        }
+        static readonly ConditionalWeakTable<World, ProjectionRegistry> worlds = new ConditionalWeakTable<World, ProjectionRegistry>();
+        static readonly ConditionalWeakTable<Thing, IndexedLink> sources = new ConditionalWeakTable<Thing, IndexedLink>();
+        static readonly ConditionalWeakTable<Thing, IndexedLink> projections = new ConditionalWeakTable<Thing, IndexedLink>();
+        readonly World ownerWorld;
         bool loadValidationPending;
         static readonly System.Reflection.FieldInfo Gun = AccessTools.Field(typeof(Building_TurretGun), "gun");
         static readonly System.Reflection.FieldInfo AttachedGun = AccessTools.Field(typeof(CompAttachTurret), "_mainWeapon");
-        public ProjectionRegistry(World world) : base(world) { }
-        public static ProjectionRegistry Current => Find.World?.GetComponent<ProjectionRegistry>();
+        public ProjectionRegistry(World world) : base(world)
+        { ownerWorld = world; if (world != null) { worlds.Remove(world); worlds.Add(world, this); } }
+        public static ProjectionRegistry Current
+        {
+            get
+            {
+                var world = Find.World;
+                return world == null ? null : worlds.TryGetValue(world, out var registry) ? registry : world.GetComponent<ProjectionRegistry>();
+            }
+        }
         public static ProjectionLink Projected(Thing thing)
-            => thing != null && Current != null && Current.byProjection.TryGetValue(thing, out var link) ? link : null;
+            => thing != null && projections.TryGetValue(thing, out var entry) && entry.owner.ownerWorld == Find.World ? entry.link : null;
         public static ProjectionLink Source(Thing thing)
-            => thing != null && Current != null && Current.bySource.TryGetValue(thing, out var link) ? link : null;
-        public static bool IsProjection(Thing thing) => Projected(thing) != null;
+            => thing != null && sources.TryGetValue(thing, out var entry) && entry.owner.ownerWorld == Find.World ? entry.link : null;
+        public static bool IsProjection(Thing thing)
+            => thing != null && projections.TryGetValue(thing, out var entry) && entry.owner.ownerWorld == Find.World;
         public static bool BlocksFire(Thing thing)
         {
             if (Source(thing) is ProjectionLink original && !original.retiring) return true;
             var link = Projected(thing);
             return link != null && (link.retiring || link.remaining > 3600 || !ValidSource(link));
         }
+        internal static bool BlocksKnownProjection(Thing thing, ProjectionLink link)
+            => link.retiring || link.remaining > 3600 || !ValidSource(link)
+                || (Source(thing) is ProjectionLink original && !original.retiring);
         public static bool ValidSource(ProjectionLink link)
             => link.source?.Spawned == true && !link.source.Destroyed && link.source.Map == link.sourceMap
                 && link.source.Faction == Faction.OfPlayer && Find.Maps.Contains(link.sourceMap);
@@ -68,23 +94,45 @@ namespace NivarianCommander
                     if (comp is CompAttachTurret attached) result.Add(Weapon(attached));
             return result;
         }
-        public static Thing Weapon(Thing thing) => Weapons(thing).FirstOrDefault();
+        public static Thing Weapon(Thing thing) => WeaponAt(thing, 0);
         public static Thing Weapon(CompAttachTurret attached) => AttachedGun.GetValue(attached) as Thing;
+        static Thing WeaponAt(Thing thing, int slot)
+        {
+            if (thing is Building_TurretGun turret)
+            { if (slot == 0) return Gun.GetValue(turret) as Thing; slot--; }
+            if (thing is ThingWithComps holder)
+                foreach (var comp in holder.AllComps)
+                    if (comp is CompAttachTurret attached && slot-- == 0) return Weapon(attached);
+            return null;
+        }
+        static int WeaponSlot(Thing thing, Thing gun)
+        {
+            int slot = 0;
+            if (thing is Building_TurretGun turret)
+            { if (Gun.GetValue(turret) == gun) return slot; slot++; }
+            if (thing is ThingWithComps holder)
+                foreach (var comp in holder.AllComps)
+                    if (comp is CompAttachTurret attached)
+                    { if (Weapon(attached) == gun) return slot; slot++; }
+            return -1;
+        }
         static Thing CorrespondingWeapon(ProjectionLink link, Thing copyGun)
         {
-            var copies = Weapons(link.projection); int index = copies.IndexOf(copyGun);
+            int index = WeaponSlot(link.projection, copyGun);
             if (index < 0) return null;
-            var originals = Weapons(link.source);
-            if (index >= originals.Count || originals[index] == null || originals[index].def != copyGun.def)
+            var original = WeaponAt(link.source, index);
+            if (original == null || original.def != copyGun.def)
                 throw new InvalidOperationException("[NMC S19] Projection weapon slot has no matching source");
-            return originals[index];
+            return original;
         }
         public static Thing ResourceSource(Thing parent)
         {
             var direct = Projected(parent);
             if (direct != null) return direct.source;
-            if (parent == null || Current == null) return null;
-            foreach (var link in Current.links)
+            if (parent == null) return null;
+            var registry = Current;
+            if (registry == null || registry.links.Count == 0) return null;
+            foreach (var link in registry.links)
             {
                 var sourceGun = CorrespondingWeapon(link, parent);
                 if (sourceGun != null) return sourceGun;
@@ -92,7 +140,15 @@ namespace NivarianCommander
             return null;
         }
         public static Map ResourceMap(Thing source)
-            => Source(source)?.sourceMap ?? Current?.links.FirstOrDefault(l => Weapons(l.source).Contains(source))?.sourceMap;
+        {
+            var direct = Source(source);
+            if (direct?.sourceMap != null) return direct.sourceMap;
+            var registry = Current;
+            if (registry != null)
+                foreach (var link in registry.links)
+                    if (WeaponSlot(link.source, source) >= 0) return link.sourceMap;
+            return null;
+        }
         public static bool Eligible(Thing thing)
         {
             if (!(thing is Building) || !thing.Spawned || thing.Destroyed || thing.Faction != Faction.OfPlayer
@@ -107,6 +163,22 @@ namespace NivarianCommander
         public void Add(ProjectionLink link)
         {
             links.Add(link); bySource.Add(link.source, link); byProjection.Add(link.projection, link);
+            Index(link);
+        }
+        void Index(ProjectionLink link)
+        {
+            sources.Remove(link.source); sources.Add(link.source, new IndexedLink(this, link));
+            projections.Remove(link.projection); projections.Add(link.projection, new IndexedLink(this, link));
+            if (link.targetMap == null) return;
+            if (!byTargetMap.TryGetValue(link.targetMap, out var bucket)) byTargetMap.Add(link.targetMap, bucket = new List<ProjectionLink>());
+            bucket.Add(link);
+        }
+        void Unindex(ProjectionLink link)
+        {
+            if (link.source != null && sources.TryGetValue(link.source, out var source) && source.owner == this && source.link == link) sources.Remove(link.source);
+            if (link.projection != null && projections.TryGetValue(link.projection, out var copy) && copy.owner == this && copy.link == link) projections.Remove(link.projection);
+            if (link.targetMap != null && byTargetMap.TryGetValue(link.targetMap, out var bucket))
+            { bucket.Remove(link); if (bucket.Count == 0) byTargetMap.Remove(link.targetMap); }
         }
         public void Retire(ProjectionLink link, bool destroyProjection = true)
         {
@@ -123,6 +195,7 @@ namespace NivarianCommander
             finally
             {
                 bySource.Remove(link.source); byProjection.Remove(link.projection); links.Remove(link);
+                Unindex(link);
             }
         }
         public void RemoveThing(Thing thing)
@@ -138,7 +211,9 @@ namespace NivarianCommander
         }
         public void Tick(Map map)
         {
-            foreach (var link in links.Where(l => l.targetMap == map).ToArray())
+            if (!byTargetMap.TryGetValue(map, out var bucket)) return;
+            // Native destruction can retire another link. Retain snapshot order.
+            foreach (var link in bucket.ToArray())
             {
                 if (!ValidSource(link) || link.projection?.Spawned != true || link.projection.Destroyed || link.projection.Map != map)
                 { Retire(link); continue; }
@@ -154,12 +229,15 @@ namespace NivarianCommander
             registered = registered ?? new List<Thing>(); links = links ?? new List<ProjectionLink>();
             // Scribe PostLoadInit resolves identities before Map.FinalizeLoading
             // spawns buildings. Rebuild indexes now; validate Spawned only later.
-            loadValidationPending = true; bySource.Clear(); byProjection.Clear();
+            loadValidationPending = true;
+            foreach (var oldLink in byProjection.Values) Unindex(oldLink);
+            bySource.Clear(); byProjection.Clear(); byTargetMap.Clear();
             foreach (var link in links.ToArray())
             {
                 if (link.source == null || link.projection == null || bySource.ContainsKey(link.source) || byProjection.ContainsKey(link.projection))
                     throw new InvalidOperationException("[NMC S19] Invalid saved projection identity");
                 bySource.Add(link.source, link); byProjection.Add(link.projection, link);
+                Index(link);
             }
         }
         public void FinalizeAfterLoad()
@@ -173,6 +251,16 @@ namespace NivarianCommander
                 if (!ValidSource(link) || link.projection.Destroyed || !link.projection.Spawned
                     || link.projection.Map != link.targetMap || link.remaining <= 0) Retire(link);
         }
+        internal void Draw(Map map)
+        {
+            if (!byTargetMap.TryGetValue(map, out var bucket)) return;
+            foreach (var link in bucket)
+                if (link.projection?.Spawned == true && !link.retiring)
+                {
+                    GenDraw.DrawRadiusRing(link.projection.Position, link.remaining > 3600 ? 2.1f : 1.6f, Color.cyan);
+                    ProjectionPowerOverlay.Refresh(link);
+                }
+        }
     }
     public sealed class ProjectionMapClock : MapComponent
     {
@@ -181,13 +269,7 @@ namespace NivarianCommander
         public override void MapRemoved() => ProjectionRegistry.Current.RemoveMap(map);
         public override void MapComponentUpdate()
         {
-            if (Find.CurrentMap != map || ProjectionRegistry.Current == null) return;
-            foreach (var link in ProjectionRegistry.Current.links)
-                if (link.targetMap == map && link.projection?.Spawned == true && !link.retiring)
-                {
-                    GenDraw.DrawRadiusRing(link.projection.Position, link.remaining > 3600 ? 2.1f : 1.6f, Color.cyan);
-                    ProjectionPowerOverlay.Refresh(link);
-                }
+            if (Find.CurrentMap == map) ProjectionRegistry.Current?.Draw(map);
         }
     }
     public static class ProjectionActions

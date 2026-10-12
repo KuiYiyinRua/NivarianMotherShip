@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
   <NMC_Carrier.label>Nivarian carrier</NMC_Carrier.label>
-  <NMC_Carrier.description>A heavy Nivarian carrier with 5,000 HP and 10,000 kg cargo capacity. It has no direct weapons and fights using interceptors.
+  <NMC_Carrier.description>A heavy Nivarian carrier with 2,500 HP and 10,000 kg cargo capacity. It has no direct weapons and fights using interceptors.
 
-Load dragonfrost steel as cargo to fill a 1,000-unit production reserve. Each interceptor costs 10 steel and takes 15 seconds, whether landed or flying. Hangar and deployed aircraft total at most 8, each with 150 HP.
+Set the desired amount in the dedicated “Dragonfrost steel reserve” panel. Colonists haul and refill the carrier while it is grounded, up to 1,000 units. Dragonfrost steel in the transport hold is not automatically used for manufacturing.Each interceptor costs 10 dragonfrost steel and takes 5 seconds to build, both on the ground and in flight. The hangar and deployed interceptors together are limited to 6; each interceptor has 125 hit points.
 
 In aerial combat, detects enemies within 60 cells and launches one interceptor per second. Interceptors return beyond 80 cells from their carrier. Landing orders stop launches and recall all aircraft.
 
@@ -15,9 +15,9 @@ With Milira Race enabled, choose “Upgrade starship propulsion” while landed.
   <NMC_GravityFrigate.label>Nivarian gravity ship</NMC_GravityFrigate.label>
   <NMC_GravityFrigate.description>A Nivarian anti-air ship with light transport capability. Footprint 3×3, 600 HP, cargo capacity 300 kg.
 
-While airborne, fires twin prism lasers at airborne enemies within 16 cells, once per second. Each beam deals 12 base damage, penetrates 50% armor and deals triple damage to buildings, without freezing. Cannot directly target ground enemies.
+While airborne, fires twin prism lasers at airborne enemies within 16 cells, once per second. Each beam deals 6 base damage, penetrates 50% armor and deals triple damage to buildings, without freezing. Cannot directly target ground enemies.
 
-The gravity beam lifts and stuns a ground enemy within 16 cells for 5 seconds, making it a valid laser target. No extra resource cost; cooldown 8 seconds. Manual or automatic use.
+The gravity beam lifts and stuns a ground enemy within 16 cells for 4 seconds, making it a valid laser target. No extra resource cost; cooldown 8 seconds. Manual or automatic use.
 
 Stores 600 chemfuel. Local flight consumes 1 every 5 seconds. World travel costs half a shuttle's fuel; range is fuel-limited. No extra takeoff cooldown; unroofed launch and clear landing space required.
 
@@ -25,7 +25,7 @@ With Milira Race enabled, landed ships can upgrade propulsion. Colonists install
   <NMC_GravityFrigateIncoming.label>Nivarian gravity ship (landing)</NMC_GravityFrigateIncoming.label>
   <NMC_GravityFrigateLeaving.label>Nivarian gravity ship (takeoff)</NMC_GravityFrigateLeaving.label>
   <NMC_CarrierInterceptor.label>Nivarian interceptor</NMC_CarrierInterceptor.label>
-  <NMC_CarrierInterceptor.description>An unmanned interceptor built and controlled by a Nivarian carrier. Automatically attacks with light ammunition. 150 HP.
+  <NMC_CarrierInterceptor.description>An unmanned interceptor built and controlled by a Nivarian carrier. Automatically attacks with light ammunition. 125 HP.
 
 Launches only while the carrier is in aerial combat. Returns beyond 80 cells from its carrier or on recall and landing orders. Depends on its carrier and cannot transport independently.</NMC_CarrierInterceptor.description>
   <NMC_InterceptorFallbackRound.label>Interceptor light round</NMC_InterceptorFallbackRound.label>
@@ -35,11 +35,11 @@ Launches only while the carrier is in aerial combat. Returns beyond 80 cells fro
   <NMC_ContinuumPowerCore.description>Powers the base's defenses. Destroying it cuts the connected grid and disables turrets that depend on it.</NMC_ContinuumPowerCore.description>
   <NMC_OverloadBolt.label>Overload energy round</NMC_OverloadBolt.label>
   <NMC_TacticalMothership.label>Tactical mothership</NMC_TacticalMothership.label>
-  <NMC_TacticalMothership.description>The support fleet's tactical mothership suppresses ground enemies with lasers and energy shells. Fires a laser each second for 15 base damage and a shell every 2 seconds for 20 base blast damage, especially effective against buildings.
+  <NMC_TacticalMothership.description>The support fleet's tactical mothership suppresses ground enemies with lasers and energy shells. Fires a laser each second for 9 base damage and a shell every 2 seconds for 12 base blast damage, especially effective against buildings.
 
 Fights automatically in flight and can be hit by ranged and explosive attacks. Losing this temporary support ship does not affect the orbital mothership's resources. Leaves when support ends.</NMC_TacticalMothership.description>
   <NMC_FleetDestroyer.label>Fleet destroyer</NMC_FleetDestroyer.label>
-  <NMC_FleetDestroyer.description>An automatic escort destroyer. Its prism beam deals damage every 0.5 seconds, starting at 4 and increasing with successive hits on the same target. Changing targets or losing lock resets it.
+  <NMC_FleetDestroyer.description>An automatic escort destroyer. Its prism beam deals damage every 0.5 seconds, starting at 2.4 and increasing with successive hits on the same target. Changing targets or losing lock resets it.
 
 The beam does not freeze. The ship finds enemies automatically and leaves after its support duration.</NMC_FleetDestroyer.description>
   <NMC_FleetMothershipGun.label>Mothership energy cannon</NMC_FleetMothershipGun.label>
@@ -64,12 +64,12 @@ On the wearer's death, exclusive gear still carried is destroyed; separated gear
   <NMC_GhostHelmet.label>Nivarian ghost circlet</NMC_GhostHelmet.label>
   <NMC_GhostHelmet.description>An open protective circlet matching ghost armor. Preserves facial visibility and protects the head against sharp, blunt and heat damage. Exclusive shadow guard gear.</NMC_GhostHelmet.description>
   <NMC_VoidRay.label>Glowship</NMC_VoidRay.label>
-  <NMC_VoidRay.description>Zoraya's escort ship, firing freezing prism beams. Hits every 0.5 seconds, starting at 4 damage and increasing on successive hits to one target. Losing lock or switching targets resets the beam.
+  <NMC_VoidRay.description>Zoraya's escort ship, firing freezing prism beams. Hits every 0.5 seconds, starting at 2.4 damage and increasing on successive hits to one target. Losing lock or switching targets resets the beam.
 
 Targets automatically, useful for sustained pressure on tough enemies. Leaves with the legion.</NMC_VoidRay.description>
   <NMC_VoidRayGun.label>Glowship beam</NMC_VoidRayGun.label>
   <NMC_Zoraya.label>Zoraya</NMC_Zoraya.label>
-  <NMC_Zoraya.description>Zoraya's command ship with a stronger prism beam. Hits every 0.5 seconds, starting at 8 damage with freezing. Repeated hits on one target increase damage; switching or losing lock resets it.
+  <NMC_Zoraya.description>Zoraya's command ship with a stronger prism beam. Hits every 0.5 seconds, starting at 4.8 damage with freezing. Repeated hits on one target increase damage; switching or losing lock resets it.
 
 Fights alongside escorts and withdraws with them.</NMC_Zoraya.description>
   <NMC_ZorayaRayGun.label>Zoraya glowbeam</NMC_ZorayaRayGun.label>
@@ -93,13 +93,15 @@ Cancelling returns delivered materials, but not deployment energy or cooldown.</
 
 Cancelling returns delivered materials, but not deployment energy or cooldown.</NMC_MonolithCore.description>
   <NMC_ShadowEnergyTower.label>Nivarian shadow energy tower</NMC_ShadowEnergyTower.label>
-  <NMC_ShadowEnergyTower.description>Built from a shadow core. Each tower sends 120 P and 80 V daily and cloaks allies within 7 cells. Attacks and damage do not end cloaking, but detection works.
+  <NMC_ShadowEnergyTower.description>A nutrient-fed energy facility with ghost-green resonant crystals, occupying 2×2 cells. Generates 1400 W; P output and nutrition consumption are twice those of the Nivarian energy tower. Colonists deliver allowed food. Adjust supplies in the Nutrition tab.
 
-The tower does not cloak itself and needs other defenses. Multiple towers produce independently.</NMC_ShadowEnergyTower.description>
+While operating, cloaks allies within 7 cells. Insufficient nutrition, switching off or interrupted operation stops electricity, P production and cloaking together; replenishing nutrition restores operation. Attacks and damage do not break cloaking, but detection still works.
+
+The tower does not cloak itself and needs other defenses.</NMC_ShadowEnergyTower.description>
   <NMC_HyperdimensionalMonolith.label>Hyperdimensional monolith</NMC_HyperdimensionalMonolith.label>
   <NMC_HyperdimensionalMonolith.description>A large defense structure that delays enemies with a hyperdimensional control array. Range 60; every 2 seconds, hits up to 10 enemies for 3 base damage and a 1-second stun each.
 
-Requires grid connection and 1,000 W continuously, no ammunition. Spacetime fluctuation increases firing speed to ×5.</NMC_HyperdimensionalMonolith.description>
+Requires grid connection and 1,000 W continuously, no ammunition. Spacetime fluctuation increases firing speed to ×3.</NMC_HyperdimensionalMonolith.description>
   <NMC_TebrusRobe.label>Tebrus psionic robes</NMC_TebrusRobe.label>
   <NMC_TebrusRobe.description>Tebrus's cyan-white gown, woven with psionic patterns that strongly protect against sharp, blunt and heat damage.
 
@@ -120,9 +122,11 @@ Exclusive legion gear. Cannot be sold or smelted; recovered after support.</NMC_
 Exclusive legion gear, recovered after support.</NMC_TebrusPulseGun.description>
   <NMC_TebrusPulseGun.tools.0.label>Grip</NMC_TebrusPulseGun.tools.0.label>
   <NMC_VoidSuppressionCrystal.label>Void suppression crystal</NMC_VoidSuppressionCrystal.label>
-  <NMC_VoidSuppressionCrystal.description>A temporary control device from the mothership. Within 13 cells, enemies' movement and attack speeds fall to 30% and turrets stop firing. Leaving range restores them; multiple crystals do not stack.
+  <NMC_VoidSuppressionCrystal.description>A temporary control device from the mothership. Within 18 cells, enemies' movement and attack speeds fall to 30% and turrets stop firing. Leaving range restores them; multiple crystals do not stack.
 
-Cannot be destroyed by attacks. Dissipates after 30 seconds or can be recalled early.</NMC_VoidSuppressionCrystal.description>
+Cannot be destroyed by attacks. Dissipates after 30 seconds or can be recalled early.
+
+The crystal occupies no ground space and does not block movement. It can be deployed on any terrain and overlap buildings, units, items and plants.</NMC_VoidSuppressionCrystal.description>
   <NMC_NutrientEnergyTower.label>Nivarian energy tower</NMC_NutrientEnergyTower.label>
   <NMC_NutrientEnergyTower.description>Nutrient-fed resonant crystals continuously supply P points to the mothership and up to 700 W to the colony grid. Regular food replenishment is required.
 

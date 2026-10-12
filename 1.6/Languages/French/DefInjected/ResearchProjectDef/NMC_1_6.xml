@@ -79,13 +79,13 @@ Livrez les matériaux et terminez la recherche au terminal de liaison montante. 
 
 Si la campagne du Continuum est active, terminez d’abord l’étape 3 (« Légion expéditionnaire ») pour obtenir les données.</NMC_Support14.description>
   <NMC_Support15.label>Protocole de la légion de Zoraya</NMC_Support15.label>
-  <NMC_Support15.description>Contacte la légion de Zoraya pour appeler le vaisseau de commandement et quatre vaisseaux lumineux. Outre l'énergie, argent ou or à portée de balise requis.
+  <NMC_Support15.description>Contacte la légion de Zoraya pour appeler le vaisseau de commandement et quatre vaisseaux lumineux. Le soutien de la légion coûte uniquement des P et des V.
 
 Livrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 3 du vaisseau-mère requis.
 
 Si la campagne du Continuum est active, terminez d’abord l’étape 3 (« Légion expéditionnaire ») pour obtenir les données.</NMC_Support15.description>
   <NMC_Support16.label>Protocole de la légion de Seydas</NMC_Support16.label>
-  <NMC_Support16.description>Contacte Seydas et trois archontes noirs pour convertir les ennemis par contrôle mental. Outre l'énergie, argent ou or à portée de balise requis.
+  <NMC_Support16.description>Contacte Seydas et trois archontes noirs pour convertir les ennemis par contrôle mental. Le soutien de la légion coûte uniquement des P et des V.
 
 Livrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 3 du vaisseau-mère requis.
 
@@ -117,7 +117,7 @@ Capacité 300 kg, combat local en vol et voyages au carburant chimique.</NMC_Gra
   <NMC_CarrierResearch.label>Porte-aéronefs nivarian</NMC_CarrierResearch.label>
   <NMC_CarrierResearch.description>Débloque les porte-aéronefs nivarians. Sans armes directes, ils combattent avec leurs intercepteurs depuis l'arrière du front.
 
-Capacité 10 000 kg, jusqu'à 8 appareils fabriqués avec de l'acier dracogivré. Construction coûteuse, besoins continus en carburant et matériaux.</NMC_CarrierResearch.description>
+Capacité 10 000 kg, jusqu'à 6 appareils fabriqués avec de l'acier dracogivré. Construction coûteuse, besoins continus en carburant et matériaux.</NMC_CarrierResearch.description>
   <NMC_TacticalProtocol.label>Protocole de soutien tactique</NMC_TacticalProtocol.label>
   <NMC_TacticalProtocol.description>Protocole de soutien tactique du commandant. Livrez les matériaux et terminez la recherche au terminal de liaison montante nivarian.</NMC_TacticalProtocol.description>
   <NMC_LightWeapons.label>Réseau d'armes lumineuses</NMC_LightWeapons.label>
@@ -132,4 +132,18 @@ Capacité 10 000 kg, jusqu'à 8 appareils fabriqués avec de l'acier dracogivré
   <NMC_HigherDimensions.description>Ingénierie des dimensions supérieures du commandant. Livrez les matériaux et terminez la recherche au terminal nivarian.</NMC_HigherDimensions.description>
   <NMC_FleetBeacon.label>Protocole de balise de distorsion de flotte</NMC_FleetBeacon.label>
   <NMC_FleetBeacon.description>Protocole de balise de flotte du commandant. Livrez les matériaux et terminez la recherche au terminal nivarian.</NMC_FleetBeacon.description>
+  <NMC_WarshipArmor1.label>Blindage des vaisseaux nivarians Ⅰ</NMC_WarshipArmor1.label>
+  <NMC_WarshipArmor1.description>Renforce les coques des vaisseaux, intercepteurs et renforts nivarians. Chaque palier ajoute 20% des PV maximaux de base, soit +20% au total. Le pourcentage de PV actuel est conservé.</NMC_WarshipArmor1.description>
+  <NMC_WarshipArmor2.label>Blindage des vaisseaux nivarians Ⅱ</NMC_WarshipArmor2.label>
+  <NMC_WarshipArmor2.description>Renforce les coques des vaisseaux, intercepteurs et renforts nivarians. Chaque palier ajoute 20% des PV maximaux de base, soit +40% au total. Le pourcentage de PV actuel est conservé.</NMC_WarshipArmor2.description>
+  <NMC_WarshipArmor3.label>Blindage des vaisseaux nivarians Ⅲ</NMC_WarshipArmor3.label>
+  <NMC_WarshipArmor3.description>Renforce les coques des vaisseaux, intercepteurs et renforts nivarians. Chaque palier ajoute 20% des PV maximaux de base, soit +60% au total. Le pourcentage de PV actuel est conservé.</NMC_WarshipArmor3.description>
+  <NMC_WarshipWeapon1.label>Armement des vaisseaux nivarians Ⅰ</NMC_WarshipWeapon1.label>
+  <NMC_WarshipWeapon1.description>Améliore les armes des vaisseaux, intercepteurs et renforts nivarians. Par palier : +20% dégâts et pénétration de tous types, cumul +20%. Les mécanismes de verrouillage et de gel restent inchangés ; le bonus augmente les dégâts finaux.</NMC_WarshipWeapon1.description>
+  <NMC_WarshipWeapon2.label>Armement des vaisseaux nivarians Ⅱ</NMC_WarshipWeapon2.label>
+  <NMC_WarshipWeapon2.description>Améliore les armes des vaisseaux, intercepteurs et renforts nivarians. Par palier : +20% dégâts et pénétration de tous types, cumul +40%. Les mécanismes de verrouillage et de gel restent inchangés ; le bonus augmente les dégâts finaux.</NMC_WarshipWeapon2.description>
+  <NMC_WarshipWeapon3.label>Armement des vaisseaux nivarians Ⅲ</NMC_WarshipWeapon3.label>
+  <NMC_WarshipWeapon3.description>Améliore les armes des vaisseaux, intercepteurs et renforts nivarians. Par palier : +20% dégâts et pénétration de tous types, cumul +60%. Les mécanismes de verrouillage et de gel restent inchangés ; le bonus augmente les dégâts finaux.</NMC_WarshipWeapon3.description>
+  <NMC_CarrierHangarExpansion.label>Extension du hangar du porte-aéronefs</NMC_CarrierHangarExpansion.label>
+  <NMC_CarrierHangarExpansion.description>Augmente la capacité du porte-aéronefs de 6 à 8 intercepteurs, hangar et appareils déployés compris.</NMC_CarrierHangarExpansion.description>
 </LanguageData>

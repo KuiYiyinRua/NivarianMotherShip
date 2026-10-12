@@ -10,6 +10,25 @@ namespace NivarianCommander
     public sealed class CommanderMod : Mod
     {
         public static CommanderSettings Settings;
+        public override string SettingsCategory() => "Nivarian Race: MotherShip";
+        public override void DoSettingsWindowContents(Rect inRect)
+        {
+            var listing = new Listing_Standard();
+            listing.Begin(inRect);
+            listing.CheckboxLabeled(NmcText.Get("NMC_SettingsShortcut"), ref Settings.showShortcut);
+            listing.Gap(16f);
+            bool value = CommanderResearchAccess.Current?.enabled ?? Settings.unlockAllResearch;
+            bool previous = value;
+            listing.CheckboxLabeled(NmcText.Get("NMC_SettingsUnlockAll"), ref value);
+            listing.Label(NmcText.Get("NMC_SettingsUnlockAllHint"));
+            if (value != previous)
+            {
+                Settings.unlockAllResearch = value;
+                Settings.Write();
+                if (Current.ProgramState == ProgramState.Playing) CommanderResearchAccess.SetEnabled(value);
+            }
+            listing.End();
+        }
         public CommanderMod(ModContentPack content) : base(content)
         {
             Settings = GetSettings<CommanderSettings>();
@@ -24,6 +43,7 @@ namespace NivarianCommander
                     RimWorld.StatDefOf.MoveSpeed.parts.Add(new StatPart_LegionSpeed { parentStat = RimWorld.StatDefOf.MoveSpeed });
                 SpacetimeWaveStats.Install();
                 BlackHoleArmorStats.Install();
+                WarshipResearch.Install();
                 FleetWarpState.Validate();
                 Log.Message("[NMC] node 7 S13 isolated candidate registered; nine-slot fleet, native flight, attack target and temporary material lifecycle hooks resolved.");
             });

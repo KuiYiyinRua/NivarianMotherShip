@@ -32,9 +32,9 @@ namespace NivarianCommander
 
         public static bool Controlled(Thing thing)
         {
-            if (thing?.Map == null || !Eligible(thing, thing.Map)) return false;
-            var state = thing.Map.GetComponent<TimeStopMap>();
-            return state != null && state.Active && state.targets.Contains(thing);
+            if (thing?.Map == null) return false;
+            var state = CommanderPawnIndex.For(thing.Map).TimeStop;
+            return state != null && state.Active && state.targets.Contains(thing) && Eligible(thing, thing.Map);
         }
 
         public void Start(IEnumerable<Thing> snapshot)

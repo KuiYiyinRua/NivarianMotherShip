@@ -208,7 +208,7 @@ namespace NivarianCommander
         Pawn SelectTarget(SolarRaySalvo salvo, SolarRayBeam beam, HashSet<int> claimed)
         {
             var available = map.mapPawns.AllPawnsSpawned
-                .Where(p => !p.Dead && !p.Destroyed && p.Position.InHorDistOf(salvo.center, SearchRadius) &&
+                .Where(p => !p.DeadOrDowned && !p.Destroyed && p.Position.InHorDistOf(salvo.center, SearchRadius) &&
                     p.Position.GetRoof(map)?.isThickRoof != true && !SupportDiplomacy.Friendly(p))
                 .OrderBy(p => p.thingIDNumber).ToList();
             if (available.Count == 0) return null;

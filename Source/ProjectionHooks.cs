@@ -188,7 +188,7 @@ namespace NivarianCommander
         static void Postfix(CompPowerTrader __instance, ref bool __result)
         {
             var link = ProjectionRegistry.Projected(__instance.parent);
-            if (link != null) __result = !ProjectionRegistry.BlocksFire(__instance.parent)
+            if (link != null) __result = !ProjectionRegistry.BlocksKnownProjection(__instance.parent, link)
                 && (link.source.TryGetComp<CompPowerTrader>()?.PowerOn ?? true);
         }
     }

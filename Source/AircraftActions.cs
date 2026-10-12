@@ -29,16 +29,26 @@ namespace NivarianCommander
         }
         public static bool Valid(Thing source, Thing target, float range)
             => target != null && target != source && target.Spawned && !target.Destroyed && target.Map == source.Map
-                && target.HostileTo(source) && !SupportDiplomacy.Friendly(target)
+                && target.HostileTo(source) && (!SupportDiplomacy.Friendly(source) || !SupportDiplomacy.Friendly(target))
                 && (!(target is Pawn p) || !p.DeadOrDowned && !InvisibilityUtility.IsPsychologicallyInvisible(p))
                 && !target.Position.Fogged(source.Map) && !CommanderCloak.HiddenFrom(target, source)
                 && source.Position.DistanceToSquared(target.Position) <= range * range;
-        public static Thing Nearest(Thing source, float range, bool airOnly, bool groundPawnOnly = false)
+        // Manual gravity deliberately ignores faction and combat target eligibility.
+        // Use the same predicate in the target picker and execution-time revalidation.
+        public static bool GravityTargetValid(Thing source, Thing target)
+            => source != null && source.Spawned && !source.Destroyed && target is Pawn pawn
+                && pawn.Spawned && !pawn.Destroyed && !pawn.Dead && pawn.Map == source.Map
+                && !pawn.Position.Fogged(source.Map)
+                && source.Position.DistanceToSquared(pawn.Position) <= 16f * 16f
+                && !source.Map.GetComponent<AircraftGravity>().Contains(pawn);
+        public static Thing Nearest(Thing source, float range, bool airOnly, bool groundPawnOnly = false,
+            Thing rangeOrigin = null, float originRange = 0f)
         {
             Thing chosen = null; int distance = int.MaxValue;
             foreach (var thing in source.Map.listerThings.AllThings)
             {
                 if (!(thing is Verse.AI.IAttackTarget) || !Valid(source, thing, range)) continue;
+                if (rangeOrigin != null && rangeOrigin.Position.DistanceToSquared(thing.Position) > originRange * originRange) continue;
                 bool flying = Airborne(thing);
                 if (airOnly && !flying || groundPawnOnly && (!(thing is Pawn) || flying)) continue;
                 int d = source.Position.DistanceToSquared(thing.Position);
@@ -47,15 +57,17 @@ namespace NivarianCommander
             }
             return chosen;
         }
-        public static bool LandingClear(Building_NivarianAircraft ship, IntVec3 at)
+        public static bool LandingClear(Building_NivarianAircraft ship, IntVec3 at, Rot4 rotation)
         {
-            foreach (var cell in GenAdj.OccupiedRect(at, Rot4.North, ship.def.size))
+            if (ship == null || !ship.Spawned || !at.IsValid || !rotation.IsValid) return false;
+            foreach (var cell in GenAdj.OccupiedRect(at, rotation, ship.def.size))
             {
                 if (!cell.InBounds(ship.Map) || cell.Roofed(ship.Map) || cell.Fogged(ship.Map)
-                    || !cell.GetTerrain(ship.Map).affordances.Contains(TerrainAffordanceDefOf.Light)) return false;
+                    || !cell.GetAffordances(ship.Map).Contains(ship.def.terrainAffordanceNeeded)) return false;
                 foreach (var thing in cell.GetThingList(ship.Map))
-                    if (thing != ship && (thing is Pawn || thing.def.category == ThingCategory.Building
-                        && thing.def.passability == Traversability.Impassable)) return false;
+                    if (thing != ship && (thing is Pawn || thing is Skyfaller || thing is IActiveTransporter
+                        || thing.def.plant?.IsTree == true || thing.def.category == ThingCategory.Building
+                        && !thing.def.building.isPowerConduit)) return false;
             }
             return true;
         }
@@ -69,10 +81,11 @@ namespace NivarianCommander
         {
             if (!Owned(map, ship) || !ship.CombatFlight || !cell.InBounds(map) || cell.Fogged(map)) return;
             // Keep the whole footprint inside the map during travel.
-            if (!GenAdj.OccupiedRect(cell, Rot4.North, ship.def.size).Cells.All(c => c.InBounds(map))) return;
+            if (!GenAdj.OccupiedRect(cell, ship.Rotation, ship.def.size).Cells.All(c => c.InBounds(map))) return;
             ship.destination = cell;
         }
-        public static void Land(Map map, Building_NivarianAircraft ship) { if (Owned(map, ship)) ship.BeginLanding(); }
+        public static void Land(Map map, Building_NivarianAircraft ship, IntVec3 cell, Rot4 rotation)
+        { if (Owned(map, ship)) ship.BeginLanding(cell, rotation); }
         public static void Recall(Map map, Building_NivarianAircraft ship) { if (Owned(map, ship)) ship.RecallAll(false); }
         public static void Gravity(Map map, Building_NivarianAircraft ship, Thing target) { if (Owned(map, ship)) ship.UseGravity(target); }
         public static void ToggleManufacture(Map map, Building_NivarianAircraft ship)
@@ -81,6 +94,7 @@ namespace NivarianCommander
         { if (Owned(map, ship) && !ship.IsCarrier) ship.automaticGravity = !ship.automaticGravity; }
         public static IEnumerable<Gizmo> Gizmos(Building_NivarianAircraft ship)
         {
+            if (ship.IsCarrier) yield return ship.DragonSteelGizmo;
             if (AircraftStarshipUpgrade.Available) yield return AircraftStarshipUpgrade.UpgradeGizmo(ship);
             if (!ship.Airborne)
             {
@@ -98,8 +112,8 @@ namespace NivarianCommander
                     t => Move(ship.Map, ship, t.Cell)));
                 if (!ship.CombatFlight) move.Disable(NmcText.Get("NMC_Text0009"));
                 yield return move;
-                var land = Action(ship, NmcText.Get("NMC_Text0010"), NmcText.Get("NMC_Text0011"), () => Land(ship.Map, ship));
-                if (!AircraftTargeting.LandingClear(ship, ship.Position)) land.Disable(NmcText.Get("NMC_Text0012"));
+                var land = Action(ship, NmcText.Get("NMC_Text0010"), NmcText.Get("NMC_Text0011"), () => AircraftLandingTargeting.Begin(ship));
+                if (!ship.CombatFlight) land.Disable(NmcText.Get("NMC_Text0009"));
                 yield return land;
             }
             if (ship.IsCarrier)
@@ -113,7 +127,7 @@ namespace NivarianCommander
             {
                 var gravity = Action(ship, NmcText.Get("NMC_Text0018"), NmcText.Get("NMC_Text0019"), () => Find.Targeter.BeginTargeting(
                     new TargetingParameters { canTargetPawns = true, canTargetLocations = false, canTargetBuildings = false,
-                        validator = t => t.Thing is Pawn && AircraftTargeting.Valid(ship, t.Thing, 16f) && !AircraftTargeting.Airborne(t.Thing) },
+                        validator = t => AircraftTargeting.GravityTargetValid(ship, t.Thing) },
                     t => Gravity(ship.Map, ship, t.Thing)));
                 if (!ship.CombatFlight) gravity.Disable(NmcText.Get("NMC_Text0020"));
                 else if (ship.gravityCooldown > 0) gravity.Disable(NmcText.Get("NMC_Text0021"));

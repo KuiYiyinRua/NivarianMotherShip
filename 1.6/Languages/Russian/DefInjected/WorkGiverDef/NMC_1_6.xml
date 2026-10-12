@@ -6,4 +6,7 @@
   <NMC_FillNutrientEnergyTower.label>Пополнять питание энергетической башни</NMC_FillNutrientEnergyTower.label>
   <NMC_FillNutrientEnergyTower.verb>Заполнять</NMC_FillNutrientEnergyTower.verb>
   <NMC_FillNutrientEnergyTower.gerund>Пополнять питание</NMC_FillNutrientEnergyTower.gerund>
+  <NMC_RefillCarrierDragonSteel.label>Пополнять сталь авианосца</NMC_RefillCarrierDragonSteel.label>
+  <NMC_RefillCarrierDragonSteel.verb>Загрузить дракоморозную сталь</NMC_RefillCarrierDragonSteel.verb>
+  <NMC_RefillCarrierDragonSteel.gerund>Загрузка дракоморозной стали</NMC_RefillCarrierDragonSteel.gerund>
 </LanguageData>

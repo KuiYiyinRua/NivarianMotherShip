@@ -1,0 +1,58 @@
+[b]简体中文 • 日本語 • English • Русский • Français[/b]
+
+[h1]简体中文｜涅瓦莲母舰支援拓展[/h1]
+[b]把母舰的力量带到殖民地。[/b]为 Nivarian Race 增加19项战术支援、六格自定义快捷面板、母舰点数商店、航母与引力舰，以及八阶段连续体战役。
+[list]
+[*]轨道打击、太阳轰炸、净化光束、护盾与力场；暗影控制、远征军团和建筑投影。
+[*]呼叫1艘母舰与8艘驱逐舰组成的临时舰队；航母和引力舰可运送人员及货物。
+[/list]
+[img]https://images.steamusercontent.com/ugc/15680560357014141984/EF9A3799F1662E24393FEB7582FF700737D3EAC9/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img]
+[b]开始游玩[/b]：打开原版母舰支援窗口的指挥官页，用上行链路终端研究支援。
+[b]自由解锁[/b]：设置中的“无需任务解锁全部扩展科技”默认关闭。开启并恢复游戏后，直接完成本扩展全部研究，跳过连续体任务和支援母舰等级要求；资源消耗与冷却照常。关闭后保留已完成科技并恢复等级门槛，不会伪造任务通关记录，也不解锁其他模组科技。
+
+[h1]日本語｜ニヴァリアン母艦支援拡張[/h1]
+母艦の力をコロニーへ。Nivarian Race に19種の戦術支援、6枠のカスタムHUD、母艦ポイントショップ、空母と重力艦、全8段階のコンティニュアム戦役を追加します。
+[list]
+[*]軌道攻撃、太陽砲撃、浄化ビーム、シールドと力場、影による制御、遠征部隊、建築物の投影。
+[*]母艦1隻と駆逐艦8隻の一時支援艦隊。空母・重力艦で人員と貨物を輸送。
+[/list]
+[b]使い方[/b]：母艦支援画面の指揮官タブを開き、アップリンク端末で研究します。
+[b]自由解放[/b]：設定の「ミッションなしで拡張の全技術を解放」は初期状態でオフ。オンにしてゲームを再開すると、本拡張の全研究が完了し、戦役と支援の母艦レベル条件を省略します。費用・クールダウンは継続。オフに戻しても研究は残り、レベル条件が復帰します。他MODの研究や戦役クリア記録には影響しません。
+
+[h1]English | Nivarian MotherShip[/h1]
+Bring the mothership to your colony. Adds 19 tactical supports, a customizable six-slot HUD, a points shop, a carrier and gravity ship, and an eight-stage Continuum campaign to Nivarian Race.
+[list]
+[*]Orbital strikes, solar bombardment, purification beams, shields and fields, shadow control, expedition legions and projected structures.
+[*]Call a temporary fleet of one mothership and eight destroyers. Transport people and cargo with the carrier and gravity ship.
+[/list]
+[img]https://images.steamusercontent.com/ugc/16928666956641479643/FE270D44BC43AD0B1DCBB0E2AAC73274DACA54FF/[/img]
+[b]Getting started[/b]: Open the commander tab in the mothership support window and research protocols at the uplink terminal.
+[b]Free unlock[/b]: “Unlock all expansion technologies without missions” is off by default. Enable it and resume to finish every research project in this expansion and bypass campaign and support mothership-level requirements. Costs and cooldowns remain. Turning it off retains completed research and restores level requirements. Other mods' research and campaign completion records stay untouched.
+
+[h1]Русский | Поддержка материнского корабля[/h1]
+Сила материнского корабля на стороне вашей колонии. Расширение Nivarian Race: 19 видов тактической поддержки, настраиваемая панель на 6 слотов, магазин за очки, авианосец, гравитационный корабль и кампания «Континуум» из 8 этапов.
+[list]
+[*]Орбитальные удары, солнечная бомбардировка, очищающий луч, щиты и поля, управление тенью, экспедиционные легионы и проекции построек.
+[*]Временный флот: 1 материнский корабль и 8 эсминцев. Авианосец и гравитационный корабль перевозят людей и грузы.
+[/list]
+[b]Начало[/b]: Откройте вкладку командира в окне поддержки и исследуйте протоколы через терминал связи.
+[b]Свободное открытие[/b]: Настройка открытия всех технологий расширения без заданий по умолчанию выключена. Включите её и продолжите игру: исследования этого мода завершатся, требования заданий и уровня корабля для поддержки будут сняты. Расходы и перезарядка сохраняются. После выключения исследования остаются, требования уровня возвращаются. Чужие исследования и записи о прохождении кампании не меняются.
+
+[h1]Français | Soutien du vaisseau-mère[/h1]
+La puissance du vaisseau-mère au service de votre colonie. Étend Nivarian Race avec 19 soutiens tactiques, une interface personnalisable à six emplacements, une boutique à points, un porte-aéronefs, un vaisseau gravitationnel et une campagne Continuum en huit étapes.
+[list]
+[*]Frappes orbitales, bombardement solaire, rayon de purification, boucliers, champs, contrôle des ombres, légions et structures projetées.
+[*]Une flotte temporaire de 1 vaisseau-mère et 8 destroyers. Transport de personnes et de marchandises par les deux vaisseaux constructibles.
+[/list]
+[img]https://images.steamusercontent.com/ugc/11192463098744122599/63F5233EEE3C234BE44C528039DF3E398514214B/[/img]
+[b]Premiers pas[/b] : Ouvrez l'onglet du commandant dans la fenêtre de soutien et recherchez les protocoles au terminal de liaison.
+[b]Déblocage libre[/b] : L'option permettant de débloquer toutes les technologies de cette extension sans mission est désactivée par défaut. Activez-la puis reprenez la partie pour terminer ses recherches et ignorer les exigences de mission et de niveau du vaisseau-mère. Coûts et délais de recharge restent actifs. La désactiver conserve les recherches et rétablit les niveaux requis, sans modifier les autres mods ni les missions accomplies.
+
+[h2]Dependencies / 依赖 / 必須MOD / Зависимости / Dépendances[/h2]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077]Harmony[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=839005762]Humanoid Alien Races[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3624805128]Nivarian Race[/url] → MotherShip.
+[b]Optional[/b]: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3735573834]Nivarian Draconic Military[/url] (campaign / 战役 / 戦役 / кампания / campagne); Royalty (psycasts); [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3256974620]Milira Race[/url] + Ancot Library (starship batteries).
+[b]RimWorld 1.6 • v0.9.8 • Author / 作者 / 作者 / Автор / Auteur: 尹怨怨[/b]
+Nivarian Race & original mothership assets: keeptpa. Required mods are separate downloads. / 原版素材归 keeptpa；前置模组需另行订阅。
+
+[h2]GitHub[/h2]
+[url=https://github.com/KuiYiyinRua/NivarianMotherShip]GitHub · 完整源码 / Full source[/url]

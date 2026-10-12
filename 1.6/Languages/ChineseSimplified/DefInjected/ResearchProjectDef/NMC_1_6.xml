@@ -73,19 +73,19 @@
 
 若已开启连续体任务，须先完成第6阶段“舰队支援”，取得研究资料。</NMC_Support13.description>
   <NMC_Support14.label>特布鲁斯军团支援协议</NMC_Support14.label>
-  <NMC_Support14.description>建立与特布鲁斯军团的联络，允许请求特布鲁斯和十名近战战士增援。除能量外，军团还需要信标范围内的白银或黄金作为支援报酬。
+  <NMC_Support14.description>建立与特布鲁斯军团的联络，允许请求特布鲁斯和十名近战战士增援。军团支援只消耗P和V。
 
 通过上行链路研究终端交付所需材料并完成研究。母舰达到2级后，方可调用这项支援。
 
 若已开启连续体任务，须先完成第3阶段“远征军团”，取得研究资料。</NMC_Support14.description>
   <NMC_Support15.label>佐拉亚军团支援协议</NMC_Support15.label>
-  <NMC_Support15.description>建立与佐拉亚军团的联络，允许请求指挥舰佐拉亚和四艘辉光舰增援。除能量外，军团还需要信标范围内的白银或黄金作为支援报酬。
+  <NMC_Support15.description>建立与佐拉亚军团的联络，允许请求指挥舰佐拉亚和四艘辉光舰增援。军团支援只消耗P和V。
 
 通过上行链路研究终端交付所需材料并完成研究。母舰达到3级后，方可调用这项支援。
 
 若已开启连续体任务，须先完成第3阶段“远征军团”，取得研究资料。</NMC_Support15.description>
   <NMC_Support16.label>赛达斯军团支援协议</NMC_Support16.label>
-  <NMC_Support16.description>建立与赛达斯军团的联络，允许请求赛达斯和三名黑暗执政官增援，以心灵支配转化敌人。除能量外，军团还需要信标范围内的白银或黄金作为支援报酬。
+  <NMC_Support16.description>建立与赛达斯军团的联络，允许请求赛达斯和三名黑暗执政官增援，以心灵支配转化敌人。军团支援只消耗P和V。
 
 通过上行链路研究终端交付所需材料并完成研究。母舰达到3级后，方可调用这项支援。
 
@@ -117,7 +117,7 @@
   <NMC_CarrierResearch.label>涅瓦莲航母</NMC_CarrierResearch.label>
   <NMC_CarrierResearch.description>解锁涅瓦莲航母的建造。这种大型舰船以舰载机作战，自身不装备直接攻击武器，适合在战线后方提供持续航空支援。
 
-航母载重10000千克，能够用龙霜钢制造并维持最多8架舰载机。建造成本高昂，还需持续补充化合燃料与舰载机材料。</NMC_CarrierResearch.description>
+航母载重10000千克，能够用龙霜钢制造并维持最多6架舰载机。建造成本高昂，还需持续补充化合燃料与舰载机材料。</NMC_CarrierResearch.description>
   <NMC_TacticalProtocol.label>战术支援协议</NMC_TacticalProtocol.label>
   <NMC_TacticalProtocol.description>母舰指挥官的战术支援协议。通过涅瓦莲上行链路研究终端交付材料并完成研究。</NMC_TacticalProtocol.description>
   <NMC_LightWeapons.label>光能武器阵列</NMC_LightWeapons.label>
@@ -132,4 +132,18 @@
   <NMC_HigherDimensions.description>母舰指挥官的高维空间工程。通过涅瓦莲上行链路研究终端交付材料并完成研究。</NMC_HigherDimensions.description>
   <NMC_FleetBeacon.label>舰队折跃信标协议</NMC_FleetBeacon.label>
   <NMC_FleetBeacon.description>母舰指挥官的舰队折跃信标协议。通过涅瓦莲上行链路研究终端交付材料并完成研究。</NMC_FleetBeacon.description>
+  <NMC_WarshipArmor1.label>涅瓦莲战舰护甲Ⅰ</NMC_WarshipArmor1.label>
+  <NMC_WarshipArmor1.description>强化全部涅瓦莲战舰、舰载机及援军战舰的舰体。每级增加基础最大生命值的20%，本级累计增加20%。已存在舰船保持原有血量百分比。</NMC_WarshipArmor1.description>
+  <NMC_WarshipArmor2.label>涅瓦莲战舰护甲Ⅱ</NMC_WarshipArmor2.label>
+  <NMC_WarshipArmor2.description>强化全部涅瓦莲战舰、舰载机及援军战舰的舰体。每级增加基础最大生命值的20%，本级累计增加40%。已存在舰船保持原有血量百分比。</NMC_WarshipArmor2.description>
+  <NMC_WarshipArmor3.label>涅瓦莲战舰护甲Ⅲ</NMC_WarshipArmor3.label>
+  <NMC_WarshipArmor3.description>强化全部涅瓦莲战舰、舰载机及援军战舰的舰体。每级增加基础最大生命值的20%，本级累计增加60%。已存在舰船保持原有血量百分比。</NMC_WarshipArmor3.description>
+  <NMC_WarshipWeapon1.label>涅瓦莲战舰武器Ⅰ</NMC_WarshipWeapon1.label>
+  <NMC_WarshipWeapon1.description>强化全部涅瓦莲战舰、舰载机及援军战舰的武器。每级增加基础伤害及各类穿甲的20%，本级累计增加20%。连续锁定增伤规则与冰冻等机制不变；研究加成作用于最终攻击伤害。</NMC_WarshipWeapon1.description>
+  <NMC_WarshipWeapon2.label>涅瓦莲战舰武器Ⅱ</NMC_WarshipWeapon2.label>
+  <NMC_WarshipWeapon2.description>强化全部涅瓦莲战舰、舰载机及援军战舰的武器。每级增加基础伤害及各类穿甲的20%，本级累计增加40%。连续锁定增伤规则与冰冻等机制不变；研究加成作用于最终攻击伤害。</NMC_WarshipWeapon2.description>
+  <NMC_WarshipWeapon3.label>涅瓦莲战舰武器Ⅲ</NMC_WarshipWeapon3.label>
+  <NMC_WarshipWeapon3.description>强化全部涅瓦莲战舰、舰载机及援军战舰的武器。每级增加基础伤害及各类穿甲的20%，本级累计增加60%。连续锁定增伤规则与冰冻等机制不变；研究加成作用于最终攻击伤害。</NMC_WarshipWeapon3.description>
+  <NMC_CarrierHangarExpansion.label>航母舰载机舱室拓展</NMC_CarrierHangarExpansion.label>
+  <NMC_CarrierHangarExpansion.description>拓展航母机库，将舰载机搭载上限从6架提高至8架。上限包括机库内及出击中的舰载机。</NMC_CarrierHangarExpansion.description>
 </LanguageData>

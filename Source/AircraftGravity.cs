@@ -18,21 +18,30 @@ namespace NivarianCommander
     }
     public sealed class AircraftGravity : MapComponent
     {
+        public const int DurationTicks = 240;
         public List<GravityLift> lifts = new List<GravityLift>();
         static Material blue, violet;
         public AircraftGravity(Map map) : base(map) { }
-        public bool Contains(Pawn pawn) => lifts.Exists(l => l.target == pawn && l.remaining > 0);
-        public void Lift(Building_NivarianAircraft ship, Pawn pawn)
+        public bool Contains(Pawn pawn)
         {
-            if (Contains(pawn)) return;
-            lifts.Add(new GravityLift { source = ship, target = pawn, remaining = 300 });
-            pawn.stances?.stunner?.StunFor(300, ship, addBattleLog: false);
+            for (int i = 0; i < lifts.Count; i++)
+                if (lifts[i].target == pawn && lifts[i].remaining > 0) return true;
+            return false;
+        }
+        public bool Lift(Building_NivarianAircraft ship, Pawn pawn)
+        {
+            if (pawn == null || !pawn.Spawned || pawn.Map != map || Contains(pawn)) return false;
+            lifts.Add(new GravityLift { source = ship, target = pawn, remaining = DurationTicks });
+            pawn.stances?.stunner?.StunFor(DurationTicks, ship, addBattleLog: false);
+            return true;
         }
         public float Height(Pawn pawn)
         {
-            var lift = lifts.Find(l => l.target == pawn);
+            GravityLift lift = null;
+            for (int i = 0; i < lifts.Count; i++)
+                if (lifts[i].target == pawn) { lift = lifts[i]; break; }
             if (lift == null) return 0f;
-            return Mathf.Min(Mathf.Clamp01((300 - lift.remaining) / 20f), Mathf.Clamp01(lift.remaining / 20f)) * 1.3f;
+            return Mathf.Min(Mathf.Clamp01((DurationTicks - lift.remaining) / 20f), Mathf.Clamp01(lift.remaining / 20f)) * 1.3f;
         }
         public override void MapComponentTick()
         {
@@ -45,7 +54,7 @@ namespace NivarianCommander
         }
         public override void MapComponentDraw()
         {
-            if (map != Find.CurrentMap) return;
+            if (lifts.Count == 0 || map != Find.CurrentMap) return;
             if (blue == null)
             {
                 blue = SolidColorMaterials.SimpleSolidColorMaterial(new Color(.25f, .8f, 1f, .58f), true);
@@ -55,7 +64,7 @@ namespace NivarianCommander
             {
                 if (l.target == null || !l.target.Spawned || l.target.Position.Fogged(map)) continue;
                 var at = l.target.DrawPos; at.y = AltitudeLayer.MetaOverlays.AltitudeFor();
-                float phase = (300 - l.remaining) * .03f;
+                float phase = (DurationTicks - l.remaining) * .03f;
                 // Three tilted elliptical bands form a light, faceted gravity cage.
                 for (int ring = 0; ring < 3; ring++)
                     for (int edge = 0; edge < 18; edge++)
@@ -82,7 +91,9 @@ namespace NivarianCommander
         static void Postfix(Pawn __instance, ref Vector3 __result)
         {
             if (!__instance.Spawned) return;
-            float height = __instance.Map.GetComponent<AircraftGravity>().Height(__instance);
+            var gravity = CommanderPawnIndex.For(__instance.Map).Gravity;
+            if (gravity.lifts.Count == 0) return;
+            float height = gravity.Height(__instance);
             if (height <= 0) return;
             __result.z += height; __result.y = AltitudeLayer.Skyfaller.AltitudeFor();
         }

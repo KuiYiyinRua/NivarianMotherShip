@@ -60,16 +60,16 @@
     "Atterrir"
   ],
   "11": [
-    "Stop aerial combat and land. The carrier stops launching interceptors and recalls deployed wings. Clear buildings, people and roofs beneath the ship first.",
-    "Прекратить воздушный бой и приземлиться. Авианосец прекратит выпуск перехватчиков и отзовёт вылетевшие звенья. Сначала уберите здания, людей и крыши под кораблём.",
-    "空中戦を終了して着陸します。空母は艦載機の出撃を停止し、出撃中の編隊を帰還させます。先に船体の下の建物、人員、屋根を取り除いてください。",
-    "Cesser le combat aérien et atterrir. Le porte-aéronefs arrête les lancements et rappelle les escadrilles. Dégagez d'abord les bâtiments, personnes et toits sous le vaisseau."
+    "Choose a landing site, use the building rotation keys to set the heading, then click to confirm. The carrier recalls all deployed fighters before descending. The landing area must be clear of buildings, pawns, trees and roofs.",
+    "Выберите место посадки, задайте направление клавишами поворота построек и подтвердите щелчком. Авианосец отзовёт все истребители перед снижением. На площадке не должно быть построек, пешек, деревьев и крыш.",
+    "着陸地点を選び、建築物の回転キーで向きを調整してからクリックで確定します。空母は出撃中の艦載機をすべて回収してから降下します。着陸範囲に建物、人、木、屋根がないことが必要です。",
+    "Choisissez une zone d’atterrissage, réglez l’orientation avec les touches de rotation des bâtiments, puis cliquez pour confirmer. Le porte-avions rappelle tous ses chasseurs avant de descendre. La zone doit être libre de bâtiments, de personnages, d’arbres et de toits."
   ],
   "12": [
-    "Obstacles, people or roofs below. Move to open ground first.",
-    "Внизу есть препятствия, люди или крыши. Сначала переместитесь на свободное место.",
-    "下に障害物、人員、屋根があります。先に空き地へ移動してください。",
-    "Des obstacles, personnes ou toits se trouvent dessous. Rejoignez d'abord un terrain dégagé."
+    "Cannot land here. Choose an area clear of buildings, pawns, trees and roofs.",
+    "Здесь нельзя приземлиться. Выберите площадку без построек, пешек, деревьев и крыш.",
+    "ここには着陸できません。建物、人、木、屋根のない場所を選んでください。",
+    "Impossible d’atterrir ici. Choisissez une zone sans bâtiments, personnages, arbres ni toits."
   ],
   "13": [
     "Interceptor production: on",
@@ -84,10 +84,10 @@
     "Production d'intercepteurs : suspendue"
   ],
   "15": [
-    "Each interceptor costs {0} dragonfrost steel and takes 15 seconds to build, even during flight. Use “Load cargo” to supply up to 1,000 material units. Hangar and deployed interceptors together are limited to {1}.",
-    "Каждый перехватчик требует {0} драконьей морозной стали и строится 15 секунд, в том числе в полёте. Через загрузку груза можно пополнить запас до 1000 единиц. Общий предел в ангаре и в бою: {1}.",
-    "艦載機1機につき龍霜鋼{0}を使い、15秒で製造します。飛行中も製造可能です。「貨物を積み込む」から龍霜鋼を搬入でき、材料は最大1000まで補充できます。格納庫内と出撃中を合わせて最大{1}機です。",
-    "Chaque intercepteur coûte {0} d'acier dracogivré et se construit en 15 secondes, même en vol. Utilisez le chargement de fret pour fournir jusqu'à 1 000 unités de matériau. Le hangar et les appareils déployés sont limités à {1} au total."
+    "Each interceptor costs {0} dragonfrost steel and takes 15 seconds to build, even during flight. Set a target in “Dragonfrost steel reserve”; colonists refill it while grounded, up to 1,000 units. The hangar and deployed interceptors are limited to {1} in total.",
+    "Каждый перехватчик стоит {0} единиц дракоморозной стали и строится 15 секунд, даже в полёте. Задайте цель в панели «Запас дракоморозной стали»; колонисты пополняют запас на земле, до 1000 единиц. В ангаре и в полёте может быть всего {1} перехватчиков.",
+    "艦載機1機につき龍霜鋼{0}を消費し、製造には15秒かかります。飛行中も製造可能です。「龍霜鋼の備蓄」で目標量を設定すると、着陸中に入植者が上限1000まで補充します。格納庫と出撃中の合計上限は{1}機です。",
+    "Chaque intercepteur coûte {0} unités d’acier givre-dragon et demande 15 secondes de fabrication, même en vol. Réglez la cible dans « Réserve d’acier givre-dragon » ; les colons la remplissent au sol, jusqu’à 1 000 unités. Le hangar et les intercepteurs déployés sont limités à {1} au total."
   ],
   "16": [
     "Recall interceptors",
@@ -108,10 +108,10 @@
     "Rayon gravitationnel"
   ],
   "19": [
-    "Choose a ground enemy within 16 cells. Lift and stun them for 5 seconds, allowing this ship's laser to target them. Cooldown: 8 seconds. No extra resources required.",
-    "Выберите наземного врага в пределах 16 клеток. Поднять и оглушить его на 5 секунд, чтобы лазер корабля мог атаковать его. Перезарядка: 8 секунд. Дополнительные ресурсы не нужны.",
-    "16マス以内の地上の敵1体を選び、持ち上げて5秒間気絶させます。浮かせた対象は本艦のレーザーで攻撃できます。クールダウンは8秒で、追加資源は不要です。",
-    "Choisissez un ennemi au sol à moins de 16 cases. Il est soulevé et étourdi pendant 5 secondes, permettant au laser du vaisseau de le viser. Recharge : 8 secondes. Aucun coût supplémentaire."
+    "Choose any living unit within 16 cells, including friendly, neutral and hostile units. Lift and stun it for 4 seconds. A unit cannot be affected by multiple gravity beams at once. Cooldown: 8 seconds. No extra resources. Automatic use still targets enemies only.",
+    "Выберите любое живое существо в пределах 16 клеток: союзное, нейтральное или враждебное. Луч поднимает и оглушает его на 4 секунды. Несколько гравитационных лучей не могут воздействовать на одну цель одновременно. Перезарядка: 8 секунд. Ресурсы не нужны. Автоматическое применение выбирает только врагов.",
+    "16マス以内の生存ユニットを選択し、4秒間持ち上げて気絶させます。味方・中立・敵を対象にできます。同じユニットに複数の重力ビームを同時に使用することはできません。クールダウンは8秒、追加資源は不要です。自動使用は引き続き敵のみを狙います。",
+    "Choisissez une unité vivante à moins de 16 cases, alliée, neutre ou ennemie. Elle est soulevée et étourdie pendant 4 secondes. Une unité ne peut subir plusieurs rayons gravitationnels à la fois. Recharge : 8 secondes. Aucun coût supplémentaire. Le mode automatique ne vise toujours que les ennemis."
   ],
   "20": [
     "Must be airborne",
@@ -606,10 +606,10 @@
     "Active définitivement l'identification des alliés pour que les tirs directs du commandant évitent votre faction et ses alliés. Effet immédiat à l'achat."
   ],
   "102": [
-    "Radius 3 · Damage 30 · Armor penetration 35%",
-    "Радиус 3 · Урон 30 · Бронепробитие 35%",
-    "半径3マス · ダメージ30 · 貫通35%",
-    "Rayon 3 · Dégâts 30 · Pénétration 35 %"
+    "3×3 square · Damage 30 · Armor penetration 35%",
+    "Квадрат 3×3 · Урон 30 · Бронепробитие 35%",
+    "3×3マス · ダメージ30 · 貫通35%",
+    "Carré 3×3 · Dégâts 30 · Pénétration 35 %"
   ],
   "103": [
     "Aim orbital strike",
@@ -762,10 +762,10 @@
     "Actif dans {0} lieux · Reste ici : {1}"
   ],
   "128": [
-    "Work speed ×5 · 60 seconds",
-    "Скорость работы ×5 · 60 секунд",
-    "作業速度5倍 · 60秒間",
-    "Vitesse de travail ×5 · 60 secondes"
+    "Move ×2 · Work ×10 · Turrets ×3 · 60 s",
+    "Движение ×2 · Работа ×10 · Турели ×3 · 60 с",
+    "移動×2 · 作業×10 · 砲塔×3 · 60秒",
+    "Déplacement ×2 · Travail ×10 · Tourelles ×3 · 60 s"
   ],
   "129": [
     "Ready · Affects all colonies",
@@ -1356,10 +1356,10 @@
     "C'est la dernière étape. Son achèvement donne toutes les données de recherche du Continuum."
   ],
   "227": [
-    "The mothership intercepted Continuum communications near the colony and located a base holding tactical data. Send troops to destroy the communications core, defeat the defenders and destroy the defensive turrets to recover the data. Destroying the core alone is not enough.\n\nLoot is concentrated in the center, guarded by multiple layers of turrets and sandbags. Defenders will call in drop reinforcements, including mechanoids and Nira combat units armed with Nivarian weapons.\n\nYou have 12 days to attack. Once you enter the battlefield, withdrawing everyone before meeting the objectives or exceeding the deadline fails the mission. The mothership will locate another base of the same stage after 3 days; previously acquired data is retained.\n\nThe recovered data unlocks these research projects:\n{0}\n\nYou must still deliver materials and complete research at an uplink research terminal, then reach the required mothership level to use the support.{1}",
-    "Корабль-матка перехватил сообщения Континуума рядом с колонией и нашёл базу с тактическими данными. Отправьте войска, уничтожьте узел связи, победите гарнизон и уничтожьте защитные турели, чтобы получить данные. Одного уничтожения узла недостаточно.\n\nДобыча собрана в центре, за несколькими линиями турелей и мешков с песком. Защитники вызовут десант: механоидов и боевые единицы Ниры с ниварианским оружием.\n\nНа атаку даётся 12 дней. Если после входа на поле боя все уйдут до выполнения целей или срок истечёт, задание провалится. Через 3 дня корабль-матка найдёт базу того же этапа; уже добытые данные сохранятся.\n\nДанные откроют исследования:\n{0}\n\nДля применения поддержки ещё нужно доставить материалы и завершить исследования в терминале восходящей связи, а также достичь нужного уровня корабля-матки.{1}",
-    "母艦は入植地付近の連続体通信を傍受し、戦術資料を保管する基地を特定しました。部隊を派遣し、通信コアを破壊し、守備隊を倒して防衛砲塔を破壊すると資料を取得できます。コアの破壊だけでは任務は完了しません。\n\n戦利品は陣地中央に集中し、多層の砲塔と土嚢で守られています。守備隊はメカノイドやニヴァリアン武器を装備したニラ戦闘ユニットを含む空挺援軍を呼びます。\n\n攻撃期限は12日です。戦場に入った後、目標達成前に全員撤退した場合や期限超過で任務は失敗します。母艦は3日後に同じ段階の基地を再特定します。取得済み資料は失われません。\n\n今回の資料で以下の研究が解放されます：\n{0}\n\n支援を使うには、上行リンク研究端末で材料を納入し、研究を完了して必要な母艦レベルに達する必要があります。{1}",
-    "Le vaisseau-mère a intercepté des communications du Continuum près de la colonie et repéré une base contenant des données tactiques. Envoyez des troupes détruire le noyau de communication, vaincre la garnison et détruire les tourelles défensives pour récupérer les données. Détruire le noyau seul ne suffit pas.\n\nLe butin est au centre, protégé par plusieurs lignes de tourelles et de sacs de sable. Les défenseurs appelleront des renforts aéroportés, dont des mécanoïdes et des unités Nira équipées d'armes nivarianes.\n\nVous avez 12 jours pour attaquer. Après votre entrée sur le champ de bataille, retirer tout le monde avant d'atteindre les objectifs ou dépasser le délai fait échouer la mission. Le vaisseau-mère repérera une base du même stade après 3 jours ; les données déjà obtenues sont conservées.\n\nLes données débloquent ces recherches :\n{0}\n\nIl faut encore livrer les matériaux et terminer les recherches au terminal de liaison montante, puis atteindre le niveau requis du vaisseau-mère pour utiliser les soutiens.{1}"
+    "The mothership intercepted Continuum communications near the colony and located a base holding tactical data. Send troops to destroy the communications core, defeat the defenders and destroy the defensive turrets to recover the data. Destroying the core alone is not enough.\n\nLoot is concentrated in the center, guarded by multiple layers of turrets and sandbags. Defenders will call in drop reinforcements, including mechanoids and Nira combat units armed with Nivarian weapons.\n\nThis base has no time limit and will not disappear while you wait. If all your troops leave the battlefield before completing the objective, the mission fails. The mothership will locate another base of the same stage in 3 days; previously acquired research data is retained.\n\nThe recovered data unlocks these research projects:\n{0}\n\nYou must still deliver materials and complete research at an uplink research terminal, then reach the required mothership level to use the support.{1}",
+    "Корабль-матка перехватил сообщения Континуума рядом с колонией и нашёл базу с тактическими данными. Отправьте войска, уничтожьте узел связи, победите гарнизон и уничтожьте защитные турели, чтобы получить данные. Одного уничтожения узла недостаточно.\n\nДобыча собрана в центре, за несколькими линиями турелей и мешков с песком. Защитники вызовут десант: механоидов и боевые единицы Ниры с ниварианским оружием.\n\nУ этой базы нет срока действия: ожидание не приведёт к её исчезновению. Если все ваши войска покинут поле боя до выполнения цели, задание будет провалено. Через 3 дня корабль-матка найдёт другую базу того же этапа; ранее полученные исследовательские данные сохранятся.\n\nДанные откроют исследования:\n{0}\n\nДля применения поддержки ещё нужно доставить материалы и завершить исследования в терминале восходящей связи, а также достичь нужного уровня корабля-матки.{1}",
+    "母艦は入植地付近の連続体通信を傍受し、戦術資料を保管する基地を特定しました。部隊を派遣し、通信コアを破壊し、守備隊を倒して防衛砲塔を破壊すると資料を取得できます。コアの破壊だけでは任務は完了しません。\n\n戦利品は陣地中央に集中し、多層の砲塔と土嚢で守られています。守備隊はメカノイドやニヴァリアン武器を装備したニラ戦闘ユニットを含む空挺援軍を呼びます。\n\nこの基地に期限はなく、待機しても自動で消えることはありません。戦場に入った後、目標達成前に全員が撤退すると任務は失敗します。母艦は3日後に同じ段階の基地を再特定し、取得済み研究資料は保持されます。\n\n今回の資料で以下の研究が解放されます：\n{0}\n\n支援を使うには、上行リンク研究端末で材料を納入し、研究を完了して必要な母艦レベルに達する必要があります。{1}",
+    "Le vaisseau-mère a intercepté des communications du Continuum près de la colonie et repéré une base contenant des données tactiques. Envoyez des troupes détruire le noyau de communication, vaincre la garnison et détruire les tourelles défensives pour récupérer les données. Détruire le noyau seul ne suffit pas.\n\nLe butin est au centre, protégé par plusieurs lignes de tourelles et de sacs de sable. Les défenseurs appelleront des renforts aéroportés, dont des mécanoïdes et des unités Nira équipées d'armes nivarianes.\n\nCette base n’a aucune limite de temps et ne disparaîtra pas pendant votre attente. Si toutes vos troupes quittent le champ de bataille avant d’avoir atteint l’objectif, la mission échoue. Le vaisseau-mère repérera une autre base du même stade dans 3 jours ; les données de recherche déjà acquises sont conservées.\n\nLes données débloquent ces recherches :\n{0}\n\nIl faut encore livrer les matériaux et terminer les recherches au terminal de liaison montante, puis atteindre le niveau requis du vaisseau-mère pour utiliser les soutiens.{1}"
   ],
   "228": [
     "Continuum research data recovered",
@@ -1704,10 +1704,10 @@
     "Réseau de contrôle hyperdimensionnel : sans courant"
   ],
   "285": [
-    " · Attacks every 0.4 seconds",
-    " · Атака каждые 0,4 секунды",
-    " · 0.4秒ごとに攻撃",
-    " · Attaque toutes les 0,4 seconde"
+    " · Attack cooldown reduced to one third",
+    " · Перезарядка сокращена до одной трети",
+    " · 攻撃クールダウンが通常の1/3",
+    " · Délai entre attaques réduit au tiers"
   ],
   "286": [
     " · Attacks every 2 seconds",
@@ -1818,10 +1818,10 @@
     "Alimentation du vaisseau-mère"
   ],
   "304": [
-    "{0}Nutrient reserve: {1} (target {2})\nConsumption: {3} / game day\nMothership energy: {4} P / game day\n{5} · Rated power 700 W",
-    "{0}Запас питания: {1} (цель {2})\nРасход: {3} / игровой день\nЭнергия корабля-матки: {4} P / игровой день\n{5} · Мощность 700 Вт",
-    "{0}栄養備蓄：{1}（補給目標 {2}）\n栄養消費：{3} / ゲーム日\n母艦エネルギー：{4} P / ゲーム日\n{5} · 定格発電700 W",
-    "{0}Réserve nutritive : {1} (objectif {2})\nConsommation : {3} / jour de jeu\nÉnergie : {4} P / jour de jeu\n{5} · Puissance nominale 700 W"
+    "{0}Nutrient reserve: {1} (target {2})\nConsumption: {3} / game day\nMothership energy: {4} P / game day\n{5} · Rated power {6} W",
+    "{0}Запас питания: {1} (цель {2})\nРасход: {3} / игровой день\nЭнергия корабля-матки: {4} P / игровой день\n{5} · Мощность {6} Вт",
+    "{0}栄養備蓄：{1}（補給目標 {2}）\n栄養消費：{3} / ゲーム日\n母艦エネルギー：{4} P / ゲーム日\n{5} · 定格発電{6} W",
+    "{0}Réserve nutritive : {1} (objectif {2})\nConsommation : {3} / jour de jeu\nÉnergie : {4} P / jour de jeu\n{5} · Puissance nominale {6} W"
   ],
   "305": [
     "Other goods",
@@ -2658,16 +2658,16 @@
     "Énergie insuffisante. Fournitures rendues ; renforts annulés"
   ],
   "444": [
-    "Zoraya legion arrived: Zoraya + 4 void glowships. Paid {0}{1}. Stays 120 seconds after all arrive.",
-    "Легион Зораи: Зорая + 4 сияющих корабля пустоты. Передано {0}{1}. После полного прибытия остаются 120 секунд.",
-    "ゾラヤ軍団到着：ゾラヤとヴォイド輝光艦4隻。{0}{1}を納入。全艦到着後120秒滞在",
-    "Arrivée de Zoraya et 4 vaisseaux lumineux du vide. {0}{1} livrés. Présence de 120 secondes après arrivée complète."
+    "Zoraya legion arrived: Zoraya + 4 void glowships. Stays 120 seconds after all arrive.",
+    "Легион Зораи: Зорая + 4 сияющих корабля пустоты. После полного прибытия остаются 120 секунд.",
+    "ゾラヤ軍団到着：ゾラヤとヴォイド輝光艦4隻。全艦到着後120秒滞在",
+    "Arrivée de Zoraya et 4 vaisseaux lumineux du vide. Présence de 120 secondes après arrivée complète."
   ],
   "445": [
-    "Zoraya legion · {0} P + {1} V · 2,000 silver or 200 gold · Left click: deploy; right click / Esc: cancel",
-    "Легион Зораи · {0} P + {1} V · 2000 серебра или 200 золота · ЛКМ: вызов; ПКМ / Esc: отмена",
-    "ゾラヤ軍団 · {0} P + {1} V · シルバー2000またはゴールド200 · 左クリックで配置、右クリック / Escで取消",
-    "Légion de Zoraya · {0} P + {1} V · 2 000 argent ou 200 or · Clic gauche : déployer ; clic droit / Échap : annuler"
+    "Zoraya legion · {0} P + {1} V · Left click: deploy; right click / Esc: cancel",
+    "Легион Зораи · {0} P + {1} V · ЛКМ: вызов; ПКМ / Esc: отмена",
+    "ゾラヤ軍団 · {0} P + {1} V · 左クリックで配置、右クリック / Escで取消",
+    "Légion de Zoraya · {0} P + {1} V · Clic gauche : déployer ; clic droit / Échap : annuler"
   ],
   "446": [
     "Solar ray gun · 300 P + 180 V · Left click: three rays / 8 seconds · Right click / Esc: cancel",
@@ -2700,10 +2700,10 @@
     "Arrivée de Seydas échouée ; aucun coût ni recharge"
   ],
   "451": [
-    "Seydas legion arrived: Seydas + 3 dark archons. Paid {0}{1}. Warps out after 120 seconds.",
-    "Легион Сейдаса прибыл: Сейдас + 3 тёмных архонта. Передано {0}{1}. Уход через 120 секунд.",
-    "セイダス軍団到着：セイダスとダークアルコン3名。{0}{1}を納入。120秒後ワープ撤退",
-    "Seydas et 3 archontes noirs arrivés. {0}{1} livrés. Retrait par distorsion après 120 secondes."
+    "Seydas legion arrived: Seydas + 3 dark archons. Warps out after 120 seconds.",
+    "Легион Сейдаса прибыл: Сейдас + 3 тёмных архонта. Уход через 120 секунд.",
+    "セイダス軍団到着：セイダスとダークアルコン3名。120秒後ワープ撤退",
+    "Seydas et 3 archontes noirs arrivés. Retrait par distorsion après 120 secondes."
   ],
   "452": [
     "Seydas",
@@ -2712,10 +2712,10 @@
     "Seydas"
   ],
   "453": [
-    "Seydas legion · {0} P + {1} V · 2,000 silver or 200 gold · Left click: deploy; right click / Esc: cancel",
-    "Легион Сейдаса · {0} P + {1} V · 2000 серебра или 200 золота · ЛКМ: вызов; ПКМ / Esc: отмена",
-    "セイダス軍団 · {0} P + {1} V · シルバー2000またはゴールド200 · 左クリックで配置、右クリック / Escで取消",
-    "Légion de Seydas · {0} P + {1} V · 2 000 argent ou 200 or · Clic gauche : déployer ; clic droit / Échap : annuler"
+    "Seydas legion · {0} P + {1} V · Left click: deploy; right click / Esc: cancel",
+    "Легион Сейдаса · {0} P + {1} V · ЛКМ: вызов; ПКМ / Esc: отмена",
+    "セイダス軍団 · {0} P + {1} V · 左クリックで配置、右クリック / Escで取消",
+    "Légion de Seydas · {0} P + {1} V · Clic gauche : déployer ; clic droit / Échap : annuler"
   ],
   "454": [
     "Mental allegiance",
@@ -2766,10 +2766,10 @@
     "Au moins une colonie disponible requise"
   ],
   "462": [
-    "Spacetime fluctuation: work speed ×5",
-    "Колебание пространства-времени: скорость работы ×5",
-    "時空変動：作業速度5倍",
-    "Fluctuation spatiotemporelle : vitesse de travail ×5"
+    "Spacetime fluctuation: work speed ×10",
+    "Колебание пространства-времени: скорость работы ×10",
+    "時空変動：作業速度10倍",
+    "Fluctuation spatiotemporelle : vitesse de travail ×10"
   ],
   "463": [
     "Cannot deploy this structure",
@@ -2820,10 +2820,10 @@
     "Arrivée de Tebrus échouée ; aucun coût ni recharge"
   ],
   "471": [
-    "Tebrus legion arrived: Tebrus + 10 melee warriors. Paid {0}{1}. Warps out after 120 seconds.",
-    "Тебрус и 10 воинов ближнего боя прибыли. Передано {0}{1}. Уход через 120 секунд.",
-    "テブルス軍団到着：テブルスと近接戦士10名。{0}{1}を納入。120秒後ワープ撤退",
-    "Tebrus et 10 guerriers de mêlée arrivés. {0}{1} livrés. Retrait par distorsion après 120 secondes."
+    "Tebrus legion arrived: Tebrus + 10 melee warriors. Warps out after 120 seconds.",
+    "Тебрус и 10 воинов ближнего боя прибыли. Уход через 120 секунд.",
+    "テブルス軍団到着：テブルスと近接戦士10名。120秒後ワープ撤退",
+    "Tebrus et 10 guerriers de mêlée arrivés. Retrait par distorsion après 120 secondes."
   ],
   "472": [
     "Tebrus",
@@ -2832,10 +2832,10 @@
     "Tebrus"
   ],
   "473": [
-    "Tebrus legion · {0} P + {1} V · 2,000 silver or 200 gold · Left click: deploy; right click / Esc: cancel",
-    "Легион Тебруса · {0} P + {1} V · 2000 серебра или 200 золота · ЛКМ: вызов; ПКМ / Esc: отмена",
-    "テブルス軍団 · {0} P + {1} V · シルバー2000またはゴールド200 · 左クリックで配置、右クリック / Escで取消",
-    "Légion de Tebrus · {0} P + {1} V · 2 000 argent ou 200 or · Clic gauche : déployer ; clic droit / Échap : annuler"
+    "Tebrus legion · {0} P + {1} V · Left click: deploy; right click / Esc: cancel",
+    "Легион Тебруса · {0} P + {1} V · ЛКМ: вызов; ПКМ / Esc: отмена",
+    "テブルス軍団 · {0} P + {1} V · 左クリックで配置、右クリック / Escで取消",
+    "Légion de Tebrus · {0} P + {1} V · Clic gauche : déployer ; clic droit / Échap : annuler"
   ],
   "474": [
     "Void suppression · Indestructible\nRadius 13 · Enemy movement and attack speed reduced to 30% · Turrets cease fire\nRemaining: {0}",
@@ -2844,10 +2844,10 @@
     "Suppression du vide · Indestructible\nRayon 13 · Déplacement et attaque ennemis réduits à 30 % · Tourelles arrêtées\nReste : {0}"
   ],
   "475": [
-    "Crystal cannot be at map edge",
-    "Кристалл нельзя поставить на краю карты",
-    "結晶はマップ最外周に配置不可",
-    "Le cristal ne peut être au bord de carte"
+    "The crystal must be within the map.",
+    "Кристалл должен находиться в пределах карты.",
+    "結晶はマップ内に配置してください。",
+    "Le cristal doit être placé dans les limites de la carte."
   ],
   "476": [
     "Crystal position must be explored",
@@ -2856,10 +2856,10 @@
     "L'emplacement du cristal doit être exploré"
   ],
   "477": [
-    "Position occupied by buildings, people or items. Choose elsewhere.",
-    "Место занято зданиями, людьми или вещами. Выберите другое.",
-    "建物、人員、品物で埋まっています。別の位置を選択",
-    "Position occupée par bâtiments, personnes ou objets. Choisissez ailleurs"
+    "The core needs an empty 3×3 area, clear of buildings, pawns, items and plants",
+    "Нужна свободная область 3×3 без построек, пешек, предметов и растений",
+    "建物・人員・アイテム・植物のない3×3マスが必要です",
+    "Le cœur exige une zone libre de 3×3, sans bâtiments, personnages, objets ni plantes"
   ],
   "478": [
     "Void suppression crystal unavailable for deployment",
@@ -2874,10 +2874,10 @@
     "Impossible de placer un cristal ici"
   ],
   "480": [
-    "Void suppression crystal · {0} P + {1} V · Radius 13 / 30 seconds · Left click: deploy; right click / Esc: cancel",
-    "Кристалл подавления пустоты · {0} P + {1} V · Радиус 13 / 30 секунд · ЛКМ: вызов; ПКМ / Esc: отмена",
-    "ヴォイド抑制結晶 · {0} P + {1} V · 半径13 / 30秒 · 左クリックで配置、右クリック / Escで取消",
-    "Cristal de suppression du vide · {0} P + {1} V · Rayon 13 / 30 secondes · Clic gauche : déployer ; clic droit / Échap : annuler"
+    "Void suppression crystal · {0} P + {1} V · Radius 18 / 30 seconds · Left click: deploy; right click / Esc: cancel",
+    "Кристалл подавления пустоты · {0} P + {1} V · Радиус 18 / 30 секунд · ЛКМ: вызов; ПКМ / Esc: отмена",
+    "ヴォイド抑制結晶 · {0} P + {1} V · 半径18 / 30秒 · 左クリックで配置、右クリック / Escで取消",
+    "Cristal de suppression du vide · {0} P + {1} V · Rayon 18 / 30 secondes · Clic gauche : déployer ; clic droit / Échap : annuler"
   ],
   "481": [
     "Void suppression crystal · {0}",
@@ -2928,10 +2928,10 @@
     "Frappe orbitale"
   ],
   "489": [
-    "Direct the mothership's orbital strikes. While aiming, click repeatedly to choose impact points. Each successful shot costs energy; ending targeting stops the attack.\n\nEach shot affects a radius of 3 cells, deals 30 base damage, penetrates 35% armor and deals 5 times damage to buildings. Blast damage does not fall off with distance. Cannot be used underground or directly hit targets under thick rock roofs.\n\nAfter researching precision ally recognition, the commander's direct fire avoids your faction and allies.",
-    "Наводит орбитальные удары корабля-матки. В режиме прицеливания повторными нажатиями выбирайте точки. Каждый успешный выстрел расходует энергию; выход из наведения прекращает атаку.\n\nРадиус 3 клетки, базовый урон 30, бронепробитие 35%, урон зданиям в 5 раз выше. Урон взрыва не падает с расстоянием. Не работает под землёй и под толстой горной крышей.\n\nПосле исследования точного распознавания союзников прямой огонь обходит вашу фракцию и союзников.",
-    "母艦の軌道攻撃を誘導します。照準中に連続クリックで着弾点を指定でき、成功した射撃ごとにエネルギーを消費します。照準を終了すると攻撃停止します。\n\n1発の半径は3マス、基礎ダメージ30、装甲貫通35%、建物へのダメージ5倍。距離による爆発減衰はありません。地下や厚い岩盤屋根の下への直接攻撃はできません。\n\n精密友軍識別の研究後は司令官の直接火力が自派閥と同盟軍を避けます。",
-    "Dirige les frappes orbitales du vaisseau-mère. En visant, cliquez plusieurs fois pour choisir les impacts. Chaque tir réussi coûte de l'énergie ; quitter le ciblage arrête l'attaque.\n\nRayon de 3 cases, dégâts de base 30, pénétration de 35 % et dégâts aux bâtiments multipliés par 5. Aucune atténuation des dégâts avec la distance. Inutilisable sous terre ou contre une cible sous roche épaisse.\n\nAprès la recherche d'identification précise des alliés, les tirs directs évitent votre faction et ses alliés."
+    "Direct the mothership's orbital strikes. While aiming, click repeatedly to choose impact points. Each successful shot costs energy; ending targeting stops the attack.\n\nEach shot affects a 3×3 square centered on the impact (9 cells), deals 30 base damage, penetrates 35% armor and deals 5 times damage to buildings. Blast damage does not fall off with distance. Cannot be used underground or directly hit targets under thick rock roofs.\n\nAfter researching precision ally recognition, the commander's direct fire avoids your faction and allies.",
+    "Наводит орбитальные удары корабля-матки. В режиме прицеливания повторными нажатиями выбирайте точки. Каждый успешный выстрел расходует энергию; выход из наведения прекращает атаку.\n\nОбласть каждого удара — квадрат 3×3 клетки с центром в точке попадания (9 клеток), базовый урон 30, бронепробитие 35%, урон зданиям в 5 раз выше. Урон взрыва не падает с расстоянием. Не работает под землёй и под толстой горной крышей.\n\nПосле исследования точного распознавания союзников прямой огонь обходит вашу фракцию и союзников.",
+    "母艦の軌道攻撃を誘導します。照準中に連続クリックで着弾点を指定でき、成功した射撃ごとにエネルギーを消費します。照準を終了すると攻撃停止します。\n\n1発の範囲は着弾点中心の3×3マス（計9マス）、基礎ダメージ30、装甲貫通35%、建物へのダメージ5倍。距離による爆発減衰はありません。地下や厚い岩盤屋根の下への直接攻撃はできません。\n\n精密友軍識別の研究後は司令官の直接火力が自派閥と同盟軍を避けます。",
+    "Dirige les frappes orbitales du vaisseau-mère. En visant, cliquez plusieurs fois pour choisir les impacts. Chaque tir réussi coûte de l'énergie ; quitter le ciblage arrête l'attaque.\n\nChaque tir touche un carré de 3×3 cases centré sur l'impact (9 cases), dégâts de base 30, pénétration de 35 % et dégâts aux bâtiments multipliés par 5. Aucune atténuation des dégâts avec la distance. Inutilisable sous terre ou contre une cible sous roche épaisse.\n\nAprès la recherche d'identification précise des alliés, les tirs directs évitent votre faction et ses alliés."
   ],
   "490": [
     "Orbital strike support protocol",
@@ -2964,10 +2964,10 @@
     "Protocole de surcharge de bouclier"
   ],
   "495": [
-    "Call sustained orbital bombardment. Over 30 seconds, 300 energy shells strike an area with radius 13. Each blast has radius 5, deals 30 base damage and 5 times damage to buildings, with no distance falloff.\n\nUseful against dense fortifications. Once started, it cannot be stopped; move allies away first. Cannot be used underground or directly strike targets under thick rock roofs.",
-    "Вызывает длительный орбитальный обстрел. За 30 секунд 300 энергоснарядов попадают в область радиусом 13. Каждый взрыв имеет радиус 5, базовый урон 30 и пятикратный урон зданиям, без падения с расстоянием.\n\nПодходит против плотных укреплений. Начатую атаку нельзя прервать; сначала отведите союзников. Недоступно под землёй и под толстой горной крышей.",
-    "指定範囲に継続軌道爆撃を要請します。30秒で300発のエネルギー弾が半径13マスに落下。各弾は半径5マス、基礎ダメージ30、建物ダメージ5倍で距離減衰なし。\n\n密集陣地に有効です。開始後は中止できないため、先に友軍を退避させてください。地下や厚い岩盤屋根の下への直接攻撃はできません。",
-    "Demande un bombardement orbital soutenu. En 30 secondes, 300 obus frappent une zone de rayon 13. Chaque explosion a un rayon de 5, inflige 30 dégâts de base et 5 fois plus aux bâtiments, sans atténuation.\n\nAdapté aux positions denses. Impossible à interrompre après lancement : éloignez d'abord les alliés. Inutilisable sous terre ou contre les cibles sous roche épaisse."
+    "Call sustained orbital bombardment. Over 30 seconds, 300 energy shells strike an area with radius 13. Each blast affects a 3×3 square centered on the impact (9 cells), deals 30 base damage and 5 times damage to buildings, with no distance falloff.\n\nUseful against dense fortifications. Once started, it cannot be stopped; move allies away first. Cannot be used underground or directly strike targets under thick rock roofs.",
+    "Вызывает длительный орбитальный обстрел. За 30 секунд 300 энергоснарядов попадают в область радиусом 13. Каждый взрыв охватывает квадрат 3×3 клетки с центром в точке попадания (9 клеток), базовый урон 30 и пятикратный урон зданиям, без падения с расстоянием.\n\nПодходит против плотных укреплений. Начатую атаку нельзя прервать; сначала отведите союзников. Недоступно под землёй и под толстой горной крышей.",
+    "指定範囲に継続軌道爆撃を要請します。30秒で300発のエネルギー弾が半径13マスに落下。各弾の範囲は着弾点中心の3×3マス（計9マス）、基礎ダメージ30、建物ダメージ5倍で距離減衰なし。\n\n密集陣地に有効です。開始後は中止できないため、先に友軍を退避させてください。地下や厚い岩盤屋根の下への直接攻撃はできません。",
+    "Demande un bombardement orbital soutenu. En 30 secondes, 300 obus frappent une zone de rayon 13. Chaque explosion touche un carré de 3×3 cases centré sur l'impact (9 cases), inflige 30 dégâts de base et 5 fois plus aux bâtiments, sans atténuation.\n\nAdapté aux positions denses. Impossible à interrompre après lancement : éloignez d'abord les alliés. Inutilisable sous terre ou contre les cibles sous roche épaisse."
   ],
   "496": [
     "Solar bombardment support protocol",
@@ -3000,10 +3000,10 @@
     "Fluctuation spatiotemporelle"
   ],
   "501": [
-    "Accelerate production across all colonies. Friendly research, construction, growing, crafting and other work runs at 5 times normal speed for 60 seconds. Hyperdimensional monolith attack frequency also increases.\n\nMothership resource income is not accelerated. Each colony's effect follows local time and can be ended early from the commander panel.",
-    "Ускоряет производство во всех колониях. Исследования, строительство, выращивание, изготовление и другая работа союзников идут в 5 раз быстрее 60 секунд. Частота атак монолита тоже возрастает.\n\nДоход ресурсов корабля-матки не ускоряется. Эффект следует местному времени каждой колонии и может быть остановлен с панели.",
-    "各入植地の生産を加速し、友軍の研究、建築、栽培、製造などの作業速度を60秒間5倍にします。超次元モノリスの攻撃頻度も上がります。\n\n母艦の資源産出は加速しません。各入植地の効果は現地時間に従い、司令パネルから早期終了できます。",
-    "Accélère la production dans toutes les colonies. Recherche, construction, culture, fabrication et autres travaux alliés passent à 5 fois leur vitesse pendant 60 secondes. La fréquence d'attaque du monolithe augmente aussi.\n\nLes revenus du vaisseau-mère ne sont pas accélérés. Chaque effet suit le temps local et peut être arrêté depuis le panneau."
+    "For 60 seconds on every colony map:\n\n1. All friendly pawns and animals move at ×2 speed.\n2. All friendly units research, build, grow, mine, tend and craft at ×10 work speed.\n3. All friendly turrets, including hyperdimensional monoliths, have one-third attack cooldown.\n4. Nivarian buildings work at ×10 speed, including uplink research and automated manufacturing.\n\nP and V production from energy towers, particle collectors and similar facilities is unchanged. Each map follows local time; end the effect early from the commander panel.",
+    "На 60 секунд на каждой карте колонии:\n\n1. Все союзные пешки и животные двигаются в 2 раза быстрее.\n2. Исследования, строительство, выращивание, добыча, лечение и изготовление союзных юнитов ускоряются в 10 раз.\n3. Перезарядка всех союзных турелей, включая гиперпространственные монолиты, сокращается до одной трети.\n4. Ниварианские здания работают в 10 раз быстрее, включая исследования через восходящую связь и автоматическое производство.\n\nВыработка P и V энергетическими башнями, сборщиками частиц и подобными объектами не ускоряется. Эффект следует местному времени каждой карты и может быть завершён с панели командира.",
+    "各入植地マップで60秒間、次の加速を適用します。\n\n1. すべての友軍Pawnと動物の移動速度が2倍。\n2. すべての友軍ユニットの研究、建築、栽培、採掘、治療、製造などの作業速度が10倍。\n3. 超次元モノリスを含むすべての友軍砲塔の攻撃クールダウンが通常の1/3。\n4. 上行リンク研究や自動生産を含むニヴァリアン建物の作業速度が10倍。\n\nエネルギータワーや粒子収集器などのP・V産出速度は変わりません。効果は各マップの現地時間に従い、司令パネルから早期終了できます。",
+    "Pendant 60 secondes sur chaque carte de colonie :\n\n1. Tous les pions et animaux alliés se déplacent à vitesse ×2.\n2. Les unités alliées recherchent, construisent, cultivent, minent, soignent et fabriquent à vitesse ×10.\n3. Toutes les tourelles alliées, y compris les monolithes hyperdimensionnels, ont un délai entre attaques réduit au tiers.\n4. Les bâtiments nivarians travaillent à vitesse ×10, y compris la recherche par liaison montante et la fabrication automatique.\n\nLa production de P et V des tours d’énergie, collecteurs de particules et installations similaires reste inchangée. Chaque carte suit son temps local ; le panneau du commandant permet d’arrêter l’effet."
   ],
   "502": [
     "Spacetime fluctuation support protocol",
@@ -3030,10 +3030,10 @@
     "Noyau d'ombre"
   ],
   "506": [
-    "Deploy a shadow core. Once colonists supply steel, components and dragon crystals, the mothership builds it into a shadow energy tower.\n\nThe tower sends 120 P and 80 V to the mothership per day and cloaks allies within 7 cells. It does not cloak itself. Multiple towers can produce resources independently.",
-    "Развёртывает теневое ядро. После доставки стали, компонентов и драконьих кристаллов корабль-матка строит теневую энергетическую башню.\n\nБашня даёт 120 P и 80 V в день и скрывает союзников в радиусе 7 клеток, но не себя. Несколько башен производят ресурсы независимо.",
-    "シャドウコアを配置します。入植者がスチール、コンポーネント、龍晶を納入すると母艦がシャドウエネルギータワーに建設します。\n\n毎日120 Pと80 Vを母艦へ送り、半径7マスの友軍を透明化します。自分自身は隠れません。複数建設でき、それぞれ資源を生産します。",
-    "Déploie un noyau d'ombre. Après livraison d'acier, composants et cristaux draconiques, le vaisseau-mère construit une tour d'énergie d'ombre.\n\nElle fournit 120 P et 80 V par jour et camoufle les alliés à moins de 7 cases, mais pas elle-même. Plusieurs tours peuvent produire indépendamment."
+    "Deploy a shadow core. Once colonists supply steel, components and dragon crystals, the mothership completes a Nivarian shadow energy tower.\n\nA nutrient-fed energy facility with ghost-green resonant crystals, occupying 2×2 cells. Generates 1400 W; P output and nutrition consumption are twice those of the Nivarian energy tower. Colonists deliver allowed food. Adjust supplies in the Nutrition tab.\n\nWhile operating, cloaks allies within 7 cells. Insufficient nutrition, switching off or interrupted operation stops electricity, P production and cloaking together; replenishing nutrition restores operation. Attacks and damage do not break cloaking, but detection still works.\n\nThe tower does not cloak itself and needs other defenses.",
+    "Развёртывает теневое ядро. После доставки стали, компонентов и драконьих кристаллов корабль-матка строит теневую энергетическую башню нивариан.\n\nЭнергетическая башня с призрачно-зелёными кристаллами, питаемыми пищей. Занимает 2×2 клетки, вырабатывает 1400 Вт. Производство P и расход питания вдвое выше, чем у обычной энергетической башни нивариан. Поселенцы доставляют разрешённую пищу; её виды выбираются на вкладке питания.\n\nРаботающая башня скрывает союзников в радиусе 7 клеток. Недостаток питания, выключение или остановка одновременно прекращают выработку электричества, P и маскировку. После пополнения работа возобновляется. Атаки и урон не снимают маскировку, но обнаружение действует.\n\nСаму себя башня не скрывает и нуждается в защите.",
+    "シャドウコアを配置します。入植者がスチール、コンポーネント、龍晶を納入すると母艦がシャドウエネルギータワーを建設します。\n\n幽緑色の共鳴結晶を栄養で維持する母艦施設。占有面積は2×2マス、発電量は1400 W。P産出量と栄養消費量は通常のニヴァリアンエネルギータワーの2倍です。入植者が許可された食料を搬入します。「栄養」タブで種類を設定できます。\n\n稼働中は半径7マスの友軍を隠します。栄養不足、電源オフ、稼働停止時には発電・P産出・隠蔽が同時に停止し、補給後に再開します。攻撃や被弾では解除されませんが、探知は有効です。\n\nタワー自身は隠れないため、防衛が必要です。",
+    "Déploie un noyau d’ombre. Après livraison d’acier, de composants et de cristaux draconiques, le vaisseau-mère construit une tour d’énergie d’ombre nivariane.\n\nUne installation alimentée en nutriments avec des cristaux vert spectral. Occupe 2×2 cases et produit 1400 W. La production de P et la consommation nutritive sont le double de celles de la tour nivariane ordinaire. Les colons livrent les aliments autorisés, configurables dans l’onglet Nutrition.\n\nEn fonctionnement, elle camoufle les alliés dans un rayon de 7 cases. Une réserve nutritive insuffisante, l’arrêt ou une interruption suspendent ensemble l’électricité, les P et le camouflage. Le ravitaillement permet la reprise. Les attaques et dégâts ne rompent pas le camouflage, mais la détection reste efficace.\n\nLa tour ne se camoufle pas elle-même et doit être protégée."
   ],
   "507": [
     "Shadow core support protocol",
@@ -3150,10 +3150,10 @@
     "Légion de Tebrus"
   ],
   "526": [
-    "Request Tebrus and ten melee warriors for 120 seconds. Tebrus uses a psionic pulse gun and casts psionic storms against clustered enemies. Storms burn enemies and heal allies within range.\n\nBesides energy, pay 2,000 silver, or 200 gold if silver is insufficient. Supplies must be in range of a powered orbital trade beacon on this map.\n\nRequires non-hostile Nivarian survivors. The legion fights independently and cannot be drafted. Members and exclusive equipment are recovered on departure. All three expedition legions share a 7-day cooldown.",
-    "Вызывает Тебруса и десять воинов ближнего боя на 120 секунд. Тебрус использует пси-импульсную пушку и штормы против скоплений врагов. Шторм обжигает врагов и лечит союзников в радиусе.\n\nКроме энергии нужно 2000 серебра, при нехватке: 200 золота. Припасы должны быть у запитанного торгового маяка этой карты.\n\nНужны невраждебные выжившие нивариан. Легион сражается сам, призыв невозможен. При уходе бойцы и особое снаряжение забираются. Все три легиона делят перезарядку 7 дней.",
-    "テブルスと近接戦士10名を120秒間要請します。テブルスは霊能パルス銃を使い、密集した敵に霊能ストームを発動。敵を焼き、範囲内の友軍を治療します。\n\nエネルギー以外にシルバー2000、足りなければゴールド200を納入。現在マップの通電中の軌道交易ビーコン範囲内に必要です。\n\n非敵対のニヴァリアン生存者が必要。軍団は自動戦闘し徴兵不可。撤退時に隊員と専用装備を回収します。3軍団で7日のクールダウンを共有します。",
-    "Demande Tebrus et dix guerriers de mêlée pour 120 secondes. Tebrus utilise un fusil à impulsions psioniques et des tempêtes contre les groupes ennemis, brûlant les ennemis et soignant les alliés proches.\n\nOutre l'énergie, coûte 2 000 d'argent, ou 200 d'or si l'argent manque, à portée d'une balise orbitale alimentée sur cette carte.\n\nSurvivants nivarians non hostiles requis. Combat autonome, sans mobilisation. Membres et équipement exclusif récupérés au départ. Recharge commune de 7 jours aux trois légions."
+    "Request Tebrus and ten melee warriors for 120 seconds. Tebrus uses a psionic pulse gun and casts psionic storms against clustered enemies. Storms burn enemies and heal allies within range.\n\nRequires non-hostile Nivarian survivors. The legion fights independently and cannot be drafted. Members and exclusive equipment are recovered on departure. All three expedition legions share a 7-day cooldown.",
+    "Вызывает Тебруса и десять воинов ближнего боя на 120 секунд. Тебрус использует пси-импульсную пушку и штормы против скоплений врагов. Шторм обжигает врагов и лечит союзников в радиусе.\n\nНужны невраждебные выжившие нивариан. Легион сражается сам, призыв невозможен. При уходе бойцы и особое снаряжение забираются. Все три легиона делят перезарядку 7 дней.",
+    "テブルスと近接戦士10名を120秒間要請します。テブルスは霊能パルス銃を使い、密集した敵に霊能ストームを発動。敵を焼き、範囲内の友軍を治療します。\n\n非敵対のニヴァリアン生存者が必要。軍団は自動戦闘し徴兵不可。撤退時に隊員と専用装備を回収します。3軍団で7日のクールダウンを共有します。",
+    "Demande Tebrus et dix guerriers de mêlée pour 120 secondes. Tebrus utilise un fusil à impulsions psioniques et des tempêtes contre les groupes ennemis, brûlant les ennemis et soignant les alliés proches.\n\nSurvivants nivarians non hostiles requis. Combat autonome, sans mobilisation. Membres et équipement exclusif récupérés au départ. Recharge commune de 7 jours aux trois légions."
   ],
   "527": [
     "Tebrus legion support protocol",
@@ -3174,10 +3174,10 @@
     "Légion de Zoraya"
   ],
   "530": [
-    "Call command ship Zoraya and four glowships. They fight automatically for 120 seconds after arrival, using prism beams that freeze enemies and gain damage while locked on one target.\n\nBesides energy, pay 2,000 silver or, if insufficient, 200 gold, within range of a powered orbital trade beacon on this map.\n\nRequires non-hostile Nivarian survivors. Ships, wrecks and dropped items are recovered afterwards. All three expedition legions share a 7-day cooldown.",
-    "Вызывает командный корабль Зорая и четыре сияющих корабля. После прибытия автоматически сражаются 120 секунд. Призматические лучи замораживают врагов и усиливаются при удержании одной цели.\n\nКроме энергии нужно 2000 серебра, при нехватке: 200 золота, у запитанного торгового маяка этой карты.\n\nНужны невраждебные выжившие нивариан. После поддержки корабли, обломки и вещи забираются. Три легиона делят перезарядку 7 дней.",
-    "指揮艦ゾラヤと輝光艦4隻を要請します。全艦到着後120秒自動戦闘。プリズムビームは凍結効果があり、同一対象の継続捕捉で威力上昇。\n\nエネルギー以外にシルバー2000、足りなければゴールド200を現在マップの通電中の軌道交易ビーコン範囲内に納入します。\n\n非敵対のニヴァリアン生存者が必要。終了後は艦、残骸、落下品を回収。3軍団で7日のクールダウンを共有します。",
-    "Appelle Zoraya et quatre vaisseaux lumineux. Après arrivée complète, ils combattent automatiquement 120 secondes avec des rayons prismatiques gelant les ennemis et gagnant en dégâts sur une même cible.\n\nOutre l'énergie : 2 000 d'argent, ou 200 d'or si insuffisant, à portée d'une balise orbitale alimentée sur cette carte.\n\nSurvivants nivarians non hostiles requis. Vaisseaux, épaves et objets récupérés ensuite. Recharge commune de 7 jours aux trois légions."
+    "Call command ship Zoraya and four glowships. They fight automatically for 120 seconds after arrival, using prism beams that freeze enemies and gain damage while locked on one target.\n\nRequires non-hostile Nivarian survivors. Ships, wrecks and dropped items are recovered afterwards. All three expedition legions share a 7-day cooldown.",
+    "Вызывает командный корабль Зорая и четыре сияющих корабля. После прибытия автоматически сражаются 120 секунд. Призматические лучи замораживают врагов и усиливаются при удержании одной цели.\n\nНужны невраждебные выжившие нивариан. После поддержки корабли, обломки и вещи забираются. Три легиона делят перезарядку 7 дней.",
+    "指揮艦ゾラヤと輝光艦4隻を要請します。全艦到着後120秒自動戦闘。プリズムビームは凍結効果があり、同一対象の継続捕捉で威力上昇。\n\n非敵対のニヴァリアン生存者が必要。終了後は艦、残骸、落下品を回収。3軍団で7日のクールダウンを共有します。",
+    "Appelle Zoraya et quatre vaisseaux lumineux. Après arrivée complète, ils combattent automatiquement 120 secondes avec des rayons prismatiques gelant les ennemis et gagnant en dégâts sur une même cible.\n\nSurvivants nivarians non hostiles requis. Vaisseaux, épaves et objets récupérés ensuite. Recharge commune de 7 jours aux trois légions."
   ],
   "531": [
     "Zoraya legion support protocol",
@@ -3192,10 +3192,10 @@
     "Légion de Seydas"
   ],
   "533": [
-    "Request Seydas and three dark archons for 120 seconds. They use mind control, preferring valuable enemies, to recruit them into the Nivarian survivors faction. Controlled units do not become your colonists and remain with that faction after the legion leaves.\n\nBesides energy, pay 2,000 silver or, if insufficient, 200 gold, within range of a powered orbital trade beacon on this map.\n\nRequires non-hostile Nivarian survivors. Autonomous combat, no drafting. The four members and exclusive gear are recovered when leaving. All three legions share a 7-day cooldown.",
-    "Вызывает Сейдаса и трёх тёмных архонтов на 120 секунд. Психическое подчинение предпочитает ценных врагов и переводит их к выжившим нивариан. Подчинённые не становятся вашими поселенцами и остаются у этой фракции после ухода легиона.\n\nКроме энергии нужно 2000 серебра, при нехватке: 200 золота, у запитанного торгового маяка этой карты.\n\nНужны невраждебные выжившие нивариан. Автономный бой, призыв невозможен. Четыре бойца и особое снаряжение забираются при уходе. Общая перезарядка трёх легионов: 7 дней.",
-    "セイダスとダークアルコン3名を120秒間要請します。価値の高い敵を優先して精神支配し、ニヴァリアン生存者派閥に加入させます。あなたの入植者にはならず、軍団撤退後も元の敵対所属に戻りません。\n\nエネルギー以外にシルバー2000、足りなければゴールド200を現在マップの通電中の軌道交易ビーコン範囲内に納入します。\n\n非敵対のニヴァリアン生存者が必要。自動戦闘し徴兵不可。撤退時に4名と専用装備を回収。3軍団で7日のクールダウンを共有します。",
-    "Demande Seydas et trois archontes noirs pour 120 secondes. Leur contrôle mental privilégie les ennemis de grande valeur et les recrute chez les survivants nivarians. Ils ne deviennent pas vos colons et restent dans cette faction au départ de la légion.\n\nOutre l'énergie : 2 000 d'argent, ou 200 d'or si insuffisant, à portée d'une balise alimentée sur cette carte.\n\nSurvivants nivarians non hostiles requis. Combat autonome, sans mobilisation. Les quatre membres et leur équipement exclusif sont récupérés au départ. Recharge commune de 7 jours aux trois légions."
+    "Request Seydas and three dark archons for 120 seconds. They use mind control, preferring valuable enemies, to recruit them into the Nivarian survivors faction. Controlled units do not become your colonists and remain with that faction after the legion leaves.\n\nRequires non-hostile Nivarian survivors. Autonomous combat, no drafting. The four members and exclusive gear are recovered when leaving. All three legions share a 7-day cooldown.",
+    "Вызывает Сейдаса и трёх тёмных архонтов на 120 секунд. Психическое подчинение предпочитает ценных врагов и переводит их к выжившим нивариан. Подчинённые не становятся вашими поселенцами и остаются у этой фракции после ухода легиона.\n\nНужны невраждебные выжившие нивариан. Автономный бой, призыв невозможен. Четыре бойца и особое снаряжение забираются при уходе. Общая перезарядка трёх легионов: 7 дней.",
+    "セイダスとダークアルコン3名を120秒間要請します。価値の高い敵を優先して精神支配し、ニヴァリアン生存者派閥に加入させます。あなたの入植者にはならず、軍団撤退後も元の敵対所属に戻りません。\n\n非敵対のニヴァリアン生存者が必要。自動戦闘し徴兵不可。撤退時に4名と専用装備を回収。3軍団で7日のクールダウンを共有します。",
+    "Demande Seydas et trois archontes noirs pour 120 secondes. Leur contrôle mental privilégie les ennemis de grande valeur et les recrute chez les survivants nivarians. Ils ne deviennent pas vos colons et restent dans cette faction au départ de la légion.\n\nSurvivants nivarians non hostiles requis. Combat autonome, sans mobilisation. Les quatre membres et leur équipement exclusif sont récupérés au départ. Recharge commune de 7 jours aux trois légions."
   ],
   "534": [
     "Seydas legion support protocol",
@@ -3228,10 +3228,10 @@
     "Cristal de suppression du vide"
   ],
   "539": [
-    "Warp in a void suppression crystal for 30 seconds. Within 13 cells, enemies' movement and attack speeds drop to 30%, and enemy turrets stop firing.\n\nThe crystal cannot be destroyed by attacks. Enemies recover immediately on leaving range. Effects of multiple crystals do not stack. Crystals can be recalled early.",
-    "Переносит кристалл подавления пустоты на 30 секунд. В радиусе 13 клеток скорость движения и атак врагов падает до 30%, турели прекращают огонь.\n\nКристалл неуязвим. Вне радиуса враги сразу восстанавливаются. Эффекты кристаллов не складываются. Возможен досрочный отзыв.",
-    "ヴォイド抑制結晶を30秒間配置します。半径13マスの敵の移動と攻撃速度が30%に低下し、敵砲塔は停火します。\n\n攻撃で破壊されません。範囲を離れた敵は即時回復し、同種結晶の効果は重複しません。早期撤収可能です。",
-    "Déploie un cristal de suppression du vide pour 30 secondes. À moins de 13 cases, déplacements et attaques ennemis passent à 30 % et les tourelles ennemies cessent de tirer.\n\nIndestructible par attaque. Les ennemis récupèrent dès qu'ils quittent la portée. Les effets ne se cumulent pas. Rappel anticipé possible."
+    "Warp in a void suppression crystal for 30 seconds. Within 18 cells, enemies' movement and attack speeds drop to 30%, and enemy turrets stop firing.\n\nThe crystal cannot be destroyed by attacks. Enemies recover immediately on leaving range. Effects of multiple crystals do not stack. Crystals can be recalled early.\n\nThe crystal occupies no ground space and does not block movement. It can be deployed on any terrain and overlap buildings, units, items and plants.",
+    "Переносит кристалл подавления пустоты на 30 секунд. В радиусе 18 клеток скорость движения и атак врагов падает до 30%, турели прекращают огонь.\n\nКристалл неуязвим. Вне радиуса враги сразу восстанавливаются. Эффекты кристаллов не складываются. Возможен досрочный отзыв.\n\nКристалл не занимает место и не препятствует движению. Его можно размещать на любой местности поверх зданий, юнитов, предметов и растений.",
+    "ヴォイド抑制結晶を30秒間配置します。半径18マスの敵の移動と攻撃速度が30%に低下し、敵砲塔は停火します。\n\n攻撃で破壊されません。範囲を離れた敵は即時回復し、同種結晶の効果は重複しません。早期撤収可能です。\n\n結晶は地面のスペースを占有せず、移動を妨げません。あらゆる地形に配置でき、建物・ユニット・アイテム・植物と重ねられます。",
+    "Déploie un cristal de suppression du vide pour 30 secondes. À moins de 18 cases, déplacements et attaques ennemis passent à 30 % et les tourelles ennemies cessent de tirer.\n\nIndestructible par attaque. Les ennemis récupèrent dès qu'ils quittent la portée. Les effets ne se cumulent pas. Rappel anticipé possible.\n\nLe cristal ne prend aucune place au sol et ne bloque pas les déplacements. Il peut être déployé sur tout terrain et se superposer aux bâtiments, unités, objets et plantes."
   ],
   "540": [
     "Void suppression crystal support protocol",
@@ -3264,10 +3264,10 @@
     "Porte-aéronefs nivarian"
   ],
   "545": [
-    "A heavy Nivarian carrier with 5,000 HP and 10,000 kg cargo capacity. It has no direct weapons and fights using interceptors.\n\nLoad dragonfrost steel as cargo to fill a 1,000-unit production reserve. Each interceptor costs 10 steel and takes 15 seconds, whether landed or flying. Hangar and deployed aircraft total at most 8, each with 150 HP.\n\nIn aerial combat, detects enemies within 60 cells and launches one interceptor per second. Interceptors return beyond 80 cells from their carrier. Landing orders stop launches and recall all aircraft.\n\nStores 10,000 chemfuel and consumes 1 per second in local flight. World travel uses shuttle fuel rules, with range limited by fuel. No extra takeoff cooldown; clear roofs above and enough ground space for landing.\n\nWith Milira Race enabled, choose “Upgrade starship propulsion” while landed. Colonists install 10 Milira starship batteries. Then each takeoff costs 200 chemfuel, with no continuous fuel use locally or on the world map. Upgrade progress is saved; installed batteries are consumed.",
-    "Тяжёлый авианосец нивариан: 5000 ОЗ, грузоподъёмность 10 000 кг. Собственного оружия нет, сражается перехватчиками.\n\nЗагружайте драконью морозную сталь в груз: резерв до 1000 единиц. Перехватчик требует 10 стали и строится 15 секунд на земле или в полёте. Всего до 8 в ангаре и в бою, по 150 ОЗ.\n\nВ полёте обнаруживает врагов в радиусе 60 клеток и выпускает один аппарат в секунду. За пределами 80 клеток от авианосца они возвращаются. Приказ посадки прекращает вылеты и отзывает всех.\n\nЗапас 10 000 химтоплива; местный полёт расходует 1 в секунду. Расход в мире как у челнока, дальность ограничена топливом. Дополнительной перезарядки взлёта нет; сверху не должно быть крыши, для посадки нужно свободное место.\n\nС Milira Race на земле доступно улучшение двигателя: поселенцы установят 10 батарей милира. Затем взлёт стоит 200 химтоплива, непрерывного расхода на карте и в мире нет. Прогресс сохраняется, установленные батареи расходуются.",
-    "耐久5000、積載10000 kgの大型空母。直接攻撃兵器はなく艦載機で戦闘します。\n\n龍霜鋼を貨物として搬入し、最大1000の製造備蓄を補充できます。1機につき龍霜鋼10、製造15秒で、停泊中も飛行中も製造可能。格納庫と出撃中を合わせ最大8機、各耐久150。\n\n飛行戦闘時は60マス以内の敵を見つけ、毎秒1機出撃。空母から80マス離れると帰還します。着陸命令で出撃を止め全機回収します。\n\n化学燃料最大10000、マップ内飛行中は毎秒1消費。ワールド移動はシャトルと同じ消費で燃料が航続距離を制限します。追加離陸クールダウンなし。上の屋根を除き、着陸用空間を確保してください。\n\nミリラ種族有効時、停泊中に星艦動力改良を選べます。入植者がバッテリー10個を設置すると、離陸ごとに燃料200を消費し、マップ・ワールドで継続消費しません。進捗は保存され、設置済みバッテリーは消費されます。",
-    "Grand porte-aéronefs nivarian : 5 000 PV, capacité 10 000 kg. Sans arme directe, il combat avec ses intercepteurs.\n\nChargez l'acier dracogivré en fret pour remplir une réserve de 1 000 unités. Chaque appareil coûte 10 acier et prend 15 secondes, posé ou en vol. Maximum 8 au total, hangar et combat, chacun avec 150 PV.\n\nEn vol de combat, repère les ennemis à moins de 60 cases et lance un appareil par seconde. Ils reviennent au-delà de 80 cases du porteur. L'ordre d'atterrissage arrête les lancements et rappelle tous les appareils.\n\nRéserve de 10 000 carburant chimique ; vol local : 1 par seconde. Voyage mondial comme une navette, portée limitée par le carburant. Aucune recharge de décollage supplémentaire ; zone sans toit et espace libre pour atterrir requis.\n\nAvec Milira Race, améliorez la propulsion à l'arrêt. Les colons installent 10 batteries Milira : chaque décollage coûte ensuite 200 carburant, sans consommation continue locale ou mondiale. Progression sauvegardée ; batteries installées consommées."
+    "A heavy Nivarian carrier with 2,500 HP and 10,000 kg cargo capacity. It has no direct weapons and fights using interceptors.\n\nSet the desired amount in the dedicated “Dragonfrost steel reserve” panel. Colonists haul and refill the carrier while it is grounded, up to 1,000 units. Dragonfrost steel in the transport hold is not automatically used for manufacturing.Each interceptor costs 10 dragonfrost steel and takes 5 seconds to build, both on the ground and in flight. The hangar and deployed interceptors together are limited to 6; each interceptor has 125 hit points.\n\nIn aerial combat, detects enemies within 60 cells and launches one interceptor per second. Interceptors return beyond 80 cells from their carrier. Landing orders stop launches and recall all aircraft.\n\nStores 10,000 chemfuel and consumes 1 per second in local flight. World travel uses shuttle fuel rules, with range limited by fuel. No extra takeoff cooldown; clear roofs above and enough ground space for landing.\n\nWith Milira Race enabled, choose “Upgrade starship propulsion” while landed. Colonists install 10 Milira starship batteries. Then each takeoff costs 200 chemfuel, with no continuous fuel use locally or on the world map. Upgrade progress is saved; installed batteries are consumed.",
+    "Тяжёлый авианосец нивариан: 2500 ОЗ, грузоподъёмность 10 000 кг. Собственного оружия нет, сражается перехватчиками.\n\nЗадайте нужное количество на отдельной панели «Запас дракоморозной стали». Колонисты доставляют и загружают сталь, пока авианосец стоит на земле, до 1000 единиц. Сталь в грузовом отсеке не расходуется автоматически на производство.Каждый перехватчик стоит 10 единиц дракоморозной стали и строится 5 секунд как на земле, так и в полёте. В ангаре и в полёте может быть всего 6 перехватчиков; прочность каждого — 125.\n\nВ полёте обнаруживает врагов в радиусе 60 клеток и выпускает один аппарат в секунду. За пределами 80 клеток от авианосца они возвращаются. Приказ посадки прекращает вылеты и отзывает всех.\n\nЗапас 10 000 химтоплива; местный полёт расходует 1 в секунду. Расход в мире как у челнока, дальность ограничена топливом. Дополнительной перезарядки взлёта нет; сверху не должно быть крыши, для посадки нужно свободное место.\n\nС Milira Race на земле доступно улучшение двигателя: поселенцы установят 10 батарей милира. Затем взлёт стоит 200 химтоплива, непрерывного расхода на карте и в мире нет. Прогресс сохраняется, установленные батареи расходуются.",
+    "耐久2500、積載10000 kgの大型空母。直接攻撃兵器はなく艦載機で戦闘します。\n\n専用の「龍霜鋼の備蓄」パネルで目標量を設定すると、着陸中に入植者が龍霜鋼を運搬して補充します。上限は1000です。輸送用貨物室の龍霜鋼は自動的に製造へ使われません。艦載機1機につき龍霜鋼10を消費し、製造には5秒かかります。着陸中も飛行中も製造可能です。格納庫と出撃中の艦載機の合計上限は6機で、各機の耐久値は125です。\n\n飛行戦闘時は60マス以内の敵を見つけ、毎秒1機出撃。空母から80マス離れると帰還します。着陸命令で出撃を止め全機回収します。\n\n化学燃料最大10000、マップ内飛行中は毎秒1消費。ワールド移動はシャトルと同じ消費で燃料が航続距離を制限します。追加離陸クールダウンなし。上の屋根を除き、着陸用空間を確保してください。\n\nミリラ種族有効時、停泊中に星艦動力改良を選べます。入植者がバッテリー10個を設置すると、離陸ごとに燃料200を消費し、マップ・ワールドで継続消費しません。進捗は保存され、設置済みバッテリーは消費されます。",
+    "Grand porte-aéronefs nivarian : 2 500 PV, capacité 10 000 kg. Sans arme directe, il combat avec ses intercepteurs.\n\nRéglez la quantité souhaitée dans le panneau « Réserve d’acier givre-dragon ». Les colons apportent et chargent l’acier lorsque le porte-avions est au sol, jusqu’à 1 000 unités. L’acier de la soute de transport n’est pas automatiquement utilisé pour la fabrication.Chaque intercepteur coûte 10 unités d’acier givre-dragon et demande 5 secondes de fabrication, au sol comme en vol. Le hangar et les intercepteurs déployés sont limités à 6 au total ; chacun possède 125 points de vie.\n\nEn vol de combat, repère les ennemis à moins de 60 cases et lance un appareil par seconde. Ils reviennent au-delà de 80 cases du porteur. L'ordre d'atterrissage arrête les lancements et rappelle tous les appareils.\n\nRéserve de 10 000 carburant chimique ; vol local : 1 par seconde. Voyage mondial comme une navette, portée limitée par le carburant. Aucune recharge de décollage supplémentaire ; zone sans toit et espace libre pour atterrir requis.\n\nAvec Milira Race, améliorez la propulsion à l'arrêt. Les colons installent 10 batteries Milira : chaque décollage coûte ensuite 200 carburant, sans consommation continue locale ou mondiale. Progression sauvegardée ; batteries installées consommées."
   ],
   "546": [
     "Nivarian carrier (landing)",
@@ -3294,10 +3294,10 @@
     "Vaisseau gravitationnel nivarian"
   ],
   "550": [
-    "A Nivarian anti-air ship with light transport capability. Footprint 3×3, 600 HP, cargo capacity 300 kg.\n\nWhile airborne, fires twin prism lasers at airborne enemies within 16 cells, once per second. Each beam deals 12 base damage, penetrates 50% armor and deals triple damage to buildings, without freezing. Cannot directly target ground enemies.\n\nThe gravity beam lifts and stuns a ground enemy within 16 cells for 5 seconds, making it a valid laser target. No extra resource cost; cooldown 8 seconds. Manual or automatic use.\n\nStores 600 chemfuel. Local flight consumes 1 every 5 seconds. World travel costs half a shuttle's fuel; range is fuel-limited. No extra takeoff cooldown; unroofed launch and clear landing space required.\n\nWith Milira Race enabled, landed ships can upgrade propulsion. Colonists install 2 Milira batteries. Then takeoff costs 100 chemfuel with no continuous consumption locally or worldwide. Progress is saved; installed batteries are consumed.",
-    "Корабль ПВО нивариан для лёгких перевозок. Размер 3×3, 600 ОЗ, грузоподъёмность 300 кг.\n\nВ полёте два призматических лазера атакуют воздушные цели в радиусе 16 клеток раз в секунду. Каждый луч: урон 12, бронепробитие 50%, тройной урон зданиям, без заморозки. Наземные цели напрямую не атакует.\n\nГравитационный луч поднимает и оглушает наземного врага в радиусе 16 на 5 секунд, делая его целью лазера. Ресурсы не нужны, перезарядка 8 секунд. Ручное или автоматическое применение.\n\nЗапас 600 химтоплива. На карте расход 1 каждые 5 секунд. В мире расход вдвое меньше челнока, дальность зависит от топлива. Нет дополнительной перезарядки взлёта; нужна открытая крыша и место посадки.\n\nС Milira Race на земле можно улучшить двигатель: установить 2 батареи милира. После этого взлёт стоит 100 химтоплива, непрерывного расхода на карте и в мире нет. Прогресс сохраняется, батареи расходуются.",
-    "対空迎撃と軽輸送用のニヴァリアン艦。占有3×3、耐久600、積載300 kg。\n\n飛行中は16マス以内の空中敵へ双発プリズムレーザーを毎秒斉射。各ビームは基礎ダメージ12、貫通50%、建物ダメージ3倍で凍結なし。地上対象は直接攻撃できません。\n\n重力ビームで16マス以内の地上敵1体を持ち上げ5秒気絶させるとレーザーで攻撃可能。追加資源不要、クールダウン8秒。手動・自動で発動できます。\n\n化学燃料最大600、マップ内飛行中は5秒ごとに1消費。ワールド移動はシャトルの半分の消費で燃料が航続距離を制限。追加離陸クールダウンなし。屋根のない離陸地点と十分な着陸空間が必要。\n\nミリラ種族有効時、停泊中にバッテリー2個を設置して改良可能。完了後は離陸ごと燃料100で、マップ・ワールドの継続消費なし。進捗保存、設置済みバッテリーは消費されます。",
-    "Vaisseau nivarian d'interception et transport léger. Taille 3×3, 600 PV, capacité 300 kg.\n\nEn vol, tire deux lasers prismatiques chaque seconde sur les ennemis aériens à moins de 16 cases. Chaque rayon : 12 dégâts, pénétration 50 %, dégâts aux bâtiments triplés, sans gel. Ne vise pas directement le sol.\n\nLe rayon gravitationnel soulève et étourdit un ennemi terrestre à moins de 16 cases pendant 5 secondes, le rendant ciblable. Aucun coût supplémentaire, recharge 8 secondes. Usage manuel ou automatique.\n\nRéserve 600 carburant chimique. Vol local : 1 toutes les 5 secondes. Voyage mondial : moitié du coût d'une navette, portée limitée par le carburant. Pas de recharge de décollage supplémentaire ; toit absent et place libre pour atterrir requis.\n\nAvec Milira Race, amélioration à l'arrêt avec 2 batteries. Ensuite, chaque décollage coûte 100 carburant, sans consommation continue locale ou mondiale. Progression sauvegardée ; batteries installées consommées."
+    "A Nivarian anti-air ship with light transport capability. Footprint 3×3, 600 HP, cargo capacity 300 kg.\n\nWhile airborne, fires twin prism lasers at airborne enemies within 16 cells, once per second. Each beam deals 6 base damage, penetrates 50% armor and deals triple damage to buildings, without freezing. Cannot directly target ground enemies.\n\nThe gravity beam lifts and stuns a ground enemy within 16 cells for 4 seconds, making it a valid laser target. No extra resource cost; cooldown 8 seconds. Manual or automatic use.\n\nStores 600 chemfuel. Local flight consumes 1 every 5 seconds. World travel costs half a shuttle's fuel; range is fuel-limited. No extra takeoff cooldown; unroofed launch and clear landing space required.\n\nWith Milira Race enabled, landed ships can upgrade propulsion. Colonists install 2 Milira batteries. Then takeoff costs 100 chemfuel with no continuous consumption locally or worldwide. Progress is saved; installed batteries are consumed.",
+    "Корабль ПВО нивариан для лёгких перевозок. Размер 3×3, 600 ОЗ, грузоподъёмность 300 кг.\n\nВ полёте два призматических лазера атакуют воздушные цели в радиусе 16 клеток раз в секунду. Каждый луч: урон 6, бронепробитие 50%, тройной урон зданиям, без заморозки. Наземные цели напрямую не атакует.\n\nГравитационный луч поднимает и оглушает наземного врага в радиусе 16 на 4 секунды, делая его целью лазера. Ресурсы не нужны, перезарядка 8 секунд. Ручное или автоматическое применение.\n\nЗапас 600 химтоплива. На карте расход 1 каждые 5 секунд. В мире расход вдвое меньше челнока, дальность зависит от топлива. Нет дополнительной перезарядки взлёта; нужна открытая крыша и место посадки.\n\nС Milira Race на земле можно улучшить двигатель: установить 2 батареи милира. После этого взлёт стоит 100 химтоплива, непрерывного расхода на карте и в мире нет. Прогресс сохраняется, батареи расходуются.",
+    "対空迎撃と軽輸送用のニヴァリアン艦。占有3×3、耐久600、積載300 kg。\n\n飛行中は16マス以内の空中敵へ双発プリズムレーザーを毎秒斉射。各ビームは基礎ダメージ6、貫通50%、建物ダメージ3倍で凍結なし。地上対象は直接攻撃できません。\n\n重力ビームで16マス以内の地上敵1体を持ち上げ4秒気絶させるとレーザーで攻撃可能。追加資源不要、クールダウン8秒。手動・自動で発動できます。\n\n化学燃料最大600、マップ内飛行中は5秒ごとに1消費。ワールド移動はシャトルの半分の消費で燃料が航続距離を制限。追加離陸クールダウンなし。屋根のない離陸地点と十分な着陸空間が必要。\n\nミリラ種族有効時、停泊中にバッテリー2個を設置して改良可能。完了後は離陸ごと燃料100で、マップ・ワールドの継続消費なし。進捗保存、設置済みバッテリーは消費されます。",
+    "Vaisseau nivarian d'interception et transport léger. Taille 3×3, 600 PV, capacité 300 kg.\n\nEn vol, tire deux lasers prismatiques chaque seconde sur les ennemis aériens à moins de 16 cases. Chaque rayon : 6 dégâts, pénétration 50 %, dégâts aux bâtiments triplés, sans gel. Ne vise pas directement le sol.\n\nLe rayon gravitationnel soulève et étourdit un ennemi terrestre à moins de 16 cases pendant 4 secondes, le rendant ciblable. Aucun coût supplémentaire, recharge 8 secondes. Usage manuel ou automatique.\n\nRéserve 600 carburant chimique. Vol local : 1 toutes les 5 secondes. Voyage mondial : moitié du coût d'une navette, portée limitée par le carburant. Pas de recharge de décollage supplémentaire ; toit absent et place libre pour atterrir requis.\n\nAvec Milira Race, amélioration à l'arrêt avec 2 batteries. Ensuite, chaque décollage coûte 100 carburant, sans consommation continue locale ou mondiale. Progression sauvegardée ; batteries installées consommées."
   ],
   "551": [
     "Nivarian gravity ship (landing)",
@@ -3324,10 +3324,10 @@
     "Intercepteur nivarian"
   ],
   "555": [
-    "An unmanned interceptor built and controlled by a Nivarian carrier. Automatically attacks with light ammunition. 150 HP.\n\nLaunches only while the carrier is in aerial combat. Returns beyond 80 cells from its carrier or on recall and landing orders. Depends on its carrier and cannot transport independently.",
-    "Беспилотный перехватчик авианосца нивариан. Автоматически атакует лёгкими боеприпасами. 150 ОЗ.\n\nВылетает только при воздушном бое авианосца. Возвращается за пределами 80 клеток или по приказу отзыва и посадки. Зависит от авианосца, самостоятельные перевозки невозможны.",
-    "空母が製造・制御する無人艦載機。軽弾で自動攻撃し、耐久150。\n\n空母の飛行戦闘中のみ出撃。空母から80マス離れると帰還し、回収・着陸命令にも従います。空母が必要で、独立した遠距離輸送はできません。",
-    "Intercepteur sans pilote construit et contrôlé par un porte-aéronefs nivarian. Attaques automatiques avec munitions légères. 150 PV.\n\nDécolle seulement pendant le combat aérien du porteur. Retour au-delà de 80 cases ou sur ordre de rappel ou d'atterrissage. Dépend du porteur ; aucun transport indépendant."
+    "An unmanned interceptor built and controlled by a Nivarian carrier. Automatically attacks with light ammunition. 125 HP.\n\nLaunches only while the carrier is in aerial combat. Returns beyond 80 cells from its carrier or on recall and landing orders. Depends on its carrier and cannot transport independently.",
+    "Беспилотный перехватчик авианосца нивариан. Автоматически атакует лёгкими боеприпасами. 125 ОЗ.\n\nВылетает только при воздушном бое авианосца. Возвращается за пределами 80 клеток или по приказу отзыва и посадки. Зависит от авианосца, самостоятельные перевозки невозможны.",
+    "空母が製造・制御する無人艦載機。軽弾で自動攻撃し、耐久125。\n\n空母の飛行戦闘中のみ出撃。空母から80マス離れると帰還し、回収・着陸命令にも従います。空母が必要で、独立した遠距離輸送はできません。",
+    "Intercepteur sans pilote construit et contrôlé par un porte-aéronefs nivarian. Attaques automatiques avec munitions légères. 125 PV.\n\nDécolle seulement pendant le combat aérien du porteur. Retour au-delà de 80 cases ou sur ordre de rappel ou d'atterrissage. Dépend du porteur ; aucun transport indépendant."
   ],
   "556": [
     "Interceptor light round",
@@ -3480,10 +3480,10 @@
     "Vaisseau-mère tactique"
   ],
   "581": [
-    "The support fleet's tactical mothership suppresses ground enemies with lasers and energy shells. Fires a laser each second for 15 base damage and a shell every 2 seconds for 20 base blast damage, especially effective against buildings.\n\nFights automatically in flight and can be hit by ranged and explosive attacks. Losing this temporary support ship does not affect the orbital mothership's resources. Leaves when support ends.",
-    "Тактический корабль-матка подавляет наземных врагов: лазер раз в секунду с уроном 15 и энергоснаряд каждые 2 секунды с базовым взрывным уроном 20, особенно эффективный против зданий.\n\nАвтоматически сражается в полёте, уязвим для дальних атак и взрывов. Потеря временного корабля не влияет на ресурсы орбитального корабля-матки. Уходит после поддержки.",
-    "レーザーとエネルギー弾で地上敵を制圧する支援母艦。毎秒レーザーで基礎ダメージ15、2秒ごとの弾で爆発ダメージ20。建物に特に有効。\n\n自動飛行戦闘し、遠隔・爆発攻撃を受けます。臨時支援艦の損失は軌道母艦の資源に影響せず、支援終了後に撤退します。",
-    "Vaisseau-mère de soutien contre les ennemis au sol. Laser chaque seconde pour 15 dégâts de base ; obus toutes les 2 secondes pour 20 dégâts explosifs, surtout efficaces contre les bâtiments.\n\nCombat aérien automatique, vulnérable aux tirs et explosions. La perte de ce vaisseau temporaire n'affecte pas les ressources du vaisseau-mère orbital. Retrait en fin de soutien."
+    "The support fleet's tactical mothership suppresses ground enemies with lasers and energy shells. Fires a laser each second for 9 base damage and a shell every 2 seconds for 12 base blast damage, especially effective against buildings.\n\nFights automatically in flight and can be hit by ranged and explosive attacks. Losing this temporary support ship does not affect the orbital mothership's resources. Leaves when support ends.",
+    "Тактический корабль-матка подавляет наземных врагов: лазер раз в секунду с уроном 9 и энергоснаряд каждые 2 секунды с базовым взрывным уроном 12, особенно эффективный против зданий.\n\nАвтоматически сражается в полёте, уязвим для дальних атак и взрывов. Потеря временного корабля не влияет на ресурсы орбитального корабля-матки. Уходит после поддержки.",
+    "レーザーとエネルギー弾で地上敵を制圧する支援母艦。毎秒レーザーで基礎ダメージ9、2秒ごとの弾で爆発ダメージ12。建物に特に有効。\n\n自動飛行戦闘し、遠隔・爆発攻撃を受けます。臨時支援艦の損失は軌道母艦の資源に影響せず、支援終了後に撤退します。",
+    "Vaisseau-mère de soutien contre les ennemis au sol. Laser chaque seconde pour 9 dégâts de base ; obus toutes les 2 secondes pour 12 dégâts explosifs, surtout efficaces contre les bâtiments.\n\nCombat aérien automatique, vulnérable aux tirs et explosions. La perte de ce vaisseau temporaire n'affecte pas les ressources du vaisseau-mère orbital. Retrait en fin de soutien."
   ],
   "582": [
     "Fleet destroyer",
@@ -3492,10 +3492,10 @@
     "Destroyer de flotte"
   ],
   "583": [
-    "An automatic escort destroyer. Its prism beam deals damage every 0.5 seconds, starting at 4 and increasing with successive hits on the same target. Changing targets or losing lock resets it.\n\nThe beam does not freeze. The ship finds enemies automatically and leaves after its support duration.",
-    "Автоматический эскортный эсминец. Луч наносит урон каждые 0,5 секунды, начиная с 4 и усиливаясь при попаданиях в одну цель. Смена или потеря цели сбрасывает силу.\n\nЗаморозки нет. Сам выбирает врагов и уходит после поддержки.",
-    "自動護衛駆逐艦。プリズムビームは0.5秒ごとに初期4ダメージ。同一対象への連続命中で強化し、対象変更や捕捉喪失で初期値へ戻ります。\n\n凍結効果はありません。自動で敵を探し、滞在時間終了後に撤退します。",
-    "Destroyer d'escorte automatique. Rayon prismatique toutes les 0,5 seconde, dégâts initiaux 4 puis croissants sur une même cible. Changement ou perte de cible réinitialise la puissance.\n\nAucun gel. Ciblage automatique et départ en fin de soutien."
+    "An automatic escort destroyer. Its prism beam deals damage every 0.5 seconds, starting at 2.4 and increasing with successive hits on the same target. Changing targets or losing lock resets it.\n\nThe beam does not freeze. The ship finds enemies automatically and leaves after its support duration.",
+    "Автоматический эскортный эсминец. Луч наносит урон каждые 0,5 секунды, начиная с 2.4 и усиливаясь при попаданиях в одну цель. Смена или потеря цели сбрасывает силу.\n\nЗаморозки нет. Сам выбирает врагов и уходит после поддержки.",
+    "自動護衛駆逐艦。プリズムビームは0.5秒ごとに初期2.4ダメージ。同一対象への連続命中で強化し、対象変更や捕捉喪失で初期値へ戻ります。\n\n凍結効果はありません。自動で敵を探し、滞在時間終了後に撤退します。",
+    "Destroyer d'escorte automatique. Rayon prismatique toutes les 0,5 seconde, dégâts initiaux 2.4 puis croissants sur une même cible. Changement ou perte de cible réinitialise la puissance.\n\nAucun gel. Ciblage automatique et départ en fin de soutien."
   ],
   "584": [
     "Mothership energy cannon",
@@ -3762,22 +3762,22 @@
     "Établit des routes de distorsion pour appeler un vaisseau-mère et huit destroyers en soutien temporaire.\n\nLivrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 4 du vaisseau-mère requis.\n\nSi la campagne du Continuum est active, terminez d’abord l’étape 6 (« Soutien de flotte ») pour obtenir les données."
   ],
   "628": [
-    "Contact Tebrus's legion to request Tebrus and ten melee warriors. Besides energy, payment requires silver or gold within beacon range.\n\nDeliver materials and complete research at an uplink research terminal. Requires mothership level 2.\n\nIf the Continuum campaign is active, first complete stage 3 (Expedition legion) to recover the data.",
-    "Устанавливает связь с легионом Тебруса для вызова Тебруса и десяти воинов ближнего боя. Кроме энергии нужно серебро или золото у маяка.\n\nДоставьте материалы и завершите исследование в терминале восходящей связи. Нужен уровень корабля-матки 2.\n\nЕсли кампания Континуума активна, сначала завершите этап 3 («Экспедиционный легион») для получения данных.",
-    "テブルス軍団と連絡し、テブルスと近接戦士10名を要請可能にします。エネルギー以外にビーコン範囲内の銀か金が必要です。\n\n上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル2が必要です。\n\n連続体任務が有効なら、先に第3段階「遠征軍団」を完了し資料を取得してください。",
+    "Contact Tebrus's legion to request Tebrus and ten melee warriors. Legion support costs only P and V.\n\nDeliver materials and complete research at an uplink research terminal. Requires mothership level 2.\n\nIf the Continuum campaign is active, first complete stage 3 (Expedition legion) to recover the data.",
+    "Устанавливает связь с легионом Тебруса для вызова Тебруса и десяти воинов ближнего боя. Поддержка легиона расходует только P и V.\n\nДоставьте материалы и завершите исследование в терминале восходящей связи. Нужен уровень корабля-матки 2.\n\nЕсли кампания Континуума активна, сначала завершите этап 3 («Экспедиционный легион») для получения данных.",
+    "テブルス軍団と連絡し、テブルスと近接戦士10名を要請可能にします。軍団支援はPとVのみを消費します。\n\n上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル2が必要です。\n\n連続体任務が有効なら、先に第3段階「遠征軍団」を完了し資料を取得してください。",
     "Contacte la légion de Tebrus pour appeler Tebrus et dix guerriers de mêlée. Outre l'énergie, paiement en argent ou or à portée de balise.\n\nLivrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 2 du vaisseau-mère requis.\n\nSi la campagne du Continuum est active, terminez d’abord l’étape 3 (« Légion expéditionnaire ») pour obtenir les données."
   ],
   "629": [
-    "Contact Zoraya's legion to request command ship Zoraya and four glowships. Besides energy, payment requires silver or gold within beacon range.\n\nDeliver materials and complete research at an uplink research terminal. Requires mothership level 3.\n\nIf the Continuum campaign is active, first complete stage 3 (Expedition legion) to recover the data.",
-    "Устанавливает связь с легионом Зораи для вызова командного корабля и четырёх сияющих кораблей. Кроме энергии нужно серебро или золото у маяка.\n\nДоставьте материалы и завершите исследование в терминале восходящей связи. Нужен уровень корабля-матки 3.\n\nЕсли кампания Континуума активна, сначала завершите этап 3 («Экспедиционный легион») для получения данных.",
-    "ゾラヤ軍団と連絡し、指揮艦と輝光艦4隻を要請可能にします。エネルギー以外にビーコン範囲内の銀か金が必要です。\n\n上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル3が必要です。\n\n連続体任務が有効なら、先に第3段階「遠征軍団」を完了し資料を取得してください。",
-    "Contacte la légion de Zoraya pour appeler le vaisseau de commandement et quatre vaisseaux lumineux. Outre l'énergie, argent ou or à portée de balise requis.\n\nLivrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 3 du vaisseau-mère requis.\n\nSi la campagne du Continuum est active, terminez d’abord l’étape 3 (« Légion expéditionnaire ») pour obtenir les données."
+    "Contact Zoraya's legion to request command ship Zoraya and four glowships. Legion support costs only P and V.\n\nDeliver materials and complete research at an uplink research terminal. Requires mothership level 3.\n\nIf the Continuum campaign is active, first complete stage 3 (Expedition legion) to recover the data.",
+    "Устанавливает связь с легионом Зораи для вызова командного корабля и четырёх сияющих кораблей. Поддержка легиона расходует только P и V.\n\nДоставьте материалы и завершите исследование в терминале восходящей связи. Нужен уровень корабля-матки 3.\n\nЕсли кампания Континуума активна, сначала завершите этап 3 («Экспедиционный легион») для получения данных.",
+    "ゾラヤ軍団と連絡し、指揮艦と輝光艦4隻を要請可能にします。軍団支援はPとVのみを消費します。\n\n上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル3が必要です。\n\n連続体任務が有効なら、先に第3段階「遠征軍団」を完了し資料を取得してください。",
+    "Contacte la légion de Zoraya pour appeler le vaisseau de commandement et quatre vaisseaux lumineux. Le soutien de la légion coûte uniquement des P et des V.\n\nLivrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 3 du vaisseau-mère requis.\n\nSi la campagne du Continuum est active, terminez d’abord l’étape 3 (« Légion expéditionnaire ») pour obtenir les données."
   ],
   "630": [
-    "Contact Seydas's legion to request Seydas and three dark archons to turn enemies with mind control. Besides energy, payment requires silver or gold within beacon range.\n\nDeliver materials and complete research at an uplink research terminal. Requires mothership level 3.\n\nIf the Continuum campaign is active, first complete stage 3 (Expedition legion) to recover the data.",
-    "Устанавливает связь с Сейдасом и тремя тёмными архонтами для подчинения врагов. Кроме энергии нужно серебро или золото у маяка.\n\nДоставьте материалы и завершите исследование в терминале восходящей связи. Нужен уровень корабля-матки 3.\n\nЕсли кампания Континуума активна, сначала завершите этап 3 («Экспедиционный легион») для получения данных.",
-    "セイダスとダークアルコン3名を要請し、精神支配で敵を転属させます。エネルギー以外にビーコン範囲内の銀か金が必要です。\n\n上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル3が必要です。\n\n連続体任務が有効なら、先に第3段階「遠征軍団」を完了し資料を取得してください。",
-    "Contacte Seydas et trois archontes noirs pour convertir les ennemis par contrôle mental. Outre l'énergie, argent ou or à portée de balise requis.\n\nLivrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 3 du vaisseau-mère requis.\n\nSi la campagne du Continuum est active, terminez d’abord l’étape 3 (« Légion expéditionnaire ») pour obtenir les données."
+    "Contact Seydas's legion to request Seydas and three dark archons to turn enemies with mind control. Legion support costs only P and V.\n\nDeliver materials and complete research at an uplink research terminal. Requires mothership level 3.\n\nIf the Continuum campaign is active, first complete stage 3 (Expedition legion) to recover the data.",
+    "Устанавливает связь с Сейдасом и тремя тёмными архонтами для подчинения врагов. Поддержка легиона расходует только P и V.\n\nДоставьте материалы и завершите исследование в терминале восходящей связи. Нужен уровень корабля-матки 3.\n\nЕсли кампания Континуума активна, сначала завершите этап 3 («Экспедиционный легион») для получения данных.",
+    "セイダスとダークアルコン3名を要請し、精神支配で敵を転属させます。軍団支援はPとVのみを消費します。\n\n上行リンク研究端末で必要材料を納入して研究を完了してください。 母艦レベル3が必要です。\n\n連続体任務が有効なら、先に第3段階「遠征軍団」を完了し資料を取得してください。",
+    "Contacte Seydas et trois archontes noirs pour convertir les ennemis par contrôle mental. Le soutien de la légion coûte uniquement des P et des V.\n\nLivrez les matériaux et terminez la recherche au terminal de liaison montante. Niveau 3 du vaisseau-mère requis.\n\nSi la campagne du Continuum est active, terminez d’abord l’étape 3 (« Légion expéditionnaire ») pour obtenir les données."
   ],
   "631": [
     "Deploy monolith cores for long-range defense that attacks and stuns multiple targets. Materials and electricity are required after deployment.\n\nDeliver materials and complete research at an uplink research terminal. Requires mothership level 3.\n\nIf the Continuum campaign is active, first complete stage 4 (Hyperdimensional monolith) to recover the data.",
@@ -3816,10 +3816,10 @@
     "Débloque le vaisseau gravitationnel : transport léger et interception, soulevant les ennemis au sol pour ses deux lasers.\n\nCapacité 300 kg, combat local en vol et voyages au carburant chimique."
   ],
   "637": [
-    "Unlock Nivarian carriers. These large ships fight with interceptors, have no direct weapons and provide sustained air support from behind the front.\n\nCarry 10,000 kg and use dragonfrost steel to build and maintain up to 8 interceptors. Expensive to build, with ongoing chemfuel and material needs.",
-    "Открывает авианосцы нивариан. Крупные корабли без своего оружия сражаются перехватчиками, поддерживая фронт с тыла.\n\nГруз 10 000 кг, до 8 перехватчиков из драконьей морозной стали. Дорогое строительство, постоянная потребность в топливе и материалах.",
-    "空母建造を解放。直接兵器なしで艦載機を使い、戦線後方から継続航空支援を行います。\n\n積載10000 kg、龍霜鋼で最大8機を製造維持。高い建造費に加え、燃料と艦載機材料の継続補給が必要です。",
-    "Débloque les porte-aéronefs nivarians. Sans armes directes, ils combattent avec leurs intercepteurs depuis l'arrière du front.\n\nCapacité 10 000 kg, jusqu'à 8 appareils fabriqués avec de l'acier dracogivré. Construction coûteuse, besoins continus en carburant et matériaux."
+    "Unlock Nivarian carriers. These large ships fight with interceptors, have no direct weapons and provide sustained air support from behind the front.\n\nCarry 10,000 kg and use dragonfrost steel to build and maintain up to 6 interceptors. Expensive to build, with ongoing chemfuel and material needs.",
+    "Открывает авианосцы нивариан. Крупные корабли без своего оружия сражаются перехватчиками, поддерживая фронт с тыла.\n\nГруз 10 000 кг, до 6 перехватчиков из драконьей морозной стали. Дорогое строительство, постоянная потребность в топливе и материалах.",
+    "空母建造を解放。直接兵器なしで艦載機を使い、戦線後方から継続航空支援を行います。\n\n積載10000 kg、龍霜鋼で最大6機を製造維持。高い建造費に加え、燃料と艦載機材料の継続補給が必要です。",
+    "Débloque les porte-aéronefs nivarians. Sans armes directes, ils combattent avec leurs intercepteurs depuis l'arrière du front.\n\nCapacité 10 000 kg, jusqu'à 6 appareils fabriqués avec de l'acier dracogivré. Construction coûteuse, besoins continus en carburant et matériaux."
   ],
   "638": [
     "Glowship",
@@ -3828,9 +3828,9 @@
     "Vaisseau lumineux"
   ],
   "639": [
-    "Zoraya's escort ship, firing freezing prism beams. Hits every 0.5 seconds, starting at 4 damage and increasing on successive hits to one target. Losing lock or switching targets resets the beam.\n\nTargets automatically, useful for sustained pressure on tough enemies. Leaves with the legion.",
+    "Zoraya's escort ship, firing freezing prism beams. Hits every 0.5 seconds, starting at 2.4 damage and increasing on successive hits to one target. Losing lock or switching targets resets the beam.\n\nTargets automatically, useful for sustained pressure on tough enemies. Leaves with the legion.",
     "Эскорт Зораи с замораживающими лучами. Удар каждые 0,5 секунды, начальный урон 4, растёт по одной цели. Потеря или смена цели сбрасывает силу.\n\nАвтоматический выбор врагов для длительного подавления. Уходит с легионом.",
-    "ゾラヤ軍団の護衛艦。凍結プリズムビームは0.5秒ごと初期4ダメージ。同一対象への連続命中で強化し、捕捉喪失・対象変更で初期化。\n\n自動索敵し、堅い敵の継続制圧に適します。軍団とともに撤退。",
+    "ゾラヤ軍団の護衛艦。凍結プリズムビームは0.5秒ごと初期2.4ダメージ。同一対象への連続命中で強化し、捕捉喪失・対象変更で初期化。\n\n自動索敵し、堅い敵の継続制圧に適します。軍団とともに撤退。",
     "Escorte de Zoraya avec rayons prismatiques gelants. Toutes les 0,5 seconde, dégâts initiaux 4, croissants sur la même cible. Perte ou changement de cible réinitialise.\n\nCiblage automatique, pression durable sur cibles résistantes. Retrait avec la légion."
   ],
   "640": [
@@ -3846,10 +3846,10 @@
     "Zoraya"
   ],
   "642": [
-    "Zoraya's command ship with a stronger prism beam. Hits every 0.5 seconds, starting at 8 damage with freezing. Repeated hits on one target increase damage; switching or losing lock resets it.\n\nFights alongside escorts and withdraws with them.",
-    "Командный корабль Зорая с мощным лучом. Удар каждые 0,5 секунды, начальный урон 8 с заморозкой. Урон растёт по одной цели, смена или потеря сбрасывает его.\n\nСражается и уходит вместе с эскортом.",
-    "ゾラヤ指揮艦の強化プリズムビームは0.5秒ごと初期8ダメージと凍結。同一対象への連続命中で強化し、捕捉喪失・変更で初期化。\n\n護衛艦と協同戦闘し、ともに撤退します。",
-    "Vaisseau de commandement Zoraya avec rayon renforcé. Toutes les 0,5 seconde, dégâts initiaux 8 et gel. Dégâts croissants sur une même cible ; changement ou perte réinitialise.\n\nCombat et se retire avec ses escortes."
+    "Zoraya's command ship with a stronger prism beam. Hits every 0.5 seconds, starting at 4.8 damage with freezing. Repeated hits on one target increase damage; switching or losing lock resets it.\n\nFights alongside escorts and withdraws with them.",
+    "Командный корабль Зорая с мощным лучом. Удар каждые 0,5 секунды, начальный урон 4.8 с заморозкой. Урон растёт по одной цели, смена или потеря сбрасывает его.\n\nСражается и уходит вместе с эскортом.",
+    "ゾラヤ指揮艦の強化プリズムビームは0.5秒ごと初期4.8ダメージと凍結。同一対象への連続命中で強化し、捕捉喪失・変更で初期化。\n\n護衛艦と協同戦闘し、ともに撤退します。",
+    "Vaisseau de commandement Zoraya avec rayon renforcé. Toutes les 0,5 seconde, dégâts initiaux 4.8 et gel. Dégâts croissants sur une même cible ; changement ou perte réinitialise.\n\nCombat et se retire avec ses escortes."
   ],
   "643": [
     "Zoraya glowbeam",
@@ -4068,16 +4068,16 @@
     "Tour d'énergie d'ombre nivariane"
   ],
   "679": [
-    "Built from a shadow core. Each tower sends 120 P and 80 V daily and cloaks allies within 7 cells. Attacks and damage do not end cloaking, but detection works.\n\nThe tower does not cloak itself and needs other defenses. Multiple towers produce independently.",
-    "Строится из теневого ядра. Даёт 120 P и 80 V в день, скрывает союзников в радиусе 7. Атаки и урон не снимают невидимость, но обнаружение действует.\n\nСебя не скрывает, нуждается в защите. Несколько башен производят независимо.",
-    "コアから建設する母艦施設。毎日120 Pと80 Vを送り、半径7マスの友軍を隠します。攻撃・被弾で解除されませんが探知は有効。\n\n自身は隠れず防衛が必要。複数が独立生産できます。",
-    "Construite depuis un noyau d'ombre. Fournit 120 P et 80 V par jour, camoufle les alliés à moins de 7 cases. Attaques et dégâts ne révèlent pas, mais la détection fonctionne.\n\nNe se camoufle pas elle-même. Plusieurs tours produisent indépendamment."
+    "A nutrient-fed energy facility with ghost-green resonant crystals, occupying 2×2 cells. Generates 1400 W; P output and nutrition consumption are twice those of the Nivarian energy tower. Colonists deliver allowed food. Adjust supplies in the Nutrition tab.\n\nWhile operating, cloaks allies within 7 cells. Insufficient nutrition, switching off or interrupted operation stops electricity, P production and cloaking together; replenishing nutrition restores operation. Attacks and damage do not break cloaking, but detection still works.\n\nThe tower does not cloak itself and needs other defenses.",
+    "Энергетическая башня с призрачно-зелёными кристаллами, питаемыми пищей. Занимает 2×2 клетки, вырабатывает 1400 Вт. Производство P и расход питания вдвое выше, чем у обычной энергетической башни нивариан. Поселенцы доставляют разрешённую пищу; её виды выбираются на вкладке питания.\n\nРаботающая башня скрывает союзников в радиусе 7 клеток. Недостаток питания, выключение или остановка одновременно прекращают выработку электричества, P и маскировку. После пополнения работа возобновляется. Атаки и урон не снимают маскировку, но обнаружение действует.\n\nСаму себя башня не скрывает и нуждается в защите.",
+    "幽緑色の共鳴結晶を栄養で維持する母艦施設。占有面積は2×2マス、発電量は1400 W。P産出量と栄養消費量は通常のニヴァリアンエネルギータワーの2倍です。入植者が許可された食料を搬入します。「栄養」タブで種類を設定できます。\n\n稼働中は半径7マスの友軍を隠します。栄養不足、電源オフ、稼働停止時には発電・P産出・隠蔽が同時に停止し、補給後に再開します。攻撃や被弾では解除されませんが、探知は有効です。\n\nタワー自身は隠れないため、防衛が必要です。",
+    "Une installation alimentée en nutriments avec des cristaux vert spectral. Occupe 2×2 cases et produit 1400 W. La production de P et la consommation nutritive sont le double de celles de la tour nivariane ordinaire. Les colons livrent les aliments autorisés, configurables dans l’onglet Nutrition.\n\nEn fonctionnement, elle camoufle les alliés dans un rayon de 7 cases. Une réserve nutritive insuffisante, l’arrêt ou une interruption suspendent ensemble l’électricité, les P et le camouflage. Le ravitaillement permet la reprise. Les attaques et dégâts ne rompent pas le camouflage, mais la détection reste efficace.\n\nLa tour ne se camoufle pas elle-même et doit être protégée."
   ],
   "680": [
-    "A large defense structure that delays enemies with a hyperdimensional control array. Range 60; every 2 seconds, hits up to 10 enemies for 3 base damage and a 1-second stun each.\n\nRequires grid connection and 1,000 W continuously, no ammunition. Spacetime fluctuation increases firing speed to ×5.",
-    "Крупное укрепление с гиперпространственным контролем. Дальность 60; каждые 2 секунды до 10 врагов получают 3 урона и оглушение на 1 секунду.\n\nНужны сеть и 1000 Вт, не боеприпасы. Колебание пространства-времени ускоряет огонь в 5 раз.",
-    "超次元制御で敵を阻止する大型防衛設備。射程60、2秒ごとに最大10体へダメージ3と気絶1秒。\n\n電網接続と1000 Wが必要で弾薬不要。時空変動中は攻撃速度5倍。",
-    "Grande défense de contrôle hyperdimensionnel. Portée 60 ; toutes les 2 secondes, frappe jusqu'à 10 ennemis pour 3 dégâts et 1 seconde d'étourdissement.\n\nRéseau et 1 000 W continus requis, aucune munition. Fluctuation spatiotemporelle : tirs ×5."
+    "A large defense structure that delays enemies with a hyperdimensional control array. Range 60; every 2 seconds, hits up to 10 enemies for 3 base damage and a 1-second stun each.\n\nRequires grid connection and 1,000 W continuously, no ammunition. Spacetime fluctuation increases firing speed to ×3.",
+    "Крупное укрепление с гиперпространственным контролем. Дальность 60; каждые 2 секунды до 10 врагов получают 3 урона и оглушение на 1 секунду.\n\nНужны сеть и 1000 Вт, не боеприпасы. Колебание пространства-времени ускоряет огонь в 3 раза.",
+    "超次元制御で敵を阻止する大型防衛設備。射程60、2秒ごとに最大10体へダメージ3と気絶1秒。\n\n電網接続と1000 Wが必要で弾薬不要。時空変動中は攻撃速度3倍。",
+    "Grande défense de contrôle hyperdimensionnel. Portée 60 ; toutes les 2 secondes, frappe jusqu'à 10 ennemis pour 3 dégâts et 1 seconde d'étourdissement.\n\nRéseau et 1 000 W continus requis, aucune munition. Fluctuation spatiotemporelle : tirs ×3."
   ],
   "681": [
     "Hyperdimensional control beam",
@@ -4212,10 +4212,10 @@
     "Tempête psionique"
   ],
   "703": [
-    "A temporary control device from the mothership. Within 13 cells, enemies' movement and attack speeds fall to 30% and turrets stop firing. Leaving range restores them; multiple crystals do not stack.\n\nCannot be destroyed by attacks. Dissipates after 30 seconds or can be recalled early.",
-    "Временный контрольный прибор. В радиусе 13 скорость движения и атак врагов падает до 30%, турели не стреляют. Выход восстанавливает их; кристаллы не складываются.\n\nНеуязвим для атак, исчезает через 30 секунд или отзывается досрочно.",
-    "母艦の臨時制御装置。半径13の敵の移動・攻撃速度を30%にし、砲塔停火。範囲外で回復し、複数結晶は重複なし。\n\n攻撃破壊不可。30秒で消散または早期撤収可能。",
-    "Dispositif temporaire du vaisseau-mère. À moins de 13 cases, déplacements et attaques ennemis à 30 %, tourelles arrêtées. Récupération hors portée ; effets non cumulables.\n\nIndestructible par attaque. Disparaît après 30 secondes ou peut être rappelé."
+    "A temporary control device from the mothership. Within 18 cells, enemies' movement and attack speeds fall to 30% and turrets stop firing. Leaving range restores them; multiple crystals do not stack.\n\nCannot be destroyed by attacks. Dissipates after 30 seconds or can be recalled early.\n\nThe crystal occupies no ground space and does not block movement. It can be deployed on any terrain and overlap buildings, units, items and plants.",
+    "Временный контрольный прибор. В радиусе 18 скорость движения и атак врагов падает до 30%, турели не стреляют. Выход восстанавливает их; кристаллы не складываются.\n\nНеуязвим для атак, исчезает через 30 секунд или отзывается досрочно.\n\nКристалл не занимает место и не препятствует движению. Его можно размещать на любой местности поверх зданий, юнитов, предметов и растений.",
+    "母艦の臨時制御装置。半径18の敵の移動・攻撃速度を30%にし、砲塔停火。範囲外で回復し、複数結晶は重複なし。\n\n攻撃破壊不可。30秒で消散または早期撤収可能。\n\n結晶は地面のスペースを占有せず、移動を妨げません。あらゆる地形に配置でき、建物・ユニット・アイテム・植物と重ねられます。",
+    "Dispositif temporaire du vaisseau-mère. À moins de 18 cases, déplacements et attaques ennemis à 30 %, tourelles arrêtées. Récupération hors portée ; effets non cumulables.\n\nIndestructible par attaque. Disparaît après 30 secondes ou peut être rappelé.\n\nLe cristal ne prend aucune place au sol et ne bloque pas les déplacements. Il peut être déployé sur tout terrain et se superposer aux bâtiments, unités, objets et plantes."
   ],
   "704": [
     "Nivarian energy tower",
@@ -4300,5 +4300,209 @@
     "Совершенствует распознавание свой-чужой, чтобы поддержка не повреждала ваши единицы, здания и союзников. Особое оружие гвардии и легионов тоже следует протоколу.\n\nДоставьте материалы и завершите исследование в терминале восходящей связи. После завершения действует постоянно, покупка на панели не нужна.",
     "敵味方識別を改良し、支援火力が自軍ユニット、建物、同盟軍を避けるようにします。衛隊と遠征軍団の専用武器も従います。\n\n上行リンク研究端末で材料を納入し研究を完了すると恒久的に有効。支援パネルでの追加購入は不要です。",
     "Améliore l'identification ami-ennemi pour épargner vos unités, bâtiments et alliés. Les armes exclusives de la garde et des légions suivent aussi ce protocole.\n\nLivrez les matériaux et terminez la recherche au terminal de liaison montante. Effet permanent ensuite, sans achat supplémentaire dans le panneau."
+  ],
+  "718": [
+    "Required mission incomplete. Research cannot be unlocked yet.",
+    "Необходимое задание не выполнено. Исследование пока недоступно.",
+    "前提任務が未完了のため、研究を解放できません。",
+    "Mission préalable inachevée. La recherche ne peut pas encore être débloquée."
+  ],
+  "719": [
+    "Continuum progress: {0}/{1} stages completed. Complete the required stage in the Quests tab, then return to the uplink research terminal.",
+    "Прогресс Континуума: завершено этапов {0}/{1}. Завершите нужный этап во вкладке заданий, затем вернитесь к исследовательскому терминалу.",
+    "連続体任務の進捗：{0}/{1}段階完了。「クエスト」画面で必要な段階を完了してから、上行リンク研究端末に戻ってください。",
+    "Progression du Continuum : {0}/{1} étapes terminées. Terminez l'étape requise dans l'onglet Quêtes, puis revenez au terminal de recherche."
+  ],
+  "720": [
+    "Mission incomplete",
+    "Задание не выполнено",
+    "前提任務が未完了",
+    "Mission préalable inachevée"
+  ],
+  "721": [
+    "Mission and research incomplete",
+    "Нужны задание и исследование",
+    "前提任務・研究が未完了",
+    "Mission et recherche requises"
+  ],
+  "722": [
+    "Dragonfrost steel reserve",
+    "Запас дракоморозной стали",
+    "龍霜鋼の備蓄",
+    "Réserve d’acier givre-dragon"
+  ],
+  "723": [
+    "Target: {0}. Drag the reserve bar to adjust the target. Each interceptor costs {1} dragonfrost steel. Colonists refill the grounded carrier. Transport cargo is not automatically transferred into this reserve.",
+    "Цель: {0}. Перетаскивайте полосу для изменения цели. Перехватчик стоит {1} единиц дракоморозной стали. Колонисты пополняют запас на земле. Груз не переносится в запас автоматически.",
+    "目標量：{0}。備蓄バーをドラッグして調整します。艦載機1機につき龍霜鋼{1}を消費します。着陸中に入植者が補充します。輸送貨物は自動的に備蓄へ移されません。",
+    "Cible : {0}. Faites glisser la barre pour régler la cible. Chaque intercepteur coûte {1} unités d’acier givre-dragon. Les colons remplissent le porte-avions au sol. Le fret n’est pas automatiquement transféré dans cette réserve."
+  ],
+  "724": [
+    "Refilling is unavailable in flight; interceptors can still be built using the existing reserve.",
+    "Пополнение в полёте невозможно; перехватчики строятся из имеющегося запаса.",
+    "飛行中は補充できませんが、備蓄を使って艦載機を製造できます。",
+    "Le remplissage est impossible en vol ; la réserve existante reste utilisable pour fabriquer des intercepteurs."
+  ],
+  "725": [
+    "Automatically refill dragonfrost steel. When disabled, you can still order a colonist to refill with a right-click.",
+    "Автоматически пополнять дракоморозную сталь. При отключении можно приказать колонисту загрузить сталь правой кнопкой мыши.",
+    "龍霜鋼を自動補充します。無効でも右クリックで入植者に補充を命令できます。",
+    "Remplir automatiquement la réserve. Si désactivé, vous pouvez toujours ordonner le remplissage à un colon avec un clic droit."
+  ],
+  "726": [
+    "No available dragonfrost steel",
+    "Нет доступной дракоморозной стали",
+    "運搬可能な龍霜鋼がありません",
+    "Aucun acier givre-dragon disponible"
+  ],
+  "727": [
+    "Refilling TargetA with dragonfrost steel.",
+    "Пополнение TargetA дракоморозной сталью.",
+    "TargetAに龍霜鋼を補充中。",
+    "Chargement d’acier givre-dragon dans TargetA."
+  ],
+  "728": [
+    "Refill carrier dragonfrost steel",
+    "Пополнять сталь авианосца",
+    "空母に龍霜鋼を補充",
+    "Remplir la réserve d’acier du porte-avions"
+  ],
+  "729": [
+    "Refill dragonfrost steel",
+    "Загрузить дракоморозную сталь",
+    "龍霜鋼を補充",
+    "Charger l’acier givre-dragon"
+  ],
+  "730": [
+    "Refill dragonfrost steel",
+    "Загрузка дракоморозной стали",
+    "龍霜鋼を補充",
+    "Chargement d’acier givre-dragon"
+  ],
+  "731": [
+    "Nivarian warship armor Ⅰ",
+    "Броня кораблей нивариан Ⅰ",
+    "ニヴァリアン戦艦装甲Ⅰ",
+    "Blindage des vaisseaux nivarians Ⅰ"
+  ],
+  "732": [
+    "Improve hulls of all Nivarian warships, interceptors and reinforcement ships. Each tier adds 20% of base maximum HP; this tier totals +20%. Existing ships retain their HP percentage.",
+    "Улучшает корпуса кораблей, перехватчиков и подкреплений нивариан. За уровень +20% базовых ОЗ, всего +20%. Доля оставшихся ОЗ сохраняется.",
+    "ニヴァリアン戦艦・艦載機・援軍艦の船体を強化。各段階で基礎最大耐久の20%増加、累計+20%。既存艦の耐久割合を維持します。",
+    "Renforce les coques des vaisseaux, intercepteurs et renforts nivarians. Chaque palier ajoute 20% des PV maximaux de base, soit +20% au total. Le pourcentage de PV actuel est conservé."
+  ],
+  "733": [
+    "Nivarian warship armor Ⅱ",
+    "Броня кораблей нивариан Ⅱ",
+    "ニヴァリアン戦艦装甲Ⅱ",
+    "Blindage des vaisseaux nivarians Ⅱ"
+  ],
+  "734": [
+    "Improve hulls of all Nivarian warships, interceptors and reinforcement ships. Each tier adds 20% of base maximum HP; this tier totals +40%. Existing ships retain their HP percentage.",
+    "Улучшает корпуса кораблей, перехватчиков и подкреплений нивариан. За уровень +20% базовых ОЗ, всего +40%. Доля оставшихся ОЗ сохраняется.",
+    "ニヴァリアン戦艦・艦載機・援軍艦の船体を強化。各段階で基礎最大耐久の20%増加、累計+40%。既存艦の耐久割合を維持します。",
+    "Renforce les coques des vaisseaux, intercepteurs et renforts nivarians. Chaque palier ajoute 20% des PV maximaux de base, soit +40% au total. Le pourcentage de PV actuel est conservé."
+  ],
+  "735": [
+    "Nivarian warship armor Ⅲ",
+    "Броня кораблей нивариан Ⅲ",
+    "ニヴァリアン戦艦装甲Ⅲ",
+    "Blindage des vaisseaux nivarians Ⅲ"
+  ],
+  "736": [
+    "Improve hulls of all Nivarian warships, interceptors and reinforcement ships. Each tier adds 20% of base maximum HP; this tier totals +60%. Existing ships retain their HP percentage.",
+    "Улучшает корпуса кораблей, перехватчиков и подкреплений нивариан. За уровень +20% базовых ОЗ, всего +60%. Доля оставшихся ОЗ сохраняется.",
+    "ニヴァリアン戦艦・艦載機・援軍艦の船体を強化。各段階で基礎最大耐久の20%増加、累計+60%。既存艦の耐久割合を維持します。",
+    "Renforce les coques des vaisseaux, intercepteurs et renforts nivarians. Chaque palier ajoute 20% des PV maximaux de base, soit +60% au total. Le pourcentage de PV actuel est conservé."
+  ],
+  "737": [
+    "Nivarian warship weapon Ⅰ",
+    "Оружие кораблей нивариан Ⅰ",
+    "ニヴァリアン戦艦兵装Ⅰ",
+    "Armement des vaisseaux nivarians Ⅰ"
+  ],
+  "738": [
+    "Improve weapons on all Nivarian warships, interceptors and reinforcement ships. Each tier adds 20% damage and armor penetration of all types; total +20%. Lock-on escalation and freezing mechanics remain unchanged; research scales final attack damage.",
+    "Улучшает оружие кораблей, перехватчиков и подкреплений нивариан. За уровень +20% урона и пробития всех типов, всего +20%. Усиление при захвате и заморозка не меняются; бонус применяется к итоговому урону.",
+    "ニヴァリアン戦艦・艦載機・援軍艦の兵装を強化。各段階でダメージと全種貫通+20%、累計+20%。連続命中と凍結の仕組みは維持し、最終攻撃ダメージに研究補正を適用します。",
+    "Améliore les armes des vaisseaux, intercepteurs et renforts nivarians. Par palier : +20% dégâts et pénétration de tous types, cumul +20%. Les mécanismes de verrouillage et de gel restent inchangés ; le bonus augmente les dégâts finaux."
+  ],
+  "739": [
+    "Nivarian warship weapon Ⅱ",
+    "Оружие кораблей нивариан Ⅱ",
+    "ニヴァリアン戦艦兵装Ⅱ",
+    "Armement des vaisseaux nivarians Ⅱ"
+  ],
+  "740": [
+    "Improve weapons on all Nivarian warships, interceptors and reinforcement ships. Each tier adds 20% damage and armor penetration of all types; total +40%. Lock-on escalation and freezing mechanics remain unchanged; research scales final attack damage.",
+    "Улучшает оружие кораблей, перехватчиков и подкреплений нивариан. За уровень +20% урона и пробития всех типов, всего +40%. Усиление при захвате и заморозка не меняются; бонус применяется к итоговому урону.",
+    "ニヴァリアン戦艦・艦載機・援軍艦の兵装を強化。各段階でダメージと全種貫通+20%、累計+40%。連続命中と凍結の仕組みは維持し、最終攻撃ダメージに研究補正を適用します。",
+    "Améliore les armes des vaisseaux, intercepteurs et renforts nivarians. Par palier : +20% dégâts et pénétration de tous types, cumul +40%. Les mécanismes de verrouillage et de gel restent inchangés ; le bonus augmente les dégâts finaux."
+  ],
+  "741": [
+    "Nivarian warship weapon Ⅲ",
+    "Оружие кораблей нивариан Ⅲ",
+    "ニヴァリアン戦艦兵装Ⅲ",
+    "Armement des vaisseaux nivarians Ⅲ"
+  ],
+  "742": [
+    "Improve weapons on all Nivarian warships, interceptors and reinforcement ships. Each tier adds 20% damage and armor penetration of all types; total +60%. Lock-on escalation and freezing mechanics remain unchanged; research scales final attack damage.",
+    "Улучшает оружие кораблей, перехватчиков и подкреплений нивариан. За уровень +20% урона и пробития всех типов, всего +60%. Усиление при захвате и заморозка не меняются; бонус применяется к итоговому урону.",
+    "ニヴァリアン戦艦・艦載機・援軍艦の兵装を強化。各段階でダメージと全種貫通+20%、累計+60%。連続命中と凍結の仕組みは維持し、最終攻撃ダメージに研究補正を適用します。",
+    "Améliore les armes des vaisseaux, intercepteurs et renforts nivarians. Par palier : +20% dégâts et pénétration de tous types, cumul +60%. Les mécanismes de verrouillage et de gel restent inchangés ; le bonus augmente les dégâts finaux."
+  ],
+  "743": [
+    "Carrier interceptor hangar expansion",
+    "Расширение ангара авианосца",
+    "空母艦載機格納庫拡張",
+    "Extension du hangar du porte-aéronefs"
+  ],
+  "744": [
+    "Expand the carrier hangar from 6 to 8 interceptors, including aircraft in the hangar and deployed.",
+    "Увеличивает вместимость авианосца с 6 до 8 перехватчиков, включая ангар и вылетевшие аппараты。",
+    "艦載機の上限を6機から8機へ拡張。格納庫内と出撃中の合計です。",
+    "Augmente la capacité du porte-aéronefs de 6 à 8 intercepteurs, hangar et appareils déployés compris."
+  ],
+  "745": [
+    "Show mothership commander HUD",
+    "Показывать панель командира",
+    "母艦指揮HUDを表示",
+    "Afficher le panneau de commandement"
+  ],
+  "746": [
+    "Unlock all expansion technologies without missions",
+    "Открыть все технологии дополнения без заданий",
+    "任務なしで本拡張の全技術を解放",
+    "Débloquer toutes les technologies de cette extension sans missions"
+  ],
+  "747": [
+    "Off by default. When enabled, resuming the game completes every research project in this expansion and bypasses Continuum missions and support mothership-level requirements. Resource costs and cooldowns still apply. Turning it off keeps completed research and restores level requirements. Multiplayer changes are synchronized; joining players use the host save state.",
+    "По умолчанию выключено. После включения и возобновления игры завершаются все исследования дополнения, без заданий Континуума и требований к уровню материнского корабля для поддержки. Расход ресурсов и перезарядка сохраняются. Выключение сохраняет исследования и возвращает требования к уровню. В сетевой игре переключение синхронизируется, а подключающиеся игроки используют состояние сохранения хоста.",
+    "初期設定はオフ。有効にしてゲームを再開すると、本拡張の全研究が完了し、連続体任務と支援の母艦レベル条件を省略します。資源消費とクールダウンは維持されます。無効にしても完了した研究は残り、レベル条件が復活します。マルチプレイでは切り替えを同期し、参加者はホストのセーブ状態を使用します。",
+    "Désactivé par défaut. Une fois activé et la partie reprise, toutes les recherches de cette extension sont terminées, sans missions du Continuum ni niveau de vaisseau-mère requis pour les soutiens. Les coûts et délais de recharge restent actifs. La désactivation conserve les recherches et rétablit les exigences de niveau. En multijoueur, le changement est synchronisé et les nouveaux joueurs utilisent l’état de la sauvegarde de l’hôte."
+  ],
+  "748": [
+    "Spacetime fluctuation: move speed ×2",
+    "Колебание пространства-времени: скорость движения ×2",
+    "時空変動：移動速度2倍",
+    "Fluctuation spatiotemporelle : vitesse de déplacement ×2"
+  ],
+  "749": [
+    "Nutrition reserve",
+    "Запас питательных веществ",
+    "栄養備蓄",
+    "Réserve nutritive"
+  ],
+  "750": [
+    "Target nutrition: {0}. Drag the reserve bar to adjust the target. Lowering it keeps existing nutrition; zero stops refilling. Choose food types in the Nutrition tab.",
+    "Целевой запас питания: {0}. Перетащите полосу, чтобы изменить цель. Снижение цели сохраняет имеющееся питание; ноль прекращает пополнение. Виды еды выбираются на вкладке питания.",
+    "目標栄養量：{0}。備蓄バーをドラッグして変更できます。目標を下げても既存の栄養は残り、0にすると補給を停止します。食料の種類は「栄養」タブで設定できます。",
+    "Objectif nutritif : {0}. Faites glisser la barre pour le modifier. Réduire l’objectif conserve la réserve ; zéro arrête le remplissage. Choisissez les aliments dans l’onglet Nutrition."
+  ],
+  "751": [
+    "Automatically refill nutrition. Turning this off stops new automatic refill jobs; stored nutrition is still consumed. You can still right-click to order a colonist to refill.",
+    "Автоматически пополнять питание. Отключение прекращает новые задания пополнения, но не расход запаса. Можно приказать колонисту пополнить питание через правую кнопку мыши.",
+    "栄養を自動補給します。無効にすると新しい自動補給作業を停止しますが、既存の栄養は通常どおり消費されます。右クリックで入植者に補給を指示できます。",
+    "Remplir automatiquement la réserve. Désactiver cette option arrête les nouvelles tâches automatiques ; la réserve reste consommée. Un clic droit permet toujours d’ordonner le remplissage."
   ]
 }

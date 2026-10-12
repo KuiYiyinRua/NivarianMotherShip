@@ -30,6 +30,8 @@ namespace NivarianCommander
         public const string OwnHediff = "NMC_ShadowInvisibility";
         static readonly MethodInfo Forced = AccessTools.PropertyGetter(typeof(HediffComp_Invisibility), "ForcedVisible");
         List<CloakDisruption> disruptions = new List<CloakDisruption>();
+        readonly List<Pawn> cloakTargets = new List<Pawn>();
+        readonly List<Hediff> removedSources = new List<Hediff>();
         public CommanderCloak(Map map) : base(map) { }
         public static bool Immune(Thing target)
             => target?.TryGetComp<CompCommanderConstruction>()?.Props.cloakImmune == true
@@ -37,16 +39,25 @@ namespace NivarianCommander
         // Every query derives coverage from live sources/faction; no simulation writes or random rolls.
         public static bool Covered(Thing target)
         {
-            if (target == null || !target.Spawned || target.Destroyed || Immune(target)
+            if (target == null || !target.Spawned || target.Destroyed
                 || (target is Pawn dead && dead.Dead)) return false;
-            if (target is Pawn guard && guard.health.hediffSet.hediffs.Any(h => h.def.defName == "NMC_GhostIdentity")) return true;
-            if (!SupportDiplomacy.Friendly(target)) return false;
             var towerDef = DefDatabase<ThingDef>.GetNamedSilentFail("NMC_ShadowEnergyTower");
-            if (towerDef == null) return false;
-            foreach (var tower in target.Map.listerThings.ThingsOfDef(towerDef))
+            var towers = towerDef == null ? null : target.Map.listerThings.ThingsOfDef(towerDef);
+            bool innate = false;
+            // Queries can run inside native SpawnSetup, before its postfix registers
+            // the pawn. Read the live hediffs here; the index is only for tick work.
+            if (target is Pawn guard)
+                for (int i = 0; i < guard.health.hediffSet.hediffs.Count; i++)
+                    if (guard.health.hediffSet.hediffs[i].def.defName == "NMC_GhostIdentity") { innate = true; break; }
+            if (!innate && (towers == null || towers.Count == 0)) return false;
+            if (Immune(target)) return false;
+            if (innate) return true;
+            if (!SupportDiplomacy.Friendly(target)) return false;
+            foreach (var tower in towers)
             {
                 var properties = tower.TryGetComp<CompCommanderStructure>()?.Props;
-                if (tower.Spawned && !tower.Destroyed && properties != null && properties.cloakRadius > 0
+                if (tower.Spawned && !tower.Destroyed && tower is Building_NutrientEnergyTower energyTower && energyTower.IsOperating
+                    && properties != null && properties.cloakRadius > 0
                     && SupportDiplomacy.Friendly(tower) && target.Position.InHorDistOf(tower.Position, properties.cloakRadius)) return true;
             }
             return false;
@@ -129,11 +140,29 @@ namespace NivarianCommander
                 record.lastLocalTick = GenTicks.TicksGame;
             }
             disruptions.RemoveAll(r => DisruptionMap(r.target) != map || r.remaining <= 0);
-            foreach (var pawn in map.mapPawns.AllPawnsSpawned.OrderBy(p => p.thingIDNumber).ToList())
+            var towerDef = DefDatabase<ThingDef>.GetNamedSilentFail("NMC_ShadowEnergyTower");
+            CommanderPawnIndex.For(map).CopyCloakTargets(cloakTargets,
+                towerDef != null && map.listerThings.ThingsOfDef(towerDef).Count != 0);
+            foreach (var pawn in cloakTargets)
             {
-                if (Covered(pawn)) EnsurePawnSource(pawn);
-                else foreach (var own in pawn.health.hediffSet.hediffs.Where(h => h.def.defName == OwnHediff).ToList()) pawn.health.RemoveHediff(own);
+                var hediffs = pawn.health.hediffSet.hediffs;
+                if (Covered(pawn))
+                {
+                    bool present = false;
+                    for (int i = 0; i < hediffs.Count; i++)
+                        if (hediffs[i].def.defName == OwnHediff) { present = true; break; }
+                    if (!present) pawn.health.AddHediff(DefDatabase<HediffDef>.GetNamed(OwnHediff));
+                }
+                else
+                {
+                    removedSources.Clear();
+                    for (int i = 0; i < hediffs.Count; i++)
+                        if (hediffs[i].def.defName == OwnHediff) removedSources.Add(hediffs[i]);
+                    foreach (var own in removedSources) pawn.health.RemoveHediff(own);
+                    removedSources.Clear();
+                }
             }
+            cloakTargets.Clear();
         }
         public override void ExposeData()
         {
@@ -155,6 +184,15 @@ namespace NivarianCommander
     [HarmonyPatch(typeof(HediffComp_Invisibility), "get_PsychologicallyVisible")]
     public static class CommanderCloakOwnVisibility
     {
+        // Older saves can retain our aura on corpses, whose native mindState
+        // has been removed. Decide visibility before vanilla reads fade timers.
+        static bool Prefix(HediffComp_Invisibility __instance, ref bool __result)
+        {
+            if (__instance.parent.def.defName != CommanderCloak.OwnHediff
+                || (!__instance.Pawn.Dead && __instance.Pawn.mindState != null)) return true;
+            __result = true;
+            return false;
+        }
         static void Postfix(HediffComp_Invisibility __instance, ref bool __result)
         {
             if (__instance.parent.def.defName == CommanderCloak.OwnHediff

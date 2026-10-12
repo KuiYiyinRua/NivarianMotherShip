@@ -9,7 +9,7 @@
 
 研究完成后，部署或迁移能量场的冷却时间延长为1天。</description>
     <baseCost>2500</baseCost>
-    <prerequisites><li>NMC_TacticalProtocol</li></prerequisites>
+    <prerequisites><li>NMC_Support01</li></prerequisites>
     <researchViewX>1</researchViewX>
     <researchViewY>2</researchViewY>
     <modExtensions>

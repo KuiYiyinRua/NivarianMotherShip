@@ -11,10 +11,10 @@
   </ThingDef>
   <ThingDef ParentName="NMC_FleetShipBase">
     <defName>NMC_TacticalMothership</defName><label>战术母舰</label>
-    <description>涅瓦莲支援舰队的战术母舰，负责以激光和能量弹压制地面敌人。每秒发射一道激光，造成15点基础伤害；每2秒投下一枚能量弹，造成20点基础爆炸伤害，对建筑尤为有效。
+    <description>涅瓦莲支援舰队的战术母舰，负责以激光和能量弹压制地面敌人。每秒发射一道激光，造成9点基础伤害；每2秒投下一枚能量弹，造成12点基础爆炸伤害，对建筑尤为有效。
 
 母舰自动飞行作战，也会受到敌方远程和爆炸攻击。它是临时派遣的支援舰，损失不会影响轨道母舰的资源储备；支援结束后撤离。</description>
-    <graphicData><texPath>NMC/Fleet/tactical_mothership</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Transparent</shaderType><drawSize>(6,6)</drawSize></graphicData>
+    <graphicData><texPath>NMC/Fleet/tactical_mothership</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Transparent</shaderType><drawSize>(9,9)</drawSize></graphicData>
     <statBases><MaxHitPoints>2400</MaxHitPoints><MoveSpeed>3</MoveSpeed></statBases>
     <comps>
       <li Class="Nivarian.NivarianDrones.NivarianDroneComps.NivarianDroneComps_MovingBase_Props">
@@ -36,10 +36,10 @@
   </ThingDef>
   <ThingDef ParentName="NMC_FleetShipBase">
     <defName>NMC_FleetDestroyer</defName><label>舰队驱逐舰</label>
-    <description>为战术母舰护航的自动驱逐舰。棱晶光束每0.5秒造成一次伤害，初始为4点；连续命中同一目标时，伤害逐次提高。更换目标或失去锁定后，光束恢复初始强度。
+    <description>为战术母舰护航的自动驱逐舰。棱晶光束每0.5秒造成一次伤害，初始为2.4点；连续命中同一目标时，伤害逐次提高。更换目标或失去锁定后，光束恢复初始强度。
 
 这型光束不会使目标冰冻。舰艇在支援期间自动寻找敌人，驻留结束后撤离。</description>
-    <graphicData><texPath>NMC/Fleet/destroyer</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Transparent</shaderType><drawSize>(3.5,3.5)</drawSize></graphicData>
+    <graphicData><texPath>NMC/Fleet/destroyer</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Transparent</shaderType><drawSize>(5.25,5.25)</drawSize></graphicData>
     <statBases><MaxHitPoints>450</MaxHitPoints><MoveSpeed>8</MoveSpeed></statBases>
     <comps>
       <li Class="Nivarian.NivarianDrones.NivarianDroneComps.NivarianDroneComps_MovingBase_Props">
@@ -75,26 +75,26 @@
   <ThingDef ParentName="BaseBullet">
     <defName>NMC_FleetMothershipBolt</defName><label>母舰能量弹</label><thingClass>Projectile_Explosive</thingClass>
     <graphicData><texPath>Things/Projectile/Bullet_Small</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Transparent</shaderType><color>(0.4,0.8,1)</color><drawSize>0.6</drawSize></graphicData>
-    <projectile><damageDef>NMC_FleetMothershipEnergy</damageDef><damageAmountBase>20</damageAmountBase><armorPenetrationBase>0.6</armorPenetrationBase><speed>85</speed><explosionRadius>2</explosionRadius></projectile>
+    <projectile><damageDef>NMC_FleetMothershipEnergy</damageDef><damageAmountBase>12</damageAmountBase><armorPenetrationBase>0.6</armorPenetrationBase><speed>85</speed><explosionRadius>2</explosionRadius></projectile>
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>NMC_FleetDestroyerBolt</defName><label>驱逐舰能量弹</label><thingClass>Bullet</thingClass>
     <graphicData><texPath>Things/Projectile/Bullet_Small</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Transparent</shaderType><color>(0.4,0.8,1)</color><drawSize>0.35</drawSize></graphicData>
-    <projectile><damageDef>NMC_FleetDestroyerEnergy</damageDef><damageAmountBase>4</damageAmountBase><armorPenetrationBase>0.3</armorPenetrationBase><speed>85</speed></projectile>
+    <projectile><damageDef>NMC_FleetDestroyerEnergy</damageDef><damageAmountBase>2.4</damageAmountBase><armorPenetrationBase>0.3</armorPenetrationBase><speed>85</speed></projectile>
   </ThingDef>
   <NivarianCommander.SupportDamageDef>
     <defName>NMC_FleetMothershipEnergy</defName><label>母舰能量伤害</label><workerClass>DamageWorker_AddInjury</workerClass>
-    <externalViolence>true</externalViolence><isRanged>true</isRanged><isExplosive>true</isExplosive><armorCategory>Sharp</armorCategory><hediff>Burn</hediff><hediffSolid>Crack</hediffSolid><defaultDamage>20</defaultDamage><defaultArmorPenetration>0.6</defaultArmorPenetration>
+    <externalViolence>true</externalViolence><isRanged>true</isRanged><isExplosive>true</isExplosive><armorCategory>Sharp</armorCategory><hediff>Burn</hediff><hediffSolid>Crack</hediffSolid><defaultDamage>12</defaultDamage><defaultArmorPenetration>0.6</defaultArmorPenetration>
     <buildingDamageFactor>5</buildingDamageFactor><buildingDamageFactorPassable>1</buildingDamageFactorPassable><buildingDamageFactorImpassable>1</buildingDamageFactorImpassable>
     <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell><explosionColorCenter>(0.8,0.95,1)</explosionColorCenter><explosionColorEdge>(0.2,0.6,1)</explosionColorEdge><explosionCellFleck>BlastDry</explosionCellFleck><soundExplosion>Explosion_Bomb</soundExplosion>
   </NivarianCommander.SupportDamageDef>
   <NivarianCommander.SupportDamageDef>
     <defName>NMC_FleetDestroyerEnergy</defName><label>驱逐舰能量伤害</label><workerClass>DamageWorker_AddInjury</workerClass>
-    <externalViolence>true</externalViolence><isRanged>true</isRanged><armorCategory>Sharp</armorCategory><hediff>Burn</hediff><hediffSolid>Crack</hediffSolid><defaultDamage>4</defaultDamage><defaultArmorPenetration>0.3</defaultArmorPenetration>
+    <externalViolence>true</externalViolence><isRanged>true</isRanged><armorCategory>Sharp</armorCategory><hediff>Burn</hediff><hediffSolid>Crack</hediffSolid><defaultDamage>2.4</defaultDamage><defaultArmorPenetration>0.3</defaultArmorPenetration>
   </NivarianCommander.SupportDamageDef>
   <NivarianCommander.SupportDamageDef>
     <defName>NMC_FleetMothershipLaser</defName><label>母舰棱晶激光</label><workerClass>DamageWorker_AddInjury</workerClass>
-    <externalViolence>true</externalViolence><isRanged>true</isRanged><armorCategory>Sharp</armorCategory><hediff>Burn</hediff><hediffSolid>Crack</hediffSolid><defaultDamage>15</defaultDamage><defaultArmorPenetration>0.6</defaultArmorPenetration>
+    <externalViolence>true</externalViolence><isRanged>true</isRanged><armorCategory>Sharp</armorCategory><hediff>Burn</hediff><hediffSolid>Crack</hediffSolid><defaultDamage>9</defaultDamage><defaultArmorPenetration>0.6</defaultArmorPenetration>
   </NivarianCommander.SupportDamageDef>
   <ThingDef>
     <defName>NMC_FleetWreck</defName><label>临时舰艇残骸</label><description>一艘支援舰艇被击毁后留下的残骸。残骸无法拆解；母舰会在本次支援结束时将其回收，搬运或储藏也不能将它永久留下。</description>

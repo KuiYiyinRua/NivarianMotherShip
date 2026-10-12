@@ -18,7 +18,7 @@ namespace NivarianCommander
         public bool Channeling => beamTarget != null && beamRemaining > 0;
         public bool VisibleBeam => Channeling && (!Mothership || flashRemaining > 0);
         public int IntervalTicks => Mothership ? 60 : 30;
-        public float PulseDamage => Mothership ? 15f : (Hero ? 8f : 4f) + consecutiveHits;
+        public float PulseDamage => Mothership ? 9f : (Hero ? 4.8f : 2.4f) + consecutiveHits;
         public float PulsePenetration => Mothership ? .6f : Hero ? .5f : Freezing ? .4f : .3f;
 
         bool Valid(Thing source, Thing target)

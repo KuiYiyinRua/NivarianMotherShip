@@ -17,7 +17,14 @@ namespace NivarianCommander
         public int templateVersion; public string templateMigration;
         public override void ExposeData()
         { base.ExposeData(); Scribe_Values.Look(ref templateVersion, "nmcTemplateVersion"); Scribe_Values.Look(ref templateMigration, "nmcTemplateMigration"); Scribe_Values.Look(ref batchId, "nmcGhostBatchId"); Scribe_Values.Look(ref speedScale, "nmcGhostSpeedScale", 1f); }
-        public static Hediff_GhostIdentity For(Pawn pawn) => pawn?.health?.hediffSet?.hediffs.OfType<Hediff_GhostIdentity>().FirstOrDefault();
+        public static Hediff_GhostIdentity For(Pawn pawn)
+        {
+            var hediffs = pawn?.health?.hediffSet?.hediffs;
+            if (hediffs != null)
+                for (int i = 0; i < hediffs.Count; i++)
+                    if (hediffs[i] is Hediff_GhostIdentity identity) return identity;
+            return null;
+        }
     }
     public sealed class StatPart_GhostSpeed : StatPart
     {
@@ -60,6 +67,7 @@ namespace NivarianCommander
         public static CommanderGhosts Current => Find.World?.GetComponent<CommanderGhosts>();
         public void TickMap(Map map)
         {
+            if (batches.Count == 0) return;
             foreach (var batch in batches.Where(b => b.originMap == map).ToList())
             {
                 if (batch.firstTickPending)
@@ -72,6 +80,7 @@ namespace NivarianCommander
         }
         public override void WorldComponentTick()
         {
+            if (batches.Count == 0) return;
             foreach (var batch in batches.Where(b => b.originMap == null || !Find.Maps.Contains(b.originMap)).ToList())
             { Recall(batch); batches.Remove(batch); }
         }
@@ -99,7 +108,9 @@ namespace NivarianCommander
         public override void MapComponentTick()
         {
             CommanderGhosts.Current?.TickMap(map);
-            var unassigned = map.mapPawns.AllPawnsSpawned.Where(p => Hediff_GhostIdentity.For(p) != null
+            var ghosts = CommanderPawnIndex.For(map).ghosts;
+            if (ghosts.Count == 0) return;
+            var unassigned = ghosts.Where(p => Hediff_GhostIdentity.For(p) != null
                 && !p.Dead && !p.Destroyed && p.GetLord() == null).OrderBy(p => p.thingIDNumber).ToList();
             foreach (var group in unassigned.GroupBy(p => new { p.Faction, Hediff_GhostIdentity.For(p).batchId }))
                 if (group.Key.Faction != null) LordMaker.MakeNewLord(group.Key.Faction, new LordJob_GhostAssault(), map, group.ToList());
@@ -284,7 +295,7 @@ namespace NivarianCommander
             if (Hediff_GhostIdentity.For(pawn) == null || pawn.Dead || pawn.Downed) return null;
             var target = pawn.Map.listerThings.AllThings.Where(t => t.Spawned && !t.Destroyed && t != pawn
                 && (t is Pawn || t is Building || t is Nivarian.NivarianDrones.NivarianDroneBase)
-                && (!(t is Pawn enemy) || !enemy.Dead) && t.HostileTo(Faction.OfPlayer)
+                && (!(t is Pawn enemy) || !enemy.DeadOrDowned) && t.HostileTo(Faction.OfPlayer)
                 && t.HostileTo(pawn.Faction) && !SupportDiplomacy.Friendly(t)
                 && !CommanderCloak.HiddenFrom(t, pawn) && pawn.CanReach(t, PathEndMode.Touch, Danger.Deadly))
                 .OrderBy(t => t.Position.DistanceToSquared(pawn.Position)).ThenBy(t => t.thingIDNumber).FirstOrDefault();

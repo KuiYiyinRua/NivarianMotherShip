@@ -33,11 +33,11 @@ namespace NivarianCommander
             if (beamTicks > 0) beamTicks--;
             if (ProjectionRegistry.BlocksFire(parent) || !ProjectionResources.CanFire(parent)) return;
             lastTargets.RemoveAll(t => t == null || t.Destroyed || !t.Spawned || t.Map != parent.Map);
-            bool waveActive = SpacetimeWaveMap.ActiveFor(parent.Map);
+            bool waveActive = SpacetimeTurretTimers.ActiveFor(parent);
             if (waveActive != waveCadenceActive)
             {
-                weaponWait = waveActive ? Mathf.CeilToInt(weaponWait / 5f)
-                    : Mathf.Min(Props.intervalTicks, weaponWait * 5);
+                weaponWait = waveActive ? Mathf.CeilToInt(weaponWait / (float)SpacetimeWaveStats.TurretMultiplier)
+                    : Mathf.Min(Props.intervalTicks, weaponWait * SpacetimeWaveStats.TurretMultiplier);
                 waveCadenceActive = waveActive;
             }
             if (weaponWait > 0) weaponWait--;
@@ -48,7 +48,7 @@ namespace NivarianCommander
             if (selected.Count == 0) return;
             // One simulation tick owns the whole pulse; no delayed per-target volley or ammunition.
             lastTargets = selected; beamTicks = 12; roundsFired++;
-            weaponWait = waveActive ? Mathf.Max(1, Props.intervalTicks / 5) : Props.intervalTicks;
+            weaponWait = waveActive ? Mathf.Max(1, Mathf.CeilToInt(Props.intervalTicks / (float)SpacetimeWaveStats.TurretMultiplier)) : Props.intervalTicks;
             parent.Map.GetComponent<MonolithPrismVisuals>().Show(this);
             foreach (var target in selected)
             {
@@ -64,7 +64,7 @@ namespace NivarianCommander
         {
             if (target == parent || target.Destroyed || !target.Spawned || target.Map != parent.Map
                 || (!(target is Pawn) && !(target is Building) && !(target is NivarianDroneBase))
-                || (target is Pawn p && p.Dead) || CommanderCloak.HiddenFrom(target, parent)
+                || (target is Pawn p && p.DeadOrDowned) || CommanderCloak.HiddenFrom(target, parent)
                 || !target.HostileTo(parent.Faction ?? Faction.OfPlayer) || SupportDiplomacy.Friendly(target)) return false;
             return target.Position.InHorDistOf(parent.Position, Props.range)
                 && GenSight.LineOfSight(parent.Position, target.Position, parent.Map, skipFirstCell: true);
@@ -87,6 +87,6 @@ namespace NivarianCommander
             if (Scribe.mode == LoadSaveMode.PostLoadInit) lastTargets = lastTargets ?? new List<Thing>();
         }
         public override string CompInspectStringExtra()
-            => NmcText.Get("NMC_Text0287", (Powered ? NmcText.Get("NMC_Text0283") : NmcText.Get("NMC_Text0284")), (SpacetimeWaveMap.ActiveFor(parent.Map) ? NmcText.Get("NMC_Text0285") : NmcText.Get("NMC_Text0286")));
+            => NmcText.Get("NMC_Text0287", (Powered ? NmcText.Get("NMC_Text0283") : NmcText.Get("NMC_Text0284")), (SpacetimeTurretTimers.ActiveFor(parent) ? NmcText.Get("NMC_Text0285") : NmcText.Get("NMC_Text0286")));
     }
 }

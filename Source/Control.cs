@@ -45,8 +45,14 @@ namespace NivarianCommander
         public CommanderControl(Map map) : base(map) { }
         public IReadOnlyList<MonolithStunRecord> MonolithStuns => monolithStuns;
         public static int Remaining(Thing target)
-            => target != null && target.Spawned && !target.Destroyed && !SupportDiplomacy.Friendly(target)
-                ? target.Map.GetComponent<CommanderControl>().monolithStuns.FirstOrDefault(r => r.target == target)?.remaining ?? 0 : 0;
+        {
+            if (target == null || !target.Spawned || target.Destroyed) return 0;
+            var records = CommanderPawnIndex.For(target.Map).Control.monolithStuns;
+            if (records.Count == 0 || SupportDiplomacy.Friendly(target)) return 0;
+            for (int i = 0; i < records.Count; i++)
+                if (records[i].target == target) return records[i].remaining;
+            return 0;
+        }
         public static bool Stunned(Thing target) => Remaining(target) > 0;
         public static void ClearFriendly()
         {
@@ -55,6 +61,7 @@ namespace NivarianCommander
         }
         void RemoveWhere(Func<MonolithStunRecord, bool> predicate, bool restore)
         {
+            if (monolithStuns.Count == 0) return;
             foreach (var record in monolithStuns.Where(predicate).ToArray())
             { if (restore) NativeMonolithStun.Release(record); monolithStuns.Remove(record); }
         }
@@ -74,6 +81,7 @@ namespace NivarianCommander
         }
         public override void MapComponentTick()
         {
+            if (monolithStuns.Count == 0) return;
             RemoveWhere(r => r.target == null || r.target.Destroyed || !r.target.Spawned
                 || r.target.Map != map || SupportDiplomacy.Friendly(r.target), true);
             foreach (var record in monolithStuns.ToArray())

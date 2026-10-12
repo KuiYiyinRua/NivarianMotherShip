@@ -6,4 +6,7 @@
   <NMC_FillNutrientEnergyTower.label>Ravitailler la tour en nutriments</NMC_FillNutrientEnergyTower.label>
   <NMC_FillNutrientEnergyTower.verb>Remplir</NMC_FillNutrientEnergyTower.verb>
   <NMC_FillNutrientEnergyTower.gerund>Remplir de nutriments</NMC_FillNutrientEnergyTower.gerund>
+  <NMC_RefillCarrierDragonSteel.label>Remplir la réserve d’acier du porte-avions</NMC_RefillCarrierDragonSteel.label>
+  <NMC_RefillCarrierDragonSteel.verb>Charger l’acier givre-dragon</NMC_RefillCarrierDragonSteel.verb>
+  <NMC_RefillCarrierDragonSteel.gerund>Chargement d’acier givre-dragon</NMC_RefillCarrierDragonSteel.gerund>
 </LanguageData>

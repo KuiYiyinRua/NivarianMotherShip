@@ -16,7 +16,14 @@ namespace NivarianCommander
         public float speedScale = 1f;
         public int templateVersion; public string templateMigration;
         public LegionFocusBackend focusBackend; public float fallbackFocus; public int focusRegenTicks;
-        public static Hediff_LegionIdentity For(Pawn pawn) => pawn?.health?.hediffSet?.hediffs.OfType<Hediff_LegionIdentity>().FirstOrDefault();
+        public static Hediff_LegionIdentity For(Pawn pawn)
+        {
+            var hediffs = pawn?.health?.hediffSet?.hediffs;
+            if (hediffs != null)
+                for (int i = 0; i < hediffs.Count; i++)
+                    if (hediffs[i] is Hediff_LegionIdentity identity) return identity;
+            return null;
+        }
         public override void ExposeData()
         {
             base.ExposeData(); Scribe_Values.Look(ref batchId, "nmcLegionBatch");
@@ -68,6 +75,7 @@ namespace NivarianCommander
         public static CommanderLegions Current => Find.World?.GetComponent<CommanderLegions>();
         public void TickMap(Map map)
         {
+            if (batches.Count == 0) return;
             foreach (var batch in batches.Where(b => b.origin == map && b.committed).ToList())
             {
                 if (batch.firstTickPending)
@@ -78,7 +86,7 @@ namespace NivarianCommander
         public void RemoveMap(Map map)
         { foreach (var batch in batches.Where(b => b.origin == map).ToList()) Retire(batch); }
         public override void WorldComponentTick()
-        { foreach (var batch in batches.Where(b => b.origin == null || !Find.Maps.Contains(b.origin)).ToList()) Retire(batch); }
+        { if (batches.Count != 0) foreach (var batch in batches.Where(b => b.origin == null || !Find.Maps.Contains(b.origin)).ToList()) Retire(batch); }
         public void Retire(LegionBatch batch)
         {
             batch.origin?.GetComponent<TebrusStormMap>()?.Cancel(batch.members);
@@ -110,13 +118,18 @@ namespace NivarianCommander
     }
     public sealed class CommanderLegionMap : MapComponent
     {
+        readonly List<Pawn> focusPawns = new List<Pawn>();
         public CommanderLegionMap(Map map) : base(map) { }
         public override void MapComponentTick()
         {
             CommanderLegions.Current?.TickMap(map);
-            foreach (var pawn in map.mapPawns.AllPawnsSpawned.OrderBy(p => p.thingIDNumber))
+            var legions = CommanderPawnIndex.For(map).legions;
+            if (legions.Count == 0) return;
+            focusPawns.Clear(); focusPawns.AddRange(legions);
+            foreach (var pawn in focusPawns)
                 if (Hediff_LegionIdentity.For(pawn) is Hediff_LegionIdentity marker) LegionFocus.Tick(pawn, marker);
-            var unassigned = map.mapPawns.AllPawnsSpawned.Where(p => !p.Dead && !p.Downed
+            focusPawns.Clear();
+            var unassigned = legions.Where(p => !p.Dead && !p.Downed
                 && Hediff_LegionIdentity.For(p) != null && p.GetLord() == null).OrderBy(p => p.thingIDNumber).ToList();
             foreach (var group in unassigned.GroupBy(p => new { p.Faction, Hediff_LegionIdentity.For(p).batchId }))
                 if (group.Key.Faction != null) Verse.AI.Group.LordMaker.MakeNewLord(group.Key.Faction, new LordJob_LegionAssault(), map, group.ToList());

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
   <NMC_Carrier.label>ニヴァリアン空母</NMC_Carrier.label>
-  <NMC_Carrier.description>耐久5000、積載10000 kgの大型空母。直接攻撃兵器はなく艦載機で戦闘します。
+  <NMC_Carrier.description>耐久2500、積載10000 kgの大型空母。直接攻撃兵器はなく艦載機で戦闘します。
 
-龍霜鋼を貨物として搬入し、最大1000の製造備蓄を補充できます。1機につき龍霜鋼10、製造15秒で、停泊中も飛行中も製造可能。格納庫と出撃中を合わせ最大8機、各耐久150。
+専用の「龍霜鋼の備蓄」パネルで目標量を設定すると、着陸中に入植者が龍霜鋼を運搬して補充します。上限は1000です。輸送用貨物室の龍霜鋼は自動的に製造へ使われません。艦載機1機につき龍霜鋼10を消費し、製造には5秒かかります。着陸中も飛行中も製造可能です。格納庫と出撃中の艦載機の合計上限は6機で、各機の耐久値は125です。
 
 飛行戦闘時は60マス以内の敵を見つけ、毎秒1機出撃。空母から80マス離れると帰還します。着陸命令で出撃を止め全機回収します。
 
@@ -15,9 +15,9 @@
   <NMC_GravityFrigate.label>ニヴァリアン重力艦</NMC_GravityFrigate.label>
   <NMC_GravityFrigate.description>対空迎撃と軽輸送用のニヴァリアン艦。占有3×3、耐久600、積載300 kg。
 
-飛行中は16マス以内の空中敵へ双発プリズムレーザーを毎秒斉射。各ビームは基礎ダメージ12、貫通50%、建物ダメージ3倍で凍結なし。地上対象は直接攻撃できません。
+飛行中は16マス以内の空中敵へ双発プリズムレーザーを毎秒斉射。各ビームは基礎ダメージ6、貫通50%、建物ダメージ3倍で凍結なし。地上対象は直接攻撃できません。
 
-重力ビームで16マス以内の地上敵1体を持ち上げ5秒気絶させるとレーザーで攻撃可能。追加資源不要、クールダウン8秒。手動・自動で発動できます。
+重力ビームで16マス以内の地上敵1体を持ち上げ4秒気絶させるとレーザーで攻撃可能。追加資源不要、クールダウン8秒。手動・自動で発動できます。
 
 化学燃料最大600、マップ内飛行中は5秒ごとに1消費。ワールド移動はシャトルの半分の消費で燃料が航続距離を制限。追加離陸クールダウンなし。屋根のない離陸地点と十分な着陸空間が必要。
 
@@ -25,7 +25,7 @@
   <NMC_GravityFrigateIncoming.label>ニヴァリアン重力艦（着陸）</NMC_GravityFrigateIncoming.label>
   <NMC_GravityFrigateLeaving.label>ニヴァリアン重力艦（離陸）</NMC_GravityFrigateLeaving.label>
   <NMC_CarrierInterceptor.label>ニヴァリアン艦載機</NMC_CarrierInterceptor.label>
-  <NMC_CarrierInterceptor.description>空母が製造・制御する無人艦載機。軽弾で自動攻撃し、耐久150。
+  <NMC_CarrierInterceptor.description>空母が製造・制御する無人艦載機。軽弾で自動攻撃し、耐久125。
 
 空母の飛行戦闘中のみ出撃。空母から80マス離れると帰還し、回収・着陸命令にも従います。空母が必要で、独立した遠距離輸送はできません。</NMC_CarrierInterceptor.description>
   <NMC_InterceptorFallbackRound.label>艦載機軽弾</NMC_InterceptorFallbackRound.label>
@@ -35,11 +35,11 @@
   <NMC_ContinuumPowerCore.description>基地の防衛設備に給電します。破壊すると接続電網が切れ、依存する砲塔が停止します。</NMC_ContinuumPowerCore.description>
   <NMC_OverloadBolt.label>過負荷エネルギー弾</NMC_OverloadBolt.label>
   <NMC_TacticalMothership.label>戦術母艦</NMC_TacticalMothership.label>
-  <NMC_TacticalMothership.description>レーザーとエネルギー弾で地上敵を制圧する支援母艦。毎秒レーザーで基礎ダメージ15、2秒ごとの弾で爆発ダメージ20。建物に特に有効。
+  <NMC_TacticalMothership.description>レーザーとエネルギー弾で地上敵を制圧する支援母艦。毎秒レーザーで基礎ダメージ9、2秒ごとの弾で爆発ダメージ12。建物に特に有効。
 
 自動飛行戦闘し、遠隔・爆発攻撃を受けます。臨時支援艦の損失は軌道母艦の資源に影響せず、支援終了後に撤退します。</NMC_TacticalMothership.description>
   <NMC_FleetDestroyer.label>艦隊駆逐艦</NMC_FleetDestroyer.label>
-  <NMC_FleetDestroyer.description>自動護衛駆逐艦。プリズムビームは0.5秒ごとに初期4ダメージ。同一対象への連続命中で強化し、対象変更や捕捉喪失で初期値へ戻ります。
+  <NMC_FleetDestroyer.description>自動護衛駆逐艦。プリズムビームは0.5秒ごとに初期2.4ダメージ。同一対象への連続命中で強化し、対象変更や捕捉喪失で初期値へ戻ります。
 
 凍結効果はありません。自動で敵を探し、滞在時間終了後に撤退します。</NMC_FleetDestroyer.description>
   <NMC_FleetMothershipGun.label>母艦エネルギー砲</NMC_FleetMothershipGun.label>
@@ -64,12 +64,12 @@
   <NMC_GhostHelmet.label>ニヴァリアンゴーストサークレット</NMC_GhostHelmet.label>
   <NMC_GhostHelmet.description>ゴースト装甲用の開放型頭環。顔の視界を保ち、頭を斬撃・打撃・熱から守る衛隊専用装備。</NMC_GhostHelmet.description>
   <NMC_VoidRay.label>輝光艦</NMC_VoidRay.label>
-  <NMC_VoidRay.description>ゾラヤ軍団の護衛艦。凍結プリズムビームは0.5秒ごと初期4ダメージ。同一対象への連続命中で強化し、捕捉喪失・対象変更で初期化。
+  <NMC_VoidRay.description>ゾラヤ軍団の護衛艦。凍結プリズムビームは0.5秒ごと初期2.4ダメージ。同一対象への連続命中で強化し、捕捉喪失・対象変更で初期化。
 
 自動索敵し、堅い敵の継続制圧に適します。軍団とともに撤退。</NMC_VoidRay.description>
   <NMC_VoidRayGun.label>輝光艦ビーム</NMC_VoidRayGun.label>
   <NMC_Zoraya.label>ゾラヤ</NMC_Zoraya.label>
-  <NMC_Zoraya.description>ゾラヤ指揮艦の強化プリズムビームは0.5秒ごと初期8ダメージと凍結。同一対象への連続命中で強化し、捕捉喪失・変更で初期化。
+  <NMC_Zoraya.description>ゾラヤ指揮艦の強化プリズムビームは0.5秒ごと初期4.8ダメージと凍結。同一対象への連続命中で強化し、捕捉喪失・変更で初期化。
 
 護衛艦と協同戦闘し、ともに撤退します。</NMC_Zoraya.description>
   <NMC_ZorayaRayGun.label>ゾラヤ輝光ビーム</NMC_ZorayaRayGun.label>
@@ -93,13 +93,15 @@
 
 取消時に納入済み材料は返しますが、配置費用とクールダウンは戻りません。</NMC_MonolithCore.description>
   <NMC_ShadowEnergyTower.label>ニヴァリアンシャドウエネルギータワー</NMC_ShadowEnergyTower.label>
-  <NMC_ShadowEnergyTower.description>コアから建設する母艦施設。毎日120 Pと80 Vを送り、半径7マスの友軍を隠します。攻撃・被弾で解除されませんが探知は有効。
+  <NMC_ShadowEnergyTower.description>幽緑色の共鳴結晶を栄養で維持する母艦施設。占有面積は2×2マス、発電量は1400 W。P産出量と栄養消費量は通常のニヴァリアンエネルギータワーの2倍です。入植者が許可された食料を搬入します。「栄養」タブで種類を設定できます。
 
-自身は隠れず防衛が必要。複数が独立生産できます。</NMC_ShadowEnergyTower.description>
+稼働中は半径7マスの友軍を隠します。栄養不足、電源オフ、稼働停止時には発電・P産出・隠蔽が同時に停止し、補給後に再開します。攻撃や被弾では解除されませんが、探知は有効です。
+
+タワー自身は隠れないため、防衛が必要です。</NMC_ShadowEnergyTower.description>
   <NMC_HyperdimensionalMonolith.label>超次元モノリス</NMC_HyperdimensionalMonolith.label>
   <NMC_HyperdimensionalMonolith.description>超次元制御で敵を阻止する大型防衛設備。射程60、2秒ごとに最大10体へダメージ3と気絶1秒。
 
-電網接続と1000 Wが必要で弾薬不要。時空変動中は攻撃速度5倍。</NMC_HyperdimensionalMonolith.description>
+電網接続と1000 Wが必要で弾薬不要。時空変動中は攻撃速度3倍。</NMC_HyperdimensionalMonolith.description>
   <NMC_TebrusRobe.label>テブルス霊能礼装</NMC_TebrusRobe.label>
   <NMC_TebrusRobe.description>青白の長い法衣。霊能模様を織り込み、斬撃・打撃・熱から強く保護します。
 
@@ -120,9 +122,11 @@
 軍団専用で支援後回収。</NMC_TebrusPulseGun.description>
   <NMC_TebrusPulseGun.tools.0.label>握り</NMC_TebrusPulseGun.tools.0.label>
   <NMC_VoidSuppressionCrystal.label>ヴォイド抑制結晶</NMC_VoidSuppressionCrystal.label>
-  <NMC_VoidSuppressionCrystal.description>母艦の臨時制御装置。半径13の敵の移動・攻撃速度を30%にし、砲塔停火。範囲外で回復し、複数結晶は重複なし。
+  <NMC_VoidSuppressionCrystal.description>母艦の臨時制御装置。半径18の敵の移動・攻撃速度を30%にし、砲塔停火。範囲外で回復し、複数結晶は重複なし。
 
-攻撃破壊不可。30秒で消散または早期撤収可能。</NMC_VoidSuppressionCrystal.description>
+攻撃破壊不可。30秒で消散または早期撤収可能。
+
+結晶は地面のスペースを占有せず、移動を妨げません。あらゆる地形に配置でき、建物・ユニット・アイテム・植物と重ねられます。</NMC_VoidSuppressionCrystal.description>
   <NMC_NutrientEnergyTower.label>ニヴァリアンエネルギータワー</NMC_NutrientEnergyTower.label>
   <NMC_NutrientEnergyTower.description>栄養液で共鳴結晶を育て、母艦へPポイントと入植地電網へ700 Wを供給します。定期的な食料補充が必要。
 

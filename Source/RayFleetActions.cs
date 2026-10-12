@@ -71,27 +71,16 @@ namespace NivarianCommander
                 Reject(NmcText.Get("NMC_Text0440")); return;
             }
             // Native spawn callbacks may have changed faction, shared cooldown,
-            // energy or trade goods. Revalidate before preparing any payment.
+            // energy. Revalidate before paying the energy cost.
             blocked = Unavailable(map);
             if (blocked != null || LegionPurchase.NativeFaction != faction)
             { owner.Retire(batch); Reject(blocked ?? NmcText.Get("NMC_Text0441")); return; }
-            LegionPurchase.Payment payment;
-            try { payment = new LegionPurchase.Payment(map); }
-            catch (Exception error)
-            {
-                owner.Retire(batch); Log.Error("[NMC] Ray fleet goods transaction rolled back: " + error);
-                Reject(NmcText.Get("NMC_Text0442")); return;
-            }
-            var d = DefenseActions.Ability(15);
-            using (payment)
-            {
-                if (!NativeLedger.TryPay(d.powerCost, d.volatileCost))
-                { owner.Retire(batch); Reject(NmcText.Get("NMC_Text0443")); return; }
-                payment.Commit();
-            }
+            var ability = DefenseActions.Ability(15);
+            if (!NativeLedger.TryPay(ability.powerCost, ability.volatileCost))
+            { owner.Retire(batch); Reject(NmcText.Get("NMC_Text0443")); return; }
             batch.committed = true;
             CommanderState.Current.cooldowns[LegionPurchase.CooldownKey] = LegionPurchase.CooldownTicks;
-            Messages.Message(NmcText.Get("NMC_Text0444", payment.Amount, payment.Currency.label), MessageTypeDefOf.PositiveEvent, false);
+            Messages.Message(NmcText.Get("NMC_Text0444"), MessageTypeDefOf.PositiveEvent, false);
         }
     }
 }

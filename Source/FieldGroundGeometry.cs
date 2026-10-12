@@ -52,9 +52,6 @@ namespace NivarianCommander
                 for (int edge = 0; edge < 3; edge++)
                     result.AddLine(hexCenter + corners[edge], hexCenter + corners[edge + 1], outline);
             }
-            // Clip the perimeter as well: no blue spill outside the map or ability radius.
-            for (int i = 0; i < circle.Count; i++)
-                result.AddLine(circle[i], circle[(i + 1) % circle.Count], outline);
             return result;
         }
 

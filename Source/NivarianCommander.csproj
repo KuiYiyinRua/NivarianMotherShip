@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net48</TargetFramework><LangVersion>latest</LangVersion><AssemblyName>NivarianCommander</AssemblyName><Version>0.9.6</Version>
+    <TargetFramework>net48</TargetFramework><LangVersion>latest</LangVersion><AssemblyName>NivarianCommander</AssemblyName><Version>0.9.8</Version>
     <OutputPath>../1.6/Assemblies/</OutputPath><AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath><EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
   <ItemGroup>

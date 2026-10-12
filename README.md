@@ -4,11 +4,11 @@
 
 A RimWorld 1.6 expansion for **Nivarian Race**. Extend the mothership with 19 tactical supports, a points shop, carrier and gravity ship, and an eight-stage Continuum campaign.
 
-Version: **0.9.6**. Languages: Simplified Chinese, English, Russian, Japanese and French.
+Version: **0.9.8**. Languages: Simplified Chinese, English, Russian, Japanese and French.
 
 ## Installation
 
-1. Download the mod ZIP from [Releases](https://github.com/KuiYiyinRua/NivarianMotherShip/releases).
+1. Subscribe on [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3817608894), or download the complete mod ZIP from [GitHub Releases](https://github.com/KuiYiyinRua/NivarianMotherShip/releases).
 2. Extract the NivarianMotherShip folder into your RimWorld Mods folder. Replace the previous copy instead of installing two copies.
 3. Enable Harmony, Humanoid Alien Races, Nivarian Race and this expansion in that order. Follow any dependency requirements of the installed base mods.
 4. Select your language in RimWorld settings and let the game reload its data. This expansion uses the game's language selection.
@@ -40,3 +40,7 @@ Directory.Build.props supplies default dependency paths. Override HarmonyAssembl
 Translation contributors: see [localization maintenance](Docs/LOCALIZATION.md). Release verification and its limits are recorded in [release validation](Docs/VALIDATION.md).
 
 Nivarian Race is created by **keeptpa**. This expansion depends on the original mod and does not include its assemblies.
+
+## Research unlock setting
+
+Author: 尹怨怨. In Mod settings → Nivarian Race: MotherShip, “Unlock all expansion technologies without missions” is off by default. Enable it and resume the game to finish all 38 expansion research projects and bypass Continuum missions and support mothership-level requirements. Costs and cooldowns still apply. Turning it off retains finished research and restores level requirements. Vanilla and other mods' research are unchanged; campaign missions are not marked complete. Multiplayer uses the synchronized saved world setting.

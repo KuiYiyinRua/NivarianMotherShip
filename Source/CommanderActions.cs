@@ -17,7 +17,7 @@ namespace NivarianCommander
             var project = For(def);
             if (project?.IsFinished != true) return CommanderProgression.ResearchBlocked(project) ?? NmcText.Get("NMC_Text0045", def?.researchLabel);
             int required = project.GetModExtension<CommanderResearchExtension>()?.mothershipLevel ?? 0;
-            return (NativeLedger.Component?.GetLevel ?? 0) < required ? NmcText.Get("NMC_Text0046", required) : null;
+            return CommanderResearchAccess.Current?.enabled != true && (NativeLedger.Component?.GetLevel ?? 0) < required ? NmcText.Get("NMC_Text0046", required) : null;
         }
 
         public static bool Finished(string name) => DefDatabase<ResearchProjectDef>.GetNamedSilentFail(name)?.IsFinished == true;
@@ -69,11 +69,8 @@ namespace NivarianCommander
             if (!center.IsValid) { Reject(NmcText.Get("NMC_Text0049")); return; }
             if (!NativeLedger.TryPay(OrbitalPowerCost, OrbitalVolatileCost)) { Reject(NmcText.Get("NMC_Text0038")); return; }
             CommanderState.Current.shotsFired++;
-            map.GetComponent<OrbitalVisuals>().Add(center);
             var damage = DefDatabase<DamageDef>.GetNamed("NMC_OrbitalEnergy");
-            GenExplosion.DoExplosion(center, map, 3f, damage, null,
-                damAmount: damage.defaultDamage, armorPenetration: .35f, chanceToStartFire: 0f, damageFalloff: false,
-                applyDamageToExplosionCellsNeighbors: false);
+            OrbitalStrike.Execute(map, center, damage, .35f);
             if (Diagnostics) Log.Message("[NMC-ACTION] FIRE map=" + map.uniqueID + " cell=" + center + " shot=" + CommanderState.Current.shotsFired + " P=" + NativeLedger.Balance("PowerCoin") + " V=" + NativeLedger.Balance("VolatileReactive"));
         }
         public static string ProtectionUnavailable()
@@ -103,7 +100,8 @@ namespace NivarianCommander
     {
         public override void ExplosionAffectCell(Explosion explosion, IntVec3 c, List<Thing> damagedThings, List<Thing> ignoredThings, bool canThrowMotes)
         {
-            if (!c.InBounds(explosion.Map) || c.GetRoof(explosion.Map)?.isThickRoof == true) return;
+            if (!c.InBounds(explosion.Map) || !OrbitalStrike.Contains(explosion.Position, c)
+                || c.GetRoof(explosion.Map)?.isThickRoof == true) return;
             int original = explosion.damAmount;
             try
             {
@@ -120,6 +118,7 @@ namespace NivarianCommander
         static bool Prefix(Thing __instance, DamageInfo dinfo, ref DamageWorker.DamageResult __result)
         {
             if (!(dinfo.Def is SupportDamageDef) || !CommanderResearch.FriendlyFireProtectionActive || !SupportDiplomacy.Friendly(__instance)) return true;
+            if (dinfo.Instigator?.HostileTo(Faction.OfPlayer) == true) return true;
             __result = new DamageWorker.DamageResult();
             return false;
         }

@@ -18,12 +18,18 @@ namespace NivarianCommander
         {
             if (target == null || Current.ProgramState != ProgramState.Playing) return null;
             if (target.Map != null)
-                foreach (var record in target.Map.GetComponent<CommanderControl>().MonolithStuns)
-                    if (record.target == target) return record;
+            {
+                var records = CommanderPawnIndex.For(target.Map).Control.MonolithStuns;
+                for (int i = 0; i < records.Count; i++)
+                    if (records[i].target == target) return records[i];
+            }
             if (!target.Spawned)
                 foreach (var map in Find.Maps)
-                    foreach (var record in map.GetComponent<CommanderControl>().MonolithStuns)
-                        if (record.target == target) return record;
+                {
+                    var records = CommanderPawnIndex.For(map).Control.MonolithStuns;
+                    for (int i = 0; i < records.Count; i++)
+                        if (records[i].target == target) return records[i];
+                }
             return null;
         }
         public static StunHandler SourceClock(MonolithStunRecord record)

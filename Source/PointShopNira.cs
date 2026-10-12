@@ -5,6 +5,7 @@ using Nivarian;
 using Nivarian.Helper;
 using UnityEngine;
 using Verse;
+using Theme = NivarianCommander.CommanderPanelTheme;
 
 namespace NivarianCommander
 {
@@ -63,20 +64,28 @@ namespace NivarianCommander
             var oldFont = Text.Font; var oldAnchor = Text.Anchor; var oldWrap = Text.WordWrap; var oldColor = GUI.color;
             try
             {
-                NivarianVisualHelper.DrawPlank(rect, new Color(.06f, .07f, .1f, .88f), new Color(.18f, .28f, .38f, .85f));
-                var portrait = new Rect(rect.x + 8, rect.y + 8, 60, 60);
-                NivarianVisualHelper.DrawPlank(portrait, new Color(.08f, .1f, .14f, .9f), new ColorInt(97, 108, 122).ToColor);
+                Theme.Panel(rect);
+                float portraitSize = Mathf.Min(60, rect.height - 16);
+                var portrait = new Rect(rect.x + 8, rect.y + 8, portraitSize, portraitSize);
+                Widgets.DrawBoxSolid(portrait, Theme.Ink); Theme.Frame(portrait, Theme.Gold);
                 if (projection != null && Event.current.type == EventType.Repaint)
                     Graphics.DrawTexture(portrait.ContractedBy(3), dialog.PortraitTexture, projection);
                 else Widgets.DrawTextureFitted(portrait.ContractedBy(3), dialog.PortraitTexture, 1f);
                 Text.Font = GameFont.Small; Text.Anchor = TextAnchor.UpperLeft;
-                Widgets.Label(new Rect(portrait.xMax + 9, rect.y + 6, rect.width - 88, 22), dialog.speaker);
-                var body = new Rect(portrait.xMax + 9, rect.y + 29, rect.width - 88, rect.height - 33);
+                GUI.color = Theme.Gold;
+                float bodyWidth = rect.width - portraitSize - 28;
+                bool shortCard = rect.height < 76;
+                Text.Anchor = shortCard ? TextAnchor.MiddleLeft : TextAnchor.UpperLeft;
+                Widgets.Label(shortCard ? new Rect(portrait.xMax + 9, rect.y + 8, 52, rect.height - 16)
+                    : new Rect(portrait.xMax + 9, rect.y + 6, bodyWidth, 22), dialog.speaker);
+                Text.Anchor = TextAnchor.UpperLeft;
+                var body = shortCard ? new Rect(portrait.xMax + 66, rect.y + 8, bodyWidth - 57, rect.height - 16)
+                    : new Rect(portrait.xMax + 9, rect.y + 29, bodyWidth, rect.height - 33);
                 // The native tight renderer measures Latin "A" for line height, which overlaps
                 // CJK fallback glyphs in an English UI. Keep its reveal timing, but let the
                 // normal game label lay out this single-colour conversation text.
                 Text.WordWrap = true;
-                GUI.color = new Color(.76f, .9f, .95f);
+                GUI.color = Theme.Cyan;
                 string visible = text.Substring(0, Math.Min(text.Length, writer.RevealedChars));
                 float height = Text.CalcHeight(text, body.width);
                 if (height > body.height)

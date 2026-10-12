@@ -10,15 +10,15 @@
   <NMC_Text0008>选择本地图的飞行目的地。</NMC_Text0008>
   <NMC_Text0009>正在起降</NMC_Text0009>
   <NMC_Text0010>降落</NMC_Text0010>
-  <NMC_Text0011>停止空中作战并降落。航母会停止派出舰载机，并召回已出击的编队。请先清空舰船下方的建筑、人员和屋顶。</NMC_Text0011>
-  <NMC_Text0012>下方有障碍物、人员或屋顶，请先移动到空地。</NMC_Text0012>
+  <NMC_Text0011>选择降落地点，使用旋转建筑快捷键调整朝向，再点击确认。航母会停止派出舰载机，并在编队全部返回后降落。落点须无建筑、人员、树木和屋顶。</NMC_Text0011>
+  <NMC_Text0012>此处无法降落，请选择无建筑、人员、树木和屋顶的空地。</NMC_Text0012>
   <NMC_Text0013>舰载机制造：开启</NMC_Text0013>
   <NMC_Text0014>舰载机制造：暂停</NMC_Text0014>
-  <NMC_Text0015>每架需要{0}龙霜钢，制造用时15秒，飞行期间也能制造。通过“装载货物”运入龙霜钢，可补充最多1000单位材料。机库和出击中的舰载机合计最多{1}架。</NMC_Text0015>
+  <NMC_Text0015>每架舰载机消耗{0}龙霜钢，制造需要15秒，飞行时也可制造。使用“龙霜钢储备”面板设置目标储量，由殖民者在停泊时填装，最多1000单位。机库和出击中的舰载机合计最多{1}架。</NMC_Text0015>
   <NMC_Text0016>收回舰载机</NMC_Text0016>
   <NMC_Text0017>命令所有出击中的舰载机返回机库。若航母仍在升空作战且附近有敌人，舰载机之后仍会继续出击。</NMC_Text0017>
   <NMC_Text0018>引力束</NMC_Text0018>
-  <NMC_Text0019>选择16格内的一名地面敌人，将其举起并眩晕5秒。升空后的目标可被本舰激光攻击。引力束冷却8秒，无需额外资源。</NMC_Text0019>
+  <NMC_Text0019>选择16格内的任意存活单位，将其举起并眩晕4秒，包括友方、中立和敌方单位。同一单位不能同时受到多个引力束影响。引力束冷却8秒，无需额外资源；自动施放仍只选择敌人。</NMC_Text0019>
   <NMC_Text0020>需要升空作战</NMC_Text0020>
   <NMC_Text0021>引力束冷却中</NMC_Text0021>
   <NMC_Text0022>自动引力束：开启</NMC_Text0022>
@@ -111,7 +111,7 @@
   <NMC_Text0097>使用条件</NMC_Text0097>
   <NMC_Text0098>所需物资</NMC_Text0098>
   <NMC_Text0099>精确友军识别 · 已启用</NMC_Text0099>
-  <NMC_Text0102>半径3格 · 伤害30 · 穿甲35%</NMC_Text0102>
+  <NMC_Text0102>3×3方格 · 伤害30 · 穿甲35%</NMC_Text0102>
   <NMC_Text0103>瞄准轨道轰炸</NMC_Text0103>
   <NMC_Text0104>供电中 · {0} / 10,000 W</NMC_Text0104>
   <NMC_Text0105>能量场位于其他地图 · 可迁移</NMC_Text0105>
@@ -137,7 +137,7 @@
   <NMC_Text0125>结束当前地图射线</NMC_Text0125>
   <NMC_Text0126>尚未生效</NMC_Text0126>
   <NMC_Text0127>{0}处生效 · 此处剩余 {1}</NMC_Text0127>
-  <NMC_Text0128>工作速度提高至5倍 · 60秒</NMC_Text0128>
+  <NMC_Text0128>移动 ×2 · 工作 ×10 · 炮塔 ×3 · 60秒</NMC_Text0128>
   <NMC_Text0129>已就绪 · 作用于各处殖民地</NMC_Text0129>
   <NMC_Text0130>施放时空波动</NMC_Text0130>
   <NMC_Text0131>结束时空波动</NMC_Text0131>
@@ -241,7 +241,7 @@
 
 战利品集中在阵地中央，周围由多层炮塔和沙袋掩体守卫。守军还会呼叫空投增援，其中包括机械体和配备涅瓦莲武器的涅拉战斗单元。
 
-你有12天时间完成进攻。进入战场后，若在达成目标前全部撤离，或超过期限，任务将失败。母舰会在3天后重新定位同一阶段的基地；此前取得的研究资料仍然保留。
+该基地没有时间限制，不会因等待而自动消失。进入战场后，若在达成目标前全部撤离，任务将失败。母舰会在3天后重新定位同一阶段的基地；此前取得的研究资料仍然保留。
 
 本次取得的资料将开放以下研究：
 {0}
@@ -310,10 +310,9 @@
   <NMC_Text0279>部队落点已被占用</NMC_Text0279>
   <NMC_Text0280>远征军团移动速度修正：{0}</NMC_Text0280>
   <NMC_Text0281>涅瓦莲幸存者军团不存在、已覆灭或与殖民地敌对</NMC_Text0281>
-  <NMC_Text0282>请在当前地图已供电的轨道交易信标范围内准备2000白银或200黄金</NMC_Text0282>
   <NMC_Text0283>超维控制阵列：运行</NMC_Text0283>
   <NMC_Text0284>超维控制阵列：断电</NMC_Text0284>
-  <NMC_Text0285> · 每0.4秒攻击一次</NMC_Text0285>
+  <NMC_Text0285> · 攻击冷却为原本的1/3</NMC_Text0285>
   <NMC_Text0286> · 每2秒攻击一次</NMC_Text0286>
   <NMC_Text0287>{0}{1} · 射程60格 · 最多10个目标</NMC_Text0287>
   <NMC_Text0288>{0}燃料耗尽，已紧急降落。</NMC_Text0288>
@@ -339,7 +338,7 @@
   <NMC_Text0304>{0}营养储备：{1}（补给目标 {2}）
 营养消耗：{3} / 游戏日
 母舰能量：{4} P / 游戏日
-{5} · 额定发电 700 W</NMC_Text0304>
+{5} · 额定发电 {6} W</NMC_Text0304>
   <NMC_Text0305>其他商品</NMC_Text0305>
   <NMC_Text0306>涅拉</NMC_Text0306>
   <NMC_Text0307>你好，指挥官。货单已经整理好了，今天想给殖民地添些什么？</NMC_Text0307>
@@ -491,17 +490,16 @@
   <NMC_Text0439>五舰落点不能位于墙体或不可通行地形中</NMC_Text0439>
   <NMC_Text0440>佐拉亚军团入场失败；未扣费、未开始冷却</NMC_Text0440>
   <NMC_Text0441>已无法联络军团，本次增援已取消</NMC_Text0441>
-  <NMC_Text0442>信标范围内的物资已变化，请重新核对。本次未扣费，也未开始冷却</NMC_Text0442>
   <NMC_Text0443>母舰能量不足；物资退回，本次增援已取消</NMC_Text0443>
-  <NMC_Text0444>佐拉亚军团折跃入场：1艘佐拉亚 + 4艘虚空辉光舰；交付{0}{1}，全队入场后驻留120秒</NMC_Text0444>
-  <NMC_Text0445>佐拉亚军团 · {0} P + {1} V · 2000白银或200黄金 · 左键部署，右键 / Esc取消</NMC_Text0445>
+  <NMC_Text0444>佐拉亚军团折跃入场：1艘佐拉亚 + 4艘虚空辉光舰；全队入场后驻留120秒</NMC_Text0444>
+  <NMC_Text0445>佐拉亚军团 · {0} P + {1} V · 左键部署，右键 / Esc取消</NMC_Text0445>
   <NMC_Text0446>太阳能射线枪  ·  300 P + 180 V  ·  左键启动三束 / 8 秒  ·  右键 / Esc 取消</NMC_Text0446>
   <NMC_Text0447>军团装备尚未准备完成，暂时无法增援</NMC_Text0447>
   <NMC_Text0448>军团部队暂时无法派遣</NMC_Text0448>
   <NMC_Text0449>附近需要四处已探索、可站立且没有厚山岩顶的空地</NMC_Text0449>
   <NMC_Text0450>赛达斯军团入场失败；未扣费、未开始冷却</NMC_Text0450>
-  <NMC_Text0451>赛达斯军团抵达：赛达斯 + 3黑暗执政官；交付{0}{1}，120秒后折跃撤离</NMC_Text0451>
-  <NMC_Text0453>赛达斯军团 · {0} P + {1} V · 2000白银或200黄金 · 左键部署，右键 / Esc取消</NMC_Text0453>
+  <NMC_Text0451>赛达斯军团抵达：赛达斯 + 3黑暗执政官；120秒后折跃撤离</NMC_Text0451>
+  <NMC_Text0453>赛达斯军团 · {0} P + {1} V · 左键部署，右键 / Esc取消</NMC_Text0453>
   <NMC_Text0454>心灵归附</NMC_Text0454>
   <NMC_Text0455>地底无法使用太阳轰炸</NMC_Text0455>
   <NMC_Text0456>没有可用的太阳轰炸中心：厚山岩顶下禁止直接打击</NMC_Text0456>
@@ -510,7 +508,7 @@
   <NMC_Text0459>没有可用的太阳能射线起点：厚山岩顶下不可直接命中</NMC_Text0459>
   <NMC_Text0460>太阳轰炸  ·  {0} P + {1} V  ·  左键启动 300 发  ·  右键 / Esc 取消瞄准</NMC_Text0460>
   <NMC_Text0461>需要至少一处可用的殖民地</NMC_Text0461>
-  <NMC_Text0462>时空波动：工作速度提高至5倍</NMC_Text0462>
+  <NMC_Text0462>时空波动：工作速度 ×10</NMC_Text0462>
   <NMC_Text0463>无法部署这项设施</NMC_Text0463>
   <NMC_Text0464>施工核心暂时不可用，无法部署</NMC_Text0464>
   <NMC_Text0465>无法在此处部署施工核心</NMC_Text0465>
@@ -519,21 +517,36 @@
   <NMC_Text0468>所选位置有建筑、人员或物品，请先清空</NMC_Text0468>
   <NMC_Text0469>附近需要11处已探索、可站立且没有厚山岩顶的空地</NMC_Text0469>
   <NMC_Text0470>特布鲁斯军团入场失败；未扣费、未开始冷却</NMC_Text0470>
-  <NMC_Text0471>特布鲁斯军团抵达：特布鲁斯 + 10近战战士；交付{0}{1}，120秒后折跃撤离</NMC_Text0471>
-  <NMC_Text0473>特布鲁斯军团 · {0} P + {1} V · 2000白银或200黄金 · 左键部署，右键 / Esc取消</NMC_Text0473>
+  <NMC_Text0471>特布鲁斯军团抵达：特布鲁斯 + 10近战战士；120秒后折跃撤离</NMC_Text0471>
+  <NMC_Text0473>特布鲁斯军团 · {0} P + {1} V · 左键部署，右键 / Esc取消</NMC_Text0473>
   <NMC_Text0474>虚空抑制 · 不可受击破坏
 半径13 · 敌人移动与攻击速度降至30% · 炮塔停火
 剩余：{0}</NMC_Text0474>
-  <NMC_Text0475>晶体不能位于地图最外圈</NMC_Text0475>
+  <NMC_Text0475>晶体必须位于地图范围内</NMC_Text0475>
   <NMC_Text0476>晶体落点必须已探索</NMC_Text0476>
-  <NMC_Text0477>落点被建筑、人员或物品占用，请另选位置</NMC_Text0477>
   <NMC_Text0478>虚空抑制晶体暂时无法部署</NMC_Text0478>
   <NMC_Text0479>晶体无法放置在此处</NMC_Text0479>
-  <NMC_Text0480>虚空抑制晶体 · {0} P + {1} V · 半径13 / 30秒 · 左键部署，右键 / Esc取消</NMC_Text0480>
+  <NMC_Text0480>虚空抑制晶体 · {0} P + {1} V · 半径18 / 30秒 · 左键部署，右键 / Esc取消</NMC_Text0480>
   <NMC_Text0481>虚空抑制晶体 · {0}</NMC_Text0481>
   <NMC_Text0711>需要研究：精确友军识别</NMC_Text0711>
   <NMC_Text0712>请通过上行链路研究终端研究精确友军识别</NMC_Text0712>
   <NMC_Text0713>精确友军识别 · 未研究</NMC_Text0713>
   <NMC_Text0714>指挥官支援火力会保护己方和盟友。</NMC_Text0714>
   <NMC_Text0715>{0}。通过上行链路研究终端交付材料，完成后自动启用。</NMC_Text0715>
+  <NMC_ResearchTaskLocked>前置任务未完成，暂时无法解锁研究。</NMC_ResearchTaskLocked>
+  <NMC_ResearchTaskProgress>连续体任务进度：已完成 {0}/{1} 阶段。请在“任务”界面完成对应阶段后，再回到上行链路研究终端。</NMC_ResearchTaskProgress>
+  <NMC_ResearchTaskButton>前置任务未完成</NMC_ResearchTaskButton>
+  <NMC_ResearchTaskAndResearchButton>前置任务与研究未完成</NMC_ResearchTaskAndResearchButton>
+  <NMC_CarrierSteelTitle>龙霜钢储备</NMC_CarrierSteelTitle>
+  <NMC_CarrierSteelTooltip>目标储量：{0}。拖动储量条调整目标；每架舰载机消耗{1}龙霜钢。殖民者在航母停泊时填装。运输货物不会自动转入储备。</NMC_CarrierSteelTooltip>
+  <NMC_CarrierSteelAirborne>飞行中无法填装；舰载机制造仍可使用已有储备。</NMC_CarrierSteelAirborne>
+  <NMC_CarrierSteelAutoFill>自动填装龙霜钢。关闭后仍可右键命令殖民者填装。</NMC_CarrierSteelAutoFill>
+  <NMC_CarrierSteelMissing>没有可搬运的龙霜钢</NMC_CarrierSteelMissing>
+  <NMC_SettingsShortcut>显示母舰指挥快捷栏</NMC_SettingsShortcut>
+  <NMC_SettingsUnlockAll>直接解锁本拓展全部科技（跳过任务）</NMC_SettingsUnlockAll>
+  <NMC_SettingsUnlockAllHint>默认关闭。开启后，在游戏继续运行时直接完成本拓展全部研究，跳过连续体任务与支援的母舰等级限制；资源消耗和冷却仍然有效。关闭后保留已完成的研究，恢复等级限制。联机中开关通过同步命令共享，加入者沿用主机存档状态。</NMC_SettingsUnlockAllHint>
+  <NMC_Text0748>时空波动：移动速度 ×2</NMC_Text0748>
+  <NMC_Text0749>营养储备</NMC_Text0749>
+  <NMC_Text0750>目标营养储量：{0}。拖动储量条调整目标。降低目标不会丢弃已有营养；设为0停止补料。食物种类可在“营养”页设置。</NMC_Text0750>
+  <NMC_Text0751>自动补充营养。关闭后不再安排自动补料，已有营养仍正常消耗；仍可右键命令殖民者补料。</NMC_Text0751>
 </LanguageData>

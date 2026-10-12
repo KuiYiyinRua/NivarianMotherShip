@@ -1,12 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net48</TargetFramework><LangVersion>latest</LangVersion><AssemblyName>NivarianCommander.Multiplayer</AssemblyName><Version>0.9.6</Version>
+    <TargetFramework>net48</TargetFramework><LangVersion>latest</LangVersion><AssemblyName>NivarianCommander.Multiplayer</AssemblyName><Version>0.9.8</Version>
     <OutputPath>../Assemblies/</OutputPath><AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <CommanderAssembly Condition="'$(CommanderAssembly)' == ''">$(MSBuildThisFileDirectory)../../1.6/Assemblies/NivarianCommander.dll</CommanderAssembly>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="*.cs" />
     <Reference Include="Assembly-CSharp"><HintPath>$(GameRoot)/RimWorldWin64_Data/Managed/Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="0Harmony"><HintPath>$(HarmonyAssembly)</HintPath><Private>false</Private></Reference>
     <Reference Include="0MultiplayerAPI"><HintPath>$(MultiplayerApiAssembly)</HintPath><Private>false</Private></Reference>
-    <Reference Include="NivarianCommander"><HintPath>../../1.6/Assemblies/NivarianCommander.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="NivarianCommander"><HintPath>$(CommanderAssembly)</HintPath><Private>false</Private></Reference>
   </ItemGroup>
 </Project>

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
   <NMC_Carrier.label>涅瓦莲航母</NMC_Carrier.label>
-  <NMC_Carrier.description>涅瓦莲的大型航空母舰，兼具重型运输和舰载机支援能力。舰体生命值5000，载重10000千克。自身没有直接攻击武器，需要依靠舰载机应战。
+  <NMC_Carrier.description>涅瓦莲的大型航空母舰，兼具重型运输和舰载机支援能力。舰体生命值2500，载重10000千克。自身没有直接攻击武器，需要依靠舰载机应战。
 
-通过“装载货物”运入龙霜钢，即可补充最多1000单位的制造储备。每架舰载机消耗10龙霜钢，制造需要15秒；停泊和飞行时均可制造。机库与出击中的舰载机合计最多8架，每架生命值150。
+通过独立的“龙霜钢储备”面板设置目标储量，殖民者会在航母停泊时搬运并填装龙霜钢，最多储存1000单位。运输货舱中的龙霜钢不会自动用于制造。每架舰载机消耗10龙霜钢，制造需要5秒；停泊和飞行时均可制造。机库与出击中的舰载机合计最多6架，每架生命值125。
 
 升空作战后，航母会发现60格内的敌人，每秒派出一架舰载机。舰载机飞离航母80格后自动返回；接到降落命令时，航母停止出击并召回全部舰载机。
 
@@ -15,9 +15,9 @@
   <NMC_GravityFrigate.label>涅瓦莲引力舰</NMC_GravityFrigate.label>
   <NMC_GravityFrigate.description>擅长对空拦截的涅瓦莲舰船，也能执行轻型运输。占地3×3格，舰体生命值600，载重300千克。
 
-升空后，以双束棱晶激光攻击16格内的空中敌人，每秒齐射一次。每束造成12点基础伤害，护甲穿透率为50%，对建筑的伤害提高至3倍，不附带冰冻效果。舰船不能直接攻击地面目标。
+升空后，以双束棱晶激光攻击16格内的空中敌人，每秒齐射一次。每束造成6点基础伤害，护甲穿透率为50%，对建筑的伤害提高至3倍，不附带冰冻效果。舰船不能直接攻击地面目标。
 
-引力束可将16格内的一名地面敌人举起并眩晕5秒，使其成为激光能够攻击的空中目标。引力束无需额外资源，冷却8秒；可以手动选择目标，也可允许舰船自动施放。
+引力束可将16格内的一名地面敌人举起并眩晕4秒，使其成为激光能够攻击的空中目标。引力束无需额外资源，冷却8秒；可以手动选择目标，也可允许舰船自动施放。
 
 最多储存600化合燃料，在地图内升空期间每5秒消耗1单位。远程航行的耗油为穿梭机的一半，航程受燃料储备限制。起飞无需等待额外冷却，上方须无屋顶；降落需要足够的空地。
 
@@ -25,7 +25,7 @@
   <NMC_GravityFrigateIncoming.label>涅瓦莲引力舰（降落）</NMC_GravityFrigateIncoming.label>
   <NMC_GravityFrigateLeaving.label>涅瓦莲引力舰（起飞）</NMC_GravityFrigateLeaving.label>
   <NMC_CarrierInterceptor.label>涅瓦莲舰载机</NMC_CarrierInterceptor.label>
-  <NMC_CarrierInterceptor.description>由涅瓦莲航母制造和控制的无人舰载机，使用轻型弹药自动攻击敌人，生命值150。
+  <NMC_CarrierInterceptor.description>由涅瓦莲航母制造和控制的无人舰载机，使用轻型弹药自动攻击敌人，生命值125。
 
 舰载机只在航母升空作战时出击。飞离所属航母80格后会自动返回，也会响应航母的回收和降落命令。它需要依托航母行动，无法独立执行远程运输。</NMC_CarrierInterceptor.description>
   <NMC_InterceptorFallbackRound.label>舰载机轻型弹</NMC_InterceptorFallbackRound.label>
@@ -35,11 +35,11 @@
   <NMC_ContinuumPowerCore.description>为连续体基地的防御设施供应电力。摧毁供能核心可以切断相连电网，使依赖这条电网的炮塔停止工作。</NMC_ContinuumPowerCore.description>
   <NMC_OverloadBolt.label>超载能量弹</NMC_OverloadBolt.label>
   <NMC_TacticalMothership.label>战术母舰</NMC_TacticalMothership.label>
-  <NMC_TacticalMothership.description>涅瓦莲支援舰队的战术母舰，负责以激光和能量弹压制地面敌人。每秒发射一道激光，造成15点基础伤害；每2秒投下一枚能量弹，造成20点基础爆炸伤害，对建筑尤为有效。
+  <NMC_TacticalMothership.description>涅瓦莲支援舰队的战术母舰，负责以激光和能量弹压制地面敌人。每秒发射一道激光，造成9点基础伤害；每2秒投下一枚能量弹，造成12点基础爆炸伤害，对建筑尤为有效。
 
 母舰自动飞行作战，也会受到敌方远程和爆炸攻击。它是临时派遣的支援舰，损失不会影响轨道母舰的资源储备；支援结束后撤离。</NMC_TacticalMothership.description>
   <NMC_FleetDestroyer.label>舰队驱逐舰</NMC_FleetDestroyer.label>
-  <NMC_FleetDestroyer.description>为战术母舰护航的自动驱逐舰。棱晶光束每0.5秒造成一次伤害，初始为4点；连续命中同一目标时，伤害逐次提高。更换目标或失去锁定后，光束恢复初始强度。
+  <NMC_FleetDestroyer.description>为战术母舰护航的自动驱逐舰。棱晶光束每0.5秒造成一次伤害，初始为2.4点；连续命中同一目标时，伤害逐次提高。更换目标或失去锁定后，光束恢复初始强度。
 
 这型光束不会使目标冰冻。舰艇在支援期间自动寻找敌人，驻留结束后撤离。</NMC_FleetDestroyer.description>
   <NMC_FleetMothershipGun.label>母舰能量炮</NMC_FleetMothershipGun.label>
@@ -64,12 +64,12 @@
   <NMC_GhostHelmet.label>涅瓦莲幽灵头环</NMC_GhostHelmet.label>
   <NMC_GhostHelmet.description>与幽灵装甲配套的开放式防护头环。它保留面部视野，并为头部提供锐器、钝器和热能防护。属于暗影卫队的专属装备。</NMC_GhostHelmet.description>
   <NMC_VoidRay.label>辉光舰</NMC_VoidRay.label>
-  <NMC_VoidRay.description>佐拉亚军团的护航舰，使用带有冰冻效果的棱晶光束持续攻击敌人。光束每0.5秒造成一次伤害，初始为4点；连续命中同一目标时逐渐增强，失去锁定或更换目标后恢复初始强度。
+  <NMC_VoidRay.description>佐拉亚军团的护航舰，使用带有冰冻效果的棱晶光束持续攻击敌人。光束每0.5秒造成一次伤害，初始为2.4点；连续命中同一目标时逐渐增强，失去锁定或更换目标后恢复初始强度。
 
 辉光舰自动选择敌人，适合持续压制坚固目标。支援结束后随军团撤离。</NMC_VoidRay.description>
   <NMC_VoidRayGun.label>辉光舰光束</NMC_VoidRayGun.label>
   <NMC_Zoraya.label>佐拉亚</NMC_Zoraya.label>
-  <NMC_Zoraya.description>佐拉亚军团的指挥舰，装备更强的棱晶光束。每0.5秒造成一次伤害，初始为8点，并附带冰冻效果；持续命中同一目标时伤害逐渐增强，失去锁定或更换目标后恢复初始强度。
+  <NMC_Zoraya.description>佐拉亚军团的指挥舰，装备更强的棱晶光束。每0.5秒造成一次伤害，初始为4.8点，并附带冰冻效果；持续命中同一目标时伤害逐渐增强，失去锁定或更换目标后恢复初始强度。
 
 佐拉亚与护航舰协同作战，支援结束后一同撤离。</NMC_Zoraya.description>
   <NMC_ZorayaRayGun.label>佐拉亚辉光束</NMC_ZorayaRayGun.label>
@@ -93,13 +93,15 @@
 
 取消施工会返还已经交入的材料，但部署核心消耗的能量和冷却时间不会返还。</NMC_MonolithCore.description>
   <NMC_ShadowEnergyTower.label>涅瓦莲暗影能源塔</NMC_ShadowEnergyTower.label>
-  <NMC_ShadowEnergyTower.description>由暗影核心建成的母舰能源设施。每座塔每天输送120P和80V，并使半径7格内的友军隐形。攻击和受伤不会主动解除隐形，但反隐手段仍然有效。
+  <NMC_ShadowEnergyTower.description>用营养液滋养幽绿色共鸣晶体的母舰能源设施，占地2×2格。发电量为1400W，母舰P点产量和营养消耗均为涅瓦莲能源塔的2倍。殖民者会自动搬运允许的食物，可在“营养”页调整补给种类。
 
-塔身本身不会被自己的暗影场隐藏，需要其他防御设施保护。可以建造多座能源塔，各自持续生产资源。</NMC_ShadowEnergyTower.description>
+运行时使半径7格内的友军隐形。营养不足、设施关闭或停止运行时，发电、P点产出和隐身场一同停止；补给后恢复。攻击和受伤不会主动解除隐形，但反隐手段仍然有效。
+
+塔身不会被自己的隐身场隐藏，需要其他防御设施保护。</NMC_ShadowEnergyTower.description>
   <NMC_HyperdimensionalMonolith.label>超维空间巨石</NMC_HyperdimensionalMonolith.label>
   <NMC_HyperdimensionalMonolith.description>以超维控制阵列阻滞敌人的大型防御设施。射程60格，每2秒同时打击最多10名敌人，分别造成3点基础伤害和1秒眩晕。
 
-巨石需要连接电网，持续消耗1000W电力，无需弹药。受到时空波动支援时，攻击速度提高至平时的5倍。</NMC_HyperdimensionalMonolith.description>
+巨石需要连接电网，持续消耗1000W电力，无需弹药。受到时空波动支援时，攻击速度提高至平时的3倍。</NMC_HyperdimensionalMonolith.description>
   <NMC_TebrusRobe.label>特布鲁斯灵能礼服</NMC_TebrusRobe.label>
   <NMC_TebrusRobe.description>特布鲁斯的青白色长裙法袍，柔软布料中织有灵能纹路，为穿戴者提供较强的锐器、钝器和热能防护。
 
@@ -120,10 +122,12 @@
 脉冲枪属于军团的专属装备，支援结束后收回。</NMC_TebrusPulseGun.description>
   <NMC_TebrusPulseGun.tools.0.label>握柄</NMC_TebrusPulseGun.tools.0.label>
   <NMC_VoidSuppressionCrystal.label>虚空抑制晶体</NMC_VoidSuppressionCrystal.label>
-  <NMC_VoidSuppressionCrystal.description>母舰临时投下的控制装置。半径13格内，敌人的移动和攻击速度降至平时的30%，敌方炮塔停止射击。离开影响范围即可恢复，多个晶体不会进一步叠加抑制效果。
+  <NMC_VoidSuppressionCrystal.description>母舰临时投下的控制装置。半径18格内，敌人的移动和攻击速度降至平时的30%，敌方炮塔停止射击。离开影响范围即可恢复，多个晶体不会进一步叠加抑制效果。
 
-晶体不会被攻击摧毁，30秒后自行消散，也可由指挥官提前撤回。</NMC_VoidSuppressionCrystal.description>
-  <NMC_NutrientEnergyTower.label>涅瓦莲能量塔</NMC_NutrientEnergyTower.label>
+晶体不会被攻击摧毁，30秒后自行消散，也可由指挥官提前撤回。
+
+晶体不占用地面空间，不阻挡移动，可在任意地形部署，并可与建筑、单位、物品及植物重叠。</NMC_VoidSuppressionCrystal.description>
+  <NMC_NutrientEnergyTower.label>涅瓦莲能源塔</NMC_NutrientEnergyTower.label>
   <NMC_NutrientEnergyTower.description>用营养液滋养共鸣晶体，持续为母舰输送P点的能源设施，同时可向殖民地电网供应700W电力。需要定期补充食物来维持运行。
 
 殖民者会将允许的食物运入设施，转化为营养储备。可在“营养”页调整食物种类，并在选中设施时查看当前消耗和产量。设施关闭、营养耗尽或停止运行时，母舰能量也会停止产出。

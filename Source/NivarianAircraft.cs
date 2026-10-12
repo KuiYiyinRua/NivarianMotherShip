@@ -5,6 +5,8 @@ using RimWorld;
 using UnityEngine;
 using Verse;
 using Verse.AI;
+using Verse.AI.Group;
+using Verse.Sound;
 
 namespace NivarianCommander
 {
@@ -14,22 +16,42 @@ namespace NivarianCommander
     // Local flight is a saved map simulation; rendering never drives movement.
     public sealed class Building_NivarianAircraft : Building_PassengerShuttle, IAttackTarget
     {
-        public const int FighterCapacity = 8;
+        public static int FighterCapacity => WarshipResearch.FighterCapacity;
         public const int FighterSteelCost = 10;
-        public const int FighterManufactureTicks = 15 * 60;
+        public const int FighterManufactureTicks = 5 * 60;
         public AircraftFlightState flightState;
         public Vector3 flightPosition;
         public IntVec3 destination = IntVec3.Invalid;
+        public Rot4 landingRotation = Rot4.North;
         public int transition, fuelClock, launchClock, manufactureTicks, dragonSteel;
         public int weaponClock, gravityCooldown, beamTicks, volleys;
         public float heading;
         public Thing beamTarget;
+        public bool hostileAutopilot;
+        public Pawn combatPilot;
+        public Thing combatTarget;
+        public int combatRetargetWait;
+        public float combatOrbitPhase;
         public Vector3 beamEnd;
         public ThingOwner<CarrierInterceptor> hangar;
         readonly AircraftHangarHolder hangarHolder;
         internal IThingHolder HangarHolder => hangarHolder;
         public List<CarrierInterceptor> deployed = new List<CarrierInterceptor>();
         public bool manufactureEnabled = true, automaticGravity = true;
+        public int dragonSteelTarget = CarrierDragonSteelSupply.Capacity;
+        public bool autoFillDragonSteel = true;
+        Gizmo_CarrierDragonSteel dragonSteelGizmo;
+        internal Gizmo_CarrierDragonSteel DragonSteelGizmo
+        {
+            get
+            {
+                // GetGizmos is enumerated again for each GUI event. Keep the
+                // local drag alive until release, then read the shared target anew.
+                if (dragonSteelGizmo == null || !dragonSteelGizmo.IsDragging)
+                    dragonSteelGizmo = new Gizmo_CarrierDragonSteel(this);
+                return dragonSteelGizmo;
+            }
+        }
         public bool starshipUpgradeRequested, starshipBatteryInstalled;
         public int starshipBatteriesDelivered;
         public int StarshipBatteryCost => IsCarrier ? 10 : 2;
@@ -39,6 +61,7 @@ namespace NivarianCommander
         public bool IsCarrier => def.defName == "NMC_Carrier";
         public bool Airborne => flightState != AircraftFlightState.Grounded;
         public bool CombatFlight => flightState == AircraftFlightState.Flying;
+        public float HullHeading => heading + (IsCarrier ? 0f : 180f);
         public int FighterCount => hangar.Count + deployed.Count(p => p != null && !p.Destroyed);
         public Thing Thing => this;
         public LocalTargetInfo TargetCurrentlyAimingAt => beamTarget;
@@ -55,6 +78,19 @@ namespace NivarianCommander
             : base.DrawPos;
         float Lift => flightState == AircraftFlightState.TakingOff ? transition / 60f * 1.2f
             : flightState == AircraftFlightState.Landing ? (1f - transition / 60f) * 1.2f : 1.2f;
+        public override CellRect? CustomRectForSelector
+        {
+            get
+            {
+                if (!Airborne) return base.CustomRectForSelector;
+                float angle = heading * Mathf.Deg2Rad;
+                float cos = Mathf.Abs(Mathf.Cos(angle)), sin = Mathf.Abs(Mathf.Sin(angle));
+                var size = def.graphicData.drawSize;
+                return GenAdj.OccupiedRect(DrawPos.ToIntVec3(), Rot4.North,
+                    new IntVec2(Mathf.CeilToInt(size.x * cos + size.y * sin),
+                        Mathf.CeilToInt(size.x * sin + size.y * cos)));
+            }
+        }
 
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
@@ -66,6 +102,7 @@ namespace NivarianCommander
         {
             base.Tick();
             if (!Spawned || Destroyed) return;
+            if (hostileAutopilot && this.HostileTo(Faction.OfPlayer) && !AircraftHostileControl.Tick(this)) return;
             deployed.RemoveAll(p => p == null || p.Destroyed);
             if (IsCarrier) Manufacture();
             if (gravityCooldown > 0) gravityCooldown--;
@@ -90,8 +127,7 @@ namespace NivarianCommander
             }
             else if (flightState == AircraftFlightState.Landing)
             {
-                // All squadrons return concurrently. Descent starts after the last arrives.
-                if (deployed.Count == 0 && ++transition >= 60) FinishLanding();
+                TickLanding();
             }
             else
             {
@@ -99,34 +135,33 @@ namespace NivarianCommander
                 if (IsCarrier) LaunchDue(); else FrigateCombat();
             }
         }
-        void MoveFlight()
+        void MoveFlight(IntVec3? waypoint = null)
         {
-            if (!destination.IsValid || destination == Position &&
-                (destination.ToVector3Shifted() - flightPosition).sqrMagnitude < .0001f) return;
-            Vector3 next = destination.ToVector3Shifted();
+            var targetCell = waypoint ?? destination;
+            if (!targetCell.IsValid || targetCell == Position &&
+                (targetCell.ToVector3Shifted() - flightPosition).sqrMagnitude < .0001f) return;
+            Vector3 next = targetCell.ToVector3Shifted();
             var delta = next - flightPosition; delta.y = 0;
             if (delta.sqrMagnitude > .001f) heading = Mathf.MoveTowardsAngle(heading, delta.AngleFlat(), 3f);
-            flightPosition = Vector3.MoveTowards(flightPosition, next, IsCarrier ? .055f : .115f);
+            flightPosition = Vector3.MoveTowards(flightPosition, next, IsCarrier ? .055f : .23f);
             var cell = flightPosition.ToIntVec3();
             if (cell != Position && cell.InBounds(Map)) Position = cell;
         }
         internal void Manufacture()
         {
-            // The native transport loading UI and hauling jobs fill the metal buffer.
-            // Overflow stays real cargo; manufacture also runs while airborne.
-            foreach (var steel in TransporterComp.innerContainer.Where(t => t.def.defName == "Nivarian_DragonfrostSteel").ToList())
-            {
-                int count = Math.Min(1000 - dragonSteel, steel.stackCount);
-                if (count <= 0) break;
-                steel.SplitOff(count).Destroy(); dragonSteel += count;
-            }
+            // The dedicated ground refill job supplies this saved material reserve.
+            // Transport cargo remains cargo, including during world travel.
             if (!manufactureEnabled || FighterCount >= FighterCapacity) return;
             if (manufactureTicks == 0)
             {
                 if (dragonSteel < FighterSteelCost) return;
                 dragonSteel -= FighterSteelCost; manufactureTicks = FighterManufactureTicks;
             }
-            if (--manufactureTicks > 0) return;
+            // Advance only manufacturing work; flight, fuel and weapon clocks
+            // still tick once. Clamp completion so the next bill starts at zero.
+            manufactureTicks = Math.Max(0, manufactureTicks - (SpacetimeBuildingWork.Applies(this)
+                ? SpacetimeWaveStats.WorkMultiplier : 1));
+            if (manufactureTicks > 0) return;
             var fighter = (CarrierInterceptor)ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("NMC_CarrierInterceptor"));
             fighter.carrier = this; fighter.SetFaction(Faction);
             hangar.TryAdd(fighter);
@@ -134,11 +169,11 @@ namespace NivarianCommander
         void LaunchDue()
         {
             if (launchClock > 0 || hangar.Count == 0) return;
-            Thing target = AircraftTargeting.Nearest(this, 60f, false);
+            Thing target = AircraftTargeting.Nearest(this, AircraftHostileControl.CarrierRange, false);
             if (target == null) return;
             var fighter = hangar[0]; hangar.Remove(fighter);
-            fighter.returning = false; fighter.target = target; fighter.realPosition = flightPosition;
-            GenSpawn.Spawn(fighter, Position, Map, WipeMode.Vanish);
+            fighter.BeginLaunch(this, deployed.Count % 2 == 0 ? -1f : 1f);
+            GenSpawn.Spawn(fighter, fighter.realPosition.ToIntVec3(), Map, WipeMode.Vanish);
             deployed.Add(fighter); launchClock = 60;
         }
         void FrigateCombat()
@@ -154,16 +189,17 @@ namespace NivarianCommander
             weaponClock = 60; beamTicks = 24; volleys++; beamTarget = target;
             beamEnd = target.Position.ToVector3Shifted();
             Map.GetComponent<AircraftPrismVisuals>().Show(this);
+            DefDatabase<SoundDef>.GetNamed("Nivarian_LaserFire").PlayOneShot(SoundInfo.InMap(this));
             var damage = DefDatabase<DamageDef>.GetNamed("NMC_FrigateBeamDamage");
             for (int i = 0; i < 2 && !target.Destroyed; i++)
-                target.TakeDamage(new DamageInfo(damage, 12f, .5f, (target.Position - Position).ToVector3().AngleFlat(), this));
+                target.TakeDamage(new DamageInfo(damage, 6f, .5f, (target.Position - Position).ToVector3().AngleFlat(), this));
         }
         internal void UseGravity(Thing target)
         {
             if (!CombatFlight || IsCarrier || gravityCooldown > 0 || !(target is Pawn pawn)
-                || !AircraftTargeting.Valid(this, target, 16f) || AircraftTargeting.Airborne(target)) return;
-            Map.GetComponent<AircraftGravity>().Lift(this, pawn);
-            gravityCooldown = 480;
+                || !AircraftTargeting.GravityTargetValid(this, target)) return;
+            if (Map.GetComponent<AircraftGravity>().Lift(this, pawn))
+                gravityCooldown = 480;
         }
         internal void RecallAll(bool instant)
         {
@@ -191,28 +227,62 @@ namespace NivarianCommander
             {
                 var job = pawn.CurJob;
                 if (job != null && (job.def == JobDefOf.HaulToTransporter || job.def == JobDefOf.EnterTransporter
-                    || job.def == JobDefOf.Refuel || job.def == JobDefOf.RefuelAtomic)
+                    || job.def == JobDefOf.Refuel || job.def == JobDefOf.RefuelAtomic
+                    || job.def == CarrierDragonSteelSupply.FillJob)
                     && (job.targetA.Thing == this || job.targetB.Thing == this || job.targetC.Thing == this))
                     pawn.jobs.EndCurrentJob(JobCondition.Incompletable);
             }
         }
-        internal void BeginLanding()
+        internal void BeginLanding(IntVec3 cell, Rot4 rotation)
         {
-            if (!Airborne || !AircraftTargeting.LandingClear(this, Position)) return;
-            destination = Position; flightPosition = Position.ToVector3Shifted();
+            if (!CombatFlight || !AircraftTargeting.LandingClear(this, cell, rotation)) return;
+            destination = cell; landingRotation = rotation;
             flightState = AircraftFlightState.Landing; transition = 0; beamTicks = 0;
             RecallAll(false);
         }
-        void EmergencyLand()
+        void TickLanding()
+        {
+            // A landing order is an approach, turn, recall, and then descent.
+            // Keep the selected cell and rotation in saved simulation state.
+            if (Rotation != landingRotation)
+            {
+                if (!GenAdj.OccupiedRect(Position, landingRotation, def.size).Cells.All(c => c.InBounds(Map)))
+                {
+                    // Native ThingGrid destroys buildings registered out of bounds.
+                    // Move inward before changing a rectangular hull's footprint.
+                    int margin = Mathf.Max(def.size.x, def.size.z) / 2;
+                    MoveFlight(new IntVec3(Mathf.Clamp(Position.x, margin, Map.Size.x - margin - 1),
+                        0, Mathf.Clamp(Position.z, margin, Map.Size.z - margin - 1)));
+                    return;
+                }
+                Rotation = landingRotation;
+            }
+            MoveFlight();
+            if ((flightPosition - destination.ToVector3Shifted()).sqrMagnitude > .0001f) return;
+            heading = Mathf.MoveTowardsAngle(heading, landingRotation.AsAngle, 3f);
+            if (Mathf.Abs(Mathf.DeltaAngle(heading, landingRotation.AsAngle)) > .01f || deployed.Count > 0) return;
+            if (!AircraftTargeting.LandingClear(this, destination, landingRotation))
+            {
+                flightState = AircraftFlightState.Flying; transition = 0;
+                Messages.Message(NmcText.Get("NMC_Text0012"), this, MessageTypeDefOf.RejectInput, false);
+                return;
+            }
+            if (++transition >= 60) FinishLanding();
+        }
+        internal void EmergencyLand()
         {
             // Fuel loss never deletes cargo or a squadron. Find the nearest legal footprint.
+            var rotation = Rot4.FromAngleFlat(heading);
             var cell = GenRadial.RadialCellsAround(Position, 40f, true)
-                .FirstOrDefault(c => AircraftTargeting.LandingClear(this, c));
-            if (!AircraftTargeting.LandingClear(this, cell))
+                .Where(c => AircraftTargeting.LandingClear(this, c, rotation)
+                    && GenAdj.OccupiedRect(c, Rotation, def.size).Cells.All(p => p.InBounds(Map)))
+                .DefaultIfEmpty(IntVec3.Invalid).First();
+            if (!cell.IsValid)
             {
                 destination = Position; flightState = AircraftFlightState.Flying;
                 return;
             }
+            landingRotation = rotation;
             Position = cell; flightPosition = cell.ToVector3Shifted(); FinishLanding();
             Messages.Message(NmcText.Get("NMC_Text0288", LabelCap), this, MessageTypeDefOf.CautionInput, false);
         }
@@ -220,7 +290,7 @@ namespace NivarianCommander
         {
             flightState = AircraftFlightState.Grounded; transition = 0; beamTicks = 0;
             destination = Position; flightPosition = Position.ToVector3Shifted();
-            Rotation = Rot4.North; heading = 0f;
+            Rotation = landingRotation; heading = landingRotation.AsAngle;
         }
         public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
         {
@@ -230,16 +300,24 @@ namespace NivarianCommander
         }
         public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
         {
+            var pilot = combatPilot;
+            var map = Map;
             // Detached interceptors cannot survive as immortal orphan units.
             foreach (var fighter in deployed.ToList()) if (fighter != null && !fighter.Destroyed) fighter.Destroy(mode);
             deployed.Clear(); hangar.ClearAndDestroyContents();
             base.Destroy(mode);
+            // Native transporter destruction ejects the passenger. Only then
+            // does the hostile pilot belong to a ground assault lord.
+            if (hostileAutopilot && pilot != null && pilot.Spawned && pilot.Map == map
+                && !pilot.DeadOrDowned && pilot.HostileTo(Faction.OfPlayer) && pilot.GetLord() == null)
+                LordMaker.MakeNewLord(pilot.Faction, new LordJob_AssaultColony(pilot.Faction,
+                    canKidnap: false, canTimeoutOrFlee: false), map, new[] { pilot });
         }
         protected override void DrawAt(Vector3 drawLoc, bool flip = false)
         {
             if (!Airborne) { base.DrawAt(drawLoc, flip); return; }
             var scale = new Vector3(def.graphicData.drawSize.x, 1f, def.graphicData.drawSize.y);
-            Graphics.DrawMesh(MeshPool.plane10, Matrix4x4.TRS(DrawPos, Quaternion.AngleAxis(heading, Vector3.up), scale), Graphic.MatSingle, 0);
+            Graphics.DrawMesh(MeshPool.plane10, Matrix4x4.TRS(DrawPos, Quaternion.AngleAxis(HullHeading, Vector3.up), scale), Graphic.MatSingle, 0);
             if (beamTicks > 0) Map.GetComponent<AircraftPrismVisuals>().Show(this);
         }
         public override IEnumerable<Gizmo> GetGizmos()
@@ -275,9 +353,12 @@ namespace NivarianCommander
             base.ExposeData();
             Scribe_Values.Look(ref flightState, "nmcFlight"); Scribe_Values.Look(ref flightPosition, "nmcFlightPosition");
             Scribe_Values.Look(ref destination, "nmcDestination", IntVec3.Invalid); Scribe_Values.Look(ref heading, "nmcHeading");
+            Scribe_Values.Look(ref landingRotation, "nmcLandingRotation", Rot4.North);
             Scribe_Values.Look(ref transition, "nmcTransition"); Scribe_Values.Look(ref fuelClock, "nmcFuelClock");
             Scribe_Values.Look(ref launchClock, "nmcLaunchClock"); Scribe_Values.Look(ref manufactureTicks, "nmcManufactureTicks");
             Scribe_Values.Look(ref dragonSteel, "nmcDragonSteel"); Scribe_Values.Look(ref weaponClock, "nmcWeaponClock");
+            Scribe_Values.Look(ref dragonSteelTarget, "nmcDragonSteelTarget", CarrierDragonSteelSupply.Capacity);
+            Scribe_Values.Look(ref autoFillDragonSteel, "nmcAutoFillDragonSteel", true);
             Scribe_Values.Look(ref gravityCooldown, "nmcGravityCooldown"); Scribe_Values.Look(ref beamTicks, "nmcBeamTicks");
             Scribe_Values.Look(ref beamEnd, "nmcBeamEnd"); Scribe_Values.Look(ref volleys, "nmcVolleys");
             Scribe_Values.Look(ref manufactureEnabled, "nmcManufactureEnabled", true);
@@ -286,6 +367,11 @@ namespace NivarianCommander
             Scribe_Values.Look(ref starshipBatteryInstalled, "nmcStarshipBatteryInstalled");
             Scribe_Values.Look(ref starshipBatteriesDelivered, "nmcStarshipBatteriesDelivered");
             Scribe_References.Look(ref beamTarget, "nmcBeamTarget");
+            Scribe_Values.Look(ref hostileAutopilot, "nmcHostileAutopilot");
+            Scribe_References.Look(ref combatPilot, "nmcCombatPilot");
+            Scribe_References.Look(ref combatTarget, "nmcCombatTarget");
+            Scribe_Values.Look(ref combatRetargetWait, "nmcCombatRetargetWait");
+            Scribe_Values.Look(ref combatOrbitPhase, "nmcCombatOrbitPhase");
             // Retain the old save label and content type; only the runtime owner changes.
             Scribe_Deep.Look(ref hangar, "nmcHangar", hangarHolder);
             Scribe_Collections.Look(ref deployed, "nmcDeployed", LookMode.Reference);

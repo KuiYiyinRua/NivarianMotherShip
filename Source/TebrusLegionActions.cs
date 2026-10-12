@@ -59,20 +59,12 @@ namespace NivarianCommander
             blocked = Unavailable(map);
             if (blocked != null || LegionPurchase.NativeFaction != faction)
             { owner.Retire(batch); Reject(blocked ?? NmcText.Get("NMC_Text0441")); return; }
-            LegionPurchase.Payment payment;
-            try { payment = new LegionPurchase.Payment(map); }
-            catch (Exception error)
-            { owner.Retire(batch); Log.Error("[NMC] Tebrus goods transaction rolled back: " + error); Reject(NmcText.Get("NMC_Text0442")); return; }
             var ability = DefenseActions.Ability(14);
-            using (payment)
-            {
-                if (!NativeLedger.TryPay(ability.powerCost, ability.volatileCost))
-                { owner.Retire(batch); Reject(NmcText.Get("NMC_Text0443")); return; }
-                payment.Commit();
-            }
+            if (!NativeLedger.TryPay(ability.powerCost, ability.volatileCost))
+            { owner.Retire(batch); Reject(NmcText.Get("NMC_Text0443")); return; }
             batch.committed = true;
             CommanderState.Current.cooldowns[LegionPurchase.CooldownKey] = LegionPurchase.CooldownTicks;
-            Messages.Message(NmcText.Get("NMC_Text0471", payment.Amount, payment.Currency.label), MessageTypeDefOf.PositiveEvent, false);
+            Messages.Message(NmcText.Get("NMC_Text0471"), MessageTypeDefOf.PositiveEvent, false);
         }
         static Pawn CreateMember(Faction faction, LegionBatch batch, bool hero)
         {

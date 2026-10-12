@@ -160,6 +160,7 @@ namespace NivarianCommander
         public override bool UsesMapCache => false;
         public override bool Validator(LocalTargetInfo target, Thing source, float radius)
             => source is FleetShip ship && ship.arrived && !ship.retiring && target.HasThing
+                && !(target.Thing is Pawn pawn && pawn.DeadOrDowned)
                 && target.Thing.HostileTo(source) && base.Validator(target, source, radius);
         public override LocalTargetInfo Search(Map map, Thing source, float radius)
         {
@@ -177,7 +178,8 @@ namespace NivarianCommander
         {
             if (!(parent is FleetShip ship)) return;
             if (CurTarget.HasThing && (!CurTarget.Thing.Spawned || CurTarget.Thing.Map != ship.Map
-                || CurTarget.Thing.Destroyed || !CurTarget.Thing.HostileTo(ship)))
+                || CurTarget.Thing.Destroyed || CurTarget.Thing is Pawn pawn && pawn.DeadOrDowned
+                || !CurTarget.Thing.HostileTo(ship)))
             {
                 CurTarget = LocalTargetInfo.Invalid;
                 if (AttackVerb != null && AttackVerb.state == VerbState.Bursting) AttackVerb.Reset();

@@ -73,19 +73,19 @@ Deliver materials and complete research at an uplink research terminal. Requires
 
 If the Continuum campaign is active, first complete stage 6 (Fleet support) to recover the data.</NMC_Support13.description>
   <NMC_Support14.label>Tebrus legion support protocol</NMC_Support14.label>
-  <NMC_Support14.description>Contact Tebrus's legion to request Tebrus and ten melee warriors. Besides energy, payment requires silver or gold within beacon range.
+  <NMC_Support14.description>Contact Tebrus's legion to request Tebrus and ten melee warriors. Legion support costs only P and V.
 
 Deliver materials and complete research at an uplink research terminal. Requires mothership level 2.
 
 If the Continuum campaign is active, first complete stage 3 (Expedition legion) to recover the data.</NMC_Support14.description>
   <NMC_Support15.label>Zoraya legion support protocol</NMC_Support15.label>
-  <NMC_Support15.description>Contact Zoraya's legion to request command ship Zoraya and four glowships. Besides energy, payment requires silver or gold within beacon range.
+  <NMC_Support15.description>Contact Zoraya's legion to request command ship Zoraya and four glowships. Legion support costs only P and V.
 
 Deliver materials and complete research at an uplink research terminal. Requires mothership level 3.
 
 If the Continuum campaign is active, first complete stage 3 (Expedition legion) to recover the data.</NMC_Support15.description>
   <NMC_Support16.label>Seydas legion support protocol</NMC_Support16.label>
-  <NMC_Support16.description>Contact Seydas's legion to request Seydas and three dark archons to turn enemies with mind control. Besides energy, payment requires silver or gold within beacon range.
+  <NMC_Support16.description>Contact Seydas's legion to request Seydas and three dark archons to turn enemies with mind control. Legion support costs only P and V.
 
 Deliver materials and complete research at an uplink research terminal. Requires mothership level 3.
 
@@ -117,7 +117,7 @@ Carries 300 kg, fights in local flight and travels between locations using chemf
   <NMC_CarrierResearch.label>Nivarian carrier</NMC_CarrierResearch.label>
   <NMC_CarrierResearch.description>Unlock Nivarian carriers. These large ships fight with interceptors, have no direct weapons and provide sustained air support from behind the front.
 
-Carry 10,000 kg and use dragonfrost steel to build and maintain up to 8 interceptors. Expensive to build, with ongoing chemfuel and material needs.</NMC_CarrierResearch.description>
+Carry 10,000 kg and use dragonfrost steel to build and maintain up to 6 interceptors. Expensive to build, with ongoing chemfuel and material needs.</NMC_CarrierResearch.description>
   <NMC_TacticalProtocol.label>Tactical support protocol</NMC_TacticalProtocol.label>
   <NMC_TacticalProtocol.description>Mothership commander's tactical support protocol. Deliver materials and complete research at a Nivarian uplink research terminal.</NMC_TacticalProtocol.description>
   <NMC_LightWeapons.label>Light weapon array</NMC_LightWeapons.label>
@@ -132,4 +132,18 @@ Carry 10,000 kg and use dragonfrost steel to build and maintain up to 8 intercep
   <NMC_HigherDimensions.description>Mothership commander's higher-dimensional engineering. Deliver materials and complete research at a Nivarian uplink research terminal.</NMC_HigherDimensions.description>
   <NMC_FleetBeacon.label>Fleet warp beacon protocol</NMC_FleetBeacon.label>
   <NMC_FleetBeacon.description>Mothership commander's fleet warp beacon protocol. Deliver materials and complete research at a Nivarian uplink research terminal.</NMC_FleetBeacon.description>
+  <NMC_WarshipArmor1.label>Nivarian warship armor Ⅰ</NMC_WarshipArmor1.label>
+  <NMC_WarshipArmor1.description>Improve hulls of all Nivarian warships, interceptors and reinforcement ships. Each tier adds 20% of base maximum HP; this tier totals +20%. Existing ships retain their HP percentage.</NMC_WarshipArmor1.description>
+  <NMC_WarshipArmor2.label>Nivarian warship armor Ⅱ</NMC_WarshipArmor2.label>
+  <NMC_WarshipArmor2.description>Improve hulls of all Nivarian warships, interceptors and reinforcement ships. Each tier adds 20% of base maximum HP; this tier totals +40%. Existing ships retain their HP percentage.</NMC_WarshipArmor2.description>
+  <NMC_WarshipArmor3.label>Nivarian warship armor Ⅲ</NMC_WarshipArmor3.label>
+  <NMC_WarshipArmor3.description>Improve hulls of all Nivarian warships, interceptors and reinforcement ships. Each tier adds 20% of base maximum HP; this tier totals +60%. Existing ships retain their HP percentage.</NMC_WarshipArmor3.description>
+  <NMC_WarshipWeapon1.label>Nivarian warship weapon Ⅰ</NMC_WarshipWeapon1.label>
+  <NMC_WarshipWeapon1.description>Improve weapons on all Nivarian warships, interceptors and reinforcement ships. Each tier adds 20% damage and armor penetration of all types; total +20%. Lock-on escalation and freezing mechanics remain unchanged; research scales final attack damage.</NMC_WarshipWeapon1.description>
+  <NMC_WarshipWeapon2.label>Nivarian warship weapon Ⅱ</NMC_WarshipWeapon2.label>
+  <NMC_WarshipWeapon2.description>Improve weapons on all Nivarian warships, interceptors and reinforcement ships. Each tier adds 20% damage and armor penetration of all types; total +40%. Lock-on escalation and freezing mechanics remain unchanged; research scales final attack damage.</NMC_WarshipWeapon2.description>
+  <NMC_WarshipWeapon3.label>Nivarian warship weapon Ⅲ</NMC_WarshipWeapon3.label>
+  <NMC_WarshipWeapon3.description>Improve weapons on all Nivarian warships, interceptors and reinforcement ships. Each tier adds 20% damage and armor penetration of all types; total +60%. Lock-on escalation and freezing mechanics remain unchanged; research scales final attack damage.</NMC_WarshipWeapon3.description>
+  <NMC_CarrierHangarExpansion.label>Carrier interceptor hangar expansion</NMC_CarrierHangarExpansion.label>
+  <NMC_CarrierHangarExpansion.description>Expand the carrier hangar from 6 to 8 interceptors, including aircraft in the hangar and deployed.</NMC_CarrierHangarExpansion.description>
 </LanguageData>
