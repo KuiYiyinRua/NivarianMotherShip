@@ -1,26 +1,18 @@
 {
-  "version": "0.9.9",
+  "release": "0.9.9-r1",
   "core_file_version": "0.9.9.0",
-  "assembly_binding_version": "0.9.8.0",
   "assemblies": {
-    "1.6/Assemblies/NivarianCommander.dll": "789b74c27aaa5b883361ecaef19dd8a637a28e5c7cf7edf9d7c3b515b6b1a56a",
+    "1.6/Assemblies/NivarianCommander.dll": "b92edcf4bf3a728b4736c97d7f996e166b3246c0d7bb9d8c3fef9c11efbd388a",
     "Multiplayer/Assemblies/NivarianCommander.Multiplayer.dll": "552e48477c20b373c8f9752ffb1c8c07158342eb35ecb6079d7c9cdfdefbce45",
     "Multiplayer/Assemblies/NivarianCommander.SageShip.Multiplayer.dll": "65c844c99de8b3d5734ce32a4d8001e36e791b92bee12739e2ce48c7ca8b0918",
     "Multiplayer/Assemblies/NivarianCommander.ShipUpgrades.Multiplayer.dll": "c5c134ba0cb521778c8116be92cb4c0d985aa12d96a850ea980cb1544789142c",
     "Multiplayer/Assemblies/NivarianCommander.StormShip.Multiplayer.dll": "befafe23a71ce90a696c3a1bf2c43cef84341933057c9fe67e0fbe71a19a6222",
     "Multiplayer/Assemblies/NivarianCommander.WarpPrism.Multiplayer.dll": "2b5b7f4f42010c8e5d006736d5911a5aa7c320b5350d52dff3c9c507503bec75"
   },
-  "build": "Core and all five adapter source projects compile with zero warnings/errors. Existing tested adapter DLLs are retained for MVID-based compatibility.",
-  "localization": {
-    "languages": 5,
-    "runtime_keys": 523,
-    "def_fields": 339
-  },
-  "settings_single_player": "PASS: default off; mission-only bypass; no research progress changed; technology prerequisites and support levels retained; three toggle cycles; cold load; two actual settings screenshots.",
-  "storm_single_player": "PASS: native direct damage 20/0.8 and blast 25/0.35; buildings 100+125, strict 3x3, no duplicate large-building hits; flight, mixed batteries/refund, two-phase warp and world travel.",
-  "settings_multiplayer": "PASS: two peers, differing local preferences, exact frozen world/map/Rand/research baseline, three on/off cycles from the non-host via the production sync method, no automatically completed research, 10000 shared server frames, exact final state/Rand/research receipt.",
-  "limits": "Focused runtime checks, not a full-modpack certification. No new 120000-world-tick soak, async-time matrix or three cold MP rejoins. Older feature tests are historical evidence, not a full retest of this final build.",
-  "restart_required": true,
-  "old_cheat_setting": "New default-off keys; old complete-all setting is not carried over. Already completed research is retained.",
-  "ci": "Local verification passed. Existing GitHub credential lacks workflow scope; local .github/workflows/localization.yml is not uploaded."
+  "optimizer_stress": "PASS: 1048576 lookups, 8 threads, 512 maps, 600 frames; option reapplication retains locks",
+  "without_optimizers": "PASS",
+  "multiplayer": "PASS: two peers, three shield/warp rounds, 120000 world ticks, equal final world/map/Rand receipts",
+  "chinese_copy": "111 entries; 12934 to 8281 characters; no gameplay XML change",
+  "limits": "Focused one-map 18-mod test, not full modpack, async-time or rejoin certification",
+  "ci": "Local verification; no GitHub Actions success claimed"
 }

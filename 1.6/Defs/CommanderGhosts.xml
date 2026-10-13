@@ -9,7 +9,7 @@
     <xenotypeSet Inherit="False"><xenotypeChances><LuminNivarian MayRequire="Ludeon.RimWorld.Biotech">1</LuminNivarian></xenotypeChances></xenotypeSet>
   </PawnKindDef>
   <HediffDef>
-    <defName>NMC_GhostIdentity</defName><label>暗影卫队身份</label><description>来自涅瓦莲母舰的暗影卫队成员。她会自行作战，无法被殖民地征召。隐形能力让她能够接近敌人，但仍可能被反隐手段发现。支援结束后，她将折跃撤离。</description>
+    <defName>NMC_GhostIdentity</defName><label>暗影卫队身份</label><description>临时增援的隐形近战战士，自动作战，无法征召，可被反隐能力发现。通过“暗影卫队”支援召来，120秒后撤离。</description>
     <hediffClass>NivarianCommander.Hediff_GhostIdentity</hediffClass><isBad>false</isBad><initialSeverity>1</initialSeverity>
   </HediffDef>
   <DutyDef>
@@ -27,16 +27,16 @@
     <comps><li><compClass>CompQuality</compClass></li><li Class="CompProperties_Biocodable" /><li Class="NivarianCommander.CompProperties_GhostEquipment" /></comps>
   </ThingDef>
   <ThingDef ParentName="NMC_GhostWeaponBase">
-    <defName>NMC_PhaseTwinBlade</defName><label>相位双刃</label><description>暗影卫队使用的成对相位刃，擅长快速连续的近身斩击。卫队携带的武器为大师品质，并与使用者进行生物编码绑定，其他人无法使用。</description>
+    <defName>NMC_PhaseTwinBlade</defName><label>相位双刃</label><description>暗影卫队的快速近战双刃。随支援部队提供，大师品质，生物编码绑定使用者。</description>
     <tools><li><label>相位刃</label><capacities><li>Cut</li></capacities><power>24</power><cooldownTime>1.1</cooldownTime><armorPenetration>0.35</armorPenetration></li></tools>
   </ThingDef>
   <ThingDef ParentName="NMC_GhostWeaponBase">
-    <defName>NMC_VoidHeavyBlade</defName><label>虚空重刃</label><description>暗影卫队使用的重型近战兵器。挥击速度较慢，但单次斩击威力大，适合对付防护厚重的目标。卫队携带的武器为大师品质，并以生物编码绑定使用者。</description>
+    <defName>NMC_VoidHeavyBlade</defName><label>虚空重刃</label><description>暗影卫队的重型近战武器，攻击较慢、单次伤害高。随支援部队提供，大师品质，生物编码绑定使用者。</description>
     <graphicData><texPath>NMC/GhostEquipment/void_heavyblade</texPath></graphicData>
     <tools><li><label>虚空刃</label><capacities><li>Cut</li></capacities><power>40</power><cooldownTime>2</cooldownTime><armorPenetration>0.65</armorPenetration></li></tools>
   </ThingDef>
   <ThingDef ParentName="NMC_GhostWeaponBase">
-    <defName>NMC_ShadowLance</defName><label>暗影长枪</label><description>暗影卫队使用的长柄近战兵器，以穿刺攻击对付敌人，兼顾出手速度和穿甲能力。卫队携带的武器为大师品质，并以生物编码绑定使用者。</description>
+    <defName>NMC_ShadowLance</defName><label>暗影长枪</label><description>暗影卫队的穿刺长枪，兼顾攻击速度和穿甲。随支援部队提供，大师品质，生物编码绑定使用者。</description>
     <graphicData><texPath>NMC/GhostEquipment/shadow_lance</texPath></graphicData>
     <tools><li><label>暗影枪尖</label><capacities><li>Stab</li></capacities><power>30</power><cooldownTime>1.5</cooldownTime><armorPenetration>0.5</armorPenetration></li></tools>
   </ThingDef>
@@ -49,15 +49,13 @@
     <comps><li Class="NivarianCommander.CompProperties_GhostEquipment" /></comps>
   </ThingDef>
   <ThingDef ParentName="NMC_GhostArmorBase">
-    <defName>NMC_GhostSuit</defName><label>涅瓦莲幽灵装甲</label><description>暗影卫队的专属装甲，在保持隐形作战能力的同时提供锐器、钝器和热能防护。
-
-卫队成员阵亡时，仍由她携带的专属装备会一并销毁；已脱离其携带的装备不受这一效果影响。支援结束时，仍随身携带的装备随成员撤离。</description>
+    <defName>NMC_GhostSuit</defName><label>涅瓦莲幽灵装甲</label><description>暗影卫队专属隐形装甲，提供锐器、钝器和热能防护。随卫队提供；成员阵亡时销毁其随身装备，支援结束时随部队收回。</description>
     <graphicData><texPath>NMC/GhostEquipment/ghost_suit_fitted2_Thin_south</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
     <apparel><bodyPartGroups><li>Torso</li><li>Arms</li><li>Legs</li><li>Hands</li><li>Feet</li><li>Nivarian_Tail</li></bodyPartGroups>
       <layers><li>Shell</li></layers><wornGraphicPath>NMC/GhostEquipment/ghost_suit_fitted2</wornGraphicPath><drawData><dataEast><offset>(-0.07,0,-0.025)</offset></dataEast><dataWest><offset>(0.07,0,-0.025)</offset></dataWest></drawData><developmentalStageFilter>Adult</developmentalStageFilter></apparel>
   </ThingDef>
   <ThingDef ParentName="NMC_GhostArmorBase">
-    <defName>NMC_GhostHelmet</defName><label>涅瓦莲幽灵头环</label><description>与幽灵装甲配套的开放式防护头环。它保留面部视野，并为头部提供锐器、钝器和热能防护。属于暗影卫队的专属装备。</description>
+    <defName>NMC_GhostHelmet</defName><label>涅瓦莲幽灵头环</label><description>暗影卫队的防护头环，提供头部锐器、钝器和热能防护。随卫队提供，支援结束时收回。</description>
     <graphicData><texPath>NMC/GhostEquipment/ghost_circlet_south</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
     <apparel><bodyPartGroups><li>FullHead</li></bodyPartGroups><layers><li>Overhead</li></layers>
       <wornGraphicPath>NMC/GhostEquipment/ghost_circlet</wornGraphicPath><renderSkipFlags><li>None</li></renderSkipFlags><drawData><scale>0.72</scale><defaultData><offset>(0,0,0.10)</offset></defaultData></drawData><developmentalStageFilter>Adult</developmentalStageFilter></apparel>

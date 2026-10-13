@@ -14,11 +14,11 @@
   <NMC_Text0012>此处无法降落，请选择无建筑、人员、树木和屋顶的空地。</NMC_Text0012>
   <NMC_Text0013>舰载机制造：开启</NMC_Text0013>
   <NMC_Text0014>舰载机制造：暂停</NMC_Text0014>
-  <NMC_Text0015>每架舰载机消耗{0}龙霜钢，制造需要15秒，飞行时也可制造。使用“龙霜钢储备”面板设置目标储量，由殖民者在停泊时填装，最多1000单位。机库和出击中的舰载机合计最多{1}架。</NMC_Text0015>
+  <NMC_Text0015>制造一架舰载机需{0}龙霜钢和5秒，飞行时也可制造。通过“龙霜钢储备”设置补料目标，停泊后由殖民者填装；储备上限1000。最多容纳{1}架舰载机，含出击中的编队。</NMC_Text0015>
   <NMC_Text0016>收回舰载机</NMC_Text0016>
   <NMC_Text0017>命令所有出击中的舰载机返回机库。若航母仍在升空作战且附近有敌人，舰载机之后仍会继续出击。</NMC_Text0017>
   <NMC_Text0018>引力束</NMC_Text0018>
-  <NMC_Text0019>选择16格内的任意存活单位，将其举起并眩晕4秒，包括友方、中立和敌方单位。同一单位不能同时受到多个引力束影响。引力束冷却8秒，无需额外资源；自动施放仍只选择敌人。</NMC_Text0019>
+  <NMC_Text0019>将16格内一名单位举起并眩晕4秒，使其可被对空武器攻击。冷却8秒，无消耗。手动指定可影响友军；自动施放只选择敌人。</NMC_Text0019>
   <NMC_Text0020>需要升空作战</NMC_Text0020>
   <NMC_Text0021>引力束冷却中</NMC_Text0021>
   <NMC_Text0022>自动引力束：开启</NMC_Text0022>
@@ -26,7 +26,7 @@
   <NMC_Text0024>升空作战时，自动用引力束举起16格内最近的地面敌人。关闭后仍可手动指定目标。</NMC_Text0024>
   <NMC_Text0025>星舰动力已升级</NMC_Text0025>
   <NMC_Text0027>升级星舰动力</NMC_Text0027>
-  <NMC_Text0028>殖民者将搬运并安装{0}份电池。米莉拉星舰电池与原版不稳定能量电池各计1份，虚空电池计2份，可混合投入。原版电池须先卸载打包。升级中再次点击可取消并退还全部已投入电池。完成后每次起飞消耗{1}化合燃料，地图内作战及世界航行不再持续耗油。须停泊才能开始升级。</NMC_Text0028>
+  <NMC_Text0028>停泊时安装{0}份电池升级动力。星舰电池、不稳定能量电池各计1份，虚空电池计2份；可混用，建筑电池须打包。升级后每次起飞消耗{1}化合燃料，飞行和航行不再持续耗油。取消升级退还已投入电池。</NMC_Text0028>
   <NMC_Text0029>星舰电池已安装</NMC_Text0029>
   <NMC_Text0031>请先降落</NMC_Text0031>
   <NMC_Text0032>{0}已完成星舰动力升级。</NMC_Text0032>
@@ -194,7 +194,7 @@
   <NMC_Text0184>选择矩阵投射中心</NMC_Text0184>
   <NMC_Text0185>登记全部炮塔</NMC_Text0185>
   <NMC_Text0186>清空登记</NMC_Text0186>
-  <NMC_Text0187>可以登记各处殖民地的炮塔。投影需要5秒形成，由本体提供能源和弹药。选中本体或投影可提前撤回，已消耗的能量不会返还。</NMC_Text0187>
+  <NMC_Text0187>登记各殖民地的炮塔后，可投射至远处作战。投影需5秒形成，由本体供应能源和弹药；投影受损也会伤及本体。可提前撤回。</NMC_Text0187>
   <NMC_Text0188>这项支援暂时无法使用</NMC_Text0188>
   <NMC_Text0189>顺序前移</NMC_Text0189>
   <NMC_Text0190>顺序后移</NMC_Text0190>
@@ -235,16 +235,14 @@
   <NMC_Text0224>连续体：{0}（{1}/8）</NMC_Text0224>
   <NMC_Text0225>成功后，母舰会继续寻找下一处基地。</NMC_Text0225>
   <NMC_Text0226>这是最后一个阶段，完成后即可取得全部连续体研究资料。</NMC_Text0226>
-  <NMC_Text0227>母舰截获了殖民地附近的连续体通讯，定位到一处存放战术资料的基地。派遣部队前往，摧毁通讯核心，并击败守军、摧毁防御炮塔，即可取得资料。只摧毁核心还不足以完成任务。
+  <NMC_Text0227>摧毁通讯核心，消灭守军和防御炮塔，取得本阶段研究资料。基地有多层炮塔阵地和空投增援，战利品位于中央。
 
-战利品集中在阵地中央，周围由多层炮塔和沙袋掩体守卫。守军还会呼叫空投增援，其中包括机械体和配备涅瓦莲武器的涅拉战斗单元。
+任务不限时；进入战场后，未完成目标便全员撤离将导致失败。失败后3天重新生成同阶段任务，已取得的资料保留。
 
-该基地没有时间限制，不会因等待而自动消失。进入战场后，若在达成目标前全部撤离，任务将失败。母舰会在3天后重新定位同一阶段的基地；此前取得的研究资料仍然保留。
-
-本次取得的资料将开放以下研究：
+可解锁研究：
 {0}
 
-取得资料后，仍需通过上行链路研究终端交付材料、完成研究，并达到相应母舰等级，才能调用支援。{1}</NMC_Text0227>
+取得资料后，在上行链路终端交付材料并研究；调用支援还需达到母舰等级要求。{1}</NMC_Text0227>
   <NMC_Text0228>取得连续体研究资料</NMC_Text0228>
   <NMC_Text0229>
 
@@ -252,10 +250,10 @@
   <NMC_Text0230>
 
 连续体的全部八个阶段均已完成，所有相关研究资料都已取得。</NMC_Text0230>
-  <NMC_Text0231>母舰已破解从基地取得的资料，现在可以研究：
+  <NMC_Text0231>已取得研究资料：
 {0}
 
-请通过上行链路研究终端交付所需材料并完成研究。调用支援还需要达到相应的母舰等级。{1}</NMC_Text0231>
+在上行链路终端交付材料并研究，达到母舰等级要求后可调用支援。{1}</NMC_Text0231>
   <NMC_Text0232>连续体行动未能完成</NMC_Text0232>
   <NMC_Text0233>未能从第{0}阶段的基地取得研究资料。母舰将在3天后重新定位同一阶段的目标。
 
@@ -488,7 +486,7 @@
   <NMC_Text0443>母舰能量不足；物资退回，本次增援已取消</NMC_Text0443>
   <NMC_Text0444>佐拉亚军团折跃入场：1艘佐拉亚 + 4艘虚空辉光舰；全队入场后驻留120秒</NMC_Text0444>
   <NMC_Text0445>佐拉亚军团 · {0} P + {1} V · 左键部署，右键 / Esc取消</NMC_Text0445>
-  <NMC_Text0446>太阳能射线枪  ·  300 P + 180 V  ·  左键启动三束 / 8 秒  ·  右键 / Esc 取消</NMC_Text0446>
+  <NMC_Text0446>太阳能射线枪 · 200 P + 180 V · 左键启动三束 / 8秒 · 右键 / Esc取消</NMC_Text0446>
   <NMC_Text0447>军团装备尚未准备完成，暂时无法增援</NMC_Text0447>
   <NMC_Text0448>军团部队暂时无法派遣</NMC_Text0448>
   <NMC_Text0449>附近需要四处已探索、可站立且没有厚山岩顶的空地</NMC_Text0449>
@@ -514,8 +512,8 @@
   <NMC_Text0470>特布鲁斯军团入场失败；未扣费、未开始冷却</NMC_Text0470>
   <NMC_Text0471>特布鲁斯军团抵达：特布鲁斯 + 10近战战士；120秒后折跃撤离</NMC_Text0471>
   <NMC_Text0473>特布鲁斯军团 · {0} P + {1} V · 左键部署，右键 / Esc取消</NMC_Text0473>
-  <NMC_Text0474>虚空抑制 · 不可受击破坏
-半径13 · 敌人移动与攻击速度降至30% · 炮塔停火
+  <NMC_Text0474>虚空抑制晶体
+半径18格 · 敌人移动与攻击速度降至30% · 敌方炮塔停火
 剩余：{0}</NMC_Text0474>
   <NMC_Text0475>晶体必须位于地图范围内</NMC_Text0475>
   <NMC_Text0476>晶体落点必须已探索</NMC_Text0476>
@@ -539,7 +537,7 @@
   <NMC_CarrierSteelMissing>没有可搬运的龙霜钢</NMC_CarrierSteelMissing>
   <NMC_SettingsShortcut>显示母舰指挥快捷栏</NMC_SettingsShortcut>
   <NMC_SettingsUnlockAll>无需完成对应任务即可研究科技</NMC_SettingsUnlockAll>
-  <NMC_SettingsUnlockAllHint>默认关闭。勾选后，仅取消本扩展科技的对应任务要求，仍需满足前置科技、支付材料并正常研究。不会直接完成科技或任务，也不跳过支援的母舰等级要求。关闭后恢复任务要求；已完成的科技保留。</NMC_SettingsUnlockAllHint>
+  <NMC_SettingsUnlockAllHint>取消本扩展科技的任务要求。仍需前置科技、材料和研究，支援仍受母舰等级限制。默认关闭；关闭后保留已完成科技。</NMC_SettingsUnlockAllHint>
   <NMC_Text0748>时空波动：移动速度 ×2</NMC_Text0748>
   <NMC_Text0749>营养储备</NMC_Text0749>
   <NMC_Text0750>目标营养储量：{0}。拖动储量条调整目标。降低目标不会丢弃已有营养；设为0停止补料。食物种类可在“营养”页设置。</NMC_Text0750>
@@ -547,11 +545,7 @@
   <NMC_Text0752>取消升级（{0}/{1}）</NMC_Text0752>
   <NMC_Text0753>只有本模组的玩家舰船可以折叠</NMC_Text0753>
   <NMC_Text0754>请等待舰船完成起降或入场折跃</NMC_Text0754>
-  <NMC_Text0755>将舰船折叠到当前能量场内的空闲位置。保留舰体、朝向、货物、乘员与升级进度；航母先收回舰载机。起降或入场折跃期间不可使用。召唤舰队保留原持续时间。
-
-折跃使用涅瓦莲建筑打印特效：原地准备4秒，传送到实际落点后再打印4秒（游戏时间）。前后两个阶段受到攻击均会正常受伤。
-
-已起飞的舰船可折跃至地形或建筑上方，并保持飞行状态；地面舰船仍需满足正常落点条件。</NMC_Text0755>
+  <NMC_Text0755>将舰船折跃至主能量场。原地准备4秒，抵达后等待4秒，期间可受伤。携带货物和乘员，航母先召回舰载机。飞行舰船可抵达建筑或水面上方；停泊舰船需安全空地。</NMC_Text0755>
   <NMC_WarpFuelRate>每10秒1单位</NMC_WarpFuelRate>
   <NMC_WarpChanging>模式切换中：{0}秒</NMC_WarpChanging>
   <NMC_WarpFieldStatus>能量场模式：半径6格，人员可折跃至此</NMC_WarpFieldStatus>
@@ -559,18 +553,16 @@
   <NMC_WarpFlightMode>飞行模式</NMC_WarpFlightMode>
   <NMC_WarpFieldMode>能量场模式</NMC_WarpFieldMode>
   <NMC_WarpLocked>先切换至飞行模式；展开能量场及切换期间无法移动、降落或舰船折跃。</NMC_WarpLocked>
-  <NMC_WarpModeDescription>用1秒切换模式。能量场模式下静止悬浮并缓速旋转，在下方半径6格提供与主场相同的供电、单位充能和人员折跃接收。同一地图共用10000W供电上限。仍属于飞行并按相同速率耗油；舰船不能折跃至棱镜。</NMC_WarpModeDescription>
+  <NMC_WarpModeDescription>切换需1秒。展开后不能移动或降落，为半径6格内设备供电、为单位充能，并接收人员折跃。同图能量场共用10000W上限，每10秒耗1化合燃料；星舰动力升级后免维持耗油。</NMC_WarpModeDescription>
   <NMC_WarpTakeoffFirst>请先升空并完成起飞。</NMC_WarpTakeoffFirst>
   <NMC_WarpDestinationLost>目标棱镜已关闭、缺油或离开原位置，请重新选择折跃目的地。</NMC_WarpDestinationLost>
   <NMC_WarpPrimaryDestination>主能量场</NMC_WarpPrimaryDestination>
   <NMC_WarpPrismDestination>折跃棱镜：{0}（{1}, {2}）</NMC_WarpPrismDestination>
-  <NMC_WarpRecallDescription>选择主能量场或已展开的折跃棱镜作为目的地，可跨地图折跃。随身装备和背包一并带走，放下搬运中的物品并中止当前工作。
-
-折跃使用涅瓦莲建筑打印特效：原地准备4秒，传送到实际落点后再打印4秒（游戏时间）。前后两个阶段受到攻击均会正常受伤。</NMC_WarpRecallDescription>
+  <NMC_WarpRecallDescription>选择主能量场或展开的折跃舰，可跨地图。原地准备4秒，抵达后等待4秒，期间可受伤。携带装备和背包物品，放下搬运物并中止当前工作。</NMC_WarpRecallDescription>
   <NMC_WarpBusy>正在折跃（前摇4秒、后摇4秒），期间正常受伤</NMC_WarpBusy>
   <NMC_WarpDropUnavailable>涅瓦莲空投舱暂不可用</NMC_WarpDropUnavailable>
   <NMC_StormAttack>雷暴球攻击</NMC_StormAttack>
-  <NMC_StormAttackDesc>指定100格内的敌方目标。每3秒发射一枚雷暴球：20伤害/80%穿甲直击，随后3×3格15伤害/35%穿甲爆炸；两段对建筑均为5倍。</NMC_StormAttackDesc>
+  <NMC_StormAttackDesc>指定100格内敌人，每3秒发射雷暴球。直击20伤害、80%穿甲，随后造成3×3格爆炸，25伤害、35%穿甲；对建筑伤害×5。</NMC_StormAttackDesc>
   <NMC_StormMustFly>需处于飞行状态，且未在折跃中</NMC_StormMustFly>
   <NMC_StormFireAtWill>自动开火</NMC_StormFireAtWill>
   <NMC_StormAutoDesc>升空后自动攻击射程内可见的敌人。指定的攻击目标不受此开关影响。</NMC_StormAutoDesc>
@@ -578,7 +570,7 @@
   <NMC_StormClearDesc>清除手动指定的目标；自动开火开启时仍会自动索敌。</NMC_StormClearDesc>
   <NMC_StormStatus>雷暴球：射程100；冷却剩余{0}秒</NMC_StormStatus>
   <NMC_SageAttackMode>攻击模式</NMC_SageAttackMode>
-  <NMC_SageAttackModeDesc>开启后，升空的贤者舰自动攻击12格内地面敌人。每0.5秒齐射两束激光，每束6伤害、30%穿甲，每次齐射消耗1化合燃料；电池升级不免除攻击耗油。关闭后停止攻击，反隐仍生效。</NMC_SageAttackModeDesc>
+  <NMC_SageAttackModeDesc>升空后攻击12格内地面敌人，每0.5秒发射双束激光，各6伤害、30%穿甲，齐射耗1化合燃料。动力升级不免攻击耗油。关闭攻击模式不影响反隐。</NMC_SageAttackModeDesc>
   <NMC_SageTarget>指定地面目标</NMC_SageTarget>
   <NMC_SageTargetDesc>指定12格内地面敌人；目标失效后自动寻找其他地面敌人。无法攻击空中或被引力束抬升的目标。</NMC_SageTargetDesc>
   <NMC_SageMustAttack>须先升空并开启攻击模式，且未在折跃中。</NMC_SageMustAttack>

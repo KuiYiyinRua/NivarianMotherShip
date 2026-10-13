@@ -3,9 +3,7 @@
   <ThingDef ParentName="NMC_FleetShipBase">
     <defName>NMC_VoidRay</defName>
     <label>辉光舰</label>
-    <description>佐拉亚军团的护航舰，使用带有冰冻效果的棱晶光束持续攻击敌人。光束每0.5秒造成一次伤害，初始为2.4点；连续命中同一目标时逐渐增强，失去锁定或更换目标后恢复初始强度。
-
-辉光舰自动选择敌人，适合持续压制坚固目标。支援结束后随军团撤离。</description>
+    <description>佐拉亚军团的护航舰。棱晶光束每0.5秒造成2.4点起始伤害并附带冰冻，持续锁定时增伤，失去锁定后重置。通过“佐拉亚军团”支援召来，结束后撤离。</description>
     <graphicData>
       <texPath>NMC/Fleet/void_ray_v3</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -73,9 +71,7 @@
   <ThingDef ParentName="NMC_FleetShipBase">
     <defName>NMC_Zoraya</defName>
     <label>佐拉亚</label>
-    <description>佐拉亚军团的指挥舰，装备更强的棱晶光束。每0.5秒造成一次伤害，初始为4.8点，并附带冰冻效果；持续命中同一目标时伤害逐渐增强，失去锁定或更换目标后恢复初始强度。
-
-佐拉亚与护航舰协同作战，支援结束后一同撤离。</description>
+    <description>佐拉亚军团的指挥舰。棱晶光束每0.5秒造成4.8点起始伤害并附带冰冻，持续锁定时增伤，失去锁定后重置。通过“佐拉亚军团”支援召来，结束后撤离。</description>
     <graphicData>
       <texPath>NMC/Fleet/zoraya_v1</texPath>
       <graphicClass>Graphic_Single</graphicClass>

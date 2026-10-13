@@ -1,7 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
   <NMC_ContinuumBase.label>连续体基地</NMC_ContinuumBase.label>
-  <NMC_ContinuumBase.description>一处存放母舰战术资料的连续体基地。战利品与炮兵补给集中在核心区域，外围由沙袋掩体和多层炮塔阵地守卫。
-
-外圈轻型炮塔阻滞进攻，中层部署无人机与重型火力，内圈保护通讯核心和迫击炮阵地。切断供能核心可使相连的电力炮塔停机，但守军和空投增援仍会继续作战。随着对连续体的追击深入，后续基地的规模与火力也会增强。</NMC_ContinuumBase.description>
+  <NMC_ContinuumBase.description>存放母舰研究资料的敌对基地，设有多层炮塔阵地和空投增援。摧毁通讯核心并清除守军、炮塔可取得资料；摧毁供能核心可切断相连炮塔电力。战利品位于中央。</NMC_ContinuumBase.description>
 </LanguageData>

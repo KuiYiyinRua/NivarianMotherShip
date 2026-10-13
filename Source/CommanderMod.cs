@@ -33,6 +33,7 @@ namespace NivarianCommander
         {
             Settings = GetSettings<CommanderSettings>();
             CommanderThinkKeyCompatibility.Install();
+            CommanderOptimizerCompatibility.Install();
             LongEventHandler.ExecuteWhenFinished(() =>
             {
                 new Harmony("local.nivarian.mothership.commander").PatchAll();

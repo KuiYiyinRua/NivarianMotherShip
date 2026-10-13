@@ -3,7 +3,7 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_WarshipArmor1</defName>
     <label>涅瓦莲战舰护甲Ⅰ</label>
-    <description>强化全部涅瓦莲战舰、舰载机及援军战舰的舰体。每级增加基础最大生命值的20%，本级累计增加20%。已存在舰船保持原有血量百分比。</description>
+    <description>使涅瓦莲战舰、舰载机和支援舰的基础最大生命值累计提高20%。在上行链路交付材料并研究。</description>
     <baseCost>2000</baseCost>
     <prerequisites>
       <li>NMC_GravityFrigateResearch</li>
@@ -32,7 +32,7 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_WarshipArmor2</defName>
     <label>涅瓦莲战舰护甲Ⅱ</label>
-    <description>强化全部涅瓦莲战舰、舰载机及援军战舰的舰体。每级增加基础最大生命值的20%，本级累计增加40%。已存在舰船保持原有血量百分比。</description>
+    <description>使涅瓦莲战舰、舰载机和支援舰的基础最大生命值累计提高40%。在上行链路交付材料并研究。</description>
     <baseCost>4000</baseCost>
     <prerequisites>
       <li>NMC_WarshipArmor1</li>
@@ -61,7 +61,7 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_WarshipArmor3</defName>
     <label>涅瓦莲战舰护甲Ⅲ</label>
-    <description>强化全部涅瓦莲战舰、舰载机及援军战舰的舰体。每级增加基础最大生命值的20%，本级累计增加60%。已存在舰船保持原有血量百分比。</description>
+    <description>使涅瓦莲战舰、舰载机和支援舰的基础最大生命值累计提高60%。在上行链路交付材料并研究。</description>
     <baseCost>6000</baseCost>
     <prerequisites>
       <li>NMC_WarshipArmor2</li>
@@ -90,7 +90,7 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_WarshipWeapon1</defName>
     <label>涅瓦莲战舰武器Ⅰ</label>
-    <description>强化全部涅瓦莲战舰、舰载机及援军战舰的武器。每级增加基础伤害及各类穿甲的20%，本级累计增加20%。连续锁定增伤规则与冰冻等机制不变；研究加成作用于最终攻击伤害。</description>
+    <description>使涅瓦莲战舰、舰载机和支援舰的基础武器伤害、穿甲累计提高20%。在上行链路交付材料并研究。</description>
     <baseCost>2000</baseCost>
     <prerequisites>
       <li>NMC_GravityFrigateResearch</li>
@@ -119,7 +119,7 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_WarshipWeapon2</defName>
     <label>涅瓦莲战舰武器Ⅱ</label>
-    <description>强化全部涅瓦莲战舰、舰载机及援军战舰的武器。每级增加基础伤害及各类穿甲的20%，本级累计增加40%。连续锁定增伤规则与冰冻等机制不变；研究加成作用于最终攻击伤害。</description>
+    <description>使涅瓦莲战舰、舰载机和支援舰的基础武器伤害、穿甲累计提高40%。在上行链路交付材料并研究。</description>
     <baseCost>4000</baseCost>
     <prerequisites>
       <li>NMC_WarshipWeapon1</li>
@@ -148,7 +148,7 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_WarshipWeapon3</defName>
     <label>涅瓦莲战舰武器Ⅲ</label>
-    <description>强化全部涅瓦莲战舰、舰载机及援军战舰的武器。每级增加基础伤害及各类穿甲的20%，本级累计增加60%。连续锁定增伤规则与冰冻等机制不变；研究加成作用于最终攻击伤害。</description>
+    <description>使涅瓦莲战舰、舰载机和支援舰的基础武器伤害、穿甲累计提高60%。在上行链路交付材料并研究。</description>
     <baseCost>6000</baseCost>
     <prerequisites>
       <li>NMC_WarshipWeapon2</li>
@@ -177,7 +177,7 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_CarrierHangarExpansion</defName>
     <label>航母舰载机舱室拓展</label>
-    <description>拓展航母机库，将舰载机搭载上限从6架提高至8架。上限包括机库内及出击中的舰载机。</description>
+    <description>将航母舰载机总上限提高至8架，含机库内和出击中的编队。在上行链路交付材料并研究。</description>
     <baseCost>4000</baseCost>
     <prerequisites>
       <li>NMC_CarrierResearch</li>

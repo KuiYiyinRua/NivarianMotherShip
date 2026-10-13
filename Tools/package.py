@@ -3,7 +3,10 @@ from pathlib import Path
 mod=Path(__file__).resolve().parent.parent
 parser=argparse.ArgumentParser(description='Package the loadable mod, full expansion source and Workshop materials.')
 parser.add_argument('--output',type=Path,default=mod/'dist')
+parser.add_argument('--revision', default='', help='Release revision suffix, e.g. r1; assembly versions remain unchanged.')
 args=parser.parse_args()
+assert not args.revision or all(c.isalnum() or c in '-_' for c in args.revision)
+
 out=args.output.resolve()
 out.mkdir(parents=True,exist_ok=True)
 version=ET.parse(mod/'About/About.xml').findtext('modVersion')
@@ -19,10 +22,13 @@ for folder in ['Source','Multiplayer/Source','Multiplayer/ShipUpgradeSource','Mu
  files.extend(p for p in (mod/folder).glob('*') if p.is_file() and p.suffix in ['.cs','.csproj'])
 files.append(mod/'Tools/package.py')
 files.extend(p for p in (mod/'Tools/Localization').glob('*') if p.is_file() and p.suffix in ['.py','.json'])
-files.extend(p for p in (mod/'Workshop').rglob('*') if p.is_file() and p.suffix.lower() in ['.txt','.json','.png','.jpg'])
+files.extend(p for p in (mod/'Workshop').glob('*') if p.is_file() and p.suffix.lower() in ['.txt','.json','.png','.jpg'])
+for folder in ['Workshop/Gallery','Workshop/Screenshots']:
+ files.extend(p for p in (mod/folder).glob('*') if p.is_file() and p.suffix.lower() in ['.png','.jpg'])
 files=sorted(set(files))
 manifest={str(p.relative_to(mod)).replace('\\','/'):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(files)}
-archive=out/f'NivarianMotherShip-v{version}.zip'
+release_version=version+('-'+args.revision if args.revision else '')
+archive=out/f'NivarianMotherShip-v{release_version}.zip'
 with zipfile.ZipFile(archive,'w',compression=zipfile.ZIP_DEFLATED) as z:
  for p in sorted(files):z.write(p,'NivarianMotherShip/'+str(p.relative_to(mod)).replace('\\','/'))
  z.writestr('NivarianMotherShip/package-manifest.json',json.dumps(manifest,ensure_ascii=False,indent=2))

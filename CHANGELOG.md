@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.9.9-r1
+
+- 修复 YaOpt / PerformanceOptimizer 优化层在并行绘制下的组件缓存锁保护，保留缓存优化；重新应用优化器设置后仍保持保护。
+- 精简并重写 111 条中文物品、技能和科技说明，突出功能、性能、用途及解锁获取条件。
+- 包含完整模组资源、125 份核心源码及 13 份联机源码。核心文件版本保持 0.9.9，程序集绑定版本保持 0.9.8；五份联机适配 DLL 身份不变。
+- 已测：1048576 次真实并发缓存查询、600 帧更新、无优化器启动、双端 120000 世界 tick 与最终状态一致性。专项单地图验证，未覆盖完整模组包、异步时间或重连矩阵。
+- 更新后所有玩家需重启游戏并使用相同文件。
+
 ## 0.9.9
 
 - Added the Storm Ship, Sage Ship and Warp Prism with their assets, sounds and optional Multiplayer adapters.

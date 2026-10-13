@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
   <NMC_ShadowInvisibility.label>暗影折跃隐形</NMC_ShadowInvisibility.label>
-  <NMC_ShadowInvisibility.description>暗影场或幽灵装甲使目标隐形，攻击和受伤不会主动解除这一效果。侦测隐形的能力仍可发现目标；使其显形的效果结束后，若隐形来源仍在，目标会再次隐去。</NMC_ShadowInvisibility.description>
+  <NMC_ShadowInvisibility.description>使单位保持隐形，攻击和受伤不解除效果。反隐能力可使其显形。由暗影能源塔或幽灵装甲提供。</NMC_ShadowInvisibility.description>
   <NMC_GhostIdentity.label>暗影卫队身份</NMC_GhostIdentity.label>
-  <NMC_GhostIdentity.description>来自涅瓦莲母舰的暗影卫队成员。她会自行作战，无法被殖民地征召。隐形能力让她能够接近敌人，但仍可能被反隐手段发现。支援结束后，她将折跃撤离。</NMC_GhostIdentity.description>
+  <NMC_GhostIdentity.description>临时增援的隐形近战战士，自动作战，无法征召，可被反隐能力发现。通过“暗影卫队”支援召来，120秒后撤离。</NMC_GhostIdentity.description>
   <NMC_SeydasConversion.label>心灵归附</NMC_SeydasConversion.label>
-  <NMC_SeydasConversion.description>心灵支配使这个单位加入了涅瓦莲幸存者派系。它保留原有的生活和行动方式，不会成为你的殖民者。赛达斯军团撤离后，这一派系归属仍然保留。</NMC_SeydasConversion.description>
+  <NMC_SeydasConversion.description>心灵支配使单位永久加入涅瓦莲幸存者派系，不会成为殖民者。</NMC_SeydasConversion.description>
   <NMC_LegionIdentity.label>母舰远征军团</NMC_LegionIdentity.label>
-  <NMC_LegionIdentity.description>涅瓦莲幸存者派来的临时远征军成员。部队自行选择目标并参加战斗，无法被殖民地征召。支援结束后，成员与专属装备会折跃撤离。</NMC_LegionIdentity.description>
+  <NMC_LegionIdentity.description>涅瓦莲幸存者派来的临时增援。自动作战，无法征召；支援结束后与专属装备一同撤离。</NMC_LegionIdentity.description>
 </LanguageData>

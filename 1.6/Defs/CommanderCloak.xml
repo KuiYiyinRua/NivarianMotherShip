@@ -2,7 +2,7 @@
   <!-- Source-owned aura/guard hediff, not applied until the following implementation step. -->
   <HediffDef>
     <defName>NMC_ShadowInvisibility</defName><label>暗影折跃隐形</label>
-    <description>暗影场或幽灵装甲使目标隐形，攻击和受伤不会主动解除这一效果。侦测隐形的能力仍可发现目标；使其显形的效果结束后，若隐形来源仍在，目标会再次隐去。</description>
+    <description>使单位保持隐形，攻击和受伤不解除效果。反隐能力可使其显形。由暗影能源塔或幽灵装甲提供。</description>
     <hediffClass>HediffWithComps</hediffClass><isBad>false</isBad><initialSeverity>1</initialSeverity>
     <comps><li Class="HediffCompProperties_Invisibility">
       <visibleToPlayer>true</visibleToPlayer><affectedByDisruptor>true</affectedByDisruptor>

@@ -3,11 +3,9 @@
   <ThingDef ParentName="BuildingBase" MayRequire="Ludeon.RimWorld.Biotech">
     <defName>NMC_NutrientEnergyTower</defName>
     <label>涅瓦莲能源塔</label>
-    <description>用营养液滋养共鸣晶体，持续为母舰输送P点的能源设施，同时可向殖民地电网供应700W电力。需要定期补充食物来维持运行。
+    <description>消耗食物营养、产出P点的能源设施，同时发电700W。缺少营养或停机时停止产出。通过“营养”页选择补给食物。
 
-殖民者会将允许的食物运入设施，转化为营养储备。可在“营养”页调整食物种类，并在选中设施时查看当前消耗和产量。设施关闭、营养耗尽或停止运行时，母舰能量也会停止产出。
-
-建造时先部署核心，再运入所需材料，由母舰自动完成施工。这座设施只用于供能，不能培养人员或胚胎。</description>
+解锁：母舰支援接口研究。获取：部署能源塔核心并交付建材。</description>
     <thingClass>NivarianCommander.Building_NutrientEnergyTower</thingClass>
     <tickerType>Normal</tickerType>
     <graphicData>

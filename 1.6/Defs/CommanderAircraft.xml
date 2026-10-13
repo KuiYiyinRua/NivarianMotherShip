@@ -4,15 +4,11 @@
     <defName>NMC_Carrier</defName>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <label>涅瓦莲航母</label>
-    <description>涅瓦莲的大型航空母舰，兼具重型运输和舰载机支援能力。舰体生命值2500，载重10000千克。自身没有直接攻击武器，需要依靠舰载机应战。
+    <description>重型运输与无人机支援舰。生命2500，载重10000千克，可维持6架舰载机。每架消耗10龙霜钢、制造5秒；通过“龙霜钢储备”补料。升空后攻击60格内敌人，舰载机离舰80格返回。
 
-通过独立的“龙霜钢储备”面板设置目标储量，殖民者会在航母停泊时搬运并填装龙霜钢，最多储存1000单位。运输货舱中的龙霜钢不会自动用于制造。每架舰载机消耗10龙霜钢，制造需要5秒；停泊和飞行时均可制造。机库与出击中的舰载机合计最多6架，每架生命值125。
+燃料容量10000，地图飞行每秒耗1，世界航行每格耗3、最低50。停泊时可用10份电池升级动力，升级后起飞耗200，免持续航行耗油。
 
-升空作战后，航母会发现60格内的敌人，每秒派出一架舰载机。舰载机飞离航母80格后自动返回；接到降落命令时，航母停止出击并召回全部舰载机。
-
-最多储存10000化合燃料，在地图内升空期间每秒消耗1单位。远程航行的耗油与穿梭机相同，航程受燃料储备限制。起飞无需等待额外冷却，但必须清除舰船上方的屋顶；降落需要足够的空地。
-
-停泊时可升级星舰动力，需要10份电池。米莉拉星舰电池、不稳定能量电池各计1份，虚空电池计2份，可混合投入；原版电池须先卸载打包。升级中再次点击可取消并退还全部已投入电池。完成后的起飞费用与免持续耗油效果保持不变。</description>
+获取：在上行链路完成“涅瓦莲航母”研究后建造。</description>
     <thingClass>NivarianCommander.Building_NivarianAircraft</thingClass>
     <preventDroppingThingsOn>true</preventDroppingThingsOn>
     <altitudeLayer>Building</altitudeLayer>
@@ -221,15 +217,11 @@
     <defName>NMC_GravityFrigate</defName>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <label>涅瓦莲引力舰</label>
-    <description>擅长对空拦截的涅瓦莲舰船，也能执行轻型运输。占地3×3格，舰体生命值600，载重300千克。
+    <description>对空拦截与轻型运输舰。3×3格，生命600，载重300千克。升空后每秒发射双束激光，射程16格，每束6伤害、50%穿甲。引力束可将地面目标举起并眩晕4秒，冷却8秒。
 
-升空后，以双束棱晶激光攻击16格内的空中敌人，每秒齐射一次。每束造成6点基础伤害，护甲穿透率为50%，对建筑的伤害提高至3倍，不附带冰冻效果。舰船不能直接攻击地面目标。
+燃料容量600，地图飞行每5秒耗1，世界航行每格耗1.5、最低25。停泊时可用2份电池升级动力，升级后起飞耗100，免持续航行耗油。
 
-引力束可将16格内的一名地面敌人举起并眩晕4秒，使其成为激光能够攻击的空中目标。引力束无需额外资源，冷却8秒；可以手动选择目标，也可允许舰船自动施放。
-
-最多储存600化合燃料，在地图内升空期间每5秒消耗1单位。远程航行的耗油为穿梭机的一半，航程受燃料储备限制。起飞无需等待额外冷却，上方须无屋顶；降落需要足够的空地。
-
-停泊时可升级星舰动力，需要2份电池。米莉拉星舰电池、不稳定能量电池各计1份，虚空电池计2份，可混合投入；原版电池须先卸载打包。升级中再次点击可取消并退还全部已投入电池。完成后的起飞费用与免持续耗油效果保持不变。</description>
+获取：在上行链路完成“涅瓦莲引力舰”研究后建造。</description>
     <thingClass>NivarianCommander.Building_NivarianAircraft</thingClass>
     <preventDroppingThingsOn>true</preventDroppingThingsOn>
     <altitudeLayer>Building</altitudeLayer>
@@ -437,9 +429,7 @@
   <ThingDef>
     <defName>NMC_CarrierInterceptor</defName>
     <label>涅瓦莲舰载机</label>
-    <description>由涅瓦莲航母制造和控制的无人舰载机，使用轻型弹药自动攻击敌人，生命值125。
-
-舰载机只在航母升空作战时出击。飞离所属航母80格后会自动返回，也会响应航母的回收和降落命令。它需要依托航母行动，无法独立执行远程运输。</description>
+    <description>航母制造的无人战斗机，生命125。航母升空后自动出击，离舰80格或收到回收命令时返回。每架消耗10龙霜钢，制造5秒。</description>
     <thingClass>NivarianCommander.CarrierInterceptor</thingClass>
     <category>Item</category>
     <tickerType>Normal</tickerType>

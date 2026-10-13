@@ -4,11 +4,11 @@
     <defName>NMC_WarpPrism</defName>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <label>涅瓦莲折跃舰</label>
-    <description>无武装的涅瓦莲折跃运输舰。占地3×3格，基础生命值350，载重1000千克；飞行速度与引力舰相同。最多储存600化合燃料，地图飞行和能量场模式每10秒消耗1单位，世界航行消耗为引力舰的一半。
+    <description>无武装运输与供能舰。3×3格，生命350，载重1000千克。升空后可展开半径6格能量场，为设备供电、单位充能并接收人员折跃；展开期间无法移动。同图能量场共用10000W上限。
 
-升空后可切换能量场模式，展开为中心对称的棱镜并缓速旋转。切换需要1秒；切换期间及展开后不能移动、降落或舰船折跃。下方半径6格完整继承主能量场的供电与单位充能，同一地图的所有能量场共用10000W上限。殖民者可选择主能量场或任意展开棱镜折跃，舰船只能折跃至主能量场。
+燃料容量600，地图飞行和展开时每10秒耗1，世界航行每格耗0.75、最低12.5。可用2份电池升级动力，升级后起飞耗50，免持续耗油。
 
-停泊时可用2份电池升级星舰动力：米莉拉星舰电池、不稳定能量电池各计1份，虚空电池计2份，可混合使用；原版电池须卸载打包。升级后每次起飞消耗50化合燃料，地图飞行、能量场维持及世界航行不再持续耗油。</description>
+获取：先研究“跨域人员折跃”，再在上行链路研究“涅瓦莲折跃舰”并建造。</description>
     <thingClass>NivarianCommander.Building_NivarianAircraft</thingClass>
     <preventDroppingThingsOn>true</preventDroppingThingsOn>
     <altitudeLayer>Building</altitudeLayer>
@@ -214,7 +214,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_WarpPrismResearch</defName>
     <label>涅瓦莲折跃舰</label>
-    <description>在上行链路中单独研究，解锁涅瓦莲折跃舰。前置为跨域人员折跃科技。这艘无武装运输舰可展开半径6格的移动能量场，为建筑供电、为单位充能，并接收殖民者折跃；载重1000千克。</description>
+    <description>解锁可建造的折跃舰：载重1000千克，可展开半径6格的供能区域并接收人员折跃。
+
+前置：跨域人员折跃。在上行链路交付材料并研究。</description>
     <baseCost>5000</baseCost>
     <researchViewX>2</researchViewX>
     <researchViewY>2</researchViewY>

@@ -4,11 +4,11 @@
     <defName>NMC_StormShip</defName>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <label>涅瓦莲暴风舰</label>
-    <description>涅瓦莲的远程雷暴攻城舰。占地5×5格，基础生命值2000，载重3500千克。升空后自动攻击100格内的敌人，也可指定攻击目标。每3秒发射一枚雷暴球：直击造成20伤害、80%穿甲；命中后在落点周围3×3格内再造成25伤害、35%穿甲。两段伤害对建筑均为5倍，爆炸不随距离衰减。
+    <description>远程攻城舰。5×5格，生命2000，载重3500千克。升空后攻击100格内敌人，每3秒发射雷暴球：直击20伤害、80%穿甲，随后造成3×3格爆炸，25伤害、35%穿甲；对建筑伤害×5。
 
-飞行速度、化合燃料容量和消耗与航母相同：最多储存10000燃料，地图飞行每秒消耗1，世界航行每格3、最低50。可通过能量场折叠前往已部署的主能量场。
+燃料容量10000，地图飞行每秒耗1，世界航行每格耗3、最低50。可用5份电池升级动力，升级后起飞耗200，免持续耗油。
 
-停泊时可用5份兼容电池升级星舰动力，正好是航母的一半。米莉拉星舰电池和不稳定能量电池各计1份，虚空电池计2份，可混用；原版电池须卸载打包。升级中可取消并退还投入的电池。升级后每次起飞消耗200化合燃料，随后地图和世界航行不再持续耗油。</description>
+获取：在上行链路完成“涅瓦莲暴风舰”研究后建造。</description>
     <thingClass>NivarianCommander.Building_NivarianAircraft</thingClass>
     <preventDroppingThingsOn>true</preventDroppingThingsOn>
     <altitudeLayer>Building</altitudeLayer>
@@ -216,7 +216,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_StormShipResearch</defName>
     <label>涅瓦莲暴风舰</label>
-    <description>通过上行链路研究终端解锁涅瓦莲暴风舰。前置科技与航母相同，不额外要求完成任务；研究量及交付材料为航母的70%。暴风舰是一艘5×5格、2000生命、3500千克载重的远程攻城舰，以100格射程的雷暴球造成直击和3×3范围爆炸。</description>
+    <description>解锁可建造的暴风舰：载重3500千克，射程100格，以雷暴球轰击建筑和密集敌军。
+
+前置：涅瓦莲引力舰、涅瓦莲舰队支援协议、超维空间矩阵投射支援协议。在上行链路交付材料并研究。</description>
     <baseCost>10500</baseCost>
     <prerequisites>
       <li>NMC_GravityFrigateResearch</li>

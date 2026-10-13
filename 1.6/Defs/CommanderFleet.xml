@@ -11,9 +11,7 @@
   </ThingDef>
   <ThingDef ParentName="NMC_FleetShipBase">
     <defName>NMC_TacticalMothership</defName><label>战术母舰</label>
-    <description>涅瓦莲支援舰队的战术母舰，负责以激光和能量弹压制地面敌人。每秒发射一道激光，造成9点基础伤害；每2秒投下一枚能量弹，造成12点基础爆炸伤害，对建筑尤为有效。
-
-母舰自动飞行作战，也会受到敌方远程和爆炸攻击。它是临时派遣的支援舰，损失不会影响轨道母舰的资源储备；支援结束后撤离。</description>
+    <description>自动作战的临时支援舰。激光每秒造成9伤害，能量弹每2秒造成12点爆炸伤害。通过“涅瓦莲舰队”支援召来，支援结束后撤离。</description>
     <graphicData><texPath>NMC/Fleet/tactical_mothership</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Transparent</shaderType><drawSize>(9,9)</drawSize></graphicData>
     <statBases><MaxHitPoints>2400</MaxHitPoints><MoveSpeed>3</MoveSpeed></statBases>
     <comps>
@@ -36,9 +34,7 @@
   </ThingDef>
   <ThingDef ParentName="NMC_FleetShipBase">
     <defName>NMC_FleetDestroyer</defName><label>舰队驱逐舰</label>
-    <description>为战术母舰护航的自动驱逐舰。棱晶光束每0.5秒造成一次伤害，初始为2.4点；连续命中同一目标时，伤害逐次提高。更换目标或失去锁定后，光束恢复初始强度。
-
-这型光束不会使目标冰冻。舰艇在支援期间自动寻找敌人，驻留结束后撤离。</description>
+    <description>自动护航的临时支援舰。棱晶光束每0.5秒造成2.4点起始伤害，持续锁定时增伤，失去锁定后重置。通过“涅瓦莲舰队”支援召来，结束后撤离。</description>
     <graphicData><texPath>NMC/Fleet/destroyer</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Transparent</shaderType><drawSize>(5.25,5.25)</drawSize></graphicData>
     <statBases><MaxHitPoints>450</MaxHitPoints><MoveSpeed>8</MoveSpeed></statBases>
     <comps>
@@ -97,7 +93,7 @@
     <externalViolence>true</externalViolence><isRanged>true</isRanged><armorCategory>Sharp</armorCategory><hediff>Burn</hediff><hediffSolid>Crack</hediffSolid><defaultDamage>9</defaultDamage><defaultArmorPenetration>0.6</defaultArmorPenetration>
   </NivarianCommander.SupportDamageDef>
   <ThingDef>
-    <defName>NMC_FleetWreck</defName><label>临时舰艇残骸</label><description>一艘支援舰艇被击毁后留下的残骸。残骸无法拆解；母舰会在本次支援结束时将其回收，搬运或储藏也不能将它永久留下。</description>
+    <defName>NMC_FleetWreck</defName><label>临时舰艇残骸</label><description>支援舰艇被击毁后的残骸，无法拆解，支援结束时回收。</description>
     <thingClass>ThingWithComps</thingClass><category>Item</category><tickerType>Never</tickerType><useHitPoints>true</useHitPoints><selectable>true</selectable><alwaysHaulable>true</alwaysHaulable><stackLimit>1</stackLimit><tradeability>None</tradeability><smeltable>false</smeltable>
     <graphicData><texPath>NMC/Fleet/fleet_wreck</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>Transparent</shaderType><drawSize>(1.5,1.5)</drawSize></graphicData>
     <statBases><MaxHitPoints>100</MaxHitPoints><MarketValue>0</MarketValue><Mass>1</Mass><Flammability>0</Flammability></statBases>

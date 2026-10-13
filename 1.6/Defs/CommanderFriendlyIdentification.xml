@@ -3,9 +3,7 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_PreciseFriendlyIdentification</defName>
     <label>精确友军识别</label>
-    <description>完善母舰的敌我识别协议，使指挥官的支援火力避开己方单位、建筑和盟友。暗影卫队与远征军团的专属武器也会遵循这一协议。
-
-通过上行链路研究终端交付所需材料并完成研究。研究完成后永久生效，无需在支援面板额外购买。</description>
+    <description>使母舰支援火力、暗影卫队和远征军团专属武器避开己方及盟友。在上行链路交付材料并完成研究后永久生效。</description>
     <baseCost>3000</baseCost>
     <techLevel>Spacer</techLevel>
     <prerequisites>

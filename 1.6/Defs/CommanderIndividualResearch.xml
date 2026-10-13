@@ -3,9 +3,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_Support01</defName>
     <label>折跃能量场支援协议</label>
-    <description>建立可从母舰远程部署的折跃能量场，为周围的友方设施与单位提供能源。已有能量场可以迁移，适合前沿防御和临时作业。
+    <description>解锁折跃能量场，为区域内设备供电、单位充能。
 
-通过上行链路研究终端交付所需材料并完成研究。完成研究后即可在指挥官支援面板调用。</description>
+在上行链路交付材料并研究。</description>
     <baseCost>1500</baseCost>
     <prerequisites>
       <li>Nivarian_MothershipSupportInterface</li>
@@ -34,9 +34,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_Support02</defName>
     <label>轨道轰炸支援协议</label>
-    <description>开放轨道轰炸，使指挥官能够连续标记落点，调用母舰火力攻击地面目标。每次开火分别消耗能量。
+    <description>解锁轨道轰炸，可连续指定落点。
 
-通过上行链路研究终端交付所需材料并完成研究。完成研究后即可在指挥官支援面板调用。</description>
+在上行链路交付材料并研究。</description>
     <baseCost>1500</baseCost>
     <prerequisites>
       <li>Nivarian_MothershipSupportInterface</li>
@@ -65,9 +65,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_Support03</defName>
     <label>护盾超载支援协议</label>
-    <description>允许母舰在短时间内为整张地图上的友军提供护盾，吸收战斗伤害。
+    <description>解锁全图友军护盾，每个目标200点，持续30秒。
 
-通过上行链路研究终端交付所需材料并完成研究。母舰达到1级后，方可调用这项支援。</description>
+在上行链路交付材料并研究。调用需母舰1级。</description>
     <baseCost>1500</baseCost>
     <prerequisites>
       <li>NMC_Support01</li>
@@ -96,11 +96,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_Support04</defName>
     <label>太阳轰炸支援协议</label>
-    <description>开放大范围太阳轰炸。在指定区域持续投下能量弹，摧毁密集敌军与建筑。攻击开始后无法中止。
+    <description>解锁太阳轰炸，30秒内向半径13格区域投射300发能量弹。
 
-通过上行链路研究终端交付所需材料并完成研究。母舰达到4级后，方可调用这项支援。
-
-若已开启连续体任务，须先完成第8阶段“太阳轰炸”，取得研究资料。</description>
+在上行链路交付材料并研究。调用需母舰4级。连续体任务启用时，需先取得第8阶段资料。</description>
     <baseCost>3000</baseCost>
     <prerequisites>
       <li>NMC_Support07</li>
@@ -133,9 +131,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_Support05</defName>
     <label>太阳能射线枪支援协议</label>
-    <description>开放太阳能射线枪。母舰可同时投下三道追踪射线，持续扫射地面敌人。
+    <description>解锁三道追踪太阳射线，持续8秒。
 
-通过上行链路研究终端交付所需材料并完成研究。母舰达到2级后，方可调用这项支援。</description>
+在上行链路交付材料并研究。调用需母舰2级。</description>
     <baseCost>3000</baseCost>
     <prerequisites>
       <li>NMC_Support02</li>
@@ -168,9 +166,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_Support06</defName>
     <label>时空波动支援协议</label>
-    <description>使母舰能够暂时加快各处殖民地的生产活动，并提高超维空间巨石的攻击频率。
+    <description>解锁60秒时空加速，提高友军移动、工作和炮塔攻击速度。
 
-通过上行链路研究终端交付所需材料并完成研究。母舰达到2级后，方可调用这项支援。</description>
+在上行链路交付材料并研究。调用需母舰2级。</description>
     <baseCost>4500</baseCost>
     <prerequisites>
       <li>NMC_Support01</li>
@@ -203,11 +201,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_Support07</defName>
     <label>净化光束支援协议</label>
-    <description>开放可移动的净化光束。光束能够自动追击，也可以接受指挥官的移动命令。
+    <description>解锁可自动追敌或手动移动的净化光束。
 
-通过上行链路研究终端交付所需材料并完成研究。母舰达到4级后，方可调用这项支援。
-
-若已开启连续体任务，须先完成第7阶段“净化光束”，取得研究资料。</description>
+在上行链路交付材料并研究。调用需母舰4级。连续体任务启用时，需先取得第7阶段资料。</description>
     <baseCost>3000</baseCost>
     <prerequisites>
       <li>NMC_Support05</li>
@@ -240,11 +236,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_Support08</defName>
     <label>暗影核心支援协议</label>
-    <description>允许部署暗影核心，建成可持续输送母舰资源、隐藏周围友军的暗影能源塔。部署后仍需运入建材。
+    <description>解锁暗影能源塔，产出P点并隐藏附近友军。
 
-通过上行链路研究终端交付所需材料并完成研究。母舰达到1级后，方可调用这项支援。
-
-若已开启连续体任务，须先完成第1阶段“暗影水晶塔”，取得研究资料。</description>
+在上行链路交付材料并研究。调用需母舰1级。连续体任务启用时，需先取得第1阶段资料。</description>
     <baseCost>2500</baseCost>
     <prerequisites>
       <li>NMC_Support01</li>
@@ -277,11 +271,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_Support09</defName>
     <label>暗影卫队支援协议</label>
-    <description>建立与暗影卫队的折跃联络。完成研究后，可请求四名隐形近战战士临时增援。
+    <description>解锁四名隐形近战卫队，支援120秒。
 
-通过上行链路研究终端交付所需材料并完成研究。母舰达到2级后，方可调用这项支援。
-
-若已开启连续体任务，须先完成第2阶段“暗影援军”，取得研究资料。</description>
+在上行链路交付材料并研究。调用需母舰2级。连续体任务启用时，需先取得第2阶段资料。</description>
     <baseCost>2500</baseCost>
     <prerequisites>
       <li>NMC_Support08</li>
@@ -314,9 +306,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_Support10</defName>
     <label>黑洞支援协议</label>
-    <description>使母舰能够在战场制造短暂的引力涡旋，聚集敌人并削弱其护甲，便于集中火力。
+    <description>解锁黑洞，聚集半径8格内敌人并暂时消除其护甲。
 
-通过上行链路研究终端交付所需材料并完成研究。母舰达到2级后，方可调用这项支援。</description>
+在上行链路交付材料并研究。调用需母舰2级。</description>
     <baseCost>2500</baseCost>
     <prerequisites>
       <li>NMC_Support06</li>
@@ -349,9 +341,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_Support11</defName>
     <label>时间停止支援协议</label>
-    <description>允许母舰暂时阻止各处殖民地内现有敌人的移动和攻击，为防御或撤退争取时间。
+    <description>解锁时间停止，使各殖民地现有敌人停止移动和攻击30秒。
 
-通过上行链路研究终端交付所需材料并完成研究。母舰达到4级后，方可调用这项支援。</description>
+在上行链路交付材料并研究。调用需母舰4级。</description>
     <baseCost>4500</baseCost>
     <prerequisites>
       <li>NMC_Support06</li>
@@ -385,9 +377,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_Support12</defName>
     <label>建筑超载支援协议</label>
-    <description>开放建筑超载，为友方建筑临时附加护盾与激光武器。使用时需要消耗定期恢复的超载充能。
+    <description>解锁建筑超载，提供护盾和临时激光武器。
 
-通过上行链路研究终端交付所需材料并完成研究。母舰达到1级后，方可调用这项支援。</description>
+在上行链路交付材料并研究。调用需母舰1级。</description>
     <baseCost>1500</baseCost>
     <prerequisites>
       <li>NMC_Support03</li>
@@ -416,11 +408,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_Support13</defName>
     <label>涅瓦莲舰队支援协议</label>
-    <description>建立战术舰队折跃航道，可请求一艘母舰和八艘驱逐舰临时支援战场。
+    <description>解锁一艘战术母舰和八艘驱逐舰，支援120秒。
 
-通过上行链路研究终端交付所需材料并完成研究。母舰达到4级后，方可调用这项支援。
-
-若已开启连续体任务，须先完成第6阶段“舰队支援”，取得研究资料。</description>
+在上行链路交付材料并研究。调用需母舰4级。连续体任务启用时，需先取得第6阶段资料。</description>
     <baseCost>6000</baseCost>
     <prerequisites>
       <li>NMC_Support15</li>
@@ -453,11 +443,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_Support14</defName>
     <label>特布鲁斯军团支援协议</label>
-    <description>建立与特布鲁斯军团的联络，允许请求特布鲁斯和十名近战战士增援。军团支援只消耗P和V。
+    <description>解锁特布鲁斯和十名近战战士，支援120秒。
 
-通过上行链路研究终端交付所需材料并完成研究。母舰达到2级后，方可调用这项支援。
-
-若已开启连续体任务，须先完成第3阶段“远征军团”，取得研究资料。</description>
+在上行链路交付材料并研究。调用需母舰2级。连续体任务启用时，需先取得第3阶段资料。</description>
     <baseCost>3500</baseCost>
     <prerequisites>
       <li>NMC_Support09</li>
@@ -490,11 +478,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_Support15</defName>
     <label>佐拉亚军团支援协议</label>
-    <description>建立与佐拉亚军团的联络，允许请求指挥舰佐拉亚和四艘辉光舰增援。军团支援只消耗P和V。
+    <description>解锁佐拉亚和四艘辉光舰，支援120秒。
 
-通过上行链路研究终端交付所需材料并完成研究。母舰达到3级后，方可调用这项支援。
-
-若已开启连续体任务，须先完成第3阶段“远征军团”，取得研究资料。</description>
+在上行链路交付材料并研究。调用需母舰3级。连续体任务启用时，需先取得第3阶段资料。</description>
     <baseCost>3500</baseCost>
     <prerequisites>
       <li>NMC_Support09</li>
@@ -527,11 +513,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_Support16</defName>
     <label>赛达斯军团支援协议</label>
-    <description>建立与赛达斯军团的联络，允许请求赛达斯和三名黑暗执政官增援，以心灵支配转化敌人。军团支援只消耗P和V。
+    <description>解锁赛达斯和三名黑暗执政官，支援120秒。
 
-通过上行链路研究终端交付所需材料并完成研究。母舰达到3级后，方可调用这项支援。
-
-若已开启连续体任务，须先完成第3阶段“远征军团”，取得研究资料。</description>
+在上行链路交付材料并研究。调用需母舰3级。连续体任务启用时，需先取得第3阶段资料。</description>
     <baseCost>3500</baseCost>
     <prerequisites>
       <li>NMC_Support09</li>
@@ -564,11 +548,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_Support17</defName>
     <label>超维空间巨石支援协议</label>
-    <description>允许部署超维空间巨石核心，建成可同时攻击多个目标、使其眩晕的远程防御设施。部署后仍需运入建材和接通电力。
+    <description>解锁超维空间巨石，可同时攻击并眩晕多个敌人。
 
-通过上行链路研究终端交付所需材料并完成研究。母舰达到3级后，方可调用这项支援。
-
-若已开启连续体任务，须先完成第4阶段“超维空间巨石”，取得研究资料。</description>
+在上行链路交付材料并研究。调用需母舰3级。连续体任务启用时，需先取得第4阶段资料。</description>
     <baseCost>5000</baseCost>
     <prerequisites>
       <li>NMC_Support12</li>
@@ -601,9 +583,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_Support18</defName>
     <label>虚空抑制晶体支援协议</label>
-    <description>开放虚空抑制晶体，暂时减缓敌人的移动与攻击，并使范围内的敌方炮塔停火。
+    <description>解锁虚空抑制晶体，减缓敌人并使敌方炮塔停火。
 
-通过上行链路研究终端交付所需材料并完成研究。母舰达到3级后，方可调用这项支援。</description>
+在上行链路交付材料并研究。调用需母舰3级。</description>
     <baseCost>4500</baseCost>
     <prerequisites>
       <li>NMC_Support10</li>
@@ -636,11 +618,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_Support19</defName>
     <label>超维空间矩阵投射支援协议</label>
-    <description>开放跨殖民地炮塔投射。已登记炮塔可在远处形成临时战斗投影，本体为其提供能源和弹药，也会承受投影受到的损伤。
+    <description>解锁炮塔投影，由本体供应能源和弹药，并共同承受损伤。
 
-通过上行链路研究终端交付所需材料并完成研究。母舰达到4级后，方可调用这项支援。
-
-若已开启连续体任务，须先完成第5阶段“超维空间投影”，取得研究资料。</description>
+在上行链路交付材料并研究。调用需母舰4级。连续体任务启用时，需先取得第5阶段资料。</description>
     <baseCost>5000</baseCost>
     <prerequisites>
       <li>NMC_Support17</li>
@@ -673,9 +653,7 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_ParallelParticleCollectors</defName>
     <label>粒子收集器并行阵列</label>
-    <description>协调多座粒子收集器的工作，消除它们之间的干扰。完成研究后，可以同时运行多座收集器，分别生产V点。
-
-每座收集器仍需独立供电和补充燃料，产量取决于各自的运行状态。</description>
+    <description>允许多座粒子收集器同时生产V点。每座需独立供电和补充燃料。在上行链路交付材料并研究。</description>
     <baseCost>6000</baseCost>
     <prerequisites>
       <li>NMC_Support06</li>
@@ -704,9 +682,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_GravityFrigateResearch</defName>
     <label>涅瓦莲引力舰</label>
-    <description>解锁涅瓦莲引力舰的建造。它是一种兼顾轻型运输与对空拦截的舰船，可以用引力束将地面敌人举起，再以双束激光攻击。
+    <description>解锁可建造的引力舰：载重300千克，以引力束举起敌人，再使用对空激光攻击。
 
-引力舰载重300千克，可在地图内升空作战，也可消耗化合燃料往返不同地点。</description>
+前置：太阳能射线枪支援协议。在上行链路交付材料并研究。</description>
     <baseCost>6000</baseCost>
     <prerequisites>
       <li>NMC_Support05</li>
@@ -735,9 +713,9 @@
   <ResearchProjectDef ParentName="NivarianResearchProjectBase">
     <defName>NMC_CarrierResearch</defName>
     <label>涅瓦莲航母</label>
-    <description>解锁涅瓦莲航母的建造。这种大型舰船以舰载机作战，自身不装备直接攻击武器，适合在战线后方提供持续航空支援。
+    <description>解锁可建造的航母：载重10000千克，以龙霜钢制造并维持最多6架舰载机。
 
-航母载重10000千克，能够用龙霜钢制造并维持最多6架舰载机。建造成本高昂，还需持续补充化合燃料与舰载机材料。</description>
+前置：涅瓦莲引力舰、涅瓦莲舰队支援协议、超维空间矩阵投射支援协议。在上行链路交付材料并研究。</description>
     <baseCost>15000</baseCost>
     <prerequisites>
       <li>NMC_GravityFrigateResearch</li>

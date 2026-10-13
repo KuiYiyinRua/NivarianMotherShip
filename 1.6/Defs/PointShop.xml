@@ -3,9 +3,9 @@
   <MainButtonDef>
     <defName>NMC_MothershipPointShop</defName>
     <label>母舰商店</label>
-    <description>与母舰交换补给的贸易终端。使用P点购买商品，也可捐赠轨道交易信标覆盖范围内的物资，获得母舰的P点回馈。
+    <description>使用P点购买物资，也可捐赠轨道交易信标范围内的物资换取P点。每7天刷新最多60种商品，各殖民地共用库存。
 
-商店每7天补充一批随机商品，全店最多供应60种，所有殖民地共用库存。选择收发殖民地后即可挑选物品；确认购买后，货物将空投至该殖民地的信标附近。收发地点需要已供电的轨道交易信标和可用的露天落点。</description>
+选择收货殖民地后购买，货物空投至信标附近。需已供电的轨道交易信标和露天落点。</description>
     <workerClass>NivarianCommander.MainButtonWorker_PointShop</workerClass>
     <order>96</order>
     <validWithoutMap>true</validWithoutMap>
