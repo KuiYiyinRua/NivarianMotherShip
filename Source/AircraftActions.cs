@@ -79,7 +79,7 @@ namespace NivarianCommander
         public static void Takeoff(Map map, Building_NivarianAircraft ship) { if (Owned(map, ship)) ship.BeginTakeoff(); }
         public static void Move(Map map, Building_NivarianAircraft ship, IntVec3 cell)
         {
-            if (!Owned(map, ship) || !ship.CombatFlight || !cell.InBounds(map) || cell.Fogged(map)) return;
+            if (!Owned(map, ship) || !ship.CanMoveInMap || !cell.InBounds(map) || cell.Fogged(map)) return;
             // Keep the whole footprint inside the map during travel.
             if (!GenAdj.OccupiedRect(cell, ship.Rotation, ship.def.size).Cells.All(c => c.InBounds(map))) return;
             ship.destination = cell;
@@ -91,11 +91,16 @@ namespace NivarianCommander
         public static void ToggleManufacture(Map map, Building_NivarianAircraft ship)
         { if (Owned(map, ship) && ship.IsCarrier) ship.manufactureEnabled = !ship.manufactureEnabled; }
         public static void ToggleGravity(Map map, Building_NivarianAircraft ship)
-        { if (Owned(map, ship) && !ship.IsCarrier) ship.automaticGravity = !ship.automaticGravity; }
+        { if (Owned(map, ship) && ship.IsGravityFrigate) ship.automaticGravity = !ship.automaticGravity; }
         public static IEnumerable<Gizmo> Gizmos(Building_NivarianAircraft ship)
         {
             if (ship.IsCarrier) yield return ship.DragonSteelGizmo;
+            if (ship.IsWarpPrism) yield return WarpPrismActions.ModeGizmo(ship);
+            if (ship.IsSageShip) foreach (var gizmo in SageShipActions.Gizmos(ship)) yield return gizmo;
+            if (ship.IsStormShip) foreach (var gizmo in StormShipActions.Gizmos(ship)) yield return gizmo;
             if (AircraftStarshipUpgrade.Available) yield return AircraftStarshipUpgrade.UpgradeGizmo(ship);
+            if (FieldRecallActions.ResearchFinished && ShipFieldRecallActions.Eligible(ship))
+                yield return ShipFieldRecallActions.Gizmo(ship);
             if (!ship.Airborne)
             {
                 var takeoff = Action(ship, NmcText.Get("NMC_Text0001"), ship.StarshipPowered
@@ -110,10 +115,10 @@ namespace NivarianCommander
                 var move = Action(ship, NmcText.Get("NMC_Text0007"), NmcText.Get("NMC_Text0008"), () => Find.Targeter.BeginTargeting(
                     new TargetingParameters { canTargetLocations = true, canTargetPawns = false, canTargetBuildings = false },
                     t => Move(ship.Map, ship, t.Cell)));
-                if (!ship.CombatFlight) move.Disable(NmcText.Get("NMC_Text0009"));
+                if (!ship.CanMoveInMap) move.Disable(ship.WarpMovementLocked ? NmcText.Get("NMC_WarpLocked") : NmcText.Get("NMC_Text0009"));
                 yield return move;
                 var land = Action(ship, NmcText.Get("NMC_Text0010"), NmcText.Get("NMC_Text0011"), () => AircraftLandingTargeting.Begin(ship));
-                if (!ship.CombatFlight) land.Disable(NmcText.Get("NMC_Text0009"));
+                if (!ship.CanMoveInMap) land.Disable(ship.WarpMovementLocked ? NmcText.Get("NMC_WarpLocked") : NmcText.Get("NMC_Text0009"));
                 yield return land;
             }
             if (ship.IsCarrier)
@@ -123,7 +128,7 @@ namespace NivarianCommander
                     () => ToggleManufacture(ship.Map, ship));
                 yield return Action(ship, NmcText.Get("NMC_Text0016"), NmcText.Get("NMC_Text0017"), () => Recall(ship.Map, ship));
             }
-            else
+            else if (ship.IsGravityFrigate)
             {
                 var gravity = Action(ship, NmcText.Get("NMC_Text0018"), NmcText.Get("NMC_Text0019"), () => Find.Targeter.BeginTargeting(
                     new TargetingParameters { canTargetPawns = true, canTargetLocations = false, canTargetBuildings = false,

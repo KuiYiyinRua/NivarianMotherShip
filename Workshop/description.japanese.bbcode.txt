@@ -7,13 +7,16 @@
 [*]購入・検索・寄付に対応するショップ。通電した通信ビーコンが必要で、7日ごとに最大60種を補充。
 [/list]
 [b]使い方[/b]：母艦支援画面の指揮官タブを開き、アップリンク端末で研究します。軍事アドオン導入時は戦役が研究の進行条件となり、後半には敵艦の増援も出現します。
-[b]自由解放[/b]：設定の「ミッションなしで拡張の全技術を解放」は初期状態でオフ。オンにしてゲームを再開すると、本拡張の全研究が完了し、戦役と支援の母艦レベル条件を省略します。費用・クールダウンは継続。オフに戻しても研究は残り、レベル条件が復帰します。他MODの研究や戦役クリア記録には影響しません。
+[b]対応する任務を完了せずに技術を研究する[/b]: 初期状態ではオフ。本拡張の研究に必要な任務条件のみを解除します。前提技術、資材、通常の研究は引き続き必要です。技術や任務を自動完了せず、支援の母艦レベル条件も維持します。オフにすると任務条件が戻りますが、完了済み研究は保持されます。
 
 [h2]Dependencies / 依赖 / 必須MOD / Зависимости / Dépendances[/h2]
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077]Harmony[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=839005762]Humanoid Alien Races[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3624805128]Nivarian Race[/url] → MotherShip.
 [b]Optional[/b]: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3735573834]Nivarian Draconic Military[/url] (campaign / 战役 / 戦役 / кампания / campagne); Royalty (psycasts); [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3256974620]Milira Race[/url] + Ancot Library (starship batteries).
-[b]RimWorld 1.6 • v0.9.8 • Author / 作者 / 作者 / Автор / Auteur: 尹怨怨[/b]
+[b]RimWorld 1.6 • v0.9.9 • Author / 作者 / 作者 / Автор / Auteur: 尹怨怨[/b]
 Nivarian Race & original mothership assets: keeptpa. Required mods are separate downloads. / 原版素材归 keeptpa；前置模组需另行订阅。
+
+[h2]0.9.9[/h2]
+Storm Ship / Sage Ship / Warp Prism; two-phase warp; mission-only research option. 暴风舰爆炸25点（建筑×5），新增贤者舰与折跃棱镜、双阶段折跃及任务研究开关。
 
 [h2]GitHub[/h2]
 [url=https://github.com/KuiYiyinRua/NivarianMotherShip]GitHub · 完整源码 / Full source[/url]

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework><LangVersion>latest</LangVersion><AssemblyName>NivarianCommander.StormShip.Multiplayer</AssemblyName><Version>0.9.8</Version>
+    <OutputPath>../Assemblies/</OutputPath><AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath><EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <CommanderAssembly Condition="'$(CommanderAssembly)' == ''">$(MSBuildThisFileDirectory)../../1.6/Assemblies/NivarianCommander.dll</CommanderAssembly>
+  </PropertyGroup>
+  <ItemGroup><Compile Include="*.cs" />
+    <Reference Include="Assembly-CSharp"><HintPath>$(GameRoot)/RimWorldWin64_Data/Managed/Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0MultiplayerAPI"><HintPath>$(MultiplayerApiAssembly)</HintPath><Private>false</Private></Reference>
+    <Reference Include="NivarianCommander"><HintPath>$(CommanderAssembly)</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

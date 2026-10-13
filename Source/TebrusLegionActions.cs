@@ -53,6 +53,8 @@ namespace NivarianCommander
                     pawn.health.Notify_HediffChanged(marker); StatDefOf.MoveSpeed.Worker.ClearCacheForThing(pawn);
                 }
                 LordMaker.MakeNewLord(faction, new LordJob_LegionAssault(), map, batch.members);
+                GroundReinforcementArrival.Send(map, center, batch.members);
+                batch.awaitingDrop = true;
             }
             catch (Exception error)
             { owner.Retire(batch); Log.Error("[NMC] Tebrus spawn transaction rolled back: " + error); Reject(NmcText.Get("NMC_Text0470")); return; }

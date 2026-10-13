@@ -10,7 +10,7 @@ namespace NivarianCommander
     public sealed class CommanderSettings : ModSettings
     {
         public bool showShortcut = true;
-        public bool unlockAllResearch;
+        public bool researchWithoutMissions;
         public bool hudCollapsed, hudPositioned;
         public float hudCenterX = .5f, hudCenterY;
         public List<string> hudSlots = new List<string> { "", "", "", "", "", "" };
@@ -18,7 +18,7 @@ namespace NivarianCommander
         public override void ExposeData()
         {
             Scribe_Values.Look(ref showShortcut, "showCommanderShortcut", true);
-            Scribe_Values.Look(ref unlockAllResearch, "unlockAllResearch", false);
+            Scribe_Values.Look(ref researchWithoutMissions, "researchWithoutMissions", false);
             Scribe_Values.Look(ref hudCollapsed, "commanderHudCollapsed");
             Scribe_Values.Look(ref hudPositioned, "commanderHudPositioned");
             Scribe_Values.Look(ref hudCenterX, "commanderHudCenterX", .5f);

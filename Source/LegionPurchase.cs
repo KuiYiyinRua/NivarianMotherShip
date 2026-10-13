@@ -23,6 +23,7 @@ namespace NivarianCommander
             string blocked = DefenseActions.Unavailable(map, ability);
             if (blocked != null) return blocked;
             if (NativeFaction == null) return NmcText.Get("NMC_Text0281");
+            if (ability != 15 && GroundReinforcementArrival.Unavailable != null) return GroundReinforcementArrival.Unavailable;
             return null;
         }
     }

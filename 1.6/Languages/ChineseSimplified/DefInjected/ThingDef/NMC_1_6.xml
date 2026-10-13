@@ -9,7 +9,7 @@
 
 最多储存10000化合燃料，在地图内升空期间每秒消耗1单位。远程航行的耗油与穿梭机相同，航程受燃料储备限制。起飞无需等待额外冷却，但必须清除舰船上方的屋顶；降落需要足够的空地。
 
-同时启用米莉拉种族后，可在停泊时选择“升级星舰动力”。殖民者会搬运并安装10个米莉拉星舰电池；完成后，每次起飞消耗200化合燃料，地图内飞行和世界地图航行均不再持续耗油。升级进度会保留，电池安装后消耗。</NMC_Carrier.description>
+停泊时可升级星舰动力，需要10份电池。米莉拉星舰电池、不稳定能量电池各计1份，虚空电池计2份，可混合投入；原版电池须先卸载打包。升级中再次点击可取消并退还全部已投入电池。完成后的起飞费用与免持续耗油效果保持不变。</NMC_Carrier.description>
   <NMC_CarrierIncoming.label>涅瓦莲航母（降落）</NMC_CarrierIncoming.label>
   <NMC_CarrierLeaving.label>涅瓦莲航母（起飞）</NMC_CarrierLeaving.label>
   <NMC_GravityFrigate.label>涅瓦莲引力舰</NMC_GravityFrigate.label>
@@ -21,7 +21,7 @@
 
 最多储存600化合燃料，在地图内升空期间每5秒消耗1单位。远程航行的耗油为穿梭机的一半，航程受燃料储备限制。起飞无需等待额外冷却，上方须无屋顶；降落需要足够的空地。
 
-同时启用米莉拉种族后，可在停泊时选择“升级星舰动力”。殖民者会搬运并安装2个米莉拉星舰电池；完成后，每次起飞消耗100化合燃料，地图内飞行和世界地图航行均不再持续耗油。升级进度会保留，电池安装后消耗。</NMC_GravityFrigate.description>
+停泊时可升级星舰动力，需要2份电池。米莉拉星舰电池、不稳定能量电池各计1份，虚空电池计2份，可混合投入；原版电池须先卸载打包。升级中再次点击可取消并退还全部已投入电池。完成后的起飞费用与免持续耗油效果保持不变。</NMC_GravityFrigate.description>
   <NMC_GravityFrigateIncoming.label>涅瓦莲引力舰（降落）</NMC_GravityFrigateIncoming.label>
   <NMC_GravityFrigateLeaving.label>涅瓦莲引力舰（起飞）</NMC_GravityFrigateLeaving.label>
   <NMC_CarrierInterceptor.label>涅瓦莲舰载机</NMC_CarrierInterceptor.label>
@@ -133,4 +133,33 @@
 殖民者会将允许的食物运入设施，转化为营养储备。可在“营养”页调整食物种类，并在选中设施时查看当前消耗和产量。设施关闭、营养耗尽或停止运行时，母舰能量也会停止产出。
 
 建造时先部署核心，再运入所需材料，由母舰自动完成施工。这座设施只用于供能，不能培养人员或胚胎。</NMC_NutrientEnergyTower.description>
+  <NMC_WarpPrism.label>涅瓦莲折跃舰</NMC_WarpPrism.label>
+  <NMC_WarpPrism.description>无武装的涅瓦莲折跃运输舰。占地3×3格，基础生命值350，载重1000千克；飞行速度与引力舰相同。最多储存600化合燃料，地图飞行和能量场模式每10秒消耗1单位，世界航行消耗为引力舰的一半。
+
+升空后可切换能量场模式，展开为中心对称的棱镜并缓速旋转。切换需要1秒；切换期间及展开后不能移动、降落或舰船折跃。下方半径6格完整继承主能量场的供电与单位充能，同一地图的所有能量场共用10000W上限。殖民者可选择主能量场或任意展开棱镜折跃，舰船只能折跃至主能量场。
+
+停泊时可用2份电池升级星舰动力：米莉拉星舰电池、不稳定能量电池各计1份，虚空电池计2份，可混合使用；原版电池须卸载打包。升级后每次起飞消耗50化合燃料，地图飞行、能量场维持及世界航行不再持续耗油。</NMC_WarpPrism.description>
+  <NMC_WarpPrismIncoming.label>涅瓦莲折跃舰（降落）</NMC_WarpPrismIncoming.label>
+  <NMC_WarpPrismLeaving.label>涅瓦莲折跃舰（起飞）</NMC_WarpPrismLeaving.label>
+  <NMC_StormShip.label>涅瓦莲暴风舰</NMC_StormShip.label>
+  <NMC_StormShip.description>涅瓦莲的远程雷暴攻城舰。占地5×5格，基础生命值2000，载重3500千克。升空后自动攻击100格内的敌人，也可指定攻击目标。每3秒发射一枚雷暴球：直击造成20伤害、80%穿甲；命中后在落点周围3×3格内再造成25伤害、35%穿甲。两段伤害对建筑均为5倍，爆炸不随距离衰减。
+
+飞行速度、化合燃料容量和消耗与航母相同：最多储存10000燃料，地图飞行每秒消耗1，世界航行每格3、最低50。可通过能量场折叠前往已部署的主能量场。
+
+停泊时可用5份兼容电池升级星舰动力，正好是航母的一半。米莉拉星舰电池和不稳定能量电池各计1份，虚空电池计2份，可混用；原版电池须卸载打包。升级中可取消并退还投入的电池。升级后每次起飞消耗200化合燃料，随后地图和世界航行不再持续耗油。</NMC_StormShip.description>
+  <NMC_StormShipIncoming.label>涅瓦莲暴风舰（降落）</NMC_StormShipIncoming.label>
+  <NMC_StormShipLeaving.label>涅瓦莲暴风舰（起飞）</NMC_StormShipLeaving.label>
+  <NMC_StormOrb.label>雷暴球</NMC_StormOrb.label>
+  <NMC_SageShip.label>涅瓦莲贤者舰</NMC_SageShip.label>
+  <NMC_SageShip.description>涅瓦莲贤者舰是一艘轻型反隐与对地作战舰船，占地2×2格，基础生命值350，载重200千克。
+
+攻击模式默认关闭，开启并升空后攻击12格内的地面敌人。每0.5秒同时发射两束蓝色棱晶激光，每束6点基础伤害、30%穿甲；每次齐射消耗1化合燃料。不能攻击飞行或被引力束抬升的目标。
+
+被动解除半径50格内敌对单位的隐身，停泊时同样有效，无需开启攻击模式。离开探测范围后，目标按原有隐身恢复规则恢复。
+
+地图飞行和世界航行速度均比引力舰快25%。地图升空每10秒消耗1化合燃料；远航每格0.75、最低12.5，均为引力舰的一半。燃料容量600。可折跃至已解锁的折跃能量场。
+
+星舰动力升级需要1份电池（引力舰的一半），支持米莉拉星舰电池、不稳定能量电池或虚空电池；电池按完整物品投入。升级后每次起飞消耗50化合燃料，免持续飞行耗油，攻击仍每次消耗1燃料。</NMC_SageShip.description>
+  <NMC_SageShipIncoming.label>涅瓦莲贤者舰（降落）</NMC_SageShipIncoming.label>
+  <NMC_SageShipLeaving.label>涅瓦莲贤者舰（起飞）</NMC_SageShipLeaving.label>
 </LanguageData>

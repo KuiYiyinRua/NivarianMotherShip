@@ -24,15 +24,13 @@
   <NMC_Text0022>自动引力束：开启</NMC_Text0022>
   <NMC_Text0023>自动引力束：关闭</NMC_Text0023>
   <NMC_Text0024>升空作战时，自动用引力束举起16格内最近的地面敌人。关闭后仍可手动指定目标。</NMC_Text0024>
-  <NMC_Text0025>星舰动力：已升级</NMC_Text0025>
-  <NMC_Text0026>星舰电池：{0}/{1}</NMC_Text0026>
+  <NMC_Text0025>星舰动力已升级</NMC_Text0025>
   <NMC_Text0027>升级星舰动力</NMC_Text0027>
-  <NMC_Text0028>殖民者将搬运并安装{0}个米莉拉星舰电池。完成后，每次起飞消耗{1}化合燃料，地图内作战与世界航行均不再持续耗油。电池安装后永久消耗；须停泊才能运入。</NMC_Text0028>
+  <NMC_Text0028>殖民者将搬运并安装{0}份电池。米莉拉星舰电池与原版不稳定能量电池各计1份，虚空电池计2份，可混合投入。原版电池须先卸载打包。升级中再次点击可取消并退还全部已投入电池。完成后每次起飞消耗{1}化合燃料，地图内作战及世界航行不再持续耗油。须停泊才能开始升级。</NMC_Text0028>
   <NMC_Text0029>星舰电池已安装</NMC_Text0029>
-  <NMC_Text0030>等待殖民者搬运电池（搬运工作）</NMC_Text0030>
   <NMC_Text0031>请先降落</NMC_Text0031>
   <NMC_Text0032>{0}已完成星舰动力升级。</NMC_Text0032>
-  <NMC_Text0033>没有可搬运的米莉拉星舰电池</NMC_Text0033>
+  <NMC_Text0033>没有可搬运的兼容电池（原版电池须先卸载打包）</NMC_Text0033>
   <NMC_Text0034>目标地点已不可用，请重新选择</NMC_Text0034>
   <NMC_Text0035>冷却剩余：{0}</NMC_Text0035>
   <NMC_Text0036>需要 {0} P + {1} V</NMC_Text0036>
@@ -282,9 +280,6 @@
   <NMC_Text0254>殖民者已抵达能量场，请确认其状态后重新安排工作。</NMC_Text0254>
   <NMC_Text0255>折跃未能完成，请确认殖民者当前的位置后再试。</NMC_Text0255>
   <NMC_Text0256>折跃至能量场</NMC_Text0256>
-  <NMC_Text0257>立即前往已部署的折跃能量场，也可跨越不同殖民地。若中心位置被占用，将在场内最近的安全空地抵达。
-
-折跃不额外消耗能量，也无需等待冷却。殖民者会中止当前工作，放下搬运中的物品，随身装备和背包一并带走。</NMC_Text0257>
   <NMC_Text0258>佐拉亚军团 · </NMC_Text0258>
   <NMC_Text0259>战术舰队 · </NMC_Text0259>
   <NMC_Text0260>回收中</NMC_Text0260>
@@ -543,10 +538,51 @@
   <NMC_CarrierSteelAutoFill>自动填装龙霜钢。关闭后仍可右键命令殖民者填装。</NMC_CarrierSteelAutoFill>
   <NMC_CarrierSteelMissing>没有可搬运的龙霜钢</NMC_CarrierSteelMissing>
   <NMC_SettingsShortcut>显示母舰指挥快捷栏</NMC_SettingsShortcut>
-  <NMC_SettingsUnlockAll>直接解锁本拓展全部科技（跳过任务）</NMC_SettingsUnlockAll>
-  <NMC_SettingsUnlockAllHint>默认关闭。开启后，在游戏继续运行时直接完成本拓展全部研究，跳过连续体任务与支援的母舰等级限制；资源消耗和冷却仍然有效。关闭后保留已完成的研究，恢复等级限制。联机中开关通过同步命令共享，加入者沿用主机存档状态。</NMC_SettingsUnlockAllHint>
+  <NMC_SettingsUnlockAll>无需完成对应任务即可研究科技</NMC_SettingsUnlockAll>
+  <NMC_SettingsUnlockAllHint>默认关闭。勾选后，仅取消本扩展科技的对应任务要求，仍需满足前置科技、支付材料并正常研究。不会直接完成科技或任务，也不跳过支援的母舰等级要求。关闭后恢复任务要求；已完成的科技保留。</NMC_SettingsUnlockAllHint>
   <NMC_Text0748>时空波动：移动速度 ×2</NMC_Text0748>
   <NMC_Text0749>营养储备</NMC_Text0749>
   <NMC_Text0750>目标营养储量：{0}。拖动储量条调整目标。降低目标不会丢弃已有营养；设为0停止补料。食物种类可在“营养”页设置。</NMC_Text0750>
   <NMC_Text0751>自动补充营养。关闭后不再安排自动补料，已有营养仍正常消耗；仍可右键命令殖民者补料。</NMC_Text0751>
+  <NMC_Text0752>取消升级（{0}/{1}）</NMC_Text0752>
+  <NMC_Text0753>只有本模组的玩家舰船可以折叠</NMC_Text0753>
+  <NMC_Text0754>请等待舰船完成起降或入场折跃</NMC_Text0754>
+  <NMC_Text0755>将舰船折叠到当前能量场内的空闲位置。保留舰体、朝向、货物、乘员与升级进度；航母先收回舰载机。起降或入场折跃期间不可使用。召唤舰队保留原持续时间。
+
+折跃使用涅瓦莲建筑打印特效：原地准备4秒，传送到实际落点后再打印4秒（游戏时间）。前后两个阶段受到攻击均会正常受伤。
+
+已起飞的舰船可折跃至地形或建筑上方，并保持飞行状态；地面舰船仍需满足正常落点条件。</NMC_Text0755>
+  <NMC_WarpFuelRate>每10秒1单位</NMC_WarpFuelRate>
+  <NMC_WarpChanging>模式切换中：{0}秒</NMC_WarpChanging>
+  <NMC_WarpFieldStatus>能量场模式：半径6格，人员可折跃至此</NMC_WarpFieldStatus>
+  <NMC_WarpFlightStatus>飞行模式：能量场未展开</NMC_WarpFlightStatus>
+  <NMC_WarpFlightMode>飞行模式</NMC_WarpFlightMode>
+  <NMC_WarpFieldMode>能量场模式</NMC_WarpFieldMode>
+  <NMC_WarpLocked>先切换至飞行模式；展开能量场及切换期间无法移动、降落或舰船折跃。</NMC_WarpLocked>
+  <NMC_WarpModeDescription>用1秒切换模式。能量场模式下静止悬浮并缓速旋转，在下方半径6格提供与主场相同的供电、单位充能和人员折跃接收。同一地图共用10000W供电上限。仍属于飞行并按相同速率耗油；舰船不能折跃至棱镜。</NMC_WarpModeDescription>
+  <NMC_WarpTakeoffFirst>请先升空并完成起飞。</NMC_WarpTakeoffFirst>
+  <NMC_WarpDestinationLost>目标棱镜已关闭、缺油或离开原位置，请重新选择折跃目的地。</NMC_WarpDestinationLost>
+  <NMC_WarpPrimaryDestination>主能量场</NMC_WarpPrimaryDestination>
+  <NMC_WarpPrismDestination>折跃棱镜：{0}（{1}, {2}）</NMC_WarpPrismDestination>
+  <NMC_WarpRecallDescription>选择主能量场或已展开的折跃棱镜作为目的地，可跨地图折跃。随身装备和背包一并带走，放下搬运中的物品并中止当前工作。
+
+折跃使用涅瓦莲建筑打印特效：原地准备4秒，传送到实际落点后再打印4秒（游戏时间）。前后两个阶段受到攻击均会正常受伤。</NMC_WarpRecallDescription>
+  <NMC_WarpBusy>正在折跃（前摇4秒、后摇4秒），期间正常受伤</NMC_WarpBusy>
+  <NMC_WarpDropUnavailable>涅瓦莲空投舱暂不可用</NMC_WarpDropUnavailable>
+  <NMC_StormAttack>雷暴球攻击</NMC_StormAttack>
+  <NMC_StormAttackDesc>指定100格内的敌方目标。每3秒发射一枚雷暴球：20伤害/80%穿甲直击，随后3×3格15伤害/35%穿甲爆炸；两段对建筑均为5倍。</NMC_StormAttackDesc>
+  <NMC_StormMustFly>需处于飞行状态，且未在折跃中</NMC_StormMustFly>
+  <NMC_StormFireAtWill>自动开火</NMC_StormFireAtWill>
+  <NMC_StormAutoDesc>升空后自动攻击射程内可见的敌人。指定的攻击目标不受此开关影响。</NMC_StormAutoDesc>
+  <NMC_StormClearTarget>清除指定目标</NMC_StormClearTarget>
+  <NMC_StormClearDesc>清除手动指定的目标；自动开火开启时仍会自动索敌。</NMC_StormClearDesc>
+  <NMC_StormStatus>雷暴球：射程100；冷却剩余{0}秒</NMC_StormStatus>
+  <NMC_SageAttackMode>攻击模式</NMC_SageAttackMode>
+  <NMC_SageAttackModeDesc>开启后，升空的贤者舰自动攻击12格内地面敌人。每0.5秒齐射两束激光，每束6伤害、30%穿甲，每次齐射消耗1化合燃料；电池升级不免除攻击耗油。关闭后停止攻击，反隐仍生效。</NMC_SageAttackModeDesc>
+  <NMC_SageTarget>指定地面目标</NMC_SageTarget>
+  <NMC_SageTargetDesc>指定12格内地面敌人；目标失效后自动寻找其他地面敌人。无法攻击空中或被引力束抬升的目标。</NMC_SageTargetDesc>
+  <NMC_SageMustAttack>须先升空并开启攻击模式，且未在折跃中。</NMC_SageMustAttack>
+  <NMC_SageStatus>攻击模式：{0}；被动反隐半径：50格</NMC_SageStatus>
+  <NMC_SageOn>开启</NMC_SageOn>
+  <NMC_SageOff>关闭</NMC_SageOff>
 </LanguageData>

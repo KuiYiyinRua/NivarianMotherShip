@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using Nivarian.Helper;
 using Nivarian_Race.Code.Defs;
+using Nivarian_Race.Code.NivarianThing;
 using RimWorld;
 using Verse;
 
@@ -175,6 +177,7 @@ namespace NivarianCommander
             decimal cost = PurchaseCost(value);
             decimal debit = Math.Ceiling(Math.Max(0m, cost - state.purchaseCredit));
             if (debit > int.MaxValue || debit > NativeLedger.Balance("PowerCoin")) { Reply(request, false, NmcText.Get("NMC_Text0342")); return; }
+            if (!PointShopDelivery.NativeSupplyAvailable) { Reply(request, false, NmcText.Get("NMC_Text0345")); return; }
             if (!TryDropCell(map, out var drop)) { Reply(request, false, NmcText.Get("NMC_Text0343")); return; }
             var currency = DefDatabase<NivarianMotherShipRequestCurrencyDef>.GetNamedSilentFail("PowerCoin");
             if (currency == null) { Reply(request, false, NmcText.Get("NMC_Text0344")); return; }
@@ -253,6 +256,14 @@ namespace NivarianCommander
     {
         public ThingOwner<Thing> cargo, donated;
         int retry;
+        static NivarianMotherShipRequestDef NativeSupply => DefDatabase<NivarianMotherShipRequestDef>.GetNamedSilentFail("Request_Droppod_OrbitFood");
+        public static bool NativeSupplyAvailable => NativeSupply != null
+            && NivarianLotusDropPodDefOf.NivarianLotusDropMarker?.thingClass != null
+            && typeof(NivarianLotusDropMarker).IsAssignableFrom(NivarianLotusDropPodDefOf.NivarianLotusDropMarker.thingClass)
+            && NivarianLotusDropPodDefOf.NivarianLotusDropPodIncoming?.thingClass != null
+            && typeof(NivarianLotusDropPodIncoming).IsAssignableFrom(NivarianLotusDropPodDefOf.NivarianLotusDropPodIncoming.thingClass)
+            && NivarianLotusDropPodDefOf.NivarianLotusDropPodLanded?.thingClass != null
+            && typeof(NivarianLotusDropPodLanded).IsAssignableFrom(NivarianLotusDropPodDefOf.NivarianLotusDropPodLanded.thingClass);
         public PointShopDelivery(Map map) : base(map)
         { cargo = new ThingOwner<Thing>(this, false); donated = new ThingOwner<Thing>(this, false); }
         public IThingHolder ParentHolder => map;
@@ -270,16 +281,31 @@ namespace NivarianCommander
         }
         public void Deliver(IntVec3 drop)
         {
-            foreach (var item in cargo.OrderBy(t => t.thingIDNumber).Take(12).ToList())
+            // The native scheduler returns void and silently rejects invalid defs/cells.
+            // Keep paid cargo in its saved owner until the full native chain is available.
+            if (!NativeSupplyAvailable || !drop.InBounds(map)) return;
+            var supply = NativeSupply;
+            var batch = cargo.OrderBy(t => t.thingIDNumber).Take(12).ToList();
+            if (batch.Count == 0) return;
+            foreach (var item in batch) cargo.Remove(item);
+            try
             {
-                cargo.Remove(item);
-                try { TradeUtility.SpawnDropPod(drop, map, item); }
-                catch (Exception ex)
+                // Pass the purchased instances, including quality/stuff/health, into
+                // the same saved marker -> incoming pod -> landed pod chain as supplies.
+                NivarianHelper.ScheduleNivarianLotusDropPod(map, drop, batch,
+                    supply.droppodMarkerDelayTicks, supply.droppodOpenDelaySeconds,
+                    NivarianLotusDropPodDefOf.NivarianLotusDropMarker,
+                    NivarianLotusDropPodDefOf.NivarianLotusDropPodIncoming,
+                    NivarianLotusDropPodDefOf.NivarianLotusDropPodLanded);
+            }
+            catch (Exception ex)
+            {
+                foreach (var item in batch)
                 {
                     if (!item.Destroyed && !item.Spawned && !ThingOwnerUtility.SpawnedOrAnyParentSpawned(item.ParentHolder))
                     { item.holdingOwner?.Remove(item); cargo.TryAdd(item, false); }
-                    Log.ErrorOnce("[NMC-Shop] Orbital delivery deferred: " + ex.Message, 1940611402);
                 }
+                Log.ErrorOnce("[NMC-Shop] Native lotus delivery deferred: " + ex.Message, 1940611402);
             }
         }
         public override void ExposeData()

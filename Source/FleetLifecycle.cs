@@ -106,7 +106,8 @@ namespace NivarianCommander
             // InnerThing after the payload is removed from its holdingOwner.
             Thing root = thing;
             while (root.ParentHolder is MinifiedThing wrapper && wrapper.InnerThing == root) root = wrapper;
-            root.Destroy(DestroyMode.Vanish);
+            if (root.Spawned) ProjectionContext.Run(root.Map, () => root.Destroy(DestroyMode.Vanish));
+            else root.Destroy(DestroyMode.Vanish);
         }
         public void Tick(Map map)
         {

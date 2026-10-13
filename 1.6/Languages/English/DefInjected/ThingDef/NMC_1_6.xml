@@ -9,7 +9,7 @@ In aerial combat, detects enemies within 60 cells and launches one interceptor p
 
 Stores 10,000 chemfuel and consumes 1 per second in local flight. World travel uses shuttle fuel rules, with range limited by fuel. No extra takeoff cooldown; clear roofs above and enough ground space for landing.
 
-With Milira Race enabled, choose “Upgrade starship propulsion” while landed. Colonists install 10 Milira starship batteries. Then each takeoff costs 200 chemfuel, with no continuous fuel use locally or on the world map. Upgrade progress is saved; installed batteries are consumed.</NMC_Carrier.description>
+Upgrade the starship drive while grounded using 10 battery units. Milira batteries and unstable power cells each count as 1; vanometric cells count as 2. Types can be mixed. Uninstall and pack vanilla cells first. Click again during installation to cancel and return all deposited batteries. The completed drive retains its fixed takeoff fuel cost and consumes no further fuel in flight.</NMC_Carrier.description>
   <NMC_CarrierIncoming.label>Nivarian carrier (landing)</NMC_CarrierIncoming.label>
   <NMC_CarrierLeaving.label>Nivarian carrier (takeoff)</NMC_CarrierLeaving.label>
   <NMC_GravityFrigate.label>Nivarian gravity ship</NMC_GravityFrigate.label>
@@ -21,7 +21,7 @@ The gravity beam lifts and stuns a ground enemy within 16 cells for 4 seconds, m
 
 Stores 600 chemfuel. Local flight consumes 1 every 5 seconds. World travel costs half a shuttle's fuel; range is fuel-limited. No extra takeoff cooldown; unroofed launch and clear landing space required.
 
-With Milira Race enabled, landed ships can upgrade propulsion. Colonists install 2 Milira batteries. Then takeoff costs 100 chemfuel with no continuous consumption locally or worldwide. Progress is saved; installed batteries are consumed.</NMC_GravityFrigate.description>
+Upgrade the starship drive while grounded using 2 battery units. Milira batteries and unstable power cells each count as 1; vanometric cells count as 2. Types can be mixed. Uninstall and pack vanilla cells first. Click again during installation to cancel and return all deposited batteries. The completed drive retains its fixed takeoff fuel cost and consumes no further fuel in flight.</NMC_GravityFrigate.description>
   <NMC_GravityFrigateIncoming.label>Nivarian gravity ship (landing)</NMC_GravityFrigateIncoming.label>
   <NMC_GravityFrigateLeaving.label>Nivarian gravity ship (takeoff)</NMC_GravityFrigateLeaving.label>
   <NMC_CarrierInterceptor.label>Nivarian interceptor</NMC_CarrierInterceptor.label>
@@ -133,4 +133,33 @@ The crystal occupies no ground space and does not block movement. It can be depl
 Colonists deliver allowed foods, converted into nutrient reserves. Adjust food types in the Nutrition tab; inspect consumption and output when selected. Turning off, running out of nutrients or stopping operation also stops energy production.
 
 Deploy a core, deliver materials and let the mothership build it. This facility only supplies energy; it cannot grow people or embryos.</NMC_NutrientEnergyTower.description>
+  <NMC_WarpPrism.label>Nivarian warp ship</NMC_WarpPrism.label>
+  <NMC_WarpPrism.description>Unarmed 3×3 transport with 350 base hit points and 1000 kg capacity. Same speed as the gravity frigate, half its fuel consumption: 1 chemfuel per 10 seconds of local flight or field mode, and half its world-travel costs. Fuel capacity: 600.
+
+After takeoff, switch modes in 1 second. The deployed symmetric prism slowly rotates and cannot move, land or warp. Its radius-6 field supplies power and charges units, sharing the map’s 10000 W field budget. Colonists may warp to the main field or any deployed prism, across maps. Ships may warp only to the main field.
+
+Grounded starship upgrade costs 2 battery units, as for the gravity frigate. Milira starship and unstable power cells count as 1 each; vanometric cells count as 2. Pack building batteries first. After upgrading, takeoff costs 50 chemfuel and continued flight, field operation and world travel use no fuel.</NMC_WarpPrism.description>
+  <NMC_WarpPrismIncoming.label>Nivarian warp ship (landing)</NMC_WarpPrismIncoming.label>
+  <NMC_WarpPrismLeaving.label>Nivarian warp ship (takeoff)</NMC_WarpPrismLeaving.label>
+  <NMC_StormShip.label>Nivarian Tempest</NMC_StormShip.label>
+  <NMC_StormShip.description>A long-range Nivarian siege ship. Occupies 5×5 cells, with 2,000 base HP and 3,500 kg cargo capacity. While airborne, fires a thunder orb every 3 seconds at hostiles within 100 cells, automatically or at a designated target. Direct hit: 20 damage, 80% armor penetration. The following 3×3 blast: 25 damage, 35% penetration, no falloff. Both deal 5× damage to buildings.
+
+Speed and chemfuel use match the carrier: capacity 10,000; local flight uses 1 per second; world travel uses 3 per tile, minimum 50. Can fold to the main warp energy field.
+
+A grounded ship can install 5 battery units, half the carrier requirement. Milira starship batteries and unstable power cells each count as 1; vanometric power cells count as 2. Types may be mixed; pack vanilla cells first. Cancel an unfinished upgrade to refund inputs. Once installed, each takeoff costs 200 chemfuel, with no further local or world flight consumption.</NMC_StormShip.description>
+  <NMC_StormShipIncoming.label>Nivarian Tempest (landing)</NMC_StormShipIncoming.label>
+  <NMC_StormShipLeaving.label>Nivarian Tempest (taking off)</NMC_StormShipLeaving.label>
+  <NMC_StormOrb.label>thunder orb</NMC_StormOrb.label>
+  <NMC_SageShip.label>Nivarian sage ship</NMC_SageShip.label>
+  <NMC_SageShip.description>A compact 2×2 Nivarian detection and ground-attack ship. Base hull: 350 HP; cargo: 200 kg.
+
+Attack mode starts off. While airborne and enabled, fires two blue prism beams every 0.5 seconds at ground enemies within 12 cells. Each beam deals 6 base damage with 30% armor penetration; each volley costs 1 chemfuel. Flying and gravity-lifted targets are excluded.
+
+Passively reveals hostile cloaked units within 50 cells, even while landed and with weapons off. Cloaking recovers by its normal rules after leaving coverage.
+
+Map and world flight are 25% faster than the gravity frigate. Airborne fuel: 1 per 10 seconds. World fuel: 0.75 per tile, minimum 12.5. Both are half the frigate rate. Tank: 600. Supports warp energy field recall.
+
+Starship upgrade: 1 battery unit, half the frigate cost. Accepts Milira, unstable or vanometric cells as whole items. Upgraded launches cost 50 chemfuel with no ongoing flight consumption; firing still costs 1 per volley.</NMC_SageShip.description>
+  <NMC_SageShipIncoming.label>Nivarian sage ship (landing)</NMC_SageShipIncoming.label>
+  <NMC_SageShipLeaving.label>Nivarian sage ship (taking off)</NMC_SageShipLeaving.label>
 </LanguageData>

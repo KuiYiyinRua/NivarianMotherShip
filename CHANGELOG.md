@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.9.9
+
+- Added the Storm Ship, Sage Ship and Warp Prism with their assets, sounds and optional Multiplayer adapters.
+- Preserves the author's Storm Ship balance: 20 direct damage and 25 blast damage over a 3×3 area, both ×5 against buildings.
+- Warp departure and arrival each take 240 ticks. Damage applies during both phases; airborne ships retain flight and preserve ground objects.
+- Added ship field recall, refundable battery upgrades, native lotus-pod deliveries and energy-field performance improvements.
+- Replaced the complete-all-research option with a default-off mission requirement bypass. Technology prerequisites, research work, material costs and support mothership levels remain required. Completed research is retained. The old checkbox is not carried into this new option.
+- Includes complete current source, five-language localization and five optional Multiplayer assemblies. Their existing assembly identities are retained for compatibility; the core assembly binding version remains 0.9.8 while its file/release version is 0.9.9.
+- Validation coverage and limitations are recorded in Docs/VALIDATION.md.
+
 ## 0.9.8
 
 - Retuned Spacetime Wave: friendly pawns and animals move at 2× speed, friendly work runs at 10× speed, and friendly turret burst cooldowns become one third. Nivarian research and manufacturing run at 10× speed, including carrier interceptor manufacturing; P/V income remains unchanged.

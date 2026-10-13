@@ -10,12 +10,12 @@ version=ET.parse(mod/'About/About.xml').findtext('modVersion')
 files=[]
 for folder in ['1.6','About','Royalty','NoRoyalty','Multiplayer']:
  for p in (mod/folder).rglob('*'):
-  if p.is_file() and 'Source' not in p.relative_to(mod).parts and p.suffix.lower() not in ['.pdb','.log']:
+  if p.is_file() and not {'Source','ShipUpgradeSource','WarpPrismSource','StormShipSource','SageShipSource','bin','obj'}.intersection(p.relative_to(mod).parts) and p.suffix.lower() not in ['.pdb','.log']:
    files.append(p)
 files.extend([mod/'LoadFolders.xml',mod/'README.md',mod/'CHANGELOG.md'])
-files.extend(p for p in (mod/'Docs').glob('*.md'))
+files.extend(p for p in (mod/'Docs').glob('*.md') if not p.name.startswith('DESYNC_'))
 files.append(mod/'Directory.Build.props')
-for folder in ['Source','Multiplayer/Source']:
+for folder in ['Source','Multiplayer/Source','Multiplayer/ShipUpgradeSource','Multiplayer/WarpPrismSource','Multiplayer/StormShipSource','Multiplayer/SageShipSource']:
  files.extend(p for p in (mod/folder).glob('*') if p.is_file() and p.suffix in ['.cs','.csproj'])
 files.append(mod/'Tools/package.py')
 files.extend(p for p in (mod/'Tools/Localization').glob('*') if p.is_file() and p.suffix in ['.py','.json'])

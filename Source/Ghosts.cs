@@ -48,11 +48,13 @@ namespace NivarianCommander
         public int id, remaining = 7200, createdLocalTick;
         public Map originMap;
         public bool firstTickPending = true;
+        public bool awaitingDrop;
         public List<Pawn> members = new List<Pawn>();
         public void ExposeData()
         {
             Scribe_Values.Look(ref id, "id"); Scribe_Values.Look(ref remaining, "remainingLocalTicks", 7200);
             Scribe_Values.Look(ref createdLocalTick, "createdLocalTick");
+            Scribe_Values.Look(ref awaitingDrop, "awaitingDrop");
             Scribe_References.Look(ref originMap, "originMap"); Scribe_Values.Look(ref firstTickPending, "firstTickPending", true);
             // Native death destroys the pawn's map object while its corpse still owns it.
             Scribe_Collections.Look(ref members, "members", saveDestroyedThings: true, lookMode: LookMode.Reference);
@@ -70,6 +72,13 @@ namespace NivarianCommander
             if (batches.Count == 0) return;
             foreach (var batch in batches.Where(b => b.originMap == map).ToList())
             {
+                if (batch.awaitingDrop)
+                {
+                    if (!batch.members.Any(p => p != null && p.Spawned)
+                        && batch.members.Any(p => p != null && !p.Destroyed && !p.Dead)) continue;
+                    batch.awaitingDrop = false; batch.firstTickPending = false;
+                    continue;
+                }
                 if (batch.firstTickPending)
                 {
                     batch.firstTickPending = false;
@@ -126,6 +135,7 @@ namespace NivarianCommander
             var reason = DefenseActions.Unavailable(map, 9);
             if (reason != null) return reason;
             if (NativeFaction == null) return NmcText.Get("NMC_Text0274");
+            if (GroundReinforcementArrival.Unavailable != null) return GroundReinforcementArrival.Unavailable;
             if (DefDatabase<PawnKindDef>.GetNamedSilentFail("NMC_GhostGuard") == null
                 || DefDatabase<HediffDef>.GetNamedSilentFail("NMC_GhostIdentity") == null
                 || DefDatabase<DutyDef>.GetNamedSilentFail("NMC_GhostAssault") == null) return NmcText.Get("NMC_Text0275");
@@ -169,6 +179,8 @@ namespace NivarianCommander
                     CalibrateSpawnedMember(batch.members[i]);
                 }
                 LordMaker.MakeNewLord(NativeFaction, new LordJob_GhostAssault(), map, batch.members);
+                GroundReinforcementArrival.Send(map, cell, batch.members);
+                batch.awaitingDrop = true;
             }
             finally
             {

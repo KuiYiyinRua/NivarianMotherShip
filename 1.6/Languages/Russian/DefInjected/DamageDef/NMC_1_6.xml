@@ -2,4 +2,7 @@
 <LanguageData>
   <NMC_TebrusPulseDamage.label>Пси-импульс</NMC_TebrusPulseDamage.label>
   <NMC_TebrusStormDamage.label>Пси-шторм</NMC_TebrusStormDamage.label>
+  <NMC_StormImpactDamage.label>удар грозового шара</NMC_StormImpactDamage.label>
+  <NMC_StormBlastDamage.label>взрыв грозового шара</NMC_StormBlastDamage.label>
+  <NMC_SageBeamDamage.label>Призменный луч мудреца</NMC_SageBeamDamage.label>
 </LanguageData>

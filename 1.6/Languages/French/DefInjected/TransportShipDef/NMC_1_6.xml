@@ -2,4 +2,7 @@
 <LanguageData>
   <NMC_CarrierShip.label>Porte-aéronefs nivarian</NMC_CarrierShip.label>
   <NMC_GravityFrigateShip.label>Vaisseau gravitationnel nivarian</NMC_GravityFrigateShip.label>
+  <NMC_WarpPrismShip.label>Vaisseau de transfert nivarian</NMC_WarpPrismShip.label>
+  <NMC_StormShipShip.label>Tempête nivarian</NMC_StormShipShip.label>
+  <NMC_SageShipShip.label>Vaisseau sage nivarian</NMC_SageShipShip.label>
 </LanguageData>

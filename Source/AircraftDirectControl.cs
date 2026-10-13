@@ -21,7 +21,7 @@ namespace NivarianCommander
             var selected = Find.Selector.SelectedObjectsListForReading;
             // Preserve the normal colonist menu for mixed selections.
             if (selected.Count == 0 || selected.Any(o => !(o is Building_NivarianAircraft ship)
-                || !ship.CombatFlight || ship.Faction != Faction.OfPlayer || ship.Map != map)) return;
+                || !ship.CanMoveInMap || ship.Faction != Faction.OfPlayer || ship.Map != map)) return;
             var cell = UI.MouseCell();
             foreach (var ship in selected.Cast<Building_NivarianAircraft>().OrderBy(s => s.thingIDNumber))
                 AircraftActions.Move(map, ship, cell);

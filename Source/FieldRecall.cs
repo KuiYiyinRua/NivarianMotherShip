@@ -12,6 +12,7 @@ namespace NivarianCommander
     {
         // Optional multiplayer integration owns cross-map timestamp conversion.
         public static Action<Pawn, Map, Map, Action> SpawnAcrossMaps = (pawn, source, destination, spawn) => spawn();
+        public static Action<Thing, Map, Map> AdjustShipPassengers = (ship, source, destination) => { };
     }
 
     public static class FieldRecallActions
@@ -25,22 +26,40 @@ namespace NivarianCommander
         {
             if (!ResearchFinished) return NmcText.Get("NMC_Text0245");
             if (!Eligible(pawn)) return NmcText.Get("NMC_Text0246");
-            if (!FieldEconomy.HasField) return NmcText.Get("NMC_Text0247");
+            if (FieldWarp.Pending(pawn)) return NmcText.Get("NMC_WarpBusy");
+            if (!FieldEconomy.HasField && !WarpPrismFields.AnyDestination) return NmcText.Get("NMC_Text0247");
             return null;
         }
 
         // Pure lookup, nearest first. Never consume random state while drawing a Gizmo.
-        static IntVec3 LandingCell(Pawn pawn, Map destination, IntVec3 center)
+        internal static IntVec3 LandingCell(Thing pawn, Map destination, IntVec3 center, float radius = FieldGroundGeometry.Radius)
         {
-            foreach (var cell in GenRadial.RadialCellsAround(center, FieldGroundGeometry.Radius, true))
+            bool flying = ShipFieldRecallActions.InFlight(pawn);
+            foreach (var cell in GenRadial.RadialCellsAround(center, radius, true))
             {
                 bool clear = true;
                 foreach (var occupied in GenAdj.OccupiedRect(cell, pawn.Rotation, pawn.def.Size))
                 {
-                    if (!occupied.InBounds(destination) || !occupied.Standable(destination)
-                        || !occupied.InHorDistOf(center, FieldGroundGeometry.Radius)) { clear = false; break; }
+                    if (!occupied.InBounds(destination) || !occupied.InHorDistOf(center, radius))
+                    { clear = false; break; }
+                    if (flying)
+                    {
+                        // Local flight already crosses terrain, roofs and ground structures.
+                        // Keep only map/field bounds, visibility and occupied airspace checks.
+                        if (occupied.Fogged(destination)) { clear = false; break; }
+                        foreach (var thing in occupied.GetThingList(destination))
+                            if (thing != pawn && InFlightObstacle(thing)) { clear = false; break; }
+                        if (!clear) break;
+                        continue;
+                    }
+                    if (!occupied.Standable(destination)
+                        || pawn is Building_NivarianAircraft && (occupied.Roofed(destination) || occupied.Fogged(destination)
+                            || !occupied.GetAffordances(destination).Contains(pawn.def.terrainAffordanceNeeded)))
+                    { clear = false; break; }
                     foreach (var thing in occupied.GetThingList(destination))
-                        if (thing != pawn && (thing is Pawn || thing is Building || thing is Fire))
+                        if (thing != pawn && (thing is Pawn || thing is Building || thing is Fire
+                            || thing is FleetShip || thing is Skyfaller || thing is IActiveTransporter
+                            || pawn is Building_NivarianAircraft && thing.def.plant?.IsTree == true))
                         { clear = false; break; }
                     if (!clear) break;
                 }
@@ -48,6 +67,8 @@ namespace NivarianCommander
             }
             return IntVec3.Invalid;
         }
+        static bool InFlightObstacle(Thing thing)
+            => ShipFieldRecallActions.InFlight(thing) || thing is Skyfaller || thing is IActiveTransporter;
 
         static void Reject(string reason, Pawn pawn)
             => Messages.Message(reason, pawn, MessageTypeDefOf.RejectInput, false);
@@ -60,17 +81,37 @@ namespace NivarianCommander
             if (source == null || !Find.Maps.Contains(source) || pawn.Map != source)
             { Reject(NmcText.Get("NMC_Text0248"), pawn); return; }
             var field = CommanderField.Current;
+            if (!FieldEconomy.HasField) { Reject(NmcText.Get("NMC_Text0247"), pawn); return; }
             if (field.revision != expectedRevision)
             { Reject(NmcText.Get("NMC_Text0249"), pawn); return; }
             var destination = field.fieldMap;
             var landing = LandingCell(pawn, destination, field.center);
             if (!landing.IsValid) { Reject(NmcText.Get("NMC_Text0250"), pawn); return; }
+            FieldWarp.Begin(pawn, destination, field.center, FieldGroundGeometry.Radius, expectedRevision);
+        }
+
+        internal static void Teleport(Map source, Pawn pawn, Map destination, IntVec3 landing,
+            Building_NivarianAircraft prism = null)
+        {
+            if (source == null || pawn?.Map != source || !Eligible(pawn) || FieldWarp.Pending(pawn)) return;
+            if (prism != null)
+                FieldWarp.Begin(pawn, destination, prism.Position, WarpPrismFields.Radius, prism.warpFieldRevision, prism);
+            else
+            {
+                var field = CommanderField.Current;
+                if (field != null && field.Exists && field.fieldMap == destination)
+                    FieldWarp.Begin(pawn, destination, field.center, FieldGroundGeometry.Radius, field.revision);
+            }
+        }
+
+        internal static bool CompleteTeleport(Map source, Pawn pawn, Map destination, IntVec3 landing)
+        {
             if (source == destination && pawn.Position == landing)
-            { Reject(NmcText.Get("NMC_Text0251"), pawn); return; }
+            { Reject(NmcText.Get("NMC_Text0251"), pawn); return false; }
             // Hauling targets belong to the old job/map. Equipment and inventory stay on the pawn.
             if (pawn.carryTracker?.CarriedThing != null
                 && !pawn.carryTracker.TryDropCarriedThing(pawn.Position, ThingPlaceMode.Direct, out Thing dropped))
-            { Reject(NmcText.Get("NMC_Text0252"), pawn); return; }
+            { Reject(NmcText.Get("NMC_Text0252"), pawn); return false; }
 
             var origin = pawn.Position;
             var rotation = pawn.Rotation;
@@ -83,23 +124,23 @@ namespace NivarianCommander
                 pawn.ClearAllReservations();
                 if (source == destination)
                 {
-                    EntryEffect(pawn, source);
                     pawn.Position = landing;
                     pawn.Notify_Teleported();
-                    ExitEffect(pawn, destination);
                 }
                 else
                 {
                     // Use the native despawn/spawn lifecycle for map lists, job cleanup and visuals.
                     // Its two halves run in their owning map's time and random context.
-                    SkipUtility.SkipDeSpawn(pawn);
+                    pawn.DeSpawn();
                     ProjectionContext.Run(destination, () => FieldRecallContext.SpawnAcrossMaps(pawn, source, destination, () =>
                     {
-                        SkipUtility.SkipTo(pawn, landing, destination);
+                        GenSpawn.Spawn(pawn, landing, destination, rotation);
+                        pawn.Notify_Teleported();
                         RestoreDraft(pawn, drafted, fireAtWill, rotation);
                     }));
                 }
                 Messages.Message(NmcText.Get("NMC_Text0253", pawn.LabelShortCap), pawn, MessageTypeDefOf.PositiveEvent, false);
+                return true;
             }
             catch (Exception error)
             {
@@ -115,6 +156,7 @@ namespace NivarianCommander
                 }
                 Log.Error("[NMC] Field recall failed for " + pawn.ThingID + ": " + error);
                 Reject(pawn.Spawned && pawn.Map == destination ? NmcText.Get("NMC_Text0254") : NmcText.Get("NMC_Text0255"), pawn);
+                return false;
             }
         }
 
@@ -125,10 +167,6 @@ namespace NivarianCommander
             pawn.drafter.Drafted = drafted;
             pawn.drafter.FireAtWill = fireAtWill;
         }
-        static void EntryEffect(Pawn pawn, Map map)
-            => DefDatabase<EffecterDef>.GetNamedSilentFail("Skip_EntryNoDelay")?.Spawn(pawn, map).Cleanup();
-        static void ExitEffect(Pawn pawn, Map map)
-            => DefDatabase<EffecterDef>.GetNamedSilentFail("Skip_Exit")?.Spawn(pawn, map).Cleanup();
     }
 
     internal sealed class Command_FieldRecall : Command_Action
@@ -149,10 +187,10 @@ namespace NivarianCommander
             var command = new Command_FieldRecall
             {
                 defaultLabel = NmcText.Get("NMC_Text0256"),
-                defaultDesc = NmcText.Get("NMC_Text0257"),
+                defaultDesc = NmcText.Get("NMC_WarpRecallDescription"),
                 icon = ContentFinder<Texture2D>.Get("NMC/Supports/warp_energy_field"),
-                action = () => FieldRecallActions.Recall(source, __instance, revision),
-                alsoClickIfOtherInGroupClicked = true
+                action = () => WarpPrismActions.ChooseDestination(source, __instance, revision),
+                alsoClickIfOtherInGroupClicked = false
             };
             var reason = FieldRecallActions.Unavailable(__instance);
             if (reason != null) command.Disable(reason);

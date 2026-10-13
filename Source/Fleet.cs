@@ -11,6 +11,7 @@ using Nivarian.NivarianDrones.NivarianDroneComps;
 using Nivarian.NivarianDrones.NivarianDroneTargetValidator;
 using Nivarian_Race.Code.Comps.ThingComps;
 using RimWorld;
+using UnityEngine;
 using Verse;
 using Verse.AI;
 
@@ -72,6 +73,8 @@ namespace NivarianCommander
     }
     public sealed class FleetShip : NivarianFixedWing_Drone, IAttackTarget
     {
+        protected override void DrawAt(Vector3 drawLoc, bool flip = false)
+        { if (!FieldWarpVisuals.DrawShip(this, drawLoc)) base.DrawAt(drawLoc, flip); }
         public int batchId, slot;
         public bool entryQueued, arrived, retiring;
         public Thing Thing => this;
@@ -79,7 +82,11 @@ namespace NivarianCommander
         public float TargetPriorityFactor => 1f;
         public bool ThreatDisabled(IAttackTargetSearcher searcher)
             => Destroyed || !Spawned || !arrived || retiring || searcher?.CurrentEffectiveVerb?.IsMeleeAttack == true;
-        public override IEnumerable<Gizmo> GetGizmos() { yield break; }
+        public override IEnumerable<Gizmo> GetGizmos()
+        {
+            if (FieldRecallActions.ResearchFinished && ShipFieldRecallActions.Eligible(this))
+                yield return ShipFieldRecallActions.Gizmo(this);
+        }
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);

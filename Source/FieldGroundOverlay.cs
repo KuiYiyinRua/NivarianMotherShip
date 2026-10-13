@@ -14,6 +14,8 @@ namespace NivarianCommander
         static Material groundMaterial, honeycombMaterial;
         Mesh ground, honeycomb;
         IntVec3 cachedCenter = IntVec3.Invalid, cachedSize = IntVec3.Invalid;
+        readonly float radius;
+        internal FieldGroundOverlay(float radius = FieldGroundGeometry.Radius) { this.radius = radius; }
 
         internal void Draw(Map map, IntVec3 center)
         {
@@ -23,7 +25,7 @@ namespace NivarianCommander
                 Clear();
                 // Map cell centres lie at +0.5; mesh positions are relative to this centre.
                 var geometry = FieldGroundGeometry.Build(-center.x - .5f, -center.z - .5f,
-                    map.Size.x - center.x - .5f, map.Size.z - center.z - .5f);
+                    map.Size.x - center.x - .5f, map.Size.z - center.z - .5f, radius);
                 ground = BuildMesh("NMC energy field ground", geometry.fillVertices, geometry.fillTriangles);
                 honeycomb = BuildMesh("NMC energy field honeycomb", geometry.lineVertices, geometry.lineTriangles);
                 cachedCenter = center;
@@ -41,15 +43,15 @@ namespace NivarianCommander
             Graphics.DrawMesh(honeycomb, Matrix4x4.TRS(at, Quaternion.identity, Vector3.one), honeycombMaterial, 0);
         }
 
-        static Mesh BuildMesh(string name, List<Vector3> vertices, List<int> triangles)
+        Mesh BuildMesh(string name, List<Vector3> vertices, List<int> triangles)
         {
             var mesh = new Mesh { name = name };
             mesh.SetVertices(vertices);
             // Both layers sample the same radial mask, even when clipped at map edges.
             var uvs = new List<Vector2>(vertices.Count);
             foreach (var vertex in vertices)
-                uvs.Add(new Vector2(.5f + vertex.x / (2f * FieldGroundGeometry.Radius),
-                    .5f + vertex.z / (2f * FieldGroundGeometry.Radius)));
+                uvs.Add(new Vector2(.5f + vertex.x / (2f * radius),
+                    .5f + vertex.z / (2f * radius)));
             mesh.SetUVs(0, uvs);
             mesh.SetTriangles(triangles, 0);
             mesh.RecalculateBounds();

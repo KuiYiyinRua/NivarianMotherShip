@@ -4,4 +4,10 @@
   <NMC_CarrierFlying.description>Porte-aéronefs nivarian en voyage lointain, transportant personnes, fret et intercepteurs.</NMC_CarrierFlying.description>
   <NMC_GravityFrigateFlying.label>Vaisseau gravitationnel nivarian</NMC_GravityFrigateFlying.label>
   <NMC_GravityFrigateFlying.description>Vaisseau gravitationnel nivarian en voyage lointain avec personnes et fret.</NMC_GravityFrigateFlying.description>
+  <NMC_WarpPrismFlying.label>Vaisseau de transfert nivarian</NMC_WarpPrismFlying.label>
+  <NMC_WarpPrismFlying.description>Un vaisseau de transfert nivarian transporte passagers et marchandises dans le monde.</NMC_WarpPrismFlying.description>
+  <NMC_StormShipFlying.label>Tempête nivarian</NMC_StormShipFlying.label>
+  <NMC_StormShipFlying.description>Un Tempête nivarian transportant passagers et cargaison à travers le monde.</NMC_StormShipFlying.description>
+  <NMC_SageShipFlying.label>Vaisseau sage nivarian</NMC_SageShipFlying.label>
+  <NMC_SageShipFlying.description>Un vaisseau sage nivarian transporte passagers et fret entre les lieux du monde.</NMC_SageShipFlying.description>
 </LanguageData>

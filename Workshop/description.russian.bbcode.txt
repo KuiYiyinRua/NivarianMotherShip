@@ -7,13 +7,16 @@
 [*]Покупка, поиск и пожертвования. Нужен работающий орбитальный торговый маяк; до 60 товаров, обновление каждые 7 дней.
 [/list]
 [b]Начало[/b]: Откройте вкладку командира в окне поддержки и исследуйте протоколы через терминал связи. Военное дополнение связывает исследования с кампанией; на поздних этапах прибывают вражеские корабли.
-[b]Свободное открытие[/b]: Настройка открытия всех технологий расширения без заданий по умолчанию выключена. Включите её и продолжите игру: исследования этого мода завершатся, требования заданий и уровня корабля для поддержки будут сняты. Расходы и перезарядка сохраняются. После выключения исследования остаются, требования уровня возвращаются. Чужие исследования и записи о прохождении кампании не меняются.
+[b]Исследования без заданий[/b]: По умолчанию выключено. Отменяет только требования заданий для исследований этого дополнения. Предыдущие технологии, материалы и обычное исследование по-прежнему необходимы. Не завершает технологии или задания и не отменяет требования уровня корабля для поддержки. Отключение восстанавливает требования заданий; готовые исследования сохраняются.
 
 [h2]Dependencies / 依赖 / 必須MOD / Зависимости / Dépendances[/h2]
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077]Harmony[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=839005762]Humanoid Alien Races[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3624805128]Nivarian Race[/url] → MotherShip.
 [b]Optional[/b]: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3735573834]Nivarian Draconic Military[/url] (campaign / 战役 / 戦役 / кампания / campagne); Royalty (psycasts); [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3256974620]Milira Race[/url] + Ancot Library (starship batteries).
-[b]RimWorld 1.6 • v0.9.8 • Author / 作者 / 作者 / Автор / Auteur: 尹怨怨[/b]
+[b]RimWorld 1.6 • v0.9.9 • Author / 作者 / 作者 / Автор / Auteur: 尹怨怨[/b]
 Nivarian Race & original mothership assets: keeptpa. Required mods are separate downloads. / 原版素材归 keeptpa；前置模组需另行订阅。
+
+[h2]0.9.9[/h2]
+Storm Ship / Sage Ship / Warp Prism; two-phase warp; mission-only research option. 暴风舰爆炸25点（建筑×5），新增贤者舰与折跃棱镜、双阶段折跃及任务研究开关。
 
 [h2]GitHub[/h2]
 [url=https://github.com/KuiYiyinRua/NivarianMotherShip]GitHub · 完整源码 / Full source[/url]

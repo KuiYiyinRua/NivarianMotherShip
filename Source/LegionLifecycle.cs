@@ -52,6 +52,7 @@ namespace NivarianCommander
     {
         public int id, ability = 14, createdLocalTick, remaining = 7200;
         public bool committed, firstTickPending = true;
+        public bool awaitingDrop;
         public Map origin;
         public List<Pawn> members = new List<Pawn>();
         public List<Thing> equipment = new List<Thing>();
@@ -60,6 +61,7 @@ namespace NivarianCommander
             Scribe_Values.Look(ref id, "id"); Scribe_Values.Look(ref ability, "ability", 14);
             Scribe_Values.Look(ref createdLocalTick, "createdLocalTick"); Scribe_Values.Look(ref remaining, "remaining", 7200);
             Scribe_Values.Look(ref committed, "committed"); Scribe_Values.Look(ref firstTickPending, "firstTickPending", true);
+            Scribe_Values.Look(ref awaitingDrop, "awaitingDrop");
             Scribe_References.Look(ref origin, "origin");
             Scribe_Collections.Look(ref members, "members", saveDestroyedThings: true, lookMode: LookMode.Reference);
             Scribe_Collections.Look(ref equipment, "equipment", saveDestroyedThings: true, lookMode: LookMode.Reference);
@@ -78,6 +80,13 @@ namespace NivarianCommander
             if (batches.Count == 0) return;
             foreach (var batch in batches.Where(b => b.origin == map && b.committed).ToList())
             {
+                if (batch.awaitingDrop)
+                {
+                    if (!batch.members.Any(p => p != null && p.Spawned)
+                        && batch.members.Any(p => p != null && !p.Destroyed && !p.Dead)) continue;
+                    batch.awaitingDrop = false; batch.firstTickPending = false;
+                    continue;
+                }
                 if (batch.firstTickPending)
                 { batch.firstTickPending = false; if (GenTicks.TicksGame == batch.createdLocalTick) continue; }
                 if (--batch.remaining <= 0) Retire(batch);

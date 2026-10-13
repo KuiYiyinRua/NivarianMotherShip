@@ -11,49 +11,103 @@ namespace NivarianCommander
 {
     public static class AircraftStarshipUpgrade
     {
-        public static bool Available => ModsConfig.IsActive("Ancot.MiliraRace") && BatteryDef != null;
-        public static ThingDef BatteryDef => DefDatabase<ThingDef>.GetNamedSilentFail("Milira_StarshipBattery");
+        public static bool Available => BatteryDef != null;
+        public static ThingDef BatteryDef => DefDatabase<ThingDef>.GetNamedSilentFail("Milira_StarshipBattery")
+            ?? DefDatabase<ThingDef>.GetNamedSilentFail("UnstablePowerCell")
+            ?? DefDatabase<ThingDef>.GetNamedSilentFail("VanometricPowerCell");
+        // Public def-based interface: optional mods can supply further equivalents.
+        public static int BatteryUnits(ThingDef def)
+        {
+            if (def == null) return 0;
+            if (def.defName == "Milira_StarshipBattery" || def.defName == "UnstablePowerCell") return 1;
+            if (def.defName == "VanometricPowerCell") return 2;
+            return Math.Max(0, def.GetModExtension<StarshipBatteryEquivalent>()?.units ?? 0);
+        }
+        public static int DeliveryCount(Building_NivarianAircraft ship, Thing battery)
+        {
+            int units = BatteryUnits(battery?.GetInnerIfMinified()?.def);
+            if (units <= 0 || ship == null || battery == null) return 0;
+            int remaining = ship.StarshipBatteryCost - ship.starshipBatteriesDelivered;
+            return remaining <= 0 ? 0 : Math.Min(battery.stackCount, 1 + (remaining - 1) / units);
+        }
         public static bool NeedsDelivery(Building_NivarianAircraft ship)
             => Available && ship != null && ship.Spawned && !ship.Destroyed && !ship.Airborne
                 && ship.Faction == Faction.OfPlayer && ship.starshipUpgradeRequested && !ship.starshipBatteryInstalled
                 && ship.starshipBatteriesDelivered < ship.StarshipBatteryCost;
 
-        // This is the sole UI mutation and is registered by the optional MP adapter.
+        // UI executors are registered by the optional MP adapter.
         public static void Request(Map map, Building_NivarianAircraft ship)
         {
             if (!Available || map == null || ship == null || !ship.Spawned || ship.Destroyed || ship.Map != map
                 || ship.Faction != Faction.OfPlayer || ship.Airborne || ship.starshipBatteryInstalled) return;
             ship.starshipUpgradeRequested = true;
         }
+        public static void Cancel(Map map, Building_NivarianAircraft ship)
+        {
+            if (map == null || ship == null || !ship.Spawned || ship.Destroyed || ship.Map != map
+                || ship.Faction != Faction.OfPlayer || ship.starshipBatteryInstalled || !ship.starshipUpgradeRequested) return;
+            if (!RestoreLegacyInputs(ship)) return;
+            ship.starshipUpgradeRequested = false; // Outstanding hauling jobs fail before depositing.
+            // A failed drop stays owned and saved; another click retries only the remainder.
+            ship.starshipBatteryInputs.TryDropAll(ship.Position, map, ThingPlaceMode.Near);
+            ship.starshipBatteriesDelivered = 0;
+            foreach (var input in ship.starshipBatteryInputs)
+                ship.starshipBatteriesDelivered += input.stackCount * BatteryUnits(input.GetInnerIfMinified().def);
+            if (ship.starshipBatteryInputs.Count > 0) ship.starshipUpgradeRequested = true;
+        }
+        static bool RestoreLegacyInputs(Building_NivarianAircraft ship)
+        {
+            // Account for legacy credit even when new equivalents were also delivered.
+            int recorded = ship.starshipBatteryInputs.Sum(t => t.stackCount * BatteryUnits(t.GetInnerIfMinified().def));
+            int missing = ship.starshipBatteriesDelivered - recorded;
+            if (missing > 0)
+            {
+                var def = DefDatabase<ThingDef>.GetNamedSilentFail("Milira_StarshipBattery")
+                    ?? DefDatabase<ThingDef>.GetNamedSilentFail("UnstablePowerCell");
+                if (def == null) return false; // Preserve the old credit if its def is unavailable.
+                for (int i = 0; i < missing; i++)
+                {
+                    Thing refund = ThingMaker.MakeThing(def);
+                    if (refund is Building) refund = refund.MakeMinified();
+                    ship.starshipBatteryInputs.TryAdd(refund, false);
+                }
+            }
+            return true;
+        }
         public static Gizmo UpgradeGizmo(Building_NivarianAircraft ship)
         {
             var command = new Command_Action {
                 defaultLabel = ship.starshipBatteryInstalled ? NmcText.Get("NMC_Text0025") : ship.starshipUpgradeRequested
-                    ? NmcText.Get("NMC_Text0026", ship.starshipBatteriesDelivered, ship.StarshipBatteryCost) : NmcText.Get("NMC_Text0027"),
+                    ? NmcText.Get("NMC_Text0752", ship.starshipBatteriesDelivered, ship.StarshipBatteryCost) : NmcText.Get("NMC_Text0027"),
                 defaultDesc = NmcText.Get("NMC_Text0028", ship.StarshipBatteryCost, ship.TakeoffFuelCost),
                 icon = BatteryDef.uiIcon,
-                action = () => Request(ship.Map, ship)
+                action = () => { if (ship.starshipUpgradeRequested) Cancel(ship.Map, ship); else Request(ship.Map, ship); }
             };
             if (ship.starshipBatteryInstalled) command.Disable(NmcText.Get("NMC_Text0029"));
-            else if (ship.starshipUpgradeRequested) command.Disable(NmcText.Get("NMC_Text0030"));
-            else if (ship.Airborne) command.Disable(NmcText.Get("NMC_Text0031"));
+            else if (ship.Airborne && !ship.starshipUpgradeRequested) command.Disable(NmcText.Get("NMC_Text0031"));
             return command;
         }
         public static int Deliver(Building_NivarianAircraft ship, Thing battery)
         {
-            if (!NeedsDelivery(ship) || battery == null || battery.Destroyed || battery.def != BatteryDef) return 0;
-            int count = Math.Min(ship.StarshipBatteryCost - ship.starshipBatteriesDelivered, battery.stackCount);
+            if (!NeedsDelivery(ship) || battery == null || battery.Destroyed || battery is Building && battery.Spawned) return 0;
+            int count = DeliveryCount(ship, battery);
             if (count <= 0) return 0;
-            battery.SplitOff(count).Destroy();
-            ship.starshipBatteriesDelivered += count;
-            if (ship.starshipBatteriesDelivered == ship.StarshipBatteryCost)
+            if (!RestoreLegacyInputs(ship)) return 0;
+            int units = BatteryUnits(battery.GetInnerIfMinified().def);
+            // Keep the actual input (including minified payload HP) until completion/cancel.
+            int added = ship.starshipBatteryInputs.TryAddOrTransfer(battery, count, false);
+            if (added <= 0) return 0;
+            ship.starshipBatteriesDelivered += added * units;
+            if (ship.starshipBatteriesDelivered >= ship.StarshipBatteryCost)
             {
                 ship.starshipBatteryInstalled = true;
                 ship.starshipUpgradeRequested = false;
                 ship.fuelClock = 0;
+                ship.starshipBatteriesDelivered = ship.StarshipBatteryCost;
+                ship.starshipBatteryInputs.ClearAndDestroyContents();
                 Messages.Message(NmcText.Get("NMC_Text0032", ship.LabelCap), ship, MessageTypeDefOf.PositiveEvent, false);
             }
-            return count;
+            return added;
         }
     }
 
@@ -77,13 +131,20 @@ namespace NivarianCommander
             Thing battery = FindBattery(pawn, ship, forced);
             if (battery == null) return null;
             var job = JobMaker.MakeJob(DefDatabase<JobDef>.GetNamed("NMC_InstallStarshipBattery"), ship, battery);
-            job.count = Math.Min(battery.stackCount, ship.StarshipBatteryCost - ship.starshipBatteriesDelivered);
+            job.count = AircraftStarshipUpgrade.DeliveryCount(ship, battery);
             return job;
         }
         static Thing FindBattery(Pawn pawn, Building_NivarianAircraft ship, bool forced)
-            => pawn.Map.listerThings.ThingsOfDef(AircraftStarshipUpgrade.BatteryDef)
-                .Where(t => !t.IsForbidden(pawn) && pawn.CanReserveAndReach(t, PathEndMode.ClosestTouch, pawn.NormalMaxDanger(), 1, -1, null, forced))
+            => pawn.Map.listerThings.ThingsInGroup(ThingRequestGroup.HaulableEver)
+                .Where(t => AircraftStarshipUpgrade.BatteryUnits(t.GetInnerIfMinified().def) > 0
+                    && !ProjectionPacking.Blocked(t) && !t.IsForbidden(pawn)
+                    && pawn.CanReserveAndReach(t, PathEndMode.ClosestTouch, pawn.NormalMaxDanger(), 1, -1, null, forced))
                 .OrderBy(t => pawn.Position.DistanceToSquared(t.Position)).ThenBy(t => t.thingIDNumber).FirstOrDefault();
+    }
+
+    public sealed class StarshipBatteryEquivalent : DefModExtension
+    {
+        public int units = 1;
     }
     public sealed class JobDriver_InstallStarshipBattery : JobDriver
     {

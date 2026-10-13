@@ -17,13 +17,13 @@ namespace NivarianCommander
             listing.Begin(inRect);
             listing.CheckboxLabeled(NmcText.Get("NMC_SettingsShortcut"), ref Settings.showShortcut);
             listing.Gap(16f);
-            bool value = CommanderResearchAccess.Current?.enabled ?? Settings.unlockAllResearch;
+            bool value = CommanderResearchAccess.Current?.enabled ?? Settings.researchWithoutMissions;
             bool previous = value;
             listing.CheckboxLabeled(NmcText.Get("NMC_SettingsUnlockAll"), ref value);
             listing.Label(NmcText.Get("NMC_SettingsUnlockAllHint"));
             if (value != previous)
             {
-                Settings.unlockAllResearch = value;
+                Settings.researchWithoutMissions = value;
                 Settings.Write();
                 if (Current.ProgramState == ProgramState.Playing) CommanderResearchAccess.SetEnabled(value);
             }

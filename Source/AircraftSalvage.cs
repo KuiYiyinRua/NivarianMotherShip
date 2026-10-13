@@ -13,7 +13,8 @@ namespace NivarianCommander
         {
             if (mode == DestroyMode.KillFinalize && destroyedThing is Building_NivarianAircraft
                 && (destroyedThing.def.defName == "NMC_Carrier"
-                    || destroyedThing.def.defName == "NMC_GravityFrigate"))
+                    || destroyedThing.def.defName == "NMC_GravityFrigate" || destroyedThing.def.defName == "NMC_WarpPrism"
+                    || destroyedThing.def.defName == "NMC_StormShip" || destroyedThing.def.defName == "NMC_SageShip"))
                 __result = count => count / 2;
         }
     }

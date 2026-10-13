@@ -1846,5 +1846,191 @@
     "type": "ResearchProjectDef",
     "path": "NMC_CarrierHangarExpansion.description",
     "id": 744
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_WarpPrism.label",
+    "id": 769
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_WarpPrism.description",
+    "id": 770
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_WarpPrismIncoming.label",
+    "id": 771
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_WarpPrismLeaving.label",
+    "id": 772
+  },
+  {
+    "folder": "1.6",
+    "type": "TransportShipDef",
+    "path": "NMC_WarpPrismShip.label",
+    "id": 773
+  },
+  {
+    "folder": "1.6",
+    "type": "WorldObjectDef",
+    "path": "NMC_WarpPrismFlying.label",
+    "id": 774
+  },
+  {
+    "folder": "1.6",
+    "type": "WorldObjectDef",
+    "path": "NMC_WarpPrismFlying.description",
+    "id": 775
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_WarpPrismResearch.label",
+    "id": 776
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_WarpPrismResearch.description",
+    "id": 777
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_StormShip.label",
+    "id": 788
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_StormShip.description",
+    "id": 789
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_StormShipIncoming.label",
+    "id": 790
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_StormShipLeaving.label",
+    "id": 791
+  },
+  {
+    "folder": "1.6",
+    "type": "TransportShipDef",
+    "path": "NMC_StormShipShip.label",
+    "id": 792
+  },
+  {
+    "folder": "1.6",
+    "type": "WorldObjectDef",
+    "path": "NMC_StormShipFlying.label",
+    "id": 793
+  },
+  {
+    "folder": "1.6",
+    "type": "WorldObjectDef",
+    "path": "NMC_StormShipFlying.description",
+    "id": 794
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_StormShipResearch.label",
+    "id": 795
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_StormShipResearch.description",
+    "id": 796
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_StormOrb.label",
+    "id": 797
+  },
+  {
+    "folder": "1.6",
+    "type": "DamageDef",
+    "path": "NMC_StormImpactDamage.label",
+    "id": 798
+  },
+  {
+    "folder": "1.6",
+    "type": "DamageDef",
+    "path": "NMC_StormBlastDamage.label",
+    "id": 799
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_SageShip.label",
+    "id": 808
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_SageShip.description",
+    "id": 809
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_SageShipIncoming.label",
+    "id": 810
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_SageShipLeaving.label",
+    "id": 811
+  },
+  {
+    "folder": "1.6",
+    "type": "TransportShipDef",
+    "path": "NMC_SageShipShip.label",
+    "id": 812
+  },
+  {
+    "folder": "1.6",
+    "type": "WorldObjectDef",
+    "path": "NMC_SageShipFlying.label",
+    "id": 813
+  },
+  {
+    "folder": "1.6",
+    "type": "WorldObjectDef",
+    "path": "NMC_SageShipFlying.description",
+    "id": 814
+  },
+  {
+    "folder": "1.6",
+    "type": "DamageDef",
+    "path": "NMC_SageBeamDamage.label",
+    "id": 815
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_SageShipResearch.label",
+    "id": 816
+  },
+  {
+    "folder": "1.6",
+    "type": "ResearchProjectDef",
+    "path": "NMC_SageShipResearch.description",
+    "id": 817
   }
 ]

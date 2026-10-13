@@ -4,4 +4,10 @@
   <NMC_CarrierFlying.description>正在远程航行的涅瓦莲航母，携带人员、货物与舰载机前往目的地。</NMC_CarrierFlying.description>
   <NMC_GravityFrigateFlying.label>涅瓦莲引力舰</NMC_GravityFrigateFlying.label>
   <NMC_GravityFrigateFlying.description>正在远程航行的涅瓦莲引力舰，携带人员与货物前往目的地。</NMC_GravityFrigateFlying.description>
+  <NMC_WarpPrismFlying.label>涅瓦莲折跃舰</NMC_WarpPrismFlying.label>
+  <NMC_WarpPrismFlying.description>正在远程航行的涅瓦莲折跃舰，携带人员与货物前往目的地。</NMC_WarpPrismFlying.description>
+  <NMC_StormShipFlying.label>涅瓦莲暴风舰</NMC_StormShipFlying.label>
+  <NMC_StormShipFlying.description>正在世界地图航行的涅瓦莲暴风舰，携带人员与货物前往目的地。</NMC_StormShipFlying.description>
+  <NMC_SageShipFlying.label>涅瓦莲贤者舰</NMC_SageShipFlying.label>
+  <NMC_SageShipFlying.description>正在远程航行的涅瓦莲贤者舰，携带人员与货物前往目的地。</NMC_SageShipFlying.description>
 </LanguageData>

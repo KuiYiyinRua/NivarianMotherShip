@@ -12,7 +12,7 @@
 
 最多储存10000化合燃料，在地图内升空期间每秒消耗1单位。远程航行的耗油与穿梭机相同，航程受燃料储备限制。起飞无需等待额外冷却，但必须清除舰船上方的屋顶；降落需要足够的空地。
 
-同时启用米莉拉种族后，可在停泊时选择“升级星舰动力”。殖民者会搬运并安装10个米莉拉星舰电池；完成后，每次起飞消耗200化合燃料，地图内飞行和世界地图航行均不再持续耗油。升级进度会保留，电池安装后消耗。</description>
+停泊时可升级星舰动力，需要10份电池。米莉拉星舰电池、不稳定能量电池各计1份，虚空电池计2份，可混合投入；原版电池须先卸载打包。升级中再次点击可取消并退还全部已投入电池。完成后的起飞费用与免持续耗油效果保持不变。</description>
     <thingClass>NivarianCommander.Building_NivarianAircraft</thingClass>
     <preventDroppingThingsOn>true</preventDroppingThingsOn>
     <altitudeLayer>Building</altitudeLayer>
@@ -229,7 +229,7 @@
 
 最多储存600化合燃料，在地图内升空期间每5秒消耗1单位。远程航行的耗油为穿梭机的一半，航程受燃料储备限制。起飞无需等待额外冷却，上方须无屋顶；降落需要足够的空地。
 
-同时启用米莉拉种族后，可在停泊时选择“升级星舰动力”。殖民者会搬运并安装2个米莉拉星舰电池；完成后，每次起飞消耗100化合燃料，地图内飞行和世界地图航行均不再持续耗油。升级进度会保留，电池安装后消耗。</description>
+停泊时可升级星舰动力，需要2份电池。米莉拉星舰电池、不稳定能量电池各计1份，虚空电池计2份，可混合投入；原版电池须先卸载打包。升级中再次点击可取消并退还全部已投入电池。完成后的起飞费用与免持续耗油效果保持不变。</description>
     <thingClass>NivarianCommander.Building_NivarianAircraft</thingClass>
     <preventDroppingThingsOn>true</preventDroppingThingsOn>
     <altitudeLayer>Building</altitudeLayer>

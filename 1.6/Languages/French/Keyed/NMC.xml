@@ -24,15 +24,13 @@
   <NMC_Text0022>Rayon automatique : activé</NMC_Text0022>
   <NMC_Text0023>Rayon automatique : désactivé</NMC_Text0023>
   <NMC_Text0024>En vol, soulever automatiquement l'ennemi au sol le plus proche à moins de 16 cases. Le ciblage manuel reste possible si cette option est désactivée.</NMC_Text0024>
-  <NMC_Text0025>Propulsion stellaire : améliorée</NMC_Text0025>
-  <NMC_Text0026>Batteries stellaires : {0}/{1}</NMC_Text0026>
-  <NMC_Text0027>Améliorer la propulsion</NMC_Text0027>
-  <NMC_Text0028>Les colons transporteront et installeront {0} batteries stellaires Milira. Ensuite, chaque décollage consommera {1} de carburant chimique, sans consommation continue en combat local ni en voyage mondial. Les batteries installées sont consommées définitivement ; le vaisseau doit être posé pour les recevoir.</NMC_Text0028>
+  <NMC_Text0025>Propulsion stellaire améliorée</NMC_Text0025>
+  <NMC_Text0027>Améliorer la propulsion stellaire</NMC_Text0027>
+  <NMC_Text0028>Les colons installent {0} unités de batteries. Une batterie Milira ou une cellule instable vaut 1 unité ; une cellule vanométrique en vaut 2. Les types peuvent être mélangés. Démontez et emballez les cellules du jeu de base. Pendant l’installation, cliquez à nouveau pour annuler et récupérer tous les apports. Une fois terminée, chaque décollage coûte {1} carburant chimique, sans consommation ultérieure en vol. Commencez au sol.</NMC_Text0028>
   <NMC_Text0029>Batteries stellaires installées</NMC_Text0029>
-  <NMC_Text0030>En attente du transport des batteries par les colons</NMC_Text0030>
   <NMC_Text0031>Atterrissez d'abord</NMC_Text0031>
   <NMC_Text0032>L'amélioration de la propulsion de {0} est terminée.</NMC_Text0032>
-  <NMC_Text0033>Aucune batterie stellaire Milira accessible</NMC_Text0033>
+  <NMC_Text0033>Aucune batterie compatible transportable (démontez et emballez les cellules)</NMC_Text0033>
   <NMC_Text0034>Destination indisponible. Choisissez-en une autre</NMC_Text0034>
   <NMC_Text0035>Recharge restante : {0}</NMC_Text0035>
   <NMC_Text0036>Nécessite {0} P + {1} V</NMC_Text0036>
@@ -282,9 +280,6 @@ Les données acquises et recherches terminées sont conservées.</NMC_Text0233>
   <NMC_Text0254>Le colon est arrivé. Vérifiez son état et réaffectez son travail.</NMC_Text0254>
   <NMC_Text0255>Échec de la distorsion. Vérifiez la position du colon et réessayez.</NMC_Text0255>
   <NMC_Text0256>Rejoindre le champ par distorsion</NMC_Text0256>
-  <NMC_Text0257>Rejoindre instantanément le champ d'énergie déployé, même entre colonies. Si le centre est occupé, l'arrivée se fait sur la case libre sûre la plus proche dans le champ.
-
-Aucun coût énergétique ni délai de recharge supplémentaire. Le colon interrompt son travail, pose les objets transportés et emporte équipement et inventaire.</NMC_Text0257>
   <NMC_Text0258>Légion de Zoraya · </NMC_Text0258>
   <NMC_Text0259>Flotte tactique · </NMC_Text0259>
   <NMC_Text0260>Récupération</NMC_Text0260>
@@ -543,10 +538,51 @@ Reste : {0}</NMC_Text0474>
   <NMC_CarrierSteelAutoFill>Remplir automatiquement la réserve. Si désactivé, vous pouvez toujours ordonner le remplissage à un colon avec un clic droit.</NMC_CarrierSteelAutoFill>
   <NMC_CarrierSteelMissing>Aucun acier givre-dragon disponible</NMC_CarrierSteelMissing>
   <NMC_SettingsShortcut>Afficher le panneau de commandement</NMC_SettingsShortcut>
-  <NMC_SettingsUnlockAll>Débloquer toutes les technologies de cette extension sans missions</NMC_SettingsUnlockAll>
-  <NMC_SettingsUnlockAllHint>Désactivé par défaut. Une fois activé et la partie reprise, toutes les recherches de cette extension sont terminées, sans missions du Continuum ni niveau de vaisseau-mère requis pour les soutiens. Les coûts et délais de recharge restent actifs. La désactivation conserve les recherches et rétablit les exigences de niveau. En multijoueur, le changement est synchronisé et les nouveaux joueurs utilisent l’état de la sauvegarde de l’hôte.</NMC_SettingsUnlockAllHint>
+  <NMC_SettingsUnlockAll>Rechercher les technologies sans accomplir leurs missions</NMC_SettingsUnlockAll>
+  <NMC_SettingsUnlockAllHint>Désactivé par défaut. Retire uniquement les conditions de mission des recherches de cette extension. Les technologies préalables, les matériaux et la recherche normale restent nécessaires. Ne termine aucune technologie ou mission et ne supprime pas les niveaux du vaisseau mère requis pour les soutiens. La désactivation rétablit les conditions de mission et conserve les recherches terminées.</NMC_SettingsUnlockAllHint>
   <NMC_Text0748>Fluctuation spatiotemporelle : vitesse de déplacement ×2</NMC_Text0748>
   <NMC_Text0749>Réserve nutritive</NMC_Text0749>
   <NMC_Text0750>Objectif nutritif : {0}. Faites glisser la barre pour le modifier. Réduire l’objectif conserve la réserve ; zéro arrête le remplissage. Choisissez les aliments dans l’onglet Nutrition.</NMC_Text0750>
   <NMC_Text0751>Remplir automatiquement la réserve. Désactiver cette option arrête les nouvelles tâches automatiques ; la réserve reste consommée. Un clic droit permet toujours d’ordonner le remplissage.</NMC_Text0751>
+  <NMC_Text0752>Annuler l’amélioration ({0}/{1})</NMC_Text0752>
+  <NMC_Text0753>Seuls les vaisseaux du joueur de ce mod peuvent se replier</NMC_Text0753>
+  <NMC_Text0754>Attendez la fin du décollage, de l’atterrissage ou du saut d’entrée</NMC_Text0754>
+  <NMC_Text0755>Repliez le vaisseau vers un emplacement libre du champ actuel. Préserve coque, orientation, cargaison, passagers et amélioration ; les porte-aéronefs récupèrent leurs appareils. Indisponible pendant le décollage, l’atterrissage ou le saut d’entrée. La durée des flottes invoquées reste inchangée.
+
+Le transfert utilise l'impression nivarian : 4 secondes au départ, puis 4 secondes au point d'arrivée réel (temps de jeu). Les dégâts s'appliquent normalement pendant les deux phases.
+
+Les vaisseaux en vol peuvent se transférer au-dessus du terrain ou des bâtiments et restent en vol. Les vaisseaux au sol doivent disposer d’une destination au sol valide.</NMC_Text0755>
+  <NMC_WarpFuelRate>1 unité toutes les 10 secondes</NMC_WarpFuelRate>
+  <NMC_WarpChanging>Changement de mode : {0} s</NMC_WarpChanging>
+  <NMC_WarpFieldStatus>Champ : rayon de 6 cases ; destination des colons</NMC_WarpFieldStatus>
+  <NMC_WarpFlightStatus>Mode vol : champ replié</NMC_WarpFlightStatus>
+  <NMC_WarpFlightMode>Mode vol</NMC_WarpFlightMode>
+  <NMC_WarpFieldMode>Mode champ énergétique</NMC_WarpFieldMode>
+  <NMC_WarpLocked>Passez en mode vol. Déplacement, atterrissage et transfert du vaisseau sont indisponibles pendant le déploiement ou la transition.</NMC_WarpLocked>
+  <NMC_WarpModeDescription>Transition en 1 seconde. Le prisme déployé flotte et tourne lentement, alimentant les bâtiments, rechargeant les unités et recevant les colons dans un rayon de 6 cases. Les champs d’une carte partagent 10000 W. Il consomme du carburant de vol ; les vaisseaux ne peuvent pas arriver aux prismes.</NMC_WarpModeDescription>
+  <NMC_WarpTakeoffFirst>Terminez d’abord le décollage.</NMC_WarpTakeoffFirst>
+  <NMC_WarpDestinationLost>Le prisme est inactif, sans carburant ou déplacé. Choisissez à nouveau une destination.</NMC_WarpDestinationLost>
+  <NMC_WarpPrimaryDestination>Champ énergétique principal</NMC_WarpPrimaryDestination>
+  <NMC_WarpPrismDestination>Prisme : {0} ({1}, {2})</NMC_WarpPrismDestination>
+  <NMC_WarpRecallDescription>Transférez-vous vers le champ principal ou un prisme déployé, même sur une autre carte. Équipement et inventaire suivent le colon ; la charge transportée est déposée et le travail en cours s’arrête.
+
+Le transfert utilise l'impression nivarian : 4 secondes au départ, puis 4 secondes au point d'arrivée réel (temps de jeu). Les dégâts s'appliquent normalement pendant les deux phases.</NMC_WarpRecallDescription>
+  <NMC_WarpBusy>Transfert en cours (4 secondes au départ et 4 à l’arrivée) ; les dégâts restent actifs</NMC_WarpBusy>
+  <NMC_WarpDropUnavailable>Capsule de largage nivarian indisponible</NMC_WarpDropUnavailable>
+  <NMC_StormAttack>Attaque par orbe orageux</NMC_StormAttack>
+  <NMC_StormAttackDesc>Désigne un ennemi à 100 cases. Tir toutes les 3 s : 20 dégâts directs, pénétration 80 %, puis explosion de 3×3 cases, 15 dégâts, pénétration 35 %. Les deux infligent 5× aux bâtiments.</NMC_StormAttackDesc>
+  <NMC_StormMustFly>Le vaisseau doit être en vol et ne pas être en cours de saut</NMC_StormMustFly>
+  <NMC_StormFireAtWill>Tir à volonté</NMC_StormFireAtWill>
+  <NMC_StormAutoDesc>En vol, attaque automatiquement les ennemis visibles à portée. Les cibles désignées restent actives si cette option est désactivée.</NMC_StormAutoDesc>
+  <NMC_StormClearTarget>Effacer la cible désignée</NMC_StormClearTarget>
+  <NMC_StormClearDesc>Efface la cible manuelle. La recherche automatique continue si le tir à volonté est actif.</NMC_StormClearDesc>
+  <NMC_StormStatus>Orbe orageux : portée 100 ; recharge {0} s</NMC_StormStatus>
+  <NMC_SageAttackMode>Mode attaque</NMC_SageAttackMode>
+  <NMC_SageAttackModeDesc>En vol, attaque les ennemis au sol dans un rayon de 12 cases. Deux rayons toutes les 0,5 s, chacun infligeant 6 dégâts avec 30% de pénétration. Chaque salve consomme 1 chimiocarburant, même après amélioration. La détection reste active sans attaque.</NMC_SageAttackModeDesc>
+  <NMC_SageTarget>Cible au sol</NMC_SageTarget>
+  <NMC_SageTargetDesc>Priorité à un ennemi au sol à 12 cases maximum, puis recherche automatique si la cible devient invalide. Exclut les cibles volantes ou soulevées.</NMC_SageTargetDesc>
+  <NMC_SageMustAttack>Décollez et activez le mode attaque. Indisponible pendant le saut.</NMC_SageMustAttack>
+  <NMC_SageStatus>Mode attaque : {0} ; détection passive : 50 cases</NMC_SageStatus>
+  <NMC_SageOn>Activé</NMC_SageOn>
+  <NMC_SageOff>Désactivé</NMC_SageOff>
 </LanguageData>

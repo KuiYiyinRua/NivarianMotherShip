@@ -14,7 +14,7 @@ namespace NivarianCommander
 
     // A normal native passenger shuttle owns cross-map travel and its real cargo.
     // Local flight is a saved map simulation; rendering never drives movement.
-    public sealed class Building_NivarianAircraft : Building_PassengerShuttle, IAttackTarget
+    public sealed partial class Building_NivarianAircraft : Building_PassengerShuttle, IAttackTarget
     {
         public static int FighterCapacity => WarshipResearch.FighterCapacity;
         public const int FighterSteelCost = 10;
@@ -54,14 +54,17 @@ namespace NivarianCommander
         }
         public bool starshipUpgradeRequested, starshipBatteryInstalled;
         public int starshipBatteriesDelivered;
-        public int StarshipBatteryCost => IsCarrier ? 10 : 2;
-        public int TakeoffFuelCost => IsCarrier ? 200 : 100;
-        public bool StarshipPowered => starshipBatteryInstalled && AircraftStarshipUpgrade.Available;
+        public ThingOwner<Thing> starshipBatteryInputs;
+        readonly AircraftBatteryHolder batteryHolder;
+        internal IThingHolder BatteryHolder => batteryHolder;
+        public int StarshipBatteryCost => IsCarrier ? 10 : IsStormShip ? 5 : IsSageShip ? 1 : 2;
+        public int TakeoffFuelCost => HeavyFlight ? 200 : IsWarpPrism || IsSageShip ? 50 : 100;
+        public bool StarshipPowered => starshipBatteryInstalled;
         public bool CanTakeoffWithFuel => StarshipPowered ? FuelLevel >= TakeoffFuelCost : RefuelableComp.HasFuel;
         public bool IsCarrier => def.defName == "NMC_Carrier";
         public bool Airborne => flightState != AircraftFlightState.Grounded;
         public bool CombatFlight => flightState == AircraftFlightState.Flying;
-        public float HullHeading => heading + (IsCarrier ? 0f : 180f);
+        public float HullHeading => heading + (HeavyFlight || IsWarpPrism ? 0f : 180f);
         public int FighterCount => hangar.Count + deployed.Count(p => p != null && !p.Destroyed);
         public Thing Thing => this;
         public LocalTargetInfo TargetCurrentlyAimingAt => beamTarget;
@@ -72,12 +75,14 @@ namespace NivarianCommander
         {
             hangarHolder = new AircraftHangarHolder(this);
             hangar = new ThingOwner<CarrierInterceptor>(hangarHolder);
+            batteryHolder = new AircraftBatteryHolder(this);
+            starshipBatteryInputs = new ThingOwner<Thing>(batteryHolder);
         }
         public override Vector3 DrawPos => Airborne
             ? new Vector3(flightPosition.x, AltitudeLayer.Skyfaller.AltitudeFor(), flightPosition.z + Lift)
             : base.DrawPos;
-        float Lift => flightState == AircraftFlightState.TakingOff ? transition / 60f * 1.2f
-            : flightState == AircraftFlightState.Landing ? (1f - transition / 60f) * 1.2f : 1.2f;
+        float Lift => (flightState == AircraftFlightState.TakingOff ? transition / 60f * 1.2f
+            : flightState == AircraftFlightState.Landing ? (1f - transition / 60f) * 1.2f : 1.2f) * WarpFieldLiftFactor;
         public override CellRect? CustomRectForSelector
         {
             get
@@ -97,6 +102,7 @@ namespace NivarianCommander
             base.SpawnSetup(map, respawningAfterLoad);
             if (!respawningAfterLoad) { flightPosition = Position.ToVector3Shifted(); heading = Rotation.AsAngle; }
             if (!destination.IsValid) destination = Position;
+            if (IsWarpPrism) map.GetComponent<WarpPrismFields>().Register(this);
         }
         protected override void Tick()
         {
@@ -105,12 +111,13 @@ namespace NivarianCommander
             if (hostileAutopilot && this.HostileTo(Faction.OfPlayer) && !AircraftHostileControl.Tick(this)) return;
             deployed.RemoveAll(p => p == null || p.Destroyed);
             if (IsCarrier) Manufacture();
+            if (IsSageShip) SageReveal();
             if (gravityCooldown > 0) gravityCooldown--;
             if (beamTicks > 0) beamTicks--;
             if (weaponClock > 0) weaponClock--;
             if (launchClock > 0) launchClock--;
             if (!Airborne) return;
-            if (!StarshipPowered && ++fuelClock >= (IsCarrier ? 60 : 300))
+            if (!StarshipPowered && ++fuelClock >= (HeavyFlight ? 60 : IsWarpPrism || IsSageShip ? 600 : 300))
             {
                 fuelClock = 0;
                 RefuelableComp.ConsumeFuel(1f);
@@ -131,8 +138,9 @@ namespace NivarianCommander
             }
             else
             {
+                if (IsWarpPrism && TickWarpField()) return;
                 MoveFlight();
-                if (IsCarrier) LaunchDue(); else FrigateCombat();
+                if (IsCarrier) LaunchDue(); else if (IsStormShip) StormCombat(); else if (IsGravityFrigate) FrigateCombat(); else if (IsSageShip) SageCombat();
             }
         }
         void MoveFlight(IntVec3? waypoint = null)
@@ -143,7 +151,7 @@ namespace NivarianCommander
             Vector3 next = targetCell.ToVector3Shifted();
             var delta = next - flightPosition; delta.y = 0;
             if (delta.sqrMagnitude > .001f) heading = Mathf.MoveTowardsAngle(heading, delta.AngleFlat(), 3f);
-            flightPosition = Vector3.MoveTowards(flightPosition, next, IsCarrier ? .055f : .23f);
+            flightPosition = Vector3.MoveTowards(flightPosition, next, HeavyFlight ? .055f : IsSageShip ? .2875f : .23f);
             var cell = flightPosition.ToIntVec3();
             if (cell != Position && cell.InBounds(Map)) Position = cell;
         }
@@ -196,7 +204,7 @@ namespace NivarianCommander
         }
         internal void UseGravity(Thing target)
         {
-            if (!CombatFlight || IsCarrier || gravityCooldown > 0 || !(target is Pawn pawn)
+            if (!CombatFlight || !IsGravityFrigate || gravityCooldown > 0 || !(target is Pawn pawn)
                 || !AircraftTargeting.GravityTargetValid(this, target)) return;
             if (Map.GetComponent<AircraftGravity>().Lift(this, pawn))
                 gravityCooldown = 480;
@@ -235,7 +243,7 @@ namespace NivarianCommander
         }
         internal void BeginLanding(IntVec3 cell, Rot4 rotation)
         {
-            if (!CombatFlight || !AircraftTargeting.LandingClear(this, cell, rotation)) return;
+            if (!CanMoveInMap || !AircraftTargeting.LandingClear(this, cell, rotation)) return;
             destination = cell; landingRotation = rotation;
             flightState = AircraftFlightState.Landing; transition = 0; beamTicks = 0;
             RecallAll(false);
@@ -271,6 +279,7 @@ namespace NivarianCommander
         }
         internal void EmergencyLand()
         {
+            ResetWarpField();
             // Fuel loss never deletes cargo or a squadron. Find the nearest legal footprint.
             var rotation = Rot4.FromAngleFlat(heading);
             var cell = GenRadial.RadialCellsAround(Position, 40f, true)
@@ -294,6 +303,7 @@ namespace NivarianCommander
         }
         public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
         {
+            if (IsWarpPrism) { ResetWarpField(); Map.GetComponent<WarpPrismFields>().Unregister(this); }
             // Native cross-map launch carries this exact shuttle and all held fighters.
             RecallAll(true); flightState = AircraftFlightState.Grounded; beamTicks = 0;
             base.DeSpawn(mode);
@@ -305,6 +315,7 @@ namespace NivarianCommander
             // Detached interceptors cannot survive as immortal orphan units.
             foreach (var fighter in deployed.ToList()) if (fighter != null && !fighter.Destroyed) fighter.Destroy(mode);
             deployed.Clear(); hangar.ClearAndDestroyContents();
+            starshipBatteryInputs.ClearAndDestroyContents();
             base.Destroy(mode);
             // Native transporter destruction ejects the passenger. Only then
             // does the hostile pilot belong to a ground assault lord.
@@ -315,7 +326,9 @@ namespace NivarianCommander
         }
         protected override void DrawAt(Vector3 drawLoc, bool flip = false)
         {
+            if (FieldWarpVisuals.DrawShip(this, drawLoc)) return;
             if (!Airborne) { base.DrawAt(drawLoc, flip); return; }
+            if (IsWarpPrism && DrawWarpField()) return;
             var scale = new Vector3(def.graphicData.drawSize.x, 1f, def.graphicData.drawSize.y);
             Graphics.DrawMesh(MeshPool.plane10, Matrix4x4.TRS(DrawPos, Quaternion.AngleAxis(HullHeading, Vector3.up), scale), Graphic.MatSingle, 0);
             if (beamTicks > 0) Map.GetComponent<AircraftPrismVisuals>().Show(this);
@@ -330,10 +343,13 @@ namespace NivarianCommander
         {
             string text = base.GetInspectString() + "\n" + (Airborne ? NmcText.Get("NMC_Text0001") : NmcText.Get("NMC_Text0289"))
                 + (StarshipPowered ? NmcText.Get("NMC_Text0290", TakeoffFuelCost)
-                    : NmcText.Get("NMC_Text0293", (IsCarrier ? NmcText.Get("NMC_Text0291") : NmcText.Get("NMC_Text0292"))));
+                    : NmcText.Get("NMC_Text0293", (HeavyFlight ? NmcText.Get("NMC_Text0291") : IsWarpPrism || IsSageShip ? NmcText.Get("NMC_WarpFuelRate") : NmcText.Get("NMC_Text0292"))));
             if (starshipUpgradeRequested && !starshipBatteryInstalled)
                 text += NmcText.Get("NMC_Text0294", starshipBatteriesDelivered, StarshipBatteryCost);
             if (IsCarrier) text += NmcText.Get("NMC_Text0296", FighterCount, FighterCapacity, hangar.Count, deployed.Count, dragonSteel, (manufactureTicks > 0 ? NmcText.Get("NMC_Text0295", (manufactureTicks / 60f).ToString("F1")) : ""));
+            else if (IsWarpPrism) text += "\n" + WarpFieldInspectString;
+            else if (IsSageShip) text += "\n" + "NMC_SageStatus".Translate((sageAttackMode ? "NMC_SageOn" : "NMC_SageOff").Translate());
+            else if (IsStormShip) text += "\n" + "NMC_StormStatus".Translate((weaponClock / 60f).ToString("F1"));
             else text += NmcText.Get("NMC_Text0297", (gravityCooldown / 60f).ToString("F1"));
             return text;
         }
@@ -348,9 +364,21 @@ namespace NivarianCommander
             public void GetChildHolders(List<IThingHolder> outChildren)
                 => ThingOwnerUtility.AppendThingHoldersFromThings(outChildren, aircraft.hangar);
         }
+        sealed class AircraftBatteryHolder : IThingHolder
+        {
+            readonly Building_NivarianAircraft aircraft;
+            public AircraftBatteryHolder(Building_NivarianAircraft aircraft) { this.aircraft = aircraft; }
+            public IThingHolder ParentHolder => aircraft.TransporterComp;
+            public ThingOwner GetDirectlyHeldThings() => aircraft.starshipBatteryInputs;
+            public void GetChildHolders(List<IThingHolder> outChildren)
+                => ThingOwnerUtility.AppendThingHoldersFromThings(outChildren, aircraft.starshipBatteryInputs);
+        }
         public override void ExposeData()
         {
             base.ExposeData();
+            ExposeWarpField();
+            ExposeStormWeapon();
+            ExposeSageWeapon();
             Scribe_Values.Look(ref flightState, "nmcFlight"); Scribe_Values.Look(ref flightPosition, "nmcFlightPosition");
             Scribe_Values.Look(ref destination, "nmcDestination", IntVec3.Invalid); Scribe_Values.Look(ref heading, "nmcHeading");
             Scribe_Values.Look(ref landingRotation, "nmcLandingRotation", Rot4.North);
@@ -366,6 +394,7 @@ namespace NivarianCommander
             Scribe_Values.Look(ref starshipUpgradeRequested, "nmcStarshipUpgradeRequested");
             Scribe_Values.Look(ref starshipBatteryInstalled, "nmcStarshipBatteryInstalled");
             Scribe_Values.Look(ref starshipBatteriesDelivered, "nmcStarshipBatteriesDelivered");
+            Scribe_Deep.Look(ref starshipBatteryInputs, "nmcStarshipBatteryInputs", batteryHolder);
             Scribe_References.Look(ref beamTarget, "nmcBeamTarget");
             Scribe_Values.Look(ref hostileAutopilot, "nmcHostileAutopilot");
             Scribe_References.Look(ref combatPilot, "nmcCombatPilot");
@@ -378,6 +407,7 @@ namespace NivarianCommander
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 if (hangar == null) hangar = new ThingOwner<CarrierInterceptor>(hangarHolder);
+                if (starshipBatteryInputs == null) starshipBatteryInputs = new ThingOwner<Thing>(batteryHolder);
                 if (deployed == null) deployed = new List<CarrierInterceptor>();
                 deployed.RemoveAll(p => p == null || p.Destroyed);
             }
@@ -402,13 +432,26 @@ namespace NivarianCommander
     { public CompProperties_AircraftTransporter() { compClass = typeof(CompAircraftTransporter); } }
     public sealed class CompAircraftTransporter : CompTransporter, IThingHolder
     {
+        internal bool fieldRecallTransfer;
         public override bool RequiresFuelingPort => false;
+        public override void PostDeSpawn(Map map, DestroyMode mode = DestroyMode.Vanish)
+        {
+            if (!fieldRecallTransfer) { base.PostDeSpawn(map, mode); return; }
+            // Vanilla CancelLoad -> CleanUpLoadingVars drops cargo even with WillReplace
+            // when this hull has a loading group. End the old map's loading assignment
+            // for this transporter, retaining its real contents and other group members.
+            TryRemoveLord(map);
+            groupID = -1;
+            leftToLoad?.Clear();
+            Shuttle?.CleanUpLoadingVars();
+        }
         void IThingHolder.GetChildHolders(List<IThingHolder> outChildren)
         {
             base.GetChildHolders(outChildren);
             // One holder tree exposes native cargo and the separately saved fighter bay
             // exactly once, including while the aircraft is inside a travelling shuttle.
-            if (parent is Building_NivarianAircraft aircraft) outChildren.Add(aircraft.HangarHolder);
+            if (parent is Building_NivarianAircraft aircraft)
+            { outChildren.Add(aircraft.HangarHolder); outChildren.Add(aircraft.BatteryHolder); }
         }
     }
 }

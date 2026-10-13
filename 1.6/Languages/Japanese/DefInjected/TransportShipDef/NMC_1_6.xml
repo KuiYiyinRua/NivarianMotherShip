@@ -2,4 +2,7 @@
 <LanguageData>
   <NMC_CarrierShip.label>ニヴァリアン空母</NMC_CarrierShip.label>
   <NMC_GravityFrigateShip.label>ニヴァリアン重力艦</NMC_GravityFrigateShip.label>
+  <NMC_WarpPrismShip.label>ニヴァリアン転送艦</NMC_WarpPrismShip.label>
+  <NMC_StormShipShip.label>ニヴァリアン暴風艦</NMC_StormShipShip.label>
+  <NMC_SageShipShip.label>ニヴァリアン賢者艦</NMC_SageShipShip.label>
 </LanguageData>

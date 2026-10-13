@@ -194,7 +194,7 @@
   },
   {
     "id": 25,
-    "zh": "星舰动力：已升级",
+    "zh": "星舰动力已升级",
     "key": "NMC_Text0025",
     "contexts": [
       "AircraftStarshipUpgrade.cs:30"
@@ -218,7 +218,7 @@
   },
   {
     "id": 28,
-    "zh": "殖民者将搬运并安装{0}个米莉拉星舰电池。完成后，每次起飞消耗{1}化合燃料，地图内作战与世界航行均不再持续耗油。电池安装后永久消耗；须停泊才能运入。",
+    "zh": "殖民者将搬运并安装{0}份电池。米莉拉星舰电池与原版不稳定能量电池各计1份，虚空电池计2份，可混合投入。原版电池须先卸载打包。升级中再次点击可取消并退还全部已投入电池。完成后每次起飞消耗{1}化合燃料，地图内作战及世界航行不再持续耗油。须停泊才能开始升级。",
     "key": "NMC_Text0028",
     "contexts": [
       "AircraftStarshipUpgrade.cs:32"
@@ -258,7 +258,7 @@
   },
   {
     "id": 33,
-    "zh": "没有可搬运的米莉拉星舰电池",
+    "zh": "没有可搬运的兼容电池（原版电池须先卸载打包）",
     "key": "NMC_Text0033",
     "contexts": [
       "AircraftStarshipUpgrade.cs:70"
@@ -2111,7 +2111,7 @@
   },
   {
     "id": 257,
-    "zh": "立即前往已部署的折跃能量场，也可跨越不同殖民地。若中心位置被占用，将在场内最近的安全空地抵达。\n\n折跃不额外消耗能量，也无需等待冷却。殖民者会中止当前工作，放下搬运中的物品，随身装备和背包一并带走。",
+    "zh": "立即前往已部署的折跃能量场，也可跨越不同殖民地。若中心位置被占用，将在场内最近的安全空地抵达。\n\n折跃使用涅瓦莲建筑打印特效：原地准备4秒，传送到实际落点后再打印4秒（游戏时间）。前后两个阶段受到攻击均会正常受伤。",
     "key": "NMC_Text0257",
     "contexts": [
       "FieldRecall.cs:151"
@@ -4462,7 +4462,7 @@
   },
   {
     "id": 545,
-    "zh": "涅瓦莲的大型航空母舰，兼具重型运输和舰载机支援能力。舰体生命值2500，载重10000千克。自身没有直接攻击武器，需要依靠舰载机应战。\n\n通过独立的“龙霜钢储备”面板设置目标储量，殖民者会在航母停泊时搬运并填装龙霜钢，最多储存1000单位。运输货舱中的龙霜钢不会自动用于制造。每架舰载机消耗10龙霜钢，制造需要5秒；停泊和飞行时均可制造。机库与出击中的舰载机合计最多6架，每架生命值125。\n\n升空作战后，航母会发现60格内的敌人，每秒派出一架舰载机。舰载机飞离航母80格后自动返回；接到降落命令时，航母停止出击并召回全部舰载机。\n\n最多储存10000化合燃料，在地图内升空期间每秒消耗1单位。远程航行的耗油与穿梭机相同，航程受燃料储备限制。起飞无需等待额外冷却，但必须清除舰船上方的屋顶；降落需要足够的空地。\n\n同时启用米莉拉种族后，可在停泊时选择“升级星舰动力”。殖民者会搬运并安装10个米莉拉星舰电池；完成后，每次起飞消耗200化合燃料，地图内飞行和世界地图航行均不再持续耗油。升级进度会保留，电池安装后消耗。",
+    "zh": "涅瓦莲的大型航空母舰，兼具重型运输和舰载机支援能力。舰体生命值2500，载重10000千克。自身没有直接攻击武器，需要依靠舰载机应战。\n\n通过独立的“龙霜钢储备”面板设置目标储量，殖民者会在航母停泊时搬运并填装龙霜钢，最多储存1000单位。运输货舱中的龙霜钢不会自动用于制造。每架舰载机消耗10龙霜钢，制造需要5秒；停泊和飞行时均可制造。机库与出击中的舰载机合计最多6架，每架生命值125。\n\n升空作战后，航母会发现60格内的敌人，每秒派出一架舰载机。舰载机飞离航母80格后自动返回；接到降落命令时，航母停止出击并召回全部舰载机。\n\n最多储存10000化合燃料，在地图内升空期间每秒消耗1单位。远程航行的耗油与穿梭机相同，航程受燃料储备限制。起飞无需等待额外冷却，但必须清除舰船上方的屋顶；降落需要足够的空地。\n\n停泊时可升级星舰动力，需要10份电池。米莉拉星舰电池、不稳定能量电池各计1份，虚空电池计2份，可混合投入；原版电池须先卸载打包。升级中再次点击可取消并退还全部已投入电池。完成后的起飞费用与免持续耗油效果保持不变。",
     "key": "NMC_Text0545",
     "contexts": [
       "1.6\\Defs\\CommanderAircraft.xml:NMC_Carrier.description"
@@ -4505,7 +4505,7 @@
   },
   {
     "id": 550,
-    "zh": "擅长对空拦截的涅瓦莲舰船，也能执行轻型运输。占地3×3格，舰体生命值600，载重300千克。\n\n升空后，以双束棱晶激光攻击16格内的空中敌人，每秒齐射一次。每束造成6点基础伤害，护甲穿透率为50%，对建筑的伤害提高至3倍，不附带冰冻效果。舰船不能直接攻击地面目标。\n\n引力束可将16格内的一名地面敌人举起并眩晕4秒，使其成为激光能够攻击的空中目标。引力束无需额外资源，冷却8秒；可以手动选择目标，也可允许舰船自动施放。\n\n最多储存600化合燃料，在地图内升空期间每5秒消耗1单位。远程航行的耗油为穿梭机的一半，航程受燃料储备限制。起飞无需等待额外冷却，上方须无屋顶；降落需要足够的空地。\n\n同时启用米莉拉种族后，可在停泊时选择“升级星舰动力”。殖民者会搬运并安装2个米莉拉星舰电池；完成后，每次起飞消耗100化合燃料，地图内飞行和世界地图航行均不再持续耗油。升级进度会保留，电池安装后消耗。",
+    "zh": "擅长对空拦截的涅瓦莲舰船，也能执行轻型运输。占地3×3格，舰体生命值600，载重300千克。\n\n升空后，以双束棱晶激光攻击16格内的空中敌人，每秒齐射一次。每束造成6点基础伤害，护甲穿透率为50%，对建筑的伤害提高至3倍，不附带冰冻效果。舰船不能直接攻击地面目标。\n\n引力束可将16格内的一名地面敌人举起并眩晕4秒，使其成为激光能够攻击的空中目标。引力束无需额外资源，冷却8秒；可以手动选择目标，也可允许舰船自动施放。\n\n最多储存600化合燃料，在地图内升空期间每5秒消耗1单位。远程航行的耗油为穿梭机的一半，航程受燃料储备限制。起飞无需等待额外冷却，上方须无屋顶；降落需要足够的空地。\n\n停泊时可升级星舰动力，需要2份电池。米莉拉星舰电池、不稳定能量电池各计1份，虚空电池计2份，可混合投入；原版电池须先卸载打包。升级中再次点击可取消并退还全部已投入电池。完成后的起飞费用与免持续耗油效果保持不变。",
     "key": "NMC_Text0550",
     "contexts": [
       "1.6\\Defs\\CommanderAircraft.xml:NMC_GravityFrigate.description"
@@ -6081,7 +6081,7 @@
   {
     "id": 746,
     "key": "NMC_SettingsUnlockAll",
-    "zh": "直接解锁本拓展全部科技（跳过任务）",
+    "zh": "无需完成对应任务即可研究科技",
     "contexts": [
       "Source/CommanderMod.cs:settings"
     ]
@@ -6089,7 +6089,7 @@
   {
     "id": 747,
     "key": "NMC_SettingsUnlockAllHint",
-    "zh": "默认关闭。开启后，在游戏继续运行时直接完成本拓展全部研究，跳过连续体任务与支援的母舰等级限制；资源消耗和冷却仍然有效。关闭后保留已完成的研究，恢复等级限制。联机中开关通过同步命令共享，加入者沿用主机存档状态。",
+    "zh": "默认关闭。勾选后，仅取消本扩展科技的对应任务要求，仍需满足前置科技、支付材料并正常研究。不会直接完成科技或任务，也不跳过支援的母舰等级要求。关闭后恢复任务要求；已完成的科技保留。",
     "contexts": [
       "Source/CommanderMod.cs:settings"
     ]
@@ -6125,5 +6125,533 @@
     "contexts": [
       "Source/NutrientTowerSupply.cs"
     ]
+  },
+  {
+    "id": 752,
+    "key": "NMC_Text0752",
+    "contexts": [
+      "AircraftStarshipUpgrade.cs"
+    ],
+    "zh": "取消升级（{0}/{1}）"
+  },
+  {
+    "id": 753,
+    "key": "NMC_Text0753",
+    "contexts": [
+      "ShipFieldRecall.cs"
+    ],
+    "zh": "只有本模组的玩家舰船可以折叠"
+  },
+  {
+    "id": 754,
+    "key": "NMC_Text0754",
+    "contexts": [
+      "ShipFieldRecall.cs"
+    ],
+    "zh": "请等待舰船完成起降或入场折跃"
+  },
+  {
+    "id": 755,
+    "key": "NMC_Text0755",
+    "contexts": [
+      "ShipFieldRecall.cs"
+    ],
+    "zh": "将舰船折叠到当前能量场内的空闲位置。保留舰体、朝向、货物、乘员与升级进度；航母先收回舰载机。起降或入场折跃期间不可使用。召唤舰队保留原持续时间。\n\n折跃使用涅瓦莲建筑打印特效：原地准备4秒，传送到实际落点后再打印4秒（游戏时间）。前后两个阶段受到攻击均会正常受伤。\n\n已起飞的舰船可折跃至地形或建筑上方，并保持飞行状态；地面舰船仍需满足正常落点条件。"
+  },
+  {
+    "id": 756,
+    "zh": "每10秒1单位",
+    "key": "NMC_WarpFuelRate",
+    "contexts": [
+      "WarpPrism.cs / FieldRecall.cs"
+    ]
+  },
+  {
+    "id": 757,
+    "zh": "模式切换中：{0}秒",
+    "key": "NMC_WarpChanging",
+    "contexts": [
+      "WarpPrism.cs / FieldRecall.cs"
+    ]
+  },
+  {
+    "id": 758,
+    "zh": "能量场模式：半径6格，人员可折跃至此",
+    "key": "NMC_WarpFieldStatus",
+    "contexts": [
+      "WarpPrism.cs / FieldRecall.cs"
+    ]
+  },
+  {
+    "id": 759,
+    "zh": "飞行模式：能量场未展开",
+    "key": "NMC_WarpFlightStatus",
+    "contexts": [
+      "WarpPrism.cs / FieldRecall.cs"
+    ]
+  },
+  {
+    "id": 760,
+    "zh": "飞行模式",
+    "key": "NMC_WarpFlightMode",
+    "contexts": [
+      "WarpPrism.cs / FieldRecall.cs"
+    ]
+  },
+  {
+    "id": 761,
+    "zh": "能量场模式",
+    "key": "NMC_WarpFieldMode",
+    "contexts": [
+      "WarpPrism.cs / FieldRecall.cs"
+    ]
+  },
+  {
+    "id": 762,
+    "zh": "先切换至飞行模式；展开能量场及切换期间无法移动、降落或舰船折跃。",
+    "key": "NMC_WarpLocked",
+    "contexts": [
+      "WarpPrism.cs / FieldRecall.cs"
+    ]
+  },
+  {
+    "id": 763,
+    "zh": "用1秒切换模式。能量场模式下静止悬浮并缓速旋转，在下方半径6格提供与主场相同的供电、单位充能和人员折跃接收。同一地图共用10000W供电上限。仍属于飞行并按相同速率耗油；舰船不能折跃至棱镜。",
+    "key": "NMC_WarpModeDescription",
+    "contexts": [
+      "WarpPrism.cs / FieldRecall.cs"
+    ]
+  },
+  {
+    "id": 764,
+    "zh": "请先升空并完成起飞。",
+    "key": "NMC_WarpTakeoffFirst",
+    "contexts": [
+      "WarpPrism.cs / FieldRecall.cs"
+    ]
+  },
+  {
+    "id": 765,
+    "zh": "目标棱镜已关闭、缺油或离开原位置，请重新选择折跃目的地。",
+    "key": "NMC_WarpDestinationLost",
+    "contexts": [
+      "WarpPrism.cs / FieldRecall.cs"
+    ]
+  },
+  {
+    "id": 766,
+    "zh": "主能量场",
+    "key": "NMC_WarpPrimaryDestination",
+    "contexts": [
+      "WarpPrism.cs / FieldRecall.cs"
+    ]
+  },
+  {
+    "id": 767,
+    "zh": "折跃棱镜：{0}（{1}, {2}）",
+    "key": "NMC_WarpPrismDestination",
+    "contexts": [
+      "WarpPrism.cs / FieldRecall.cs"
+    ]
+  },
+  {
+    "id": 768,
+    "zh": "选择主能量场或已展开的折跃棱镜作为目的地，可跨地图折跃。随身装备和背包一并带走，放下搬运中的物品并中止当前工作。\n\n折跃使用涅瓦莲建筑打印特效：原地准备4秒，传送到实际落点后再打印4秒（游戏时间）。前后两个阶段受到攻击均会正常受伤。",
+    "key": "NMC_WarpRecallDescription",
+    "contexts": [
+      "WarpPrism.cs / FieldRecall.cs"
+    ]
+  },
+  {
+    "id": 769,
+    "zh": "涅瓦莲折跃舰",
+    "key": "NMC_WarpDefLabel",
+    "contexts": [
+      "CommanderWarpPrism.xml"
+    ]
+  },
+  {
+    "id": 770,
+    "zh": "无武装的涅瓦莲折跃运输舰。占地3×3格，基础生命值350，载重1000千克；飞行速度与引力舰相同。最多储存600化合燃料，地图飞行和能量场模式每10秒消耗1单位，世界航行消耗为引力舰的一半。\n\n升空后可切换能量场模式，展开为中心对称的棱镜并缓速旋转。切换需要1秒；切换期间及展开后不能移动、降落或舰船折跃。下方半径6格完整继承主能量场的供电与单位充能，同一地图的所有能量场共用10000W上限。殖民者可选择主能量场或任意展开棱镜折跃，舰船只能折跃至主能量场。\n\n停泊时可用2份电池升级星舰动力：米莉拉星舰电池、不稳定能量电池各计1份，虚空电池计2份，可混合使用；原版电池须卸载打包。升级后每次起飞消耗50化合燃料，地图飞行、能量场维持及世界航行不再持续耗油。",
+    "key": "NMC_WarpDefDescription",
+    "contexts": [
+      "CommanderWarpPrism.xml"
+    ]
+  },
+  {
+    "id": 771,
+    "zh": "涅瓦莲折跃舰（降落）",
+    "key": "NMC_WarpDefIncomingLabel",
+    "contexts": [
+      "CommanderWarpPrism.xml"
+    ]
+  },
+  {
+    "id": 772,
+    "zh": "涅瓦莲折跃舰（起飞）",
+    "key": "NMC_WarpDefLeavingLabel",
+    "contexts": [
+      "CommanderWarpPrism.xml"
+    ]
+  },
+  {
+    "id": 773,
+    "zh": "涅瓦莲折跃舰",
+    "key": "NMC_WarpDefShipLabel",
+    "contexts": [
+      "CommanderWarpPrism.xml"
+    ]
+  },
+  {
+    "id": 774,
+    "zh": "涅瓦莲折跃舰",
+    "key": "NMC_WarpDefFlyingLabel",
+    "contexts": [
+      "CommanderWarpPrism.xml"
+    ]
+  },
+  {
+    "id": 775,
+    "zh": "正在远程航行的涅瓦莲折跃舰，携带人员与货物前往目的地。",
+    "key": "NMC_WarpDefFlyingDescription",
+    "contexts": [
+      "CommanderWarpPrism.xml"
+    ]
+  },
+  {
+    "id": 776,
+    "zh": "涅瓦莲折跃舰",
+    "key": "NMC_WarpDefResearchLabel",
+    "contexts": [
+      "CommanderWarpPrism.xml"
+    ]
+  },
+  {
+    "id": 777,
+    "zh": "在上行链路中单独研究，解锁涅瓦莲折跃舰。前置为跨域人员折跃科技。这艘无武装运输舰可展开半径6格的移动能量场，为建筑供电、为单位充能，并接收殖民者折跃；载重1000千克。",
+    "key": "NMC_WarpDefResearchDescription",
+    "contexts": [
+      "CommanderWarpPrism.xml"
+    ]
+  },
+  {
+    "id": 778,
+    "key": "NMC_WarpBusy",
+    "zh": "正在折跃（前摇4秒、后摇4秒），期间正常受伤",
+    "contexts": [
+      "FieldWarp.cs / GroundReinforcementArrival.cs"
+    ]
+  },
+  {
+    "id": 779,
+    "key": "NMC_WarpDropUnavailable",
+    "zh": "涅瓦莲空投舱暂不可用",
+    "contexts": [
+      "FieldWarp.cs / GroundReinforcementArrival.cs"
+    ]
+  },
+  {
+    "id": 780,
+    "key": "NMC_StormAttack",
+    "contexts": [
+      "StormShip.cs"
+    ],
+    "zh": "雷暴球攻击"
+  },
+  {
+    "id": 781,
+    "key": "NMC_StormAttackDesc",
+    "contexts": [
+      "StormShip.cs"
+    ],
+    "zh": "指定100格内的敌方目标。每3秒发射一枚雷暴球：20伤害/80%穿甲直击，随后3×3格15伤害/35%穿甲爆炸；两段对建筑均为5倍。"
+  },
+  {
+    "id": 782,
+    "key": "NMC_StormMustFly",
+    "contexts": [
+      "StormShip.cs"
+    ],
+    "zh": "需处于飞行状态，且未在折跃中"
+  },
+  {
+    "id": 783,
+    "key": "NMC_StormFireAtWill",
+    "contexts": [
+      "StormShip.cs"
+    ],
+    "zh": "自动开火"
+  },
+  {
+    "id": 784,
+    "key": "NMC_StormAutoDesc",
+    "contexts": [
+      "StormShip.cs"
+    ],
+    "zh": "升空后自动攻击射程内可见的敌人。指定的攻击目标不受此开关影响。"
+  },
+  {
+    "id": 785,
+    "key": "NMC_StormClearTarget",
+    "contexts": [
+      "StormShip.cs"
+    ],
+    "zh": "清除指定目标"
+  },
+  {
+    "id": 786,
+    "key": "NMC_StormClearDesc",
+    "contexts": [
+      "StormShip.cs"
+    ],
+    "zh": "清除手动指定的目标；自动开火开启时仍会自动索敌。"
+  },
+  {
+    "id": 787,
+    "key": "NMC_StormStatus",
+    "contexts": [
+      "StormShip.cs"
+    ],
+    "zh": "雷暴球：射程100；冷却剩余{0}秒"
+  },
+  {
+    "id": 788,
+    "key": "NMC_StormDef_NMC_StormShip_label",
+    "contexts": [
+      "StormShip.cs"
+    ],
+    "zh": "涅瓦莲暴风舰"
+  },
+  {
+    "id": 789,
+    "key": "NMC_StormDef_NMC_StormShip_description",
+    "contexts": [
+      "StormShip.cs"
+    ],
+    "zh": "涅瓦莲的远程雷暴攻城舰。占地5×5格，基础生命值2000，载重3500千克。升空后自动攻击100格内的敌人，也可指定攻击目标。每3秒发射一枚雷暴球：直击造成20伤害、80%穿甲；命中后在落点周围3×3格内再造成25伤害、35%穿甲。两段伤害对建筑均为5倍，爆炸不随距离衰减。\n\n飞行速度、化合燃料容量和消耗与航母相同：最多储存10000燃料，地图飞行每秒消耗1，世界航行每格3、最低50。可通过能量场折叠前往已部署的主能量场。\n\n停泊时可用5份兼容电池升级星舰动力，正好是航母的一半。米莉拉星舰电池和不稳定能量电池各计1份，虚空电池计2份，可混用；原版电池须卸载打包。升级中可取消并退还投入的电池。升级后每次起飞消耗200化合燃料，随后地图和世界航行不再持续耗油。"
+  },
+  {
+    "id": 790,
+    "key": "NMC_StormDef_NMC_StormShipIncoming_label",
+    "contexts": [
+      "StormShip.cs"
+    ],
+    "zh": "涅瓦莲暴风舰（降落）"
+  },
+  {
+    "id": 791,
+    "key": "NMC_StormDef_NMC_StormShipLeaving_label",
+    "contexts": [
+      "StormShip.cs"
+    ],
+    "zh": "涅瓦莲暴风舰（起飞）"
+  },
+  {
+    "id": 792,
+    "key": "NMC_StormDef_NMC_StormShipShip_label",
+    "contexts": [
+      "StormShip.cs"
+    ],
+    "zh": "涅瓦莲暴风舰"
+  },
+  {
+    "id": 793,
+    "key": "NMC_StormDef_NMC_StormShipFlying_label",
+    "contexts": [
+      "StormShip.cs"
+    ],
+    "zh": "涅瓦莲暴风舰"
+  },
+  {
+    "id": 794,
+    "key": "NMC_StormDef_NMC_StormShipFlying_description",
+    "contexts": [
+      "StormShip.cs"
+    ],
+    "zh": "正在世界地图航行的涅瓦莲暴风舰，携带人员与货物前往目的地。"
+  },
+  {
+    "id": 795,
+    "key": "NMC_StormDef_NMC_StormShipResearch_label",
+    "contexts": [
+      "StormShip.cs"
+    ],
+    "zh": "涅瓦莲暴风舰"
+  },
+  {
+    "id": 796,
+    "key": "NMC_StormDef_NMC_StormShipResearch_description",
+    "contexts": [
+      "StormShip.cs"
+    ],
+    "zh": "通过上行链路研究终端解锁涅瓦莲暴风舰。前置科技与航母相同，不额外要求完成任务；研究量及交付材料为航母的70%。暴风舰是一艘5×5格、2000生命、3500千克载重的远程攻城舰，以100格射程的雷暴球造成直击和3×3范围爆炸。"
+  },
+  {
+    "id": 797,
+    "key": "NMC_StormDef_NMC_StormOrb_label",
+    "contexts": [
+      "StormShip.cs"
+    ],
+    "zh": "雷暴球"
+  },
+  {
+    "id": 798,
+    "key": "NMC_StormDef_NMC_StormImpactDamage_label",
+    "contexts": [
+      "StormShip.cs"
+    ],
+    "zh": "雷暴球直击"
+  },
+  {
+    "id": 799,
+    "key": "NMC_StormDef_NMC_StormBlastDamage_label",
+    "contexts": [
+      "StormShip.cs"
+    ],
+    "zh": "雷暴球爆炸"
+  },
+  {
+    "id": 800,
+    "key": "NMC_SageAttackMode",
+    "contexts": [
+      "SageShip.cs"
+    ],
+    "zh": "攻击模式"
+  },
+  {
+    "id": 801,
+    "key": "NMC_SageAttackModeDesc",
+    "contexts": [
+      "SageShip.cs"
+    ],
+    "zh": "开启后，升空的贤者舰自动攻击12格内地面敌人。每0.5秒齐射两束激光，每束6伤害、30%穿甲，每次齐射消耗1化合燃料；电池升级不免除攻击耗油。关闭后停止攻击，反隐仍生效。"
+  },
+  {
+    "id": 802,
+    "key": "NMC_SageTarget",
+    "contexts": [
+      "SageShip.cs"
+    ],
+    "zh": "指定地面目标"
+  },
+  {
+    "id": 803,
+    "key": "NMC_SageTargetDesc",
+    "contexts": [
+      "SageShip.cs"
+    ],
+    "zh": "指定12格内地面敌人；目标失效后自动寻找其他地面敌人。无法攻击空中或被引力束抬升的目标。"
+  },
+  {
+    "id": 804,
+    "key": "NMC_SageMustAttack",
+    "contexts": [
+      "SageShip.cs"
+    ],
+    "zh": "须先升空并开启攻击模式，且未在折跃中。"
+  },
+  {
+    "id": 805,
+    "key": "NMC_SageStatus",
+    "contexts": [
+      "SageShip.cs"
+    ],
+    "zh": "攻击模式：{0}；被动反隐半径：50格"
+  },
+  {
+    "id": 806,
+    "key": "NMC_SageOn",
+    "contexts": [
+      "SageShip.cs"
+    ],
+    "zh": "开启"
+  },
+  {
+    "id": 807,
+    "key": "NMC_SageOff",
+    "contexts": [
+      "SageShip.cs"
+    ],
+    "zh": "关闭"
+  },
+  {
+    "id": 808,
+    "key": "NMC_SageDef_NMC_SageShip_label",
+    "contexts": [
+      "SageShip.cs"
+    ],
+    "zh": "涅瓦莲贤者舰"
+  },
+  {
+    "id": 809,
+    "key": "NMC_SageDef_NMC_SageShip_description",
+    "contexts": [
+      "SageShip.cs"
+    ],
+    "zh": "涅瓦莲贤者舰是一艘轻型反隐与对地作战舰船，占地2×2格，基础生命值350，载重200千克。\n\n攻击模式默认关闭，开启并升空后攻击12格内的地面敌人。每0.5秒同时发射两束蓝色棱晶激光，每束6点基础伤害、30%穿甲；每次齐射消耗1化合燃料。不能攻击飞行或被引力束抬升的目标。\n\n被动解除半径50格内敌对单位的隐身，停泊时同样有效，无需开启攻击模式。离开探测范围后，目标按原有隐身恢复规则恢复。\n\n地图飞行和世界航行速度均比引力舰快25%。地图升空每10秒消耗1化合燃料；远航每格0.75、最低12.5，均为引力舰的一半。燃料容量600。可折跃至已解锁的折跃能量场。\n\n星舰动力升级需要1份电池（引力舰的一半），支持米莉拉星舰电池、不稳定能量电池或虚空电池；电池按完整物品投入。升级后每次起飞消耗50化合燃料，免持续飞行耗油，攻击仍每次消耗1燃料。"
+  },
+  {
+    "id": 810,
+    "key": "NMC_SageDef_NMC_SageShipIncoming_label",
+    "contexts": [
+      "SageShip.cs"
+    ],
+    "zh": "涅瓦莲贤者舰（降落）"
+  },
+  {
+    "id": 811,
+    "key": "NMC_SageDef_NMC_SageShipLeaving_label",
+    "contexts": [
+      "SageShip.cs"
+    ],
+    "zh": "涅瓦莲贤者舰（起飞）"
+  },
+  {
+    "id": 812,
+    "key": "NMC_SageDef_NMC_SageShipShip_label",
+    "contexts": [
+      "SageShip.cs"
+    ],
+    "zh": "涅瓦莲贤者舰"
+  },
+  {
+    "id": 813,
+    "key": "NMC_SageDef_NMC_SageShipFlying_label",
+    "contexts": [
+      "SageShip.cs"
+    ],
+    "zh": "涅瓦莲贤者舰"
+  },
+  {
+    "id": 814,
+    "key": "NMC_SageDef_NMC_SageShipFlying_description",
+    "contexts": [
+      "SageShip.cs"
+    ],
+    "zh": "正在远程航行的涅瓦莲贤者舰，携带人员与货物前往目的地。"
+  },
+  {
+    "id": 815,
+    "key": "NMC_SageDef_NMC_SageBeamDamage_label",
+    "contexts": [
+      "SageShip.cs"
+    ],
+    "zh": "贤者舰棱晶激光"
+  },
+  {
+    "id": 816,
+    "key": "NMC_SageDef_NMC_SageShipResearch_label",
+    "contexts": [
+      "SageShip.cs"
+    ],
+    "zh": "涅瓦莲贤者舰"
+  },
+  {
+    "id": 817,
+    "key": "NMC_SageDef_NMC_SageShipResearch_description",
+    "contexts": [
+      "SageShip.cs"
+    ],
+    "zh": "通过上行链路研究终端独立解锁涅瓦莲贤者舰。前置科技与引力舰相同，无额外任务门槛；研究量与交付材料为引力舰的50%。贤者舰具有对地双束激光与半径50格的被动反隐能力，飞行更快、耗油更低。"
   }
 ]

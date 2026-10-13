@@ -17,7 +17,7 @@ namespace NivarianCommander
             var project = For(def);
             if (project?.IsFinished != true) return CommanderProgression.ResearchBlocked(project) ?? NmcText.Get("NMC_Text0045", def?.researchLabel);
             int required = project.GetModExtension<CommanderResearchExtension>()?.mothershipLevel ?? 0;
-            return CommanderResearchAccess.Current?.enabled != true && (NativeLedger.Component?.GetLevel ?? 0) < required ? NmcText.Get("NMC_Text0046", required) : null;
+            return (NativeLedger.Component?.GetLevel ?? 0) < required ? NmcText.Get("NMC_Text0046", required) : null;
         }
 
         public static bool Finished(string name) => DefDatabase<ResearchProjectDef>.GetNamedSilentFail(name)?.IsFinished == true;

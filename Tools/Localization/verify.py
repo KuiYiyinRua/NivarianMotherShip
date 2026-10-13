@@ -13,8 +13,10 @@ assert len({r['key'] for r in inv})==len(inv),'duplicate source key'
 assert set(translations)=={str(r['id']) for r in inv},'translation IDs differ'
 keys=set()
 for p in (mod/'Source').glob('*.cs'):
- keys.update(re.findall(r'"(NMC_(?:Text\d+|ResearchTask[A-Za-z]+|CarrierSteel[A-Za-z]+|Settings[A-Za-z]+))"',p.read_text(encoding='utf-8-sig')))
-assert keys<={r['key'] for r in inv},'source calls missing from catalog'
+ keys.update(re.findall(r'"(NMC_(?:Text\d+|ResearchTask[A-Za-z]+|CarrierSteel[A-Za-z]+|Settings[A-Za-z]+|Warp[A-Za-z]+|Storm[A-Za-z]+|Sage[A-Za-z]+))"',p.read_text(encoding='utf-8-sig')))
+keys.difference_update({'NMC_StormShip', 'NMC_StormOrb', 'NMC_StormOrbLaunch', 'NMC_StormImpactDamage', 'NMC_StormBlastDamage', 'NMC_SageShip', 'NMC_SageBeamDamage', 'NMC_SageShipFlying'})
+keys.discard('NMC_WarpPrism')  # ThingDef identifier, not a translated UI string.
+assert keys<={r['key'] for r in inv},('source calls missing from catalog',sorted(keys-{r['key'] for r in inv}))
 def placeholders(s):return collections.Counter(re.findall(r'(?<!\{)\{(\d+)(?:,[^{}:]+)?(?::[^{}]+)?\}(?!\})',s))
 def marks(s):return collections.Counter(re.findall(r'</?(?:color|b|i|size)[^>]*>|\[[A-Z][A-Za-z0-9_]*\]',s))
 for r in inv:
@@ -50,8 +52,11 @@ for ix,locale in enumerate(locales):
   for d in (d for d in defs if d['folder']==folder):
    assert paths[d['type'],d['path']]==value(byid[d['id']]),(locale,d['path'])
 version=ET.parse(mod/'About/About.xml').findtext('modVersion')
-for proj in [mod/'Source/NivarianCommander.csproj',mod/'Multiplayer/Source/NivarianCommander.Multiplayer.csproj']:
+for proj in [mod/'Source/NivarianCommander.csproj']:
  assert ET.parse(proj).findtext('PropertyGroup/Version')==version,('version mismatch',str(proj))
+# Optional adapter identities stay at their tested 0.9.8 build for MP owner compatibility.
+for proj in (mod/'Multiplayer').glob('*Source/*.csproj'):
+ assert ET.parse(proj).findtext('PropertyGroup/Version')=='0.9.8',('adapter identity version mismatch',str(proj))
 for folder in ['1.6','Royalty','NoRoyalty','About','Multiplayer']:
  for p in (mod/folder).rglob('*.xml'):
   if 'obj' not in p.parts:ET.parse(p)

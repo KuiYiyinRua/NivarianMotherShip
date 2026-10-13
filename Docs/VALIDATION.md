@@ -1,21 +1,32 @@
-# Release validation: 0.9.8
+# Release validation: 0.9.9
 
-This release includes the complete expansion C# source, compiled core and optional Multiplayer adapter, build projects, localization resources/tools, documentation and five-language Workshop descriptions. Game/dependency assemblies, player data, test drivers, logs, backups, the stale nested package and old release folders are excluded by the package allowlist.
+This package includes all current expansion source, the core and five optional Multiplayer assemblies, game assets, five-language localization, build projects, tools and documentation. Game/dependency assemblies, player saves, test probes, private desync investigations, old nested packages and historical release folders are excluded.
 
-## Build and artifact evidence
+## Build and identity
 
-- Before updating the release, the complete current sources rebuilt byte-for-byte to the deployed integrated 0.9.7 binaries: core `9D71FBD6AE9F6EC159529094BF82C040771EA48F43AC7FF37FF315A70883AFFA`, adapter `E0041E9313C17FB523221C4F01B227BB000122073695D0EC495E25EE1656AE39`.
-- Isolated 0.9.8 core and adapter Release builds report zero warnings and zero errors. Five-language localization verification reports 491 runtime keys and 308 definition fields.
-- Final 0.9.8 core SHA-256: `1CB2DA9D50B36E720CEA84C821850D949BF93754956D86AB89BBC145B6EE4843`. Final adapter SHA-256: `552E48477C20B373C8F9752FFB1C8C07158342EB35ECB6079D7C9CDFDEFBCE45`.
-- The archived build and local formal assemblies match. The ZIP and each distributed file are checked against the generated package manifest before upload; Workshop and GitHub release assets are read back after publication.
-- The independent release review identified the carrier interceptor manufacture countdown missing the S06 multiplier. The final code applies eligible friendly-building work speed and clamps completion to zero, preserving per-interceptor material costs and all other ship clocks.
+Core and all five adapter source projects compile with zero warnings and errors. Localization verifies 523 runtime keys and 339 definition fields across five languages.
 
-## Runtime evidence and limits
+Core file/informational version is 0.9.9; its binding version stays at 0.9.8. The five tested adapter DLLs retain their existing identities because third-party compatibility code can resolve their owners by MVID. They are not replaced merely to change a display version.
 
-The preceding integrated 0.9.7 pair above ran an actual host and remote client on two maps. The non-host invoked three real S06 casts; the first two were cancelled and the third expired naturally. Six functional stages and a checkpoint after 10,006 shared ticks produced eight exactly matching state receipts, including full world/map Rand states. Both peers reported two players, two maps and `desynced=False`.
+## Focused runtime checks
 
-The user then explicitly requested the end of testing and local, GitHub and Workshop deployment. That run is recorded as `USER_STOPPED`, since its planned 14,000-tick endpoint was not reached. The final carrier manufacture correction and 0.9.8 binaries are compiled and statically inspected; **final 0.9.8 runtime remains unverified**. No additional game process was launched.
+- Settings: default off; only mission conditions bypassed. All research progress remains unchanged, technology prerequisites and support mothership levels remain required. Three toggle cycles and a cold save reload pass. The former complete-all setting is not carried forward; already finished research remains finished.
+- Storm Ship: the author-adjusted native damage is 20 direct and 25 blast, with 0.8/0.35 armor penetration and building damage of 100/125. Strict 3×3 bounds and once-per-building blast processing pass. Native world travel, battery delivery/refund, fuel use and two-phase field recall also pass.
+- Multiplayer setting: two real peers with different local preferences pass the frozen world/map/Rand/research equality gate. The non-host invokes the production synchronized setter for three on/off cycles. Mission gates follow the shared option while research remains incomplete. At least 10,000 shared server frames and exact final receipts pass. This is a synchronized-method test, not a mouse-driven checkbox test.
 
-No final-version S06 120,000-tick soak, cold rejoin, async-time regression, representative 249-mod user-save run or exhaustive combat/layout test is claimed. Previous individual feature tests remain historical evidence. The next runtime matrix, if requested, is a short final-artifact functional smoke followed by the full-loadout soak and two-map async/rejoin coverage. All Multiplayer peers must completely exit RimWorld and restart the same updated mod version.
+## Limits
 
-Local evidence is archived under `BuildValidation/SpacetimeRetuneMP-20261012` and `BuildValidation/WorkshopRelease-20261012`; test files are not distributed. The public machine-readable summary is `Workshop/release-validation.json`.
+No new full-modpack run, 120,000-world-tick soak, async-time matrix or three cold Multiplayer rejoins is claimed. Prior feature-specific results remain historical evidence. All players must exit and restart RimWorld on identical files.
+
+GitHub workflow configuration remains local because the current credential lacks workflow scope. Local builds, localization checks and runtime tests are the verification evidence; no GitHub Actions success is claimed.
+
+Local test evidence: `BuildValidation/WorkshopRelease-20261013`. Machine-readable summary: `Workshop/release-validation.json`.
+
+## Exact deployed assemblies
+
+- `1.6/Assemblies/NivarianCommander.dll`: `789b74c27aaa5b883361ecaef19dd8a637a28e5c7cf7edf9d7c3b515b6b1a56a`
+- `Multiplayer/Assemblies/NivarianCommander.Multiplayer.dll`: `552e48477c20b373c8f9752ffb1c8c07158342eb35ecb6079d7c9cdfdefbce45`
+- `Multiplayer/Assemblies/NivarianCommander.SageShip.Multiplayer.dll`: `65c844c99de8b3d5734ce32a4d8001e36e791b92bee12739e2ce48c7ca8b0918`
+- `Multiplayer/Assemblies/NivarianCommander.ShipUpgrades.Multiplayer.dll`: `c5c134ba0cb521778c8116be92cb4c0d985aa12d96a850ea980cb1544789142c`
+- `Multiplayer/Assemblies/NivarianCommander.StormShip.Multiplayer.dll`: `befafe23a71ce90a696c3a1bf2c43cef84341933057c9fe67e0fbe71a19a6222`
+- `Multiplayer/Assemblies/NivarianCommander.WarpPrism.Multiplayer.dll`: `2b5b7f4f42010c8e5d006736d5911a5aa7c320b5350d52dff3c9c507503bec75`

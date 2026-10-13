@@ -2,4 +2,7 @@
 <LanguageData>
   <NMC_TebrusPulseDamage.label>灵能脉冲</NMC_TebrusPulseDamage.label>
   <NMC_TebrusStormDamage.label>灵能风暴</NMC_TebrusStormDamage.label>
+  <NMC_StormImpactDamage.label>雷暴球直击</NMC_StormImpactDamage.label>
+  <NMC_StormBlastDamage.label>雷暴球爆炸</NMC_StormBlastDamage.label>
+  <NMC_SageBeamDamage.label>贤者舰棱晶激光</NMC_SageBeamDamage.label>
 </LanguageData>

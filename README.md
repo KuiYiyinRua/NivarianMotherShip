@@ -2,9 +2,9 @@
 
 [简体中文](Docs/README.zh-CN.md) · English · [Русский](Docs/README.ru.md) · [日本語](Docs/README.ja.md) · [Français](Docs/README.fr.md)
 
-A RimWorld 1.6 expansion for **Nivarian Race**. Extend the mothership with 19 tactical supports, a points shop, carrier and gravity ship, and an eight-stage Continuum campaign.
+A RimWorld 1.6 expansion for **Nivarian Race**. Extend the mothership with 19 tactical supports, a points shop, carrier, gravity ship, Storm Ship, Sage Ship and Warp Prism, and an eight-stage Continuum campaign.
 
-Version: **0.9.8**. Languages: Simplified Chinese, English, Russian, Japanese and French.
+Version: **0.9.9**. Languages: Simplified Chinese, English, Russian, Japanese and French.
 
 ## Installation
 
@@ -21,7 +21,7 @@ Royalty enables native psycast integration; the expansion includes fallback abil
 
 Use the Nivarian mothership support window to open the commander page, and the uplink research terminal to unlock support protocols. The commander HUD provides access to selected supports. Costs, prerequisites and targeting restrictions are shown in the game.
 
-The carrier and gravity ship transport people and cargo. With Milira enabled, request a starship battery upgrade and have colonists deliver the required batteries: ten for the carrier and two for the gravity ship. Once installed, fuel is spent on takeoff rather than continuous flight.
+The carrier and gravity ship transport people and cargo. Request a starship battery upgrade and have colonists deliver ten battery units for the carrier or two for the gravity ship. Milira starship batteries and unstable power cells each count as one unit; vanometric power cells count as two. The native building batteries must be minified first. Once installed, fuel is spent on takeoff rather than continuous flight. See the [ship upgrade guide](Docs/ShipFoldBatteryUpgrade.zh-CN.md).
 
 In 0.9.6, **precision ally recognition** is a separate research project after orbital strike support. It requires 3,000 research, 250 steel, eight industrial components and 30 dragon crystals. Completing it permanently enables friendly-fire protection. An existing purchased unlock remains effective and is migrated automatically.
 
@@ -37,10 +37,13 @@ python Tools/Localization/verify.py
 
 Directory.Build.props supplies default dependency paths. Override HarmonyAssembly, NivarianRaceAssembly, LumiParticleAssembly or MultiplayerApiAssembly if your installation uses different folders. Builds write directly to the mod's assembly folders. Python tools use only the standard library.
 
+The 0.9.9 package retains the five tested optional Multiplayer adapter DLLs and their 0.9.8 assembly identities for compatibility. Core file/informational version is 0.9.9; its binding version remains 0.9.8. Rebuilding an adapter changes its MVID and requires revalidation with third-party patches that identify it by MVID. Additional adapter sources are in Multiplayer/ShipUpgradeSource, WarpPrismSource, StormShipSource and SageShipSource.
+
 Translation contributors: see [localization maintenance](Docs/LOCALIZATION.md). Release verification and its limits are recorded in [release validation](Docs/VALIDATION.md).
 
 Nivarian Race is created by **keeptpa**. This expansion depends on the original mod and does not include its assemblies.
 
-## Research unlock setting
 
-Author: 尹怨怨. In Mod settings → Nivarian Race: MotherShip, “Unlock all expansion technologies without missions” is off by default. Enable it and resume the game to finish all 38 expansion research projects and bypass Continuum missions and support mothership-level requirements. Costs and cooldowns still apply. Turning it off retains finished research and restores level requirements. Vanilla and other mods' research are unchanged; campaign missions are not marked complete. Multiplayer uses the synchronized saved world setting.
+## Research technologies without completing their missions
+
+Off by default. Removes only this expansion’s mission requirements for research. Prerequisite technologies, material costs and normal research are still required. Does not complete technologies or missions, or bypass mothership support levels. Turning it off restores mission requirements and retains completed research.

@@ -8,7 +8,7 @@
 [/list]
 [img]https://images.steamusercontent.com/ugc/15680560357014141984/EF9A3799F1662E24393FEB7582FF700737D3EAC9/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img]
 [b]开始游玩[/b]：打开原版母舰支援窗口的指挥官页，用上行链路终端研究支援。
-[b]自由解锁[/b]：设置中的“无需任务解锁全部扩展科技”默认关闭。开启并恢复游戏后，直接完成本扩展全部研究，跳过连续体任务和支援母舰等级要求；资源消耗与冷却照常。关闭后保留已完成科技并恢复等级门槛，不会伪造任务通关记录，也不解锁其他模组科技。
+[b]研究设置[/b]：默认关闭。勾选后，仅取消本扩展科技的对应任务要求，仍需满足前置科技、支付材料并正常研究。不会直接完成科技或任务，也不跳过支援的母舰等级要求。关闭后恢复任务要求；已完成的科技保留。
 
 [h1]日本語｜ニヴァリアン母艦支援拡張[/h1]
 母艦の力をコロニーへ。Nivarian Race に19種の戦術支援、6枠のカスタムHUD、母艦ポイントショップ、空母と重力艦、全8段階のコンティニュアム戦役を追加します。
@@ -17,7 +17,7 @@
 [*]母艦1隻と駆逐艦8隻の一時支援艦隊。空母・重力艦で人員と貨物を輸送。
 [/list]
 [b]使い方[/b]：母艦支援画面の指揮官タブを開き、アップリンク端末で研究します。
-[b]自由解放[/b]：設定の「ミッションなしで拡張の全技術を解放」は初期状態でオフ。オンにしてゲームを再開すると、本拡張の全研究が完了し、戦役と支援の母艦レベル条件を省略します。費用・クールダウンは継続。オフに戻しても研究は残り、レベル条件が復帰します。他MODの研究や戦役クリア記録には影響しません。
+[b]対応する任務を完了せずに技術を研究する[/b]: 初期状態ではオフ。本拡張の研究に必要な任務条件のみを解除します。前提技術、資材、通常の研究は引き続き必要です。技術や任務を自動完了せず、支援の母艦レベル条件も維持します。オフにすると任務条件が戻りますが、完了済み研究は保持されます。
 
 [h1]English | Nivarian MotherShip[/h1]
 Bring the mothership to your colony. Adds 19 tactical supports, a customizable six-slot HUD, a points shop, a carrier and gravity ship, and an eight-stage Continuum campaign to Nivarian Race.
@@ -27,7 +27,7 @@ Bring the mothership to your colony. Adds 19 tactical supports, a customizable s
 [/list]
 [img]https://images.steamusercontent.com/ugc/16928666956641479643/FE270D44BC43AD0B1DCBB0E2AAC73274DACA54FF/[/img]
 [b]Getting started[/b]: Open the commander tab in the mothership support window and research protocols at the uplink terminal.
-[b]Free unlock[/b]: “Unlock all expansion technologies without missions” is off by default. Enable it and resume to finish every research project in this expansion and bypass campaign and support mothership-level requirements. Costs and cooldowns remain. Turning it off retains completed research and restores level requirements. Other mods' research and campaign completion records stay untouched.
+[b]Research setting[/b]: Off by default. Removes only this expansion’s mission requirements for research. Prerequisite technologies, material costs and normal research are still required. Does not complete technologies or missions, or bypass mothership support levels. Turning it off restores mission requirements and retains completed research.
 
 [h1]Русский | Поддержка материнского корабля[/h1]
 Сила материнского корабля на стороне вашей колонии. Расширение Nivarian Race: 19 видов тактической поддержки, настраиваемая панель на 6 слотов, магазин за очки, авианосец, гравитационный корабль и кампания «Континуум» из 8 этапов.
@@ -36,7 +36,7 @@ Bring the mothership to your colony. Adds 19 tactical supports, a customizable s
 [*]Временный флот: 1 материнский корабль и 8 эсминцев. Авианосец и гравитационный корабль перевозят людей и грузы.
 [/list]
 [b]Начало[/b]: Откройте вкладку командира в окне поддержки и исследуйте протоколы через терминал связи.
-[b]Свободное открытие[/b]: Настройка открытия всех технологий расширения без заданий по умолчанию выключена. Включите её и продолжите игру: исследования этого мода завершатся, требования заданий и уровня корабля для поддержки будут сняты. Расходы и перезарядка сохраняются. После выключения исследования остаются, требования уровня возвращаются. Чужие исследования и записи о прохождении кампании не меняются.
+[b]Исследования без заданий[/b]: По умолчанию выключено. Отменяет только требования заданий для исследований этого дополнения. Предыдущие технологии, материалы и обычное исследование по-прежнему необходимы. Не завершает технологии или задания и не отменяет требования уровня корабля для поддержки. Отключение восстанавливает требования заданий; готовые исследования сохраняются.
 
 [h1]Français | Soutien du vaisseau-mère[/h1]
 La puissance du vaisseau-mère au service de votre colonie. Étend Nivarian Race avec 19 soutiens tactiques, une interface personnalisable à six emplacements, une boutique à points, un porte-aéronefs, un vaisseau gravitationnel et une campagne Continuum en huit étapes.
@@ -46,13 +46,16 @@ La puissance du vaisseau-mère au service de votre colonie. Étend Nivarian Race
 [/list]
 [img]https://images.steamusercontent.com/ugc/11192463098744122599/63F5233EEE3C234BE44C528039DF3E398514214B/[/img]
 [b]Premiers pas[/b] : Ouvrez l'onglet du commandant dans la fenêtre de soutien et recherchez les protocoles au terminal de liaison.
-[b]Déblocage libre[/b] : L'option permettant de débloquer toutes les technologies de cette extension sans mission est désactivée par défaut. Activez-la puis reprenez la partie pour terminer ses recherches et ignorer les exigences de mission et de niveau du vaisseau-mère. Coûts et délais de recharge restent actifs. La désactiver conserve les recherches et rétablit les niveaux requis, sans modifier les autres mods ni les missions accomplies.
+[b]Rechercher les technologies sans accomplir leurs missions[/b]: Désactivé par défaut. Retire uniquement les conditions de mission des recherches de cette extension. Les technologies préalables, les matériaux et la recherche normale restent nécessaires. Ne termine aucune technologie ou mission et ne supprime pas les niveaux du vaisseau mère requis pour les soutiens. La désactivation rétablit les conditions de mission et conserve les recherches terminées.
 
 [h2]Dependencies / 依赖 / 必須MOD / Зависимости / Dépendances[/h2]
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077]Harmony[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=839005762]Humanoid Alien Races[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3624805128]Nivarian Race[/url] → MotherShip.
 [b]Optional[/b]: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3735573834]Nivarian Draconic Military[/url] (campaign / 战役 / 戦役 / кампания / campagne); Royalty (psycasts); [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3256974620]Milira Race[/url] + Ancot Library (starship batteries).
-[b]RimWorld 1.6 • v0.9.8 • Author / 作者 / 作者 / Автор / Auteur: 尹怨怨[/b]
+[b]RimWorld 1.6 • v0.9.9 • Author / 作者 / 作者 / Автор / Auteur: 尹怨怨[/b]
 Nivarian Race & original mothership assets: keeptpa. Required mods are separate downloads. / 原版素材归 keeptpa；前置模组需另行订阅。
+
+[h2]0.9.9[/h2]
+Storm Ship / Sage Ship / Warp Prism; two-phase warp; mission-only research option. 暴风舰爆炸25点（建筑×5），新增贤者舰与折跃棱镜、双阶段折跃及任务研究开关。
 
 [h2]GitHub[/h2]
 [url=https://github.com/KuiYiyinRua/NivarianMotherShip]GitHub · 完整源码 / Full source[/url]

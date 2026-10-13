@@ -9,7 +9,7 @@ En vol de combat, repère les ennemis à moins de 60 cases et lance un appareil 
 
 Réserve de 10 000 carburant chimique ; vol local : 1 par seconde. Voyage mondial comme une navette, portée limitée par le carburant. Aucune recharge de décollage supplémentaire ; zone sans toit et espace libre pour atterrir requis.
 
-Avec Milira Race, améliorez la propulsion à l'arrêt. Les colons installent 10 batteries Milira : chaque décollage coûte ensuite 200 carburant, sans consommation continue locale ou mondiale. Progression sauvegardée ; batteries installées consommées.</NMC_Carrier.description>
+Améliorez au sol avec 10 unités de batteries. Milira et cellule instable valent 1 unité, cellule vanométrique 2. Mélange autorisé. Démontez et emballez les cellules. Cliquez à nouveau pendant l’installation pour annuler et récupérer tous les apports. Le coût fixe de décollage et l’absence de consommation ultérieure restent identiques.</NMC_Carrier.description>
   <NMC_CarrierIncoming.label>Porte-aéronefs nivarian (atterrissage)</NMC_CarrierIncoming.label>
   <NMC_CarrierLeaving.label>Porte-aéronefs nivarian (décollage)</NMC_CarrierLeaving.label>
   <NMC_GravityFrigate.label>Vaisseau gravitationnel nivarian</NMC_GravityFrigate.label>
@@ -21,7 +21,7 @@ Le rayon gravitationnel soulève et étourdit un ennemi terrestre à moins de 16
 
 Réserve 600 carburant chimique. Vol local : 1 toutes les 5 secondes. Voyage mondial : moitié du coût d'une navette, portée limitée par le carburant. Pas de recharge de décollage supplémentaire ; toit absent et place libre pour atterrir requis.
 
-Avec Milira Race, amélioration à l'arrêt avec 2 batteries. Ensuite, chaque décollage coûte 100 carburant, sans consommation continue locale ou mondiale. Progression sauvegardée ; batteries installées consommées.</NMC_GravityFrigate.description>
+Améliorez au sol avec 2 unités de batteries. Milira et cellule instable valent 1 unité, cellule vanométrique 2. Mélange autorisé. Démontez et emballez les cellules. Cliquez à nouveau pendant l’installation pour annuler et récupérer tous les apports. Le coût fixe de décollage et l’absence de consommation ultérieure restent identiques.</NMC_GravityFrigate.description>
   <NMC_GravityFrigateIncoming.label>Vaisseau gravitationnel (atterrissage)</NMC_GravityFrigateIncoming.label>
   <NMC_GravityFrigateLeaving.label>Vaisseau gravitationnel (décollage)</NMC_GravityFrigateLeaving.label>
   <NMC_CarrierInterceptor.label>Intercepteur nivarian</NMC_CarrierInterceptor.label>
@@ -133,4 +133,31 @@ Le cristal ne prend aucune place au sol et ne bloque pas les déplacements. Il p
 Les colons apportent les aliments autorisés, convertis en réserve nutritive. Réglez-les dans l'onglet Nutrition ; consultez consommation et production en sélectionnant la tour. Arrêt ou manque de nutriments interrompt la production.
 
 Déployez un noyau et livrez les matériaux pour la construction automatique. Fournit seulement de l'énergie, sans culture de personnes ni d'embryons.</NMC_NutrientEnergyTower.description>
+  <NMC_WarpPrism.label>Vaisseau de transfert nivarian</NMC_WarpPrism.label>
+  <NMC_WarpPrism.description>Transport sans armes de 3×3 cases : 350 PV de base, charge de 1000 kg. Même vitesse que la frégate gravitationnelle, consommation divisée par deux : 1 chimiocarburant par 10 secondes de vol local ou de champ, moitié du coût des voyages mondiaux. Réservoir de 600.
+
+Après décollage, la transition dure 1 seconde. Le prisme symétrique déployé tourne lentement et ne peut ni bouger, ni atterrir, ni se transférer. Son champ de rayon 6 alimente et recharge ; les champs d’une carte partagent 10000 W. Les colons peuvent choisir le champ principal ou tout prisme déployé, même sur une autre carte. Les vaisseaux arrivent uniquement au champ principal.
+
+Au sol, amélioration pour 2 unités de batteries, comme la frégate. Batterie Milira et cellule instable : 1 chacune ; cellule vanométrique : 2. Emballez d’abord les batteries-bâtiments. Après amélioration, le décollage coûte 50 chimiocarburants ; vol continu, champ et voyage mondial ne consomment plus de carburant.</NMC_WarpPrism.description>
+  <NMC_WarpPrismIncoming.label>Vaisseau de transfert nivarian (atterrissage)</NMC_WarpPrismIncoming.label>
+  <NMC_WarpPrismLeaving.label>Vaisseau de transfert nivarian (décollage)</NMC_WarpPrismLeaving.label>
+  <NMC_StormShip.label>Tempête nivarian</NMC_StormShip.label>
+  <NMC_StormShip.description>Vaisseau de siège nivarian à longue portée. Occupe 5×5 cases, 2 000 PV de base, capacité de 3 500 kg. En vol, tire un orbe toutes les 3 secondes sur un ennemi à 100 cases, automatiquement ou sur désignation. Impact : 20 dégâts, pénétration 80 %. Puis explosion de 3×3 cases : 25 dégâts, pénétration 35 %, sans atténuation. Les deux infligent 5× aux bâtiments.
+
+Vitesse et consommation identiques au porte-aéronefs : capacité 10 000, 1 carburant chimique par seconde sur la carte ; voyage mondial à 3 par tuile, minimum 50. Peut se replier vers le champ principal.
+
+Au sol, amélioration avec 5 unités de batteries, moitié du porte-aéronefs. Batteries Milira et cellules instables : 1 unité ; cellules vanométriques : 2. Mélange possible ; emballez les cellules de base. Annuler avant achèvement rembourse les apports. Après installation, le décollage coûte 200 carburants, sans consommation ultérieure en vol.</NMC_StormShip.description>
+  <NMC_StormShipIncoming.label>Tempête nivarian (atterrissage)</NMC_StormShipIncoming.label>
+  <NMC_StormShipLeaving.label>Tempête nivarian (décollage)</NMC_StormShipLeaving.label>
+  <NMC_StormOrb.label>orbe orageux</NMC_StormOrb.label>
+  <NMC_SageShip.label>Vaisseau sage nivarian</NMC_SageShip.label>
+  <NMC_SageShip.description>Vaisseau de détection et d’attaque au sol de 2×2 cases : 350 PV de base, charge utile de 200 kg. Attaque désactivée au départ. En vol et en mode attaque, tire deux rayons bleus toutes les 0,5 s sur les ennemis au sol à 12 cases maximum. Chaque rayon inflige 6 dégâts, pénétration 30% ; chaque salve coûte 1 chimiocarburant. Exclut les cibles volantes ou soulevées par gravité.
+
+Révèle passivement les ennemis invisibles dans un rayon de 50 cases, même posé et sans attaque. Hors de portée, leur invisibilité récupère selon ses règles normales.
+
+Vol local et mondial 25% plus rapide que la frégate gravitationnelle. Consommation : 1 par 10 s en vol ; trajet mondial 0,75 par case, minimum 12,5, soit la moitié. Réservoir 600. Rappel vers le champ d’énergie de saut disponible.
+
+Amélioration : 1 unité de batterie, moitié du coût de la frégate. Accepte les batteries Milira, cellules instables ou vanométriques entières. Après amélioration, décollage à 50 carburants, sans consommation continue ; chaque salve coûte toujours 1.</NMC_SageShip.description>
+  <NMC_SageShipIncoming.label>Vaisseau sage nivarian (atterrissage)</NMC_SageShipIncoming.label>
+  <NMC_SageShipLeaving.label>Vaisseau sage nivarian (décollage)</NMC_SageShipLeaving.label>
 </LanguageData>

@@ -13,7 +13,7 @@ namespace NivarianCommander
         public const string Hangar = "NMC_CarrierHangarExpansion";
         static readonly HashSet<string> Ships = new HashSet<string>
         {
-            "NMC_Carrier", "NMC_GravityFrigate", "NMC_CarrierInterceptor",
+            "NMC_Carrier", "NMC_GravityFrigate", "NMC_CarrierInterceptor", "NMC_WarpPrism", "NMC_StormShip", "NMC_SageShip",
             "NMC_TacticalMothership", "NMC_FleetDestroyer", "NMC_VoidRay", "NMC_Zoraya"
         };
         public static bool Applies(ThingDef def) => def != null && Ships.Contains(def.defName);

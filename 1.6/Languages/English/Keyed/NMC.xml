@@ -24,15 +24,13 @@
   <NMC_Text0022>Automatic gravity beam: on</NMC_Text0022>
   <NMC_Text0023>Automatic gravity beam: off</NMC_Text0023>
   <NMC_Text0024>While airborne, automatically lift the nearest ground enemy within 16 cells. Manual targeting remains available when disabled.</NMC_Text0024>
-  <NMC_Text0025>Starship propulsion: upgraded</NMC_Text0025>
-  <NMC_Text0026>Starship batteries: {0}/{1}</NMC_Text0026>
-  <NMC_Text0027>Upgrade starship propulsion</NMC_Text0027>
-  <NMC_Text0028>Colonists will haul and install {0} Milira starship batteries. Once complete, each takeoff consumes {1} chemfuel, with no continuous fuel use in local combat or world travel. Installed batteries are consumed permanently; the ship must be landed to receive them.</NMC_Text0028>
+  <NMC_Text0025>Starship drive upgraded</NMC_Text0025>
+  <NMC_Text0027>Upgrade starship drive</NMC_Text0027>
+  <NMC_Text0028>Colonists install {0} battery units. Milira starship batteries and unstable power cells each count as 1 unit; vanometric power cells count as 2. Types can be mixed. Uninstall and pack vanilla cells first. Click again during installation to cancel and return all deposited cells. Once completed, each takeoff costs {1} chemfuel; local flight and world travel consume no further fuel. Start the upgrade while grounded.</NMC_Text0028>
   <NMC_Text0029>Starship batteries installed</NMC_Text0029>
-  <NMC_Text0030>Waiting for colonists to haul batteries (Hauling work)</NMC_Text0030>
   <NMC_Text0031>Land first</NMC_Text0031>
   <NMC_Text0032>{0} has completed its propulsion upgrade.</NMC_Text0032>
-  <NMC_Text0033>No reachable Milira starship batteries</NMC_Text0033>
+  <NMC_Text0033>No haulable compatible batteries (uninstall and pack vanilla cells first)</NMC_Text0033>
   <NMC_Text0034>Destination no longer available. Choose again.</NMC_Text0034>
   <NMC_Text0035>Cooldown remaining: {0}</NMC_Text0035>
   <NMC_Text0036>Requires {0} P + {1} V</NMC_Text0036>
@@ -282,9 +280,6 @@ Previously acquired data and completed research are retained.</NMC_Text0233>
   <NMC_Text0254>Colonist has arrived. Check their condition and reassign work.</NMC_Text0254>
   <NMC_Text0255>Warp failed. Check the colonist's current position and try again.</NMC_Text0255>
   <NMC_Text0256>Warp to energy field</NMC_Text0256>
-  <NMC_Text0257>Travel instantly to the deployed warp energy field, even between colonies. If the center is occupied, arrive at the nearest safe free cell within the field.
-
-Warping costs no extra energy and has no cooldown. The colonist stops their current job, puts down carried objects, and brings their equipment and inventory.</NMC_Text0257>
   <NMC_Text0258>Zoraya legion · </NMC_Text0258>
   <NMC_Text0259>Tactical fleet · </NMC_Text0259>
   <NMC_Text0260>Recovering</NMC_Text0260>
@@ -543,10 +538,51 @@ Remaining: {0}</NMC_Text0474>
   <NMC_CarrierSteelAutoFill>Automatically refill dragonfrost steel. When disabled, you can still order a colonist to refill with a right-click.</NMC_CarrierSteelAutoFill>
   <NMC_CarrierSteelMissing>No available dragonfrost steel</NMC_CarrierSteelMissing>
   <NMC_SettingsShortcut>Show mothership commander HUD</NMC_SettingsShortcut>
-  <NMC_SettingsUnlockAll>Unlock all expansion technologies without missions</NMC_SettingsUnlockAll>
-  <NMC_SettingsUnlockAllHint>Off by default. When enabled, resuming the game completes every research project in this expansion and bypasses Continuum missions and support mothership-level requirements. Resource costs and cooldowns still apply. Turning it off keeps completed research and restores level requirements. Multiplayer changes are synchronized; joining players use the host save state.</NMC_SettingsUnlockAllHint>
+  <NMC_SettingsUnlockAll>Research technologies without completing their missions</NMC_SettingsUnlockAll>
+  <NMC_SettingsUnlockAllHint>Off by default. Removes only this expansion’s mission requirements for research. Prerequisite technologies, material costs and normal research are still required. Does not complete technologies or missions, or bypass mothership support levels. Turning it off restores mission requirements and retains completed research.</NMC_SettingsUnlockAllHint>
   <NMC_Text0748>Spacetime fluctuation: move speed ×2</NMC_Text0748>
   <NMC_Text0749>Nutrition reserve</NMC_Text0749>
   <NMC_Text0750>Target nutrition: {0}. Drag the reserve bar to adjust the target. Lowering it keeps existing nutrition; zero stops refilling. Choose food types in the Nutrition tab.</NMC_Text0750>
   <NMC_Text0751>Automatically refill nutrition. Turning this off stops new automatic refill jobs; stored nutrition is still consumed. You can still right-click to order a colonist to refill.</NMC_Text0751>
+  <NMC_Text0752>Cancel upgrade ({0}/{1})</NMC_Text0752>
+  <NMC_Text0753>Only player-owned ships from this mod can fold</NMC_Text0753>
+  <NMC_Text0754>Wait for takeoff, landing or entry warp to finish</NMC_Text0754>
+  <NMC_Text0755>Fold the ship into a clear position inside the current energy field. Retains the hull, rotation, cargo, passengers and upgrade progress; carriers recover their fighters first. Unavailable during takeoff, landing or entry warp. Summoned fleets retain their original lifetime.
+
+Warping uses the Nivarian building printing effect: 4 seconds at departure, then 4 seconds at the actual arrival position (game time). Damage applies normally during both phases.
+
+Airborne ships can warp above terrain or buildings and remain airborne. Grounded ships still require a valid ground destination.</NMC_Text0755>
+  <NMC_WarpFuelRate>1 unit every 10 seconds</NMC_WarpFuelRate>
+  <NMC_WarpChanging>Changing mode: {0}s</NMC_WarpChanging>
+  <NMC_WarpFieldStatus>Energy field: radius 6; personnel warp destination</NMC_WarpFieldStatus>
+  <NMC_WarpFlightStatus>Flight mode: energy field retracted</NMC_WarpFlightStatus>
+  <NMC_WarpFlightMode>Flight mode</NMC_WarpFlightMode>
+  <NMC_WarpFieldMode>Energy field mode</NMC_WarpFieldMode>
+  <NMC_WarpLocked>Switch to flight mode first. Movement, landing and ship warp are unavailable while deployed or changing mode.</NMC_WarpLocked>
+  <NMC_WarpModeDescription>Switch modes in 1 second. The deployed prism hovers and slowly rotates, providing power, unit charging and personnel arrivals within 6 cells. Fields on one map share a 10,000 W budget. Hovering consumes flight fuel; ships cannot warp to prisms.</NMC_WarpModeDescription>
+  <NMC_WarpTakeoffFirst>Take off and finish ascending first.</NMC_WarpTakeoffFirst>
+  <NMC_WarpDestinationLost>The destination prism is inactive, out of fuel or has moved. Select a destination again.</NMC_WarpDestinationLost>
+  <NMC_WarpPrimaryDestination>Primary energy field</NMC_WarpPrimaryDestination>
+  <NMC_WarpPrismDestination>Warp prism: {0} ({1}, {2})</NMC_WarpPrismDestination>
+  <NMC_WarpRecallDescription>Warp to the primary field or a deployed prism, including across maps. Equipment and inventory travel with the colonist; carried loads are dropped and current work ends.
+
+Warping uses the Nivarian building printing effect: 4 seconds at departure, then 4 seconds at the actual arrival position (game time). Damage applies normally during both phases.</NMC_WarpRecallDescription>
+  <NMC_WarpBusy>Warping (4-second departure and 4-second arrival); damage still applies</NMC_WarpBusy>
+  <NMC_WarpDropUnavailable>Nivarian drop pod unavailable</NMC_WarpDropUnavailable>
+  <NMC_StormAttack>Thunder orb attack</NMC_StormAttack>
+  <NMC_StormAttackDesc>Designate a hostile target within 100 cells. Fires every 3 seconds: 20 direct damage at 80% armor penetration, then a 3×3 blast for 15 damage at 35% penetration. Both deal 5× damage to buildings.</NMC_StormAttackDesc>
+  <NMC_StormMustFly>Must be in flight and not currently warping</NMC_StormMustFly>
+  <NMC_StormFireAtWill>Fire at will</NMC_StormFireAtWill>
+  <NMC_StormAutoDesc>Automatically attack visible hostiles in range while airborne. Explicit targets remain active when this is off.</NMC_StormAutoDesc>
+  <NMC_StormClearTarget>Clear forced target</NMC_StormClearTarget>
+  <NMC_StormClearDesc>Clear the manually designated target. Automatic targeting continues if fire at will is enabled.</NMC_StormClearDesc>
+  <NMC_StormStatus>Thunder orb: range 100; cooldown {0}s</NMC_StormStatus>
+  <NMC_SageAttackMode>Attack mode</NMC_SageAttackMode>
+  <NMC_SageAttackModeDesc>When airborne, engage ground enemies within 12 cells. Fire two beams every 0.5 seconds, each dealing 6 damage with 30% armor penetration. Each volley costs 1 chemfuel, even after the battery upgrade. Detection remains active when weapons are off.</NMC_SageAttackModeDesc>
+  <NMC_SageTarget>Select ground target</NMC_SageTarget>
+  <NMC_SageTargetDesc>Prioritize a ground enemy within 12 cells; acquire another if it becomes invalid. Flying and gravity-lifted targets are excluded.</NMC_SageTargetDesc>
+  <NMC_SageMustAttack>Take off and enable attack mode; unavailable during warp.</NMC_SageMustAttack>
+  <NMC_SageStatus>Attack mode: {0}; passive detection radius: 50 cells</NMC_SageStatus>
+  <NMC_SageOn>On</NMC_SageOn>
+  <NMC_SageOff>Off</NMC_SageOff>
 </LanguageData>

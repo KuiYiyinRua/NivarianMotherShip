@@ -144,10 +144,10 @@
     "En vol, soulever automatiquement l'ennemi au sol le plus proche à moins de 16 cases. Le ciblage manuel reste possible si cette option est désactivée."
   ],
   "25": [
-    "Starship propulsion: upgraded",
-    "Двигатель звездолёта: улучшен",
-    "星艦動力：改良済み",
-    "Propulsion stellaire : améliorée"
+    "Starship drive upgraded",
+    "Звёздный привод улучшен",
+    "星艦動力改良済み",
+    "Propulsion stellaire améliorée"
   ],
   "26": [
     "Starship batteries: {0}/{1}",
@@ -156,16 +156,16 @@
     "Batteries stellaires : {0}/{1}"
   ],
   "27": [
-    "Upgrade starship propulsion",
-    "Улучшить двигатель",
+    "Upgrade starship drive",
+    "Улучшить звёздный привод",
     "星艦動力を改良",
-    "Améliorer la propulsion"
+    "Améliorer la propulsion stellaire"
   ],
   "28": [
-    "Colonists will haul and install {0} Milira starship batteries. Once complete, each takeoff consumes {1} chemfuel, with no continuous fuel use in local combat or world travel. Installed batteries are consumed permanently; the ship must be landed to receive them.",
-    "Поселенцы доставят и установят {0} батарей звездолёта милира. После завершения каждый взлёт требует {1} химтоплива, а бой на карте и полёт по миру больше не расходуют топливо непрерывно. Установленные батареи расходуются навсегда; доставка возможна только после посадки.",
-    "入植者がミリラ星艦バッテリーを{0}個搬入して設置します。完了後は離陸ごとに化学燃料{1}を消費し、マップ内戦闘でもワールド移動でも継続消費しません。設置したバッテリーは消費されます。搬入には着陸が必要です。",
-    "Les colons transporteront et installeront {0} batteries stellaires Milira. Ensuite, chaque décollage consommera {1} de carburant chimique, sans consommation continue en combat local ni en voyage mondial. Les batteries installées sont consommées définitivement ; le vaisseau doit être posé pour les recevoir."
+    "Colonists install {0} battery units. Milira starship batteries and unstable power cells each count as 1 unit; vanometric power cells count as 2. Types can be mixed. Uninstall and pack vanilla cells first. Click again during installation to cancel and return all deposited cells. Once completed, each takeoff costs {1} chemfuel; local flight and world travel consume no further fuel. Start the upgrade while grounded.",
+    "Колонисты устанавливают {0} единиц батарей. Батарея милира и нестабильный энергоэлемент дают по 1 единице, ванометрический — 2. Типы можно смешивать. Сначала демонтируйте и упакуйте ванильные элементы. Повторный щелчок во время установки отменяет её и возвращает все внесённые батареи. После завершения взлёт стоит {1} химтоплива, дальнейший полёт его не расходует. Начать улучшение можно на земле.",
+    "入植者がバッテリー{0}単位を取り付けます。ミリラ星艦バッテリーと不安定なパワーセルは各1単位、無限化学反応炉は2単位。混用可能です。原版セルは先に取り外して梱包してください。作業中に再度クリックすると中止し、投入済みセルをすべて返却します。完了後は離陸時に化学燃料{1}を消費し、以後の飛行では消費しません。改良開始には着陸が必要です。",
+    "Les colons installent {0} unités de batteries. Une batterie Milira ou une cellule instable vaut 1 unité ; une cellule vanométrique en vaut 2. Les types peuvent être mélangés. Démontez et emballez les cellules du jeu de base. Pendant l’installation, cliquez à nouveau pour annuler et récupérer tous les apports. Une fois terminée, chaque décollage coûte {1} carburant chimique, sans consommation ultérieure en vol. Commencez au sol."
   ],
   "29": [
     "Starship batteries installed",
@@ -192,10 +192,10 @@
     "L'amélioration de la propulsion de {0} est terminée."
   ],
   "33": [
-    "No reachable Milira starship batteries",
-    "Нет доступных батарей звездолёта милира",
-    "搬入可能なミリラ星艦バッテリーがありません",
-    "Aucune batterie stellaire Milira accessible"
+    "No haulable compatible batteries (uninstall and pack vanilla cells first)",
+    "Нет доступных батарей (сначала демонтируйте и упакуйте ванильные элементы)",
+    "運搬可能な対応バッテリーがありません（原版セルは先に取り外して梱包）",
+    "Aucune batterie compatible transportable (démontez et emballez les cellules)"
   ],
   "34": [
     "Destination no longer available. Choose again.",
@@ -1536,10 +1536,10 @@
     "Rejoindre le champ par distorsion"
   ],
   "257": [
-    "Travel instantly to the deployed warp energy field, even between colonies. If the center is occupied, arrive at the nearest safe free cell within the field.\n\nWarping costs no extra energy and has no cooldown. The colonist stops their current job, puts down carried objects, and brings their equipment and inventory.",
-    "Мгновенно переместиться к развёрнутому варп-полю, в том числе из другой колонии. Если центр занят, прибытие произойдёт на ближайшую безопасную клетку поля.\n\nПереход не требует дополнительной энергии и перезарядки. Поселенец прервёт работу, положит переносимый объект и заберёт экипировку и инвентарь.",
-    "配置済みのワープエネルギーフィールドへ即座に移動します。入植地間も移動可能です。中心が埋まっている場合、フィールド内で最も近い安全な空きマスに到着します。\n\n追加エネルギーもクールダウンも不要です。入植者は現在の作業を中止し、運搬品を下ろし、装備と所持品を携行します。",
-    "Rejoindre instantanément le champ d'énergie déployé, même entre colonies. Si le centre est occupé, l'arrivée se fait sur la case libre sûre la plus proche dans le champ.\n\nAucun coût énergétique ni délai de recharge supplémentaire. Le colon interrompt son travail, pose les objets transportés et emporte équipement et inventaire."
+    "Travel instantly to the deployed warp energy field, even between colonies. If the center is occupied, arrive at the nearest safe free cell within the field.\n\nWarping uses the Nivarian building printing effect: 4 seconds at departure, then 4 seconds at the actual arrival position (game time). Damage applies normally during both phases.",
+    "Мгновенно переместиться к развёрнутому варп-полю, в том числе из другой колонии. Если центр занят, прибытие произойдёт на ближайшую безопасную клетку поля.\n\nПеренос использует эффект печати зданий нивариан: 4 секунды подготовки и ещё 4 секунды печати в точке прибытия (игровое время). На обоих этапах наносится обычный урон.",
+    "配置済みのワープエネルギーフィールドへ即座に移動します。入植地間も移動可能です。中心が埋まっている場合、フィールド内で最も近い安全な空きマスに到着します。\n\nニヴァリアン建築のプリントエフェクトを使用します。出発地点で4秒、実際の到着地点でさらに4秒かかります（ゲーム内時間）。両段階とも通常どおりダメージを受けます。",
+    "Rejoindre instantanément le champ d'énergie déployé, même entre colonies. Si le centre est occupé, l'arrivée se fait sur la case libre sûre la plus proche dans le champ.\n\nLe transfert utilise l'impression nivarian : 4 secondes au départ, puis 4 secondes au point d'arrivée réel (temps de jeu). Les dégâts s'appliquent normalement pendant les deux phases."
   ],
   "258": [
     "Zoraya legion · ",
@@ -3264,10 +3264,10 @@
     "Porte-aéronefs nivarian"
   ],
   "545": [
-    "A heavy Nivarian carrier with 2,500 HP and 10,000 kg cargo capacity. It has no direct weapons and fights using interceptors.\n\nSet the desired amount in the dedicated “Dragonfrost steel reserve” panel. Colonists haul and refill the carrier while it is grounded, up to 1,000 units. Dragonfrost steel in the transport hold is not automatically used for manufacturing.Each interceptor costs 10 dragonfrost steel and takes 5 seconds to build, both on the ground and in flight. The hangar and deployed interceptors together are limited to 6; each interceptor has 125 hit points.\n\nIn aerial combat, detects enemies within 60 cells and launches one interceptor per second. Interceptors return beyond 80 cells from their carrier. Landing orders stop launches and recall all aircraft.\n\nStores 10,000 chemfuel and consumes 1 per second in local flight. World travel uses shuttle fuel rules, with range limited by fuel. No extra takeoff cooldown; clear roofs above and enough ground space for landing.\n\nWith Milira Race enabled, choose “Upgrade starship propulsion” while landed. Colonists install 10 Milira starship batteries. Then each takeoff costs 200 chemfuel, with no continuous fuel use locally or on the world map. Upgrade progress is saved; installed batteries are consumed.",
-    "Тяжёлый авианосец нивариан: 2500 ОЗ, грузоподъёмность 10 000 кг. Собственного оружия нет, сражается перехватчиками.\n\nЗадайте нужное количество на отдельной панели «Запас дракоморозной стали». Колонисты доставляют и загружают сталь, пока авианосец стоит на земле, до 1000 единиц. Сталь в грузовом отсеке не расходуется автоматически на производство.Каждый перехватчик стоит 10 единиц дракоморозной стали и строится 5 секунд как на земле, так и в полёте. В ангаре и в полёте может быть всего 6 перехватчиков; прочность каждого — 125.\n\nВ полёте обнаруживает врагов в радиусе 60 клеток и выпускает один аппарат в секунду. За пределами 80 клеток от авианосца они возвращаются. Приказ посадки прекращает вылеты и отзывает всех.\n\nЗапас 10 000 химтоплива; местный полёт расходует 1 в секунду. Расход в мире как у челнока, дальность ограничена топливом. Дополнительной перезарядки взлёта нет; сверху не должно быть крыши, для посадки нужно свободное место.\n\nС Milira Race на земле доступно улучшение двигателя: поселенцы установят 10 батарей милира. Затем взлёт стоит 200 химтоплива, непрерывного расхода на карте и в мире нет. Прогресс сохраняется, установленные батареи расходуются.",
-    "耐久2500、積載10000 kgの大型空母。直接攻撃兵器はなく艦載機で戦闘します。\n\n専用の「龍霜鋼の備蓄」パネルで目標量を設定すると、着陸中に入植者が龍霜鋼を運搬して補充します。上限は1000です。輸送用貨物室の龍霜鋼は自動的に製造へ使われません。艦載機1機につき龍霜鋼10を消費し、製造には5秒かかります。着陸中も飛行中も製造可能です。格納庫と出撃中の艦載機の合計上限は6機で、各機の耐久値は125です。\n\n飛行戦闘時は60マス以内の敵を見つけ、毎秒1機出撃。空母から80マス離れると帰還します。着陸命令で出撃を止め全機回収します。\n\n化学燃料最大10000、マップ内飛行中は毎秒1消費。ワールド移動はシャトルと同じ消費で燃料が航続距離を制限します。追加離陸クールダウンなし。上の屋根を除き、着陸用空間を確保してください。\n\nミリラ種族有効時、停泊中に星艦動力改良を選べます。入植者がバッテリー10個を設置すると、離陸ごとに燃料200を消費し、マップ・ワールドで継続消費しません。進捗は保存され、設置済みバッテリーは消費されます。",
-    "Grand porte-aéronefs nivarian : 2 500 PV, capacité 10 000 kg. Sans arme directe, il combat avec ses intercepteurs.\n\nRéglez la quantité souhaitée dans le panneau « Réserve d’acier givre-dragon ». Les colons apportent et chargent l’acier lorsque le porte-avions est au sol, jusqu’à 1 000 unités. L’acier de la soute de transport n’est pas automatiquement utilisé pour la fabrication.Chaque intercepteur coûte 10 unités d’acier givre-dragon et demande 5 secondes de fabrication, au sol comme en vol. Le hangar et les intercepteurs déployés sont limités à 6 au total ; chacun possède 125 points de vie.\n\nEn vol de combat, repère les ennemis à moins de 60 cases et lance un appareil par seconde. Ils reviennent au-delà de 80 cases du porteur. L'ordre d'atterrissage arrête les lancements et rappelle tous les appareils.\n\nRéserve de 10 000 carburant chimique ; vol local : 1 par seconde. Voyage mondial comme une navette, portée limitée par le carburant. Aucune recharge de décollage supplémentaire ; zone sans toit et espace libre pour atterrir requis.\n\nAvec Milira Race, améliorez la propulsion à l'arrêt. Les colons installent 10 batteries Milira : chaque décollage coûte ensuite 200 carburant, sans consommation continue locale ou mondiale. Progression sauvegardée ; batteries installées consommées."
+    "A heavy Nivarian carrier with 2,500 HP and 10,000 kg cargo capacity. It has no direct weapons and fights using interceptors.\n\nSet the desired amount in the dedicated “Dragonfrost steel reserve” panel. Colonists haul and refill the carrier while it is grounded, up to 1,000 units. Dragonfrost steel in the transport hold is not automatically used for manufacturing.Each interceptor costs 10 dragonfrost steel and takes 5 seconds to build, both on the ground and in flight. The hangar and deployed interceptors together are limited to 6; each interceptor has 125 hit points.\n\nIn aerial combat, detects enemies within 60 cells and launches one interceptor per second. Interceptors return beyond 80 cells from their carrier. Landing orders stop launches and recall all aircraft.\n\nStores 10,000 chemfuel and consumes 1 per second in local flight. World travel uses shuttle fuel rules, with range limited by fuel. No extra takeoff cooldown; clear roofs above and enough ground space for landing.\n\nUpgrade the starship drive while grounded using 10 battery units. Milira batteries and unstable power cells each count as 1; vanometric cells count as 2. Types can be mixed. Uninstall and pack vanilla cells first. Click again during installation to cancel and return all deposited batteries. The completed drive retains its fixed takeoff fuel cost and consumes no further fuel in flight.",
+    "Тяжёлый авианосец нивариан: 2500 ОЗ, грузоподъёмность 10 000 кг. Собственного оружия нет, сражается перехватчиками.\n\nЗадайте нужное количество на отдельной панели «Запас дракоморозной стали». Колонисты доставляют и загружают сталь, пока авианосец стоит на земле, до 1000 единиц. Сталь в грузовом отсеке не расходуется автоматически на производство.Каждый перехватчик стоит 10 единиц дракоморозной стали и строится 5 секунд как на земле, так и в полёте. В ангаре и в полёте может быть всего 6 перехватчиков; прочность каждого — 125.\n\nВ полёте обнаруживает врагов в радиусе 60 клеток и выпускает один аппарат в секунду. За пределами 80 клеток от авианосца они возвращаются. Приказ посадки прекращает вылеты и отзывает всех.\n\nЗапас 10 000 химтоплива; местный полёт расходует 1 в секунду. Расход в мире как у челнока, дальность ограничена топливом. Дополнительной перезарядки взлёта нет; сверху не должно быть крыши, для посадки нужно свободное место.\n\nУлучшение на земле требует 10 единиц батарей. Милира и нестабильный элемент дают по 1, ванометрический — 2. Можно смешивать. Ванильные элементы сначала демонтируйте и упакуйте. Повторный щелчок отменяет установку и возвращает все внесённые батареи. После завершения сохраняются фиксированная стоимость взлёта и отсутствие расхода в полёте.",
+    "耐久2500、積載10000 kgの大型空母。直接攻撃兵器はなく艦載機で戦闘します。\n\n専用の「龍霜鋼の備蓄」パネルで目標量を設定すると、着陸中に入植者が龍霜鋼を運搬して補充します。上限は1000です。輸送用貨物室の龍霜鋼は自動的に製造へ使われません。艦載機1機につき龍霜鋼10を消費し、製造には5秒かかります。着陸中も飛行中も製造可能です。格納庫と出撃中の艦載機の合計上限は6機で、各機の耐久値は125です。\n\n飛行戦闘時は60マス以内の敵を見つけ、毎秒1機出撃。空母から80マス離れると帰還します。着陸命令で出撃を止め全機回収します。\n\n化学燃料最大10000、マップ内飛行中は毎秒1消費。ワールド移動はシャトルと同じ消費で燃料が航続距離を制限します。追加離陸クールダウンなし。上の屋根を除き、着陸用空間を確保してください。\n\n着陸中にバッテリー10単位で星艦動力を改良できます。ミリラと不安定なパワーセルは各1、無限化学反応炉は2単位。混用可能。原版セルは先に取り外して梱包してください。作業中の再クリックで中止し、投入物を全返却します。完了後の離陸費用と飛行中の燃料不要効果は同じです。",
+    "Grand porte-aéronefs nivarian : 2 500 PV, capacité 10 000 kg. Sans arme directe, il combat avec ses intercepteurs.\n\nRéglez la quantité souhaitée dans le panneau « Réserve d’acier givre-dragon ». Les colons apportent et chargent l’acier lorsque le porte-avions est au sol, jusqu’à 1 000 unités. L’acier de la soute de transport n’est pas automatiquement utilisé pour la fabrication.Chaque intercepteur coûte 10 unités d’acier givre-dragon et demande 5 secondes de fabrication, au sol comme en vol. Le hangar et les intercepteurs déployés sont limités à 6 au total ; chacun possède 125 points de vie.\n\nEn vol de combat, repère les ennemis à moins de 60 cases et lance un appareil par seconde. Ils reviennent au-delà de 80 cases du porteur. L'ordre d'atterrissage arrête les lancements et rappelle tous les appareils.\n\nRéserve de 10 000 carburant chimique ; vol local : 1 par seconde. Voyage mondial comme une navette, portée limitée par le carburant. Aucune recharge de décollage supplémentaire ; zone sans toit et espace libre pour atterrir requis.\n\nAméliorez au sol avec 10 unités de batteries. Milira et cellule instable valent 1 unité, cellule vanométrique 2. Mélange autorisé. Démontez et emballez les cellules. Cliquez à nouveau pendant l’installation pour annuler et récupérer tous les apports. Le coût fixe de décollage et l’absence de consommation ultérieure restent identiques."
   ],
   "546": [
     "Nivarian carrier (landing)",
@@ -3294,10 +3294,10 @@
     "Vaisseau gravitationnel nivarian"
   ],
   "550": [
-    "A Nivarian anti-air ship with light transport capability. Footprint 3×3, 600 HP, cargo capacity 300 kg.\n\nWhile airborne, fires twin prism lasers at airborne enemies within 16 cells, once per second. Each beam deals 6 base damage, penetrates 50% armor and deals triple damage to buildings, without freezing. Cannot directly target ground enemies.\n\nThe gravity beam lifts and stuns a ground enemy within 16 cells for 4 seconds, making it a valid laser target. No extra resource cost; cooldown 8 seconds. Manual or automatic use.\n\nStores 600 chemfuel. Local flight consumes 1 every 5 seconds. World travel costs half a shuttle's fuel; range is fuel-limited. No extra takeoff cooldown; unroofed launch and clear landing space required.\n\nWith Milira Race enabled, landed ships can upgrade propulsion. Colonists install 2 Milira batteries. Then takeoff costs 100 chemfuel with no continuous consumption locally or worldwide. Progress is saved; installed batteries are consumed.",
-    "Корабль ПВО нивариан для лёгких перевозок. Размер 3×3, 600 ОЗ, грузоподъёмность 300 кг.\n\nВ полёте два призматических лазера атакуют воздушные цели в радиусе 16 клеток раз в секунду. Каждый луч: урон 6, бронепробитие 50%, тройной урон зданиям, без заморозки. Наземные цели напрямую не атакует.\n\nГравитационный луч поднимает и оглушает наземного врага в радиусе 16 на 4 секунды, делая его целью лазера. Ресурсы не нужны, перезарядка 8 секунд. Ручное или автоматическое применение.\n\nЗапас 600 химтоплива. На карте расход 1 каждые 5 секунд. В мире расход вдвое меньше челнока, дальность зависит от топлива. Нет дополнительной перезарядки взлёта; нужна открытая крыша и место посадки.\n\nС Milira Race на земле можно улучшить двигатель: установить 2 батареи милира. После этого взлёт стоит 100 химтоплива, непрерывного расхода на карте и в мире нет. Прогресс сохраняется, батареи расходуются.",
-    "対空迎撃と軽輸送用のニヴァリアン艦。占有3×3、耐久600、積載300 kg。\n\n飛行中は16マス以内の空中敵へ双発プリズムレーザーを毎秒斉射。各ビームは基礎ダメージ6、貫通50%、建物ダメージ3倍で凍結なし。地上対象は直接攻撃できません。\n\n重力ビームで16マス以内の地上敵1体を持ち上げ4秒気絶させるとレーザーで攻撃可能。追加資源不要、クールダウン8秒。手動・自動で発動できます。\n\n化学燃料最大600、マップ内飛行中は5秒ごとに1消費。ワールド移動はシャトルの半分の消費で燃料が航続距離を制限。追加離陸クールダウンなし。屋根のない離陸地点と十分な着陸空間が必要。\n\nミリラ種族有効時、停泊中にバッテリー2個を設置して改良可能。完了後は離陸ごと燃料100で、マップ・ワールドの継続消費なし。進捗保存、設置済みバッテリーは消費されます。",
-    "Vaisseau nivarian d'interception et transport léger. Taille 3×3, 600 PV, capacité 300 kg.\n\nEn vol, tire deux lasers prismatiques chaque seconde sur les ennemis aériens à moins de 16 cases. Chaque rayon : 6 dégâts, pénétration 50 %, dégâts aux bâtiments triplés, sans gel. Ne vise pas directement le sol.\n\nLe rayon gravitationnel soulève et étourdit un ennemi terrestre à moins de 16 cases pendant 4 secondes, le rendant ciblable. Aucun coût supplémentaire, recharge 8 secondes. Usage manuel ou automatique.\n\nRéserve 600 carburant chimique. Vol local : 1 toutes les 5 secondes. Voyage mondial : moitié du coût d'une navette, portée limitée par le carburant. Pas de recharge de décollage supplémentaire ; toit absent et place libre pour atterrir requis.\n\nAvec Milira Race, amélioration à l'arrêt avec 2 batteries. Ensuite, chaque décollage coûte 100 carburant, sans consommation continue locale ou mondiale. Progression sauvegardée ; batteries installées consommées."
+    "A Nivarian anti-air ship with light transport capability. Footprint 3×3, 600 HP, cargo capacity 300 kg.\n\nWhile airborne, fires twin prism lasers at airborne enemies within 16 cells, once per second. Each beam deals 6 base damage, penetrates 50% armor and deals triple damage to buildings, without freezing. Cannot directly target ground enemies.\n\nThe gravity beam lifts and stuns a ground enemy within 16 cells for 4 seconds, making it a valid laser target. No extra resource cost; cooldown 8 seconds. Manual or automatic use.\n\nStores 600 chemfuel. Local flight consumes 1 every 5 seconds. World travel costs half a shuttle's fuel; range is fuel-limited. No extra takeoff cooldown; unroofed launch and clear landing space required.\n\nUpgrade the starship drive while grounded using 2 battery units. Milira batteries and unstable power cells each count as 1; vanometric cells count as 2. Types can be mixed. Uninstall and pack vanilla cells first. Click again during installation to cancel and return all deposited batteries. The completed drive retains its fixed takeoff fuel cost and consumes no further fuel in flight.",
+    "Корабль ПВО нивариан для лёгких перевозок. Размер 3×3, 600 ОЗ, грузоподъёмность 300 кг.\n\nВ полёте два призматических лазера атакуют воздушные цели в радиусе 16 клеток раз в секунду. Каждый луч: урон 6, бронепробитие 50%, тройной урон зданиям, без заморозки. Наземные цели напрямую не атакует.\n\nГравитационный луч поднимает и оглушает наземного врага в радиусе 16 на 4 секунды, делая его целью лазера. Ресурсы не нужны, перезарядка 8 секунд. Ручное или автоматическое применение.\n\nЗапас 600 химтоплива. На карте расход 1 каждые 5 секунд. В мире расход вдвое меньше челнока, дальность зависит от топлива. Нет дополнительной перезарядки взлёта; нужна открытая крыша и место посадки.\n\nУлучшение на земле требует 2 единиц батарей. Милира и нестабильный элемент дают по 1, ванометрический — 2. Можно смешивать. Ванильные элементы сначала демонтируйте и упакуйте. Повторный щелчок отменяет установку и возвращает все внесённые батареи. После завершения сохраняются фиксированная стоимость взлёта и отсутствие расхода в полёте.",
+    "対空迎撃と軽輸送用のニヴァリアン艦。占有3×3、耐久600、積載300 kg。\n\n飛行中は16マス以内の空中敵へ双発プリズムレーザーを毎秒斉射。各ビームは基礎ダメージ6、貫通50%、建物ダメージ3倍で凍結なし。地上対象は直接攻撃できません。\n\n重力ビームで16マス以内の地上敵1体を持ち上げ4秒気絶させるとレーザーで攻撃可能。追加資源不要、クールダウン8秒。手動・自動で発動できます。\n\n化学燃料最大600、マップ内飛行中は5秒ごとに1消費。ワールド移動はシャトルの半分の消費で燃料が航続距離を制限。追加離陸クールダウンなし。屋根のない離陸地点と十分な着陸空間が必要。\n\n着陸中にバッテリー2単位で星艦動力を改良できます。ミリラと不安定なパワーセルは各1、無限化学反応炉は2単位。混用可能。原版セルは先に取り外して梱包してください。作業中の再クリックで中止し、投入物を全返却します。完了後の離陸費用と飛行中の燃料不要効果は同じです。",
+    "Vaisseau nivarian d'interception et transport léger. Taille 3×3, 600 PV, capacité 300 kg.\n\nEn vol, tire deux lasers prismatiques chaque seconde sur les ennemis aériens à moins de 16 cases. Chaque rayon : 6 dégâts, pénétration 50 %, dégâts aux bâtiments triplés, sans gel. Ne vise pas directement le sol.\n\nLe rayon gravitationnel soulève et étourdit un ennemi terrestre à moins de 16 cases pendant 4 secondes, le rendant ciblable. Aucun coût supplémentaire, recharge 8 secondes. Usage manuel ou automatique.\n\nRéserve 600 carburant chimique. Vol local : 1 toutes les 5 secondes. Voyage mondial : moitié du coût d'une navette, portée limitée par le carburant. Pas de recharge de décollage supplémentaire ; toit absent et place libre pour atterrir requis.\n\nAméliorez au sol avec 2 unités de batteries. Milira et cellule instable valent 1 unité, cellule vanométrique 2. Mélange autorisé. Démontez et emballez les cellules. Cliquez à nouveau pendant l’installation pour annuler et récupérer tous les apports. Le coût fixe de décollage et l’absence de consommation ultérieure restent identiques."
   ],
   "551": [
     "Nivarian gravity ship (landing)",
@@ -4470,16 +4470,16 @@
     "Afficher le panneau de commandement"
   ],
   "746": [
-    "Unlock all expansion technologies without missions",
-    "Открыть все технологии дополнения без заданий",
-    "任務なしで本拡張の全技術を解放",
-    "Débloquer toutes les technologies de cette extension sans missions"
+    "Research technologies without completing their missions",
+    "Исследовать технологии без выполнения соответствующих заданий",
+    "対応する任務を完了せずに技術を研究する",
+    "Rechercher les technologies sans accomplir leurs missions"
   ],
   "747": [
-    "Off by default. When enabled, resuming the game completes every research project in this expansion and bypasses Continuum missions and support mothership-level requirements. Resource costs and cooldowns still apply. Turning it off keeps completed research and restores level requirements. Multiplayer changes are synchronized; joining players use the host save state.",
-    "По умолчанию выключено. После включения и возобновления игры завершаются все исследования дополнения, без заданий Континуума и требований к уровню материнского корабля для поддержки. Расход ресурсов и перезарядка сохраняются. Выключение сохраняет исследования и возвращает требования к уровню. В сетевой игре переключение синхронизируется, а подключающиеся игроки используют состояние сохранения хоста.",
-    "初期設定はオフ。有効にしてゲームを再開すると、本拡張の全研究が完了し、連続体任務と支援の母艦レベル条件を省略します。資源消費とクールダウンは維持されます。無効にしても完了した研究は残り、レベル条件が復活します。マルチプレイでは切り替えを同期し、参加者はホストのセーブ状態を使用します。",
-    "Désactivé par défaut. Une fois activé et la partie reprise, toutes les recherches de cette extension sont terminées, sans missions du Continuum ni niveau de vaisseau-mère requis pour les soutiens. Les coûts et délais de recharge restent actifs. La désactivation conserve les recherches et rétablit les exigences de niveau. En multijoueur, le changement est synchronisé et les nouveaux joueurs utilisent l’état de la sauvegarde de l’hôte."
+    "Off by default. Removes only this expansion’s mission requirements for research. Prerequisite technologies, material costs and normal research are still required. Does not complete technologies or missions, or bypass mothership support levels. Turning it off restores mission requirements and retains completed research.",
+    "По умолчанию выключено. Отменяет только требования заданий для исследований этого дополнения. Предыдущие технологии, материалы и обычное исследование по-прежнему необходимы. Не завершает технологии или задания и не отменяет требования уровня корабля для поддержки. Отключение восстанавливает требования заданий; готовые исследования сохраняются.",
+    "初期状態ではオフ。本拡張の研究に必要な任務条件のみを解除します。前提技術、資材、通常の研究は引き続き必要です。技術や任務を自動完了せず、支援の母艦レベル条件も維持します。オフにすると任務条件が戻りますが、完了済み研究は保持されます。",
+    "Désactivé par défaut. Retire uniquement les conditions de mission des recherches de cette extension. Les technologies préalables, les matériaux et la recherche normale restent nécessaires. Ne termine aucune technologie ou mission et ne supprime pas les niveaux du vaisseau mère requis pour les soutiens. La désactivation rétablit les conditions de mission et conserve les recherches terminées."
   ],
   "748": [
     "Spacetime fluctuation: move speed ×2",
@@ -4504,5 +4504,401 @@
     "Автоматически пополнять питание. Отключение прекращает новые задания пополнения, но не расход запаса. Можно приказать колонисту пополнить питание через правую кнопку мыши.",
     "栄養を自動補給します。無効にすると新しい自動補給作業を停止しますが、既存の栄養は通常どおり消費されます。右クリックで入植者に補給を指示できます。",
     "Remplir automatiquement la réserve. Désactiver cette option arrête les nouvelles tâches automatiques ; la réserve reste consommée. Un clic droit permet toujours d’ordonner le remplissage."
+  ],
+  "752": [
+    "Cancel upgrade ({0}/{1})",
+    "Отменить улучшение ({0}/{1})",
+    "改良を中止（{0}/{1}）",
+    "Annuler l’amélioration ({0}/{1})"
+  ],
+  "753": [
+    "Only player-owned ships from this mod can fold",
+    "Складывать можно только корабли игрока из этого мода",
+    "このMODのプレイヤー所有艦船のみ折り畳み可能",
+    "Seuls les vaisseaux du joueur de ce mod peuvent se replier"
+  ],
+  "754": [
+    "Wait for takeoff, landing or entry warp to finish",
+    "Дождитесь завершения взлёта, посадки или входного прыжка",
+    "離着陸または入場ワープの完了を待ってください",
+    "Attendez la fin du décollage, de l’atterrissage ou du saut d’entrée"
+  ],
+  "755": [
+    "Fold the ship into a clear position inside the current energy field. Retains the hull, rotation, cargo, passengers and upgrade progress; carriers recover their fighters first. Unavailable during takeoff, landing or entry warp. Summoned fleets retain their original lifetime.\n\nWarping uses the Nivarian building printing effect: 4 seconds at departure, then 4 seconds at the actual arrival position (game time). Damage applies normally during both phases.\n\nAirborne ships can warp above terrain or buildings and remain airborne. Grounded ships still require a valid ground destination.",
+    "Переносит корабль на свободное место в текущем энергетическом поле. Сохраняет корпус, направление, груз, пассажиров и улучшение; авианосец забирает истребители. Недоступно при взлёте, посадке и входном прыжке. Срок призванного флота не меняется.\n\nПеренос использует эффект печати зданий нивариан: 4 секунды подготовки и ещё 4 секунды печати в точке прибытия (игровое время). На обоих этапах наносится обычный урон.\n\nЛетящие корабли могут переноситься над рельефом и зданиями, сохраняя полёт. Кораблям на земле по-прежнему нужна допустимая наземная площадка.",
+    "現在のエネルギーフィールド内の空き位置へ艦船を折り畳みます。船体、向き、貨物、乗員、改良進捗を保持し、空母は先に艦載機を回収します。離着陸中・入場ワープ中は不可。召喚艦隊の残り時間は維持されます。\n\nニヴァリアン建築のプリントエフェクトを使用します。出発地点で4秒、実際の到着地点でさらに4秒かかります（ゲーム内時間）。両段階とも通常どおりダメージを受けます。\n\n飛行中の艦船は地形や建物の上へ転移し、飛行状態を維持します。着陸中の艦船には通常の着地点条件が適用されます。",
+    "Repliez le vaisseau vers un emplacement libre du champ actuel. Préserve coque, orientation, cargaison, passagers et amélioration ; les porte-aéronefs récupèrent leurs appareils. Indisponible pendant le décollage, l’atterrissage ou le saut d’entrée. La durée des flottes invoquées reste inchangée.\n\nLe transfert utilise l'impression nivarian : 4 secondes au départ, puis 4 secondes au point d'arrivée réel (temps de jeu). Les dégâts s'appliquent normalement pendant les deux phases.\n\nLes vaisseaux en vol peuvent se transférer au-dessus du terrain ou des bâtiments et restent en vol. Les vaisseaux au sol doivent disposer d’une destination au sol valide."
+  ],
+  "756": [
+    "1 unit every 10 seconds",
+    "1 ед. каждые 10 секунд",
+    "10秒ごとに1単位",
+    "1 unité toutes les 10 secondes"
+  ],
+  "757": [
+    "Changing mode: {0}s",
+    "Смена режима: {0} с",
+    "モード切替中：{0}秒",
+    "Changement de mode : {0} s"
+  ],
+  "758": [
+    "Energy field: radius 6; personnel warp destination",
+    "Энергополе: радиус 6; приём колонистов",
+    "エネルギー場：半径6マス、入植者の転送先",
+    "Champ : rayon de 6 cases ; destination des colons"
+  ],
+  "759": [
+    "Flight mode: energy field retracted",
+    "Полёт: энергополе свёрнуто",
+    "飛行モード：エネルギー場は未展開",
+    "Mode vol : champ replié"
+  ],
+  "760": [
+    "Flight mode",
+    "Режим полёта",
+    "飛行モード",
+    "Mode vol"
+  ],
+  "761": [
+    "Energy field mode",
+    "Режим энергополя",
+    "エネルギー場モード",
+    "Mode champ énergétique"
+  ],
+  "762": [
+    "Switch to flight mode first. Movement, landing and ship warp are unavailable while deployed or changing mode.",
+    "Сначала включите полёт. Во время развёртывания поля или смены режима нельзя двигаться, садиться и переносить корабль.",
+    "先に飛行モードへ切り替えてください。場の展開中と切替中は移動、着陸、艦の転送ができません。",
+    "Passez en mode vol. Déplacement, atterrissage et transfert du vaisseau sont indisponibles pendant le déploiement ou la transition."
+  ],
+  "763": [
+    "Switch modes in 1 second. The deployed prism hovers and slowly rotates, providing power, unit charging and personnel arrivals within 6 cells. Fields on one map share a 10,000 W budget. Hovering consumes flight fuel; ships cannot warp to prisms.",
+    "Смена режима занимает 1 секунду. Призма зависает и медленно вращается, питая здания, заряжая юнитов и принимая колонистов в радиусе 6 клеток. Общий лимит полей на карте — 10000 Вт. Расход топлива как в полёте; корабли не могут прибывать к призмам.",
+    "切替は1秒。展開したプリズムは静止してゆっくり回転し、半径6マスに給電、ユニット充電、入植者の転送先を提供します。同一マップの場は10000Wを共有します。飛行中と同じ燃料を消費し、艦はプリズムへ転送できません。",
+    "Transition en 1 seconde. Le prisme déployé flotte et tourne lentement, alimentant les bâtiments, rechargeant les unités et recevant les colons dans un rayon de 6 cases. Les champs d’une carte partagent 10000 W. Il consomme du carburant de vol ; les vaisseaux ne peuvent pas arriver aux prismes."
+  ],
+  "764": [
+    "Take off and finish ascending first.",
+    "Сначала завершите взлёт.",
+    "先に離陸を完了してください。",
+    "Terminez d’abord le décollage."
+  ],
+  "765": [
+    "The destination prism is inactive, out of fuel or has moved. Select a destination again.",
+    "Призма отключена, без топлива или перемещена. Выберите цель заново.",
+    "転送先のプリズムが停止、燃料切れ、または移動しました。転送先を選び直してください。",
+    "Le prisme est inactif, sans carburant ou déplacé. Choisissez à nouveau une destination."
+  ],
+  "766": [
+    "Primary energy field",
+    "Основное энергополе",
+    "主エネルギー場",
+    "Champ énergétique principal"
+  ],
+  "767": [
+    "Warp prism: {0} ({1}, {2})",
+    "Призма: {0} ({1}, {2})",
+    "転送プリズム：{0}（{1}, {2}）",
+    "Prisme : {0} ({1}, {2})"
+  ],
+  "768": [
+    "Warp to the primary field or a deployed prism, including across maps. Equipment and inventory travel with the colonist; carried loads are dropped and current work ends.\n\nWarping uses the Nivarian building printing effect: 4 seconds at departure, then 4 seconds at the actual arrival position (game time). Damage applies normally during both phases.",
+    "Перенос к основному полю или развёрнутой призме, в том числе на другую карту. Экипировка и инвентарь сохраняются; переносимый груз сбрасывается, текущая работа прерывается.\n\nПеренос использует эффект печати зданий нивариан: 4 секунды подготовки и ещё 4 секунды печати в точке прибытия (игровое время). На обоих этапах наносится обычный урон.",
+    "主エネルギー場か展開済みプリズムを選んで転送します。別マップにも移動可能です。装備と所持品は同行し、運搬物は置き、現在の作業を中止します。\n\nニヴァリアン建築のプリントエフェクトを使用します。出発地点で4秒、実際の到着地点でさらに4秒かかります（ゲーム内時間）。両段階とも通常どおりダメージを受けます。",
+    "Transférez-vous vers le champ principal ou un prisme déployé, même sur une autre carte. Équipement et inventaire suivent le colon ; la charge transportée est déposée et le travail en cours s’arrête.\n\nLe transfert utilise l'impression nivarian : 4 secondes au départ, puis 4 secondes au point d'arrivée réel (temps de jeu). Les dégâts s'appliquent normalement pendant les deux phases."
+  ],
+  "769": [
+    "Nivarian warp ship",
+    "Варп-корабль нивариан",
+    "ニヴァリアン転送艦",
+    "Vaisseau de transfert nivarian"
+  ],
+  "770": [
+    "Unarmed 3×3 transport with 350 base hit points and 1000 kg capacity. Same speed as the gravity frigate, half its fuel consumption: 1 chemfuel per 10 seconds of local flight or field mode, and half its world-travel costs. Fuel capacity: 600.\n\nAfter takeoff, switch modes in 1 second. The deployed symmetric prism slowly rotates and cannot move, land or warp. Its radius-6 field supplies power and charges units, sharing the map’s 10000 W field budget. Colonists may warp to the main field or any deployed prism, across maps. Ships may warp only to the main field.\n\nGrounded starship upgrade costs 2 battery units, as for the gravity frigate. Milira starship and unstable power cells count as 1 each; vanometric cells count as 2. Pack building batteries first. After upgrading, takeoff costs 50 chemfuel and continued flight, field operation and world travel use no fuel.",
+    "Безоружный транспорт 3×3: базовая прочность 350, грузоподъёмность 1000 кг. Скорость как у гравитационного фрегата, расход топлива вдвое ниже: 1 химтопливо за 10 секунд местного полёта или работы поля, половина затрат на мировой карте. Запас 600.\n\nПосле взлёта режим меняется за 1 секунду. Развёрнутая симметричная призма медленно вращается и не может двигаться, садиться или переноситься. Поле радиусом 6 питает здания и заряжает юнитов; поля карты делят 10000 Вт. Колонисты могут переноситься к основному полю или любой развёрнутой призме, включая другие карты. Корабли — только к основному полю.\n\nНа земле доступно улучшение за 2 единицы батарей, как у фрегата. Батарея милира или нестабильная ячейка дают 1, ванометрическая — 2. Здания-батареи сначала упакуйте. После улучшения взлёт стоит 50 химтоплива, дальнейший полёт, поле и мировой перелёт топливо не расходуют.",
+    "非武装の3×3輸送艦。基本耐久350、積載1000kg。引力艦と同速、燃料消費は半分。マップ内飛行と場の維持は10秒ごとに化学燃料1、ワールド移動も引力艦の半分。燃料容量600。\n\n離陸後、1秒でモード切替。展開すると対称形のプリズムがゆっくり回転し、移動・着陸・艦の転送はできません。半径6マスで給電と充電を行い、同一マップの場は10000Wを共有します。入植者は主場か展開中のプリズムを選び、別マップにも転送できます。艦の転送先は主場のみです。\n\n駐機時に引力艦と同じ2単位の電池で動力改良可能。ミリラ星艦電池と不安定電力セルは各1、無限化学発電セルは2単位。建築物の電池は先に梱包してください。改良後の離陸は化学燃料50、飛行・場の維持・ワールド航行の継続消費はなくなります。",
+    "Transport sans armes de 3×3 cases : 350 PV de base, charge de 1000 kg. Même vitesse que la frégate gravitationnelle, consommation divisée par deux : 1 chimiocarburant par 10 secondes de vol local ou de champ, moitié du coût des voyages mondiaux. Réservoir de 600.\n\nAprès décollage, la transition dure 1 seconde. Le prisme symétrique déployé tourne lentement et ne peut ni bouger, ni atterrir, ni se transférer. Son champ de rayon 6 alimente et recharge ; les champs d’une carte partagent 10000 W. Les colons peuvent choisir le champ principal ou tout prisme déployé, même sur une autre carte. Les vaisseaux arrivent uniquement au champ principal.\n\nAu sol, amélioration pour 2 unités de batteries, comme la frégate. Batterie Milira et cellule instable : 1 chacune ; cellule vanométrique : 2. Emballez d’abord les batteries-bâtiments. Après amélioration, le décollage coûte 50 chimiocarburants ; vol continu, champ et voyage mondial ne consomment plus de carburant."
+  ],
+  "771": [
+    "Nivarian warp ship (landing)",
+    "Варп-корабль нивариан (посадка)",
+    "ニヴァリアン転送艦（着陸）",
+    "Vaisseau de transfert nivarian (atterrissage)"
+  ],
+  "772": [
+    "Nivarian warp ship (takeoff)",
+    "Варп-корабль нивариан (взлёт)",
+    "ニヴァリアン転送艦（離陸）",
+    "Vaisseau de transfert nivarian (décollage)"
+  ],
+  "773": [
+    "Nivarian warp ship",
+    "Варп-корабль нивариан",
+    "ニヴァリアン転送艦",
+    "Vaisseau de transfert nivarian"
+  ],
+  "774": [
+    "Nivarian warp ship",
+    "Варп-корабль нивариан",
+    "ニヴァリアン転送艦",
+    "Vaisseau de transfert nivarian"
+  ],
+  "775": [
+    "A Nivarian warp ship carrying passengers and cargo across the world.",
+    "Варп-корабль нивариан перевозит пассажиров и груз по миру.",
+    "乗客と貨物を運び、ワールドを移動するニヴァリアン転送艦。",
+    "Un vaisseau de transfert nivarian transporte passagers et marchandises dans le monde."
+  ],
+  "776": [
+    "Nivarian warp ship",
+    "Варп-корабль нивариан",
+    "ニヴァリアン転送艦",
+    "Vaisseau de transfert nivarian"
+  ],
+  "777": [
+    "Research separately at the uplink after Personnel Warp to unlock the Nivarian warp ship. An unarmed 1000 kg transport that deploys a radius-6 field for power, unit charging and colonist warp arrivals.",
+    "Отдельное исследование на восходящей линии после переноса персонала открывает варп-корабль нивариан: безоружный транспорт на 1000 кг с полем радиусом 6 для питания, зарядки и приёма колонистов.",
+    "人員転送技術の後にアップリンクで個別研究すると転送艦を解放します。積載1000kgの非武装艦で、半径6マスの給電・充電・入植者受入用の場を展開します。",
+    "Recherche distincte à la liaison montante après le transfert de personnel. Débloque un transport sans armes de 1000 kg, déployant un champ de rayon 6 pour alimentation, recharge et arrivée des colons."
+  ],
+  "778": [
+    "Warping (4-second departure and 4-second arrival); damage still applies",
+    "Перенос (4 секунды до и 4 после); урон наносится как обычно",
+    "転移中（出発4秒、到着4秒）。通常どおりダメージを受けます",
+    "Transfert en cours (4 secondes au départ et 4 à l’arrivée) ; les dégâts restent actifs"
+  ],
+  "779": [
+    "Nivarian drop pod unavailable",
+    "Десантная капсула нивариан недоступна",
+    "ニヴァリアン降下ポッドを利用できません",
+    "Capsule de largage nivarian indisponible"
+  ],
+  "780": [
+    "Thunder orb attack",
+    "Атака грозовым шаром",
+    "雷球攻撃",
+    "Attaque par orbe orageux"
+  ],
+  "781": [
+    "Designate a hostile target within 100 cells. Fires every 3 seconds: 20 direct damage at 80% armor penetration, then a 3×3 blast for 15 damage at 35% penetration. Both deal 5× damage to buildings.",
+    "Укажите вражескую цель в радиусе 100 клеток. Выстрел каждые 3 секунды: 20 урона с пробитием 80%, затем взрыв 3×3 на 15 урона с пробитием 35%. Оба вида урона по зданиям ×5.",
+    "100マス以内の敵を指定。3秒ごとに雷球を発射し、直撃20ダメージ・貫通80%、続いて3×3マスに15ダメージ・貫通35%の爆発。両方とも建築物には5倍。",
+    "Désigne un ennemi à 100 cases. Tir toutes les 3 s : 20 dégâts directs, pénétration 80 %, puis explosion de 3×3 cases, 15 dégâts, pénétration 35 %. Les deux infligent 5× aux bâtiments."
+  ],
+  "782": [
+    "Must be in flight and not currently warping",
+    "Нужно находиться в полёте; во время прыжка атака недоступна",
+    "飛行中かつワープ中ではない時のみ攻撃可能",
+    "Le vaisseau doit être en vol et ne pas être en cours de saut"
+  ],
+  "783": [
+    "Fire at will",
+    "Огонь по готовности",
+    "自動射撃",
+    "Tir à volonté"
+  ],
+  "784": [
+    "Automatically attack visible hostiles in range while airborne. Explicit targets remain active when this is off.",
+    "В полёте автоматически атакует видимых врагов в радиусе. Указанная вручную цель сохраняется при отключении.",
+    "飛行中、射程内の見える敵を自動攻撃。OFFでも手動指定の目標は維持されます。",
+    "En vol, attaque automatiquement les ennemis visibles à portée. Les cibles désignées restent actives si cette option est désactivée."
+  ],
+  "785": [
+    "Clear forced target",
+    "Сбросить указанную цель",
+    "指定目標を解除",
+    "Effacer la cible désignée"
+  ],
+  "786": [
+    "Clear the manually designated target. Automatic targeting continues if fire at will is enabled.",
+    "Сбрасывает ручную цель. При включённом автоогне поиск целей продолжается.",
+    "手動目標を解除。自動射撃がONなら自動索敵は継続。",
+    "Efface la cible manuelle. La recherche automatique continue si le tir à volonté est actif."
+  ],
+  "787": [
+    "Thunder orb: range 100; cooldown {0}s",
+    "Грозовой шар: дальность 100; перезарядка {0} с",
+    "雷球：射程100、再使用まで{0}秒",
+    "Orbe orageux : portée 100 ; recharge {0} s"
+  ],
+  "788": [
+    "Nivarian Tempest",
+    "Ниварианская «Буря»",
+    "ニヴァリアン暴風艦",
+    "Tempête nivarian"
+  ],
+  "789": [
+    "A long-range Nivarian siege ship. Occupies 5×5 cells, with 2,000 base HP and 3,500 kg cargo capacity. While airborne, fires a thunder orb every 3 seconds at hostiles within 100 cells, automatically or at a designated target. Direct hit: 20 damage, 80% armor penetration. The following 3×3 blast: 25 damage, 35% penetration, no falloff. Both deal 5× damage to buildings.\n\nSpeed and chemfuel use match the carrier: capacity 10,000; local flight uses 1 per second; world travel uses 3 per tile, minimum 50. Can fold to the main warp energy field.\n\nA grounded ship can install 5 battery units, half the carrier requirement. Milira starship batteries and unstable power cells each count as 1; vanometric power cells count as 2. Types may be mixed; pack vanilla cells first. Cancel an unfinished upgrade to refund inputs. Once installed, each takeoff costs 200 chemfuel, with no further local or world flight consumption.",
+    "Дальний осадный корабль нивариан. Размер 5×5, базовая прочность 2000, грузоподъёмность 3500 кг. В полёте каждые 3 секунды выпускает грозовой шар по врагу в радиусе 100 клеток, автоматически или по указанной цели. Прямое попадание: 20 урона, пробитие 80%. Затем взрыв 3×3: 25 урона, пробитие 35%, без затухания. Оба наносят зданиям урон ×5.\n\nСкорость и расход как у авианосца: запас 10000 химтоплива, 1 в секунду на карте; в мире 3 на клетку, минимум 50. Может перемещаться к основному полю.\n\nУлучшение на земле требует 5 единиц батарей. Батареи милира и нестабильные элементы дают по 1, ванометрические — 2. Можно смешивать; ванильные элементы сначала упакуйте. Отмена незавершённой установки возвращает батареи. После установки взлёт стоит 200 топлива, дальнейший полёт его не расходует.",
+    "長射程のニヴァリアン攻城艦。占有5×5マス、基本耐久2000、積載3500kg。飛行中は100マス以内の敵へ3秒ごとに雷球を発射。自動索敵と手動指定に対応。直撃は20ダメージ・装甲貫通80%、続く3×3マスの爆発は25ダメージ・貫通35%、距離減衰なし。両方とも建築物には5倍。\n\n速度と化学燃料消費は空母と同じ。容量10000、マップ内は毎秒1、世界移動は1タイル3・最低50。主ワープフィールドへ折り畳み可能。\n\n着陸中に空母の半分となる5単位のバッテリーで改良可能。ミリラ星艦バッテリーと不安定なパワーセルは各1単位、無限化学反応炉は2単位。混用可能。原版セルは先に梱包。未完了の改良を中止すると返却。改良後は離陸時に燃料200を消費し、その後の飛行消費なし。",
+    "Vaisseau de siège nivarian à longue portée. Occupe 5×5 cases, 2 000 PV de base, capacité de 3 500 kg. En vol, tire un orbe toutes les 3 secondes sur un ennemi à 100 cases, automatiquement ou sur désignation. Impact : 20 dégâts, pénétration 80 %. Puis explosion de 3×3 cases : 25 dégâts, pénétration 35 %, sans atténuation. Les deux infligent 5× aux bâtiments.\n\nVitesse et consommation identiques au porte-aéronefs : capacité 10 000, 1 carburant chimique par seconde sur la carte ; voyage mondial à 3 par tuile, minimum 50. Peut se replier vers le champ principal.\n\nAu sol, amélioration avec 5 unités de batteries, moitié du porte-aéronefs. Batteries Milira et cellules instables : 1 unité ; cellules vanométriques : 2. Mélange possible ; emballez les cellules de base. Annuler avant achèvement rembourse les apports. Après installation, le décollage coûte 200 carburants, sans consommation ultérieure en vol."
+  ],
+  "790": [
+    "Nivarian Tempest (landing)",
+    "Ниварианская «Буря» (посадка)",
+    "ニヴァリアン暴風艦（着陸）",
+    "Tempête nivarian (atterrissage)"
+  ],
+  "791": [
+    "Nivarian Tempest (taking off)",
+    "Ниварианская «Буря» (взлёт)",
+    "ニヴァリアン暴風艦（離陸）",
+    "Tempête nivarian (décollage)"
+  ],
+  "792": [
+    "Nivarian Tempest",
+    "Ниварианская «Буря»",
+    "ニヴァリアン暴風艦",
+    "Tempête nivarian"
+  ],
+  "793": [
+    "Nivarian Tempest",
+    "Ниварианская «Буря»",
+    "ニヴァリアン暴風艦",
+    "Tempête nivarian"
+  ],
+  "794": [
+    "A Nivarian Tempest carrying passengers and cargo across the world.",
+    "Ниварианская «Буря» перевозит пассажиров и груз по миру.",
+    "乗員と貨物を輸送中のニヴァリアン暴風艦。",
+    "Un Tempête nivarian transportant passagers et cargaison à travers le monde."
+  ],
+  "795": [
+    "Nivarian Tempest",
+    "Ниварианская «Буря»",
+    "ニヴァリアン暴風艦",
+    "Tempête nivarian"
+  ],
+  "796": [
+    "Unlock the Nivarian Tempest at an uplink terminal. Same prerequisites as the carrier, with no additional mission gate. Research work and materials cost 70% of the carrier. A 5×5 siege ship with 2,000 HP, 3,500 kg capacity and a range-100 thunder orb with a 3×3 blast.",
+    "Открывает «Бурю» через терминал связи. Предшествующие технологии как у авианосца, без дополнительного задания. Работа и материалы — 70% стоимости авианосца. Размер 5×5, прочность 2000, груз 3500 кг, дальность 100, взрыв 3×3.",
+    "アップリンク端末で暴風艦を解放。前提技術は空母と同じで、追加任務条件なし。研究量と資材は空母の70%。5×5マス、耐久2000、積載3500kg、射程100、雷球爆発3×3。",
+    "Débloque le Tempête au terminal de liaison. Prérequis identiques au porte-aéronefs, sans mission supplémentaire. Recherche et matériaux à 70 % de son coût. 5×5 cases, 2 000 PV, 3 500 kg, portée 100, explosion 3×3."
+  ],
+  "797": [
+    "thunder orb",
+    "грозовой шар",
+    "雷暴球",
+    "orbe orageux"
+  ],
+  "798": [
+    "thunder orb impact",
+    "удар грозового шара",
+    "雷球直撃",
+    "impact d’orbe orageux"
+  ],
+  "799": [
+    "thunder orb blast",
+    "взрыв грозового шара",
+    "雷球爆発",
+    "explosion d’orbe orageux"
+  ],
+  "800": [
+    "Attack mode",
+    "Режим атаки",
+    "攻撃モード",
+    "Mode attaque"
+  ],
+  "801": [
+    "When airborne, engage ground enemies within 12 cells. Fire two beams every 0.5 seconds, each dealing 6 damage with 30% armor penetration. Each volley costs 1 chemfuel, even after the battery upgrade. Detection remains active when weapons are off.",
+    "В полёте атакует наземных врагов в радиусе 12 клеток. Два луча каждые 0,5 с: по 6 урона, 30% пробития. Залп расходует 1 химтопливо даже после улучшения батареи. Обнаружение действует и при выключенном оружии.",
+    "飛行中、12マス以内の地上敵を攻撃。0.5秒ごとに2本の光線を同時発射し、各6ダメージ、装甲貫通30%。斉射ごとに化学燃料1を消費し、バッテリー改良後も同じ。攻撃を停止しても隠密解除は有効。",
+    "En vol, attaque les ennemis au sol dans un rayon de 12 cases. Deux rayons toutes les 0,5 s, chacun infligeant 6 dégâts avec 30% de pénétration. Chaque salve consomme 1 chimiocarburant, même après amélioration. La détection reste active sans attaque."
+  ],
+  "802": [
+    "Select ground target",
+    "Выбрать наземную цель",
+    "地上目標を指定",
+    "Cible au sol"
+  ],
+  "803": [
+    "Prioritize a ground enemy within 12 cells; acquire another if it becomes invalid. Flying and gravity-lifted targets are excluded.",
+    "Приоритетная наземная цель в радиусе 12 клеток; при её потере выбирается другая. Летающие и поднятые гравитацией цели исключены.",
+    "12マス以内の地上敵を優先し、無効になれば別の敵を選択。飛行中や重力で浮上した目標は攻撃不可。",
+    "Priorité à un ennemi au sol à 12 cases maximum, puis recherche automatique si la cible devient invalide. Exclut les cibles volantes ou soulevées."
+  ],
+  "804": [
+    "Take off and enable attack mode; unavailable during warp.",
+    "Взлетите и включите режим атаки; недоступно при варпе.",
+    "離陸して攻撃モードを有効化してください。ワープ中は使用不可。",
+    "Décollez et activez le mode attaque. Indisponible pendant le saut."
+  ],
+  "805": [
+    "Attack mode: {0}; passive detection radius: 50 cells",
+    "Режим атаки: {0}; радиус обнаружения: 50 клеток",
+    "攻撃モード：{0}／常時隠密解除：半径50マス",
+    "Mode attaque : {0} ; détection passive : 50 cases"
+  ],
+  "806": [
+    "On",
+    "Включён",
+    "有効",
+    "Activé"
+  ],
+  "807": [
+    "Off",
+    "Выключен",
+    "無効",
+    "Désactivé"
+  ],
+  "808": [
+    "Nivarian sage ship",
+    "Корабль-мудрец нивариан",
+    "ニヴァリアン賢者艦",
+    "Vaisseau sage nivarian"
+  ],
+  "809": [
+    "A compact 2×2 Nivarian detection and ground-attack ship. Base hull: 350 HP; cargo: 200 kg.\n\nAttack mode starts off. While airborne and enabled, fires two blue prism beams every 0.5 seconds at ground enemies within 12 cells. Each beam deals 6 base damage with 30% armor penetration; each volley costs 1 chemfuel. Flying and gravity-lifted targets are excluded.\n\nPassively reveals hostile cloaked units within 50 cells, even while landed and with weapons off. Cloaking recovers by its normal rules after leaving coverage.\n\nMap and world flight are 25% faster than the gravity frigate. Airborne fuel: 1 per 10 seconds. World fuel: 0.75 per tile, minimum 12.5. Both are half the frigate rate. Tank: 600. Supports warp energy field recall.\n\nStarship upgrade: 1 battery unit, half the frigate cost. Accepts Milira, unstable or vanometric cells as whole items. Upgraded launches cost 50 chemfuel with no ongoing flight consumption; firing still costs 1 per volley.",
+    "Лёгкий корабль 2×2: 350 базовых HP, груз 200 кг. Режим атаки изначально выключен. В полёте с включённым оружием выпускает два синих луча каждые 0,5 с по наземным врагам в радиусе 12 клеток: каждый наносит 6 урона с пробитием 30%, залп расходует 1 химтопливо. Не атакует летающие и поднятые гравитацией цели.\n\nПассивно раскрывает вражеские невидимые единицы в радиусе 50 клеток, включая стоянку и выключенное оружие. После выхода из зоны невидимость восстанавливается по обычным правилам.\n\nНа карте и в мире на 25% быстрее гравитационного фрегата. Расход в полёте 1 за 10 с; мировой перелёт 0,75 за клетку, минимум 12,5 — половина расхода фрегата. Бак 600. Поддерживает возврат к полю варп-энергии.\n\nУлучшение требует 1 единицу батареи, половину цены фрегата. Принимает целые батареи милира, нестабильные или ванометрические ячейки. После улучшения взлёт стоит 50 топлива, постоянный расход отключён; залп по-прежнему стоит 1.",
+    "2×2マスの軽量対地・探知艦。基礎耐久350、積載200kg。攻撃モードは初期状態で無効。飛行中に有効化すると12マス以内の地上敵へ0.5秒ごとに青い光線を2本同時発射。各6ダメージ、装甲貫通30%、斉射ごとに化学燃料1を消費。飛行中や重力で浮上した敵は対象外。\n\n半径50マス以内の敵の隠密を常時解除。着陸中や攻撃停止中も有効。範囲外では通常の回復規則が適用される。\n\nマップ内とワールドの速度は重力艦の1.25倍。飛行燃料は10秒に1、ワールドは1タイル0.75・最低12.5で重力艦の半分。タンク600。ワープエネルギーフィールドへの帰還に対応。\n\n動力改良は重力艦の半分のバッテリー1単位。ミリラ、不安定、無限化学電池を現物で投入。改良後は離陸ごとに燃料50を消費し、継続飛行の消費なし。攻撃は引き続き斉射ごとに1を消費。",
+    "Vaisseau de détection et d’attaque au sol de 2×2 cases : 350 PV de base, charge utile de 200 kg. Attaque désactivée au départ. En vol et en mode attaque, tire deux rayons bleus toutes les 0,5 s sur les ennemis au sol à 12 cases maximum. Chaque rayon inflige 6 dégâts, pénétration 30% ; chaque salve coûte 1 chimiocarburant. Exclut les cibles volantes ou soulevées par gravité.\n\nRévèle passivement les ennemis invisibles dans un rayon de 50 cases, même posé et sans attaque. Hors de portée, leur invisibilité récupère selon ses règles normales.\n\nVol local et mondial 25% plus rapide que la frégate gravitationnelle. Consommation : 1 par 10 s en vol ; trajet mondial 0,75 par case, minimum 12,5, soit la moitié. Réservoir 600. Rappel vers le champ d’énergie de saut disponible.\n\nAmélioration : 1 unité de batterie, moitié du coût de la frégate. Accepte les batteries Milira, cellules instables ou vanométriques entières. Après amélioration, décollage à 50 carburants, sans consommation continue ; chaque salve coûte toujours 1."
+  ],
+  "810": [
+    "Nivarian sage ship (landing)",
+    "Корабль-мудрец нивариан (посадка)",
+    "ニヴァリアン賢者艦 （着陸）",
+    "Vaisseau sage nivarian (atterrissage)"
+  ],
+  "811": [
+    "Nivarian sage ship (taking off)",
+    "Корабль-мудрец нивариан (взлёт)",
+    "ニヴァリアン賢者艦 （離陸）",
+    "Vaisseau sage nivarian (décollage)"
+  ],
+  "812": [
+    "Nivarian sage ship",
+    "Корабль-мудрец нивариан",
+    "ニヴァリアン賢者艦",
+    "Vaisseau sage nivarian"
+  ],
+  "813": [
+    "Nivarian sage ship",
+    "Корабль-мудрец нивариан",
+    "ニヴァリアン賢者艦",
+    "Vaisseau sage nivarian"
+  ],
+  "814": [
+    "A Nivarian sage ship carrying passengers and cargo between world locations.",
+    "Корабль-мудрец нивариан перевозит пассажиров и грузы между точками мира.",
+    "人員と貨物を運ぶワールド航行中のニヴァリアン賢者艦。",
+    "Un vaisseau sage nivarian transporte passagers et fret entre les lieux du monde."
+  ],
+  "815": [
+    "Sage prism beam",
+    "Призменный луч мудреца",
+    "賢者艦プリズム光線",
+    "Rayon prismatique du sage"
+  ],
+  "816": [
+    "Nivarian sage ship",
+    "Корабль-мудрец нивариан",
+    "ニヴァリアン賢者艦",
+    "Vaisseau sage nivarian"
+  ],
+  "817": [
+    "Unlocks the sage ship through a separate uplink project. Same prerequisites as the gravity frigate, with no additional mission gate; half its research work and materials. Ground beams and passive detection within 50 cells, faster flight and lower fuel use.",
+    "Отдельное исследование через канал связи. Те же предпосылки, что у гравитационного фрегата, без дополнительной миссии; половина работы и материалов. Наземные лучи, обнаружение в радиусе 50 клеток, выше скорость и ниже расход.",
+    "上行リンクの独立研究で賢者艦を解放。前提は重力艦と同じで追加任務不要。研究量と資材は半分。対地光線、半径50マスの隠密解除、高速・低燃費。",
+    "Projet distinct au terminal de liaison : mêmes prérequis que la frégate, sans mission supplémentaire, moitié du travail et des matériaux. Rayons au sol, détection à 50 cases, vitesse accrue et consommation réduite."
   ]
 }

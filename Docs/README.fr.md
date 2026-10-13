@@ -1,6 +1,6 @@
 # Nivarian Race: MotherShip
 
-Version **0.9.8**, pour RimWorld **1.6**. Langues : chinois simplifié, anglais, russe, japonais et français.
+Version **0.9.9**, pour RimWorld **1.6**. Langues : chinois simplifié, anglais, russe, japonais et français.
 
 Ajoute 19 soutiens tactiques, une boutique à points, un porte-aéronefs, un vaisseau gravitationnel et une campagne du Continuum en huit étapes.
 
@@ -22,6 +22,7 @@ En 0.9.6, l'identification précise des alliés est une recherche distincte apr�
 
 [Développement et maintenance des traductions](../README.md)
 
-## Option de déblocage des recherches
 
-Auteur : 尹怨怨. Dans les options de Nivarian Race: MotherShip, le déblocage de toutes les technologies sans mission est désactivé par défaut. Activez-le et reprenez la partie pour terminer les 38 recherches de l'extension et ignorer les conditions de mission et de niveau du vaisseau-mère. Coûts et délais restent actifs. La désactivation conserve les recherches et rétablit les niveaux requis, sans modifier les autres mods ni les missions accomplies. En Multiplayer, le réglage du monde sauvegardé est synchronisé.
+## Rechercher les technologies sans accomplir leurs missions
+
+Désactivé par défaut. Retire uniquement les conditions de mission des recherches de cette extension. Les technologies préalables, les matériaux et la recherche normale restent nécessaires. Ne termine aucune technologie ou mission et ne supprime pas les niveaux du vaisseau mère requis pour les soutiens. La désactivation rétablit les conditions de mission et conserve les recherches terminées.

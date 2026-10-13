@@ -16,14 +16,14 @@ namespace NivarianCommander
         internal readonly List<Vector3> lineVertices = new List<Vector3>();
         internal readonly List<int> lineTriangles = new List<int>();
 
-        internal static FieldGroundGeometry Build(float minX, float minZ, float maxX, float maxZ)
+        internal static FieldGroundGeometry Build(float minX, float minZ, float maxX, float maxZ, float radius = Radius)
         {
             var result = new FieldGroundGeometry();
             var circle = new List<Vector2>(CircleSegments);
             for (int i = 0; i < CircleSegments; i++)
             {
                 double angle = i * Math.PI * 2 / CircleSegments;
-                circle.Add(new Vector2((float)Math.Cos(angle) * Radius, (float)Math.Sin(angle) * Radius));
+                circle.Add(new Vector2((float)Math.Cos(angle) * radius, (float)Math.Sin(angle) * radius));
             }
             var bounds = new List<Vector2>
             {
@@ -41,13 +41,13 @@ namespace NivarianCommander
                 corners[i] = new Vector2((float)Math.Cos(angle) * HexRadius, (float)Math.Sin(angle) * HexRadius);
             }
             float rowHeight = (float)Math.Sqrt(3) * HexRadius;
-            int columns = (int)Math.Ceiling((Radius + HexRadius) / (1.5f * HexRadius));
-            int rows = (int)Math.Ceiling((Radius + HexRadius) / rowHeight) + 1;
+            int columns = (int)Math.Ceiling((radius + HexRadius) / (1.5f * HexRadius));
+            int rows = (int)Math.Ceiling((radius + HexRadius) / rowHeight) + 1;
             for (int q = -columns; q <= columns; q++)
             for (int r = -rows; r <= rows; r++)
             {
                 var hexCenter = new Vector2(q * 1.5f * HexRadius, (r + ((q & 1) == 0 ? 0 : .5f)) * rowHeight);
-                if (hexCenter.sqrMagnitude > (Radius + HexRadius) * (Radius + HexRadius)) continue;
+                if (hexCenter.sqrMagnitude > (radius + HexRadius) * (radius + HexRadius)) continue;
                 // Each shared edge is drawn once; the opposite three belong to neighbours.
                 for (int edge = 0; edge < 3; edge++)
                     result.AddLine(hexCenter + corners[edge], hexCenter + corners[edge + 1], outline);

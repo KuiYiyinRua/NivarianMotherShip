@@ -146,4 +146,10 @@
   <NMC_WarshipWeapon3.description>ニヴァリアン戦艦・艦載機・援軍艦の兵装を強化。各段階でダメージと全種貫通+20%、累計+60%。連続命中と凍結の仕組みは維持し、最終攻撃ダメージに研究補正を適用します。</NMC_WarshipWeapon3.description>
   <NMC_CarrierHangarExpansion.label>空母艦載機格納庫拡張</NMC_CarrierHangarExpansion.label>
   <NMC_CarrierHangarExpansion.description>艦載機の上限を6機から8機へ拡張。格納庫内と出撃中の合計です。</NMC_CarrierHangarExpansion.description>
+  <NMC_WarpPrismResearch.label>ニヴァリアン転送艦</NMC_WarpPrismResearch.label>
+  <NMC_WarpPrismResearch.description>人員転送技術の後にアップリンクで個別研究すると転送艦を解放します。積載1000kgの非武装艦で、半径6マスの給電・充電・入植者受入用の場を展開します。</NMC_WarpPrismResearch.description>
+  <NMC_StormShipResearch.label>ニヴァリアン暴風艦</NMC_StormShipResearch.label>
+  <NMC_StormShipResearch.description>アップリンク端末で暴風艦を解放。前提技術は空母と同じで、追加任務条件なし。研究量と資材は空母の70%。5×5マス、耐久2000、積載3500kg、射程100、雷球爆発3×3。</NMC_StormShipResearch.description>
+  <NMC_SageShipResearch.label>ニヴァリアン賢者艦</NMC_SageShipResearch.label>
+  <NMC_SageShipResearch.description>上行リンクの独立研究で賢者艦を解放。前提は重力艦と同じで追加任務不要。研究量と資材は半分。対地光線、半径50マスの隠密解除、高速・低燃費。</NMC_SageShipResearch.description>
 </LanguageData>

@@ -8,13 +8,16 @@ La puissance du vaisseau-mère au service de votre colonie. Étend Nivarian Race
 [/list]
 [img]https://images.steamusercontent.com/ugc/11192463098744122599/63F5233EEE3C234BE44C528039DF3E398514214B/[/img]
 [b]Premiers pas[/b] : Ouvrez l'onglet du commandant dans la fenêtre de soutien et recherchez les protocoles au terminal de liaison. L'extension militaire lie la recherche à la campagne, avec des renforts navals ennemis dans les dernières étapes.
-[b]Déblocage libre[/b] : L'option permettant de débloquer toutes les technologies de cette extension sans mission est désactivée par défaut. Activez-la puis reprenez la partie pour terminer ses recherches et ignorer les exigences de mission et de niveau du vaisseau-mère. Coûts et délais de recharge restent actifs. La désactiver conserve les recherches et rétablit les niveaux requis, sans modifier les autres mods ni les missions accomplies.
+[b]Rechercher les technologies sans accomplir leurs missions[/b]: Désactivé par défaut. Retire uniquement les conditions de mission des recherches de cette extension. Les technologies préalables, les matériaux et la recherche normale restent nécessaires. Ne termine aucune technologie ou mission et ne supprime pas les niveaux du vaisseau mère requis pour les soutiens. La désactivation rétablit les conditions de mission et conserve les recherches terminées.
 
 [h2]Dependencies / 依赖 / 必須MOD / Зависимости / Dépendances[/h2]
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077]Harmony[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=839005762]Humanoid Alien Races[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3624805128]Nivarian Race[/url] → MotherShip.
 [b]Optional[/b]: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3735573834]Nivarian Draconic Military[/url] (campaign / 战役 / 戦役 / кампания / campagne); Royalty (psycasts); [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3256974620]Milira Race[/url] + Ancot Library (starship batteries).
-[b]RimWorld 1.6 • v0.9.8 • Author / 作者 / 作者 / Автор / Auteur: 尹怨怨[/b]
+[b]RimWorld 1.6 • v0.9.9 • Author / 作者 / 作者 / Автор / Auteur: 尹怨怨[/b]
 Nivarian Race & original mothership assets: keeptpa. Required mods are separate downloads. / 原版素材归 keeptpa；前置模组需另行订阅。
+
+[h2]0.9.9[/h2]
+Storm Ship / Sage Ship / Warp Prism; two-phase warp; mission-only research option. 暴风舰爆炸25点（建筑×5），新增贤者舰与折跃棱镜、双阶段折跃及任务研究开关。
 
 [h2]GitHub[/h2]
 [url=https://github.com/KuiYiyinRua/NivarianMotherShip]GitHub · 完整源码 / Full source[/url]

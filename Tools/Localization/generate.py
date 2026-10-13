@@ -18,8 +18,10 @@ inv[488]['zh']=inv[488]['zh'].replace(old,new)
 (root/'inventory.json').write_text(json.dumps(inv,ensure_ascii=False,indent=2),encoding='utf-8')
 active=set()
 for file in (mod/'Source').glob('*.cs'):
- active.update(re.findall(r'"(NMC_(?:Text\d+|ResearchTask[A-Za-z]+|CarrierSteel[A-Za-z]+|Settings[A-Za-z]+))"',file.read_text(encoding='utf-8-sig')))
+ active.update(re.findall(r'"(NMC_(?:Text\d+|ResearchTask[A-Za-z]+|CarrierSteel[A-Za-z]+|Settings[A-Za-z]+|Warp[A-Za-z]+|Storm[A-Za-z]+|Sage[A-Za-z]+))"',file.read_text(encoding='utf-8-sig')))
 rows={r['id']:r for r in inv}
+active.difference_update({'NMC_StormShip', 'NMC_StormOrb', 'NMC_StormOrbLaunch', 'NMC_StormImpactDamage', 'NMC_StormBlastDamage', 'NMC_SageShip', 'NMC_SageBeamDamage', 'NMC_SageShipFlying'})
+active.discard('NMC_WarpPrism')  # ThingDef identifier, not a translated UI string.
 def save(path,items):
  path.parent.mkdir(parents=True,exist_ok=True)
  node=ET.Element('LanguageData')

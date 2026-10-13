@@ -24,15 +24,13 @@
   <NMC_Text0022>自動重力ビーム：有効</NMC_Text0022>
   <NMC_Text0023>自動重力ビーム：無効</NMC_Text0023>
   <NMC_Text0024>飛行中、16マス以内で最も近い地上の敵を自動で持ち上げます。無効にしても手動で対象を選択できます。</NMC_Text0024>
-  <NMC_Text0025>星艦動力：改良済み</NMC_Text0025>
-  <NMC_Text0026>星艦バッテリー：{0}/{1}</NMC_Text0026>
+  <NMC_Text0025>星艦動力改良済み</NMC_Text0025>
   <NMC_Text0027>星艦動力を改良</NMC_Text0027>
-  <NMC_Text0028>入植者がミリラ星艦バッテリーを{0}個搬入して設置します。完了後は離陸ごとに化学燃料{1}を消費し、マップ内戦闘でもワールド移動でも継続消費しません。設置したバッテリーは消費されます。搬入には着陸が必要です。</NMC_Text0028>
+  <NMC_Text0028>入植者がバッテリー{0}単位を取り付けます。ミリラ星艦バッテリーと不安定なパワーセルは各1単位、無限化学反応炉は2単位。混用可能です。原版セルは先に取り外して梱包してください。作業中に再度クリックすると中止し、投入済みセルをすべて返却します。完了後は離陸時に化学燃料{1}を消費し、以後の飛行では消費しません。改良開始には着陸が必要です。</NMC_Text0028>
   <NMC_Text0029>星艦バッテリー設置済み</NMC_Text0029>
-  <NMC_Text0030>入植者によるバッテリー搬入待ち（運搬作業）</NMC_Text0030>
   <NMC_Text0031>先に着陸してください</NMC_Text0031>
   <NMC_Text0032>{0}の星艦動力改良が完了しました。</NMC_Text0032>
-  <NMC_Text0033>搬入可能なミリラ星艦バッテリーがありません</NMC_Text0033>
+  <NMC_Text0033>運搬可能な対応バッテリーがありません（原版セルは先に取り外して梱包）</NMC_Text0033>
   <NMC_Text0034>目的地は使用できなくなりました。選び直してください</NMC_Text0034>
   <NMC_Text0035>クールダウン残り：{0}</NMC_Text0035>
   <NMC_Text0036>必要：{0} P + {1} V</NMC_Text0036>
@@ -282,9 +280,6 @@
   <NMC_Text0254>入植者がフィールドに到着しました。状態を確認し、作業を再指示してください。</NMC_Text0254>
   <NMC_Text0255>ワープできませんでした。入植者の現在位置を確認して再試行してください。</NMC_Text0255>
   <NMC_Text0256>エネルギーフィールドへワープ</NMC_Text0256>
-  <NMC_Text0257>配置済みのワープエネルギーフィールドへ即座に移動します。入植地間も移動可能です。中心が埋まっている場合、フィールド内で最も近い安全な空きマスに到着します。
-
-追加エネルギーもクールダウンも不要です。入植者は現在の作業を中止し、運搬品を下ろし、装備と所持品を携行します。</NMC_Text0257>
   <NMC_Text0258>ゾラヤ軍団 · </NMC_Text0258>
   <NMC_Text0259>戦術艦隊 · </NMC_Text0259>
   <NMC_Text0260>回収中</NMC_Text0260>
@@ -543,10 +538,51 @@ Shiftを押しながら増減ボタンをクリックすると10個ずつ変更�
   <NMC_CarrierSteelAutoFill>龍霜鋼を自動補充します。無効でも右クリックで入植者に補充を命令できます。</NMC_CarrierSteelAutoFill>
   <NMC_CarrierSteelMissing>運搬可能な龍霜鋼がありません</NMC_CarrierSteelMissing>
   <NMC_SettingsShortcut>母艦指揮HUDを表示</NMC_SettingsShortcut>
-  <NMC_SettingsUnlockAll>任務なしで本拡張の全技術を解放</NMC_SettingsUnlockAll>
-  <NMC_SettingsUnlockAllHint>初期設定はオフ。有効にしてゲームを再開すると、本拡張の全研究が完了し、連続体任務と支援の母艦レベル条件を省略します。資源消費とクールダウンは維持されます。無効にしても完了した研究は残り、レベル条件が復活します。マルチプレイでは切り替えを同期し、参加者はホストのセーブ状態を使用します。</NMC_SettingsUnlockAllHint>
+  <NMC_SettingsUnlockAll>対応する任務を完了せずに技術を研究する</NMC_SettingsUnlockAll>
+  <NMC_SettingsUnlockAllHint>初期状態ではオフ。本拡張の研究に必要な任務条件のみを解除します。前提技術、資材、通常の研究は引き続き必要です。技術や任務を自動完了せず、支援の母艦レベル条件も維持します。オフにすると任務条件が戻りますが、完了済み研究は保持されます。</NMC_SettingsUnlockAllHint>
   <NMC_Text0748>時空変動：移動速度2倍</NMC_Text0748>
   <NMC_Text0749>栄養備蓄</NMC_Text0749>
   <NMC_Text0750>目標栄養量：{0}。備蓄バーをドラッグして変更できます。目標を下げても既存の栄養は残り、0にすると補給を停止します。食料の種類は「栄養」タブで設定できます。</NMC_Text0750>
   <NMC_Text0751>栄養を自動補給します。無効にすると新しい自動補給作業を停止しますが、既存の栄養は通常どおり消費されます。右クリックで入植者に補給を指示できます。</NMC_Text0751>
+  <NMC_Text0752>改良を中止（{0}/{1}）</NMC_Text0752>
+  <NMC_Text0753>このMODのプレイヤー所有艦船のみ折り畳み可能</NMC_Text0753>
+  <NMC_Text0754>離着陸または入場ワープの完了を待ってください</NMC_Text0754>
+  <NMC_Text0755>現在のエネルギーフィールド内の空き位置へ艦船を折り畳みます。船体、向き、貨物、乗員、改良進捗を保持し、空母は先に艦載機を回収します。離着陸中・入場ワープ中は不可。召喚艦隊の残り時間は維持されます。
+
+ニヴァリアン建築のプリントエフェクトを使用します。出発地点で4秒、実際の到着地点でさらに4秒かかります（ゲーム内時間）。両段階とも通常どおりダメージを受けます。
+
+飛行中の艦船は地形や建物の上へ転移し、飛行状態を維持します。着陸中の艦船には通常の着地点条件が適用されます。</NMC_Text0755>
+  <NMC_WarpFuelRate>10秒ごとに1単位</NMC_WarpFuelRate>
+  <NMC_WarpChanging>モード切替中：{0}秒</NMC_WarpChanging>
+  <NMC_WarpFieldStatus>エネルギー場：半径6マス、入植者の転送先</NMC_WarpFieldStatus>
+  <NMC_WarpFlightStatus>飛行モード：エネルギー場は未展開</NMC_WarpFlightStatus>
+  <NMC_WarpFlightMode>飛行モード</NMC_WarpFlightMode>
+  <NMC_WarpFieldMode>エネルギー場モード</NMC_WarpFieldMode>
+  <NMC_WarpLocked>先に飛行モードへ切り替えてください。場の展開中と切替中は移動、着陸、艦の転送ができません。</NMC_WarpLocked>
+  <NMC_WarpModeDescription>切替は1秒。展開したプリズムは静止してゆっくり回転し、半径6マスに給電、ユニット充電、入植者の転送先を提供します。同一マップの場は10000Wを共有します。飛行中と同じ燃料を消費し、艦はプリズムへ転送できません。</NMC_WarpModeDescription>
+  <NMC_WarpTakeoffFirst>先に離陸を完了してください。</NMC_WarpTakeoffFirst>
+  <NMC_WarpDestinationLost>転送先のプリズムが停止、燃料切れ、または移動しました。転送先を選び直してください。</NMC_WarpDestinationLost>
+  <NMC_WarpPrimaryDestination>主エネルギー場</NMC_WarpPrimaryDestination>
+  <NMC_WarpPrismDestination>転送プリズム：{0}（{1}, {2}）</NMC_WarpPrismDestination>
+  <NMC_WarpRecallDescription>主エネルギー場か展開済みプリズムを選んで転送します。別マップにも移動可能です。装備と所持品は同行し、運搬物は置き、現在の作業を中止します。
+
+ニヴァリアン建築のプリントエフェクトを使用します。出発地点で4秒、実際の到着地点でさらに4秒かかります（ゲーム内時間）。両段階とも通常どおりダメージを受けます。</NMC_WarpRecallDescription>
+  <NMC_WarpBusy>転移中（出発4秒、到着4秒）。通常どおりダメージを受けます</NMC_WarpBusy>
+  <NMC_WarpDropUnavailable>ニヴァリアン降下ポッドを利用できません</NMC_WarpDropUnavailable>
+  <NMC_StormAttack>雷球攻撃</NMC_StormAttack>
+  <NMC_StormAttackDesc>100マス以内の敵を指定。3秒ごとに雷球を発射し、直撃20ダメージ・貫通80%、続いて3×3マスに15ダメージ・貫通35%の爆発。両方とも建築物には5倍。</NMC_StormAttackDesc>
+  <NMC_StormMustFly>飛行中かつワープ中ではない時のみ攻撃可能</NMC_StormMustFly>
+  <NMC_StormFireAtWill>自動射撃</NMC_StormFireAtWill>
+  <NMC_StormAutoDesc>飛行中、射程内の見える敵を自動攻撃。OFFでも手動指定の目標は維持されます。</NMC_StormAutoDesc>
+  <NMC_StormClearTarget>指定目標を解除</NMC_StormClearTarget>
+  <NMC_StormClearDesc>手動目標を解除。自動射撃がONなら自動索敵は継続。</NMC_StormClearDesc>
+  <NMC_StormStatus>雷球：射程100、再使用まで{0}秒</NMC_StormStatus>
+  <NMC_SageAttackMode>攻撃モード</NMC_SageAttackMode>
+  <NMC_SageAttackModeDesc>飛行中、12マス以内の地上敵を攻撃。0.5秒ごとに2本の光線を同時発射し、各6ダメージ、装甲貫通30%。斉射ごとに化学燃料1を消費し、バッテリー改良後も同じ。攻撃を停止しても隠密解除は有効。</NMC_SageAttackModeDesc>
+  <NMC_SageTarget>地上目標を指定</NMC_SageTarget>
+  <NMC_SageTargetDesc>12マス以内の地上敵を優先し、無効になれば別の敵を選択。飛行中や重力で浮上した目標は攻撃不可。</NMC_SageTargetDesc>
+  <NMC_SageMustAttack>離陸して攻撃モードを有効化してください。ワープ中は使用不可。</NMC_SageMustAttack>
+  <NMC_SageStatus>攻撃モード：{0}／常時隠密解除：半径50マス</NMC_SageStatus>
+  <NMC_SageOn>有効</NMC_SageOn>
+  <NMC_SageOff>無効</NMC_SageOff>
 </LanguageData>
