@@ -27,7 +27,7 @@ namespace NivarianCommander
             {
                 if (stormSearchTicks > 0) { stormSearchTicks--; return; }
                 // Stable tie-breaking, and bounded idle searches for the long-range weapon.
-                target = Map.listerThings.AllThings.Where(t => StormShipActions.ValidTarget(this, t))
+                target = Map.listerThings.AllThings.Where(t => StormShipActions.ValidAutomaticTarget(this, t))
                     .OrderBy(t => Position.DistanceToSquared(t.Position)).ThenBy(t => t.thingIDNumber).FirstOrDefault();
                 if (target == null) { stormSearchTicks = 29; return; }
             }
@@ -51,6 +51,10 @@ namespace NivarianCommander
 
     public static class StormShipActions
     {
+        // Keep explicit building orders separate from automatic target acquisition.
+        public static bool ValidAutomaticTarget(Building_NivarianAircraft ship, Thing target)
+            => (target is Pawn || target is Building_Turret) && ValidTarget(ship, target);
+
         static bool Owned(Map map, Building_NivarianAircraft ship) => map != null && ship != null
             && ship.IsStormShip && ship.Spawned && !ship.Destroyed && ship.Map == map && ship.Faction == Faction.OfPlayer;
         public static bool ValidTarget(Building_NivarianAircraft ship, Thing target) => ship != null && ship.Spawned

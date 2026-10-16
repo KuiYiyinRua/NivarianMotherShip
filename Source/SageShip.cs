@@ -24,7 +24,7 @@ namespace NivarianCommander
                 int nearest = int.MaxValue;
                 foreach (var candidate in Map.listerThings.AllThings)
                 {
-                    if (!SageShipActions.ValidTarget(this, candidate)) continue;
+                    if (!SageShipActions.ValidAutomaticTarget(this, candidate)) continue;
                     int distance = Position.DistanceToSquared(candidate.Position);
                     if (distance < nearest || distance == nearest && (target == null || candidate.thingIDNumber < target.thingIDNumber))
                     { target = candidate; nearest = distance; }
@@ -68,6 +68,10 @@ namespace NivarianCommander
 
     public static class SageShipActions
     {
+        // Buildings remain available to explicit orders, but are not automatic targets.
+        public static bool ValidAutomaticTarget(Building_NivarianAircraft ship, Thing target)
+            => (target is Pawn || target is Building_Turret) && ValidTarget(ship, target);
+
         static bool Owned(Map map, Building_NivarianAircraft ship) => map != null && ship != null
             && ship.IsSageShip && ship.Spawned && !ship.Destroyed && ship.Map == map && ship.Faction == Faction.OfPlayer;
         public static bool ValidTarget(Building_NivarianAircraft ship, Thing target) => ship != null && ship.Spawned

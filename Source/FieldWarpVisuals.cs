@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Collections.Concurrent;
+using System.Runtime.CompilerServices;
 using System.Linq;
 using HarmonyLib;
 using LumiParticle.Assets;
@@ -42,7 +44,7 @@ namespace NivarianCommander
         public static Material MaterialFor(Thing subject, Material original)
         {
             var order = FieldWarp.For(subject);
-            if (order == null || original == null) return original;
+            if (order == null || ReferenceEquals(original, null)) return original;
             var visuals = subject.Map.GetComponent<FieldWarpVisuals>();
             return visuals.effects.TryGetValue(order, out var effect) ? effect.MaterialFor(original) : original;
         }
@@ -64,7 +66,15 @@ namespace NivarianCommander
         {
             readonly Map map;
             readonly FieldWarpOrder order;
-            readonly Dictionary<Material, Material> materials = new Dictionary<Material, Material>();
+            // GetFinalizedMaterial also runs in ParallelPreDraw. It may only publish
+            // managed requests/read prepared materials; all Unity calls belong in Update.
+            sealed class MaterialIdentity : IEqualityComparer<Material>
+            {
+                public bool Equals(Material a, Material b) => ReferenceEquals(a, b);
+                public int GetHashCode(Material value) => RuntimeHelpers.GetHashCode(value);
+            }
+            readonly ConcurrentDictionary<Material, Material> materials = new ConcurrentDictionary<Material, Material>(new MaterialIdentity());
+            readonly ConcurrentDictionary<Material, byte> requested = new ConcurrentDictionary<Material, byte>(new MaterialIdentity());
             LumiAnimatorItem printing, core;
             LumiParticleItem orb;
             public PrintingEffect(Map map, FieldWarpOrder order)
@@ -73,17 +83,27 @@ namespace NivarianCommander
                 ? 1f - order.remaining / (float)FieldWarp.Duration : order.remaining / (float)FieldWarp.Duration);
             public Material MaterialFor(Material original)
             {
-                if (!materials.TryGetValue(original, out var material))
+                if (materials.TryGetValue(original, out var material)) return material;
+                requested.TryAdd(original, 0);
+                return original;
+            }
+            void PrepareMaterials()
+            {
+                bool changed = false;
+                foreach (var original in requested.Keys)
                 {
+                    if (original == null) { requested.TryRemove(original, out _); continue; }
                     if (LumiAssetLoader.Instance == null
-                        || !LumiAssetLoader.Instance.GetMaterial("Nivarian_3DPrint", out var template, true) || template == null) return original;
-                    material = new Material(template) { mainTexture = original.mainTexture,
+                        || !LumiAssetLoader.Instance.GetMaterial("Nivarian_3DPrint", out var template, true) || template == null) continue;
+                    var material = new Material(template) { mainTexture = original.mainTexture,
                         mainTextureScale = original.mainTextureScale, mainTextureOffset = original.mainTextureOffset,
                         hideFlags = HideFlags.HideAndDontSave };
-                    materials.Add(original, material);
+                    material.SetFloat("_Progress", Progress);
+                    materials[original] = material;
+                    requested.TryRemove(original, out _);
+                    changed = true;
                 }
-                material.SetFloat("_Progress", Progress);
-                return material;
+                if (changed && order.subject is Pawn pawn) pawn.Drawer?.renderer?.SetAllGraphicsDirty();
             }
             public void Update()
             {
@@ -91,6 +111,7 @@ namespace NivarianCommander
                 Rand.PushState();
                 try
                 {
+                    PrepareMaterials();
                     var position = order.subject.DrawPos;
                     var follow = order.subject;
                     float size = order.subject is Pawn ? 1.4f : Mathf.Max(order.subject.def.graphicData.drawSize.x, order.subject.def.graphicData.drawSize.y);
@@ -119,6 +140,7 @@ namespace NivarianCommander
                 if (order.subject is Pawn pawn) pawn.Drawer?.renderer?.SetAllGraphicsDirty();
                 foreach (var material in materials.Values) Object.Destroy(material);
                 materials.Clear();
+                requested.Clear();
             }
         }
     }

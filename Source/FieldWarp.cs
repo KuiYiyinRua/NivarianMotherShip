@@ -72,7 +72,7 @@ namespace NivarianCommander
                 var order = orders[i];
                 var subject = order.subject;
                 if (subject == null || subject.Destroyed || !subject.Spawned || subject.Map != map
-                    || subject.Faction != Faction.OfPlayer || subject is Pawn pawn && pawn.Dead
+                    || !order.arriving && subject.Faction != Faction.OfPlayer || subject is Pawn pawn && pawn.Dead
                     || !order.arriving && !order.DestinationValid)
                 { orders.RemoveAt(i); continue; }
                 // A command issued during this map tick must not lose its first tick.

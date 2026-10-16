@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <NMC_CaravanWarpDescription>Transfère toute la caravane et sa cargaison vers un champ énergétique sur la carte choisie. Un effet d’impression de 4 secondes accompagne l’arrivée. Nécessite la recherche du rappel vers le champ.</NMC_CaravanWarpDescription>
+  <NMC_CaravanWarpUnavailable>Cette caravane ne peut plus être transférée.</NMC_CaravanWarpUnavailable>
+</LanguageData>

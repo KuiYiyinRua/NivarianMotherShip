@@ -51,6 +51,7 @@ namespace NivarianCommander.MultiplayerAdapter
             ProjectionMapContext.Install();
             MP.RegisterSyncMethod(typeof(FieldRecallActions), nameof(FieldRecallActions.Recall), new SyncType[] { mapType, typeof(Pawn), typeof(int) }).CancelIfAnyArgNull();
             FieldRecallMapContext.Install();
+            MP.RegisterSyncMethod(typeof(CaravanFieldRecall), nameof(CaravanFieldRecall.Recall));
             LegionFactionMapContext.Install();
             MP.RegisterSyncMethod(typeof(SolarActions), nameof(SolarActions.Start), new SyncType[] { mapType, typeof(IntVec3) });
             MP.RegisterSyncMethod(typeof(RayActions), nameof(RayActions.Start), new SyncType[] { mapType, typeof(IntVec3) });

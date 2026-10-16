@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <NMC_CaravanWarpDescription>将整支远行队及随身物资折跃至所选地图的能量场。抵达后播放4秒打印效果。需要完成能量场折跃研究。</NMC_CaravanWarpDescription>
+  <NMC_CaravanWarpUnavailable>远行队已离开或无法折跃</NMC_CaravanWarpUnavailable>
+</LanguageData>

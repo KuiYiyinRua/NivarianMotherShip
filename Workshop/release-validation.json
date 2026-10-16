@@ -1,18 +1,14 @@
 {
-  "release": "0.9.9-r1",
-  "core_file_version": "0.9.9.0",
+  "release": "0.9.9-r2",
+  "date": "2026-10-16",
+  "build": "core and main adapter rebuilt identically; localization PASS",
+  "runtime": "Prior caravan SP passed; MP incomplete with unresolved final pawn assertion. Automatic targeting not runtime-tested.",
   "assemblies": {
-    "1.6/Assemblies/NivarianCommander.dll": "b92edcf4bf3a728b4736c97d7f996e166b3246c0d7bb9d8c3fef9c11efbd388a",
-    "Multiplayer/Assemblies/NivarianCommander.Multiplayer.dll": "552e48477c20b373c8f9752ffb1c8c07158342eb35ecb6079d7c9cdfdefbce45",
+    "1.6/Assemblies/NivarianCommander.dll": "c5eb8f1748e5c4920500fb88d70bfe9f97ace49b36786a65292ae0a94107ff22",
+    "Multiplayer/Assemblies/NivarianCommander.Multiplayer.dll": "41a7e4c3b702793bd572602e15079bb0b59244fea5564a9837fd21e1cb8c60bd",
     "Multiplayer/Assemblies/NivarianCommander.SageShip.Multiplayer.dll": "65c844c99de8b3d5734ce32a4d8001e36e791b92bee12739e2ce48c7ca8b0918",
     "Multiplayer/Assemblies/NivarianCommander.ShipUpgrades.Multiplayer.dll": "c5c134ba0cb521778c8116be92cb4c0d985aa12d96a850ea980cb1544789142c",
     "Multiplayer/Assemblies/NivarianCommander.StormShip.Multiplayer.dll": "befafe23a71ce90a696c3a1bf2c43cef84341933057c9fe67e0fbe71a19a6222",
     "Multiplayer/Assemblies/NivarianCommander.WarpPrism.Multiplayer.dll": "2b5b7f4f42010c8e5d006736d5911a5aa7c320b5350d52dff3c9c507503bec75"
-  },
-  "optimizer_stress": "PASS: 1048576 lookups, 8 threads, 512 maps, 600 frames; option reapplication retains locks",
-  "without_optimizers": "PASS",
-  "multiplayer": "PASS: two peers, three shield/warp rounds, 120000 world ticks, equal final world/map/Rand receipts",
-  "chinese_copy": "111 entries; 12934 to 8281 characters; no gameplay XML change",
-  "limits": "Focused one-map 18-mod test, not full modpack, async-time or rejoin certification",
-  "ci": "Local verification; no GitHub Actions success claimed"
+  }
 }

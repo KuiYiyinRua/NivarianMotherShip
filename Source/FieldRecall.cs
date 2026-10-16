@@ -32,7 +32,8 @@ namespace NivarianCommander
         }
 
         // Pure lookup, nearest first. Never consume random state while drawing a Gizmo.
-        internal static IntVec3 LandingCell(Thing pawn, Map destination, IntVec3 center, float radius = FieldGroundGeometry.Radius)
+        internal static IntVec3 LandingCell(Thing pawn, Map destination, IntVec3 center, float radius = FieldGroundGeometry.Radius,
+            HashSet<IntVec3> reserved = null)
         {
             bool flying = ShipFieldRecallActions.InFlight(pawn);
             foreach (var cell in GenRadial.RadialCellsAround(center, radius, true))
@@ -40,7 +41,8 @@ namespace NivarianCommander
                 bool clear = true;
                 foreach (var occupied in GenAdj.OccupiedRect(cell, pawn.Rotation, pawn.def.Size))
                 {
-                    if (!occupied.InBounds(destination) || !occupied.InHorDistOf(center, radius))
+                    if (!occupied.InBounds(destination) || !occupied.InHorDistOf(center, radius)
+                        || reserved != null && reserved.Contains(occupied))
                     { clear = false; break; }
                     if (flying)
                     {
