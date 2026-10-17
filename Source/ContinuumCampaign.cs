@@ -51,7 +51,7 @@ namespace NivarianCommander
                 int result = ReadBattlefieldStatus();
                 entered |= result == 1;
                 if (result == 2) { Resolve(true); return; }
-                if (activeSite == null || activeSite.Destroyed || result == -1
+                if (activeSite == null || activeSite.Destroyed
                     || (entered && activeSite.Map == null) || activeQuest?.Historical == true) Resolve(false);
                 return;
             }
@@ -64,7 +64,7 @@ namespace NivarianCommander
         public int ReadBattlefieldStatus()
         {
             var battlefield = activeSite?.Map?.GetComponent<ContinuumBattlefield>();
-            return battlefield?.cleared == true ? 2 : battlefield?.retreated == true ? -1 : battlefield?.hadPlayer == true ? 1 : 0;
+            return battlefield?.cleared == true ? 2 : battlefield?.hadPlayer == true ? 1 : 0;
         }
         public static void ApplyBattlefieldResult(int siteId, int stage, int result)
         {
@@ -72,7 +72,8 @@ namespace NivarianCommander
             if (campaign?.activeSite == null || campaign.activeSite.ID != siteId || campaign.activeStage != stage) return;
             if (result == 1) campaign.entered = true;
             else if (result == 2) campaign.Resolve(true);
-            else if (result == -1) campaign.Resolve(false);
+            // Ignore legacy/stale retreat reports while the battlefield still exists.
+            else if (result == -1 && campaign.activeSite.Map == null) campaign.Resolve(false);
         }
         public bool TrySpawn()
         {

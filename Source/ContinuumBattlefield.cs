@@ -12,19 +12,23 @@ namespace NivarianCommander
     public sealed class ContinuumBattlefield : MapComponent
     {
         public int stage, elapsed, waves;
-        public bool hadPlayer, cleared, retreated;
+        public bool hadPlayer, cleared;
+        // Legacy save field. A temporary lack of spawned pawns is not a retreat.
+        public bool retreated;
         public bool airReinforcementsSpawned;
         public Thing relay;
         public List<Thing> defenders = new List<Thing>();
         public ContinuumBattlefield(Map map) : base(map) { }
         public override void MapComponentTick()
         {
-            if (stage <= 0 || cleared || retreated) return;
-            bool playerHere = map.mapPawns.AllPawnsSpawned.Any(p => p.Faction == Faction.OfPlayer && !p.Dead);
+            if (stage <= 0 || cleared) return;
+            bool playerHere = map.mapPawns.AllPawns.Any(p => p.Faction == Faction.OfPlayer && !p.Dead)
+                || map.listerBuildings.allBuildingsColonist.Any(b => b is Building_NivarianAircraft);
             if (playerHere) hadPlayer = true;
             if (!hadPlayer) return;
             elapsed++;
-            if (!playerHere && elapsed > 600) { retreated = true; return; }
+            // Boarding, arrival and map transfers can temporarily remove all spawned
+            // pawns. Only the world campaign may fail a site after its map is removed.
             if (playerHere && stage >= 6 && !airReinforcementsSpawned && elapsed % 60 == 1)
                 airReinforcementsSpawned = ContinuumAirReinforcements.TrySpawn(this, map);
             bool coreGone = relay == null || relay.Destroyed || !relay.Spawned || !relay.HostileTo(Faction.OfPlayer);

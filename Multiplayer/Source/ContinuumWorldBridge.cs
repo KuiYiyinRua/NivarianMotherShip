@@ -30,7 +30,7 @@ namespace NivarianCommander.MultiplayerAdapter
             var site = campaign?.activeSite;
             var battle = site?.Map?.GetComponent<ContinuumBattlefield>();
             if (battle == null || campaign.activeStage <= 0) return;
-            int result = battle.cleared ? 2 : battle.retreated ? -1 : battle.hadPlayer ? 1 : 0;
+            int result = battle.cleared ? 2 : battle.hadPlayer ? 1 : 0;
             if (result == 0 || observedSite == site.ID && observedStage == campaign.activeStage && observedResult == result) return;
             if (report.DoSync(null, site.ID, campaign.activeStage, result))
             { observedSite = site.ID; observedStage = campaign.activeStage; observedResult = result; }

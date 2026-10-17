@@ -1,3 +1,27 @@
+# Release validation: 0.9.9-r3
+
+## 0.9.9-r3 · 2026-10-17
+
+- 修复进入连续体基地后，角色登舰或地面玩家单位暂时消失导致任务提前失败的问题。基地地图仍存在时继续保留任务和胜利判定。
+- 入场识别包含舱内人员与玩家舰船；忽略旧的误撤退标记，攻陷原基地后可正常完成任务并推进下一阶段。
+- 保留地图真正移除后的失败和三天重试；已被旧版判定失败的任务不会自动恢复，可读取失败前存档或等待重试。
+- 核心和主联机适配已更新，其他四份舰船适配不变。包含完整源码和本次回归测试。
+- 验证：旧版实机复现误失败，新版 13 项单机定向回归通过。核心和主联机适配编译均为 0 警告、0 错误；本轮未做双端联机、冷读档或整合包测试。
+- 更新后请重启游戏；联机双方需使用相同版本。
+
+### English
+
+- Fixed Continuum base missions failing when colonists board a ship or temporarily leave the spawned-pawn list. Missions keep tracking victory while the base map exists.
+- Entry detection includes passengers and player aircraft. Legacy false-retreat flags no longer prevent completion or stage progression.
+- Actual map removal still triggers failure and the three-day retry. Previously failed quests are not automatically restored; load an earlier save or wait for a retry.
+- Updated the core and main Multiplayer adapter; the four ship adapters are unchanged. Includes full source and the new regression probe.
+- The old build reproduced the bug; the fixed build passed 13 targeted single-player checks. No new two-client Multiplayer, cold-load or full-modpack certification is claimed.
+- Restart the game after updating. All multiplayer participants must use matching files.
+
+See [Continuum entry regression](ContinuumEntryFix.zh-CN.md) for the reproduction, assertions and exact artifact hashes.
+
+## Previous release evidence
+
 # Release validation: 0.9.9-r2
 
 ## 0.9.9-r2 · 2026-10-16

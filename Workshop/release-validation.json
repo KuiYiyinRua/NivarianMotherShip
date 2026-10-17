@@ -1,11 +1,11 @@
 {
-  "release": "0.9.9-r2",
-  "date": "2026-10-16",
-  "build": "core and main adapter rebuilt identically; localization PASS",
-  "runtime": "Prior caravan SP passed; MP incomplete with unresolved final pawn assertion. Automatic targeting not runtime-tested.",
+  "release": "0.9.9-r3",
+  "date": "2026-10-17",
+  "build": "core and main adapter: zero warnings/errors",
+  "runtime": "Old build reproduces failure; fixed build passes 13 targeted SP assertions. No new two-client MP, cold-load or full-modpack test.",
   "assemblies": {
-    "1.6/Assemblies/NivarianCommander.dll": "c5eb8f1748e5c4920500fb88d70bfe9f97ace49b36786a65292ae0a94107ff22",
-    "Multiplayer/Assemblies/NivarianCommander.Multiplayer.dll": "41a7e4c3b702793bd572602e15079bb0b59244fea5564a9837fd21e1cb8c60bd",
+    "1.6/Assemblies/NivarianCommander.dll": "72adf47dfb019eb492247d689aee59ff961436dd151f69f9f886a4dda8b8012e",
+    "Multiplayer/Assemblies/NivarianCommander.Multiplayer.dll": "904cd6902541a1cad1efaebf54e35f29ef1f750da6d46e7ea827e5d4bfd57d72",
     "Multiplayer/Assemblies/NivarianCommander.SageShip.Multiplayer.dll": "65c844c99de8b3d5734ce32a4d8001e36e791b92bee12739e2ce48c7ca8b0918",
     "Multiplayer/Assemblies/NivarianCommander.ShipUpgrades.Multiplayer.dll": "c5c134ba0cb521778c8116be92cb4c0d985aa12d96a850ea980cb1544789142c",
     "Multiplayer/Assemblies/NivarianCommander.StormShip.Multiplayer.dll": "befafe23a71ce90a696c3a1bf2c43cef84341933057c9fe67e0fbe71a19a6222",
