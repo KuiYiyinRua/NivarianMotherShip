@@ -58,7 +58,7 @@ Mobilisez-le pour diriger son mouvement ; démobiliser rétablit la poursuite. I
 
 Une installation alimentée en nutriments avec des cristaux vert spectral. Occupe 2×2 cases et produit 1400 W. La production de P et la consommation nutritive sont le double de celles de la tour nivariane ordinaire. Les colons livrent les aliments autorisés, configurables dans l’onglet Nutrition.
 
-En fonctionnement, elle camoufle les alliés dans un rayon de 7 cases. Une réserve nutritive insuffisante, l’arrêt ou une interruption suspendent ensemble l’électricité, les P et le camouflage. Le ravitaillement permet la reprise. Les attaques et dégâts ne rompent pas le camouflage, mais la détection reste efficace.
+En fonctionnement, elle camoufle les alliés dans l’union de quatre cercles de rayon 7 cases, centrés chacun sur une des cases de son emprise 2×2. Sélectionnez la tour pour voir la limite. Une réserve nutritive insuffisante, l’arrêt ou une interruption suspendent ensemble l’électricité, les P et le camouflage. Le ravitaillement permet la reprise. Les attaques et dégâts ne rompent pas le camouflage, mais la détection reste efficace.
 
 La tour ne se camoufle pas elle-même et doit être protégée.</NMC_S08.description>
   <NMC_S08.researchLabel>Protocole du noyau d'ombre</NMC_S08.researchLabel>

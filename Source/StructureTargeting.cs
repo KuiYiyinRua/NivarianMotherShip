@@ -40,7 +40,12 @@ namespace NivarianCommander
             if (definition == null) return;
             var footprint = GenAdj.OccupiedRect(target.Cell, Rot4.North, definition.Size);
             GenDraw.DrawFieldEdges(footprint.Cells.ToList());
-            if (number == 8) GenDraw.DrawRadiusRing(target.Cell, 7f);
+            if (number == 8)
+            {
+                var tower = DefDatabase<ThingDef>.GetNamedSilentFail("NMC_ShadowEnergyTower");
+                float radius = tower?.GetCompProperties<CompProperties_CommanderStructure>()?.cloakRadius ?? 0f;
+                GenDraw.DrawFieldEdges(ShadowCloakRange.Cells(footprint, map, radius));
+            }
         }
         static void Cleanup() { map = null; number = 0; }
         public static void Cancel()

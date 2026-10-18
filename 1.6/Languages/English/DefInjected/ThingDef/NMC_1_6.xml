@@ -95,7 +95,7 @@ Cancelling returns delivered materials, but not deployment energy or cooldown.</
   <NMC_ShadowEnergyTower.label>Nivarian shadow energy tower</NMC_ShadowEnergyTower.label>
   <NMC_ShadowEnergyTower.description>A nutrient-fed energy facility with ghost-green resonant crystals, occupying 2×2 cells. Generates 1400 W; P output and nutrition consumption are twice those of the Nivarian energy tower. Colonists deliver allowed food. Adjust supplies in the Nutrition tab.
 
-While operating, cloaks allies within 7 cells. Insufficient nutrition, switching off or interrupted operation stops electricity, P production and cloaking together; replenishing nutrition restores operation. Attacks and damage do not break cloaking, but detection still works.
+While operating, cloaks allies in the combined area of four circles, each with a radius of 7 cells and centered on one of the tower’s 2×2 occupied cells. Select the tower to see the boundary. Insufficient nutrition, switching off or interrupted operation stops electricity, P production and cloaking together; replenishing nutrition restores operation. Attacks and damage do not break cloaking, but detection still works.
 
 The tower does not cloak itself and needs other defenses.</NMC_ShadowEnergyTower.description>
   <NMC_HyperdimensionalMonolith.label>Hyperdimensional monolith</NMC_HyperdimensionalMonolith.label>

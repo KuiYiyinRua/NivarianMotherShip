@@ -140,6 +140,12 @@ namespace NivarianCommander
     {
         public int incomeClock;
         public CompProperties_CommanderStructure Props => (CompProperties_CommanderStructure)props;
+        public override void PostDrawExtraSelectionOverlays()
+        {
+            base.PostDrawExtraSelectionOverlays();
+            if (parent.Spawned && Props.cloakRadius > 0f)
+                GenDraw.DrawFieldEdges(ShadowCloakRange.Cells(parent.OccupiedRect(), parent.Map, Props.cloakRadius));
+        }
         public override void CompTick()
         {
             if ((Props.incomePower == 0 && Props.incomeVolatile == 0) || !SupportDiplomacy.Friendly(parent)) return;

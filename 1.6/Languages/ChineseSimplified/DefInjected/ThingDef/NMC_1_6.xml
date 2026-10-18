@@ -73,7 +73,7 @@
 
 获取：研究“超维空间巨石支援协议”后，在支援面板部署。取消施工退还已交建材。</NMC_MonolithCore.description>
   <NMC_ShadowEnergyTower.label>涅瓦莲暗影能源塔</NMC_ShadowEnergyTower.label>
-  <NMC_ShadowEnergyTower.description>消耗食物营养的能源设施，占地2×2格，发电1400W并产出P点。使半径7格内友军隐形，塔身不受自身隐形场保护。缺少营养或停机时停止供能和隐形。
+  <NMC_ShadowEnergyTower.description>消耗食物营养的能源设施，占地2×2格，发电1400W并产出P点。以占地2×2的四格分别为圆心，合并半径7格的范围，使其中友军隐形；选中能源塔可查看范围，塔身不受自身隐形场保护。缺少营养或停机时停止供能和隐形。
 
 获取：研究“暗影核心支援协议”，部署核心并交付建材。补给种类可在“营养”页设置。</NMC_ShadowEnergyTower.description>
   <NMC_HyperdimensionalMonolith.label>超维空间巨石</NMC_HyperdimensionalMonolith.label>
