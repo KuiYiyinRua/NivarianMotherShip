@@ -1,4 +1,6 @@
 using System.Linq;
+using Nivarian_Race.Code.Comps.BuildingComps;
+using Nivarian_Race.Code.NivarianBuilding;
 using RimWorld;
 using Verse;
 
@@ -7,12 +9,21 @@ namespace NivarianCommander
     public static class StructureActions
     {
         public static ThingDef CoreFor(int number) => DefDatabase<ThingDef>.GetNamedSilentFail(
-            number == 8 ? "NMC_ShadowCore" : number == 17 ? "NMC_MonolithCore" : "");
+            number == 8 ? "NMC_ShadowConstruction" : number == 17 ? "NMC_MonolithConstruction" : "");
         public static string Unavailable(Map map, int number)
         {
             if (number != 8 && number != 17) return NmcText.Get("NMC_Text0463");
             string blocked = DefenseActions.Unavailable(map, number);
-            return blocked ?? (CompCommanderConstruction.ConfigurationError(CoreFor(number)) == null ? null : NmcText.Get("NMC_Text0464"));
+            return blocked ?? (NativeConstructionValid(CoreFor(number)) ? null : NmcText.Get("NMC_Text0464"));
+        }
+        static bool NativeConstructionValid(ThingDef core)
+        {
+            var build = core?.GetCompProperties<CompProperties_SelfBuilding>();
+            return core?.thingClass != null && typeof(Building_SelBuilding).IsAssignableFrom(core.thingClass)
+                && build?.buildingDef != null && build.workAmount > 0 && build.constructionSpeed > 0
+                && core.Size == build.buildingDef.Size
+                && core.GetCompProperties<CompProperties_UniversalContainer>() != null
+                && build.costList?.Count > 0 && build.costList.All(i => i?.thingDef != null && i.count > 0);
         }
         public static string PlacementError(Map map, IntVec3 center, ThingDef core)
         {

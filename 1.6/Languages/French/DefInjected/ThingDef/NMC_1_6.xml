@@ -160,4 +160,8 @@ Vol local et mondial 25% plus rapide que la frégate gravitationnelle. Consommat
 Amélioration : 1 unité de batterie, moitié du coût de la frégate. Accepte les batteries Milira, cellules instables ou vanométriques entières. Après amélioration, décollage à 50 carburants, sans consommation continue ; chaque salve coûte toujours 1.</NMC_SageShip.description>
   <NMC_SageShipIncoming.label>Vaisseau sage nivarian (atterrissage)</NMC_SageShipIncoming.label>
   <NMC_SageShipLeaving.label>Vaisseau sage nivarian (décollage)</NMC_SageShipLeaving.label>
+  <NMC_ShadowConstruction.label>Construct de tour énergétique d’ombre</NMC_ShadowConstruction.label>
+  <NMC_ShadowConstruction.description>Transférez un construct de tour énergétique d’ombre nivarian. Livrez 150 acier, 4 composants et 25 cristaux de dragon ; le système de construction natif imprime la tour en 20 secondes à vitesse de base.</NMC_ShadowConstruction.description>
+  <NMC_MonolithConstruction.label>Construct de monolithe hyperdimensionnel</NMC_MonolithConstruction.label>
+  <NMC_MonolithConstruction.description>Transférez un construct de monolithe hyperdimensionnel nivarian. Livrez 300 acier, 10 composants et 60 cristaux de dragon ; le système de construction natif imprime le monolithe en 45 secondes à vitesse de base.</NMC_MonolithConstruction.description>
 </LanguageData>

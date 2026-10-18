@@ -1181,7 +1181,7 @@
   },
   {
     "id": 142,
-    "zh": "2×2 · 800耐久 · 材料齐后20秒施工",
+    "zh": "成品2×2 · 800耐久 · 基础施工20秒",
     "key": "NMC_Text0142",
     "contexts": [
       "CommanderPanel.cs:272"
@@ -1189,7 +1189,7 @@
   },
   {
     "id": 143,
-    "zh": "3×3 · 1,800耐久 · 材料齐后45秒施工",
+    "zh": "成品3×3 · 1,800耐久 · 基础施工45秒",
     "key": "NMC_Text0143",
     "contexts": [
       "CommanderPanel.cs:272"
@@ -1197,7 +1197,7 @@
   },
   {
     "id": 144,
-    "zh": "部署核心，运入材料后自动施工",
+    "zh": "折跃构造体，交付材料后自动打印成形",
     "key": "NMC_Text0144",
     "contexts": [
       "CommanderPanel.cs:273"
@@ -1205,7 +1205,7 @@
   },
   {
     "id": 145,
-    "zh": "部署暗影核心",
+    "zh": "折跃暗影塔构造体",
     "key": "NMC_Text0145",
     "contexts": [
       "CommanderPanel.cs:275"
@@ -1213,7 +1213,7 @@
   },
   {
     "id": 146,
-    "zh": "部署巨石核心",
+    "zh": "折跃巨石构造体",
     "key": "NMC_Text0146",
     "contexts": [
       "CommanderPanel.cs:275"
@@ -4132,7 +4132,7 @@
   },
   {
     "id": 506,
-    "zh": "部署暗影能源塔核心。运入150钢铁、4零部件和25龙晶后，20秒完成建造。\n\n能源塔消耗食物营养，提供1400W电力并产出P点，使半径7格内友军隐形。缺少营养或停机时停止供能和隐形；塔身不受自身隐形场保护。\n\n解锁：在上行链路研究“暗影核心支援协议”，随后从指挥官支援面板调用。",
+    "zh": "折跃涅瓦莲暗影能源塔构造体。交付150钢铁、4零部件和25龙晶后，由本体通用构造流程自动打印成形，基础施工20秒。\n\n能源塔消耗食物营养，提供1400W电力并产出P点，使半径7格内友军隐形。缺少营养或停机时停止供能和隐形；塔身不受自身隐形场保护。\n\n解锁：在上行链路研究“暗影核心支援协议”，随后从指挥官支援面板调用。",
     "key": "NMC_Text0506",
     "contexts": [
       "1.6\\Defs\\CommanderAbilities.xml:NMC_S08.description"
@@ -4375,7 +4375,7 @@
   },
   {
     "id": 535,
-    "zh": "部署超维空间巨石核心。运入300钢铁、10零部件和60龙晶后，45秒完成建造。\n\n巨石消耗1000W电力，无需弹药；每2秒攻击60格内最多10名敌人，各造成3伤害和1秒眩晕。\n\n解锁：在上行链路研究“超维空间巨石支援协议”，随后从指挥官支援面板调用。",
+    "zh": "折跃涅瓦莲超维空间巨石构造体。交付300钢铁、10零部件和60龙晶后，由本体通用构造流程自动打印成形，基础施工45秒。\n\n巨石消耗1000W电力，无需弹药；每2秒攻击60格内最多10名敌人，各造成3伤害和1秒眩晕。\n\n解锁：在上行链路研究“超维空间巨石支援协议”，随后从指挥官支援面板调用。",
     "key": "NMC_Text0535",
     "contexts": [
       "1.6\\Defs\\CommanderAbilities.xml:NMC_S17.description"
@@ -6676,6 +6676,38 @@
     "key": "NMC_Text0820",
     "contexts": [
       "ContinuumCampaign.cs"
+    ]
+  },
+  {
+    "id": 821,
+    "zh": "暗影能源塔构造体",
+    "key": "NMC_Text0821",
+    "contexts": [
+      "1.6/Defs/CommanderStructures.xml:NMC_ShadowConstruction.label"
+    ]
+  },
+  {
+    "id": 822,
+    "zh": "折跃涅瓦莲暗影能源塔构造体。交付150钢铁、4零部件和25龙晶后，由本体通用构造流程自动打印成形，基础施工20秒。",
+    "key": "NMC_Text0822",
+    "contexts": [
+      "1.6/Defs/CommanderStructures.xml:NMC_ShadowConstruction.description"
+    ]
+  },
+  {
+    "id": 823,
+    "zh": "超维空间巨石构造体",
+    "key": "NMC_Text0823",
+    "contexts": [
+      "1.6/Defs/CommanderStructures.xml:NMC_MonolithConstruction.label"
+    ]
+  },
+  {
+    "id": 824,
+    "zh": "折跃涅瓦莲超维空间巨石构造体。交付300钢铁、10零部件和60龙晶后，由本体通用构造流程自动打印成形，基础施工45秒。",
+    "key": "NMC_Text0824",
+    "contexts": [
+      "1.6/Defs/CommanderStructures.xml:NMC_MonolithConstruction.description"
     ]
   }
 ]

@@ -51,7 +51,7 @@
   <NMC_S07.researchLabel>净化光束支援协议</NMC_S07.researchLabel>
   <NMC_S08.label>暗影核心</NMC_S08.label>
   <NMC_S08.group>暗影与控制</NMC_S08.group>
-  <NMC_S08.description>部署暗影能源塔核心。运入150钢铁、4零部件和25龙晶后，20秒完成建造。
+  <NMC_S08.description>折跃涅瓦莲暗影能源塔构造体。交付150钢铁、4零部件和25龙晶后，由本体通用构造流程自动打印成形，基础施工20秒。
 
 能源塔消耗食物营养，提供1400W电力并产出P点，使半径7格内友军隐形。缺少营养或停机时停止供能和隐形；塔身不受自身隐形场保护。
 
@@ -117,7 +117,7 @@
   <NMC_S16.researchLabel>赛达斯军团支援协议</NMC_S16.researchLabel>
   <NMC_S17.label>超维空间巨石</NMC_S17.label>
   <NMC_S17.group>设施与投射</NMC_S17.group>
-  <NMC_S17.description>部署超维空间巨石核心。运入300钢铁、10零部件和60龙晶后，45秒完成建造。
+  <NMC_S17.description>折跃涅瓦莲超维空间巨石构造体。交付300钢铁、10零部件和60龙晶后，由本体通用构造流程自动打印成形，基础施工45秒。
 
 巨石消耗1000W电力，无需弹药；每2秒攻击60格内最多10名敌人，各造成3伤害和1秒眩晕。
 

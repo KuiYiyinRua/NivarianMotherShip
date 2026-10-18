@@ -2032,5 +2032,29 @@
     "type": "ResearchProjectDef",
     "path": "NMC_SageShipResearch.description",
     "id": 817
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_ShadowConstruction.label",
+    "id": 821
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_ShadowConstruction.description",
+    "id": 822
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_MonolithConstruction.label",
+    "id": 823
+  },
+  {
+    "folder": "1.6",
+    "type": "ThingDef",
+    "path": "NMC_MonolithConstruction.description",
+    "id": 824
   }
 ]

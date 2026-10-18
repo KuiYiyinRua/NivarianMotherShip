@@ -54,7 +54,7 @@ Mobilisez-le pour diriger son mouvement ; démobiliser rétablit la poursuite. I
   <NMC_S07.researchLabel>Protocole du rayon purificateur</NMC_S07.researchLabel>
   <NMC_S08.label>Noyau d'ombre</NMC_S08.label>
   <NMC_S08.group>Ombre et contrôle</NMC_S08.group>
-  <NMC_S08.description>Déploie un noyau d’ombre. Après livraison d’acier, de composants et de cristaux draconiques, le vaisseau-mère construit une tour d’énergie d’ombre nivariane.
+  <NMC_S08.description>Transférez un construct de tour énergétique d’ombre nivarian. Livrez 150 acier, 4 composants et 25 cristaux de dragon ; le système de construction natif imprime la tour en 20 secondes à vitesse de base.
 
 Une installation alimentée en nutriments avec des cristaux vert spectral. Occupe 2×2 cases et produit 1400 W. La production de P et la consommation nutritive sont le double de celles de la tour nivariane ordinaire. Les colons livrent les aliments autorisés, configurables dans l’onglet Nutrition.
 
@@ -116,7 +116,7 @@ Survivants nivarians non hostiles requis. Combat autonome, sans mobilisation. Le
   <NMC_S16.researchLabel>Protocole de la légion de Seydas</NMC_S16.researchLabel>
   <NMC_S17.label>Monolithe hyperdimensionnel</NMC_S17.label>
   <NMC_S17.group>Structures et projections</NMC_S17.group>
-  <NMC_S17.description>Déploie un noyau de monolithe. Après livraison d'acier, composants et cristaux draconiques, le vaisseau-mère construit une défense permanente.
+  <NMC_S17.description>Transférez un construct de monolithe hyperdimensionnel nivarian. Livrez 300 acier, 10 composants et 60 cristaux de dragon ; le système de construction natif imprime le monolithe en 45 secondes à vitesse de base.
 
 Nécessite 1 000 W, aucune munition. Toutes les 2 secondes, attaque jusqu'à 10 ennemis à moins de 60 cases, avec 3 dégâts de base et 1 seconde d'étourdissement chacun. Retarde les grandes offensives.</NMC_S17.description>
   <NMC_S17.researchLabel>Protocole du monolithe hyperdimensionnel</NMC_S17.researchLabel>

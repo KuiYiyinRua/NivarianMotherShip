@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.9.9-r5 · 2026-10-19
+
+- 暗影能源塔和超维空间巨石的折跃面板改用涅瓦莲本体构造体图标与明确的建造提示。
+- 新部署接入本体构造流程：接收材料、打印成形、生成成品。保留原材料、支援费用及基础施工时间（20 秒／45 秒）；旧存档中已开工的施工核心继续兼容。
+- 连续体通讯核心、供能核心都换成以水晶塔为基础的黑红连续体风格贴图，并用不同造型区分。生命值、占地、供电和任务功能保持不变。
+- 连续体任务仍要求摧毁通讯核心并清除守军、炮塔；包含此前的明确目标提示和定位修复。
+- 验证：沿用本次开发阶段 24 项隔离单机检查及游戏内近景核验；发布时重新校验五语并从包内源码重建。未覆盖殖民者实际搬运、冷读档、双端联机或完整整合包。
+- 核心程序集更新，五份联机适配程序集保持原样。更新后重启游戏，联机双方使用相同文件。
+
+### English
+
+- The shadow energy tower and hyperdimensional monolith deployment panel now uses the native Nivarian construct icon and clearer construction instructions.
+- New deployments use the base mod's material container, printing animation and completion flow. Original materials, support costs and base construction times (20/45 seconds) are retained. Existing legacy construction cores remain supported.
+- Both Continuum communications and power cores now use distinct black-and-red crystal-pylon sprites. Durability, footprint, electricity and quest functions are unchanged.
+- Victory still requires destroying the communications core and clearing defenders and turrets. Includes the previous explicit objective hints and locator fix.
+- Validation: the implementation passed 24 isolated single-player checks and in-game visual inspection. Release checks revalidate five languages and rebuild from packaged source. Colonist hauling, cold loading, two-client Multiplayer and full-modpack runtime behavior were not certified.
+- Updated the core assembly; all five Multiplayer adapters remain unchanged. Restart after updating and use matching files on all peers.
+
 ## 0.9.9-r4 · 2026-10-19
 
 - 保留连续体任务的完成条件：摧毁基地中央的「连续体通讯核心」，并清除守军和防御设施。

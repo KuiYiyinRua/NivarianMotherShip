@@ -1,5 +1,29 @@
 <Defs>
-  <!-- Independent draft only. No designation category, minification or native auto-builder extension. -->
+  <!-- Keep legacy cores for saves with construction already in progress. New deployments use the native sites below. -->
+  <ThingDef Name="NMC_NativeConstructionBase" ParentName="Nivarian_SelfBuildingSiteBase" Abstract="True">
+    <rotatable>false</rotatable>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <graphicData><texPath>Nivarian/Building/Core/building_core</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1,1)</drawSize></graphicData>
+  </ThingDef>
+  <ThingDef ParentName="NMC_NativeConstructionBase">
+    <defName>NMC_ShadowConstruction</defName><label>暗影能源塔构造体</label>
+    <description>折跃涅瓦莲暗影能源塔构造体。交付150钢铁、4零部件和25龙晶后，由本体通用构造流程自动打印成形，基础施工20秒。</description>
+    <size>(2,2)</size>
+    <comps>
+      <li Class="Nivarian_Race.Code.Comps.BuildingComps.CompProperties_SelfBuilding">
+        <buildingDef>NMC_ShadowEnergyTower</buildingDef><constructionSpeed>1</constructionSpeed>
+      </li>
+      <li Class="NivarianCommander.CompProperties_CommanderStructure"><cloakImmune>true</cloakImmune></li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="NMC_NativeConstructionBase">
+    <defName>NMC_MonolithConstruction</defName><label>超维空间巨石构造体</label>
+    <description>折跃涅瓦莲超维空间巨石构造体。交付300钢铁、10零部件和60龙晶后，由本体通用构造流程自动打印成形，基础施工45秒。</description>
+    <size>(3,3)</size>
+    <comps><li Class="Nivarian_Race.Code.Comps.BuildingComps.CompProperties_SelfBuilding">
+      <buildingDef>NMC_HyperdimensionalMonolith</buildingDef><constructionSpeed>1</constructionSpeed>
+    </li></comps>
+  </ThingDef>
   <ThingDef Name="NMC_CoreBase" ParentName="BuildingBase" Abstract="True">
     <thingClass>NivarianCommander.Building_CommanderStructure</thingClass>
     <tickerType>Normal</tickerType><useHitPoints>true</useHitPoints><selectable>true</selectable>
@@ -49,7 +73,7 @@
 
 获取：研究“暗影核心支援协议”，部署核心并交付建材。补给种类可在“营养”页设置。</description>
     <thingClass>NivarianCommander.Building_NutrientEnergyTower</thingClass>
-    <size>(2,2)</size><statBases><MaxHitPoints>800</MaxHitPoints></statBases>
+    <size>(2,2)</size><statBases><MaxHitPoints>800</MaxHitPoints><WorkToBuild>1200</WorkToBuild></statBases>
     <graphicData><texPath>NMC/Buildings/shadow_energy_tower</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(2.2,2.2)</drawSize><shadowData IsNull="True"/></graphicData>
     <passability>Impassable</passability><fillPercent>0.65</fillPercent><blockWind>true</blockWind>
     <castEdgeShadows>false</castEdgeShadows><staticSunShadowHeight>0</staticSunShadowHeight><canOverlapZones>false</canOverlapZones>
@@ -72,7 +96,7 @@
     <description>大范围控制炮塔。射程60格，每2秒攻击最多10名敌人，各造成3伤害和1秒眩晕。耗电1000W，无需弹药。
 
 获取：研究“超维空间巨石支援协议”，部署核心并交付建材。</description>
-    <size>(3,3)</size><statBases><MaxHitPoints>1800</MaxHitPoints></statBases>
+    <size>(3,3)</size><statBases><MaxHitPoints>1800</MaxHitPoints><WorkToBuild>2700</WorkToBuild></statBases>
     <graphicData><texPath>NMC/Buildings/hyperdimensional_monolith</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(3.6,3.6)</drawSize></graphicData>
     <costList><Steel>300</Steel><ComponentIndustrial>10</ComponentIndustrial><Nivarian_DragonCrystal>60</Nivarian_DragonCrystal></costList>
     <comps>

@@ -128,4 +128,8 @@
 获取：在上行链路完成“涅瓦莲贤者舰”研究后建造。</NMC_SageShip.description>
   <NMC_SageShipIncoming.label>涅瓦莲贤者舰（降落）</NMC_SageShipIncoming.label>
   <NMC_SageShipLeaving.label>涅瓦莲贤者舰（起飞）</NMC_SageShipLeaving.label>
+  <NMC_ShadowConstruction.label>暗影能源塔构造体</NMC_ShadowConstruction.label>
+  <NMC_ShadowConstruction.description>折跃涅瓦莲暗影能源塔构造体。交付150钢铁、4零部件和25龙晶后，由本体通用构造流程自动打印成形，基础施工20秒。</NMC_ShadowConstruction.description>
+  <NMC_MonolithConstruction.label>超维空间巨石构造体</NMC_MonolithConstruction.label>
+  <NMC_MonolithConstruction.description>折跃涅瓦莲超维空间巨石构造体。交付300钢铁、10零部件和60龙晶后，由本体通用构造流程自动打印成形，基础施工45秒。</NMC_MonolithConstruction.description>
 </LanguageData>

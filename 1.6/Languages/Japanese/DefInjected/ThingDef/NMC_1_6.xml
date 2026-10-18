@@ -160,4 +160,8 @@
 動力改良は重力艦の半分のバッテリー1単位。ミリラ、不安定、無限化学電池を現物で投入。改良後は離陸ごとに燃料50を消費し、継続飛行の消費なし。攻撃は引き続き斉射ごとに1を消費。</NMC_SageShip.description>
   <NMC_SageShipIncoming.label>ニヴァリアン賢者艦 （着陸）</NMC_SageShipIncoming.label>
   <NMC_SageShipLeaving.label>ニヴァリアン賢者艦 （離陸）</NMC_SageShipLeaving.label>
+  <NMC_ShadowConstruction.label>影のエネルギー塔の構造体</NMC_ShadowConstruction.label>
+  <NMC_ShadowConstruction.description>ニヴァリアンの影のエネルギー塔の構造体を転送。スチール150、コンポーネント4、竜結晶25を搬入すると、本体の建築システムが基本速度で20秒かけて自動成形します。</NMC_ShadowConstruction.description>
+  <NMC_MonolithConstruction.label>超次元モノリスの構造体</NMC_MonolithConstruction.label>
+  <NMC_MonolithConstruction.description>ニヴァリアンの超次元モノリスの構造体を転送。スチール300、コンポーネント10、竜結晶60を搬入すると、本体の建築システムが基本速度で45秒かけて自動成形します。</NMC_MonolithConstruction.description>
 </LanguageData>

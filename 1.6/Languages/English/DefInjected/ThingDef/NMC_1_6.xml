@@ -162,4 +162,8 @@ Map and world flight are 25% faster than the gravity frigate. Airborne fuel: 1 p
 Starship upgrade: 1 battery unit, half the frigate cost. Accepts Milira, unstable or vanometric cells as whole items. Upgraded launches cost 50 chemfuel with no ongoing flight consumption; firing still costs 1 per volley.</NMC_SageShip.description>
   <NMC_SageShipIncoming.label>Nivarian sage ship (landing)</NMC_SageShipIncoming.label>
   <NMC_SageShipLeaving.label>Nivarian sage ship (taking off)</NMC_SageShipLeaving.label>
+  <NMC_ShadowConstruction.label>Shadow energy tower construct</NMC_ShadowConstruction.label>
+  <NMC_ShadowConstruction.description>Warp in a Nivarian shadow energy tower construct. Deliver 150 steel, 4 components and 25 dragon crystals; the native construction system prints the tower in 20 seconds at base speed.</NMC_ShadowConstruction.description>
+  <NMC_MonolithConstruction.label>Hyperdimensional monolith construct</NMC_MonolithConstruction.label>
+  <NMC_MonolithConstruction.description>Warp in a Nivarian hyperdimensional monolith construct. Deliver 300 steel, 10 components and 60 dragon crystals; the native construction system prints the monolith in 45 seconds at base speed.</NMC_MonolithConstruction.description>
 </LanguageData>

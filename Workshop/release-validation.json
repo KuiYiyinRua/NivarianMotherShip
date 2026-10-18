@@ -1,10 +1,10 @@
 {
-  "release": "0.9.9-r4",
+  "release": "0.9.9-r5",
   "date": "2026-10-19",
-  "build": "core: zero warnings/errors; adapters unchanged",
-  "runtime": "Old build fails core locator assertion; candidate passes 21 targeted SP assertions. No two-client MP, cold-load or full-modpack runtime test.",
+  "build": "Packaged core source rebuild byte-identical; five adapters unchanged",
+  "runtime": "24 isolated SP assertions and in-game visual inspection passed during implementation (SP-R5). No colonist hauling, cold-load, two-client MP or full-modpack runtime certification.",
   "assemblies": {
-    "1.6/Assemblies/NivarianCommander.dll": "477d96549a0db5de8374eb3763cd2f11462371c4cb30110677b02e79da71653f",
+    "1.6/Assemblies/NivarianCommander.dll": "a12a5a9be96eacfb9d596a93138b2e1741885d401a1f70878a13c0a318ac6c85",
     "Multiplayer/Assemblies/NivarianCommander.Multiplayer.dll": "904cd6902541a1cad1efaebf54e35f29ef1f750da6d46e7ea827e5d4bfd57d72",
     "Multiplayer/Assemblies/NivarianCommander.SageShip.Multiplayer.dll": "65c844c99de8b3d5734ce32a4d8001e36e791b92bee12739e2ce48c7ca8b0918",
     "Multiplayer/Assemblies/NivarianCommander.ShipUpgrades.Multiplayer.dll": "c5c134ba0cb521778c8116be92cb4c0d985aa12d96a850ea980cb1544789142c",

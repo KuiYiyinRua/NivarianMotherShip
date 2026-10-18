@@ -149,11 +149,11 @@
   <NMC_Text0139>現在の浄化ビームを徴兵</NMC_Text0139>
   <NMC_Text0140>移動先を選択</NMC_Text0140>
   <NMC_Text0141>現在マップの浄化ビームを終了</NMC_Text0141>
-  <NMC_Text0142>2×2 · 耐久800 · 材料搬入後20秒で施工</NMC_Text0142>
-  <NMC_Text0143>3×3 · 耐久1,800 · 材料搬入後45秒で施工</NMC_Text0143>
-  <NMC_Text0144>コアを配置し、材料搬入後に自動施工</NMC_Text0144>
-  <NMC_Text0145>シャドウコアを配置</NMC_Text0145>
-  <NMC_Text0146>モノリスコアを配置</NMC_Text0146>
+  <NMC_Text0142>完成品2×2・耐久800・基本施工20秒</NMC_Text0142>
+  <NMC_Text0143>完成品3×3・耐久1800・基本施工45秒</NMC_Text0143>
+  <NMC_Text0144>構造体を転送し、資材を搬入すると自動成形</NMC_Text0144>
+  <NMC_Text0145>影の塔の構造体を転送</NMC_Text0145>
+  <NMC_Text0146>モノリスの構造体を転送</NMC_Text0146>
   <NMC_Text0147>シャドウガード4名 · 支援120秒</NMC_Text0147>
   <NMC_Text0148>透明化した近接部隊 · 名品品質の武器</NMC_Text0148>
   <NMC_Text0149>シャドウガードを配置</NMC_Text0149>

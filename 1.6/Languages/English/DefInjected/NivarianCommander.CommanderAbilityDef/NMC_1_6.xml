@@ -54,7 +54,7 @@ Draft it to direct movement manually; undrafting restores automatic pursuit. Can
   <NMC_S07.researchLabel>Purification beam support protocol</NMC_S07.researchLabel>
   <NMC_S08.label>Shadow core</NMC_S08.label>
   <NMC_S08.group>Shadow and control</NMC_S08.group>
-  <NMC_S08.description>Deploy a shadow core. Once colonists supply steel, components and dragon crystals, the mothership completes a Nivarian shadow energy tower.
+  <NMC_S08.description>Warp in a Nivarian shadow energy tower construct. Deliver 150 steel, 4 components and 25 dragon crystals; the native construction system prints the tower in 20 seconds at base speed.
 
 A nutrient-fed energy facility with ghost-green resonant crystals, occupying 2×2 cells. Generates 1400 W; P output and nutrition consumption are twice those of the Nivarian energy tower. Colonists deliver allowed food. Adjust supplies in the Nutrition tab.
 
@@ -116,7 +116,7 @@ Requires non-hostile Nivarian survivors. Autonomous combat, no drafting. The fou
   <NMC_S16.researchLabel>Seydas legion support protocol</NMC_S16.researchLabel>
   <NMC_S17.label>Hyperdimensional monolith</NMC_S17.label>
   <NMC_S17.group>Structures and projections</NMC_S17.group>
-  <NMC_S17.description>Deploy a hyperdimensional monolith core. After steel, components and dragon crystals are delivered, the mothership completes this permanent defense structure.
+  <NMC_S17.description>Warp in a Nivarian hyperdimensional monolith construct. Deliver 300 steel, 10 components and 60 dragon crystals; the native construction system prints the monolith in 45 seconds at base speed.
 
 Requires 1,000 W, no ammunition. Every 2 seconds it attacks up to 10 enemies within 60 cells, dealing 3 base damage and stunning each for 1 second. Useful for delaying mass advances.</NMC_S17.description>
   <NMC_S17.researchLabel>Hyperdimensional monolith support protocol</NMC_S17.researchLabel>

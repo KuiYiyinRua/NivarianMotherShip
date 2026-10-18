@@ -160,4 +160,8 @@
 Улучшение требует 1 единицу батареи, половину цены фрегата. Принимает целые батареи милира, нестабильные или ванометрические ячейки. После улучшения взлёт стоит 50 топлива, постоянный расход отключён; залп по-прежнему стоит 1.</NMC_SageShip.description>
   <NMC_SageShipIncoming.label>Корабль-мудрец нивариан (посадка)</NMC_SageShipIncoming.label>
   <NMC_SageShipLeaving.label>Корабль-мудрец нивариан (взлёт)</NMC_SageShipLeaving.label>
+  <NMC_ShadowConstruction.label>Конструкт теневой энергетической башни</NMC_ShadowConstruction.label>
+  <NMC_ShadowConstruction.description>Перенесите конструкт теневой энергетической башни нивариан. Доставьте 150 стали, 4 компонента и 25 драконьих кристаллов; стандартная система строительства напечатает башню за 20 секунд при базовой скорости.</NMC_ShadowConstruction.description>
+  <NMC_MonolithConstruction.label>Конструкт гиперпространственного монолита</NMC_MonolithConstruction.label>
+  <NMC_MonolithConstruction.description>Перенесите конструкт гиперпространственного монолита нивариан. Доставьте 300 стали, 10 компонентов и 60 драконьих кристаллов; стандартная система строительства напечатает монолит за 45 секунд при базовой скорости.</NMC_MonolithConstruction.description>
 </LanguageData>

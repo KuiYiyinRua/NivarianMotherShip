@@ -846,34 +846,34 @@
     "Arrêter le rayon purificateur de cette carte"
   ],
   "142": [
-    "2×2 · 800 HP · 20 seconds after materials arrive",
-    "2×2 · 800 ОЗ · 20 секунд после доставки",
-    "2×2 · 耐久800 · 材料搬入後20秒で施工",
-    "2×2 · 800 PV · 20 secondes après livraison"
+    "Finished: 2×2 · 800 HP · Base build: 20s",
+    "Готовое: 2×2 · 800 HP · Базовая сборка: 20 с",
+    "完成品2×2・耐久800・基本施工20秒",
+    "Bâtiment : 2×2 · 800 PV · Assemblage : 20 s"
   ],
   "143": [
-    "3×3 · 1,800 HP · 45 seconds after materials arrive",
-    "3×3 · 1800 ОЗ · 45 секунд после доставки",
-    "3×3 · 耐久1,800 · 材料搬入後45秒で施工",
-    "3×3 · 1 800 PV · 45 secondes après livraison"
+    "Finished: 3×3 · 1,800 HP · Base build: 45s",
+    "Готовое: 3×3 · 1800 HP · Базовая сборка: 45 с",
+    "完成品3×3・耐久1800・基本施工45秒",
+    "Bâtiment : 3×3 · 1800 PV · Assemblage : 45 s"
   ],
   "144": [
-    "Deploy a core; construction starts when materials arrive",
-    "Разверните ядро; стройка начнётся после доставки материалов",
-    "コアを配置し、材料搬入後に自動施工",
-    "Déployez un noyau ; construction après livraison des matériaux"
+    "Warp in a construct; deliver materials to start printing",
+    "Перенесите конструкт; доставьте материалы для печати",
+    "構造体を転送し、資材を搬入すると自動成形",
+    "Transférez un construct ; livrez les matériaux pour lancer l’impression"
   ],
   "145": [
-    "Deploy shadow core",
-    "Развернуть теневое ядро",
-    "シャドウコアを配置",
-    "Déployer un noyau d'ombre"
+    "Warp shadow tower construct",
+    "Перенести конструкт теневой башни",
+    "影の塔の構造体を転送",
+    "Transférer le construct de tour d’ombre"
   ],
   "146": [
-    "Deploy monolith core",
-    "Развернуть ядро монолита",
-    "モノリスコアを配置",
-    "Déployer un noyau de monolithe"
+    "Warp monolith construct",
+    "Перенести конструкт монолита",
+    "モノリスの構造体を転送",
+    "Transférer le construct de monolithe"
   ],
   "147": [
     "Four shadow guards · 120 seconds of support",
@@ -3030,10 +3030,10 @@
     "Noyau d'ombre"
   ],
   "506": [
-    "Deploy a shadow core. Once colonists supply steel, components and dragon crystals, the mothership completes a Nivarian shadow energy tower.\n\nA nutrient-fed energy facility with ghost-green resonant crystals, occupying 2×2 cells. Generates 1400 W; P output and nutrition consumption are twice those of the Nivarian energy tower. Colonists deliver allowed food. Adjust supplies in the Nutrition tab.\n\nWhile operating, cloaks allies within 7 cells. Insufficient nutrition, switching off or interrupted operation stops electricity, P production and cloaking together; replenishing nutrition restores operation. Attacks and damage do not break cloaking, but detection still works.\n\nThe tower does not cloak itself and needs other defenses.",
-    "Развёртывает теневое ядро. После доставки стали, компонентов и драконьих кристаллов корабль-матка строит теневую энергетическую башню нивариан.\n\nЭнергетическая башня с призрачно-зелёными кристаллами, питаемыми пищей. Занимает 2×2 клетки, вырабатывает 1400 Вт. Производство P и расход питания вдвое выше, чем у обычной энергетической башни нивариан. Поселенцы доставляют разрешённую пищу; её виды выбираются на вкладке питания.\n\nРаботающая башня скрывает союзников в радиусе 7 клеток. Недостаток питания, выключение или остановка одновременно прекращают выработку электричества, P и маскировку. После пополнения работа возобновляется. Атаки и урон не снимают маскировку, но обнаружение действует.\n\nСаму себя башня не скрывает и нуждается в защите.",
-    "シャドウコアを配置します。入植者がスチール、コンポーネント、龍晶を納入すると母艦がシャドウエネルギータワーを建設します。\n\n幽緑色の共鳴結晶を栄養で維持する母艦施設。占有面積は2×2マス、発電量は1400 W。P産出量と栄養消費量は通常のニヴァリアンエネルギータワーの2倍です。入植者が許可された食料を搬入します。「栄養」タブで種類を設定できます。\n\n稼働中は半径7マスの友軍を隠します。栄養不足、電源オフ、稼働停止時には発電・P産出・隠蔽が同時に停止し、補給後に再開します。攻撃や被弾では解除されませんが、探知は有効です。\n\nタワー自身は隠れないため、防衛が必要です。",
-    "Déploie un noyau d’ombre. Après livraison d’acier, de composants et de cristaux draconiques, le vaisseau-mère construit une tour d’énergie d’ombre nivariane.\n\nUne installation alimentée en nutriments avec des cristaux vert spectral. Occupe 2×2 cases et produit 1400 W. La production de P et la consommation nutritive sont le double de celles de la tour nivariane ordinaire. Les colons livrent les aliments autorisés, configurables dans l’onglet Nutrition.\n\nEn fonctionnement, elle camoufle les alliés dans un rayon de 7 cases. Une réserve nutritive insuffisante, l’arrêt ou une interruption suspendent ensemble l’électricité, les P et le camouflage. Le ravitaillement permet la reprise. Les attaques et dégâts ne rompent pas le camouflage, mais la détection reste efficace.\n\nLa tour ne se camoufle pas elle-même et doit être protégée."
+    "Warp in a Nivarian shadow energy tower construct. Deliver 150 steel, 4 components and 25 dragon crystals; the native construction system prints the tower in 20 seconds at base speed.\n\nA nutrient-fed energy facility with ghost-green resonant crystals, occupying 2×2 cells. Generates 1400 W; P output and nutrition consumption are twice those of the Nivarian energy tower. Colonists deliver allowed food. Adjust supplies in the Nutrition tab.\n\nWhile operating, cloaks allies within 7 cells. Insufficient nutrition, switching off or interrupted operation stops electricity, P production and cloaking together; replenishing nutrition restores operation. Attacks and damage do not break cloaking, but detection still works.\n\nThe tower does not cloak itself and needs other defenses.",
+    "Перенесите конструкт теневой энергетической башни нивариан. Доставьте 150 стали, 4 компонента и 25 драконьих кристаллов; стандартная система строительства напечатает башню за 20 секунд при базовой скорости.\n\nЭнергетическая башня с призрачно-зелёными кристаллами, питаемыми пищей. Занимает 2×2 клетки, вырабатывает 1400 Вт. Производство P и расход питания вдвое выше, чем у обычной энергетической башни нивариан. Поселенцы доставляют разрешённую пищу; её виды выбираются на вкладке питания.\n\nРаботающая башня скрывает союзников в радиусе 7 клеток. Недостаток питания, выключение или остановка одновременно прекращают выработку электричества, P и маскировку. После пополнения работа возобновляется. Атаки и урон не снимают маскировку, но обнаружение действует.\n\nСаму себя башня не скрывает и нуждается в защите.",
+    "ニヴァリアンの影のエネルギー塔の構造体を転送。スチール150、コンポーネント4、竜結晶25を搬入すると、本体の建築システムが基本速度で20秒かけて自動成形します。\n\n幽緑色の共鳴結晶を栄養で維持する母艦施設。占有面積は2×2マス、発電量は1400 W。P産出量と栄養消費量は通常のニヴァリアンエネルギータワーの2倍です。入植者が許可された食料を搬入します。「栄養」タブで種類を設定できます。\n\n稼働中は半径7マスの友軍を隠します。栄養不足、電源オフ、稼働停止時には発電・P産出・隠蔽が同時に停止し、補給後に再開します。攻撃や被弾では解除されませんが、探知は有効です。\n\nタワー自身は隠れないため、防衛が必要です。",
+    "Transférez un construct de tour énergétique d’ombre nivarian. Livrez 150 acier, 4 composants et 25 cristaux de dragon ; le système de construction natif imprime la tour en 20 secondes à vitesse de base.\n\nUne installation alimentée en nutriments avec des cristaux vert spectral. Occupe 2×2 cases et produit 1400 W. La production de P et la consommation nutritive sont le double de celles de la tour nivariane ordinaire. Les colons livrent les aliments autorisés, configurables dans l’onglet Nutrition.\n\nEn fonctionnement, elle camoufle les alliés dans un rayon de 7 cases. Une réserve nutritive insuffisante, l’arrêt ou une interruption suspendent ensemble l’électricité, les P et le camouflage. Le ravitaillement permet la reprise. Les attaques et dégâts ne rompent pas le camouflage, mais la détection reste efficace.\n\nLa tour ne se camoufle pas elle-même et doit être protégée."
   ],
   "507": [
     "Shadow core support protocol",
@@ -3204,10 +3204,10 @@
     "Protocole de la légion de Seydas"
   ],
   "535": [
-    "Deploy a hyperdimensional monolith core. After steel, components and dragon crystals are delivered, the mothership completes this permanent defense structure.\n\nRequires 1,000 W, no ammunition. Every 2 seconds it attacks up to 10 enemies within 60 cells, dealing 3 base damage and stunning each for 1 second. Useful for delaying mass advances.",
-    "Развёртывает ядро гиперпространственного монолита. После доставки стали, компонентов и драконьих кристаллов корабль-матка завершает постоянное укрепление.\n\nНужно 1000 Вт, боеприпасы не нужны. Каждые 2 секунды атакует до 10 врагов в пределах 60 клеток, нанося каждому 3 урона и оглушая на 1 секунду. Задерживает массовое наступление.",
-    "超次元モノリスコアを配置します。スチール、コンポーネント、龍晶の納入後、母艦が恒久防衛施設に建設します。\n\n1000 Wを必要とし、弾薬不要。2秒ごとに60マス以内の最大10体へ基礎ダメージ3と1秒の気絶を与えます。大群の進撃阻止に適しています。",
-    "Déploie un noyau de monolithe. Après livraison d'acier, composants et cristaux draconiques, le vaisseau-mère construit une défense permanente.\n\nNécessite 1 000 W, aucune munition. Toutes les 2 secondes, attaque jusqu'à 10 ennemis à moins de 60 cases, avec 3 dégâts de base et 1 seconde d'étourdissement chacun. Retarde les grandes offensives."
+    "Warp in a Nivarian hyperdimensional monolith construct. Deliver 300 steel, 10 components and 60 dragon crystals; the native construction system prints the monolith in 45 seconds at base speed.\n\nRequires 1,000 W, no ammunition. Every 2 seconds it attacks up to 10 enemies within 60 cells, dealing 3 base damage and stunning each for 1 second. Useful for delaying mass advances.",
+    "Перенесите конструкт гиперпространственного монолита нивариан. Доставьте 300 стали, 10 компонентов и 60 драконьих кристаллов; стандартная система строительства напечатает монолит за 45 секунд при базовой скорости.\n\nНужно 1000 Вт, боеприпасы не нужны. Каждые 2 секунды атакует до 10 врагов в пределах 60 клеток, нанося каждому 3 урона и оглушая на 1 секунду. Задерживает массовое наступление.",
+    "ニヴァリアンの超次元モノリスの構造体を転送。スチール300、コンポーネント10、竜結晶60を搬入すると、本体の建築システムが基本速度で45秒かけて自動成形します。\n\n1000 Wを必要とし、弾薬不要。2秒ごとに60マス以内の最大10体へ基礎ダメージ3と1秒の気絶を与えます。大群の進撃阻止に適しています。",
+    "Transférez un construct de monolithe hyperdimensionnel nivarian. Livrez 300 acier, 10 composants et 60 cristaux de dragon ; le système de construction natif imprime le monolithe en 45 secondes à vitesse de base.\n\nNécessite 1 000 W, aucune munition. Toutes les 2 secondes, attaque jusqu'à 10 ennemis à moins de 60 cases, avec 3 dégâts de base et 1 seconde d'étourdissement chacun. Retarde les grandes offensives."
   ],
   "536": [
     "Hyperdimensional monolith support protocol",
@@ -4918,5 +4918,29 @@
     "Оставшаяся цель: уничтожить узел связи (прочность {0}/{1}). Уничтожения гарнизона и турелей недостаточно для завершения задания. Нажмите «Показать узел связи» и вручную прикажите бойцам или кораблям атаковать его. Завершите задание перед отступлением.",
     "残りの目標：連続体通信コアを破壊（耐久力 {0}/{1}）。守備隊と砲塔を排除するだけでは任務は完了しません。「連続体通信コアを表示」で位置を確認し、部隊や艦船に手動で攻撃を命令してください。任務を完了してから撤退してください。",
     "Objectif restant : détruire le noyau de communication (points de vie {0}/{1}). Éliminer la garnison et les tourelles ne suffit pas. Cliquez sur « Localiser le noyau de communication » et ordonnez manuellement à vos troupes ou vaisseaux de l’attaquer. Terminez la mission avant de partir."
+  ],
+  "821": [
+    "Shadow energy tower construct",
+    "Конструкт теневой энергетической башни",
+    "影のエネルギー塔の構造体",
+    "Construct de tour énergétique d’ombre"
+  ],
+  "822": [
+    "Warp in a Nivarian shadow energy tower construct. Deliver 150 steel, 4 components and 25 dragon crystals; the native construction system prints the tower in 20 seconds at base speed.",
+    "Перенесите конструкт теневой энергетической башни нивариан. Доставьте 150 стали, 4 компонента и 25 драконьих кристаллов; стандартная система строительства напечатает башню за 20 секунд при базовой скорости.",
+    "ニヴァリアンの影のエネルギー塔の構造体を転送。スチール150、コンポーネント4、竜結晶25を搬入すると、本体の建築システムが基本速度で20秒かけて自動成形します。",
+    "Transférez un construct de tour énergétique d’ombre nivarian. Livrez 150 acier, 4 composants et 25 cristaux de dragon ; le système de construction natif imprime la tour en 20 secondes à vitesse de base."
+  ],
+  "823": [
+    "Hyperdimensional monolith construct",
+    "Конструкт гиперпространственного монолита",
+    "超次元モノリスの構造体",
+    "Construct de monolithe hyperdimensionnel"
+  ],
+  "824": [
+    "Warp in a Nivarian hyperdimensional monolith construct. Deliver 300 steel, 10 components and 60 dragon crystals; the native construction system prints the monolith in 45 seconds at base speed.",
+    "Перенесите конструкт гиперпространственного монолита нивариан. Доставьте 300 стали, 10 компонентов и 60 драконьих кристаллов; стандартная система строительства напечатает монолит за 45 секунд при базовой скорости.",
+    "ニヴァリアンの超次元モノリスの構造体を転送。スチール300、コンポーネント10、竜結晶60を搬入すると、本体の建築システムが基本速度で45秒かけて自動成形します。",
+    "Transférez un construct de monolithe hyperdimensionnel nivarian. Livrez 300 acier, 10 composants et 60 cristaux de dragon ; le système de construction natif imprime le monolithe en 45 secondes à vitesse de base."
   ]
 }
