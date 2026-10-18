@@ -4900,5 +4900,23 @@
     "Отдельное исследование через канал связи. Те же предпосылки, что у гравитационного фрегата, без дополнительной миссии; половина работы и материалов. Наземные лучи, обнаружение в радиусе 50 клеток, выше скорость и ниже расход.",
     "上行リンクの独立研究で賢者艦を解放。前提は重力艦と同じで追加任務不要。研究量と資材は半分。対地光線、半径50マスの隠密解除、高速・低燃費。",
     "Projet distinct au terminal de liaison : mêmes prérequis que la frégate, sans mission supplémentaire, moitié du travail et des matériaux. Rayons au sol, détection à 50 cases, vitesse accrue et consommation réduite."
+  ],
+  "818": [
+    "The Continuum defenders and defenses have been cleared, but the Continuum communications core still stands. The mission is not complete. Click this message to locate the core and manually order your troops or ships to attack it. Destroy it before leaving.",
+    "Гарнизон и оборона базы Континуума уничтожены, но узел связи ещё цел. Задание не завершено. Нажмите на сообщение, чтобы найти узел, и вручную прикажите бойцам или кораблям атаковать его. Уничтожьте узел перед отступлением.",
+    "連続体基地の守備隊と防衛施設は排除されましたが、連続体通信コアが残っているため任務は未完了です。このメッセージをクリックしてコアを表示し、部隊や艦船に手動で攻撃を命令してください。コアを破壊してから撤退してください。",
+    "La garnison et les défenses du Continuum sont éliminées, mais le noyau de communication est encore intact. La mission reste inachevée. Cliquez sur ce message pour localiser le noyau et ordonnez manuellement à vos troupes ou vaisseaux de l’attaquer. Détruisez-le avant de partir."
+  ],
+  "819": [
+    "Locate Continuum communications core",
+    "Показать узел связи",
+    "連続体通信コアを表示",
+    "Localiser le noyau de communication"
+  ],
+  "820": [
+    "Remaining objective: destroy the Continuum communications core (hit points {0}/{1}). Clearing the defenders and turrets alone does not complete the mission. Use “Locate Continuum communications core” and manually order your troops or ships to attack it. Complete the mission before leaving.",
+    "Оставшаяся цель: уничтожить узел связи (прочность {0}/{1}). Уничтожения гарнизона и турелей недостаточно для завершения задания. Нажмите «Показать узел связи» и вручную прикажите бойцам или кораблям атаковать его. Завершите задание перед отступлением.",
+    "残りの目標：連続体通信コアを破壊（耐久力 {0}/{1}）。守備隊と砲塔を排除するだけでは任務は完了しません。「連続体通信コアを表示」で位置を確認し、部隊や艦船に手動で攻撃を命令してください。任務を完了してから撤退してください。",
+    "Objectif restant : détruire le noyau de communication (points de vie {0}/{1}). Éliminer la garnison et les tourelles ne suffit pas. Cliquez sur « Localiser le noyau de communication » et ordonnez manuellement à vos troupes ou vaisseaux de l’attaquer. Terminez la mission avant de partir."
   ]
 }

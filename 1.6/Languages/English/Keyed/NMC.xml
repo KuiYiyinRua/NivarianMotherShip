@@ -585,4 +585,7 @@ Warping uses the Nivarian building printing effect: 4 seconds at departure, then
   <NMC_SageStatus>Attack mode: {0}; passive detection radius: 50 cells</NMC_SageStatus>
   <NMC_SageOn>On</NMC_SageOn>
   <NMC_SageOff>Off</NMC_SageOff>
+  <NMC_Text0818>The Continuum defenders and defenses have been cleared, but the Continuum communications core still stands. The mission is not complete. Click this message to locate the core and manually order your troops or ships to attack it. Destroy it before leaving.</NMC_Text0818>
+  <NMC_Text0819>Locate Continuum communications core</NMC_Text0819>
+  <NMC_Text0820>Remaining objective: destroy the Continuum communications core (hit points {0}/{1}). Clearing the defenders and turrets alone does not complete the mission. Use “Locate Continuum communications core” and manually order your troops or ships to attack it. Complete the mission before leaving.</NMC_Text0820>
 </LanguageData>

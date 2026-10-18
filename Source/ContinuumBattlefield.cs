@@ -16,6 +16,7 @@ namespace NivarianCommander
         // Legacy save field. A temporary lack of spawned pawns is not a retreat.
         public bool retreated;
         public bool airReinforcementsSpawned;
+        bool coreReminderSent;
         public Thing relay;
         public List<Thing> defenders = new List<Thing>();
         public ContinuumBattlefield(Map map) : base(map) { }
@@ -35,6 +36,11 @@ namespace NivarianCommander
             bool guarded = stage >= 6 && !airReinforcementsSpawned || defenders.Any(t => t != null && !t.Destroyed && t.HostileTo(Faction.OfPlayer)
                 && (!(t is Pawn p) || (!p.Dead && !p.Downed)));
             if (coreGone && !guarded) { cleared = true; return; }
+            if (!guarded && !coreGone && !coreReminderSent)
+            {
+                coreReminderSent = true;
+                Messages.Message(NmcText.Get("NMC_Text0818"), new TargetInfo(relay), MessageTypeDefOf.NeutralEvent);
+            }
             if (waves < 1 + stage / 3 && elapsed >= 1800 + waves * 2400)
             {
                 waves++;
@@ -54,6 +60,7 @@ namespace NivarianCommander
             Scribe_Values.Look(ref waves, "nmcBaseWaves"); Scribe_Values.Look(ref hadPlayer, "nmcBaseHadPlayer");
             Scribe_Values.Look(ref cleared, "nmcBaseCleared"); Scribe_Values.Look(ref retreated, "nmcBaseRetreated");
             Scribe_Values.Look(ref airReinforcementsSpawned, "nmcBaseAirReinforcementsSpawned");
+            Scribe_Values.Look(ref coreReminderSent, "nmcBaseCoreReminderSent");
             Scribe_References.Look(ref relay, "nmcBaseRelay"); Scribe_Collections.Look(ref defenders, "nmcBaseDefenders", LookMode.Reference);
             if (Scribe.mode == LoadSaveMode.PostLoadInit) defenders = defenders ?? new List<Thing>();
         }

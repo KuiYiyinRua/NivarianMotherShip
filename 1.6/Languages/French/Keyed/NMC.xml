@@ -585,4 +585,7 @@ Le transfert utilise l'impression nivarian : 4 secondes au départ, puis 4 secon
   <NMC_SageStatus>Mode attaque : {0} ; détection passive : 50 cases</NMC_SageStatus>
   <NMC_SageOn>Activé</NMC_SageOn>
   <NMC_SageOff>Désactivé</NMC_SageOff>
+  <NMC_Text0818>La garnison et les défenses du Continuum sont éliminées, mais le noyau de communication est encore intact. La mission reste inachevée. Cliquez sur ce message pour localiser le noyau et ordonnez manuellement à vos troupes ou vaisseaux de l’attaquer. Détruisez-le avant de partir.</NMC_Text0818>
+  <NMC_Text0819>Localiser le noyau de communication</NMC_Text0819>
+  <NMC_Text0820>Objectif restant : détruire le noyau de communication (points de vie {0}/{1}). Éliminer la garnison et les tourelles ne suffit pas. Cliquez sur « Localiser le noyau de communication » et ordonnez manuellement à vos troupes ou vaisseaux de l’attaquer. Terminez la mission avant de partir.</NMC_Text0820>
 </LanguageData>

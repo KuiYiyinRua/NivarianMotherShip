@@ -1,3 +1,25 @@
+# Release validation: 0.9.9-r4
+
+## 0.9.9-r4 · 2026-10-19
+
+- 保留连续体任务的完成条件：摧毁基地中央的「连续体通讯核心」，并清除守军和防御设施。
+- 清空防御但核心仍存活时，显示一次可点击定位的提醒，明确要求手动命令部队或舰船攻击核心，任务完成后再撤离。
+- 任务面板显示核心剩余生命值，并提供「定位连续体通讯核心」按钮。核心消失或任务结束后移除提示。
+- 兼容现有进行中的任务；已结束的失败任务不会自动恢复，需要读取撤离前存档或等待三天重试。
+- 验证：旧版复现缺少核心定位，新版 21 项单机定向检查通过，包括核心 360 血状态、相机跳转及选中、提醒去重与存档、摧毁核心后完成与阶段推进。五语校验通过；未做本轮双端联机、冷读档或整合包实机测试。
+- 更新后重启游戏；联机双方使用相同版本。仅更新核心 DLL，五份联机适配 DLL 保持原样。
+
+### English
+
+- Continuum victory still requires destroying the central Continuum communications core and clearing the defenders and defenses.
+- Added a one-time clickable reminder when defenses are cleared but the core survives. It explicitly tells players to order an attack on the core and finish the mission before leaving.
+- The quest panel shows the surviving core's hit points and provides a core location button. Hints disappear after completion or core removal.
+- Existing active quests receive these hints. Already failed quests are not restored; load a save from before departure or wait for the three-day retry.
+- The old build reproduced the missing locator; the candidate passed 21 targeted single-player checks, including native camera selection, reminder serialization and completion after core destruction. Five-language validation passed. No new two-client Multiplayer, cold-load or full-modpack runtime certification.
+- Restart after updating and use matching files on all peers. Only the core assembly changed; all five Multiplayer adapters are unchanged.
+
+## Previous release evidence
+
 # Release validation: 0.9.9-r3
 
 ## 0.9.9-r3 · 2026-10-17

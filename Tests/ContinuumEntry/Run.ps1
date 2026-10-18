@@ -1,7 +1,7 @@
-param([Parameter(Mandatory=$true)][string]$Label,[switch]$Baseline)
+param([Parameter(Mandatory=$true)][string]$Label,[switch]$Baseline,[string]$ValidationFolder='ContinuumEntry-20261017')
 $ErrorActionPreference='Stop'
 $project=(Resolve-Path "$PSScriptRoot\..\..").Path
-$root=Join-Path $project 'BuildValidation\ContinuumEntry-20261017'
+$root=Join-Path $project ('BuildValidation\'+$ValidationFolder)
 $run=Join-Path $root $Label
 if(Test-Path -LiteralPath $run){throw 'Run directory already exists'}
 $gameRoot=(Resolve-Path "$project\..\..").Path

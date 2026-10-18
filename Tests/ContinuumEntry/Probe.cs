@@ -66,12 +66,35 @@ namespace NMC.ContinuumEntryProbe
                 Need(campaign.activeSite == site && !quest.Historical, "legacy retreat flag does not invalidate a loaded battlefield");
                 ContinuumCampaign.ApplyBattlefieldResult(site.ID, 1, -1);
                 Need(campaign.activeSite == site && !quest.Historical, "stale negative world report does not fail a loaded base");
-                battle.relay.Destroy();
                 foreach (var defender in battle.defenders.ToList()) if (defender != null && !defender.Destroyed) defender.Destroy();
+                battle.relay.HitPoints = 360; // Matches the reported post-combat snapshot.
+                battle.MapComponentTick(); campaign.WorldComponentTick();
+                Need(!battle.cleared && !quest.Historical, "cleared defenses with 360 HP core must not complete quest");
+                var location = quest.PartsListForReading.OfType<QuestPart_ContinuumLocation>().Single();
+                Need(location.QuestSelectTargets.Single().Thing == battle.relay,
+                    "quest locator selects the surviving communications core");
+                CameraJumper.TryJumpAndSelect(location.QuestSelectTargets.Single());
+                Need(Find.CurrentMap == map && Find.Selector.SelectedObjects.Contains(battle.relay),
+                    "native camera jump reaches battlefield and selects the core");
+                Need(location.DescriptionPart != null && location.DescriptionPart.Contains("360"),
+                    "quest describes the surviving core and its current hit points");
+                var messages = (System.Collections.Generic.List<Message>)typeof(Messages)
+                    .GetField("liveMessages", System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.NonPublic).GetValue(null);
+                string reminder = "NMC_Text0818".Translate().ToString();
+                Need(messages.Count(m => m.text == reminder) == 1, "cleared defenses emit one explicit core reminder");
+                for (int i = 0; i < 120; i++) battle.MapComponentTick();
+                Need(messages.Count(m => m.text == reminder) == 1, "core reminder is not repeated every tick");
+                GameDataSaveLoader.SaveGame("Continuum-CoreReminder");
+                Need(File.ReadAllText(GenFilePaths.FilePathForSavedGame("Continuum-CoreReminder"))
+                    .Contains("<nmcBaseCoreReminderSent>True</nmcBaseCoreReminderSent>"),
+                    "one-time reminder state is serialized for reload and multiplayer snapshots");
+                battle.relay.Destroy();
                 battle.MapComponentTick(); campaign.WorldComponentTick();
                 Need(quest.State == QuestState.EndedSuccess && campaign.completedStage == 1 && campaign.activeStage == 2,
                     "clearing original base after boarding completes quest and advances stage");
                 Need(site.HasMap && !site.Destroyed, "success preserves occupied original map");
+                Need(location.DescriptionPart == null && location.QuestSelectTargets.Single().WorldObject == site,
+                    "completed quest removes core hint and falls back to site location");
                 var nextQuest = campaign.activeQuest;
                 campaign.entered = true; // Native removal boundary: entered site no longer has a map.
                 campaign.WorldComponentTick();

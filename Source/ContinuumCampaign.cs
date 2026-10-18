@@ -178,8 +178,35 @@ namespace NivarianCommander
         public Site site;
         public int stage;
         public override IEnumerable<GlobalTargetInfo> QuestLookTargets { get { if (site != null && !site.Destroyed) yield return site; } }
-        public override IEnumerable<GlobalTargetInfo> QuestSelectTargets => QuestLookTargets;
-        public override string QuestSelectTargetsLabel => NmcText.Get("NMC_Text0234");
+        Thing RemainingCore
+        {
+            get
+            {
+                if (quest?.Historical == true) return null;
+                var battle = site?.Map?.GetComponent<ContinuumBattlefield>();
+                var core = battle?.relay;
+                return battle?.cleared != true && core != null && core.Spawned && !core.Destroyed
+                    && core.HostileTo(Faction.OfPlayer) ? core : null;
+            }
+        }
+        public override IEnumerable<GlobalTargetInfo> QuestSelectTargets
+        {
+            get
+            {
+                var core = RemainingCore;
+                if (core != null) yield return core;
+                else foreach (var target in QuestLookTargets) yield return target;
+            }
+        }
+        public override string QuestSelectTargetsLabel => NmcText.Get(RemainingCore != null ? "NMC_Text0819" : "NMC_Text0234");
+        public override string DescriptionPart
+        {
+            get
+            {
+                var core = RemainingCore;
+                return core != null ? NmcText.Get("NMC_Text0820", core.HitPoints, core.MaxHitPoints) : null;
+            }
+        }
         public override IEnumerable<Dialog_InfoCard.Hyperlink> Hyperlinks => DefDatabase<ResearchProjectDef>.AllDefsListForReading
             .Where(r => r.GetModExtension<CommanderResearchExtension>()?.requiredStage == stage).Select(r => new Dialog_InfoCard.Hyperlink(r));
         public override void ExposeData()
