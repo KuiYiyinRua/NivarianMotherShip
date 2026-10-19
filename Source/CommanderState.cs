@@ -60,6 +60,9 @@ namespace NivarianCommander
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 cooldowns = cooldowns ?? new Dictionary<string, int>();
+                // Existing saves may retain the former half-day or full-day field cooldown.
+                if (cooldowns.TryGetValue("NMC_S01", out int fieldCooldown))
+                    cooldowns["NMC_S01"] = UnityEngine.Mathf.Clamp(fieldCooldown, 0, FieldEconomy.CooldownTicks);
                 overloadCharges = UnityEngine.Mathf.Clamp(overloadCharges, 0, 3);
                 if (overloadCharges == 3) rechargeRemaining = 0;
                 else if (rechargeRemaining <= 0 || rechargeRemaining > ChargeInterval) rechargeRemaining = ChargeInterval;

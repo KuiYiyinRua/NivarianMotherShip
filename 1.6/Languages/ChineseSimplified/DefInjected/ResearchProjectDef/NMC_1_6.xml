@@ -3,7 +3,7 @@
   <NMC_FieldRecall.label>跨域人员折跃</NMC_FieldRecall.label>
   <NMC_FieldRecall.description>解锁殖民者跨地图折跃，可前往主能量场或展开的折跃舰。原地准备4秒，抵达后等待4秒，期间可受伤；携带装备和背包物品。
 
-在上行链路研究。完成后，主能量场的部署和迁移冷却变为1天。</NMC_FieldRecall.description>
+在上行链路研究。主能量场的部署和迁移冷却始终为1分钟，不受本研究影响。</NMC_FieldRecall.description>
   <NMC_PreciseFriendlyIdentification.label>精确友军识别</NMC_PreciseFriendlyIdentification.label>
   <NMC_PreciseFriendlyIdentification.description>使母舰支援火力、暗影卫队和远征军团专属武器避开己方及盟友。在上行链路交付材料并完成研究后永久生效。</NMC_PreciseFriendlyIdentification.description>
   <NMC_Support01.label>折跃能量场支援协议</NMC_Support01.label>

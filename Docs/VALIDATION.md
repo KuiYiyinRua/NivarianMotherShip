@@ -1,3 +1,25 @@
+# Release validation: 0.9.9-r6
+
+## 0.9.9-r6 · 2026-10-19
+
+- 能源塔和暗影能源塔只有在营养储量低于设定目标的 50% 时才自动补料，减少少量消耗引起的反复搬运。专用补料工作和普通搬运均使用此规则。
+- 自动补料开关对两种自动搬运路径都生效；已开始的投料及手动强制补料仍可补至设定目标。
+- 主能量场部署、迁移冷却统一为 1 分钟（常速下 60 秒／3,600 tick），不受“跨域人员折跃”研究影响。旧存档中更长的剩余冷却在载入时缩短至 1 分钟以内。
+- 同步更新五种语言的技能和研究说明，附带补料回归测试源码。核心版本仍为 0.9.9，五份联机适配 DLL 保持原样。
+- 验证：补料改动在开发阶段通过 165 项隔离单机断言，含两种塔的 4 次实际搬运；组合发布包完成源码重建一致性、冷却编译结果及五语校验。本轮未新增能量场实机、冷读档、双端联机或整合包测试。
+- 更新后重启游戏；联机双方使用相同文件。
+
+### English
+
+- Nutrient and shadow energy towers now request automatic refills only when stored nutrition is below 50% of the configured target. Both dedicated refill work and general hauling follow this rule.
+- The auto-fill toggle applies to both automatic hauling paths. Deliveries already in progress and explicit player orders can still fill to the configured target.
+- Main energy field deployment and relocation now share a one-minute cooldown (60 seconds at normal speed / 3,600 ticks), regardless of personnel recall research. Longer remaining cooldowns in existing saves are capped at one minute on load.
+- Updated ability and research descriptions in all five languages and included the nutrient refill regression source. Core version remains 0.9.9; all five Multiplayer adapter DLLs are unchanged.
+- Validation: the refill implementation passed 165 isolated single-player assertions, including four actual hauling jobs across both tower types. The combined release package was checked by rebuilding its source, inspecting the compiled cooldown, and validating all five languages. No new field gameplay, cold-load, two-client Multiplayer or full-modpack runtime test is claimed.
+- Restart after updating and use matching files on all multiplayer peers.
+
+## Previous release evidence
+
 # Release validation: 0.9.9-r5
 
 ## 0.9.9-r5 · 2026-10-19

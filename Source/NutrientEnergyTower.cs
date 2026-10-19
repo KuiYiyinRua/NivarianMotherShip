@@ -48,7 +48,12 @@ namespace NivarianCommander
         public bool StorageTabVisible => true;
         public bool IsContentsSuspended => true;
         bool EnabledForColony => Spawned && Faction == Faction.OfPlayer && FlickUtility.WantsToBeOn(this);
-        public bool HaulDestinationEnabled => EnabledForColony && NutritionNeeded > 0d;
+        internal bool CanReceiveNutrition => EnabledForColony && NutritionNeeded > 0d;
+        // Gate both the dedicated work giver and vanilla general hauling. Keep
+        // acceptance separate so active deliveries and explicit orders can fill
+        // the configured target even when the reserve is already above half.
+        public bool HaulDestinationEnabled => CanReceiveNutrition && autoFillNutrition &&
+            NutritionStored < Math.Min(Capacity, nutritionTarget) * .5d;
         public bool OperationPermitted => EnabledForColony && !this.IsBrokenDown() && !this.IsBurning() &&
             SupportUnlocked && NativeLedger.Component != null;
         static bool SupportUnlocked
@@ -116,7 +121,7 @@ namespace NivarianCommander
         public bool Accepts(Thing item) => FoodCountThatFits(item) > 0;
         internal int FoodCountThatFits(Thing item)
         {
-            if (!HaulDestinationEnabled || item == null || item.def.ingestible == null ||
+            if (!CanReceiveNutrition || item == null || item.def.ingestible == null ||
                 item.IsNotFresh() || nutritionSettings?.AllowedToAccept(item) != true ||
                 GetParentStoreSettings()?.AllowedToAccept(item) == false) return 0;
             float value = item.GetStatValue(StatDefOf.Nutrition);
@@ -249,8 +254,8 @@ namespace NivarianCommander
         public override PathEndMode PathEndMode => PathEndMode.Touch;
         public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
-            if (!(t is Building_NutrientEnergyTower tower) || !tower.HaulDestinationEnabled
-                || (!forced && !tower.autoFillNutrition) || pawn.Faction != tower.Faction || tower.IsForbidden(pawn) ||
+            if (!(t is Building_NutrientEnergyTower tower) || !tower.CanReceiveNutrition
+                || (!forced && !tower.HaulDestinationEnabled) || pawn.Faction != tower.Faction || tower.IsForbidden(pawn) ||
                 tower.IsBurning() || !pawn.CanReserve(t, 1, -1, null, forced) ||
                 pawn.Map.designationManager.DesignationOn(t, DesignationDefOf.Deconstruct) != null) return false;
             if (FindFood(pawn, tower) != null) return true;

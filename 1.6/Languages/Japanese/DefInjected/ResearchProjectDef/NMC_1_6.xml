@@ -5,7 +5,7 @@
 
 中心が埋まっている場合は場内の最も近い安全な空きマスへ到着。追加費用と人員クールダウンなし。作業を中止して運搬品を下ろし、装備と所持品を持参します。
 
-研究完了後、フィールド配置・移設のクールダウンが1日に延びます。</NMC_FieldRecall.description>
+フィールド配置・移設のクールダウンは研究の有無にかかわらず常に1分です。</NMC_FieldRecall.description>
   <NMC_PreciseFriendlyIdentification.label>精密友軍識別</NMC_PreciseFriendlyIdentification.label>
   <NMC_PreciseFriendlyIdentification.description>敵味方識別を改良し、支援火力が自軍ユニット、建物、同盟軍を避けるようにします。衛隊と遠征軍団の専用武器も従います。
 

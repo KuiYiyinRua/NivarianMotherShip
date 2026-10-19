@@ -7,12 +7,12 @@
     <group>防御与生产</group>
     <description>部署半径8格的供能区域，总供电10000W；友方单位每秒恢复20%最大能量。
 
-限一处主场。首次部署1000P、500V；迁移100P、50V。每0.1天维持消耗1P、1V，资源不足时关闭。完成“跨域人员折跃”后可接收殖民者，部署和迁移冷却变为1天。
+限一处主场。首次部署1000P、500V；迁移100P、50V。每0.1天维持消耗1P、1V，资源不足时关闭。完成“跨域人员折跃”后可接收殖民者。部署和迁移冷却统一为1分钟，不受该研究影响。
 
 解锁：在上行链路研究“折跃能量场支援协议”，随后从指挥官支援面板调用。</description>
     <powerCost>1000</powerCost>
     <volatileCost>500</volatileCost>
-    <cooldownTicks>30000</cooldownTicks>
+    <cooldownTicks>3600</cooldownTicks>
     <researchLabel>折跃能量场支援协议</researchLabel>
   </NivarianCommander.CommanderAbilityDef>
   <NivarianCommander.CommanderAbilityDef>

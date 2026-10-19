@@ -5,7 +5,7 @@
 
 Si le centre est occupé, arrivée sur la case libre sûre la plus proche du champ. Aucun coût énergétique ni recharge du personnel. Le colon interrompt son travail, pose son chargement et emporte équipement et inventaire.
 
-La recherche augmente la recharge du déploiement et du déplacement du champ à 1 jour.</NMC_FieldRecall.description>
+Le délai de recharge du déploiement et du déplacement du champ reste toujours de 1 minute, avec ou sans cette recherche.</NMC_FieldRecall.description>
   <NMC_PreciseFriendlyIdentification.label>Identification précise des alliés</NMC_PreciseFriendlyIdentification.label>
   <NMC_PreciseFriendlyIdentification.description>Améliore l'identification ami-ennemi pour épargner vos unités, bâtiments et alliés. Les armes exclusives de la garde et des légions suivent aussi ce protocole.
 

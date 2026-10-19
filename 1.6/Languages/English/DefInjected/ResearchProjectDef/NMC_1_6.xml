@@ -5,7 +5,7 @@
 
 If the center is occupied, arrival uses the nearest safe free cell inside the field. No extra energy cost or personnel cooldown. Colonists stop work, put down carried objects and take their equipment and inventory.
 
-Completing research increases field deployment and relocation cooldown to 1 day.</NMC_FieldRecall.description>
+Field deployment and relocation always have a 1-minute cooldown, regardless of this research.</NMC_FieldRecall.description>
   <NMC_PreciseFriendlyIdentification.label>Precision ally recognition</NMC_PreciseFriendlyIdentification.label>
   <NMC_PreciseFriendlyIdentification.description>Improve the mothership's friend-or-foe protocol so commander support avoids your units, buildings and allies. Exclusive shadow guard and expedition legion weapons also follow it.
 

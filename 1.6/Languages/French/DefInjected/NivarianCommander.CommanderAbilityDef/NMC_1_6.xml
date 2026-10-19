@@ -6,7 +6,7 @@
 
 Un seul champ peut exister. Premier déploiement : 1 000 P et 500 V ; déplacement d'un champ existant : 100 P et 50 V. Entretien : 1 P et 1 V tous les 0,1 jour. Le champ s'arrête si les réserves manquent.
 
-Après la recherche de distorsion interzone du personnel, les colons peuvent rejoindre directement le champ. La recharge du déploiement et du déplacement passe alors à 1 jour.</NMC_S01.description>
+Après la recherche de distorsion interzone du personnel, les colons peuvent rejoindre directement le champ. Le délai de recharge du déploiement et du déplacement reste toujours de 1 minute, avec ou sans cette recherche.</NMC_S01.description>
   <NMC_S01.researchLabel>Protocole de soutien du champ de distorsion</NMC_S01.researchLabel>
   <NMC_S02.label>Frappe orbitale</NMC_S02.label>
   <NMC_S02.group>Puissance orbitale</NMC_S02.group>

@@ -6,7 +6,7 @@
 
 Only one field can exist at a time. Initial deployment costs 1,000 P and 500 V; relocating an existing field costs 100 P and 50 V. Upkeep is 1 P and 1 V every 0.1 day. The field shuts down if reserves are insufficient.
 
-After researching cross-domain personnel warp, colonists can warp directly to the field. Deployment and relocation cooldown then increases to 1 day.</NMC_S01.description>
+After researching cross-domain personnel warp, colonists can warp directly to the field. Deployment and relocation always have a 1-minute cooldown, regardless of this research.</NMC_S01.description>
   <NMC_S01.researchLabel>Warp energy field support protocol</NMC_S01.researchLabel>
   <NMC_S02.label>Orbital strike</NMC_S02.label>
   <NMC_S02.group>Orbital firepower</NMC_S02.group>
