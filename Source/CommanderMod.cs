@@ -10,6 +10,7 @@ namespace NivarianCommander
     public sealed class CommanderMod : Mod
     {
         public static CommanderSettings Settings;
+        public static bool Initialized { get; private set; }
         public override string SettingsCategory() => "Nivarian Race: MotherShip";
         public override void DoSettingsWindowContents(Rect inRect)
         {
@@ -46,7 +47,8 @@ namespace NivarianCommander
                 BlackHoleArmorStats.Install();
                 WarshipResearch.Install();
                 FleetWarpState.Validate();
-                Log.Message("[NMC] node 7 S13 isolated candidate registered; nine-slot fleet, native flight, attack target and temporary material lifecycle hooks resolved.");
+                Initialized = true;
+                Log.Message("[NMC] Commander initialization complete; 19 supports, native integration and fleet lifecycle hooks registered.");
             });
         }
     }

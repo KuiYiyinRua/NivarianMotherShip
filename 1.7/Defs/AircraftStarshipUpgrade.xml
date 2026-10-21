@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>NMC_InstallStarshipBattery</defName>
+    <driverClass>NivarianCommander.JobDriver_InstallStarshipBattery</driverClass>
+    <reportString>正在为TargetA安装星舰电池。</reportString>
+    <casualInterruptible>true</casualInterruptible>
+  </JobDef>
+  <WorkGiverDef>
+    <defName>NMC_UpgradeAircraftStarship</defName>
+    <label>为舰船运送星舰电池</label>
+    <giverClass>NivarianCommander.WorkGiver_UpgradeAircraftStarship</giverClass>
+    <workType>Hauling</workType>
+    <priorityInType>95</priorityInType>
+    <verb>安装星舰电池</verb>
+    <gerund>安装星舰电池</gerund>
+    <requiredCapacities><li>Manipulation</li></requiredCapacities>
+  </WorkGiverDef>
+</Defs>

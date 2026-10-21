@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_Continuum.label>Боевая сеть Континуума</NMC_Continuum.label>
+  <NMC_Continuum.fixedName>Континуум</NMC_Continuum.fixedName>
+  <NMC_Continuum.description>Враждебная сеть баз Континуума. Механоиды и боевые единицы Ниры охраняют тактические данные. При атаке базы могут получить десантные подкрепления.</NMC_Continuum.description>
+  <NMC_Continuum.pawnSingular>Боевая единица Континуума</NMC_Continuum.pawnSingular>
+  <NMC_Continuum.pawnsPlural>Боевая единица Континуума</NMC_Continuum.pawnsPlural>
+</LanguageData>

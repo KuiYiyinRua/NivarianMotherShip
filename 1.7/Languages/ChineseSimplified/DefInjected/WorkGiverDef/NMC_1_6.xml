@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_UpgradeAircraftStarship.label>为舰船运送星舰电池</NMC_UpgradeAircraftStarship.label>
+  <NMC_UpgradeAircraftStarship.verb>安装星舰电池</NMC_UpgradeAircraftStarship.verb>
+  <NMC_UpgradeAircraftStarship.gerund>安装星舰电池</NMC_UpgradeAircraftStarship.gerund>
+  <NMC_FillNutrientEnergyTower.label>为涅瓦莲能源塔补充营养</NMC_FillNutrientEnergyTower.label>
+  <NMC_FillNutrientEnergyTower.verb>填充</NMC_FillNutrientEnergyTower.verb>
+  <NMC_FillNutrientEnergyTower.gerund>填充营养</NMC_FillNutrientEnergyTower.gerund>
+  <NMC_RefillCarrierDragonSteel.label>为航母填装龙霜钢</NMC_RefillCarrierDragonSteel.label>
+  <NMC_RefillCarrierDragonSteel.verb>填装龙霜钢</NMC_RefillCarrierDragonSteel.verb>
+  <NMC_RefillCarrierDragonSteel.gerund>填装龙霜钢</NMC_RefillCarrierDragonSteel.gerund>
+</LanguageData>

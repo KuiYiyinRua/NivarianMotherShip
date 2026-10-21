@@ -1,0 +1,75 @@
+<Defs>
+  <!-- Fixed combat template with original equipment drafts; no craft recipe pending equipment policy. -->
+  <PawnKindDef ParentName="Nivarian_PawnKindBase">
+    <defName>NMC_GhostGuard</defName><label>幽灵涅瓦莲</label>
+    <defaultFactionType>NivarianSurvivorTeam</defaultFactionType><isFighter>true</isFighter><combatPower>160</combatPower>
+    <apparelMoney>0</apparelMoney><weaponMoney>0</weaponMoney><invNutrition>0</invNutrition>
+    <!-- Original NPC guest parameters keep vanilla prisoner transition valid. -->
+    <initialResistanceRange>10~26</initialResistanceRange><initialWillRange>0.5~1</initialWillRange>
+    <xenotypeSet Inherit="False"><xenotypeChances><LuminNivarian MayRequire="Ludeon.RimWorld.Biotech">1</LuminNivarian></xenotypeChances></xenotypeSet>
+  </PawnKindDef>
+  <HediffDef>
+    <defName>NMC_GhostIdentity</defName><label>暗影卫队身份</label><description>临时增援的隐形近战战士，自动作战，无法征召，可被反隐能力发现。通过“暗影卫队”支援召来，120秒后撤离。</description>
+    <hediffClass>NivarianCommander.Hediff_GhostIdentity</hediffClass><isBad>false</isBad><initialSeverity>1</initialSeverity>
+  </HediffDef>
+  <DutyDef>
+    <defName>NMC_GhostAssault</defName><alwaysShowWeapon>true</alwaysShowWeapon>
+    <thinkNode Class="NivarianCommander.ThinkNode_CommanderDuty"><subNodes><li Class="NivarianCommander.JobGiver_GhostAssault" /></subNodes></thinkNode>
+  </DutyDef>
+  <!-- BaseWeapon deliberately avoids inherited smithing recipes and material multipliers. -->
+  <ThingDef Name="NMC_GhostWeaponBase" ParentName="BaseWeapon" Abstract="True">
+    <techLevel>Spacer</techLevel><smeltable>true</smeltable><burnableByRecipe>true</burnableByRecipe>
+    <thingCategories><li>WeaponsMelee</li></thingCategories><weaponClasses><li>Melee</li></weaponClasses>
+    <tradeability>None</tradeability><generateCommonality>0</generateCommonality>
+    <statBases><MaxHitPoints>150</MaxHitPoints><Mass>2</Mass><Flammability>0</Flammability><MarketValue>2000</MarketValue></statBases>
+    <graphicData><texPath>NMC/GhostEquipment/phase_twinblade</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <comps><li><compClass>CompQuality</compClass></li><li Class="CompProperties_Biocodable" /><li Class="NivarianCommander.CompProperties_GhostEquipment" /></comps>
+  </ThingDef>
+  <ThingDef ParentName="NMC_GhostWeaponBase">
+    <defName>NMC_PhaseTwinBlade</defName><label>相位双刃</label><description>暗影卫队的快速近战双刃。随支援部队提供，大师品质，生物编码绑定使用者。</description>
+    <tools><li><label>相位刃</label><capacities><li>Cut</li></capacities><power>24</power><cooldownTime>1.1</cooldownTime><armorPenetration>0.35</armorPenetration></li></tools>
+  </ThingDef>
+  <ThingDef ParentName="NMC_GhostWeaponBase">
+    <defName>NMC_VoidHeavyBlade</defName><label>虚空重刃</label><description>暗影卫队的重型近战武器，攻击较慢、单次伤害高。随支援部队提供，大师品质，生物编码绑定使用者。</description>
+    <graphicData><texPath>NMC/GhostEquipment/void_heavyblade</texPath></graphicData>
+    <tools><li><label>虚空刃</label><capacities><li>Cut</li></capacities><power>40</power><cooldownTime>2</cooldownTime><armorPenetration>0.65</armorPenetration></li></tools>
+  </ThingDef>
+  <ThingDef ParentName="NMC_GhostWeaponBase">
+    <defName>NMC_ShadowLance</defName><label>暗影长枪</label><description>暗影卫队的穿刺长枪，兼顾攻击速度和穿甲。随支援部队提供，大师品质，生物编码绑定使用者。</description>
+    <graphicData><texPath>NMC/GhostEquipment/shadow_lance</texPath></graphicData>
+    <tools><li><label>暗影枪尖</label><capacities><li>Stab</li></capacities><power>30</power><cooldownTime>1.5</cooldownTime><armorPenetration>0.5</armorPenetration></li></tools>
+  </ThingDef>
+  <!-- No quality comp on armor: approved armor values remain 110/50/60 percent. -->
+  <ThingDef Name="NMC_GhostArmorBase" ParentName="ApparelNoQualityBase" Abstract="True">
+    <techLevel>Spacer</techLevel><tradeability>None</tradeability><generateCommonality>0</generateCommonality>
+    <thingCategories><li>Apparel</li></thingCategories>
+    <statBases><MaxHitPoints>180</MaxHitPoints><Mass>3</Mass><Flammability>0</Flammability><MarketValue>2000</MarketValue>
+      <ArmorRating_Sharp>1.1</ArmorRating_Sharp><ArmorRating_Blunt>0.5</ArmorRating_Blunt><ArmorRating_Heat>0.6</ArmorRating_Heat></statBases>
+    <comps><li Class="NivarianCommander.CompProperties_GhostEquipment" /></comps>
+  </ThingDef>
+  <ThingDef ParentName="NMC_GhostArmorBase">
+    <defName>NMC_GhostSuit</defName><label>涅瓦莲幽灵装甲</label><description>暗影卫队专属隐形装甲，提供锐器、钝器和热能防护。随卫队提供；成员阵亡时销毁其随身装备，支援结束时随部队收回。</description>
+    <graphicData><texPath>NMC/GhostEquipment/ghost_suit_fitted2_Thin_south</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <apparel><bodyPartGroups><li>Torso</li><li>Arms</li><li>Legs</li><li>Hands</li><li>Feet</li><li>Nivarian_Tail</li></bodyPartGroups>
+      <layers><li>Shell</li></layers><wornGraphicPath>NMC/GhostEquipment/ghost_suit_fitted2</wornGraphicPath><drawData><dataEast><offset>(-0.07,0,-0.025)</offset></dataEast><dataWest><offset>(0.07,0,-0.025)</offset></dataWest></drawData><developmentalStageFilter>Adult</developmentalStageFilter></apparel>
+  </ThingDef>
+  <ThingDef ParentName="NMC_GhostArmorBase">
+    <defName>NMC_GhostHelmet</defName><label>涅瓦莲幽灵头环</label><description>暗影卫队的防护头环，提供头部锐器、钝器和热能防护。随卫队提供，支援结束时收回。</description>
+    <graphicData><texPath>NMC/GhostEquipment/ghost_circlet_south</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <apparel><bodyPartGroups><li>FullHead</li></bodyPartGroups><layers><li>Overhead</li></layers>
+      <wornGraphicPath>NMC/GhostEquipment/ghost_circlet</wornGraphicPath><renderSkipFlags><li>None</li></renderSkipFlags><drawData><scale>0.72</scale><defaultData><offset>(0,0,0.10)</offset></defaultData></drawData><developmentalStageFilter>Adult</developmentalStageFilter></apparel>
+  </ThingDef>
+  <BackstoryDef>
+    <defName>NMC_FieldTrainingChildhood</defName><slot>Childhood</slot>
+    <title>母舰学徒</title><titleShort>学徒</titleShort>
+    <baseDesc>[PAWN_nameDef]在母舰上学习战场纪律与基础战术。</baseDesc>
+    <shuffleable>false</shuffleable><spawnCategories><li>NMC_FieldTraining</li></spawnCategories>
+  </BackstoryDef>
+  <BackstoryDef>
+    <defName>NMC_FieldTrainingAdulthood</defName><slot>Adulthood</slot>
+    <title>折跃战斗员</title><titleShort>战斗员</titleShort>
+    <baseDesc>[PAWN_nameDef]接受专职作战训练，响应母舰的折跃召集。</baseDesc>
+    <shuffleable>false</shuffleable><spawnCategories><li>NMC_FieldTraining</li></spawnCategories>
+  </BackstoryDef>
+</Defs>

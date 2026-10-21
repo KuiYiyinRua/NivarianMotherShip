@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.9.9-r8 · 2026-10-21 · RimWorld 1.7 兼容
+
+- 新增 RimWorld 1.7 的独立程序集、资源和版本加载规则；保留 1.6 核心及五份联机适配 DLL。
+- 对接 1.7 前置的无线供能函数、研究队列和内置军工内容，更新投影残骸重载与冷冻熔炉贴图路径。
+- 迁移 Lumi/RimUnity 动画和棱镜接口，新增光束 GLSL 着色器；黑洞使用新版屏幕特效接口，保留场景扭曲和暂停/读档行为。
+- 提供可复现构建、隔离测试与完整打包入口。实测版本、证据和限制见 [1.7 兼容记录](Docs/RimWorld17.zh-CN.md)。本次未提供 1.7 Multiplayer 适配。
+
+### English
+
+- Added a separate RimWorld 1.7 build, resources and version-specific loading. Existing 1.6 core and Multiplayer binaries are unchanged.
+- Adapted native power hooks, research queue hints, integrated military content, projection leavings and the changed cryo-forge texture path.
+- Ported Lumi/RimUnity effects and beam shaders; black-hole scene distortion now uses ScreenEfx with map-tick animation and save reconstruction.
+- Added reproducible build and isolated runtime probes. See the linked migration record for tested scope and limitations. No 1.7 Multiplayer adapter is included.
+
 ## 0.9.9-r7 · 2026-10-21
 
 - 优化超维空间巨石索敌与 tick：减少全图遍历、重复排序和分配，保留目标顺序、攻击频率、伤害及控制规则。

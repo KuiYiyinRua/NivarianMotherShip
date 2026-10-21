@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_SeydasControlFallback.label>精神支配</NMC_SeydasControlFallback.label>
+  <NMC_SeydasControlFallback.description>20マス以内の敵をニヴァリアン生存者へ加入させます。高価値対象を優先し、メカノイドや首領も制御可能。集中50消費、クールダウン8秒。
+
+軍団撤退後も効果が残ります。対象は生存者派閥所属であなたの入植者にはなりません。</NMC_SeydasControlFallback.description>
+  <NMC_TebrusStormFallback.label>テブルス霊能ストーム</NMC_TebrusStormFallback.label>
+  <NMC_TebrusStormFallback.description>30マス以内で敵3体以上がいる位置に半径6の霊能ストームを発生。集中35、クールダウン12秒。
+
+4秒持続し、毎秒敵に火傷ダメージ30、友軍の傷またはドローン耐久を最大30回復。倒れた・透明なユニットにも作用し、建物は対象外。
+
+永久傷、欠損、病気は治療できません。</NMC_TebrusStormFallback.description>
+</LanguageData>

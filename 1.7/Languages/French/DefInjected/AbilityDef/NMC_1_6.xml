@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_SeydasControlFallback.label>Contrôle mental</NMC_SeydasControlFallback.label>
+  <NMC_SeydasControlFallback.description>Recrute un ennemi à moins de 20 cases chez les survivants nivarians. Privilégie les cibles précieuses ; mécanoïdes et chefs possibles. Coût 50 concentration, recharge 8 secondes.
+
+L'allégeance persiste après retrait. Ces unités ne deviennent pas vos colons.</NMC_SeydasControlFallback.description>
+  <NMC_TebrusStormFallback.label>Tempête psionique de Tebrus</NMC_TebrusStormFallback.label>
+  <NMC_TebrusStormFallback.description>Crée une tempête de rayon 6 à moins de 30 cases, uniquement avec au moins trois ennemis. Coût 35 concentration, recharge 12 secondes.
+
+Dure 4 secondes. Chaque seconde : 30 dégâts de brûlure ennemis, soin allié jusqu'à 30 points de blessure ou durabilité de drone. Affecte unités à terre et invisibles, pas les bâtiments.
+
+Ne retire pas les cicatrices, ne régénère pas les membres ni ne guérit les maladies.</NMC_TebrusStormFallback.description>
+</LanguageData>

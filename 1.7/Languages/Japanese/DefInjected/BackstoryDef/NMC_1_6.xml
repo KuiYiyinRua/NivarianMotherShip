@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_FieldTrainingChildhood.title>母艦見習い</NMC_FieldTrainingChildhood.title>
+  <NMC_FieldTrainingChildhood.titleShort>見習い</NMC_FieldTrainingChildhood.titleShort>
+  <NMC_FieldTrainingChildhood.baseDesc>[PAWN_nameDef]は母艦で戦場の規律と基礎戦術を学びました。</NMC_FieldTrainingChildhood.baseDesc>
+  <NMC_FieldTrainingAdulthood.title>ワープ戦闘員</NMC_FieldTrainingAdulthood.title>
+  <NMC_FieldTrainingAdulthood.titleShort>戦闘員</NMC_FieldTrainingAdulthood.titleShort>
+  <NMC_FieldTrainingAdulthood.baseDesc>[PAWN_nameDef]は専門戦闘訓練を受け、母艦のワープ召集に応じました。</NMC_FieldTrainingAdulthood.baseDesc>
+</LanguageData>

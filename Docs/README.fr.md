@@ -1,6 +1,6 @@
 # Nivarian Race: MotherShip
 
-Version **0.9.9**, pour RimWorld **1.6**. Langues : chinois simplifié, anglais, russe, japonais et français.
+Version **0.9.9-r8**, pour RimWorld **1.6 / 1.7**. Langues : chinois simplifié, anglais, russe, japonais et français.
 
 Ajoute 19 soutiens tactiques, une boutique à points, un porte-aéronefs, un vaisseau gravitationnel et une campagne du Continuum en huit étapes.
 
@@ -10,7 +10,7 @@ Téléchargez le ZIP du mod dans [Steam Workshop](https://steamcommunity.com/sha
 
 Activez Harmony, Humanoid Alien Races, Nivarian Race et cette extension dans cet ordre. Respectez aussi les dépendances des mods de base. Elles ne sont pas incluses dans l'archive. Choisissez votre langue dans les paramètres de RimWorld et attendez le rechargement des données.
 
-Royalty permet l'intégration aux pouvoirs psychiques natifs ; des capacités de remplacement sont utilisées sans ce DLC. L'adaptateur Multiplayer se charge automatiquement. Le mod Milira fournit les batteries de vaisseau optionnelles. La campagne nécessite l'extension militaire nivarian ; sans elle, les recherches de soutien sont directement accessibles.
+Royalty permet l'intégration aux pouvoirs psychiques natifs ; des capacités de remplacement sont utilisées sans ce DLC. Les adaptateurs Multiplayer sont réservés à la version 1.6 ; cette version ne prend pas en charge le multijoueur en 1.7. Le mod Milira fournit les batteries de vaisseau optionnelles. En 1.6, la campagne nécessite l'extension militaire nivarian. En 1.7, ce contenu est intégré à Nivarian Race et active automatiquement la campagne. Utilisez les prérequis correspondant à votre version du jeu ; le runtime RimUnity nécessaire à la version 1.7 est inclus.
 
 ## Utilisation
 

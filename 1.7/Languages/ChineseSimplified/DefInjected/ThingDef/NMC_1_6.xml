@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_Carrier.label>涅瓦莲航母</NMC_Carrier.label>
+  <NMC_Carrier.description>重型运输与无人机支援舰。生命2500，载重10000千克，可维持6架舰载机。每架消耗10龙霜钢、制造5秒；通过“龙霜钢储备”补料。升空后攻击60格内敌人，舰载机离舰80格返回。
+
+燃料容量10000，地图飞行每秒耗1，世界航行每格耗3、最低50。停泊时可用10份电池升级动力，升级后起飞耗200，免持续航行耗油。
+
+获取：在上行链路完成“涅瓦莲航母”研究后建造。</NMC_Carrier.description>
+  <NMC_CarrierIncoming.label>涅瓦莲航母（降落）</NMC_CarrierIncoming.label>
+  <NMC_CarrierLeaving.label>涅瓦莲航母（起飞）</NMC_CarrierLeaving.label>
+  <NMC_GravityFrigate.label>涅瓦莲引力舰</NMC_GravityFrigate.label>
+  <NMC_GravityFrigate.description>对空拦截与轻型运输舰。3×3格，生命600，载重300千克。升空后每秒发射双束激光，射程16格，每束6伤害、50%穿甲。引力束可将地面目标举起并眩晕4秒，冷却8秒。
+
+燃料容量600，地图飞行每5秒耗1，世界航行每格耗1.5、最低25。停泊时可用2份电池升级动力，升级后起飞耗100，免持续航行耗油。
+
+获取：在上行链路完成“涅瓦莲引力舰”研究后建造。</NMC_GravityFrigate.description>
+  <NMC_GravityFrigateIncoming.label>涅瓦莲引力舰（降落）</NMC_GravityFrigateIncoming.label>
+  <NMC_GravityFrigateLeaving.label>涅瓦莲引力舰（起飞）</NMC_GravityFrigateLeaving.label>
+  <NMC_CarrierInterceptor.label>涅瓦莲舰载机</NMC_CarrierInterceptor.label>
+  <NMC_CarrierInterceptor.description>航母制造的无人战斗机，生命125。航母升空后自动出击，离舰80格或收到回收命令时返回。每架消耗10龙霜钢，制造5秒。</NMC_CarrierInterceptor.description>
+  <NMC_InterceptorFallbackRound.label>舰载机轻型弹</NMC_InterceptorFallbackRound.label>
+  <NMC_ContinuumRelay.label>连续体通讯核心</NMC_ContinuumRelay.label>
+  <NMC_ContinuumRelay.description>连续体基地的通讯和资料中枢。摧毁核心并清除守军、炮塔，取得本阶段研究资料。</NMC_ContinuumRelay.description>
+  <NMC_ContinuumPowerCore.label>连续体供能核心</NMC_ContinuumPowerCore.label>
+  <NMC_ContinuumPowerCore.description>连续体基地的电源。摧毁后使相连电网中的炮塔停机。</NMC_ContinuumPowerCore.description>
+  <NMC_OverloadBolt.label>超载能量弹</NMC_OverloadBolt.label>
+  <NMC_TacticalMothership.label>战术母舰</NMC_TacticalMothership.label>
+  <NMC_TacticalMothership.description>自动作战的临时支援舰。激光每秒造成9伤害，能量弹每2秒造成12点爆炸伤害。通过“涅瓦莲舰队”支援召来，支援结束后撤离。</NMC_TacticalMothership.description>
+  <NMC_FleetDestroyer.label>舰队驱逐舰</NMC_FleetDestroyer.label>
+  <NMC_FleetDestroyer.description>自动护航的临时支援舰。棱晶光束每0.5秒造成2.4点起始伤害，持续锁定时增伤，失去锁定后重置。通过“涅瓦莲舰队”支援召来，结束后撤离。</NMC_FleetDestroyer.description>
+  <NMC_FleetMothershipGun.label>母舰能量炮</NMC_FleetMothershipGun.label>
+  <NMC_FleetDestroyerGun.label>驱逐舰能量炮</NMC_FleetDestroyerGun.label>
+  <NMC_FleetMothershipBolt.label>母舰能量弹</NMC_FleetMothershipBolt.label>
+  <NMC_FleetDestroyerBolt.label>驱逐舰能量弹</NMC_FleetDestroyerBolt.label>
+  <NMC_FleetWreck.label>临时舰艇残骸</NMC_FleetWreck.label>
+  <NMC_FleetWreck.description>支援舰艇被击毁后的残骸，无法拆解，支援结束时回收。</NMC_FleetWreck.description>
+  <NMC_PhaseTwinBlade.label>相位双刃</NMC_PhaseTwinBlade.label>
+  <NMC_PhaseTwinBlade.description>暗影卫队的快速近战双刃。随支援部队提供，大师品质，生物编码绑定使用者。</NMC_PhaseTwinBlade.description>
+  <NMC_PhaseTwinBlade.tools.0.label>相位刃</NMC_PhaseTwinBlade.tools.0.label>
+  <NMC_VoidHeavyBlade.label>虚空重刃</NMC_VoidHeavyBlade.label>
+  <NMC_VoidHeavyBlade.description>暗影卫队的重型近战武器，攻击较慢、单次伤害高。随支援部队提供，大师品质，生物编码绑定使用者。</NMC_VoidHeavyBlade.description>
+  <NMC_VoidHeavyBlade.tools.0.label>虚空刃</NMC_VoidHeavyBlade.tools.0.label>
+  <NMC_ShadowLance.label>暗影长枪</NMC_ShadowLance.label>
+  <NMC_ShadowLance.description>暗影卫队的穿刺长枪，兼顾攻击速度和穿甲。随支援部队提供，大师品质，生物编码绑定使用者。</NMC_ShadowLance.description>
+  <NMC_ShadowLance.tools.0.label>暗影枪尖</NMC_ShadowLance.tools.0.label>
+  <NMC_GhostSuit.label>涅瓦莲幽灵装甲</NMC_GhostSuit.label>
+  <NMC_GhostSuit.description>暗影卫队专属隐形装甲，提供锐器、钝器和热能防护。随卫队提供；成员阵亡时销毁其随身装备，支援结束时随部队收回。</NMC_GhostSuit.description>
+  <NMC_GhostHelmet.label>涅瓦莲幽灵头环</NMC_GhostHelmet.label>
+  <NMC_GhostHelmet.description>暗影卫队的防护头环，提供头部锐器、钝器和热能防护。随卫队提供，支援结束时收回。</NMC_GhostHelmet.description>
+  <NMC_VoidRay.label>辉光舰</NMC_VoidRay.label>
+  <NMC_VoidRay.description>佐拉亚军团的护航舰。棱晶光束每0.5秒造成2.4点起始伤害并附带冰冻，持续锁定时增伤，失去锁定后重置。通过“佐拉亚军团”支援召来，结束后撤离。</NMC_VoidRay.description>
+  <NMC_VoidRayGun.label>辉光舰光束</NMC_VoidRayGun.label>
+  <NMC_Zoraya.label>佐拉亚</NMC_Zoraya.label>
+  <NMC_Zoraya.description>佐拉亚军团的指挥舰。棱晶光束每0.5秒造成4.8点起始伤害并附带冰冻，持续锁定时增伤，失去锁定后重置。通过“佐拉亚军团”支援召来，结束后撤离。</NMC_Zoraya.description>
+  <NMC_ZorayaRayGun.label>佐拉亚辉光束</NMC_ZorayaRayGun.label>
+  <NMC_ArchonRobe.label>黑暗执政官礼服</NMC_ArchonRobe.label>
+  <NMC_ArchonRobe.description>黑暗执政官的灵能礼服，提供锐器、钝器和热能防护。随赛达斯军团提供，支援结束时收回。</NMC_ArchonRobe.description>
+  <NMC_SeydasRobe.label>赛达斯灵能礼服</NMC_SeydasRobe.label>
+  <NMC_SeydasRobe.description>赛达斯专属灵能礼服，提供锐器、钝器和热能防护。随赛达斯军团提供，支援结束时收回。</NMC_SeydasRobe.description>
+  <NMC_ArchonCirclet.label>黑暗执政官头环</NMC_ArchonCirclet.label>
+  <NMC_ArchonCirclet.description>黑暗执政官的头部防具。随赛达斯军团提供，支援结束时收回。</NMC_ArchonCirclet.description>
+  <NMC_SeydasCirclet.label>赛达斯灵能头环</NMC_SeydasCirclet.label>
+  <NMC_SeydasCirclet.description>赛达斯专属灵能头环，提供头部防护。随赛达斯军团提供，支援结束时收回。</NMC_SeydasCirclet.description>
+  <NMC_ArchonFocus.label>执政官灵能权杖</NMC_ArchonFocus.label>
+  <NMC_ArchonFocus.description>黑暗执政官的灵能聚焦权杖，可用于近战自卫。随赛达斯军团提供，支援结束时收回。</NMC_ArchonFocus.description>
+  <NMC_ArchonFocus.tools.0.label>杖柄</NMC_ArchonFocus.tools.0.label>
+  <NMC_ShadowCore.label>涅瓦莲暗影核心</NMC_ShadowCore.label>
+  <NMC_ShadowCore.description>暗影能源塔的施工核心。运入150钢铁、4零部件和25龙晶，20秒后自动完工。
+
+获取：研究“暗影核心支援协议”后，在支援面板部署。取消施工退还已交建材。</NMC_ShadowCore.description>
+  <NMC_MonolithCore.label>超维空间巨石核心</NMC_MonolithCore.label>
+  <NMC_MonolithCore.description>超维空间巨石的施工核心。运入300钢铁、10零部件和60龙晶，45秒后自动完工。
+
+获取：研究“超维空间巨石支援协议”后，在支援面板部署。取消施工退还已交建材。</NMC_MonolithCore.description>
+  <NMC_ShadowEnergyTower.label>涅瓦莲暗影能源塔</NMC_ShadowEnergyTower.label>
+  <NMC_ShadowEnergyTower.description>消耗食物营养的能源设施，占地2×2格，发电1400W并产出P点。以占地2×2的四格分别为圆心，合并半径7格的范围，使其中友军隐形；选中能源塔可查看范围，塔身不受自身隐形场保护。缺少营养或停机时停止供能和隐形。
+
+获取：研究“暗影核心支援协议”，部署核心并交付建材。补给种类可在“营养”页设置。</NMC_ShadowEnergyTower.description>
+  <NMC_HyperdimensionalMonolith.label>超维空间巨石</NMC_HyperdimensionalMonolith.label>
+  <NMC_HyperdimensionalMonolith.description>大范围控制炮塔。射程60格，每2秒攻击最多10名敌人，各造成3伤害和1秒眩晕。耗电1000W，无需弹药。
+
+获取：研究“超维空间巨石支援协议”，部署核心并交付建材。</NMC_HyperdimensionalMonolith.description>
+  <NMC_TebrusRobe.label>特布鲁斯灵能礼服</NMC_TebrusRobe.label>
+  <NMC_TebrusRobe.description>特布鲁斯专属灵能法袍，提供锐器、钝器和热能防护。随军团提供，无法出售或拆炼，支援结束时收回。</NMC_TebrusRobe.description>
+  <NMC_TebrusCirclet.label>特布鲁斯灵能头环</NMC_TebrusCirclet.label>
+  <NMC_TebrusCirclet.description>特布鲁斯专属灵能头环，提供头部防护。随军团提供，支援结束时收回。</NMC_TebrusCirclet.description>
+  <NMC_LegionSuit.label>涅瓦莲军团装甲</NMC_LegionSuit.label>
+  <NMC_LegionSuit.description>涅瓦莲近战军团装甲，提供锐器、钝器和热能防护。随特布鲁斯军团提供，支援结束时收回。</NMC_LegionSuit.description>
+  <NMC_LegionCirclet.label>涅瓦莲军团头环</NMC_LegionCirclet.label>
+  <NMC_LegionCirclet.description>涅瓦莲近战军团的头部防具。随特布鲁斯军团提供，支援结束时收回。</NMC_LegionCirclet.description>
+  <NMC_LegionBlade.label>军团相位长刃</NMC_LegionBlade.label>
+  <NMC_LegionBlade.description>涅瓦莲近战军团的穿甲长刃，精良品质。随特布鲁斯军团提供，支援结束时收回。</NMC_LegionBlade.description>
+  <NMC_LegionBlade.tools.0.label>相位刃</NMC_LegionBlade.tools.0.label>
+  <NMC_TebrusPulse.label>灵能脉冲</NMC_TebrusPulse.label>
+  <NMC_TebrusPulseGun.label>特布鲁斯灵能脉冲枪</NMC_TebrusPulseGun.label>
+  <NMC_TebrusPulseGun.description>特布鲁斯专属灵能脉冲枪，射程35格，每轮三连发，每发16伤害、30%穿甲。随军团提供，支援结束时收回。</NMC_TebrusPulseGun.description>
+  <NMC_TebrusPulseGun.tools.0.label>握柄</NMC_TebrusPulseGun.tools.0.label>
+  <NMC_VoidSuppressionCrystal.label>虚空抑制晶体</NMC_VoidSuppressionCrystal.label>
+  <NMC_VoidSuppressionCrystal.description>母舰的临时区域控制装置。半径18格内敌人移动和攻击速度降至30%，敌方炮塔停火；离开范围恢复，同类效果不叠加。持续30秒，不可受击摧毁，不阻挡通行，可与地面物体重叠。
+
+获取：研究“虚空抑制晶体支援协议”后，在支援面板部署。</NMC_VoidSuppressionCrystal.description>
+  <NMC_NutrientEnergyTower.label>涅瓦莲能源塔</NMC_NutrientEnergyTower.label>
+  <NMC_NutrientEnergyTower.description>消耗食物营养、产出P点的能源设施，同时发电700W。缺少营养或停机时停止产出。通过“营养”页选择补给食物。
+
+解锁：母舰支援接口研究。获取：部署能源塔核心并交付建材。</NMC_NutrientEnergyTower.description>
+  <NMC_WarpPrism.label>涅瓦莲折跃舰</NMC_WarpPrism.label>
+  <NMC_WarpPrism.description>无武装运输与供能舰。3×3格，生命350，载重1000千克。升空后可展开半径6格能量场，为设备供电、单位充能并接收人员折跃；展开期间无法移动。同图能量场共用10000W上限。
+
+燃料容量600，地图飞行和展开时每10秒耗1，世界航行每格耗0.75、最低12.5。可用2份电池升级动力，升级后起飞耗50，免持续耗油。
+
+获取：先研究“跨域人员折跃”，再在上行链路研究“涅瓦莲折跃舰”并建造。</NMC_WarpPrism.description>
+  <NMC_WarpPrismIncoming.label>涅瓦莲折跃舰（降落）</NMC_WarpPrismIncoming.label>
+  <NMC_WarpPrismLeaving.label>涅瓦莲折跃舰（起飞）</NMC_WarpPrismLeaving.label>
+  <NMC_StormShip.label>涅瓦莲暴风舰</NMC_StormShip.label>
+  <NMC_StormShip.description>远程攻城舰。5×5格，生命2000，载重3500千克。升空后攻击100格内敌人，每3秒发射雷暴球：直击20伤害、80%穿甲，随后造成3×3格爆炸，25伤害、35%穿甲；对建筑伤害×5。
+
+燃料容量10000，地图飞行每秒耗1，世界航行每格耗3、最低50。可用5份电池升级动力，升级后起飞耗200，免持续耗油。
+
+获取：在上行链路完成“涅瓦莲暴风舰”研究后建造。</NMC_StormShip.description>
+  <NMC_StormShipIncoming.label>涅瓦莲暴风舰（降落）</NMC_StormShipIncoming.label>
+  <NMC_StormShipLeaving.label>涅瓦莲暴风舰（起飞）</NMC_StormShipLeaving.label>
+  <NMC_StormOrb.label>雷暴球</NMC_StormOrb.label>
+  <NMC_SageShip.label>涅瓦莲贤者舰</NMC_SageShip.label>
+  <NMC_SageShip.description>轻型反隐与对地战舰。2×2格，生命350，载重200千克。被动解除半径50格内敌人的隐形，停泊时有效。开启攻击模式并升空后，每0.5秒攻击12格内地面敌人，双束激光各6伤害、30%穿甲，齐射耗1化合燃料。
+
+燃料容量600，地图飞行每10秒耗1，世界航行每格耗0.75、最低12.5。可用1份电池升级动力，升级后起飞耗50，免持续飞行耗油，攻击仍耗油。
+
+获取：在上行链路完成“涅瓦莲贤者舰”研究后建造。</NMC_SageShip.description>
+  <NMC_SageShipIncoming.label>涅瓦莲贤者舰（降落）</NMC_SageShipIncoming.label>
+  <NMC_SageShipLeaving.label>涅瓦莲贤者舰（起飞）</NMC_SageShipLeaving.label>
+  <NMC_ShadowConstruction.label>暗影能源塔构造体</NMC_ShadowConstruction.label>
+  <NMC_ShadowConstruction.description>折跃涅瓦莲暗影能源塔构造体。交付150钢铁、4零部件和25龙晶后，由本体通用构造流程自动打印成形，基础施工20秒。</NMC_ShadowConstruction.description>
+  <NMC_MonolithConstruction.label>超维空间巨石构造体</NMC_MonolithConstruction.label>
+  <NMC_MonolithConstruction.description>折跃涅瓦莲超维空间巨石构造体。交付300钢铁、10零部件和60龙晶后，由本体通用构造流程自动打印成形，基础施工45秒。</NMC_MonolithConstruction.description>
+</LanguageData>

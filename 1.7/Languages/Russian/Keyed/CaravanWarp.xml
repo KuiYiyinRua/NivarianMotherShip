@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <NMC_CaravanWarpDescription>Переносит весь караван с грузом к энергетическому полю на выбранной карте. По прибытии воспроизводится эффект печати длительностью 4 секунды. Требуется исследование переноса к полю.</NMC_CaravanWarpDescription>
+  <NMC_CaravanWarpUnavailable>Этот караван недоступен для переноса.</NMC_CaravanWarpUnavailable>
+</LanguageData>

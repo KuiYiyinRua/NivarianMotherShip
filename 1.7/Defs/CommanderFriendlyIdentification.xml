@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_PreciseFriendlyIdentification</defName>
+    <label>精确友军识别</label>
+    <description>使母舰支援火力、暗影卫队和远征军团专属武器避开己方及盟友。在上行链路交付材料并完成研究后永久生效。</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>NMC_Support02</li>
+    </prerequisites>
+    <researchViewX>6</researchViewX>
+    <researchViewY>3</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li><thingDef>Steel</thingDef><count>250</count></li>
+          <li><thingDef>ComponentIndustrial</thingDef><count>8</count></li>
+          <li><thingDef>Nivarian_DragonCrystal</thingDef><count>30</count></li>
+        </requiredMaterials>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+</Defs>

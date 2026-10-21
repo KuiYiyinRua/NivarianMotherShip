@@ -1,0 +1,591 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_Text0001>Take off</NMC_Text0001>
+  <NMC_Text0002>Take off here and fight over this map. Takeoff consumes {0} chemfuel; flight uses no further fuel. The launch area must be unroofed.</NMC_Text0002>
+  <NMC_Text0003>Take off here and fight over this map. The launch area must be unroofed. Chemfuel is consumed while airborne.</NMC_Text0003>
+  <NMC_Text0004>Takeoff requires {0} chemfuel</NMC_Text0004>
+  <NMC_Text0005>Not enough chemfuel</NMC_Text0005>
+  <NMC_Text0006>Roof overhead</NMC_Text0006>
+  <NMC_Text0007>Fly to position</NMC_Text0007>
+  <NMC_Text0008>Choose a flight destination on this map.</NMC_Text0008>
+  <NMC_Text0009>Taking off or landing</NMC_Text0009>
+  <NMC_Text0010>Land</NMC_Text0010>
+  <NMC_Text0011>Choose a landing site, use the building rotation keys to set the heading, then click to confirm. The carrier recalls all deployed fighters before descending. The landing area must be clear of buildings, pawns, trees and roofs.</NMC_Text0011>
+  <NMC_Text0012>Cannot land here. Choose an area clear of buildings, pawns, trees and roofs.</NMC_Text0012>
+  <NMC_Text0013>Interceptor production: on</NMC_Text0013>
+  <NMC_Text0014>Interceptor production: paused</NMC_Text0014>
+  <NMC_Text0015>Each interceptor costs {0} dragonfrost steel and takes 15 seconds to build, even during flight. Set a target in “Dragonfrost steel reserve”; colonists refill it while grounded, up to 1,000 units. The hangar and deployed interceptors are limited to {1} in total.</NMC_Text0015>
+  <NMC_Text0016>Recall interceptors</NMC_Text0016>
+  <NMC_Text0017>Order all deployed interceptors back to the hangar. They may launch again if the carrier remains airborne with enemies nearby.</NMC_Text0017>
+  <NMC_Text0018>Gravity beam</NMC_Text0018>
+  <NMC_Text0019>Choose any living unit within 16 cells, including friendly, neutral and hostile units. Lift and stun it for 4 seconds. A unit cannot be affected by multiple gravity beams at once. Cooldown: 8 seconds. No extra resources. Automatic use still targets enemies only.</NMC_Text0019>
+  <NMC_Text0020>Must be airborne</NMC_Text0020>
+  <NMC_Text0021>Gravity beam cooling down</NMC_Text0021>
+  <NMC_Text0022>Automatic gravity beam: on</NMC_Text0022>
+  <NMC_Text0023>Automatic gravity beam: off</NMC_Text0023>
+  <NMC_Text0024>While airborne, automatically lift the nearest ground enemy within 16 cells. Manual targeting remains available when disabled.</NMC_Text0024>
+  <NMC_Text0025>Starship drive upgraded</NMC_Text0025>
+  <NMC_Text0027>Upgrade starship drive</NMC_Text0027>
+  <NMC_Text0028>Colonists install {0} battery units. Milira starship batteries and unstable power cells each count as 1 unit; vanometric power cells count as 2. Types can be mixed. Uninstall and pack vanilla cells first. Click again during installation to cancel and return all deposited cells. Once completed, each takeoff costs {1} chemfuel; local flight and world travel consume no further fuel. Start the upgrade while grounded.</NMC_Text0028>
+  <NMC_Text0029>Starship batteries installed</NMC_Text0029>
+  <NMC_Text0031>Land first</NMC_Text0031>
+  <NMC_Text0032>{0} has completed its propulsion upgrade.</NMC_Text0032>
+  <NMC_Text0033>No haulable compatible batteries (uninstall and pack vanilla cells first)</NMC_Text0033>
+  <NMC_Text0034>Destination no longer available. Choose again.</NMC_Text0034>
+  <NMC_Text0035>Cooldown remaining: {0}</NMC_Text0035>
+  <NMC_Text0036>Requires {0} P + {1} V</NMC_Text0036>
+  <NMC_Text0037>The black hole requires an explored, standable cell</NMC_Text0037>
+  <NMC_Text0038>Not enough mothership energy</NMC_Text0038>
+  <NMC_Text0039>Black hole: armor temporarily reduced to zero</NMC_Text0039>
+  <NMC_Text0040>Black hole · {0} P + {1} V · Radius 8 / 8 seconds · Left click to deploy; right click / Esc to cancel</NMC_Text0040>
+  <NMC_Text0041>None</NMC_Text0041>
+  <NMC_Text0042>Returning</NMC_Text0042>
+  <NMC_Text0043>Automatic interception</NMC_Text0043>
+  <NMC_Text0044>Carrier: {0}
+{1}</NMC_Text0044>
+  <NMC_Text0045>Research required: {0}</NMC_Text0045>
+  <NMC_Text0046>Requires mothership level {0}</NMC_Text0046>
+  <NMC_Text0047>Orbital weapons cannot be used underground</NMC_Text0047>
+  <NMC_Text0048>Not enough energy: requires {0} P + {1} V</NMC_Text0048>
+  <NMC_Text0049>No valid orbital target: direct strikes cannot penetrate thick rock roofs</NMC_Text0049>
+  <NMC_Text0050>Precision ally recognition enabled</NMC_Text0050>
+  <NMC_Text0052>MC</NMC_Text0052>
+  <NMC_Text0053>Expand the commander panel
+Hold and drag to reposition</NMC_Text0053>
+  <NMC_Text0054>Quick slot {0}
+Click to add unlocked support
+Hold and drag to move the panel</NMC_Text0054>
+  <NMC_Text0055>Mothership commander</NMC_Text0055>
+  <NMC_Text0056>Power units P: {0}
+Volatile reactants V: {1}
+Hold and drag to move the panel</NMC_Text0056>
+  <NMC_Text0057>Overview</NMC_Text0057>
+  <NMC_Text0058>Open the commander overview</NMC_Text0058>
+  <NMC_Text0059>Collapse to a button; click it to expand again</NMC_Text0059>
+  <NMC_Text0060>Support</NMC_Text0060>
+  <NMC_Text0061>Click to activate now</NMC_Text0061>
+  <NMC_Text0062>Click to choose a target position</NMC_Text0062>
+  <NMC_Text0063>
+Cooldown remaining: {0}</NMC_Text0063>
+  <NMC_Text0064>{0}
+{1} P / {2} V{3}
+{4}{5}
+Right click to replace or clear; hold to drag the panel</NMC_Text0064>
+  <NMC_Text0065>Clear quick slot {0}</NMC_Text0065>
+  <NMC_Text0066> (current)</NMC_Text0066>
+  <NMC_Text0067> (move from slot {0})</NMC_Text0067>
+  <NMC_Text0068>No support unlocked yet</NMC_Text0068>
+  <NMC_Text0069>{0} ×100M</NMC_Text0069>
+  <NMC_Text0070>{0} ×10k</NMC_Text0070>
+  <NMC_Text0071>{0}d</NMC_Text0071>
+  <NMC_Text0072>{0}m</NMC_Text0072>
+  <NMC_Text0073>{0}s</NMC_Text0073>
+  <NMC_Text0074>All support</NMC_Text0074>
+  <NMC_Text0075>Orbital firepower</NMC_Text0075>
+  <NMC_Text0076>Defense and production</NMC_Text0076>
+  <NMC_Text0077>Shadow and control</NMC_Text0077>
+  <NMC_Text0078>Expedition reinforcements</NMC_Text0078>
+  <NMC_Text0079>Structures and projections</NMC_Text0079>
+  <NMC_Text0080>Nivarian · Mothership commander</NMC_Text0080>
+  <NMC_Text0081>Call in orbital fire, ground structures and expedition reinforcements</NMC_Text0081>
+  <NMC_Text0082>Power units P</NMC_Text0082>
+  <NMC_Text0083>Volatile reactants V</NMC_Text0083>
+  <NMC_Text0084>Mothership level</NMC_Text0084>
+  <NMC_Text0085>Overload charges</NMC_Text0085>
+  <NMC_Text0086>Support categories</NMC_Text0086>
+  <NMC_Text0087>19 tactical supports
+Unlocked through research
+Mothership level required</NMC_Text0087>
+  <NMC_Text0088>Back to mothership support</NMC_Text0088>
+  <NMC_Text0089>Show mothership quick panel</NMC_Text0089>
+  <NMC_Text0090>Mothership support · Shadow and hyperdimensional control</NMC_Text0090>
+  <NMC_Text0091>
+Upkeep: 1 P and 1 V per 0.1 day</NMC_Text0091>
+  <NMC_Text0092>Fully charged</NMC_Text0092>
+  <NMC_Text0093>One charge every 3 days. Next charge: {0}</NMC_Text0093>
+  <NMC_Text0094>Remaining: {0}</NMC_Text0094>
+  <NMC_Text0095>Support cost</NMC_Text0095>
+  <NMC_Text0096>Cooldown / charges</NMC_Text0096>
+  <NMC_Text0097>Requirements</NMC_Text0097>
+  <NMC_Text0098>Required supplies</NMC_Text0098>
+  <NMC_Text0099>Precision ally recognition · Enabled</NMC_Text0099>
+  <NMC_Text0102>3×3 square · Damage 30 · Armor penetration 35%</NMC_Text0102>
+  <NMC_Text0103>Aim orbital strike</NMC_Text0103>
+  <NMC_Text0104>Supplying power · {0} / 10,000 W</NMC_Text0104>
+  <NMC_Text0105>Field is on another map · Can be relocated</NMC_Text0105>
+  <NMC_Text0106>Radius 8 · Not deployed</NMC_Text0106>
+  <NMC_Text0107>Current allies · 200 shield · 30 seconds</NMC_Text0107>
+  <NMC_Text0108>200 shield · Laser support for 45 seconds</NMC_Text0108>
+  <NMC_Text0109>Select a protected target to see its shields and remaining durations. Ending support early does not refund energy, cooldowns or charges.</NMC_Text0109>
+  <NMC_Text0110>Support ready</NMC_Text0110>
+  <NMC_Text0111>Choose field position</NMC_Text0111>
+  <NMC_Text0112>Protect allies on this map</NMC_Text0112>
+  <NMC_Text0113>Choose a building to overload</NMC_Text0113>
+  <NMC_Text0114>Disable field on this map</NMC_Text0114>
+  <NMC_Text0115>End shields on this map</NMC_Text0115>
+  <NMC_Text0116>Choose a building to cancel overload</NMC_Text0116>
+  <NMC_Text0117>Bombardment radius 13 · 30 seconds</NMC_Text0117>
+  <NMC_Text0118>Bombarding this map · Cannot be stopped</NMC_Text0118>
+  <NMC_Text0119>Ready · Choose a position to begin bombardment</NMC_Text0119>
+  <NMC_Text0120>Choose solar bombardment center</NMC_Text0120>
+  <NMC_Text0121>Three tracking rays · 8 seconds</NMC_Text0121>
+  <NMC_Text0122>Sweeping this map</NMC_Text0122>
+  <NMC_Text0123>Ready · Half-day cooldown</NMC_Text0123>
+  <NMC_Text0124>Choose ray origin</NMC_Text0124>
+  <NMC_Text0125>End rays on this map</NMC_Text0125>
+  <NMC_Text0126>Inactive</NMC_Text0126>
+  <NMC_Text0127>Active in {0} locations · {1} remaining here</NMC_Text0127>
+  <NMC_Text0128>Move ×2 · Work ×10 · Turrets ×3 · 60 s</NMC_Text0128>
+  <NMC_Text0129>Ready · Affects all colonies</NMC_Text0129>
+  <NMC_Text0130>Cast spacetime fluctuation</NMC_Text0130>
+  <NMC_Text0131>End spacetime fluctuation</NMC_Text0131>
+  <NMC_Text0132>Radius 4 · Pursues enemies for 20 seconds</NMC_Text0132>
+  <NMC_Text0133>Ready · Choose an origin</NMC_Text0133>
+  <NMC_Text0134>Drafted</NMC_Text0134>
+  <NMC_Text0135>Automatic pursuit</NMC_Text0135>
+  <NMC_Text0136>{0} · Remaining: {1}</NMC_Text0136>
+  <NMC_Text0137>Choose purification beam origin</NMC_Text0137>
+  <NMC_Text0138>Undraft and pursue automatically</NMC_Text0138>
+  <NMC_Text0139>Draft current purification beam</NMC_Text0139>
+  <NMC_Text0140>Choose movement destination</NMC_Text0140>
+  <NMC_Text0141>End purification beam on this map</NMC_Text0141>
+  <NMC_Text0142>Finished: 2×2 · 800 HP · Base build: 20s</NMC_Text0142>
+  <NMC_Text0143>Finished: 3×3 · 1,800 HP · Base build: 45s</NMC_Text0143>
+  <NMC_Text0144>Warp in a construct; deliver materials to start printing</NMC_Text0144>
+  <NMC_Text0145>Warp shadow tower construct</NMC_Text0145>
+  <NMC_Text0146>Warp monolith construct</NMC_Text0146>
+  <NMC_Text0147>Four shadow guards · 120 seconds of support</NMC_Text0147>
+  <NMC_Text0148>Invisible melee troops · Masterwork weapons</NMC_Text0148>
+  <NMC_Text0149>Deploy shadow guard</NMC_Text0149>
+  <NMC_Text0150>Radius 8 · Pulls enemies for 8 seconds</NMC_Text0150>
+  <NMC_Text0151>Ready · Choose a position</NMC_Text0151>
+  <NMC_Text0152>Pulling {0} enemies · Remaining: {1}</NMC_Text0152>
+  <NMC_Text0153>Choose black hole center</NMC_Text0153>
+  <NMC_Text0154>End black hole on this map</NMC_Text0154>
+  <NMC_Text0155>Current enemies in all colonies · {0} seconds</NMC_Text0155>
+  <NMC_Text0156>Controlling {0} enemies · {1} remaining here</NMC_Text0156>
+  <NMC_Text0157>Ready · Prevents enemy movement and attacks</NMC_Text0157>
+  <NMC_Text0158>Cast time stop</NMC_Text0158>
+  <NMC_Text0159>End time stop</NMC_Text0159>
+  <NMC_Text0160>Radius 13 · 30 seconds</NMC_Text0160>
+  <NMC_Text0161>{0} crystals on this map · Suppressing enemies</NMC_Text0161>
+  <NMC_Text0162>Ready · Slows enemies and stops turrets</NMC_Text0162>
+  <NMC_Text0163>Choose void crystal position</NMC_Text0163>
+  <NMC_Text0164>Remove all crystals on this map</NMC_Text0164>
+  <NMC_Text0165>Mothership and 8 destroyers · 120 seconds</NMC_Text0165>
+  <NMC_Text0166>{0} fleets on this map · {1} surviving</NMC_Text0166>
+  <NMC_Text0167>Ready · Fleet fights automatically</NMC_Text0167>
+  <NMC_Text0168>Choose tactical fleet arrival point</NMC_Text0168>
+  <NMC_Text0169>Ships and wrecks are recovered after support ends</NMC_Text0169>
+  <NMC_Text0170>Tebrus and 10 warriors · 120 seconds</NMC_Text0170>
+  <NMC_Text0171>{0} legions on this map · {1} surviving</NMC_Text0171>
+  <NMC_Text0172>Ready · All three legions share a 7-day cooldown</NMC_Text0172>
+  <NMC_Text0173>Place 2,000 silver within range of a powered orbital trade beacon on this map. If silver is insufficient, 200 gold will be collected instead.</NMC_Text0173>
+  <NMC_Text0174>Choose Tebrus legion arrival point</NMC_Text0174>
+  <NMC_Text0175>Members and exclusive gear are recovered after support ends</NMC_Text0175>
+  <NMC_Text0176>Zoraya and 4 glowships · 120 seconds</NMC_Text0176>
+  <NMC_Text0177>Choose Zoraya legion arrival point</NMC_Text0177>
+  <NMC_Text0178>Seydas and 3 archons · 120 seconds</NMC_Text0178>
+  <NMC_Text0179>Requires 2,000 silver within beacon range, or 200 gold if silver is insufficient. Controlled enemies join the Nivarian survivors faction, not your colony.</NMC_Text0179>
+  <NMC_Text0180>Choose Seydas legion arrival point</NMC_Text0180>
+  <NMC_Text0181>Controlled units remain when the legion withdraws</NMC_Text0181>
+  <NMC_Text0182>Projectable turrets: {0} · 60 seconds of combat</NMC_Text0182>
+  <NMC_Text0183>Damage to a projection also damages its source</NMC_Text0183>
+  <NMC_Text0184>Choose matrix projection center</NMC_Text0184>
+  <NMC_Text0185>Register all turrets</NMC_Text0185>
+  <NMC_Text0186>Clear registration</NMC_Text0186>
+  <NMC_Text0187>Turrets from all colonies can be registered. Projections take 5 seconds to form and use their source's power and ammunition. Select a source or projection to recall it early. Spent energy is not refunded.</NMC_Text0187>
+  <NMC_Text0188>This support is currently unavailable</NMC_Text0188>
+  <NMC_Text0189>Move earlier</NMC_Text0189>
+  <NMC_Text0190>Move later</NMC_Text0190>
+  <NMC_Text0191>Adjust this support's position in the list</NMC_Text0191>
+  <NMC_Text0192>Ready</NMC_Text0192>
+  <NMC_Text0193>{0} days</NMC_Text0193>
+  <NMC_Text0194>{0} seconds</NMC_Text0194>
+  <NMC_Text0195>Continuous fire</NMC_Text0195>
+  <NMC_Text0196>One charge every 3 days</NMC_Text0196>
+  <NMC_Text0197> (shared by legions)</NMC_Text0197>
+  <NMC_Text0198>Complete Continuum stage {0} first: {1}</NMC_Text0198>
+  <NMC_Text0199> · Completed</NMC_Text0199>
+  <NMC_Text0200> · Incomplete</NMC_Text0200>
+  <NMC_Text0201>{0}{1}
+Mothership level required: {2} (current: {3}){4}</NMC_Text0201>
+  <NMC_Text0202>Mothership support not ready</NMC_Text0202>
+  <NMC_Text0203>Enter the target map first</NMC_Text0203>
+  <NMC_Text0204>No quick action available for this ability</NMC_Text0204>
+  <NMC_Text0205>Orbital strike · {0} P + {1} V per shot · Left click to fire repeatedly · Right click / Esc to end</NMC_Text0205>
+  <NMC_Text0206>Missing construction definition or invalid duration</NMC_Text0206>
+  <NMC_Text0207>Construction core lacks its material container</NMC_Text0207>
+  <NMC_Text0208>Invalid core footprint, hit points or material residue definition</NMC_Text0208>
+  <NMC_Text0209>Missing, duplicate or invalid construction ingredients</NMC_Text0209>
+  <NMC_Text0210>Mothership construction: {0} seconds</NMC_Text0210>
+  <NMC_Text0211>Waiting for building materials</NMC_Text0211>
+  <NMC_Text0212>Cancel mothership construction</NMC_Text0212>
+  <NMC_Text0213>Cancel construction and return delivered materials. Energy and cooldown spent deploying the core are not refunded.</NMC_Text0213>
+  <NMC_Text0214>Continuum drop reinforcements: mechanoids and Nira combat units</NMC_Text0214>
+  <NMC_Text0215>Shadow crystal tower</NMC_Text0215>
+  <NMC_Text0216>Shadow reinforcements</NMC_Text0216>
+  <NMC_Text0217>Expedition legion</NMC_Text0217>
+  <NMC_Text0218>Hyperdimensional monolith</NMC_Text0218>
+  <NMC_Text0219>Hyperdimensional projection</NMC_Text0219>
+  <NMC_Text0220>Fleet support</NMC_Text0220>
+  <NMC_Text0221>Purification beam</NMC_Text0221>
+  <NMC_Text0222>Solar bombardment</NMC_Text0222>
+  <NMC_Text0223>Continuum base (stage {0})</NMC_Text0223>
+  <NMC_Text0224>Continuum: {0} ({1}/8)</NMC_Text0224>
+  <NMC_Text0225>After success, the mothership will locate the next base.</NMC_Text0225>
+  <NMC_Text0226>This is the final stage. Completing it secures all Continuum research data.</NMC_Text0226>
+  <NMC_Text0227>The mothership intercepted Continuum communications near the colony and located a base holding tactical data. Send troops to destroy the communications core, defeat the defenders and destroy the defensive turrets to recover the data. Destroying the core alone is not enough.
+
+Loot is concentrated in the center, guarded by multiple layers of turrets and sandbags. Defenders will call in drop reinforcements, including mechanoids and Nira combat units armed with Nivarian weapons.
+
+This base has no time limit and will not disappear while you wait. If all your troops leave the battlefield before completing the objective, the mission fails. The mothership will locate another base of the same stage in 3 days; previously acquired research data is retained.
+
+The recovered data unlocks these research projects:
+{0}
+
+You must still deliver materials and complete research at an uplink research terminal, then reach the required mothership level to use the support.{1}</NMC_Text0227>
+  <NMC_Text0228>Continuum research data recovered</NMC_Text0228>
+  <NMC_Text0229>
+
+The mothership is locating the next Continuum base.</NMC_Text0229>
+  <NMC_Text0230>
+
+All eight Continuum stages are complete. All related research data has been recovered.</NMC_Text0230>
+  <NMC_Text0231>The mothership has decrypted the recovered data. These projects can now be researched:
+{0}
+
+Deliver the required materials and complete research at an uplink research terminal. Support also requires the corresponding mothership level.{1}</NMC_Text0231>
+  <NMC_Text0232>Continuum operation failed</NMC_Text0232>
+  <NMC_Text0233>No data was recovered from the stage {0} base. The mothership will locate another target of the same stage in 3 days.
+
+Previously acquired data and completed research are retained.</NMC_Text0233>
+  <NMC_Text0234>View Continuum base</NMC_Text0234>
+  <NMC_Text0238>Not enough building overload charges</NMC_Text0238>
+  <NMC_Text0239>Field center must be inside the map</NMC_Text0239>
+  <NMC_Text0240>Choose a friendly building on this map</NMC_Text0240>
+  <NMC_Text0241>Mothership support · Total shield {0} / 400</NMC_Text0241>
+  <NMC_Text0242>Shield overload: {0} shield · {1} seconds</NMC_Text0242>
+  <NMC_Text0243>Building overload: {0} shield · {1} seconds</NMC_Text0243>
+  <NMC_Text0244>Warp energy field disabled: upkeep requires 1 P and 1 V.</NMC_Text0244>
+  <NMC_Text0245>Research required: cross-domain personnel warp</NMC_Text0245>
+  <NMC_Text0246>Choose one of your colonists on a map</NMC_Text0246>
+  <NMC_Text0247>No warp energy field deployed</NMC_Text0247>
+  <NMC_Text0248>Colonist has left the original map. Choose again.</NMC_Text0248>
+  <NMC_Text0249>The warp energy field has been replaced. Choose warp again.</NMC_Text0249>
+  <NMC_Text0250>No safe free cell in the field.</NMC_Text0250>
+  <NMC_Text0251>Colonist is already at the receiving position.</NMC_Text0251>
+  <NMC_Text0252>Cannot safely put down the carried object. Stop hauling first.</NMC_Text0252>
+  <NMC_Text0253>{0} has warped to the field.</NMC_Text0253>
+  <NMC_Text0254>Colonist has arrived. Check their condition and reassign work.</NMC_Text0254>
+  <NMC_Text0255>Warp failed. Check the colonist's current position and try again.</NMC_Text0255>
+  <NMC_Text0256>Warp to energy field</NMC_Text0256>
+  <NMC_Text0258>Zoraya legion · </NMC_Text0258>
+  <NMC_Text0259>Tactical fleet · </NMC_Text0259>
+  <NMC_Text0260>Recovering</NMC_Text0260>
+  <NMC_Text0261> · Arrival losses: {0}</NMC_Text0261>
+  <NMC_Text0262>Arriving {0} / {1}{2}</NMC_Text0262>
+  <NMC_Text0263>{0}{1} / {2} HP
+{3}</NMC_Text0263>
+  <NMC_Text0264>The nine-ship arrival point must avoid the map edge</NMC_Text0264>
+  <NMC_Text0265>The nine-ship arrival point must be explored</NMC_Text0265>
+  <NMC_Text0266>The nine-ship arrival point cannot be under thick rock</NMC_Text0266>
+  <NMC_Text0267>The arrival point cannot contain walls or impassable terrain</NMC_Text0267>
+  <NMC_Text0268>Arrival point occupied by another ship</NMC_Text0268>
+  <NMC_Text0269>Fleet arrival failed; no payment or cooldown applied</NMC_Text0269>
+  <NMC_Text0270>Not enough mothership energy; fleet support cancelled</NMC_Text0270>
+  <NMC_Text0271>Tactical fleet warping in: 1 mothership + 8 destroyers. Stays for 120 seconds after all ships arrive.</NMC_Text0271>
+  <NMC_Text0272>Tactical fleet · {0} P + {1} V · 1 mothership + 8 destroyers · Left click to deploy; right click / Esc to cancel</NMC_Text0272>
+  <NMC_Text0273>Shadow guard movement speed modifier: {0}</NMC_Text0273>
+  <NMC_Text0274>Requires an existing, non-hostile Nivarian survivors faction</NMC_Text0274>
+  <NMC_Text0275>Shadow guard cannot be dispatched right now</NMC_Text0275>
+  <NMC_Text0276>Shadow guard equipment unavailable; dispatch blocked</NMC_Text0276>
+  <NMC_Text0277>Shadow guard weapons are not ready</NMC_Text0277>
+  <NMC_Text0278>Requires four nearby explored, standable cells without thick rock roofs</NMC_Text0278>
+  <NMC_Text0279>Troop arrival point occupied</NMC_Text0279>
+  <NMC_Text0280>Expedition legion movement speed modifier: {0}</NMC_Text0280>
+  <NMC_Text0281>Nivarian survivors legion missing, defeated or hostile</NMC_Text0281>
+  <NMC_Text0283>Hyperdimensional control array: operational</NMC_Text0283>
+  <NMC_Text0284>Hyperdimensional control array: unpowered</NMC_Text0284>
+  <NMC_Text0285> · Attack cooldown reduced to one third</NMC_Text0285>
+  <NMC_Text0286> · Attacks every 2 seconds</NMC_Text0286>
+  <NMC_Text0287>{0}{1} · Range 60 · Up to 10 targets</NMC_Text0287>
+  <NMC_Text0288>{0} ran out of fuel and made an emergency landing.</NMC_Text0288>
+  <NMC_Text0289>Landed</NMC_Text0289>
+  <NMC_Text0290> · Starship propulsion: {0} chemfuel per takeoff; no fuel used in flight</NMC_Text0290>
+  <NMC_Text0291>1 unit per second</NMC_Text0291>
+  <NMC_Text0292>1 unit every 5 seconds</NMC_Text0292>
+  <NMC_Text0293> · Airborne fuel use: {0}</NMC_Text0293>
+  <NMC_Text0294>
+Starship battery upgrade: {0}/{1} (awaiting delivery)</NMC_Text0294>
+  <NMC_Text0295> · Production remaining: {0} seconds</NMC_Text0295>
+  <NMC_Text0296>
+Interceptors: {0}/{1} (hangar {2}, deployed {3})
+Dragonfrost steel: {4}/1000{5}</NMC_Text0296>
+  <NMC_Text0297>
+Gravity beam cooldown: {0} seconds</NMC_Text0297>
+  <NMC_Text0298>End aerial combat and land first. The carrier must also recall its interceptors.</NMC_Text0298>
+  <NMC_Text0299>Takeoff requires {0} chemfuel.</NMC_Text0299>
+  <NMC_Text0300>Disabled</NMC_Text0300>
+  <NMC_Text0301>Awaiting nutrients</NMC_Text0301>
+  <NMC_Text0302>Operation paused</NMC_Text0302>
+  <NMC_Text0303>Supplying mothership energy</NMC_Text0303>
+  <NMC_Text0304>{0}Nutrient reserve: {1} (target {2})
+Consumption: {3} / game day
+Mothership energy: {4} P / game day
+{5} · Rated power {6} W</NMC_Text0304>
+  <NMC_Text0305>Other goods</NMC_Text0305>
+  <NMC_Text0306>Nira</NMC_Text0306>
+  <NMC_Text0307>Hello, commander. The manifest is ready. What would you like to bring to the colony today?</NMC_Text0307>
+  <NMC_Text0308>Welcome back. I'll keep you company while you browse. Take your time.</NMC_Text0308>
+  <NMC_Text0309>Mothership supply channel connected. Browse the stock and take home whatever suits you.</NMC_Text0309>
+  <NMC_Text0310>Have you eaten properly today? However long the shopping list gets, remember to rest.</NMC_Text0310>
+  <NMC_Text0311>It's quiet aboard the mothership. I enjoy hearing about everyday life in the colony.</NMC_Text0311>
+  <NMC_Text0312>Leave some room in the warehouse. When supplies arrive, you won't have to move boxes in a hurry.</NMC_Text0312>
+  <NMC_Text0313>Should I bring everyone sweets the next time we dock?</NMC_Text0313>
+  <NMC_Text0314>When the weather is good, look up at the sky for me. The view from the ground is so different from orbit.</NMC_Text0314>
+  <NMC_Text0315>Between sorting supplies, I read a little. Any stories you've enjoyed lately?</NMC_Text0315>
+  <NMC_Text0316>Don't worry, I'll stay on this channel. Take your time.</NMC_Text0316>
+  <NMC_Text0317>A lamp, a hot meal. Sometimes little things make us feel safe.</NMC_Text0317>
+  <NMC_Text0318>Order received. Goods will arrive from orbit. Leave space in the warehouse.</NMC_Text0318>
+  <NMC_Text0319>I've arranged these for you. I hope they'll be useful.</NMC_Text0319>
+  <NMC_Text0320>Supplies are with the delivery system. Remember to rest when you're done.</NMC_Text0320>
+  <NMC_Text0321>Purchase complete. Once the crates land, we'll see what else you need.</NMC_Text0321>
+  <NMC_Text0322>Thank you. These supplies will keep helping aboard the mothership.</NMC_Text0322>
+  <NMC_Text0323>Donation received and P points credited. Thank everyone who carried it for me.</NMC_Text0323>
+  <NMC_Text0324>Spare supplies help too. Thank you for thinking of the mothership.</NMC_Text0324>
+  <NMC_Text0325>All received. Doesn't more warehouse space feel a little better?</NMC_Text0325>
+  <NMC_Text0326>The new manifest is here. I've sorted the categories. See if you need anything.</NMC_Text0326>
+  <NMC_Text0327>Stock just updated. What good things will we find this time?</NMC_Text0327>
+  <NMC_Text0328>This order hasn't gone through yet. Check the message; we'll fix it before continuing.</NMC_Text0328>
+  <NMC_Text0329>No rush. Check the quantities and P points. I'll wait.</NMC_Text0329>
+  <NMC_Text0330>{0}: {1}
+Click the portrait to chat; click text to reveal the full line.</NMC_Text0330>
+  <NMC_Text0331>The mothership is preparing the manifest. Let the game run briefly.</NMC_Text0331>
+  <NMC_Text0332>Choose one of your colonies for deliveries.</NMC_Text0332>
+  <NMC_Text0333>Mothership energy account not connected.</NMC_Text0333>
+  <NMC_Text0334>This colony needs a powered orbital trade beacon.</NMC_Text0334>
+  <NMC_Text0335>Invalid order. Reopen the shop.</NMC_Text0335>
+  <NMC_Text0336>This order was already processed.</NMC_Text0336>
+  <NMC_Text0337>Invalid order items or quantities.</NMC_Text0337>
+  <NMC_Text0338>Items or stock changed. Check the order and retry.</NMC_Text0338>
+  <NMC_Text0339>Some items cannot be priced. Remove them and retry.</NMC_Text0339>
+  <NMC_Text0340>Prices changed. Review the list again.</NMC_Text0340>
+  <NMC_Text0341>Stock refreshed. Select purchases again.</NMC_Text0341>
+  <NMC_Text0342>Not enough P points for this order.</NMC_Text0342>
+  <NMC_Text0343>No open-air drop site near the beacon. No payment taken.</NMC_Text0343>
+  <NMC_Text0344>Mothership P points unavailable. Retry later.</NMC_Text0344>
+  <NMC_Text0345>Item transfer failed. Order cancelled without payment.</NMC_Text0345>
+  <NMC_Text0346>Purchase complete. Paid {0} P. Orbital delivery arranged.</NMC_Text0346>
+  <NMC_Text0347>Donation exceeds the P account limit. Reduce the quantity.</NMC_Text0347>
+  <NMC_Text0348>Item transfer failed. Donation cancelled.</NMC_Text0348>
+  <NMC_Text0349>Donation complete. Earned {0} P. Thank you for the supplies.</NMC_Text0349>
+  <NMC_Text0350>Mothership points shop</NMC_Text0350>
+  <NMC_Text0351>No colony selected</NMC_Text0351>
+  <NMC_Text0352>Close</NMC_Text0352>
+  <NMC_Text0353>Preparing manifest</NMC_Text0353>
+  <NMC_Text0354>Restock in: {0} days {1} hours</NMC_Text0354>
+  <NMC_Text0355>Restock every 7 days · Up to 60 goods · Stock shared by colonies</NMC_Text0355>
+  <NMC_Text0356>New manifest arrived. Old purchase list cleared.</NMC_Text0356>
+  <NMC_Text0357>Select supplies in beacon range to view their P reward.</NMC_Text0357>
+  <NMC_Text0358>Choose goods and quantities. Click item icons for details.</NMC_Text0358>
+  <NMC_Text0359>Buy goods</NMC_Text0359>
+  <NMC_Text0360>◆ Buy goods</NMC_Text0360>
+  <NMC_Text0361>◆ Donate supplies</NMC_Text0361>
+  <NMC_Text0362>Donate supplies</NMC_Text0362>
+  <NMC_Text0363>Delivery colony: {0}</NMC_Text0363>
+  <NMC_Text0364>Search by item name or source mod.</NMC_Text0364>
+  <NMC_Text0365>Search goods / mods</NMC_Text0365>
+  <NMC_Text0366>All categories</NMC_Text0366>
+  <NMC_Text0367>All sources</NMC_Text0367>
+  <NMC_Text0368>Goods categories</NMC_Text0368>
+  <NMC_Text0369>All goods</NMC_Text0369>
+  <NMC_Text0370>{0} kinds</NMC_Text0370>
+  <NMC_Text0371>Supplies in beacon range</NMC_Text0371>
+  <NMC_Text0372>Goods for sale</NMC_Text0372>
+  <NMC_Text0373>No supplies to donate. Check beacon power, range and filters.</NMC_Text0373>
+  <NMC_Text0374>No goods match the filters. Change them or wait for restock.</NMC_Text0374>
+  <NMC_Text0375>{0} available to donate</NMC_Text0375>
+  <NMC_Text0376>{0} each · Stock {1}</NMC_Text0376>
+  <NMC_Text0377>Choose quantity to see the P reward in your donation list.</NMC_Text0377>
+  <NMC_Text0378>Unit price: {0}</NMC_Text0378>
+  <NMC_Text0379>{0}
+{1}
+{2}
+Click icon for details.
+Hold Shift while clicking + or - to adjust by 10.</NMC_Text0379>
+  <NMC_Text0380>Balance  {0} P</NMC_Text0380>
+  <NMC_Text0381>Available P points, including balances from earlier trades.
+Donate supplies to the mothership to earn P points.</NMC_Text0381>
+  <NMC_Text0382>Donate supplies to replenish the mothership.
+Review items and rewards before confirming.</NMC_Text0382>
+  <NMC_Text0383>Buy needed supplies.
+Goods will be dropped at the selected colony.</NMC_Text0383>
+  <NMC_Text0384>Expected reward  </NMC_Text0384>
+  <NMC_Text0385>Order total  </NMC_Text0385>
+  <NMC_Text0386>{0} selected</NMC_Text0386>
+  <NMC_Text0387>Clear</NMC_Text0387>
+  <NMC_Text0388>Awaiting trade result</NMC_Text0388>
+  <NMC_Text0389>Review donation list</NMC_Text0389>
+  <NMC_Text0390>Review purchase list</NMC_Text0390>
+  <NMC_Text0391>Not enough P points</NMC_Text0391>
+  <NMC_Text0392>Check items and totals before confirming the trade.</NMC_Text0392>
+  <NMC_Text0393>Order sent. Awaiting trade result.</NMC_Text0393>
+  <NMC_Text0394>Confirm supply donation</NMC_Text0394>
+  <NMC_Text0395>Confirm purchase</NMC_Text0395>
+  <NMC_Text0396>Confirming transfers listed supplies to the mothership for the shown P points. Donated supplies cannot be reclaimed. Check quantities.</NMC_Text0396>
+  <NMC_Text0397>Confirming pays the shown P points. Goods are dropped near the selected colony's trade beacon. Leave open-air space for delivery.</NMC_Text0397>
+  <NMC_Text0398>This donation earns no P points. Confirming still transfers listed supplies permanently.</NMC_Text0398>
+  <NMC_Text0399>
+Corpse equipment and inventory are also transferred, without extra P rewards. Remove anything you want to keep first.</NMC_Text0399>
+  <NMC_Text0400>Transfer to mothership on confirmation</NMC_Text0400>
+  <NMC_Text0401>Subtotal: {0} P</NMC_Text0401>
+  <NMC_Text0402>P points earned:</NMC_Text0402>
+  <NMC_Text0403>P points paid:</NMC_Text0403>
+  <NMC_Text0404>Back to editing</NMC_Text0404>
+  <NMC_Text0405>Confirm donation · {0} P</NMC_Text0405>
+  <NMC_Text0406>Confirm purchase</NMC_Text0406>
+  <NMC_Text0407>Register an operational turret with at least 2 HP first</NMC_Text0407>
+  <NMC_Text0408>No room for turrets within 20 cells. Choose another position. No payment taken</NMC_Text0408>
+  <NMC_Text0409>Projection requires {0} P + {1} V</NMC_Text0409>
+  <NMC_Text0410>Projection weapon component count mismatch</NMC_Text0410>
+  <NMC_Text0411>Projection weapon component source mismatch</NMC_Text0411>
+  <NMC_Text0412>Shared account payment failed</NMC_Text0412>
+  <NMC_Text0413>Projection failed. Temporary copies recalled. No payment taken.</NMC_Text0413>
+  <NMC_Text0414>Recall this projection</NMC_Text0414>
+  <NMC_Text0415>Recall the projection so its source can fight again. Damage remains; energy and cooldown are not refunded.</NMC_Text0415>
+  <NMC_Text0416>Register for matrix projection</NMC_Text0416>
+  <NMC_Text0417>Allow projection of this turret elsewhere. It forms in 5 seconds and fights for 60 seconds. The source stops firing, supplies power and ammunition, and takes the projection's damage.</NMC_Text0417>
+  <NMC_Text0418>Recall linked projection</NMC_Text0418>
+  <NMC_Text0419>Recall this turret's projection to resume source combat. Damage remains; energy and cooldown are not refunded.</NMC_Text0419>
+  <NMC_Text0420>Forming {0}</NMC_Text0420>
+  <NMC_Text0421>Fighting {0}</NMC_Text0421>
+  <NMC_Text0422>
+Matrix projection · {0} seconds
+Source: {1} · Projection cannot be repaired</NMC_Text0422>
+  <NMC_Text0423>
+Matrix projection: source holds fire; can be damaged and repaired</NMC_Text0423>
+  <NMC_Text0424>Temporary projections cannot be uninstalled or moved. Recall first, then move the source.</NMC_Text0424>
+  <NMC_Text0425>Source unavailable; recalling projection</NMC_Text0425>
+  <NMC_Text0426>Matrix forming: no firing yet</NMC_Text0426>
+  <NMC_Text0427>Source powered</NMC_Text0427>
+  <NMC_Text0428>Source unpowered: projection holds fire</NMC_Text0428>
+  <NMC_Text0429>Unknown location</NMC_Text0429>
+  <NMC_Text0430>Power source: {0} ({1})
+{2}
+Projection uses source power and supplies</NMC_Text0430>
+  <NMC_Text0431>Purification beam unavailable underground</NMC_Text0431>
+  <NMC_Text0432>Mothership support temporarily disconnected</NMC_Text0432>
+  <NMC_Text0433>No open-air purification beam origin</NMC_Text0433>
+  <NMC_Text0434>Purification beam · 700 P + 550 V · Left click: origin / auto pursuit · Right click / Esc: cancel</NMC_Text0434>
+  <NMC_Text0435>Purification beam drafted · Left click: destination · Right click / Esc: cancel order</NMC_Text0435>
+  <NMC_Text0436>Five-ship arrival must avoid the map edge</NMC_Text0436>
+  <NMC_Text0437>Five-ship arrival point must be explored</NMC_Text0437>
+  <NMC_Text0438>Five-ship arrival cannot be under thick rock</NMC_Text0438>
+  <NMC_Text0439>Five-ship arrival cannot contain walls or impassable terrain</NMC_Text0439>
+  <NMC_Text0440>Zoraya legion arrival failed; no payment or cooldown applied</NMC_Text0440>
+  <NMC_Text0441>Legion contact lost. Reinforcements cancelled.</NMC_Text0441>
+  <NMC_Text0443>Not enough energy. Supplies returned; reinforcements cancelled.</NMC_Text0443>
+  <NMC_Text0444>Zoraya legion arrived: Zoraya + 4 void glowships. Stays 120 seconds after all arrive.</NMC_Text0444>
+  <NMC_Text0445>Zoraya legion · {0} P + {1} V · Left click: deploy; right click / Esc: cancel</NMC_Text0445>
+  <NMC_Text0446>Solar ray gun · 300 P + 180 V · Left click: three rays / 8 seconds · Right click / Esc: cancel</NMC_Text0446>
+  <NMC_Text0447>Legion equipment not ready; reinforcements unavailable</NMC_Text0447>
+  <NMC_Text0448>Legion troops unavailable for dispatch</NMC_Text0448>
+  <NMC_Text0449>Requires four nearby explored, standable cells without thick rock roofs</NMC_Text0449>
+  <NMC_Text0450>Seydas legion arrival failed; no payment or cooldown applied</NMC_Text0450>
+  <NMC_Text0451>Seydas legion arrived: Seydas + 3 dark archons. Warps out after 120 seconds.</NMC_Text0451>
+  <NMC_Text0453>Seydas legion · {0} P + {1} V · Left click: deploy; right click / Esc: cancel</NMC_Text0453>
+  <NMC_Text0454>Mental allegiance</NMC_Text0454>
+  <NMC_Text0455>Solar bombardment unavailable underground</NMC_Text0455>
+  <NMC_Text0456>No solar bombardment center: thick rock roofs block direct strikes</NMC_Text0456>
+  <NMC_Text0457>Solar bombardment ended: no valid impact points in range</NMC_Text0457>
+  <NMC_Text0458>Solar ray gun unavailable underground</NMC_Text0458>
+  <NMC_Text0459>No solar ray origin: thick rock roofs block direct hits</NMC_Text0459>
+  <NMC_Text0460>Solar bombardment · {0} P + {1} V · Left click: 300 shots · Right click / Esc: cancel aiming</NMC_Text0460>
+  <NMC_Text0461>Requires at least one available colony</NMC_Text0461>
+  <NMC_Text0462>Spacetime fluctuation: work speed ×10</NMC_Text0462>
+  <NMC_Text0463>Cannot deploy this structure</NMC_Text0463>
+  <NMC_Text0464>Construction core unavailable</NMC_Text0464>
+  <NMC_Text0465>Cannot deploy a core here</NMC_Text0465>
+  <NMC_Text0466>Core footprint cannot touch the map edge</NMC_Text0466>
+  <NMC_Text0467>Core footprint must be explored</NMC_Text0467>
+  <NMC_Text0468>Buildings, people or items here. Clear them first.</NMC_Text0468>
+  <NMC_Text0469>Requires 11 nearby explored, standable cells without thick rock roofs</NMC_Text0469>
+  <NMC_Text0470>Tebrus legion arrival failed; no payment or cooldown applied</NMC_Text0470>
+  <NMC_Text0471>Tebrus legion arrived: Tebrus + 10 melee warriors. Warps out after 120 seconds.</NMC_Text0471>
+  <NMC_Text0473>Tebrus legion · {0} P + {1} V · Left click: deploy; right click / Esc: cancel</NMC_Text0473>
+  <NMC_Text0474>Void suppression · Indestructible
+Radius 13 · Enemy movement and attack speed reduced to 30% · Turrets cease fire
+Remaining: {0}</NMC_Text0474>
+  <NMC_Text0475>The crystal must be within the map.</NMC_Text0475>
+  <NMC_Text0476>Crystal position must be explored</NMC_Text0476>
+  <NMC_Text0478>Void suppression crystal unavailable for deployment</NMC_Text0478>
+  <NMC_Text0479>Cannot place a crystal here</NMC_Text0479>
+  <NMC_Text0480>Void suppression crystal · {0} P + {1} V · Radius 18 / 30 seconds · Left click: deploy; right click / Esc: cancel</NMC_Text0480>
+  <NMC_Text0481>Void suppression crystal · {0}</NMC_Text0481>
+  <NMC_Text0711>Research required: precision ally recognition</NMC_Text0711>
+  <NMC_Text0712>Research precision ally recognition at an uplink terminal</NMC_Text0712>
+  <NMC_Text0713>Precision ally recognition · Not researched</NMC_Text0713>
+  <NMC_Text0714>Commander support fire protects your faction and allies.</NMC_Text0714>
+  <NMC_Text0715>{0}. Deliver materials at an uplink research terminal; enabled automatically upon completion.</NMC_Text0715>
+  <NMC_ResearchTaskLocked>Required mission incomplete. Research cannot be unlocked yet.</NMC_ResearchTaskLocked>
+  <NMC_ResearchTaskProgress>Continuum progress: {0}/{1} stages completed. Complete the required stage in the Quests tab, then return to the uplink research terminal.</NMC_ResearchTaskProgress>
+  <NMC_ResearchTaskButton>Mission incomplete</NMC_ResearchTaskButton>
+  <NMC_ResearchTaskAndResearchButton>Mission and research incomplete</NMC_ResearchTaskAndResearchButton>
+  <NMC_CarrierSteelTitle>Dragonfrost steel reserve</NMC_CarrierSteelTitle>
+  <NMC_CarrierSteelTooltip>Target: {0}. Drag the reserve bar to adjust the target. Each interceptor costs {1} dragonfrost steel. Colonists refill the grounded carrier. Transport cargo is not automatically transferred into this reserve.</NMC_CarrierSteelTooltip>
+  <NMC_CarrierSteelAirborne>Refilling is unavailable in flight; interceptors can still be built using the existing reserve.</NMC_CarrierSteelAirborne>
+  <NMC_CarrierSteelAutoFill>Automatically refill dragonfrost steel. When disabled, you can still order a colonist to refill with a right-click.</NMC_CarrierSteelAutoFill>
+  <NMC_CarrierSteelMissing>No available dragonfrost steel</NMC_CarrierSteelMissing>
+  <NMC_SettingsShortcut>Show mothership commander HUD</NMC_SettingsShortcut>
+  <NMC_SettingsUnlockAll>Research technologies without completing their missions</NMC_SettingsUnlockAll>
+  <NMC_SettingsUnlockAllHint>Off by default. Removes only this expansion’s mission requirements for research. Prerequisite technologies, material costs and normal research are still required. Does not complete technologies or missions, or bypass mothership support levels. Turning it off restores mission requirements and retains completed research.</NMC_SettingsUnlockAllHint>
+  <NMC_Text0748>Spacetime fluctuation: move speed ×2</NMC_Text0748>
+  <NMC_Text0749>Nutrition reserve</NMC_Text0749>
+  <NMC_Text0750>Target nutrition: {0}. Drag the reserve bar to adjust the target. Lowering it keeps existing nutrition; zero stops refilling. Choose food types in the Nutrition tab.</NMC_Text0750>
+  <NMC_Text0751>Automatically refill nutrition. Turning this off stops new automatic refill jobs; stored nutrition is still consumed. You can still right-click to order a colonist to refill.</NMC_Text0751>
+  <NMC_Text0752>Cancel upgrade ({0}/{1})</NMC_Text0752>
+  <NMC_Text0753>Only player-owned ships from this mod can fold</NMC_Text0753>
+  <NMC_Text0754>Wait for takeoff, landing or entry warp to finish</NMC_Text0754>
+  <NMC_Text0755>Fold the ship into a clear position inside the current energy field. Retains the hull, rotation, cargo, passengers and upgrade progress; carriers recover their fighters first. Unavailable during takeoff, landing or entry warp. Summoned fleets retain their original lifetime.
+
+Warping uses the Nivarian building printing effect: 4 seconds at departure, then 4 seconds at the actual arrival position (game time). Damage applies normally during both phases.
+
+Airborne ships can warp above terrain or buildings and remain airborne. Grounded ships still require a valid ground destination.</NMC_Text0755>
+  <NMC_WarpFuelRate>1 unit every 10 seconds</NMC_WarpFuelRate>
+  <NMC_WarpChanging>Changing mode: {0}s</NMC_WarpChanging>
+  <NMC_WarpFieldStatus>Energy field: radius 6; personnel warp destination</NMC_WarpFieldStatus>
+  <NMC_WarpFlightStatus>Flight mode: energy field retracted</NMC_WarpFlightStatus>
+  <NMC_WarpFlightMode>Flight mode</NMC_WarpFlightMode>
+  <NMC_WarpFieldMode>Energy field mode</NMC_WarpFieldMode>
+  <NMC_WarpLocked>Switch to flight mode first. Movement, landing and ship warp are unavailable while deployed or changing mode.</NMC_WarpLocked>
+  <NMC_WarpModeDescription>Switch modes in 1 second. The deployed prism hovers and slowly rotates, providing power, unit charging and personnel arrivals within 6 cells. Fields on one map share a 10,000 W budget. Hovering consumes flight fuel; ships cannot warp to prisms.</NMC_WarpModeDescription>
+  <NMC_WarpTakeoffFirst>Take off and finish ascending first.</NMC_WarpTakeoffFirst>
+  <NMC_WarpDestinationLost>The destination prism is inactive, out of fuel or has moved. Select a destination again.</NMC_WarpDestinationLost>
+  <NMC_WarpPrimaryDestination>Primary energy field</NMC_WarpPrimaryDestination>
+  <NMC_WarpPrismDestination>Warp prism: {0} ({1}, {2})</NMC_WarpPrismDestination>
+  <NMC_WarpRecallDescription>Warp to the primary field or a deployed prism, including across maps. Equipment and inventory travel with the colonist; carried loads are dropped and current work ends.
+
+Warping uses the Nivarian building printing effect: 4 seconds at departure, then 4 seconds at the actual arrival position (game time). Damage applies normally during both phases.</NMC_WarpRecallDescription>
+  <NMC_WarpBusy>Warping (4-second departure and 4-second arrival); damage still applies</NMC_WarpBusy>
+  <NMC_WarpDropUnavailable>Nivarian drop pod unavailable</NMC_WarpDropUnavailable>
+  <NMC_StormAttack>Thunder orb attack</NMC_StormAttack>
+  <NMC_StormAttackDesc>Designate a hostile target within 100 cells. Fires every 3 seconds: 20 direct damage at 80% armor penetration, then a 3×3 blast for 15 damage at 35% penetration. Both deal 5× damage to buildings.</NMC_StormAttackDesc>
+  <NMC_StormMustFly>Must be in flight and not currently warping</NMC_StormMustFly>
+  <NMC_StormFireAtWill>Fire at will</NMC_StormFireAtWill>
+  <NMC_StormAutoDesc>Automatically attack visible hostiles in range while airborne. Explicit targets remain active when this is off.</NMC_StormAutoDesc>
+  <NMC_StormClearTarget>Clear forced target</NMC_StormClearTarget>
+  <NMC_StormClearDesc>Clear the manually designated target. Automatic targeting continues if fire at will is enabled.</NMC_StormClearDesc>
+  <NMC_StormStatus>Thunder orb: range 100; cooldown {0}s</NMC_StormStatus>
+  <NMC_SageAttackMode>Attack mode</NMC_SageAttackMode>
+  <NMC_SageAttackModeDesc>When airborne, engage ground enemies within 12 cells. Fire two beams every 0.5 seconds, each dealing 6 damage with 30% armor penetration. Each volley costs 1 chemfuel, even after the battery upgrade. Detection remains active when weapons are off.</NMC_SageAttackModeDesc>
+  <NMC_SageTarget>Select ground target</NMC_SageTarget>
+  <NMC_SageTargetDesc>Prioritize a ground enemy within 12 cells; acquire another if it becomes invalid. Flying and gravity-lifted targets are excluded.</NMC_SageTargetDesc>
+  <NMC_SageMustAttack>Take off and enable attack mode; unavailable during warp.</NMC_SageMustAttack>
+  <NMC_SageStatus>Attack mode: {0}; passive detection radius: 50 cells</NMC_SageStatus>
+  <NMC_SageOn>On</NMC_SageOn>
+  <NMC_SageOff>Off</NMC_SageOff>
+  <NMC_Text0818>The Continuum defenders and defenses have been cleared, but the Continuum communications core still stands. The mission is not complete. Click this message to locate the core and manually order your troops or ships to attack it. Destroy it before leaving.</NMC_Text0818>
+  <NMC_Text0819>Locate Continuum communications core</NMC_Text0819>
+  <NMC_Text0820>Remaining objective: destroy the Continuum communications core (hit points {0}/{1}). Clearing the defenders and turrets alone does not complete the mission. Use “Locate Continuum communications core” and manually order your troops or ships to attack it. Complete the mission before leaving.</NMC_Text0820>
+</LanguageData>

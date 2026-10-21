@@ -116,15 +116,15 @@ namespace NivarianCommander
                     var follow = order.subject;
                     float size = order.subject is Pawn ? 1.4f : Mathf.Max(order.subject.def.graphicData.drawSize.x, order.subject.def.graphicData.drawSize.y);
                     if (printing == null || !printing.HasLiveGameObject || printing.IsOrphanFor(map))
-                        printing = LumiParticleEffects.SpawnAnimator(map, new LumiAnimatorData {
+                        printing = NativeVisualEffects.SpawnAnimator(map, new LumiAnimatorData {
                             prefabName = "animator_BuildingPrinting", position = position, scale = size,
                             rotation = Quaternion.identity, altitudeLayer = AltitudeLayer.MoteOverhead }, follow);
                     if (core == null || !core.HasLiveGameObject || core.IsOrphanFor(map))
-                        core = LumiParticleEffects.SpawnAnimator(map, new LumiAnimatorData {
+                        core = NativeVisualEffects.SpawnAnimator(map, new LumiAnimatorData {
                             prefabName = "animator_BuildingCore", position = position, scale = size,
                             rotation = Quaternion.identity, altitudeLayer = AltitudeLayer.MoteOverhead }, follow);
                     if (orb == null || !orb.HasLiveGameObject || orb.IsOrphanFor(map))
-                        orb = LumiParticleEffects.SpawnParticle(map, new LumiParticleData {
+                        orb = NativeVisualEffects.SpawnParticle(map, new LumiParticleData {
                             prefabName = "particle_RotateOrb", position = position + new Vector3(0f, -.02f, 0f),
                             size = size, rotation = Quaternion.identity }, follow);
                     printing?.MaintainDeathTick(2f); core?.MaintainDeathTick(2f); orb?.MaintainDeathTick(2f);

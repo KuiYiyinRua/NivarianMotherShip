@@ -54,7 +54,7 @@ namespace NivarianCommander
         {
             if (unavailable || Disposed) return false;
             if (lightMaterial != null) return true;
-            var shader = Shader.Find("Hidden/Internal-Colored");
+            var shader = NmcVisualShaders.Colored();
             if (shader == null || !shader.isSupported)
             {
                 unavailable = true;
@@ -68,7 +68,7 @@ namespace NivarianCommander
         }
         static Material Material(Shader shader, BlendMode destination, int queue)
         {
-            var result = new Material(shader) { hideFlags = HideFlags.HideAndDontSave, renderQueue = queue };
+            var result = new Material(NmcVisualShaders.ForBlend(shader, destination == BlendMode.One)) { hideFlags = HideFlags.HideAndDontSave, renderQueue = queue };
             result.SetInt("_SrcBlend", (int)BlendMode.SrcAlpha);
             result.SetInt("_DstBlend", (int)destination);
             result.SetInt("_Cull", (int)CullMode.Off);

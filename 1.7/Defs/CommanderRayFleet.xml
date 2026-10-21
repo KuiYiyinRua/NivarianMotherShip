@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef ParentName="NMC_FleetShipBase">
+    <defName>NMC_VoidRay</defName>
+    <label>辉光舰</label>
+    <description>佐拉亚军团的护航舰。棱晶光束每0.5秒造成2.4点起始伤害并附带冰冻，持续锁定时增伤，失去锁定后重置。通过“佐拉亚军团”支援召来，结束后撤离。</description>
+    <graphicData>
+      <texPath>NMC/Fleet/void_ray_v3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>(4.6,4.6)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>800</MaxHitPoints>
+      <MoveSpeed>5</MoveSpeed>
+    </statBases>
+    <comps>
+      <li Class="Nivarian.NivarianDrones.NivarianDroneComps.NivarianDroneComps_MovingBase_Props">
+        <compClass>NivarianCommander.FleetMoving</compClass>
+        <mass>6</mass>
+        <maxSpeed>5</maxSpeed>
+        <thrustNewtons>120</thrustNewtons>
+        <drag>0.5</drag>
+        <orbitSpeed>5</orbitSpeed>
+        <orbitRadius>8</orbitRadius>
+        <fixedWingIdleOrbitRadius>8</fixedWingIdleOrbitRadius>
+        <fixedWingIdleOrbitSpeedFactor>1</fixedWingIdleOrbitSpeedFactor>
+      </li>
+      <li Class="Nivarian.NivarianDrones.NivarianDroneComps.NivarianDroneComp_Warp_Props" />
+      <li Class="Nivarian.NivarianDrones.NivarianDroneComps.NivarianDroneComp_SearchTargetBaseProps">
+        <compClass>Nivarian.NivarianDrones.NivarianDroneComps.NivarianDroneComp_EnemySearchBase</compClass>
+        <searchRadius>10000</searchRadius>
+        <searchInterval>30</searchInterval>
+        <targetValidatorWorker>NivarianCommander.FleetSearchWorker</targetValidatorWorker>
+      </li>
+      <li Class="Nivarian_Race.Code.Comps.ThingComps.CompProperties_AttachTurret">
+        <compClass>NivarianCommander.FleetGun</compClass>
+        <turretDef>NMC_VoidRayGun</turretDef>
+        <turretID>VoidRay</turretID>
+        <randomIdleRotating>false</randomIdleRotating>
+        <rotationSpeed>12</rotationSpeed>
+        <targetingParams>
+          <canTargetPawns>true</canTargetPawns>
+          <canTargetBuildings>true</canTargetBuildings>
+          <canTargetItems>true</canTargetItems>
+        </targetingParams>
+        <graphicData>
+          <texPath>NMC/Fleet/void_ray_v3</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>Transparent</shaderType>
+          <drawSize>0.001</drawSize>
+        </graphicData>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="NMC_FleetGunBase">
+    <defName>NMC_VoidRayGun</defName>
+    <label>辉光舰光束</label>
+    <verbs>
+      <li>
+        <verbClass>NivarianCommander.Verb_FleetRay</verbClass>
+        <hasStandardCommand>false</hasStandardCommand>
+        <warmupTime>0</warmupTime>
+        <defaultCooldownTime>0</defaultCooldownTime>
+        <range>42</range>
+        <burstShotCount>1</burstShotCount>
+        <requireLineOfSight>true</requireLineOfSight>
+      </li>
+    </verbs>
+  </ThingDef>
+  <ThingDef ParentName="NMC_FleetShipBase">
+    <defName>NMC_Zoraya</defName>
+    <label>佐拉亚</label>
+    <description>佐拉亚军团的指挥舰。棱晶光束每0.5秒造成4.8点起始伤害并附带冰冻，持续锁定时增伤，失去锁定后重置。通过“佐拉亚军团”支援召来，结束后撤离。</description>
+    <graphicData>
+      <texPath>NMC/Fleet/zoraya_v1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+      <drawSize>(6.3,6.3)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1400</MaxHitPoints>
+      <MoveSpeed>5</MoveSpeed>
+    </statBases>
+    <comps>
+      <li Class="Nivarian.NivarianDrones.NivarianDroneComps.NivarianDroneComps_MovingBase_Props">
+        <compClass>NivarianCommander.FleetMoving</compClass>
+        <mass>8</mass>
+        <maxSpeed>5</maxSpeed>
+        <thrustNewtons>120</thrustNewtons>
+        <drag>0.5</drag>
+        <orbitSpeed>5</orbitSpeed>
+        <orbitRadius>8</orbitRadius>
+        <fixedWingIdleOrbitRadius>8</fixedWingIdleOrbitRadius>
+        <fixedWingIdleOrbitSpeedFactor>1</fixedWingIdleOrbitSpeedFactor>
+      </li>
+      <li Class="Nivarian.NivarianDrones.NivarianDroneComps.NivarianDroneComp_Warp_Props" />
+      <li Class="Nivarian.NivarianDrones.NivarianDroneComps.NivarianDroneComp_SearchTargetBaseProps">
+        <compClass>Nivarian.NivarianDrones.NivarianDroneComps.NivarianDroneComp_EnemySearchBase</compClass>
+        <searchRadius>10000</searchRadius>
+        <searchInterval>30</searchInterval>
+        <targetValidatorWorker>NivarianCommander.FleetSearchWorker</targetValidatorWorker>
+      </li>
+      <li Class="Nivarian_Race.Code.Comps.ThingComps.CompProperties_AttachTurret">
+        <compClass>NivarianCommander.FleetGun</compClass>
+        <turretDef>NMC_ZorayaRayGun</turretDef>
+        <turretID>ZorayaRay</turretID>
+        <randomIdleRotating>false</randomIdleRotating>
+        <rotationSpeed>12</rotationSpeed>
+        <targetingParams>
+          <canTargetPawns>true</canTargetPawns>
+          <canTargetBuildings>true</canTargetBuildings>
+          <canTargetItems>true</canTargetItems>
+        </targetingParams>
+        <graphicData>
+          <texPath>NMC/Fleet/zoraya_v1</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>Transparent</shaderType>
+          <drawSize>0.001</drawSize>
+        </graphicData>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="NMC_FleetGunBase">
+    <defName>NMC_ZorayaRayGun</defName>
+    <label>佐拉亚辉光束</label>
+    <verbs>
+      <li>
+        <verbClass>NivarianCommander.Verb_FleetRay</verbClass>
+        <hasStandardCommand>false</hasStandardCommand>
+        <warmupTime>0</warmupTime>
+        <defaultCooldownTime>0</defaultCooldownTime>
+        <range>46</range>
+        <burstShotCount>1</burstShotCount>
+        <requireLineOfSight>true</requireLineOfSight>
+      </li>
+    </verbs>
+  </ThingDef>
+  <NivarianCommander.SupportDamageDef>
+    <defName>NMC_FleetRayEnergy</defName>
+    <label>辉光能量伤害</label>
+    <workerClass>DamageWorker_Frostbite</workerClass>
+    <externalViolence>true</externalViolence>
+    <isRanged>true</isRanged>
+    <armorCategory>Sharp</armorCategory>
+    <hediff>Frostbite</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+    <hediffSolid>Crack</hediffSolid>
+    <defaultDamage>2.4</defaultDamage>
+    <defaultArmorPenetration>0.4</defaultArmorPenetration>
+  </NivarianCommander.SupportDamageDef>
+</Defs>

@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <NivarianCommander.CommanderAbilityDef>
+    <defName>NMC_S01</defName>
+    <number>1</number>
+    <label>折跃能量场</label>
+    <group>防御与生产</group>
+    <description>部署半径8格的供能区域，总供电10000W；友方单位每秒恢复20%最大能量。
+
+限一处主场。首次部署1000P、500V；迁移100P、50V。每0.1天维持消耗1P、1V，资源不足时关闭。完成“跨域人员折跃”后可接收殖民者。部署和迁移冷却统一为1分钟，不受该研究影响。
+
+解锁：在上行链路研究“折跃能量场支援协议”，随后从指挥官支援面板调用。</description>
+    <powerCost>1000</powerCost>
+    <volatileCost>500</volatileCost>
+    <cooldownTicks>3600</cooldownTicks>
+    <researchLabel>折跃能量场支援协议</researchLabel>
+  </NivarianCommander.CommanderAbilityDef>
+  <NivarianCommander.CommanderAbilityDef>
+    <defName>NMC_S02</defName>
+    <iconPath>NMC/Supports/orbital_strike</iconPath>
+    <number>2</number>
+    <label>轨道轰炸</label>
+    <group>轨道火力</group>
+    <description>可连续指定落点的轨道火力。每发覆盖3×3格，造成30伤害、35%穿甲，对建筑伤害×5；每发单独付费。
+
+不能用于地下或直接攻击厚山岩顶下的目标。完成“精确友军识别”研究后，支援火力避开己方和盟友。
+
+解锁：在上行链路研究“轨道轰炸支援协议”，随后从指挥官支援面板调用。</description>
+    <powerCost>15</powerCost>
+    <volatileCost>15</volatileCost>
+    <cooldownTicks>0</cooldownTicks>
+    <researchLabel>轨道轰炸支援协议</researchLabel>
+    <extraCost>按每次成功开火扣费</extraCost>
+  </NivarianCommander.CommanderAbilityDef>
+  <NivarianCommander.CommanderAbilityDef>
+    <defName>NMC_S03</defName>
+    <iconPath>NMC/Supports/shield_overload</iconPath>
+    <number>3</number>
+    <label>护盾超载</label>
+    <group>防御与生产</group>
+    <description>为当前地图上已有的友方单位和建筑提供200点护盾，持续30秒。护盾吸收护甲结算后的伤害，可与建筑超载护盾叠加。后来进入地图的友军不受影响。
+
+解锁：在上行链路研究“护盾超载支援协议”，随后从指挥官支援面板调用。</description>
+    <powerCost>600</powerCost>
+    <volatileCost>100</volatileCost>
+    <cooldownTicks>60000</cooldownTicks>
+    <researchLabel>护盾超载支援协议</researchLabel>
+  </NivarianCommander.CommanderAbilityDef>
+  <NivarianCommander.CommanderAbilityDef>
+    <defName>NMC_S04</defName>
+    <number>4</number>
+    <label>太阳轰炸</label>
+    <group>轨道火力</group>
+    <description>在半径13格内持续轰炸30秒，共300发。每发覆盖3×3格，造成30伤害，对建筑伤害×5，无距离衰减。适合摧毁密集阵地。
+
+启动后无法中止；不能用于地下或直接攻击厚山岩顶下的目标。
+
+解锁：在上行链路研究“太阳轰炸支援协议”，随后从指挥官支援面板调用。</description>
+    <powerCost>1000</powerCost>
+    <volatileCost>1000</volatileCost>
+    <cooldownTicks>600000</cooldownTicks>
+    <researchLabel>太阳轰炸支援协议</researchLabel>
+  </NivarianCommander.CommanderAbilityDef>
+  <NivarianCommander.CommanderAbilityDef>
+    <defName>NMC_S05</defName>
+    <iconPath>NMC/Supports/solar_ray_gun</iconPath>
+    <number>5</number>
+    <label>太阳能射线枪</label>
+    <group>轨道火力</group>
+    <description>部署三道自动追踪敌人的太阳能射线，持续8秒，造成能量和灼烧伤害。可提前结束。不能用于地下，厚山岩顶可阻挡攻击。
+
+解锁：在上行链路研究“太阳能射线枪支援协议”，随后从指挥官支援面板调用。</description>
+    <powerCost>200</powerCost>
+    <volatileCost>180</volatileCost>
+    <cooldownTicks>30000</cooldownTicks>
+    <researchLabel>太阳能射线枪支援协议</researchLabel>
+  </NivarianCommander.CommanderAbilityDef>
+  <NivarianCommander.CommanderAbilityDef>
+    <defName>NMC_S06</defName>
+    <iconPath>NMC/Supports/spacetime_wave</iconPath>
+    <number>6</number>
+    <label>时空波动</label>
+    <group>防御与生产</group>
+    <description>使各殖民地获得60秒加速：友方单位移动速度×2、工作速度×10，友方炮塔攻击冷却缩短至1/3，涅瓦莲建筑研究和生产速度×10。P、V产出不加速。
+
+解锁：在上行链路研究“时空波动支援协议”，随后从指挥官支援面板调用。</description>
+    <powerCost>350</powerCost>
+    <volatileCost>80</volatileCost>
+    <cooldownTicks>120000</cooldownTicks>
+    <researchLabel>时空波动支援协议</researchLabel>
+  </NivarianCommander.CommanderAbilityDef>
+  <NivarianCommander.CommanderAbilityDef>
+    <defName>NMC_S07</defName>
+    <iconPath>NMC/Supports/purification_beam</iconPath>
+    <number>7</number>
+    <label>净化光束</label>
+    <group>轨道火力</group>
+    <description>部署半径4格的移动光束，持续20秒，以每秒3格追踪敌人，造成能量和灼烧伤害。可征召并手动移动，也可提前结束。不能用于地下，厚山岩顶可阻挡攻击。
+
+解锁：在上行链路研究“净化光束支援协议”，随后从指挥官支援面板调用。</description>
+    <powerCost>700</powerCost>
+    <volatileCost>550</volatileCost>
+    <cooldownTicks>600000</cooldownTicks>
+    <researchLabel>净化光束支援协议</researchLabel>
+  </NivarianCommander.CommanderAbilityDef>
+  <NivarianCommander.CommanderAbilityDef>
+    <defName>NMC_S08</defName>
+    <iconPath>NMC/Supports/shadow_core</iconPath>
+    <number>8</number>
+    <label>暗影核心</label>
+    <group>暗影与控制</group>
+    <description>折跃涅瓦莲暗影能源塔构造体。交付150钢铁、4零部件和25龙晶后，由本体通用构造流程自动打印成形，基础施工20秒。
+
+能源塔消耗食物营养，提供1400W电力并产出P点，以占地2×2的四格分别为圆心，合并半径7格的范围，使其中友军隐形；选中能源塔可查看范围。缺少营养或停机时停止供能和隐形；塔身不受自身隐形场保护。
+
+解锁：在上行链路研究“暗影核心支援协议”，随后从指挥官支援面板调用。</description>
+    <powerCost>800</powerCost>
+    <volatileCost>300</volatileCost>
+    <cooldownTicks>60000</cooldownTicks>
+    <researchLabel>暗影核心支援协议</researchLabel>
+    <extraCost>钢铁 150 · 零部件 4 · 龙晶 25</extraCost>
+  </NivarianCommander.CommanderAbilityDef>
+  <NivarianCommander.CommanderAbilityDef>
+    <defName>NMC_S09</defName>
+    <iconPath>NMC/Supports/shadow_guard</iconPath>
+    <number>9</number>
+    <label>暗影卫队</label>
+    <group>暗影与控制</group>
+    <description>召来四名隐形近战卫队，自动作战120秒。配备大师品质的生物编码武器和幽灵装甲，攻击不解除隐形，但可被反隐能力发现。
+
+需存在非敌对的涅瓦莲幸存者派系。无法征召，支援结束后连同随身装备撤离。
+
+解锁：在上行链路研究“暗影卫队支援协议”，随后从指挥官支援面板调用。</description>
+    <powerCost>700</powerCost>
+    <volatileCost>600</volatileCost>
+    <cooldownTicks>600000</cooldownTicks>
+    <researchLabel>暗影卫队支援协议</researchLabel>
+  </NivarianCommander.CommanderAbilityDef>
+  <NivarianCommander.CommanderAbilityDef>
+    <defName>NMC_S10</defName>
+    <iconPath>NMC/Supports/black_hole</iconPath>
+    <number>10</number>
+    <label>黑洞</label>
+    <group>暗影与控制</group>
+    <description>制造半径8格、持续8秒的引力涡旋，以每秒12格牵引敌人并暂时消除其护甲。可牵引倒地和空中目标。自身不造成伤害，用于聚敌和配合火力。
+
+解锁：在上行链路研究“黑洞支援协议”，随后从指挥官支援面板调用。</description>
+    <powerCost>200</powerCost>
+    <volatileCost>150</volatileCost>
+    <cooldownTicks>600</cooldownTicks>
+    <researchLabel>黑洞支援协议</researchLabel>
+  </NivarianCommander.CommanderAbilityDef>
+  <NivarianCommander.CommanderAbilityDef>
+    <defName>NMC_S11</defName>
+    <iconPath>NMC/Supports/time_stop</iconPath>
+    <number>11</number>
+    <label>时间停止</label>
+    <group>暗影与控制</group>
+    <description>使各殖民地当前已有的敌人停止移动和攻击30秒，包括机械体、无人机和炮塔。后来抵达的敌人不受影响；伤势和疾病仍会变化。目标离场或不再敌对时解除。
+
+解锁：在上行链路研究“时间停止支援协议”，随后从指挥官支援面板调用。</description>
+    <powerCost>900</powerCost>
+    <volatileCost>600</volatileCost>
+    <cooldownTicks>600000</cooldownTicks>
+    <researchLabel>时间停止支援协议</researchLabel>
+  </NivarianCommander.CommanderAbilityDef>
+  <NivarianCommander.CommanderAbilityDef>
+    <defName>NMC_S12</defName>
+    <iconPath>NMC/Supports/building_overload</iconPath>
+    <number>12</number>
+    <label>建筑超载</label>
+    <group>防御与生产</group>
+    <description>为一座友方建筑提供200点护盾和激光武器，持续45秒。激光每0.5秒造成10伤害。每次消耗1次充能，充能每3天恢复1次，最多储存3次。
+
+解锁：在上行链路研究“建筑超载支援协议”，随后从指挥官支援面板调用。</description>
+    <powerCost>60</powerCost>
+    <volatileCost>80</volatileCost>
+    <cooldownTicks>0</cooldownTicks>
+    <researchLabel>建筑超载支援协议</researchLabel>
+    <extraCost>每次另消耗 1 次超载充能</extraCost>
+  </NivarianCommander.CommanderAbilityDef>
+  <NivarianCommander.CommanderAbilityDef>
+    <defName>NMC_S13</defName>
+    <iconPath>NMC/Supports/nivarian_fleet</iconPath>
+    <number>13</number>
+    <label>涅瓦莲舰队</label>
+    <group>远征援军</group>
+    <description>召来一艘战术母舰和八艘驱逐舰，全队抵达后自动作战120秒。母舰使用激光和能量弹，驱逐舰以持续锁定增伤的棱晶光束攻击。舰艇可被击毁，支援结束后舰艇和残骸撤回。
+
+解锁：在上行链路研究“涅瓦莲舰队支援协议”，随后从指挥官支援面板调用。</description>
+    <powerCost>2000</powerCost>
+    <volatileCost>2000</volatileCost>
+    <cooldownTicks>1800000</cooldownTicks>
+    <researchLabel>涅瓦莲舰队支援协议</researchLabel>
+  </NivarianCommander.CommanderAbilityDef>
+  <NivarianCommander.CommanderAbilityDef>
+    <defName>NMC_S14</defName>
+    <iconPath>NMC/Supports/tebrus_legion</iconPath>
+    <number>14</number>
+    <label>特布鲁斯军团</label>
+    <group>远征援军</group>
+    <description>召来特布鲁斯和十名近战战士，自动作战120秒。特布鲁斯使用灵能脉冲枪和灵能风暴，风暴伤害敌人并治疗友军。
+
+需非敌对的涅瓦莲幸存者派系。无法征召，成员和专属装备在支援结束后撤离。远征军团共用7天冷却。
+
+解锁：在上行链路研究“特布鲁斯军团支援协议”，随后从指挥官支援面板调用。</description>
+    <powerCost>900</powerCost>
+    <volatileCost>850</volatileCost>
+    <cooldownTicks>420000</cooldownTicks>
+    <researchLabel>特布鲁斯军团支援协议</researchLabel>
+  </NivarianCommander.CommanderAbilityDef>
+  <NivarianCommander.CommanderAbilityDef>
+    <defName>NMC_S15</defName>
+    <iconPath>NMC/Supports/zoraya_legion</iconPath>
+    <number>15</number>
+    <label>佐拉亚军团</label>
+    <group>远征援军</group>
+    <description>召来指挥舰佐拉亚和四艘辉光舰，抵达后自动作战120秒。棱晶光束附带冰冻，持续锁定同一目标时逐渐增伤。
+
+需非敌对的涅瓦莲幸存者派系。支援结束后舰艇和残骸撤回。远征军团共用7天冷却。
+
+解锁：在上行链路研究“佐拉亚军团支援协议”，随后从指挥官支援面板调用。</description>
+    <powerCost>900</powerCost>
+    <volatileCost>850</volatileCost>
+    <cooldownTicks>420000</cooldownTicks>
+    <researchLabel>佐拉亚军团支援协议</researchLabel>
+  </NivarianCommander.CommanderAbilityDef>
+  <NivarianCommander.CommanderAbilityDef>
+    <defName>NMC_S16</defName>
+    <iconPath>NMC/Supports/seydas_legion</iconPath>
+    <number>16</number>
+    <label>赛达斯军团</label>
+    <group>远征援军</group>
+    <description>召来赛达斯和三名黑暗执政官，自动作战120秒。心灵支配可使敌人永久加入涅瓦莲幸存者派系，不会成为殖民者。
+
+需非敌对的涅瓦莲幸存者派系。无法征召，成员和专属装备在支援结束后撤离。远征军团共用7天冷却。
+
+解锁：在上行链路研究“赛达斯军团支援协议”，随后从指挥官支援面板调用。</description>
+    <powerCost>900</powerCost>
+    <volatileCost>850</volatileCost>
+    <cooldownTicks>420000</cooldownTicks>
+    <researchLabel>赛达斯军团支援协议</researchLabel>
+  </NivarianCommander.CommanderAbilityDef>
+  <NivarianCommander.CommanderAbilityDef>
+    <defName>NMC_S17</defName>
+    <iconPath>NMC/Supports/hyperdimensional_monolith</iconPath>
+    <number>17</number>
+    <label>超维空间巨石</label>
+    <group>设施与投射</group>
+    <description>折跃涅瓦莲超维空间巨石构造体。交付300钢铁、10零部件和60龙晶后，由本体通用构造流程自动打印成形，基础施工45秒。
+
+巨石消耗1000W电力，无需弹药；每2秒攻击60格内最多10名敌人，各造成3伤害和1秒眩晕。
+
+解锁：在上行链路研究“超维空间巨石支援协议”，随后从指挥官支援面板调用。</description>
+    <powerCost>900</powerCost>
+    <volatileCost>600</volatileCost>
+    <cooldownTicks>900000</cooldownTicks>
+    <researchLabel>超维空间巨石支援协议</researchLabel>
+    <extraCost>钢铁 300 · 零部件 10 · 龙晶 60</extraCost>
+  </NivarianCommander.CommanderAbilityDef>
+  <NivarianCommander.CommanderAbilityDef>
+    <defName>NMC_S18</defName>
+    <iconPath>NMC/Supports/void_crystal</iconPath>
+    <number>18</number>
+    <label>虚空抑制晶体</label>
+    <group>暗影与控制</group>
+    <description>部署持续30秒的抑制晶体。半径18格内，敌人移动和攻击速度降至30%，敌方炮塔停火；离开范围后恢复，同类效果不叠加。
+
+晶体不可被攻击摧毁，不阻挡通行，可与地面物体重叠，也可提前撤回。
+
+解锁：在上行链路研究“虚空抑制晶体支援协议”，随后从指挥官支援面板调用。</description>
+    <powerCost>100</powerCost>
+    <volatileCost>50</volatileCost>
+    <cooldownTicks>600000</cooldownTicks>
+    <researchLabel>虚空抑制晶体支援协议</researchLabel>
+  </NivarianCommander.CommanderAbilityDef>
+  <NivarianCommander.CommanderAbilityDef>
+    <defName>NMC_S19</defName>
+    <number>19</number>
+    <label>超维空间矩阵投射</label>
+    <group>设施与投射</group>
+    <description>将已登记炮塔及防御无人机基站投射至指定中心周围20格内。投影在落点以涅瓦莲构建特效形成，准备5秒后作战60秒，以本体当前生命值的50%出现。
+
+本体停止射击并供应电力、燃料和弹药；投影受损也会伤及本体。投影不能维修或搬迁，可提前撤回。
+
+解锁：在上行链路研究“超维空间矩阵投射支援协议”，随后从指挥官支援面板调用。
+
+冷却2天，消耗300P和100V。无人机基站投射期间，本体无人机回收，现有电池转供投影；结束后剩余电量归还本体。</description>
+    <powerCost>300</powerCost>
+    <volatileCost>100</volatileCost>
+    <cooldownTicks>120000</cooldownTicks>
+    <researchLabel>超维空间矩阵投射支援协议</researchLabel>
+  </NivarianCommander.CommanderAbilityDef>
+</Defs>

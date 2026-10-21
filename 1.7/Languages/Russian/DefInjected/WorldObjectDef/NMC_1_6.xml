@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_CarrierFlying.label>Авианосец нивариан</NMC_CarrierFlying.label>
+  <NMC_CarrierFlying.description>Авианосец нивариан в дальнем полёте, перевозящий людей, груз и перехватчики.</NMC_CarrierFlying.description>
+  <NMC_GravityFrigateFlying.label>Гравитационный корабль нивариан</NMC_GravityFrigateFlying.label>
+  <NMC_GravityFrigateFlying.description>Гравитационный корабль нивариан в дальнем полёте с людьми и грузом.</NMC_GravityFrigateFlying.description>
+  <NMC_WarpPrismFlying.label>Варп-корабль нивариан</NMC_WarpPrismFlying.label>
+  <NMC_WarpPrismFlying.description>Варп-корабль нивариан перевозит пассажиров и груз по миру.</NMC_WarpPrismFlying.description>
+  <NMC_StormShipFlying.label>Ниварианская «Буря»</NMC_StormShipFlying.label>
+  <NMC_StormShipFlying.description>Ниварианская «Буря» перевозит пассажиров и груз по миру.</NMC_StormShipFlying.description>
+  <NMC_SageShipFlying.label>Корабль-мудрец нивариан</NMC_SageShipFlying.label>
+  <NMC_SageShipFlying.description>Корабль-мудрец нивариан перевозит пассажиров и грузы между точками мира.</NMC_SageShipFlying.description>
+</LanguageData>

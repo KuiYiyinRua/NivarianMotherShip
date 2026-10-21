@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_Continuum.label>连续体作战网络</NMC_Continuum.label>
+  <NMC_Continuum.fixedName>连续体</NMC_Continuum.fixedName>
+  <NMC_Continuum.description>由连续体基地组成的敌对作战网络，指挥机械体和涅拉战斗单元守卫战术资料。基地遇袭后可能通过空投补充兵力。</NMC_Continuum.description>
+  <NMC_Continuum.pawnSingular>连续体战斗单元</NMC_Continuum.pawnSingular>
+  <NMC_Continuum.pawnsPlural>连续体战斗单元</NMC_Continuum.pawnsPlural>
+</LanguageData>

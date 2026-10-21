@@ -438,7 +438,12 @@ namespace NivarianCommander
     [HarmonyPatch]
     public static class FieldWirelessNetCredit
     {
-        static MethodBase TargetMethod() => FieldWirelessTargets.Resolve("Patch_PowerNet_CurrentEnergyGainRate_WirelessPower", "Postfix");
+        static MethodBase TargetMethod() => FieldWirelessTargets.Resolve("Patch_PowerNet_CurrentEnergyGainRate_WirelessPower",
+#if RIMWORLD_1_7
+            "ExcludeWirelessConsumption");
+#else
+            "Postfix");
+#endif
         public static bool CreditPowered(CompPowerTrader p) => p.PowerOn && FieldEnergy.For(p.parent.Map)?.OwnWirelessSupply(p) != true;
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {

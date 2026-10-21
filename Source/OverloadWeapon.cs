@@ -64,7 +64,7 @@ namespace NivarianCommander
                     start += direction * .6f;
                     end -= direction * .4f;
                 }
-                if (LumiParticleEffects.SpawnLine(map, start, end, PrismBeam) == null)
+                if (NativeVisualEffects.SpawnLine(map, start, end, PrismBeam) == null)
                     Log.ErrorOnce("[NMC] Could not create the Prism Catawand overload beam.", 9401201);
             }
             catch (Exception ex)

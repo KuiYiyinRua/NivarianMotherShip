@@ -17,7 +17,13 @@ namespace NivarianCommander
     public static class CommanderProgression
     {
         public const string MilitaryPackage = "keeptpa.NivarianDraconicMilitary";
-        public static bool CampaignEnabled => ModsConfig.IsActive(MilitaryPackage);
+        public static bool CampaignEnabled => ModsConfig.IsActive(MilitaryPackage)
+#if RIMWORLD_1_7
+            // Nivarian 1.7 includes the former military addon in its own load folders.
+            || (DefDatabase<PawnKindDef>.GetNamedSilentFail("Nivarian_MechUnit_Colonist") != null
+                && DefDatabase<ThingDef>.GetNamedSilentFail("Nivarian_DroneHub_AttackerStrafing") != null)
+#endif
+            ;
         public static readonly string[] Legacy = { "TacticalProtocol", "LightWeapons", "ShadowWarp", "Spacetime", "LegionContact", "HigherDimensions", "FleetBeacon" };
         public static string LegacyFor(int n) => "NMC_" + (n == 1 || n == 2 || n == 3 || n == 12 ? Legacy[0]
             : n == 4 || n == 5 || n == 7 ? Legacy[1] : n == 8 || n == 9 || n == 10 ? Legacy[2]

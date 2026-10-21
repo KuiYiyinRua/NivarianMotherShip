@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_FrigateBeamDamage.label>重力艦プリズムレーザー</NMC_FrigateBeamDamage.label>
+  <NMC_OrbitalEnergy.label>軌道エネルギー攻撃</NMC_OrbitalEnergy.label>
+  <NMC_SolarBombEnergy.label>太陽爆撃エネルギー</NMC_SolarBombEnergy.label>
+  <NMC_SolarRayEnergy.label>太陽ビームエネルギー</NMC_SolarRayEnergy.label>
+  <NMC_SolarRayBurn.label>太陽ビーム火傷</NMC_SolarRayBurn.label>
+  <NMC_PurificationEnergy.label>浄化ビームエネルギー</NMC_PurificationEnergy.label>
+  <NMC_PurificationBurn.label>浄化ビーム火傷</NMC_PurificationBurn.label>
+  <NMC_OverloadEnergy.label>過負荷青色レーザー</NMC_OverloadEnergy.label>
+  <NMC_FleetMothershipEnergy.label>母艦エネルギーダメージ</NMC_FleetMothershipEnergy.label>
+  <NMC_FleetDestroyerEnergy.label>駆逐艦エネルギーダメージ</NMC_FleetDestroyerEnergy.label>
+  <NMC_FleetMothershipLaser.label>母艦プリズムレーザー</NMC_FleetMothershipLaser.label>
+  <NMC_FleetRayEnergy.label>輝光エネルギーダメージ</NMC_FleetRayEnergy.label>
+  <NMC_MonolithEnergy.label>超次元制御ビーム</NMC_MonolithEnergy.label>
+</LanguageData>

@@ -1,0 +1,120 @@
+<Defs>
+  <!-- Keep legacy cores for saves with construction already in progress. New deployments use the native sites below. -->
+  <ThingDef Name="NMC_NativeConstructionBase" ParentName="Nivarian_SelfBuildingSiteBase" Abstract="True">
+    <rotatable>false</rotatable>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <graphicData><texPath>Nivarian/Building/Core/building_core</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1,1)</drawSize></graphicData>
+  </ThingDef>
+  <ThingDef ParentName="NMC_NativeConstructionBase">
+    <defName>NMC_ShadowConstruction</defName><label>暗影能源塔构造体</label>
+    <description>折跃涅瓦莲暗影能源塔构造体。交付150钢铁、4零部件和25龙晶后，由本体通用构造流程自动打印成形，基础施工20秒。</description>
+    <size>(2,2)</size>
+    <comps>
+      <li Class="Nivarian_Race.Code.Comps.BuildingComps.CompProperties_SelfBuilding">
+        <buildingDef>NMC_ShadowEnergyTower</buildingDef><constructionSpeed>1</constructionSpeed>
+      </li>
+      <li Class="NivarianCommander.CompProperties_CommanderStructure"><cloakImmune>true</cloakImmune></li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="NMC_NativeConstructionBase">
+    <defName>NMC_MonolithConstruction</defName><label>超维空间巨石构造体</label>
+    <description>折跃涅瓦莲超维空间巨石构造体。交付300钢铁、10零部件和60龙晶后，由本体通用构造流程自动打印成形，基础施工45秒。</description>
+    <size>(3,3)</size>
+    <comps><li Class="Nivarian_Race.Code.Comps.BuildingComps.CompProperties_SelfBuilding">
+      <buildingDef>NMC_HyperdimensionalMonolith</buildingDef><constructionSpeed>1</constructionSpeed>
+    </li></comps>
+  </ThingDef>
+  <ThingDef Name="NMC_CoreBase" ParentName="BuildingBase" Abstract="True">
+    <thingClass>NivarianCommander.Building_CommanderStructure</thingClass>
+    <tickerType>Normal</tickerType><useHitPoints>true</useHitPoints><selectable>true</selectable>
+    <rotatable>false</rotatable><altitudeLayer>Building</altitudeLayer><passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent><terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled><resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <costList />
+    <statBases><WorkToBuild>0</WorkToBuild><Flammability>0</Flammability></statBases>
+    <graphicData><texPath>Nivarian/Building/CryoForge/cryo_forge</texPath><graphicClass>Graphic_Single</graphicClass><color>(0.65, 0.85, 1)</color><drawSize>(2.8,2.8)</drawSize></graphicData>
+    <comps><li Class="Nivarian_Race.Code.Comps.BuildingComps.CompProperties_UniversalContainer" /><li Class="CompProperties_Forbiddable" /></comps>
+  </ThingDef>
+  <ThingDef ParentName="NMC_CoreBase">
+    <defName>NMC_ShadowCore</defName><label>涅瓦莲暗影核心</label>
+    <description>暗影能源塔的施工核心。运入150钢铁、4零部件和25龙晶，20秒后自动完工。
+
+获取：研究“暗影核心支援协议”后，在支援面板部署。取消施工退还已交建材。</description>
+    <size>(2,2)</size><statBases><MaxHitPoints>800</MaxHitPoints></statBases>
+    <comps><li Class="NivarianCommander.CompProperties_CommanderConstruction">
+      <completedDef>NMC_ShadowEnergyTower</completedDef><constructionTicks>1200</constructionTicks><cloakImmune>true</cloakImmune>
+      <ingredients><Steel>150</Steel><ComponentIndustrial>4</ComponentIndustrial><Nivarian_DragonCrystal>25</Nivarian_DragonCrystal></ingredients>
+    </li></comps>
+  </ThingDef>
+  <ThingDef ParentName="NMC_CoreBase">
+    <defName>NMC_MonolithCore</defName><label>超维空间巨石核心</label>
+    <description>超维空间巨石的施工核心。运入300钢铁、10零部件和60龙晶，45秒后自动完工。
+
+获取：研究“超维空间巨石支援协议”后，在支援面板部署。取消施工退还已交建材。</description>
+    <size>(3,3)</size><statBases><MaxHitPoints>1800</MaxHitPoints></statBases>
+    <graphicData><texPath>NMC/Buildings/hyperdimensional_monolith</texPath><graphicClass>Graphic_Single</graphicClass><color>(1,1,1)</color><drawSize>(3.6,3.6)</drawSize></graphicData>
+    <comps><li Class="NivarianCommander.CompProperties_CommanderConstruction">
+      <completedDef>NMC_HyperdimensionalMonolith</completedDef><constructionTicks>2700</constructionTicks>
+      <ingredients><Steel>300</Steel><ComponentIndustrial>10</ComponentIndustrial><Nivarian_DragonCrystal>60</Nivarian_DragonCrystal></ingredients>
+    </li></comps>
+  </ThingDef>
+  <ThingDef Name="NMC_StructureBase" ParentName="BuildingBase" Abstract="True">
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <thingClass>NivarianCommander.Building_CommanderStructure</thingClass>
+    <tickerType>Normal</tickerType><useHitPoints>true</useHitPoints><selectable>true</selectable>
+    <rotatable>false</rotatable><altitudeLayer>Building</altitudeLayer><passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent><terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled><resourcesFractionWhenDeconstructed>0.5</resourcesFractionWhenDeconstructed>
+    <statBases><WorkToBuild>0</WorkToBuild><Flammability>0</Flammability></statBases>
+  </ThingDef>
+  <ThingDef ParentName="NMC_StructureBase">
+    <defName>NMC_ShadowEnergyTower</defName><label>涅瓦莲暗影能源塔</label>
+    <description>消耗食物营养的能源设施，占地2×2格，发电1400W并产出P点。以占地2×2的四格分别为圆心，合并半径7格的范围，使其中友军隐形；选中能源塔可查看范围，塔身不受自身隐形场保护。缺少营养或停机时停止供能和隐形。
+
+获取：研究“暗影核心支援协议”，部署核心并交付建材。补给种类可在“营养”页设置。</description>
+    <thingClass>NivarianCommander.Building_NutrientEnergyTower</thingClass>
+    <size>(2,2)</size><statBases><MaxHitPoints>800</MaxHitPoints><WorkToBuild>1200</WorkToBuild></statBases>
+    <graphicData><texPath>NMC/Buildings/shadow_energy_tower</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(2.2,2.2)</drawSize><shadowData IsNull="True"/></graphicData>
+    <passability>Impassable</passability><fillPercent>0.65</fillPercent><blockWind>true</blockWind>
+    <castEdgeShadows>false</castEdgeShadows><staticSunShadowHeight>0</staticSunShadowHeight><canOverlapZones>false</canOverlapZones>
+    <inspectorTabs><li>ITab_BiosculpterNutritionStorage</li></inspectorTabs>
+    <building>
+      <isEdifice>true</isEdifice><ai_chillDestination>false</ai_chillDestination><haulToContainerDuration>120</haulToContainerDuration>
+      <fixedStorageSettings><filter><categories><li>Foods</li></categories><specialFiltersToDisallow><li>AllowPlantFood</li></specialFiltersToDisallow></filter></fixedStorageSettings>
+      <defaultStorageSettings><filter><categories><li>Foods</li></categories><disallowedCategories><li>EggsFertilized</li></disallowedCategories><disallowedThingDefs><li>InsectJelly</li><li>MealLavish</li><li>MealLavish_Veg</li><li>MealLavish_Meat</li><li>HemogenPack</li><li>Chocolate</li></disallowedThingDefs></filter></defaultStorageSettings>
+    </building>
+    <costList><Steel>150</Steel><ComponentIndustrial>4</ComponentIndustrial><Nivarian_DragonCrystal>25</Nivarian_DragonCrystal></costList>
+    <comps>
+      <li Class="NivarianCommander.CompProperties_CommanderStructure"><cloakRadius>7</cloakRadius><cloakImmune>true</cloakImmune></li>
+      <li Class="CompProperties_Power"><compClass>NivarianCommander.CompPowerPlant_NutrientTower</compClass><basePowerConsumption>-1400</basePowerConsumption><transmitsPower>true</transmitsPower></li>
+      <li Class="CompProperties_Flickable"/><li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <modExtensions><li Class="NivarianCommander.NutrientEnergyTowerProperties"><rateMultiplier>2</rateMultiplier></li></modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="NMC_StructureBase">
+    <defName>NMC_HyperdimensionalMonolith</defName><label>超维空间巨石</label>
+    <description>大范围控制炮塔。射程60格，每2秒攻击最多10名敌人，各造成3伤害和1秒眩晕。耗电1000W，无需弹药。
+
+获取：研究“超维空间巨石支援协议”，部署核心并交付建材。</description>
+    <size>(3,3)</size><statBases><MaxHitPoints>1800</MaxHitPoints><WorkToBuild>2700</WorkToBuild></statBases>
+    <graphicData><texPath>NMC/Buildings/hyperdimensional_monolith</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(3.6,3.6)</drawSize></graphicData>
+    <costList><Steel>300</Steel><ComponentIndustrial>10</ComponentIndustrial><Nivarian_DragonCrystal>60</Nivarian_DragonCrystal></costList>
+    <comps>
+      <li Class="NivarianCommander.CompProperties_CommanderStructure" />
+      <li Class="NivarianCommander.CompProperties_MonolithWeapon">
+        <turretGraphic><texPath>NMC/Buildings/hyperdimensional_monolith_head</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(3,3)</drawSize></turretGraphic>
+        <turretPivot>(0.5,0.605)</turretPivot>
+        <turretMuzzleOffset>1.43</turretMuzzleOffset>
+      </li>
+      <li Class="CompProperties_Power"><compClass>CompPowerTrader</compClass><basePowerConsumption>1000</basePowerConsumption><transmitsPower>true</transmitsPower></li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+  </ThingDef>
+  <NivarianCommander.SupportDamageDef>
+    <defName>NMC_MonolithEnergy</defName><label>超维控制束</label>
+    <workerClass>DamageWorker_AddInjury</workerClass><externalViolence>true</externalViolence><isRanged>true</isRanged>
+    <armorCategory>Sharp</armorCategory><hediff>Burn</hediff><hediffSolid>Crack</hediffSolid>
+    <defaultDamage>3</defaultDamage><defaultArmorPenetration>0</defaultArmorPenetration>
+    <buildingDamageFactor>1</buildingDamageFactor><buildingDamageFactorPassable>1</buildingDamageFactorPassable><buildingDamageFactorImpassable>1</buildingDamageFactorImpassable>
+  </NivarianCommander.SupportDamageDef>
+</Defs>

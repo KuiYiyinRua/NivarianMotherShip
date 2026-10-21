@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_Continuum.label>Réseau de combat du Continuum</NMC_Continuum.label>
+  <NMC_Continuum.fixedName>Continuum</NMC_Continuum.fixedName>
+  <NMC_Continuum.description>Réseau hostile de bases du Continuum commandant mécanoïdes et unités Nira pour garder les données tactiques. Les bases attaquées peuvent recevoir des renforts aéroportés.</NMC_Continuum.description>
+  <NMC_Continuum.pawnSingular>Unité de combat du Continuum</NMC_Continuum.pawnSingular>
+  <NMC_Continuum.pawnsPlural>Unité de combat du Continuum</NMC_Continuum.pawnsPlural>
+</LanguageData>

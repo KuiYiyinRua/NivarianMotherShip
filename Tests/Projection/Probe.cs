@@ -49,6 +49,9 @@ namespace NMC.ProjectionProbe
                 || Current.ProgramState != ProgramState.Playing || LongEventHandler.AnyEventNowOrWaiting) return;
             try
             {
+#if RIMWORLD_1_7
+                NMC.RimWorld17Fixtures.Projection17Fixture.EnsureCompute();
+#endif
                 if (stage == 0 && File.Exists(Path.Combine(Root, "reload")))
                 {
                     Find.TickManager.Pause();
@@ -85,6 +88,10 @@ namespace NMC.ProjectionProbe
                     foreach (var link in links.Where(l => !ProjectionDrones.Eligible(l.source))) ProjectionActions.Cancel(link.targetMap, link.projection);
                     Need(ProjectionRegistry.Current.links.Count == 0, "loaded projections recalled");
                     Need(flight.All(d => d.Destroyed), "recall, destruction and expiry remove native drones");
+#if RIMWORLD_1_7
+                    Need(Nivarian_Race.Code.Features.ComputeNetwork.GameComp_NivarianCompute.Instance.DeviceBandwidthUsed == 0,
+                        "all native device bandwidth released after projection recall");
+#endif
                     foreach (var link in links.Where(l => ProjectionDrones.Eligible(l.source)))
                         Need(Pool(link.source.TryGetComp<NivarianDroneHubComp>()).Count == 1, "loaded battery returned exactly once");
                     File.WriteAllText(Path.Combine(Root, "complete"), "PASS"); done = true; Application.Quit(); return;
@@ -94,7 +101,8 @@ namespace NMC.ProjectionProbe
                     Find.TickManager.Pause(); map = Find.CurrentMap; center = map.Center;
                     foreach (var c in CellRect.CenteredOn(center, 24))
                     {
-                        foreach (var thing in c.GetThingList(map).ToArray()) if (!(thing is Pawn)) thing.Destroy();
+                        foreach (var thing in c.GetThingList(map).ToArray()) if (!(thing is Pawn))
+                        { if(thing.def.destroyable)thing.Destroy();else thing.DeSpawn(); }
                         map.terrainGrid.SetTerrain(c, TerrainDefOf.Concrete); map.roofGrid.SetRoof(c, null); map.fogGrid.Unfog(c);
                     }
                     foreach (string key in new[] { "PowerCoin", "VolatileReactive" })
@@ -126,6 +134,10 @@ namespace NMC.ProjectionProbe
                         }
                         ProjectionActions.Register(map, thing, true);
                     }
+#if RIMWORLD_1_7
+                    Need(Nivarian_Race.Code.Features.ComputeNetwork.GameComp_NivarianCompute.Instance.Reservations.Count() == 3,
+                        "three source drones reserve native device bandwidth");
+#endif
                     int p = NativeLedger.Balance("PowerCoin"), v = NativeLedger.Balance("VolatileReactive");
                     ProjectionActions.Start(map, center + new IntVec3(9, 0, 0));
                     links = ProjectionRegistry.Current.links.ToList();

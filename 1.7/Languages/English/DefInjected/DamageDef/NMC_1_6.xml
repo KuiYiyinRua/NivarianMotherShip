@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_TebrusPulseDamage.label>Psionic pulse</NMC_TebrusPulseDamage.label>
+  <NMC_TebrusStormDamage.label>Psionic storm</NMC_TebrusStormDamage.label>
+  <NMC_StormImpactDamage.label>thunder orb impact</NMC_StormImpactDamage.label>
+  <NMC_StormBlastDamage.label>thunder orb blast</NMC_StormBlastDamage.label>
+  <NMC_SageBeamDamage.label>Sage prism beam</NMC_SageBeamDamage.label>
+</LanguageData>

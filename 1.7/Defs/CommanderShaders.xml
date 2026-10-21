@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ShaderDef Name="NMC_VertexColorBase" Abstract="True">
+    <shaderProgram>
+      <vertexShaderFileName>NMC/VertexColor.vert.glsl</vertexShaderFileName>
+      <fragmentShaderFileName>NMC/VertexColor.frag.glsl</fragmentShaderFileName>
+      <transparent>true</transparent><depthTest>true</depthTest><depthWrite>false</depthWrite>
+      <cullMode>None</cullMode><renderQueue>3100</renderQueue>
+      <blendMode>Custom</blendMode><blendSrcFactor>SrcAlpha</blendSrcFactor><blendDstFactor>OneMinusSrcAlpha</blendDstFactor>
+    </shaderProgram>
+  </ShaderDef>
+  <ShaderDef ParentName="NMC_VertexColorBase"><defName>NMC_VertexAlpha</defName></ShaderDef>
+  <ShaderDef ParentName="NMC_VertexColorBase"><defName>NMC_VertexAdditive</defName><shaderProgram><blendDstFactor>One</blendDstFactor></shaderProgram></ShaderDef>
+  <ShaderDef>
+    <defName>NMC_BlackHoleLens</defName>
+    <shaderProgram>
+      <vertexShaderFileName>NMC/Screen.vert.glsl</vertexShaderFileName>
+      <fragmentShaderFileName>NMC/BlackHole.frag.glsl</fragmentShaderFileName>
+      <flipTextureST>false</flipTextureST><depthTest>false</depthTest><depthWrite>false</depthWrite><cullMode>None</cullMode>
+    </shaderProgram>
+  </ShaderDef>
+</Defs>

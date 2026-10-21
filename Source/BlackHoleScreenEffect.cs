@@ -1,3 +1,4 @@
+#if !RIMWORLD_1_7
 using System;
 using RimWorld.Planet;
 using UnityEngine;
@@ -303,3 +304,4 @@ namespace NivarianCommander
         }
     }
 }
+#endif

@@ -130,7 +130,7 @@ namespace NivarianCommander
             if (unavailable) return false;
             if (alphaMaterial != null) return true;
             // The installed player includes this built-in unlit vertex-color shader.
-            var shader = Shader.Find("Hidden/Internal-Colored");
+            var shader = NmcVisualShaders.Colored();
             if (shader == null || !shader.isSupported)
             {
                 unavailable = true;
@@ -144,7 +144,7 @@ namespace NivarianCommander
 
         static Material NewMaterial(Shader shader, BlendMode destination, int queue)
         {
-            var material = new Material(shader) { hideFlags = HideFlags.HideAndDontSave, renderQueue = queue };
+            var material = new Material(NmcVisualShaders.ForBlend(shader, destination == BlendMode.One)) { hideFlags = HideFlags.HideAndDontSave, renderQueue = queue };
             material.SetInt("_SrcBlend", (int)BlendMode.SrcAlpha);
             material.SetInt("_DstBlend", (int)destination);
             material.SetInt("_Cull", (int)CullMode.Off);

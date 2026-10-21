@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_FieldRecall.label>Cross-domain personnel warp</NMC_FieldRecall.label>
+  <NMC_FieldRecall.description>Turn the warp energy field into a personnel receiving beacon. Select your colonist on a map and use “Warp to energy field” to travel instantly, including between colonies.
+
+If the center is occupied, arrival uses the nearest safe free cell inside the field. No extra energy cost or personnel cooldown. Colonists stop work, put down carried objects and take their equipment and inventory.
+
+Field deployment and relocation always have a 1-minute cooldown, regardless of this research.</NMC_FieldRecall.description>
+  <NMC_PreciseFriendlyIdentification.label>Precision ally recognition</NMC_PreciseFriendlyIdentification.label>
+  <NMC_PreciseFriendlyIdentification.description>Improve the mothership's friend-or-foe protocol so commander support avoids your units, buildings and allies. Exclusive shadow guard and expedition legion weapons also follow it.
+
+Deliver materials and complete research at an uplink terminal. Permanently active after completion, without an extra purchase in the support panel.</NMC_PreciseFriendlyIdentification.description>
+  <NMC_Support01.label>Warp energy field support protocol</NMC_Support01.label>
+  <NMC_Support01.description>Establish a remotely deployed warp energy field that supplies nearby friendly structures and units. Existing fields can be relocated for frontline defense or temporary work.
+
+Deliver materials and complete research at an uplink research terminal. Then call this support from the commander panel.</NMC_Support01.description>
+  <NMC_Support02.label>Orbital strike support protocol</NMC_Support02.label>
+  <NMC_Support02.description>Unlock orbital strikes. The commander can repeatedly mark ground targets for the mothership. Each shot costs energy separately.
+
+Deliver materials and complete research at an uplink research terminal. Then call this support from the commander panel.</NMC_Support02.description>
+  <NMC_Support03.label>Shield overload support protocol</NMC_Support03.label>
+  <NMC_Support03.description>Allow the mothership to briefly shield allies across the map and absorb combat damage.
+
+Deliver materials and complete research at an uplink research terminal. Requires mothership level 1.</NMC_Support03.description>
+  <NMC_Support04.label>Solar bombardment support protocol</NMC_Support04.label>
+  <NMC_Support04.description>Unlock wide-area solar bombardment, raining energy shells on dense enemies and buildings. Once started, the attack cannot be stopped.
+
+Deliver materials and complete research at an uplink research terminal. Requires mothership level 4.
+
+If the Continuum campaign is active, first complete stage 8 (Solar bombardment) to recover the data.</NMC_Support04.description>
+  <NMC_Support05.label>Solar ray gun support protocol</NMC_Support05.label>
+  <NMC_Support05.description>Unlock the solar ray gun, projecting three tracking rays to sweep ground enemies.
+
+Deliver materials and complete research at an uplink research terminal. Requires mothership level 2.</NMC_Support05.description>
+  <NMC_Support06.label>Spacetime fluctuation support protocol</NMC_Support06.label>
+  <NMC_Support06.description>Temporarily accelerate production in all colonies and increase hyperdimensional monolith firing frequency.
+
+Deliver materials and complete research at an uplink research terminal. Requires mothership level 2.</NMC_Support06.description>
+  <NMC_Support07.label>Purification beam support protocol</NMC_Support07.label>
+  <NMC_Support07.description>Unlock a mobile purification beam with automatic pursuit or commander-directed movement.
+
+Deliver materials and complete research at an uplink research terminal. Requires mothership level 4.
+
+If the Continuum campaign is active, first complete stage 7 (Purification beam) to recover the data.</NMC_Support07.description>
+  <NMC_Support08.label>Shadow core support protocol</NMC_Support08.label>
+  <NMC_Support08.description>Deploy shadow cores to build towers that supply mothership resources and cloak nearby allies. Building materials must still be delivered after deployment.
+
+Deliver materials and complete research at an uplink research terminal. Requires mothership level 1.
+
+If the Continuum campaign is active, first complete stage 1 (Shadow crystal tower) to recover the data.</NMC_Support08.description>
+  <NMC_Support09.label>Shadow guard support protocol</NMC_Support09.label>
+  <NMC_Support09.description>Establish a warp link with the shadow guard to request four invisible melee warriors as temporary reinforcements.
+
+Deliver materials and complete research at an uplink research terminal. Requires mothership level 2.
+
+If the Continuum campaign is active, first complete stage 2 (Shadow reinforcements) to recover the data.</NMC_Support09.description>
+  <NMC_Support10.label>Black hole support protocol</NMC_Support10.label>
+  <NMC_Support10.description>Allow the mothership to create brief gravity vortices, gathering enemies and weakening armor for concentrated fire.
+
+Deliver materials and complete research at an uplink research terminal. Requires mothership level 2.</NMC_Support10.description>
+  <NMC_Support11.label>Time stop support protocol</NMC_Support11.label>
+  <NMC_Support11.description>Temporarily stop existing enemies' movement and attacks across all colonies, buying time for defense or retreat.
+
+Deliver materials and complete research at an uplink research terminal. Requires mothership level 4.</NMC_Support11.description>
+  <NMC_Support12.label>Building overload support protocol</NMC_Support12.label>
+  <NMC_Support12.description>Unlock building overload, temporarily adding shields and lasers to friendly buildings. Uses periodically recovered overload charges.
+
+Deliver materials and complete research at an uplink research terminal. Requires mothership level 1.</NMC_Support12.description>
+  <NMC_Support13.label>Nivarian fleet support protocol</NMC_Support13.label>
+  <NMC_Support13.description>Establish fleet warp routes to request one mothership and eight destroyers as temporary battlefield support.
+
+Deliver materials and complete research at an uplink research terminal. Requires mothership level 4.
+
+If the Continuum campaign is active, first complete stage 6 (Fleet support) to recover the data.</NMC_Support13.description>
+  <NMC_Support14.label>Tebrus legion support protocol</NMC_Support14.label>
+  <NMC_Support14.description>Contact Tebrus's legion to request Tebrus and ten melee warriors. Legion support costs only P and V.
+
+Deliver materials and complete research at an uplink research terminal. Requires mothership level 2.
+
+If the Continuum campaign is active, first complete stage 3 (Expedition legion) to recover the data.</NMC_Support14.description>
+  <NMC_Support15.label>Zoraya legion support protocol</NMC_Support15.label>
+  <NMC_Support15.description>Contact Zoraya's legion to request command ship Zoraya and four glowships. Legion support costs only P and V.
+
+Deliver materials and complete research at an uplink research terminal. Requires mothership level 3.
+
+If the Continuum campaign is active, first complete stage 3 (Expedition legion) to recover the data.</NMC_Support15.description>
+  <NMC_Support16.label>Seydas legion support protocol</NMC_Support16.label>
+  <NMC_Support16.description>Contact Seydas's legion to request Seydas and three dark archons to turn enemies with mind control. Legion support costs only P and V.
+
+Deliver materials and complete research at an uplink research terminal. Requires mothership level 3.
+
+If the Continuum campaign is active, first complete stage 3 (Expedition legion) to recover the data.</NMC_Support16.description>
+  <NMC_Support17.label>Hyperdimensional monolith support protocol</NMC_Support17.label>
+  <NMC_Support17.description>Deploy monolith cores for long-range defense that attacks and stuns multiple targets. Materials and electricity are required after deployment.
+
+Deliver materials and complete research at an uplink research terminal. Requires mothership level 3.
+
+If the Continuum campaign is active, first complete stage 4 (Hyperdimensional monolith) to recover the data.</NMC_Support17.description>
+  <NMC_Support18.label>Void suppression crystal support protocol</NMC_Support18.label>
+  <NMC_Support18.description>Unlock void suppression crystals, temporarily slowing enemies' movement and attacks and stopping enemy turrets in range.
+
+Deliver materials and complete research at an uplink research terminal. Requires mothership level 3.</NMC_Support18.description>
+  <NMC_Support19.label>Hyperdimensional matrix projection support protocol</NMC_Support19.label>
+  <NMC_Support19.description>Unlock turret projection between colonies. Registered turrets form temporary combat copies elsewhere. Sources supply power and ammunition and take projection damage.
+
+Deliver materials and complete research at an uplink research terminal. Requires mothership level 4.
+
+If the Continuum campaign is active, first complete stage 5 (Hyperdimensional projection) to recover the data.</NMC_Support19.description>
+  <NMC_ParallelParticleCollectors.label>Parallel particle collector array</NMC_ParallelParticleCollectors.label>
+  <NMC_ParallelParticleCollectors.description>Coordinate particle collectors to remove interference. Multiple collectors can run together, each producing V points.
+
+Each still needs its own power and fuel. Output depends on its operating state.</NMC_ParallelParticleCollectors.description>
+  <NMC_GravityFrigateResearch.label>Nivarian gravity ship</NMC_GravityFrigateResearch.label>
+  <NMC_GravityFrigateResearch.description>Unlock Nivarian gravity ship construction. A light transport and anti-air ship that lifts ground enemies with a gravity beam and attacks with twin lasers.
+
+Carries 300 kg, fights in local flight and travels between locations using chemfuel.</NMC_GravityFrigateResearch.description>
+  <NMC_CarrierResearch.label>Nivarian carrier</NMC_CarrierResearch.label>
+  <NMC_CarrierResearch.description>Unlock Nivarian carriers. These large ships fight with interceptors, have no direct weapons and provide sustained air support from behind the front.
+
+Carry 10,000 kg and use dragonfrost steel to build and maintain up to 6 interceptors. Expensive to build, with ongoing chemfuel and material needs.</NMC_CarrierResearch.description>
+  <NMC_TacticalProtocol.label>Tactical support protocol</NMC_TacticalProtocol.label>
+  <NMC_TacticalProtocol.description>Mothership commander's tactical support protocol. Deliver materials and complete research at a Nivarian uplink research terminal.</NMC_TacticalProtocol.description>
+  <NMC_LightWeapons.label>Light weapon array</NMC_LightWeapons.label>
+  <NMC_LightWeapons.description>Mothership commander's light weapon array. Deliver materials and complete research at a Nivarian uplink research terminal.</NMC_LightWeapons.description>
+  <NMC_ShadowWarp.label>Shadow warp technology</NMC_ShadowWarp.label>
+  <NMC_ShadowWarp.description>Mothership commander's shadow warp technology. Deliver materials and complete research at a Nivarian uplink research terminal.</NMC_ShadowWarp.description>
+  <NMC_Spacetime.label>Spacetime coordination protocol</NMC_Spacetime.label>
+  <NMC_Spacetime.description>Mothership commander's spacetime coordination protocol. Deliver materials and complete research at a Nivarian uplink research terminal.</NMC_Spacetime.description>
+  <NMC_LegionContact.label>Expedition legion contact</NMC_LegionContact.label>
+  <NMC_LegionContact.description>Mothership commander's expedition legion contact. Deliver materials and complete research at a Nivarian uplink research terminal.</NMC_LegionContact.description>
+  <NMC_HigherDimensions.label>Higher-dimensional engineering</NMC_HigherDimensions.label>
+  <NMC_HigherDimensions.description>Mothership commander's higher-dimensional engineering. Deliver materials and complete research at a Nivarian uplink research terminal.</NMC_HigherDimensions.description>
+  <NMC_FleetBeacon.label>Fleet warp beacon protocol</NMC_FleetBeacon.label>
+  <NMC_FleetBeacon.description>Mothership commander's fleet warp beacon protocol. Deliver materials and complete research at a Nivarian uplink research terminal.</NMC_FleetBeacon.description>
+  <NMC_WarshipArmor1.label>Nivarian warship armor Ⅰ</NMC_WarshipArmor1.label>
+  <NMC_WarshipArmor1.description>Improve hulls of all Nivarian warships, interceptors and reinforcement ships. Each tier adds 20% of base maximum HP; this tier totals +20%. Existing ships retain their HP percentage.</NMC_WarshipArmor1.description>
+  <NMC_WarshipArmor2.label>Nivarian warship armor Ⅱ</NMC_WarshipArmor2.label>
+  <NMC_WarshipArmor2.description>Improve hulls of all Nivarian warships, interceptors and reinforcement ships. Each tier adds 20% of base maximum HP; this tier totals +40%. Existing ships retain their HP percentage.</NMC_WarshipArmor2.description>
+  <NMC_WarshipArmor3.label>Nivarian warship armor Ⅲ</NMC_WarshipArmor3.label>
+  <NMC_WarshipArmor3.description>Improve hulls of all Nivarian warships, interceptors and reinforcement ships. Each tier adds 20% of base maximum HP; this tier totals +60%. Existing ships retain their HP percentage.</NMC_WarshipArmor3.description>
+  <NMC_WarshipWeapon1.label>Nivarian warship weapon Ⅰ</NMC_WarshipWeapon1.label>
+  <NMC_WarshipWeapon1.description>Improve weapons on all Nivarian warships, interceptors and reinforcement ships. Each tier adds 20% damage and armor penetration of all types; total +20%. Lock-on escalation and freezing mechanics remain unchanged; research scales final attack damage.</NMC_WarshipWeapon1.description>
+  <NMC_WarshipWeapon2.label>Nivarian warship weapon Ⅱ</NMC_WarshipWeapon2.label>
+  <NMC_WarshipWeapon2.description>Improve weapons on all Nivarian warships, interceptors and reinforcement ships. Each tier adds 20% damage and armor penetration of all types; total +40%. Lock-on escalation and freezing mechanics remain unchanged; research scales final attack damage.</NMC_WarshipWeapon2.description>
+  <NMC_WarshipWeapon3.label>Nivarian warship weapon Ⅲ</NMC_WarshipWeapon3.label>
+  <NMC_WarshipWeapon3.description>Improve weapons on all Nivarian warships, interceptors and reinforcement ships. Each tier adds 20% damage and armor penetration of all types; total +60%. Lock-on escalation and freezing mechanics remain unchanged; research scales final attack damage.</NMC_WarshipWeapon3.description>
+  <NMC_CarrierHangarExpansion.label>Carrier interceptor hangar expansion</NMC_CarrierHangarExpansion.label>
+  <NMC_CarrierHangarExpansion.description>Expand the carrier hangar from 6 to 8 interceptors, including aircraft in the hangar and deployed.</NMC_CarrierHangarExpansion.description>
+  <NMC_WarpPrismResearch.label>Nivarian warp ship</NMC_WarpPrismResearch.label>
+  <NMC_WarpPrismResearch.description>Research separately at the uplink after Personnel Warp to unlock the Nivarian warp ship. An unarmed 1000 kg transport that deploys a radius-6 field for power, unit charging and colonist warp arrivals.</NMC_WarpPrismResearch.description>
+  <NMC_StormShipResearch.label>Nivarian Tempest</NMC_StormShipResearch.label>
+  <NMC_StormShipResearch.description>Unlock the Nivarian Tempest at an uplink terminal. Same prerequisites as the carrier, with no additional mission gate. Research work and materials cost 70% of the carrier. A 5×5 siege ship with 2,000 HP, 3,500 kg capacity and a range-100 thunder orb with a 3×3 blast.</NMC_StormShipResearch.description>
+  <NMC_SageShipResearch.label>Nivarian sage ship</NMC_SageShipResearch.label>
+  <NMC_SageShipResearch.description>Unlocks the sage ship through a separate uplink project. Same prerequisites as the gravity frigate, with no additional mission gate; half its research work and materials. Ground beams and passive detection within 50 cells, faster flight and lower fuel use.</NMC_SageShipResearch.description>
+</LanguageData>

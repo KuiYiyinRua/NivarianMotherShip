@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_UpgradeAircraftStarship.label>Haul starship batteries to ships</NMC_UpgradeAircraftStarship.label>
+  <NMC_UpgradeAircraftStarship.verb>Install starship batteries</NMC_UpgradeAircraftStarship.verb>
+  <NMC_UpgradeAircraftStarship.gerund>Install starship batteries</NMC_UpgradeAircraftStarship.gerund>
+  <NMC_FillNutrientEnergyTower.label>Refill Nivarian energy tower nutrients</NMC_FillNutrientEnergyTower.label>
+  <NMC_FillNutrientEnergyTower.verb>Refill</NMC_FillNutrientEnergyTower.verb>
+  <NMC_FillNutrientEnergyTower.gerund>Refill nutrients</NMC_FillNutrientEnergyTower.gerund>
+  <NMC_RefillCarrierDragonSteel.label>Refill carrier dragonfrost steel</NMC_RefillCarrierDragonSteel.label>
+  <NMC_RefillCarrierDragonSteel.verb>Refill dragonfrost steel</NMC_RefillCarrierDragonSteel.verb>
+  <NMC_RefillCarrierDragonSteel.gerund>Refill dragonfrost steel</NMC_RefillCarrierDragonSteel.gerund>
+</LanguageData>

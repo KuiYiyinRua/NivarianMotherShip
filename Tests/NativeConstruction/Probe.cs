@@ -29,7 +29,7 @@ namespace NMC.NativeConstructionProbe
     {
      Find.TickManager.Pause();map=Find.CurrentMap;center=map.Center+new IntVec3(30,0,20);
      foreach(var c in CellRect.CenteredOn(center,17))
-     { foreach(var t in c.GetThingList(map).ToArray())if(!(t is Pawn))t.Destroy(); map.terrainGrid.SetTerrain(c,TerrainDefOf.Concrete);map.roofGrid.SetRoof(c,null);map.fogGrid.Unfog(c); }
+     { foreach(var t in c.GetThingList(map).ToArray())if(!(t is Pawn)){if(t.def.destroyable)t.Destroy();else t.DeSpawn();} map.terrainGrid.SetTerrain(c,TerrainDefOf.Concrete);map.roofGrid.SetRoof(c,null);map.fogGrid.Unfog(c); }
      foreach(string key in new[]{"PowerCoin","VolatileReactive"})NativeLedger.Component.CurrencyHold[DefDatabase<NivarianMotherShipRequestCurrencyDef>.GetNamed(key)]=100000;
      sites=new Thing[2];builds=new CompSelfBuilding[2];int[] numbers={8,17};
      for(int i=0;i<2;i++)

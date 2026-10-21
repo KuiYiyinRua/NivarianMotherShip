@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>NivarianCommander</AssemblyName>
+    <Version>0.9.9</Version>
+    <AssemblyVersion>0.9.8.0</AssemblyVersion>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <DefineConstants>$(DefineConstants);RIMWORLD_1_7</DefineConstants>
+    <OutputPath>bin/RimWorld17/</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Nivarian17Root Condition="'$(Nivarian17Root)' == ''">$(GameRoot)/../../workshop/content/294100/3624805128</Nivarian17Root>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="*.cs" />
+    <Reference Include="Assembly-CSharp" HintPath="$(GameRoot)/Assembly-CSharp.dll" Private="false" />
+    <Reference Include="UnityStubs" HintPath="$(GameRoot)/UnityStubs.dll" Private="false" />
+    <Reference Include="Waylith" HintPath="$(GameRoot)/Waylith.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(HarmonyAssembly)" Private="false" />
+    <Reference Include="Nivarian_Race" HintPath="$(Nivarian17Root)/1.7/Core/Assemblies/Nivarian_Race.rimunity" Private="false" />
+    <Reference Include="LumiParticle" HintPath="$(Nivarian17Root)/1.7/LumiParticle/Assemblies/LumiParticle.rimunity" Private="false" />
+    <Reference Include="RimUnity" HintPath="$(RimUnityReferences)/RimUnity.dll" Private="false" />
+    <Reference Include="RimUnity.Core" HintPath="$(RimUnityReferences)/RimUnity.Core.dll" Private="false" />
+  </ItemGroup>
+  <Target Name="ValidateRimWorld17" BeforeTargets="PrepareForBuild">
+    <Error Condition="!Exists('$(GameRoot)/RimWorld.exe') Or !Exists('$(GameRoot)/UnityStubs.dll')" Text="Set GameRoot to a RimWorld 1.7 installation." />
+    <Error Condition="!Exists('$(Nivarian17Root)/1.7/Core/Assemblies/Nivarian_Race.rimunity')" Text="Set Nivarian17Root to the Nivarian Race 1.7 mod directory." />
+    <Error Condition="!Exists('$(RimUnityReferences)/RimUnity.Core.dll')" Text="Set RimUnityReferences to matching runtime references, or use Tools/Build-RimWorld17.ps1." />
+  </Target>
+</Project>

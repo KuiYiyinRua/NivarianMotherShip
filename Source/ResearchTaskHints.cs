@@ -52,6 +52,7 @@ namespace NivarianCommander
         }
     }
 
+#if !RIMWORLD_1_7
     [HarmonyPatch(typeof(UplinkResearchTabPanel), "DrawBeaconStatus")]
     internal static class ResearchTaskButtonHint
     {
@@ -74,4 +75,28 @@ namespace NivarianCommander
             return code;
         }
     }
+#else
+    [HarmonyPatch]
+    internal static class ResearchTaskQueueHint
+    {
+        static System.Reflection.MethodBase TargetMethod() => AccessTools.Method(
+            AccessTools.TypeByName("Nivarian_Race.Code.Features.UplinkResearch.UplinkResearchQueueSidebar"), "ActionHint");
+        static void Postfix(ResearchProjectDef project, ref string __result)
+        {
+            string reason = project?.IsFinished == true ? null : CommanderProgression.ResearchBlocked(project);
+            if (reason != null) __result = reason + "\n" + __result;
+        }
+    }
+    [HarmonyPatch]
+    internal static class ResearchTaskQueueWaiting
+    {
+        static System.Reflection.MethodBase TargetMethod() => AccessTools.Method(
+            AccessTools.TypeByName("Nivarian_Race.Code.Features.UplinkResearch.UplinkResearchQueueComponent"), "WaitingReason");
+        static void Postfix(ResearchProjectDef project, ref string __result)
+        {
+            string reason = project?.IsFinished == true ? null : CommanderProgression.ResearchBlocked(project);
+            if (reason != null) __result = reason + (string.IsNullOrEmpty(__result) ? "" : "\n" + __result);
+        }
+    }
+#endif
 }

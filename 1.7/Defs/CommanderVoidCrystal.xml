@@ -1,0 +1,21 @@
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>NMC_VoidSuppressionCrystal</defName><label>虚空抑制晶体</label>
+    <description>母舰的临时区域控制装置。半径18格内敌人移动和攻击速度降至30%，敌方炮塔停火；离开范围恢复，同类效果不叠加。持续30秒，不可受击摧毁，不阻挡通行，可与地面物体重叠。
+
+获取：研究“虚空抑制晶体支援协议”后，在支援面板部署。</description>
+    <thingClass>NivarianCommander.Building_VoidCrystal</thingClass>
+    <category>Building</category><size>(1,1)</size><rotatable>false</rotatable>
+    <tickerType>Never</tickerType><useHitPoints>false</useHitPoints><destroyable>true</destroyable>
+    <selectable>true</selectable><drawerType>MapMeshOnly</drawerType><altitudeLayer>Building</altitudeLayer>
+    <passability>Standable</passability><fillPercent>0</fillPercent><pathCost>0</pathCost>
+    <terrainAffordanceNeeded IsNull="True"/><canOverlapZones>true</canOverlapZones>
+    <blockPlants>false</blockPlants><wipesPlants>false</wipesPlants><blockWind>false</blockWind>
+    <castEdgeShadows>false</castEdgeShadows><staticSunShadowHeight>0</staticSunShadowHeight>
+    <scatterableOnMapGen>false</scatterableOnMapGen><leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <noRightClickDraftAttack>true</noRightClickDraftAttack><filthLeaving IsNull="True" />
+    <statBases><Flammability>0</Flammability><WorkToBuild>0</WorkToBuild></statBases>
+    <graphicData><texPath>NMC/Buildings/void_stasis_crystal</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(3,3)</drawSize><shaderType>Cutout</shaderType><shadowData IsNull="True"/></graphicData>
+    <building><isEdifice>false</isEdifice><isTargetable>false</isTargetable><deconstructible>false</deconstructible><claimable>false</claimable><displayAttackToDestroyOnInspectPane>false</displayAttackToDestroyOnInspectPane></building>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_FieldTrainingChildhood.title>母舰学徒</NMC_FieldTrainingChildhood.title>
+  <NMC_FieldTrainingChildhood.titleShort>学徒</NMC_FieldTrainingChildhood.titleShort>
+  <NMC_FieldTrainingChildhood.baseDesc>[PAWN_nameDef]在母舰上学习战场纪律与基础战术。</NMC_FieldTrainingChildhood.baseDesc>
+  <NMC_FieldTrainingAdulthood.title>折跃战斗员</NMC_FieldTrainingAdulthood.title>
+  <NMC_FieldTrainingAdulthood.titleShort>战斗员</NMC_FieldTrainingAdulthood.titleShort>
+  <NMC_FieldTrainingAdulthood.baseDesc>[PAWN_nameDef]接受专职作战训练，响应母舰的折跃召集。</NMC_FieldTrainingAdulthood.baseDesc>
+</LanguageData>

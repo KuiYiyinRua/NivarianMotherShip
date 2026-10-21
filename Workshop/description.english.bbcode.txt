@@ -1,23 +1,69 @@
-[h1]English | Nivarian MotherShip[/h1]
-Bring the mothership to your colony. Adds 19 tactical supports, a customizable six-slot HUD, a points shop, a carrier and gravity ship, and an eight-stage Continuum campaign to Nivarian Race.
-[list]
-[*]Orbital strikes, solar bombardment, purification beams, shields and fields, shadow control, expedition legions and projected structures.
-[*]Call a temporary fleet of one mothership and eight destroyers. Transport people and cargo with the carrier and gravity ship.
-[*]Three armor and weapon research tiers give 20%/40%/60% bonuses; hangar research raises interceptor capacity from six to eight.
-[*]Buy, search and donate in the points shop. Requires a powered orbital trade beacon; restocks every seven days with up to 60 goods.
-[/list]
-[img]https://images.steamusercontent.com/ugc/16928666956641479643/FE270D44BC43AD0B1DCBB0E2AAC73274DACA54FF/[/img]
-[b]Getting started[/b]: Open the commander tab in the mothership support window and research protocols at the uplink terminal. With the military addon enabled, campaign missions gate research and later stages bring enemy ship reinforcements.
-[b]Research setting[/b]: Off by default. Removes only this expansion’s mission requirements for research. Prerequisite technologies, material costs and normal research are still required. Does not complete technologies or missions, or bypass mothership support levels. Turning it off restores mission requirements and retains completed research.
+[h1]Nivarian MotherShip[/h1]
 
-[h2]Dependencies / 依赖 / 必須MOD / Зависимости / Dépendances[/h2]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077]Harmony[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=839005762]Humanoid Alien Races[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3624805128]Nivarian Race[/url] → MotherShip.
-[b]Optional[/b]: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3735573834]Nivarian Draconic Military[/url] (campaign / 战役 / 戦役 / кампания / campagne); Royalty (psycasts); [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3256974620]Milira Race[/url] + Ancot Library (starship batteries).
-[b]RimWorld 1.6 • v0.9.9 • Author / 作者 / 作者 / Автор / Auteur: 尹怨怨[/b]
-Nivarian Race & original mothership assets: keeptpa. Required mods are separate downloads. / 原版素材归 keeptpa；前置模组需另行订阅。
+[b]RimWorld 1.6 / 1.7 · v0.9.9-r8[/b]
 
-[h2]0.9.9[/h2]
-Storm Ship / Sage Ship / Warp Prism; two-phase warp; mission-only research option. 暴风舰爆炸25点（建筑×5），新增贤者舰与折跃棱镜、双阶段折跃及任务研究开关。
+[b]1.7 compatibility update[/b]: Use the 1.7 versions of all prerequisites. RimUnity is included. Multiplayer adapters remain available for 1.6 only; 1.7 is single-player. Fully restart the game after updating.
 
-[h2]GitHub[/h2]
-[url=https://github.com/KuiYiyinRua/NivarianMotherShip]GitHub · 完整源码 / Full source[/url]
+Bring the mothership to your colony. Expand Nivarian Race with 19 tactical supports, a customizable HUD, a points shop, buildable ships and an eight-stage Continuum campaign.
+
+[h2]Your command center[/h2]
+
+Check support costs, cooldowns and unlock requirements in one panel. Assign your favorite abilities to six HUD slots, from orbital fire and shields to fields, expedition legions and projected structures.
+
+[img]https://images.steamusercontent.com/ugc/15489195794634473878/2389AE6AC0A3CBBEAB80EADAA61D5ECE02AC861D/[/img]
+
+[h2]Fire support from orbit[/h2]
+
+Bombard an area with solar fire or sweep the battlefield with a purification beam. Combine firepower, control and defensive support to suit the fight.
+
+[img]https://images.steamusercontent.com/ugc/13957314486913219343/CDDA2CBF2DCD379C83CC7888D28B8F27FF83B738/[/img]
+
+[img]https://images.steamusercontent.com/ugc/10895602465823440559/0873701B198D87E744ADCC8A2BBE8E77167B872B/[/img]
+
+[h2]Call in the fleet[/h2]
+
+One mothership and eight destroyers arrive as a temporary support formation.
+
+[img]https://images.steamusercontent.com/ugc/9711618135852145695/7A39981D020A3B84D6A9E3AA8BFD10D211A4CB33/[/img]
+
+[h2]Build your own ships[/h2]
+
+The carrier, gravity ship, Storm Ship, Sage Ship and Warp Prism fill different roles. Carriers and gravity ships transport people and cargo. Research hull, weapon and hangar upgrades to develop the fleet.
+
+[img]https://images.steamusercontent.com/ugc/17035221992713199220/DFD96822BE1B9CB5CE1A73F0010EC5801457F794/[/img]
+
+[img]https://images.steamusercontent.com/ugc/13089885359472862840/441E4B436137A657659FA9B6FD90E9D48A17D456/[/img]
+
+[h2]Warp Prism and energy field[/h2]
+
+Switch the Warp Prism between flight and energy-field modes to establish a warp destination. Two-phase warping plays out at both the departure point and the destination.
+
+[img]https://images.steamusercontent.com/ugc/12589288924769832198/424B93D5A0FECD45F25BC6F8F1E41C88CE75221C/[/img]
+
+[h2]The mothership points shop[/h2]
+
+Search for goods, buy supplies with points or donate items. Trading requires a powered orbital trade beacon. Stock refreshes every seven days with up to 60 types of goods.
+
+[img]https://images.steamusercontent.com/ugc/15505053462094303961/D43CBB85D1626E09D3D427408CDC34F87AF7A1F3/[/img]
+
+[h2]Research and the Continuum campaign[/h2]
+
+Research support protocols at the uplink terminal. The eight-stage Continuum campaign is enabled by the military content built into Nivarian Race 1.7. On 1.6 it requires Nivarian Draconic Military; without that addon, support technologies can be researched directly. Later campaign missions include enemy ship reinforcements.
+
+[h2]Optional research setting[/h2]
+
+“Research technologies without completing their missions” is off by default. It removes only this expansion’s mission requirements for research. Prerequisite technologies, materials and normal research are still required. It does not complete technologies or missions, or bypass mothership support levels. Turning it off restores mission requirements and retains completed research.
+
+[h2]Getting started[/h2]
+
+Enable the dependencies below, then this expansion. Open the commander tab in the mothership support window and unlock support protocols at the uplink terminal.
+
+[h2]Dependencies and optional integrations[/h2]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077]Harmony[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=839005762]Humanoid Alien Races[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3624805128]Nivarian Race[/url] → Nivarian MotherShip
+
+Optional: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3735573834]Nivarian Draconic Military[/url] for the campaign on 1.6 (integrated into the base mod on 1.7); Royalty for native psycasts (fallback abilities are included without it); [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3256974620]Milira Race[/url] and Ancot Library for starship battery integration. Multiplayer adapters load on 1.6 only when rwmt.Multiplayer is enabled.
+
+[i]Expansion by 尹怨怨. Nivarian Race and original mothership assets by keeptpa. Dependencies are separate downloads. Screenshots show real game rendering in an isolated demonstration scenario.[/i]
+
+[url=https://github.com/KuiYiyinRua/NivarianMotherShip]Source code and release history[/url]

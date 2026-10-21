@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_CarrierFlying.label>Nivarian carrier</NMC_CarrierFlying.label>
+  <NMC_CarrierFlying.description>A Nivarian carrier on a long-range journey, carrying people, cargo and interceptors to its destination.</NMC_CarrierFlying.description>
+  <NMC_GravityFrigateFlying.label>Nivarian gravity ship</NMC_GravityFrigateFlying.label>
+  <NMC_GravityFrigateFlying.description>A Nivarian gravity ship on a long-range journey, carrying people and cargo.</NMC_GravityFrigateFlying.description>
+  <NMC_WarpPrismFlying.label>Nivarian warp ship</NMC_WarpPrismFlying.label>
+  <NMC_WarpPrismFlying.description>A Nivarian warp ship carrying passengers and cargo across the world.</NMC_WarpPrismFlying.description>
+  <NMC_StormShipFlying.label>Nivarian Tempest</NMC_StormShipFlying.label>
+  <NMC_StormShipFlying.description>A Nivarian Tempest carrying passengers and cargo across the world.</NMC_StormShipFlying.description>
+  <NMC_SageShipFlying.label>Nivarian sage ship</NMC_SageShipFlying.label>
+  <NMC_SageShipFlying.description>A Nivarian sage ship carrying passengers and cargo between world locations.</NMC_SageShipFlying.description>
+</LanguageData>

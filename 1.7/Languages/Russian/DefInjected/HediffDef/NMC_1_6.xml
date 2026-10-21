@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_ShadowInvisibility.label>Теневая варп-невидимость</NMC_ShadowInvisibility.label>
+  <NMC_ShadowInvisibility.description>Теневое поле или призрачная броня скрывает цель. Атаки и урон не снимают эффект. Обнаружение раскрывает цель; после окончания, если источник остался, невидимость возвращается.</NMC_ShadowInvisibility.description>
+  <NMC_GhostIdentity.label>Принадлежность к теневой гвардии</NMC_GhostIdentity.label>
+  <NMC_GhostIdentity.description>Теневой страж с корабля-матки нивариан. Сражается сама, призыв невозможен. Невидимость помогает приблизиться, но обнаружение её раскрывает. Уходит варпом после поддержки.</NMC_GhostIdentity.description>
+  <NMC_SeydasConversion.label>Психическая приверженность</NMC_SeydasConversion.label>
+  <NMC_SeydasConversion.description>Подчинение перевело эту единицу к выжившим нивариан. Прежнее поведение сохраняется, она не становится вашим поселенцем. Фракция сохраняется после ухода легиона.</NMC_SeydasConversion.description>
+  <NMC_LegionIdentity.label>Экспедиционный легион корабля-матки</NMC_LegionIdentity.label>
+  <NMC_LegionIdentity.description>Временный боец от выживших нивариан. Сам выбирает цели, призыв невозможен. После поддержки бойцы и особое снаряжение уходят варпом.</NMC_LegionIdentity.description>
+</LanguageData>

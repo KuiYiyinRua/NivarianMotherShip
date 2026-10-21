@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_CarrierFlying.label>ニヴァリアン空母</NMC_CarrierFlying.label>
+  <NMC_CarrierFlying.description>人員、貨物、艦載機を目的地へ運ぶ遠距離航行中のニヴァリアン空母。</NMC_CarrierFlying.description>
+  <NMC_GravityFrigateFlying.label>ニヴァリアン重力艦</NMC_GravityFrigateFlying.label>
+  <NMC_GravityFrigateFlying.description>人員と貨物を目的地へ運ぶ遠距離航行中のニヴァリアン重力艦。</NMC_GravityFrigateFlying.description>
+  <NMC_WarpPrismFlying.label>ニヴァリアン転送艦</NMC_WarpPrismFlying.label>
+  <NMC_WarpPrismFlying.description>乗客と貨物を運び、ワールドを移動するニヴァリアン転送艦。</NMC_WarpPrismFlying.description>
+  <NMC_StormShipFlying.label>ニヴァリアン暴風艦</NMC_StormShipFlying.label>
+  <NMC_StormShipFlying.description>乗員と貨物を輸送中のニヴァリアン暴風艦。</NMC_StormShipFlying.description>
+  <NMC_SageShipFlying.label>ニヴァリアン賢者艦</NMC_SageShipFlying.label>
+  <NMC_SageShipFlying.description>人員と貨物を運ぶワールド航行中のニヴァリアン賢者艦。</NMC_SageShipFlying.description>
+</LanguageData>

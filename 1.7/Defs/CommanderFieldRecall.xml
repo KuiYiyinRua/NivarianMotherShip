@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef ParentName="NivarianResearchProjectBase">
+    <defName>NMC_FieldRecall</defName>
+    <label>跨域人员折跃</label>
+    <description>解锁殖民者跨地图折跃，可前往主能量场或展开的折跃舰。原地准备4秒，抵达后等待4秒，期间可受伤；携带装备和背包物品。
+
+在上行链路研究。主能量场的部署和迁移冷却始终为1分钟，不受本研究影响。</description>
+    <baseCost>2500</baseCost>
+    <prerequisites><li>NMC_Support01</li></prerequisites>
+    <researchViewX>1</researchViewX>
+    <researchViewY>2</researchViewY>
+    <modExtensions>
+      <li Class="Nivarian.ResearchCostExtension">
+        <requiredMaterials>
+          <li><thingDef>Steel</thingDef><count>200</count></li>
+          <li><thingDef>ComponentIndustrial</thingDef><count>6</count></li>
+          <li><thingDef>Nivarian_DragonCrystal</thingDef><count>25</count></li>
+        </requiredMaterials>
+      </li>
+    </modExtensions>
+  </ResearchProjectDef>
+</Defs>

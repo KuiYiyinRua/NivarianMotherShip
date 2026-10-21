@@ -94,7 +94,9 @@ namespace NivarianCommander
     [HarmonyPatch]
     public static class ProjectionNoLeavings
     {
-        static IEnumerable<MethodBase> TargetMethods() => AccessTools.GetDeclaredMethods(typeof(GenLeaving)).Where(m => m.Name == "DoLeavingsFor");
+        static IEnumerable<MethodBase> TargetMethods() => AccessTools.GetDeclaredMethods(typeof(GenLeaving))
+            .Where(m => m.Name == "DoLeavingsFor" && m.GetParameters().Length > 0
+                && typeof(Thing).IsAssignableFrom(m.GetParameters()[0].ParameterType));
         static bool Prefix([HarmonyArgument(0)] Thing thing) => !ProjectionRegistry.IsProjection(thing);
     }
     [HarmonyPatch(typeof(Building_TurretGun), "get_Active")]

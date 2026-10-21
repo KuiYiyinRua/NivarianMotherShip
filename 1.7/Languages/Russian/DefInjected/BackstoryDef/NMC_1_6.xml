@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_FieldTrainingChildhood.title>Ученик корабля-матки</NMC_FieldTrainingChildhood.title>
+  <NMC_FieldTrainingChildhood.titleShort>Ученик</NMC_FieldTrainingChildhood.titleShort>
+  <NMC_FieldTrainingChildhood.baseDesc>[PAWN_nameDef] изучал боевую дисциплину и основы тактики на корабле-матке.</NMC_FieldTrainingChildhood.baseDesc>
+  <NMC_FieldTrainingAdulthood.title>Варп-боец</NMC_FieldTrainingAdulthood.title>
+  <NMC_FieldTrainingAdulthood.titleShort>Боец</NMC_FieldTrainingAdulthood.titleShort>
+  <NMC_FieldTrainingAdulthood.baseDesc>[PAWN_nameDef] прошёл боевую подготовку и откликнулся на варп-призыв корабля-матки.</NMC_FieldTrainingAdulthood.baseDesc>
+</LanguageData>

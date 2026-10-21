@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_CarrierShip.label>Nivarian carrier</NMC_CarrierShip.label>
+  <NMC_GravityFrigateShip.label>Nivarian gravity ship</NMC_GravityFrigateShip.label>
+  <NMC_WarpPrismShip.label>Nivarian warp ship</NMC_WarpPrismShip.label>
+  <NMC_StormShipShip.label>Nivarian Tempest</NMC_StormShipShip.label>
+  <NMC_SageShipShip.label>Nivarian sage ship</NMC_SageShipShip.label>
+</LanguageData>

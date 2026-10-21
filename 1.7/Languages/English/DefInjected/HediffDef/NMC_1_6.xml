@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_ShadowInvisibility.label>Shadow warp invisibility</NMC_ShadowInvisibility.label>
+  <NMC_ShadowInvisibility.description>A shadow field or ghost armor cloaks the target. Attacking or taking damage does not end it. Detection can still reveal the target; when revelation ends, it becomes invisible again if the source remains.</NMC_ShadowInvisibility.description>
+  <NMC_GhostIdentity.label>Shadow guard identity</NMC_GhostIdentity.label>
+  <NMC_GhostIdentity.description>A shadow guard from the Nivarian mothership. Fights independently and cannot be drafted. Invisibility helps her approach enemies, but detection can reveal her. Warps out when support ends.</NMC_GhostIdentity.description>
+  <NMC_SeydasConversion.label>Mental allegiance</NMC_SeydasConversion.label>
+  <NMC_SeydasConversion.description>Mind control recruited this unit into the Nivarian survivors. It retains its way of life and behavior, does not become your colonist, and keeps its faction after Seydas's legion leaves.</NMC_SeydasConversion.description>
+  <NMC_LegionIdentity.label>Mothership expedition legion</NMC_LegionIdentity.label>
+  <NMC_LegionIdentity.description>A temporary expedition member sent by Nivarian survivors. Fights and chooses targets independently, cannot be drafted. Members and exclusive equipment warp out after support.</NMC_LegionIdentity.description>
+</LanguageData>

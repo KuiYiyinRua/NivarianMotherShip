@@ -11,7 +11,7 @@ out=args.output.resolve()
 out.mkdir(parents=True,exist_ok=True)
 version=ET.parse(mod/'About/About.xml').findtext('modVersion')
 files=[]
-for folder in ['1.6','About','Royalty','NoRoyalty','Multiplayer']:
+for folder in ['1.6','1.7','About','Royalty','NoRoyalty','Multiplayer']:
  for p in (mod/folder).rglob('*'):
   if p.is_file() and not {'Source','ShipUpgradeSource','WarpPrismSource','StormShipSource','SageShipSource','bin','obj'}.intersection(p.relative_to(mod).parts) and p.suffix.lower() not in ['.pdb','.log']:
    files.append(p)
@@ -21,7 +21,9 @@ files.append(mod/'Directory.Build.props')
 for folder in ['Source','Multiplayer/Source','Multiplayer/ShipUpgradeSource','Multiplayer/WarpPrismSource','Multiplayer/StormShipSource','Multiplayer/SageShipSource']:
  files.extend(p for p in (mod/folder).glob('*') if p.is_file() and p.suffix in ['.cs','.csproj'])
 files.append(mod/'Tools/package.py')
-for folder in ['Tests/ContinuumEntry','Tests/NativeConstruction','Tests/ShadowFootprint','Tests/NutrientRefill','Tests/Projection','Tests/TickPerformance','Tests/TickPerformanceMP']:
+files.append(mod/'Tools/Build-RimWorld17.ps1')
+files.extend(p for p in (mod/'Tools/RuntimeReferences').glob('*') if p.is_file() and p.suffix in ['.cs','.csproj'])
+for folder in ['Tests/RimWorld17','Tests/ContinuumEntry','Tests/NativeConstruction','Tests/ShadowFootprint','Tests/NutrientRefill','Tests/Projection','Tests/TickPerformance','Tests/TickPerformanceMP']:
  files.extend(p for p in (mod/folder).glob('*') if p.is_file() and p.suffix in ['.cs','.csproj','.ps1','.md'])
 files.extend(p for p in (mod/'Tools/Localization').glob('*') if p.is_file() and p.suffix in ['.py','.json'])
 files.extend(p for p in (mod/'Workshop').glob('*') if p.is_file() and p.suffix.lower() in ['.txt','.json','.png','.jpg'])

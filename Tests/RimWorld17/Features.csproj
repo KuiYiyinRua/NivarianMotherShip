@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework><AssemblyName>NMC.RimWorld17Features</AssemblyName>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <DefineConstants>$(DefineConstants);RIMWORLD_1_7</DefineConstants>
+    <CommanderAssembly Condition="'$(CommanderAssembly)' == ''">../../BuildValidation/RimWorld17-20261021/Build/NivarianCommander.dll</CommanderAssembly>
+    <Nivarian17Root Condition="'$(Nivarian17Root)' == ''">$(GameRoot)/../../workshop/content/294100/3624805128</Nivarian17Root>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../Projection/Probe.cs" />
+    <Compile Include="../NativeConstruction/Probe.cs" />
+    <Compile Include="AbilityProbe.cs" />
+    <Compile Include="Projection17Fixture.cs" />
+    <Reference Include="Assembly-CSharp" HintPath="$(GameRoot)/Assembly-CSharp.dll" Private="false" />
+    <Reference Include="UnityStubs" HintPath="$(GameRoot)/UnityStubs.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(HarmonyAssembly)" Private="false" />
+    <Reference Include="NivarianCommander" HintPath="$(CommanderAssembly)" Private="false" />
+    <Reference Include="Nivarian_Race" HintPath="$(Nivarian17Root)/1.7/Core/Assemblies/Nivarian_Race.rimunity" Private="false" />
+    <Reference Include="LumiParticle" HintPath="$(Nivarian17Root)/1.7/LumiParticle/Assemblies/LumiParticle.rimunity" Private="false" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,591 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_Text0001>離陸して戦闘</NMC_Text0001>
+  <NMC_Text0002>現在位置から離陸し、このマップ内で戦闘します。離陸時に化学燃料を{0}消費し、飛行中は消費しません。離陸地点の上に屋根がないことが必要です。</NMC_Text0002>
+  <NMC_Text0003>現在位置から離陸し、このマップ内で戦闘します。離陸地点の上に屋根がないことが必要です。飛行中は化学燃料を継続的に消費します。</NMC_Text0003>
+  <NMC_Text0004>離陸には化学燃料{0}が必要</NMC_Text0004>
+  <NMC_Text0005>化学燃料が不足しています</NMC_Text0005>
+  <NMC_Text0006>上に屋根があります</NMC_Text0006>
+  <NMC_Text0007>飛行先を指定</NMC_Text0007>
+  <NMC_Text0008>このマップ内の飛行先を選択します。</NMC_Text0008>
+  <NMC_Text0009>離着陸中</NMC_Text0009>
+  <NMC_Text0010>着陸</NMC_Text0010>
+  <NMC_Text0011>着陸地点を選び、建築物の回転キーで向きを調整してからクリックで確定します。空母は出撃中の艦載機をすべて回収してから降下します。着陸範囲に建物、人、木、屋根がないことが必要です。</NMC_Text0011>
+  <NMC_Text0012>ここには着陸できません。建物、人、木、屋根のない場所を選んでください。</NMC_Text0012>
+  <NMC_Text0013>艦載機製造：有効</NMC_Text0013>
+  <NMC_Text0014>艦載機製造：停止</NMC_Text0014>
+  <NMC_Text0015>艦載機1機につき龍霜鋼{0}を消費し、製造には15秒かかります。飛行中も製造可能です。「龍霜鋼の備蓄」で目標量を設定すると、着陸中に入植者が上限1000まで補充します。格納庫と出撃中の合計上限は{1}機です。</NMC_Text0015>
+  <NMC_Text0016>艦載機を帰還させる</NMC_Text0016>
+  <NMC_Text0017>出撃中の全艦載機を格納庫へ帰還させます。空母が飛行中で付近に敵がいる場合、帰還後も再出撃します。</NMC_Text0017>
+  <NMC_Text0018>重力ビーム</NMC_Text0018>
+  <NMC_Text0019>16マス以内の生存ユニットを選択し、4秒間持ち上げて気絶させます。味方・中立・敵を対象にできます。同じユニットに複数の重力ビームを同時に使用することはできません。クールダウンは8秒、追加資源は不要です。自動使用は引き続き敵のみを狙います。</NMC_Text0019>
+  <NMC_Text0020>離陸している必要があります</NMC_Text0020>
+  <NMC_Text0021>重力ビームはクールダウン中</NMC_Text0021>
+  <NMC_Text0022>自動重力ビーム：有効</NMC_Text0022>
+  <NMC_Text0023>自動重力ビーム：無効</NMC_Text0023>
+  <NMC_Text0024>飛行中、16マス以内で最も近い地上の敵を自動で持ち上げます。無効にしても手動で対象を選択できます。</NMC_Text0024>
+  <NMC_Text0025>星艦動力改良済み</NMC_Text0025>
+  <NMC_Text0027>星艦動力を改良</NMC_Text0027>
+  <NMC_Text0028>入植者がバッテリー{0}単位を取り付けます。ミリラ星艦バッテリーと不安定なパワーセルは各1単位、無限化学反応炉は2単位。混用可能です。原版セルは先に取り外して梱包してください。作業中に再度クリックすると中止し、投入済みセルをすべて返却します。完了後は離陸時に化学燃料{1}を消費し、以後の飛行では消費しません。改良開始には着陸が必要です。</NMC_Text0028>
+  <NMC_Text0029>星艦バッテリー設置済み</NMC_Text0029>
+  <NMC_Text0031>先に着陸してください</NMC_Text0031>
+  <NMC_Text0032>{0}の星艦動力改良が完了しました。</NMC_Text0032>
+  <NMC_Text0033>運搬可能な対応バッテリーがありません（原版セルは先に取り外して梱包）</NMC_Text0033>
+  <NMC_Text0034>目的地は使用できなくなりました。選び直してください</NMC_Text0034>
+  <NMC_Text0035>クールダウン残り：{0}</NMC_Text0035>
+  <NMC_Text0036>必要：{0} P + {1} V</NMC_Text0036>
+  <NMC_Text0037>ブラックホールの中心には探索済みで立てるマスが必要</NMC_Text0037>
+  <NMC_Text0038>母艦のエネルギーが不足しています</NMC_Text0038>
+  <NMC_Text0039>ブラックホール：装甲が一時的にゼロ</NMC_Text0039>
+  <NMC_Text0040>ブラックホール · {0} P + {1} V · 半径8 / 8秒 · 左クリックで配置、右クリック / Escで取消</NMC_Text0040>
+  <NMC_Text0041>なし</NMC_Text0041>
+  <NMC_Text0042>帰還中</NMC_Text0042>
+  <NMC_Text0043>自動迎撃</NMC_Text0043>
+  <NMC_Text0044>所属空母：{0}
+{1}</NMC_Text0044>
+  <NMC_Text0045>必要な研究：{0}</NMC_Text0045>
+  <NMC_Text0046>母艦レベル{0}が必要</NMC_Text0046>
+  <NMC_Text0047>地下では軌道兵器を使用できません</NMC_Text0047>
+  <NMC_Text0048>エネルギー不足：{0} P + {1} Vが必要</NMC_Text0048>
+  <NMC_Text0049>軌道攻撃の着弾点がありません。厚い岩盤屋根の下は直接攻撃できません</NMC_Text0049>
+  <NMC_Text0050>精密友軍識別は有効です</NMC_Text0050>
+  <NMC_Text0052>艦</NMC_Text0052>
+  <NMC_Text0053>母艦司令官パネルを展開
+長押ししてドラッグすると移動できます</NMC_Text0053>
+  <NMC_Text0054>クイックスロット{0}
+クリックで解放済みの支援を追加
+長押しドラッグでパネルを移動</NMC_Text0054>
+  <NMC_Text0055>母艦司令官</NMC_Text0055>
+  <NMC_Text0056>エネルギーユニット P：{0}
+揮発性反応物 V：{1}
+長押しドラッグでパネルを移動</NMC_Text0056>
+  <NMC_Text0057>全体パネル</NMC_Text0057>
+  <NMC_Text0058>母艦司令官の全体パネルを開く</NMC_Text0058>
+  <NMC_Text0059>小ボタンに折りたたむ。クリックで再展開</NMC_Text0059>
+  <NMC_Text0060>支援</NMC_Text0060>
+  <NMC_Text0061>クリックで即座に発動</NMC_Text0061>
+  <NMC_Text0062>クリックで対象位置を選択</NMC_Text0062>
+  <NMC_Text0063>
+クールダウン残り：{0}</NMC_Text0063>
+  <NMC_Text0064>{0}
+{1} P / {2} V{3}
+{4}{5}
+右クリックで変更・解除。長押しでパネルを移動</NMC_Text0064>
+  <NMC_Text0065>クイックスロット{0}を解除</NMC_Text0065>
+  <NMC_Text0066>（現在）</NMC_Text0066>
+  <NMC_Text0067>（スロット{0}から移動）</NMC_Text0067>
+  <NMC_Text0068>解放済みの支援がありません</NMC_Text0068>
+  <NMC_Text0069>{0}億</NMC_Text0069>
+  <NMC_Text0070>{0}万</NMC_Text0070>
+  <NMC_Text0071>{0}日</NMC_Text0071>
+  <NMC_Text0072>{0}分</NMC_Text0072>
+  <NMC_Text0073>{0}秒</NMC_Text0073>
+  <NMC_Text0074>すべての支援</NMC_Text0074>
+  <NMC_Text0075>軌道火力</NMC_Text0075>
+  <NMC_Text0076>防衛と生産</NMC_Text0076>
+  <NMC_Text0077>影と制御</NMC_Text0077>
+  <NMC_Text0078>遠征援軍</NMC_Text0078>
+  <NMC_Text0079>施設と投射</NMC_Text0079>
+  <NMC_Text0080>ニヴァリアン · 母艦司令官</NMC_Text0080>
+  <NMC_Text0081>軌道火力、地上施設、遠征援軍を要請</NMC_Text0081>
+  <NMC_Text0082>エネルギーユニット P</NMC_Text0082>
+  <NMC_Text0083>揮発性反応物 V</NMC_Text0083>
+  <NMC_Text0084>母艦レベル</NMC_Text0084>
+  <NMC_Text0085>過負荷チャージ</NMC_Text0085>
+  <NMC_Text0086>支援分類</NMC_Text0086>
+  <NMC_Text0087>19種の戦術支援
+研究で順次解放
+母艦レベル条件あり</NMC_Text0087>
+  <NMC_Text0088>母艦支援に戻る</NMC_Text0088>
+  <NMC_Text0089>母艦クイックパネルを表示</NMC_Text0089>
+  <NMC_Text0090>母艦支援 · 影と超次元制御</NMC_Text0090>
+  <NMC_Text0091>
+維持費：0.1日ごとに1 Pと1 V</NMC_Text0091>
+  <NMC_Text0092>チャージ最大</NMC_Text0092>
+  <NMC_Text0093>3日ごとに1回復。次の回復：{0}</NMC_Text0093>
+  <NMC_Text0094>残り {0}</NMC_Text0094>
+  <NMC_Text0095>支援費用</NMC_Text0095>
+  <NMC_Text0096>クールダウン / チャージ</NMC_Text0096>
+  <NMC_Text0097>使用条件</NMC_Text0097>
+  <NMC_Text0098>必要物資</NMC_Text0098>
+  <NMC_Text0099>精密友軍識別 · 有効</NMC_Text0099>
+  <NMC_Text0102>3×3マス · ダメージ30 · 貫通35%</NMC_Text0102>
+  <NMC_Text0103>軌道爆撃を照準</NMC_Text0103>
+  <NMC_Text0104>給電中 · {0} / 10,000 W</NMC_Text0104>
+  <NMC_Text0105>エネルギーフィールドは別マップにあります · 移設可能</NMC_Text0105>
+  <NMC_Text0106>半径8マス · 未配置</NMC_Text0106>
+  <NMC_Text0107>現在の友軍 · シールド200 · 30秒</NMC_Text0107>
+  <NMC_Text0108>シールド200 · レーザー支援45秒</NMC_Text0108>
+  <NMC_Text0109>保護された対象を選択すると、各シールドと残り時間を確認できます。支援を早期終了してもエネルギー、クールダウン、チャージは戻りません。</NMC_Text0109>
+  <NMC_Text0110>支援準備完了</NMC_Text0110>
+  <NMC_Text0111>フィールド位置を選択</NMC_Text0111>
+  <NMC_Text0112>現在マップの友軍を保護</NMC_Text0112>
+  <NMC_Text0113>過負荷させる建物を選択</NMC_Text0113>
+  <NMC_Text0114>現在マップのフィールドを停止</NMC_Text0114>
+  <NMC_Text0115>現在マップのシールドを終了</NMC_Text0115>
+  <NMC_Text0116>過負荷を解除する建物を選択</NMC_Text0116>
+  <NMC_Text0117>爆撃半径13マス · 30秒間</NMC_Text0117>
+  <NMC_Text0118>現在マップを爆撃中 · 中止不可</NMC_Text0118>
+  <NMC_Text0119>準備完了 · 位置を選ぶと爆撃開始</NMC_Text0119>
+  <NMC_Text0120>太陽爆撃の中心を選択</NMC_Text0120>
+  <NMC_Text0121>追尾ビーム3本 · 8秒間</NMC_Text0121>
+  <NMC_Text0122>現在マップを掃射中</NMC_Text0122>
+  <NMC_Text0123>準備完了 · クールダウン半日</NMC_Text0123>
+  <NMC_Text0124>ビーム開始地点を選択</NMC_Text0124>
+  <NMC_Text0125>現在マップのビームを終了</NMC_Text0125>
+  <NMC_Text0126>未発動</NMC_Text0126>
+  <NMC_Text0127>{0}か所で発動中 · ここでの残り {1}</NMC_Text0127>
+  <NMC_Text0128>移動×2 · 作業×10 · 砲塔×3 · 60秒</NMC_Text0128>
+  <NMC_Text0129>準備完了 · 各入植地に作用</NMC_Text0129>
+  <NMC_Text0130>時空変動を発動</NMC_Text0130>
+  <NMC_Text0131>時空変動を終了</NMC_Text0131>
+  <NMC_Text0132>半径4マス · 自動追撃20秒</NMC_Text0132>
+  <NMC_Text0133>準備完了 · 開始地点を選択</NMC_Text0133>
+  <NMC_Text0134>徴兵中</NMC_Text0134>
+  <NMC_Text0135>自動追撃</NMC_Text0135>
+  <NMC_Text0136>{0} · 残り {1}</NMC_Text0136>
+  <NMC_Text0137>浄化ビームの開始地点を選択</NMC_Text0137>
+  <NMC_Text0138>徴兵解除して自動追撃</NMC_Text0138>
+  <NMC_Text0139>現在の浄化ビームを徴兵</NMC_Text0139>
+  <NMC_Text0140>移動先を選択</NMC_Text0140>
+  <NMC_Text0141>現在マップの浄化ビームを終了</NMC_Text0141>
+  <NMC_Text0142>完成品2×2・耐久800・基本施工20秒</NMC_Text0142>
+  <NMC_Text0143>完成品3×3・耐久1800・基本施工45秒</NMC_Text0143>
+  <NMC_Text0144>構造体を転送し、資材を搬入すると自動成形</NMC_Text0144>
+  <NMC_Text0145>影の塔の構造体を転送</NMC_Text0145>
+  <NMC_Text0146>モノリスの構造体を転送</NMC_Text0146>
+  <NMC_Text0147>シャドウガード4名 · 支援120秒</NMC_Text0147>
+  <NMC_Text0148>透明化した近接部隊 · 名品品質の武器</NMC_Text0148>
+  <NMC_Text0149>シャドウガードを配置</NMC_Text0149>
+  <NMC_Text0150>半径8マス · 敵を8秒間引き寄せ</NMC_Text0150>
+  <NMC_Text0151>準備完了 · 位置を選択</NMC_Text0151>
+  <NMC_Text0152>敵{0}体を牽引中 · 残り {1}</NMC_Text0152>
+  <NMC_Text0153>ブラックホールの中心を選択</NMC_Text0153>
+  <NMC_Text0154>現在マップのブラックホールを終了</NMC_Text0154>
+  <NMC_Text0155>各入植地にいる現在の敵 · {0}秒</NMC_Text0155>
+  <NMC_Text0156>敵{0}体を制御中 · ここでの残り {1}</NMC_Text0156>
+  <NMC_Text0157>準備完了 · 敵の移動と攻撃を停止</NMC_Text0157>
+  <NMC_Text0158>時間停止を発動</NMC_Text0158>
+  <NMC_Text0159>時間停止を終了</NMC_Text0159>
+  <NMC_Text0160>半径13マス · 30秒間</NMC_Text0160>
+  <NMC_Text0161>現在マップに結晶{0}基 · 敵を抑制中</NMC_Text0161>
+  <NMC_Text0162>準備完了 · 敵を減速して砲塔を停止</NMC_Text0162>
+  <NMC_Text0163>ヴォイド結晶の配置位置を選択</NMC_Text0163>
+  <NMC_Text0164>現在マップの全結晶を撤去</NMC_Text0164>
+  <NMC_Text0165>母艦と駆逐艦8隻 · 支援120秒</NMC_Text0165>
+  <NMC_Text0166>現在マップに艦隊{0}隊 · 生存 {1}</NMC_Text0166>
+  <NMC_Text0167>準備完了 · 艦隊は自動戦闘</NMC_Text0167>
+  <NMC_Text0168>戦術艦隊の到着位置を選択</NMC_Text0168>
+  <NMC_Text0169>支援終了後に艦艇と残骸を回収</NMC_Text0169>
+  <NMC_Text0170>テブルスと戦士10名 · 120秒</NMC_Text0170>
+  <NMC_Text0171>現在マップに軍団{0}隊 · 生存 {1}</NMC_Text0171>
+  <NMC_Text0172>準備完了 · 3軍団で7日間のクールダウンを共有</NMC_Text0172>
+  <NMC_Text0173>現在マップの通電中の軌道交易ビーコン範囲内にシルバー2000を用意してください。不足する場合はゴールド200を徴収します。</NMC_Text0173>
+  <NMC_Text0174>テブルス軍団の到着位置を選択</NMC_Text0174>
+  <NMC_Text0175>支援終了後に隊員と専用装備を回収</NMC_Text0175>
+  <NMC_Text0176>ゾラヤと輝光艦4隻 · 120秒</NMC_Text0176>
+  <NMC_Text0177>ゾラヤ軍団の到着位置を選択</NMC_Text0177>
+  <NMC_Text0178>セイダスと執政官3名 · 120秒</NMC_Text0178>
+  <NMC_Text0179>ビーコン範囲内のシルバー2000が必要で、不足時はゴールド200を徴収します。制御された敵はニヴァリアン生存者派閥に加入し、あなたの入植者にはなりません。</NMC_Text0179>
+  <NMC_Text0180>セイダス軍団の到着位置を選択</NMC_Text0180>
+  <NMC_Text0181>制御されたユニットは軍団撤収後も残ります</NMC_Text0181>
+  <NMC_Text0182>投射可能な砲塔：{0}基 · 戦闘60秒</NMC_Text0182>
+  <NMC_Text0183>投影の損傷は本体にも及びます</NMC_Text0183>
+  <NMC_Text0184>マトリクス投射の中心を選択</NMC_Text0184>
+  <NMC_Text0185>全砲塔を登録</NMC_Text0185>
+  <NMC_Text0186>登録を解除</NMC_Text0186>
+  <NMC_Text0187>各入植地の砲塔を登録できます。投影は5秒で形成され、本体から電力と弾薬を供給します。本体または投影を選択すると早期撤収できます。消費したエネルギーは戻りません。</NMC_Text0187>
+  <NMC_Text0188>この支援は現在使用できません</NMC_Text0188>
+  <NMC_Text0189>表示順を前へ</NMC_Text0189>
+  <NMC_Text0190>表示順を後へ</NMC_Text0190>
+  <NMC_Text0191>支援の表示順を変更できます</NMC_Text0191>
+  <NMC_Text0192>準備完了</NMC_Text0192>
+  <NMC_Text0193>{0}日</NMC_Text0193>
+  <NMC_Text0194>{0}秒</NMC_Text0194>
+  <NMC_Text0195>連続射撃</NMC_Text0195>
+  <NMC_Text0196>3日ごとに1回復</NMC_Text0196>
+  <NMC_Text0197>（軍団で共有）</NMC_Text0197>
+  <NMC_Text0198>先に連続体任務の第{0}段階を完了：{1}</NMC_Text0198>
+  <NMC_Text0199> · 完了</NMC_Text0199>
+  <NMC_Text0200> · 未完了</NMC_Text0200>
+  <NMC_Text0201>{0}{1}
+必要母艦レベル：{2}（現在 {3}）{4}</NMC_Text0201>
+  <NMC_Text0202>母艦支援は未準備です</NMC_Text0202>
+  <NMC_Text0203>先に対象マップを開いてください</NMC_Text0203>
+  <NMC_Text0204>この能力にはクイック操作がありません</NMC_Text0204>
+  <NMC_Text0205>軌道爆撃 · 1発{0} P + {1} V · 左クリックで連続射撃 · 右クリック / Escで終了</NMC_Text0205>
+  <NMC_Text0206>施工定義がないか期間が無効です</NMC_Text0206>
+  <NMC_Text0207>施工コアに建材コンテナがありません</NMC_Text0207>
+  <NMC_Text0208>コアの占有サイズ、耐久値、建材残留定義が無効です</NMC_Text0208>
+  <NMC_Text0209>施工材料の定義がない、重複、または数量が無効です</NMC_Text0209>
+  <NMC_Text0210>母艦施工：{0}秒</NMC_Text0210>
+  <NMC_Text0211>建材の搬入待ち</NMC_Text0211>
+  <NMC_Text0212>母艦施工を取消</NMC_Text0212>
+  <NMC_Text0213>施工を取り消し、搬入済みの建材を返します。コア配置に使ったエネルギーとクールダウンは戻りません。</NMC_Text0213>
+  <NMC_Text0214>連続体の空挺援軍が到着：メカノイドとニラ戦闘ユニット</NMC_Text0214>
+  <NMC_Text0215>シャドウ結晶塔</NMC_Text0215>
+  <NMC_Text0216>シャドウ援軍</NMC_Text0216>
+  <NMC_Text0217>遠征軍団</NMC_Text0217>
+  <NMC_Text0218>超次元モノリス</NMC_Text0218>
+  <NMC_Text0219>超次元投影</NMC_Text0219>
+  <NMC_Text0220>艦隊支援</NMC_Text0220>
+  <NMC_Text0221>浄化ビーム</NMC_Text0221>
+  <NMC_Text0222>太陽爆撃</NMC_Text0222>
+  <NMC_Text0223>連続体基地（第{0}段階）</NMC_Text0223>
+  <NMC_Text0224>連続体：{0}（{1}/8）</NMC_Text0224>
+  <NMC_Text0225>成功後、母艦は次の基地を捜索します。</NMC_Text0225>
+  <NMC_Text0226>これは最終段階です。完了すると連続体の全研究資料を取得できます。</NMC_Text0226>
+  <NMC_Text0227>母艦は入植地付近の連続体通信を傍受し、戦術資料を保管する基地を特定しました。部隊を派遣し、通信コアを破壊し、守備隊を倒して防衛砲塔を破壊すると資料を取得できます。コアの破壊だけでは任務は完了しません。
+
+戦利品は陣地中央に集中し、多層の砲塔と土嚢で守られています。守備隊はメカノイドやニヴァリアン武器を装備したニラ戦闘ユニットを含む空挺援軍を呼びます。
+
+この基地に期限はなく、待機しても自動で消えることはありません。戦場に入った後、目標達成前に全員が撤退すると任務は失敗します。母艦は3日後に同じ段階の基地を再特定し、取得済み研究資料は保持されます。
+
+今回の資料で以下の研究が解放されます：
+{0}
+
+支援を使うには、上行リンク研究端末で材料を納入し、研究を完了して必要な母艦レベルに達する必要があります。{1}</NMC_Text0227>
+  <NMC_Text0228>連続体研究資料を取得</NMC_Text0228>
+  <NMC_Text0229>
+
+母艦は次の連続体基地を捜索中です。</NMC_Text0229>
+  <NMC_Text0230>
+
+連続体の全8段階が完了し、関連する全研究資料を取得しました。</NMC_Text0230>
+  <NMC_Text0231>母艦が基地の資料を解析し、以下の研究が可能になりました：
+{0}
+
+上行リンク研究端末で必要材料を納入し、研究を完了してください。支援の利用には対応する母艦レベルも必要です。{1}</NMC_Text0231>
+  <NMC_Text0232>連続体作戦が失敗</NMC_Text0232>
+  <NMC_Text0233>第{0}段階の基地から資料を取得できませんでした。母艦は3日後に同じ段階の目標を再特定します。
+
+取得済み資料と完了済み研究は失われません。</NMC_Text0233>
+  <NMC_Text0234>連続体基地を見る</NMC_Text0234>
+  <NMC_Text0238>建物過負荷のチャージが不足しています</NMC_Text0238>
+  <NMC_Text0239>フィールド中心はマップ内である必要があります</NMC_Text0239>
+  <NMC_Text0240>このマップの友軍建物を選択</NMC_Text0240>
+  <NMC_Text0241>母艦支援 · シールド合計 {0} / 400</NMC_Text0241>
+  <NMC_Text0242>シールド過負荷：シールド{0} · {1}秒</NMC_Text0242>
+  <NMC_Text0243>建物過負荷：シールド{0} · {1}秒</NMC_Text0243>
+  <NMC_Text0244>ワープエネルギーフィールド停止：維持に必要な1 Pと1 Vが不足しています。</NMC_Text0244>
+  <NMC_Text0245>必要な研究：領域間人員ワープ</NMC_Text0245>
+  <NMC_Text0246>マップ上の自派閥入植者を選択</NMC_Text0246>
+  <NMC_Text0247>ワープエネルギーフィールドがありません</NMC_Text0247>
+  <NMC_Text0248>入植者が元のマップを離れました。選び直してください。</NMC_Text0248>
+  <NMC_Text0249>ワープエネルギーフィールドが置き換えられました。再度選択してください。</NMC_Text0249>
+  <NMC_Text0250>フィールド内に安全な空きマスがありません。</NMC_Text0250>
+  <NMC_Text0251>入植者はすでに到着位置にいます。</NMC_Text0251>
+  <NMC_Text0252>運搬中の対象を安全に下ろせません。先に運搬を中止してください。</NMC_Text0252>
+  <NMC_Text0253>{0}がフィールドにワープしました。</NMC_Text0253>
+  <NMC_Text0254>入植者がフィールドに到着しました。状態を確認し、作業を再指示してください。</NMC_Text0254>
+  <NMC_Text0255>ワープできませんでした。入植者の現在位置を確認して再試行してください。</NMC_Text0255>
+  <NMC_Text0256>エネルギーフィールドへワープ</NMC_Text0256>
+  <NMC_Text0258>ゾラヤ軍団 · </NMC_Text0258>
+  <NMC_Text0259>戦術艦隊 · </NMC_Text0259>
+  <NMC_Text0260>回収中</NMC_Text0260>
+  <NMC_Text0261> · 到着時損失 {0}</NMC_Text0261>
+  <NMC_Text0262>到着 {0} / {1}{2}</NMC_Text0262>
+  <NMC_Text0263>{0}{1} / {2} 耐久
+{3}</NMC_Text0263>
+  <NMC_Text0264>9隻の到着位置はマップ最外周を避ける必要があります</NMC_Text0264>
+  <NMC_Text0265>9隻の到着位置は未探索領域を避ける必要があります</NMC_Text0265>
+  <NMC_Text0266>9隻の到着位置は厚い岩盤屋根の下にできません</NMC_Text0266>
+  <NMC_Text0267>到着位置に壁や通行不能地形は使用できません</NMC_Text0267>
+  <NMC_Text0268>到着位置は別の艦艇が使用中です</NMC_Text0268>
+  <NMC_Text0269>艦隊到着失敗。費用とクールダウンは消費していません</NMC_Text0269>
+  <NMC_Text0270>母艦エネルギー不足。今回の艦隊支援は取消されました</NMC_Text0270>
+  <NMC_Text0271>戦術艦隊がワープ到着：母艦1隻と駆逐艦8隻。全艦到着後120秒間滞在</NMC_Text0271>
+  <NMC_Text0272>戦術艦隊 · {0} P + {1} V · 母艦1＋駆逐艦8 · 左クリックで配置、右クリック / Escで取消</NMC_Text0272>
+  <NMC_Text0273>シャドウガード移動速度補正：{0}</NMC_Text0273>
+  <NMC_Text0274>現存する非敵対のニヴァリアン生存者派閥が必要</NMC_Text0274>
+  <NMC_Text0275>シャドウガードは現在派遣できません</NMC_Text0275>
+  <NMC_Text0276>シャドウガードの装備が使用できず、派遣できません</NMC_Text0276>
+  <NMC_Text0277>シャドウガードの武器は未準備です</NMC_Text0277>
+  <NMC_Text0278>付近に探索済みで立てる、厚い岩盤屋根のない空きマス4か所が必要</NMC_Text0278>
+  <NMC_Text0279>部隊の到着位置は使用中です</NMC_Text0279>
+  <NMC_Text0280>遠征軍団移動速度補正：{0}</NMC_Text0280>
+  <NMC_Text0281>ニヴァリアン生存者軍団が存在しない、滅亡済み、または敵対しています</NMC_Text0281>
+  <NMC_Text0283>超次元制御アレイ：稼働中</NMC_Text0283>
+  <NMC_Text0284>超次元制御アレイ：電力不足</NMC_Text0284>
+  <NMC_Text0285> · 攻撃クールダウンが通常の1/3</NMC_Text0285>
+  <NMC_Text0286> · 2秒ごとに攻撃</NMC_Text0286>
+  <NMC_Text0287>{0}{1} · 射程60マス · 最大10対象</NMC_Text0287>
+  <NMC_Text0288>{0}は燃料が切れ、緊急着陸しました。</NMC_Text0288>
+  <NMC_Text0289>停泊中</NMC_Text0289>
+  <NMC_Text0290> · 星艦動力：離陸ごとに化学燃料{0}、飛行中は消費なし</NMC_Text0290>
+  <NMC_Text0291>毎秒1単位</NMC_Text0291>
+  <NMC_Text0292>5秒ごとに1単位</NMC_Text0292>
+  <NMC_Text0293> · 飛行中燃料消費：{0}</NMC_Text0293>
+  <NMC_Text0294>
+星艦バッテリー改良：{0}/{1}（搬入待ち）</NMC_Text0294>
+  <NMC_Text0295> · 製造残り {0}秒</NMC_Text0295>
+  <NMC_Text0296>
+艦載機：{0}/{1}（格納庫{2}、出撃{3}）
+龍霜鋼：{4}/1000{5}</NMC_Text0296>
+  <NMC_Text0297>
+重力ビームのクールダウン：{0}秒</NMC_Text0297>
+  <NMC_Text0298>先に空中戦を終了して着陸してください。空母は艦載機の回収も必要です。</NMC_Text0298>
+  <NMC_Text0299>離陸には化学燃料{0}が必要です。</NMC_Text0299>
+  <NMC_Text0300>無効</NMC_Text0300>
+  <NMC_Text0301>栄養補給待ち</NMC_Text0301>
+  <NMC_Text0302>稼働停止中</NMC_Text0302>
+  <NMC_Text0303>母艦にエネルギー供給中</NMC_Text0303>
+  <NMC_Text0304>{0}栄養備蓄：{1}（補給目標 {2}）
+栄養消費：{3} / ゲーム日
+母艦エネルギー：{4} P / ゲーム日
+{5} · 定格発電{6} W</NMC_Text0304>
+  <NMC_Text0305>その他の商品</NMC_Text0305>
+  <NMC_Text0306>ニラ</NMC_Text0306>
+  <NMC_Text0307>こんにちは、司令官。商品リストを用意しました。今日は入植地に何を届けましょうか？</NMC_Text0307>
+  <NMC_Text0308>おかえりなさい。お買い物にお付き合いします。ゆっくり選んでくださいね。</NMC_Text0308>
+  <NMC_Text0309>母艦補給チャンネルに接続しました。在庫を見て、よさそうなものを持ち帰ってください。</NMC_Text0309>
+  <NMC_Text0310>今日はちゃんと食べましたか？買い物リストが長くても、休憩を忘れないでくださいね。</NMC_Text0310>
+  <NMC_Text0311>母艦は静かです。入植地の日常を聞くの、けっこう好きなんです。</NMC_Text0311>
+  <NMC_Text0312>倉庫に少し空きを作っておくと、物が届いてから慌てて箱を動かさずに済みますよ。</NMC_Text0312>
+  <NMC_Text0313>次に寄港するとき、みんなに甘いものを持っていこうかなって考えていました。</NMC_Text0313>
+  <NMC_Text0314>晴れたら、私の代わりに地上の空を見てください。軌道からの景色とはずいぶん違うんです。</NMC_Text0314>
+  <NMC_Text0315>補給品を整理する合間に本を読んでいます。最近、気に入ったお話はありますか？</NMC_Text0315>
+  <NMC_Text0316>大丈夫、このチャンネルにいますから。ゆっくり選んでください。</NMC_Text0316>
+  <NMC_Text0317>明かりや温かい食事。そんな小さなものが、安心させてくれることもありますね。</NMC_Text0317>
+  <NMC_Text0318>注文を受け取りました。軌道から物資をお届けします。倉庫に場所を空けてくださいね。</NMC_Text0318>
+  <NMC_Text0319>こちらは手配しておきました。役に立つといいですね。</NMC_Text0319>
+  <NMC_Text0320>物資を投下システムに引き渡しました。用事が済んだら、休むのも忘れずに。</NMC_Text0320>
+  <NMC_Text0321>購入完了です。箱が届いたら、ほかに足りないものも見てみましょう。</NMC_Text0321>
+  <NMC_Text0322>ありがとうございます。この物資は母艦で引き続き役立てます。</NMC_Text0322>
+  <NMC_Text0323>寄付を受け取り、Pポイントを記入しました。運んでくれた皆さんにお礼を伝えてくださいね。</NMC_Text0323>
+  <NMC_Text0324>余った物資も役に立ちます。母艦のことを気にかけてくれて、ありがとうございます。</NMC_Text0324>
+  <NMC_Text0325>受け取りました。倉庫がすっきりすると、少し気が楽になりませんか？</NMC_Text0325>
+  <NMC_Text0326>新しい商品リストが届きました。分類しておいたので、必要なものがないか見てください。</NMC_Text0326>
+  <NMC_Text0327>在庫が更新されました。今回はどんないいものがあるでしょうね。</NMC_Text0327>
+  <NMC_Text0328>この注文はまだ完了していません。表示を確認して、問題を解決してから続けましょう。</NMC_Text0328>
+  <NMC_Text0329>慌てなくて大丈夫。数量とPポイントを確認してください。待っていますから。</NMC_Text0329>
+  <NMC_Text0330>{0}：{1}
+顔画像をクリックで雑談、文章をクリックで全文表示。</NMC_Text0330>
+  <NMC_Text0331>母艦が商品リストを作成中です。ゲームを進めて少しお待ちください。</NMC_Text0331>
+  <NMC_Text0332>自派閥の入植地を受発送先に選択してください。</NMC_Text0332>
+  <NMC_Text0333>母艦エネルギー口座が未接続です。</NMC_Text0333>
+  <NMC_Text0334>この入植地には通電中の軌道交易ビーコンが1基以上必要です。</NMC_Text0334>
+  <NMC_Text0335>注文が無効です。ショップを開き直してください。</NMC_Text0335>
+  <NMC_Text0336>この注文は処理済みです。</NMC_Text0336>
+  <NMC_Text0337>注文の品目または数量が無効です。</NMC_Text0337>
+  <NMC_Text0338>品物または在庫が変わりました。注文を確認して再試行してください。</NMC_Text0338>
+  <NMC_Text0339>一部の品物は見積もりできません。取り除いて再試行してください。</NMC_Text0339>
+  <NMC_Text0340>価格が変わりました。リストを再確認してください。</NMC_Text0340>
+  <NMC_Text0341>商品が更新されました。再度選んでください。</NMC_Text0341>
+  <NMC_Text0342>注文の支払いに必要なPポイントが不足しています。</NMC_Text0342>
+  <NMC_Text0343>ビーコン付近に屋外の投下地点がありません。費用は未徴収です。</NMC_Text0343>
+  <NMC_Text0344>母艦Pポイントを利用できません。後で再試行してください。</NMC_Text0344>
+  <NMC_Text0345>品物の移送が未完了です。注文を取り消し、費用は未徴収です。</NMC_Text0345>
+  <NMC_Text0346>購入完了。{0} Pを支払い、軌道投下を手配しました。</NMC_Text0346>
+  <NMC_Text0347>寄付によりP口座上限を超えます。数量を減らしてください。</NMC_Text0347>
+  <NMC_Text0348>品物の移送が未完了のため、寄付を取り消しました。</NMC_Text0348>
+  <NMC_Text0349>寄付完了。{0} Pを獲得しました。物資をありがとうございます。</NMC_Text0349>
+  <NMC_Text0350>母艦ポイントショップ</NMC_Text0350>
+  <NMC_Text0351>入植地未選択</NMC_Text0351>
+  <NMC_Text0352>閉じる</NMC_Text0352>
+  <NMC_Text0353>商品リスト作成中</NMC_Text0353>
+  <NMC_Text0354>次の補充：{0}日{1}時間</NMC_Text0354>
+  <NMC_Text0355>7日ごとに補充 · 最大60種 · 各入植地で在庫共有</NMC_Text0355>
+  <NMC_Text0356>新しい商品リストが届き、以前の購入リストをクリアしました。</NMC_Text0356>
+  <NMC_Text0357>ビーコン範囲内の物資を選ぶと、寄付で得られるPポイントを確認できます。</NMC_Text0357>
+  <NMC_Text0358>商品と数量を選んでください。アイコンで詳細を確認できます。</NMC_Text0358>
+  <NMC_Text0359>商品を購入</NMC_Text0359>
+  <NMC_Text0360>◆ 商品を購入</NMC_Text0360>
+  <NMC_Text0361>◆ 物資を寄付</NMC_Text0361>
+  <NMC_Text0362>物資を寄付</NMC_Text0362>
+  <NMC_Text0363>受発送先：{0}</NMC_Text0363>
+  <NMC_Text0364>品名または所属MOD名で検索します。</NMC_Text0364>
+  <NMC_Text0365>商品 / MODを検索</NMC_Text0365>
+  <NMC_Text0366>全分類</NMC_Text0366>
+  <NMC_Text0367>全出典</NMC_Text0367>
+  <NMC_Text0368>商品分類</NMC_Text0368>
+  <NMC_Text0369>全商品</NMC_Text0369>
+  <NMC_Text0370>{0}種</NMC_Text0370>
+  <NMC_Text0371>ビーコン範囲内の物資</NMC_Text0371>
+  <NMC_Text0372>販売商品</NMC_Text0372>
+  <NMC_Text0373>寄付可能な物資がありません。ビーコンの電力、範囲、絞り込み条件を確認してください。</NMC_Text0373>
+  <NMC_Text0374>条件に合う商品がありません。条件を変えるか次の補充をお待ちください。</NMC_Text0374>
+  <NMC_Text0375>寄付可能：{0}個</NMC_Text0375>
+  <NMC_Text0376>{0} / 個 · 在庫 {1}</NMC_Text0376>
+  <NMC_Text0377>数量を選ぶと、寄付リストで獲得Pポイントを確認できます。</NMC_Text0377>
+  <NMC_Text0378>単価：{0}</NMC_Text0378>
+  <NMC_Text0379>{0}
+{1}
+{2}
+アイコンで詳細表示。
+Shiftを押しながら増減ボタンをクリックすると10個ずつ変更。</NMC_Text0379>
+  <NMC_Text0380>残高  {0} P</NMC_Text0380>
+  <NMC_Text0381>購入に使えるPポイント。過去の取引の残高も含まれます。
+母艦に物資を寄付するとPポイントを獲得できます。</NMC_Text0381>
+  <NMC_Text0382>物資を寄付して母艦の備蓄を補充します。
+確定前に品目と報酬を確認できます。</NMC_Text0382>
+  <NMC_Text0383>必要な物資を購入します。
+選択した入植地に貨物が投下されます。</NMC_Text0383>
+  <NMC_Text0384>獲得予定  </NMC_Text0384>
+  <NMC_Text0385>注文合計  </NMC_Text0385>
+  <NMC_Text0386>{0}項目を選択</NMC_Text0386>
+  <NMC_Text0387>クリア</NMC_Text0387>
+  <NMC_Text0388>取引結果待ち</NMC_Text0388>
+  <NMC_Text0389>寄付リストを確認</NMC_Text0389>
+  <NMC_Text0390>購入リストを確認</NMC_Text0390>
+  <NMC_Text0391>Pポイント不足</NMC_Text0391>
+  <NMC_Text0392>品目と金額を確認してから取引を確定してください。</NMC_Text0392>
+  <NMC_Text0393>注文送信済み。取引結果を待っています。</NMC_Text0393>
+  <NMC_Text0394>物資の寄付を確定</NMC_Text0394>
+  <NMC_Text0395>購入を確定</NMC_Text0395>
+  <NMC_Text0396>確定すると物資を母艦へ渡し、表示Pポイントを得ます。寄付後は取り戻せません。数量を確認してください。</NMC_Text0396>
+  <NMC_Text0397>確定すると表示Pポイントを支払い、選択した入植地の交易ビーコン付近に軌道投下されます。屋外の空き地を確保してください。</NMC_Text0397>
+  <NMC_Text0398>この寄付ではPポイントを得られません。確定すると物資を渡し、取り戻せません。</NMC_Text0398>
+  <NMC_Text0399>
+遺体の装備と所持品も渡されますがP報酬は増えません。残したい物は先に外してください。</NMC_Text0399>
+  <NMC_Text0400>確定後に母艦へ引き渡し</NMC_Text0400>
+  <NMC_Text0401>小計：{0} P</NMC_Text0401>
+  <NMC_Text0402>獲得Pポイント：</NMC_Text0402>
+  <NMC_Text0403>支払Pポイント：</NMC_Text0403>
+  <NMC_Text0404>修正に戻る</NMC_Text0404>
+  <NMC_Text0405>寄付を確定 · {0} P</NMC_Text0405>
+  <NMC_Text0406>購入を確定</NMC_Text0406>
+  <NMC_Text0407>先に耐久2以上の稼働可能な砲塔を登録してください</NMC_Text0407>
+  <NMC_Text0408>周囲20マス以内に砲塔を配置できません。別の位置を選択。費用は未徴収</NMC_Text0408>
+  <NMC_Text0409>投射には{0} P + {1} Vが必要</NMC_Text0409>
+  <NMC_Text0410>投影武器コンポーネント数が不一致</NMC_Text0410>
+  <NMC_Text0411>投影武器コンポーネントの出典が不一致</NMC_Text0411>
+  <NMC_Text0412>共有口座での支払い失敗</NMC_Text0412>
+  <NMC_Text0413>投射に失敗し、仮投影を撤収しました。費用は未徴収です。</NMC_Text0413>
+  <NMC_Text0414>この投影を撤収</NMC_Text0414>
+  <NMC_Text0415>投影を撤収して本体の戦闘を再開します。損傷は回復せず、エネルギーとクールダウンは戻りません。</NMC_Text0415>
+  <NMC_Text0416>マトリクス投射登録</NMC_Text0416>
+  <NMC_Text0417>母艦が砲塔を遠方へ投射できるようにします。5秒で形成し、60秒戦闘します。本体は停火して電力と弾薬を供給し、投影の損傷は本体にも及びます。</NMC_Text0417>
+  <NMC_Text0418>関連投影を撤収</NMC_Text0418>
+  <NMC_Text0419>この砲塔の投影を撤収して本体の戦闘を再開します。損傷は残り、エネルギーとクールダウンは戻りません。</NMC_Text0419>
+  <NMC_Text0420>形成 {0}</NMC_Text0420>
+  <NMC_Text0421>戦闘 {0}</NMC_Text0421>
+  <NMC_Text0422>
+マトリクス投影 · {0}秒
+本体：{1} · 投影は修理不可</NMC_Text0422>
+  <NMC_Text0423>
+マトリクス投射中：本体停火。被弾と修理は可能</NMC_Text0423>
+  <NMC_Text0424>仮投影はアンインストールや移設不可。先に投影を撤収して本体を移設してください</NMC_Text0424>
+  <NMC_Text0425>本体使用不能。投影を撤収中</NMC_Text0425>
+  <NMC_Text0426>マトリクス形成中：停火</NMC_Text0426>
+  <NMC_Text0427>本体の電力は正常</NMC_Text0427>
+  <NMC_Text0428>本体電力不足：投影停火</NMC_Text0428>
+  <NMC_Text0429>位置不明</NMC_Text0429>
+  <NMC_Text0430>電力供給元：{0}（{1}）
+{2}
+投影は本体の電力と補給を使用</NMC_Text0430>
+  <NMC_Text0431>地下では浄化ビームを使用できません</NMC_Text0431>
+  <NMC_Text0432>母艦支援に一時的に接続できません</NMC_Text0432>
+  <NMC_Text0433>屋外の浄化ビーム開始地点がありません</NMC_Text0433>
+  <NMC_Text0434>浄化ビーム · 700 P + 550 V · 左クリックで開始地点 / 自動追撃 · 右クリック / Escで取消</NMC_Text0434>
+  <NMC_Text0435>浄化ビーム徴兵中 · 左クリックで移動先 · 右クリック / Escで命令取消</NMC_Text0435>
+  <NMC_Text0436>5隻の到着位置はマップ最外周を避ける必要があります</NMC_Text0436>
+  <NMC_Text0437>5隻の到着位置は探索済みである必要があります</NMC_Text0437>
+  <NMC_Text0438>5隻の到着位置は厚い岩盤屋根の下にできません</NMC_Text0438>
+  <NMC_Text0439>5隻の到着位置に壁や通行不能地形は使用できません</NMC_Text0439>
+  <NMC_Text0440>ゾラヤ軍団到着失敗。費用とクールダウンは未消費</NMC_Text0440>
+  <NMC_Text0441>軍団と連絡できなくなり、援軍を取り消しました</NMC_Text0441>
+  <NMC_Text0443>エネルギー不足。物資を返却し、援軍を取り消しました</NMC_Text0443>
+  <NMC_Text0444>ゾラヤ軍団到着：ゾラヤとヴォイド輝光艦4隻。全艦到着後120秒滞在</NMC_Text0444>
+  <NMC_Text0445>ゾラヤ軍団 · {0} P + {1} V · 左クリックで配置、右クリック / Escで取消</NMC_Text0445>
+  <NMC_Text0446>太陽光線砲 · 300 P + 180 V · 左クリックで3本 / 8秒開始 · 右クリック / Escで取消</NMC_Text0446>
+  <NMC_Text0447>軍団装備は未準備のため援軍を要請できません</NMC_Text0447>
+  <NMC_Text0448>軍団部隊は現在派遣できません</NMC_Text0448>
+  <NMC_Text0449>付近に探索済みで立てる、厚い岩盤屋根のない空きマス4か所が必要</NMC_Text0449>
+  <NMC_Text0450>セイダス軍団到着失敗。費用とクールダウンは未消費</NMC_Text0450>
+  <NMC_Text0451>セイダス軍団到着：セイダスとダークアルコン3名。120秒後ワープ撤退</NMC_Text0451>
+  <NMC_Text0453>セイダス軍団 · {0} P + {1} V · 左クリックで配置、右クリック / Escで取消</NMC_Text0453>
+  <NMC_Text0454>精神的帰属</NMC_Text0454>
+  <NMC_Text0455>地下では太陽爆撃を使用できません</NMC_Text0455>
+  <NMC_Text0456>太陽爆撃の中心がありません。厚い岩盤屋根の下は直接攻撃不可</NMC_Text0456>
+  <NMC_Text0457>太陽爆撃終了：範囲内に有効な着弾点がありません</NMC_Text0457>
+  <NMC_Text0458>地下では太陽光線砲を使用できません</NMC_Text0458>
+  <NMC_Text0459>太陽ビームの開始地点がありません。厚い岩盤屋根の下は直接命中不可</NMC_Text0459>
+  <NMC_Text0460>太陽爆撃 · {0} P + {1} V · 左クリックで300発開始 · 右クリック / Escで照準取消</NMC_Text0460>
+  <NMC_Text0461>利用可能な入植地が1か所以上必要</NMC_Text0461>
+  <NMC_Text0462>時空変動：作業速度10倍</NMC_Text0462>
+  <NMC_Text0463>この施設は配置できません</NMC_Text0463>
+  <NMC_Text0464>施工コアは使用できず配置不可</NMC_Text0464>
+  <NMC_Text0465>ここには施工コアを配置できません</NMC_Text0465>
+  <NMC_Text0466>コアの占有範囲はマップ最外周に接触不可</NMC_Text0466>
+  <NMC_Text0467>コアの占有範囲は探索済みが必要</NMC_Text0467>
+  <NMC_Text0468>建物、人員、品物があります。先に取り除いてください</NMC_Text0468>
+  <NMC_Text0469>付近に探索済みで立てる、厚い岩盤屋根のない空きマス11か所が必要</NMC_Text0469>
+  <NMC_Text0470>テブルス軍団到着失敗。費用とクールダウンは未消費</NMC_Text0470>
+  <NMC_Text0471>テブルス軍団到着：テブルスと近接戦士10名。120秒後ワープ撤退</NMC_Text0471>
+  <NMC_Text0473>テブルス軍団 · {0} P + {1} V · 左クリックで配置、右クリック / Escで取消</NMC_Text0473>
+  <NMC_Text0474>ヴォイド抑制 · 被弾破壊不可
+半径13 · 敵の移動・攻撃速度を30%に低下 · 砲塔停火
+残り：{0}</NMC_Text0474>
+  <NMC_Text0475>結晶はマップ内に配置してください。</NMC_Text0475>
+  <NMC_Text0476>結晶の配置位置は探索済みが必要</NMC_Text0476>
+  <NMC_Text0478>ヴォイド抑制結晶は現在配置できません</NMC_Text0478>
+  <NMC_Text0479>ここには結晶を配置できません</NMC_Text0479>
+  <NMC_Text0480>ヴォイド抑制結晶 · {0} P + {1} V · 半径18 / 30秒 · 左クリックで配置、右クリック / Escで取消</NMC_Text0480>
+  <NMC_Text0481>ヴォイド抑制結晶 · {0}</NMC_Text0481>
+  <NMC_Text0711>必要な研究：精密友軍識別</NMC_Text0711>
+  <NMC_Text0712>上行リンク研究端末で精密友軍識別を研究してください</NMC_Text0712>
+  <NMC_Text0713>精密友軍識別 · 未研究</NMC_Text0713>
+  <NMC_Text0714>司令官支援火力は自派閥と同盟軍を保護します。</NMC_Text0714>
+  <NMC_Text0715>{0}。上行リンク研究端末で材料を納入し、完了後に自動で有効になります。</NMC_Text0715>
+  <NMC_ResearchTaskLocked>前提任務が未完了のため、研究を解放できません。</NMC_ResearchTaskLocked>
+  <NMC_ResearchTaskProgress>連続体任務の進捗：{0}/{1}段階完了。「クエスト」画面で必要な段階を完了してから、上行リンク研究端末に戻ってください。</NMC_ResearchTaskProgress>
+  <NMC_ResearchTaskButton>前提任務が未完了</NMC_ResearchTaskButton>
+  <NMC_ResearchTaskAndResearchButton>前提任務・研究が未完了</NMC_ResearchTaskAndResearchButton>
+  <NMC_CarrierSteelTitle>龍霜鋼の備蓄</NMC_CarrierSteelTitle>
+  <NMC_CarrierSteelTooltip>目標量：{0}。備蓄バーをドラッグして調整します。艦載機1機につき龍霜鋼{1}を消費します。着陸中に入植者が補充します。輸送貨物は自動的に備蓄へ移されません。</NMC_CarrierSteelTooltip>
+  <NMC_CarrierSteelAirborne>飛行中は補充できませんが、備蓄を使って艦載機を製造できます。</NMC_CarrierSteelAirborne>
+  <NMC_CarrierSteelAutoFill>龍霜鋼を自動補充します。無効でも右クリックで入植者に補充を命令できます。</NMC_CarrierSteelAutoFill>
+  <NMC_CarrierSteelMissing>運搬可能な龍霜鋼がありません</NMC_CarrierSteelMissing>
+  <NMC_SettingsShortcut>母艦指揮HUDを表示</NMC_SettingsShortcut>
+  <NMC_SettingsUnlockAll>対応する任務を完了せずに技術を研究する</NMC_SettingsUnlockAll>
+  <NMC_SettingsUnlockAllHint>初期状態ではオフ。本拡張の研究に必要な任務条件のみを解除します。前提技術、資材、通常の研究は引き続き必要です。技術や任務を自動完了せず、支援の母艦レベル条件も維持します。オフにすると任務条件が戻りますが、完了済み研究は保持されます。</NMC_SettingsUnlockAllHint>
+  <NMC_Text0748>時空変動：移動速度2倍</NMC_Text0748>
+  <NMC_Text0749>栄養備蓄</NMC_Text0749>
+  <NMC_Text0750>目標栄養量：{0}。備蓄バーをドラッグして変更できます。目標を下げても既存の栄養は残り、0にすると補給を停止します。食料の種類は「栄養」タブで設定できます。</NMC_Text0750>
+  <NMC_Text0751>栄養を自動補給します。無効にすると新しい自動補給作業を停止しますが、既存の栄養は通常どおり消費されます。右クリックで入植者に補給を指示できます。</NMC_Text0751>
+  <NMC_Text0752>改良を中止（{0}/{1}）</NMC_Text0752>
+  <NMC_Text0753>このMODのプレイヤー所有艦船のみ折り畳み可能</NMC_Text0753>
+  <NMC_Text0754>離着陸または入場ワープの完了を待ってください</NMC_Text0754>
+  <NMC_Text0755>現在のエネルギーフィールド内の空き位置へ艦船を折り畳みます。船体、向き、貨物、乗員、改良進捗を保持し、空母は先に艦載機を回収します。離着陸中・入場ワープ中は不可。召喚艦隊の残り時間は維持されます。
+
+ニヴァリアン建築のプリントエフェクトを使用します。出発地点で4秒、実際の到着地点でさらに4秒かかります（ゲーム内時間）。両段階とも通常どおりダメージを受けます。
+
+飛行中の艦船は地形や建物の上へ転移し、飛行状態を維持します。着陸中の艦船には通常の着地点条件が適用されます。</NMC_Text0755>
+  <NMC_WarpFuelRate>10秒ごとに1単位</NMC_WarpFuelRate>
+  <NMC_WarpChanging>モード切替中：{0}秒</NMC_WarpChanging>
+  <NMC_WarpFieldStatus>エネルギー場：半径6マス、入植者の転送先</NMC_WarpFieldStatus>
+  <NMC_WarpFlightStatus>飛行モード：エネルギー場は未展開</NMC_WarpFlightStatus>
+  <NMC_WarpFlightMode>飛行モード</NMC_WarpFlightMode>
+  <NMC_WarpFieldMode>エネルギー場モード</NMC_WarpFieldMode>
+  <NMC_WarpLocked>先に飛行モードへ切り替えてください。場の展開中と切替中は移動、着陸、艦の転送ができません。</NMC_WarpLocked>
+  <NMC_WarpModeDescription>切替は1秒。展開したプリズムは静止してゆっくり回転し、半径6マスに給電、ユニット充電、入植者の転送先を提供します。同一マップの場は10000Wを共有します。飛行中と同じ燃料を消費し、艦はプリズムへ転送できません。</NMC_WarpModeDescription>
+  <NMC_WarpTakeoffFirst>先に離陸を完了してください。</NMC_WarpTakeoffFirst>
+  <NMC_WarpDestinationLost>転送先のプリズムが停止、燃料切れ、または移動しました。転送先を選び直してください。</NMC_WarpDestinationLost>
+  <NMC_WarpPrimaryDestination>主エネルギー場</NMC_WarpPrimaryDestination>
+  <NMC_WarpPrismDestination>転送プリズム：{0}（{1}, {2}）</NMC_WarpPrismDestination>
+  <NMC_WarpRecallDescription>主エネルギー場か展開済みプリズムを選んで転送します。別マップにも移動可能です。装備と所持品は同行し、運搬物は置き、現在の作業を中止します。
+
+ニヴァリアン建築のプリントエフェクトを使用します。出発地点で4秒、実際の到着地点でさらに4秒かかります（ゲーム内時間）。両段階とも通常どおりダメージを受けます。</NMC_WarpRecallDescription>
+  <NMC_WarpBusy>転移中（出発4秒、到着4秒）。通常どおりダメージを受けます</NMC_WarpBusy>
+  <NMC_WarpDropUnavailable>ニヴァリアン降下ポッドを利用できません</NMC_WarpDropUnavailable>
+  <NMC_StormAttack>雷球攻撃</NMC_StormAttack>
+  <NMC_StormAttackDesc>100マス以内の敵を指定。3秒ごとに雷球を発射し、直撃20ダメージ・貫通80%、続いて3×3マスに15ダメージ・貫通35%の爆発。両方とも建築物には5倍。</NMC_StormAttackDesc>
+  <NMC_StormMustFly>飛行中かつワープ中ではない時のみ攻撃可能</NMC_StormMustFly>
+  <NMC_StormFireAtWill>自動射撃</NMC_StormFireAtWill>
+  <NMC_StormAutoDesc>飛行中、射程内の見える敵を自動攻撃。OFFでも手動指定の目標は維持されます。</NMC_StormAutoDesc>
+  <NMC_StormClearTarget>指定目標を解除</NMC_StormClearTarget>
+  <NMC_StormClearDesc>手動目標を解除。自動射撃がONなら自動索敵は継続。</NMC_StormClearDesc>
+  <NMC_StormStatus>雷球：射程100、再使用まで{0}秒</NMC_StormStatus>
+  <NMC_SageAttackMode>攻撃モード</NMC_SageAttackMode>
+  <NMC_SageAttackModeDesc>飛行中、12マス以内の地上敵を攻撃。0.5秒ごとに2本の光線を同時発射し、各6ダメージ、装甲貫通30%。斉射ごとに化学燃料1を消費し、バッテリー改良後も同じ。攻撃を停止しても隠密解除は有効。</NMC_SageAttackModeDesc>
+  <NMC_SageTarget>地上目標を指定</NMC_SageTarget>
+  <NMC_SageTargetDesc>12マス以内の地上敵を優先し、無効になれば別の敵を選択。飛行中や重力で浮上した目標は攻撃不可。</NMC_SageTargetDesc>
+  <NMC_SageMustAttack>離陸して攻撃モードを有効化してください。ワープ中は使用不可。</NMC_SageMustAttack>
+  <NMC_SageStatus>攻撃モード：{0}／常時隠密解除：半径50マス</NMC_SageStatus>
+  <NMC_SageOn>有効</NMC_SageOn>
+  <NMC_SageOff>無効</NMC_SageOff>
+  <NMC_Text0818>連続体基地の守備隊と防衛施設は排除されましたが、連続体通信コアが残っているため任務は未完了です。このメッセージをクリックしてコアを表示し、部隊や艦船に手動で攻撃を命令してください。コアを破壊してから撤退してください。</NMC_Text0818>
+  <NMC_Text0819>連続体通信コアを表示</NMC_Text0819>
+  <NMC_Text0820>残りの目標：連続体通信コアを破壊（耐久力 {0}/{1}）。守備隊と砲塔を排除するだけでは任務は完了しません。「連続体通信コアを表示」で位置を確認し、部隊や艦船に手動で攻撃を命令してください。任務を完了してから撤退してください。</NMC_Text0820>
+</LanguageData>

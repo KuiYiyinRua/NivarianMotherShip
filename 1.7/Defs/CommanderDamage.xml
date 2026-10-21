@@ -1,0 +1,54 @@
+<Defs>
+  <NivarianCommander.SupportDamageDef>
+    <defName>NMC_OrbitalEnergy</defName><label>轨道能量打击</label>
+    <workerClass>NivarianCommander.DamageWorker_OrbitalEnergy</workerClass>
+    <externalViolence>true</externalViolence><isExplosive>true</isExplosive><isRanged>true</isRanged>
+    <armorCategory>Sharp</armorCategory><hediff>Burn</hediff><hediffSolid>Crack</hediffSolid>
+    <defaultDamage>30</defaultDamage><defaultArmorPenetration>0.35</defaultArmorPenetration>
+    <buildingDamageFactor>5</buildingDamageFactor><buildingDamageFactorPassable>1</buildingDamageFactorPassable><buildingDamageFactorImpassable>1</buildingDamageFactorImpassable>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell><explosionColorCenter>(0.8, 0.95, 1)</explosionColorCenter><explosionColorEdge>(0.15, 0.65, 1)</explosionColorEdge>
+    <explosionCellFleck>BlastDry</explosionCellFleck><soundExplosion>Explosion_Bomb</soundExplosion>
+  </NivarianCommander.SupportDamageDef>
+  <NivarianCommander.SupportDamageDef>
+    <defName>NMC_SolarBombEnergy</defName><label>太阳轰炸能量</label>
+    <workerClass>NivarianCommander.DamageWorker_SolarBombEnergy</workerClass>
+    <externalViolence>true</externalViolence><isExplosive>true</isExplosive><isRanged>true</isRanged>
+    <armorCategory>Sharp</armorCategory><hediff>Burn</hediff><hediffSolid>Crack</hediffSolid>
+    <defaultDamage>30</defaultDamage><defaultArmorPenetration>0.3</defaultArmorPenetration>
+    <buildingDamageFactor>5</buildingDamageFactor><buildingDamageFactorPassable>1</buildingDamageFactorPassable><buildingDamageFactorImpassable>1</buildingDamageFactorImpassable>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell><explosionColorCenter>(1, 0.91, 0.58)</explosionColorCenter><explosionColorEdge>(0.2, 0.72, 1)</explosionColorEdge>
+    <explosionCellFleck>BlastDry</explosionCellFleck><soundExplosion>Explosion_Bomb</soundExplosion>
+  </NivarianCommander.SupportDamageDef>
+  <NivarianCommander.SupportDamageDef>
+    <defName>NMC_SolarRayEnergy</defName><label>太阳能射线能量</label>
+    <workerClass>Verse.DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence><isRanged>true</isRanged>
+    <armorCategory>Sharp</armorCategory><hediff>Burn</hediff><hediffSolid>Crack</hediffSolid>
+    <defaultDamage>10</defaultDamage><defaultArmorPenetration>0.3</defaultArmorPenetration>
+    <buildingDamageFactor>1</buildingDamageFactor>
+  </NivarianCommander.SupportDamageDef>
+  <NivarianCommander.SupportDamageDef>
+    <defName>NMC_SolarRayBurn</defName><label>太阳能射线灼烧</label>
+    <workerClass>Verse.DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence><isRanged>true</isRanged>
+    <armorCategory>Heat</armorCategory><hediff>Burn</hediff><hediffSolid>Crack</hediffSolid>
+    <defaultDamage>5</defaultDamage><defaultArmorPenetration>0</defaultArmorPenetration>
+    <buildingDamageFactor>1</buildingDamageFactor>
+  </NivarianCommander.SupportDamageDef>
+  <NivarianCommander.SupportDamageDef>
+    <defName>NMC_PurificationEnergy</defName><label>净化光束能量</label>
+    <workerClass>Verse.DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence><isRanged>true</isRanged>
+    <armorCategory>Sharp</armorCategory><hediff>Burn</hediff><hediffSolid>Crack</hediffSolid>
+    <defaultDamage>25</defaultDamage><defaultArmorPenetration>0.4</defaultArmorPenetration>
+    <buildingDamageFactor>1</buildingDamageFactor>
+  </NivarianCommander.SupportDamageDef>
+  <NivarianCommander.SupportDamageDef>
+    <defName>NMC_PurificationBurn</defName><label>净化光束灼烧</label>
+    <workerClass>Verse.DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence><isRanged>true</isRanged>
+    <armorCategory>Heat</armorCategory><hediff>Burn</hediff><hediffSolid>Crack</hediffSolid>
+    <defaultDamage>10</defaultDamage><defaultArmorPenetration>0</defaultArmorPenetration>
+    <buildingDamageFactor>1</buildingDamageFactor>
+  </NivarianCommander.SupportDamageDef>
+</Defs>

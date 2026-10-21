@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_SeydasControlFallback.label>心灵支配</NMC_SeydasControlFallback.label>
+  <NMC_SeydasControlFallback.description>使20格内一名敌人永久加入涅瓦莲幸存者派系，不会成为殖民者。消耗50专注，冷却8秒。由赛达斯军团成员施放，优先选择高价值目标。</NMC_SeydasControlFallback.description>
+  <NMC_TebrusStormFallback.label>特布鲁斯灵能风暴</NMC_TebrusStormFallback.label>
+  <NMC_TebrusStormFallback.description>特布鲁斯的范围攻击与治疗技能。射程30格、半径6格，持续4秒，每秒对敌人造成30灼烧伤害，为友军治疗最多30伤势或修复无人机耐久。
+
+范围内至少三名敌人时施放，消耗35专注，冷却12秒。不影响建筑，不能修复断肢、永久伤疤或疾病。</NMC_TebrusStormFallback.description>
+</LanguageData>

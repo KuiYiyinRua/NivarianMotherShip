@@ -1,23 +1,69 @@
-[h1]简体中文｜涅瓦莲母舰支援拓展[/h1]
-[b]把母舰的力量带到殖民地。[/b]为 Nivarian Race 增加19项战术支援、六格自定义快捷面板、母舰点数商店、航母与引力舰，以及八阶段连续体战役。
-[list]
-[*]轨道打击、太阳轰炸、净化光束、护盾与力场；暗影控制、远征军团和建筑投影。
-[*]呼叫1艘母舰与8艘驱逐舰组成的临时舰队；航母和引力舰可运送人员及货物。
-[*]舰体与武器三级研究各提供20%／40%／60%加成；机库研究把舰载机上限从6架提高到8架。
-[*]点数商店支持购买、搜索和捐赠，需要通电的轨道交易信标；每7天补货，最多60种商品。
-[/list]
-[img]https://images.steamusercontent.com/ugc/15680560357014141984/EF9A3799F1662E24393FEB7582FF700737D3EAC9/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true[/img]
-[b]开始游玩[/b]：打开原版母舰支援窗口的指挥官页，用上行链路终端研究支援。安装军事拓展后，连续体任务参与科技推进，后期关卡会出现敌方舰艇增援。
-[b]研究设置[/b]：默认关闭。勾选后，仅取消本扩展科技的对应任务要求，仍需满足前置科技、支付材料并正常研究。不会直接完成科技或任务，也不跳过支援的母舰等级要求。关闭后恢复任务要求；已完成的科技保留。
+[h1]涅瓦莲母舰支援拓展 | Nivarian MotherShip[/h1]
 
-[h2]Dependencies / 依赖 / 必須MOD / Зависимости / Dépendances[/h2]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077]Harmony[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=839005762]Humanoid Alien Races[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3624805128]Nivarian Race[/url] → MotherShip.
-[b]Optional[/b]: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3735573834]Nivarian Draconic Military[/url] (campaign / 战役 / 戦役 / кампания / campagne); Royalty (psycasts); [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3256974620]Milira Race[/url] + Ancot Library (starship batteries).
-[b]RimWorld 1.6 • v0.9.9 • Author / 作者 / 作者 / Автор / Auteur: 尹怨怨[/b]
-Nivarian Race & original mothership assets: keeptpa. Required mods are separate downloads. / 原版素材归 keeptpa；前置模组需另行订阅。
+[b]RimWorld 1.6 / 1.7 · v0.9.9-r8[/b]
 
-[h2]0.9.9[/h2]
-Storm Ship / Sage Ship / Warp Prism; two-phase warp; mission-only research option. 暴风舰爆炸25点（建筑×5），新增贤者舰与折跃棱镜、双阶段折跃及任务研究开关。
+[b]1.7 兼容更新[/b]：请使用全部前置的 1.7 版本，RimUnity 已随包提供。1.7 当前支持单机，联机适配仅用于 1.6。更新后请完全重启游戏。
 
-[h2]GitHub[/h2]
-[url=https://github.com/KuiYiyinRua/NivarianMotherShip]GitHub · 完整源码 / Full source[/url]
+把母舰的力量带到殖民地。为 Nivarian Race 增加 19 项战术支援、自定义快捷栏、点数商店、多种可建造舰船，以及八阶段连续体战役。
+
+[h2]指挥官面板与六格快捷栏[/h2]
+
+在一个面板里查看支援费用、冷却和解锁条件，把常用能力放进六格快捷栏。轨道打击、护盾、力场、远征军团和建筑投影各有用处。
+
+[img]https://images.steamusercontent.com/ugc/15489195794634473878/2389AE6AC0A3CBBEAB80EADAA61D5ECE02AC861D/[/img]
+
+[h2]从轨道改变战局[/h2]
+
+太阳轰炸覆盖目标区域，净化光束持续压制战场。根据局势选择火力、控制与防护支援。
+
+[img]https://images.steamusercontent.com/ugc/13957314486913219343/CDDA2CBF2DCD379C83CC7888D28B8F27FF83B738/[/img]
+
+[img]https://images.steamusercontent.com/ugc/10895602465823440559/0873701B198D87E744ADCC8A2BBE8E77167B872B/[/img]
+
+[h2]呼叫母舰与驱逐舰编队[/h2]
+
+一艘母舰、八艘驱逐舰组成临时支援舰队，以完整编队进入战场。
+
+[img]https://images.steamusercontent.com/ugc/9711618135852145695/7A39981D020A3B84D6A9E3AA8BFD10D211A4CB33/[/img]
+
+[h2]建造自己的舰队[/h2]
+
+航母、引力舰、暴风舰、贤者舰与折跃棱镜承担不同职责。航母和引力舰可运送人员与货物；舰体、武器和机库研究继续提升舰队能力。
+
+[img]https://images.steamusercontent.com/ugc/17035221992713199220/DFD96822BE1B9CB5CE1A73F0010EC5801457F794/[/img]
+
+[img]https://images.steamusercontent.com/ugc/13089885359472862840/441E4B436137A657659FA9B6FD90E9D48A17D456/[/img]
+
+[h2]折跃棱镜与能量场[/h2]
+
+让折跃棱镜在飞行和能量场模式之间切换，建立新的折跃落点。双阶段折跃分别在出发地与目的地展开。
+
+[img]https://images.steamusercontent.com/ugc/12589288924769832198/424B93D5A0FECD45F25BC6F8F1E41C88CE75221C/[/img]
+
+[h2]母舰点数商店[/h2]
+
+搜索商品、用点数购买补给，或捐赠物资。交易需要通电的轨道交易信标；商店每 7 天补货，最多提供 60 种商品。
+
+[img]https://images.steamusercontent.com/ugc/15505053462094303961/D43CBB85D1626E09D3D427408CDC34F87AF7A1F3/[/img]
+
+[h2]研究与连续体战役[/h2]
+
+通过上行链路终端研究支援协议。1.7 的 Nivarian Race 已内置军工内容，自动启用八阶段连续体战役；1.6 仍需 Nivarian Draconic Military，未启用时可直接研究支援科技。后期战役任务包含敌方舰艇增援。
+
+[h2]可选研究设置[/h2]
+
+“无需完成对应任务即可研究科技”默认关闭。开启后，仅移除本拓展研究的对应任务条件；前置科技、材料和正常研究仍然需要。不会自动完成科技或任务，也不跳过支援所需的母舰等级。关闭后恢复任务要求，已完成研究保留。
+
+[h2]如何开始[/h2]
+
+依次启用下列前置与本拓展。在母舰支援窗口打开指挥官页，用上行链路终端解锁支援。
+
+[h2]依赖与可选联动[/h2]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077]Harmony[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=839005762]Humanoid Alien Races[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3624805128]Nivarian Race[/url] → Nivarian MotherShip
+
+可选：[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3735573834]Nivarian Draconic Military[/url] 提供 1.6 战役（1.7 已整合进本体）；Royalty 提供原生灵能联动（未安装时有备用能力）；[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3256974620]Milira Race[/url] 与 Ancot Library 提供星舰电池联动。仅在 1.6 启用 rwmt.Multiplayer 时自动加载联机适配。
+
+[i]作者：尹怨怨。Nivarian Race 与原版母舰素材：keeptpa。前置模组需另行订阅。截图来自独立演示场景，使用游戏内实际渲染。[/i]
+
+[url=https://github.com/KuiYiyinRua/NivarianMotherShip]完整源码与版本记录[/url]

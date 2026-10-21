@@ -1,3 +1,17 @@
+# Release validation: 0.9.9-r8
+
+RimWorld **1.7.4984 rev1242**, with the matching Nivarian Race 1.7 prerequisite. This release adds a separate 1.7 single-player build. The shipped 1.6 core and all five Multiplayer adapters are unchanged from r7; no 1.7 Multiplayer support is included.
+
+The final 1.7 candidate passed 245 checks across six isolated runs: abilities (55), projections (85), construction (24), normal smoke (27), no-Royalty smoke (27) and Simplified Chinese smoke (27). Coverage includes all 19 actual support calls, ship takeoff, native drone bandwidth and battery return, construction timing, actual UI/effect rendering, pause and same-process save reconstruction. Full evidence and limits: [RimWorld 1.7 migration record](RimWorld17.zh-CN.md).
+
+The logs contain prerequisite baseline errors for `AncientHeavyBridge`, plus `Apparel_NivarianSpiritArtEarring` without Royalty. Both were reproduced without this expansion. The final candidate added no extra error entries. This is not full-modpack, complete-campaign, cold-start old-save, long-soak or 1.7 Multiplayer certification.
+
+Core SHA-256: `F3079EF81913EBA8A454851FFF6D0F6639A33B47B5F0C63A868F23E7FB843F57`. All 215 shipped 1.7 files match the tested payload. Source extracted from the package rebuilds the identical core. Five-language validation covers 526 runtime keys and 343 Def fields. The embedded RimUnity 0.1.16 runtime and licenses are included; game and Nivarian Race assemblies are not distributed.
+
+1.7 六轮隔离单机检查共 245 项通过，覆盖实际支援调用、投射、施工、画面、暂停与同进程存档重建。已记录前置本身的缺失引用日志；未认证完整整合包、全战役、冷启动旧档、长测或 1.7 联机。1.6 与原联机二进制保留。更新后完全重启游戏。
+
+## Previous release evidence
+
 # Release validation: 0.9.9-r7
 
 ## 0.9.9-r7 · 2026-10-21

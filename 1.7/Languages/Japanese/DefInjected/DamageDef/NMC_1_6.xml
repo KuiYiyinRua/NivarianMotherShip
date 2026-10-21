@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_TebrusPulseDamage.label>霊能パルス</NMC_TebrusPulseDamage.label>
+  <NMC_TebrusStormDamage.label>霊能ストーム</NMC_TebrusStormDamage.label>
+  <NMC_StormImpactDamage.label>雷球直撃</NMC_StormImpactDamage.label>
+  <NMC_StormBlastDamage.label>雷球爆発</NMC_StormBlastDamage.label>
+  <NMC_SageBeamDamage.label>賢者艦プリズム光線</NMC_SageBeamDamage.label>
+</LanguageData>

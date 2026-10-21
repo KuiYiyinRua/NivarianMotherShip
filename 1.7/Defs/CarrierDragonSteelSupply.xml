@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>NMC_FillCarrierDragonSteel</defName>
+    <driverClass>NivarianCommander.JobDriver_FillCarrierDragonSteel</driverClass>
+    <reportString>正在为TargetA填装龙霜钢。</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  <WorkGiverDef>
+    <defName>NMC_RefillCarrierDragonSteel</defName>
+    <label>为航母填装龙霜钢</label>
+    <giverClass>NivarianCommander.WorkGiver_FillCarrierDragonSteel</giverClass>
+    <workType>Hauling</workType>
+    <verb>填装龙霜钢</verb>
+    <gerund>填装龙霜钢</gerund>
+    <priorityInType>108</priorityInType>
+    <requiredCapacities><li>Manipulation</li></requiredCapacities>
+  </WorkGiverDef>
+</Defs>

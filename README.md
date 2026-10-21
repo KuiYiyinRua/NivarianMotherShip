@@ -2,9 +2,9 @@
 
 [简体中文](Docs/README.zh-CN.md) · English · [Русский](Docs/README.ru.md) · [日本語](Docs/README.ja.md) · [Français](Docs/README.fr.md)
 
-A RimWorld 1.6 expansion for **Nivarian Race**. Extend the mothership with 19 tactical supports, a points shop, carrier, gravity ship, Storm Ship, Sage Ship and Warp Prism, and an eight-stage Continuum campaign.
+A RimWorld 1.6 / 1.7 expansion for **Nivarian Race**. Extend the mothership with 19 tactical supports, a points shop, carrier, gravity ship, Storm Ship, Sage Ship and Warp Prism, and an eight-stage Continuum campaign.
 
-Release: **0.9.9-r7** (core version 0.9.9). Languages: Simplified Chinese, English, Russian, Japanese and French.
+Current release: **0.9.9-r8** (core version 0.9.9). Languages: Simplified Chinese, English, Russian, Japanese and French.
 
 ## Installation
 
@@ -15,7 +15,9 @@ Release: **0.9.9-r7** (core version 0.9.9). Languages: Simplified Chinese, Engli
 
 Required: [Harmony](https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077), [Humanoid Alien Races](https://steamcommunity.com/sharedfiles/filedetails/?id=839005762) and [Nivarian Race](https://steamcommunity.com/sharedfiles/filedetails/?id=3624805128). They are not bundled.
 
-Royalty enables native psycast integration; the expansion includes fallback abilities when Royalty is absent. Multiplayer support loads when rwmt.Multiplayer is active. Optional Milira content supplies starship batteries. The Continuum campaign requires keeptpa.NivarianDraconicMilitary; without that addon, support research is available directly.
+Royalty enables native psycast integration; the expansion includes fallback abilities when Royalty is absent. The optional Multiplayer adapters load only on 1.6 with rwmt.Multiplayer; 1.7 Multiplayer is not supported by this build. Optional Milira content supplies starship batteries. On 1.6 the Continuum campaign requires keeptpa.NivarianDraconicMilitary; on 1.7 its military content is included in Nivarian Race and enables the campaign automatically.
+
+Use 1.7 versions of the prerequisites with RimWorld 1.7. The matching RimUnity runtime is bundled with the expansion; do not copy the 1.6 DLLs into 1.7. See [1.7 migration and validation](Docs/RimWorld17.zh-CN.md).
 
 ## Play
 
@@ -37,7 +39,7 @@ python Tools/Localization/verify.py
 
 Directory.Build.props supplies default dependency paths. Override HarmonyAssembly, NivarianRaceAssembly, LumiParticleAssembly or MultiplayerApiAssembly if your installation uses different folders. Builds write directly to the mod's assembly folders. Python tools use only the standard library.
 
-The 0.9.9-r7 package includes five optional Multiplayer adapters with 0.9.8 assembly identities. The main adapter includes caravan recall synchronization and the Continuum entry fix; the four ship adapters are unchanged. Core file/informational version is 0.9.9; its binding version remains 0.9.8. Rebuilding an adapter changes its MVID and requires revalidation with third-party patches that identify it by MVID. Additional adapter sources are in Multiplayer/ShipUpgradeSource, WarpPrismSource, StormShipSource and SageShipSource.
+The 1.6 portion retains five optional Multiplayer adapters with 0.9.8 assembly identities. The main adapter includes caravan recall synchronization and the Continuum entry fix; the four ship adapters are unchanged. Core file/informational version is 0.9.9; its binding version remains 0.9.8. Rebuilding an adapter changes its MVID and requires revalidation with third-party patches that identify it by MVID. Additional adapter sources are in Multiplayer/ShipUpgradeSource, WarpPrismSource, StormShipSource and SageShipSource.
 
 Translation contributors: see [localization maintenance](Docs/LOCALIZATION.md). Release verification and its limits are recorded in [release validation](Docs/VALIDATION.md).
 

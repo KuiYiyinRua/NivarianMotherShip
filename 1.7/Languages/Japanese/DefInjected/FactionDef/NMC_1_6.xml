@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_Continuum.label>連続体戦闘ネットワーク</NMC_Continuum.label>
+  <NMC_Continuum.fixedName>連続体</NMC_Continuum.fixedName>
+  <NMC_Continuum.description>連続体基地からなる敵対戦闘ネットワーク。メカノイドとニラ戦闘ユニットが戦術資料を守り、襲撃された基地は空挺援軍を受けることがあります。</NMC_Continuum.description>
+  <NMC_Continuum.pawnSingular>連続体戦闘ユニット</NMC_Continuum.pawnSingular>
+  <NMC_Continuum.pawnsPlural>連続体戦闘ユニット</NMC_Continuum.pawnsPlural>
+</LanguageData>

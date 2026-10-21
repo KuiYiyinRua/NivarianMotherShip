@@ -1,0 +1,15 @@
+<Defs>
+  <NivarianCommander.SupportDamageDef>
+    <defName>NMC_OverloadEnergy</defName><label>超载蓝色激光</label>
+    <workerClass>DamageWorker_AddInjury</workerClass><externalViolence>true</externalViolence><isRanged>true</isRanged>
+    <armorCategory>Sharp</armorCategory><hediff>Burn</hediff><hediffSolid>Crack</hediffSolid>
+    <defaultDamage>10</defaultDamage><defaultArmorPenetration>0.25</defaultArmorPenetration>
+    <buildingDamageFactor>1</buildingDamageFactor><buildingDamageFactorPassable>1</buildingDamageFactorPassable><buildingDamageFactorImpassable>1</buildingDamageFactorImpassable>
+    <impactSoundType>Bullet</impactSoundType>
+  </NivarianCommander.SupportDamageDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>NMC_OverloadBolt</defName><label>超载能量弹</label>
+    <graphicData><texPath>Things/Projectile/ChargeLanceShot</texPath><graphicClass>Graphic_Single</graphicClass><shaderType>TransparentPostLight</shaderType><color>(0.2, 0.75, 1)</color><drawSize>1.2</drawSize></graphicData>
+    <projectile><damageDef>NMC_OverloadEnergy</damageDef><damageAmountBase>10</damageAmountBase><armorPenetrationBase>0.25</armorPenetrationBase><stoppingPower>0</stoppingPower><speed>120</speed></projectile>
+  </ThingDef>
+</Defs>

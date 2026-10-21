@@ -52,12 +52,12 @@ for ix,locale in enumerate(locales):
   for d in (d for d in defs if d['folder']==folder):
    assert paths[d['type'],d['path']]==value(byid[d['id']]),(locale,d['path'])
 version=ET.parse(mod/'About/About.xml').findtext('modVersion')
-for proj in [mod/'Source/NivarianCommander.csproj']:
+for proj in [mod/'Source/NivarianCommander.csproj',mod/'Source/NivarianCommander.RimWorld17.csproj']:
  assert ET.parse(proj).findtext('PropertyGroup/Version')==version,('version mismatch',str(proj))
 # Optional adapter identities stay at their tested 0.9.8 build for MP owner compatibility.
 for proj in (mod/'Multiplayer').glob('*Source/*.csproj'):
  assert ET.parse(proj).findtext('PropertyGroup/Version')=='0.9.8',('adapter identity version mismatch',str(proj))
-for folder in ['1.6','Royalty','NoRoyalty','About','Multiplayer']:
+for folder in ['1.6','1.7','Royalty','NoRoyalty','About','Multiplayer']:
  for p in (mod/folder).rglob('*.xml'):
   if 'obj' not in p.parts:ET.parse(p)
 print(json.dumps({'status':'PASS','version':version,'languages':locales,'runtime_keys':len(keys),'def_fields':len(defs)},ensure_ascii=False))

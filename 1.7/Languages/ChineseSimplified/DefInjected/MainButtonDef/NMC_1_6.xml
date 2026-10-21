@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_MothershipPointShop.label>母舰商店</NMC_MothershipPointShop.label>
+  <NMC_MothershipPointShop.description>使用P点购买物资，也可捐赠轨道交易信标范围内的物资换取P点。每7天刷新最多60种商品，各殖民地共用库存。
+
+选择收货殖民地后购买，货物空投至信标附近。需已供电的轨道交易信标和露天落点。</NMC_MothershipPointShop.description>
+</LanguageData>

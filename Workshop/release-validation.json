@@ -1,14 +1,17 @@
 {
-  "release": "0.9.9-r6",
-  "date": "2026-10-19",
-  "build": "Combined package core source rebuild byte-identical; compiled cooldown inspected; five-language verification; five adapters unchanged",
-  "runtime": "Refill-only implementation candidate passed 165 isolated SP assertions and four actual hauling jobs. Combined candidate has no new field gameplay, cold-load, two-client MP or full-modpack runtime certification.",
+  "release": "0.9.9-r8",
+  "date": "2026-10-21",
+  "game": "1.7.4984 rev1242",
+  "build": "Packaged 1.7 source rebuild byte-identical; five-language verification; 1.6 core and five adapters unchanged from r7",
+  "runtime": "Six isolated single-player final runs, 245 checks. Includes actual rendering, support calls, projection, construction, no-Royalty and Chinese UI. Known upstream baseline errors remain; see Docs/RimWorld17.zh-CN.md. No 1.7 Multiplayer, full modpack, complete campaign, cold-start old-save or long-soak certification.",
   "assemblies": {
-    "1.6/Assemblies/NivarianCommander.dll": "2f3450600731f342152cd0b64a4e5c9cbff1647b05278ec6d1e92a4468882396",
     "Multiplayer/Assemblies/NivarianCommander.Multiplayer.dll": "904cd6902541a1cad1efaebf54e35f29ef1f750da6d46e7ea827e5d4bfd57d72",
     "Multiplayer/Assemblies/NivarianCommander.SageShip.Multiplayer.dll": "65c844c99de8b3d5734ce32a4d8001e36e791b92bee12739e2ce48c7ca8b0918",
     "Multiplayer/Assemblies/NivarianCommander.ShipUpgrades.Multiplayer.dll": "c5c134ba0cb521778c8116be92cb4c0d985aa12d96a850ea980cb1544789142c",
     "Multiplayer/Assemblies/NivarianCommander.StormShip.Multiplayer.dll": "befafe23a71ce90a696c3a1bf2c43cef84341933057c9fe67e0fbe71a19a6222",
-    "Multiplayer/Assemblies/NivarianCommander.WarpPrism.Multiplayer.dll": "2b5b7f4f42010c8e5d006736d5911a5aa7c320b5350d52dff3c9c507503bec75"
+    "Multiplayer/Assemblies/NivarianCommander.WarpPrism.Multiplayer.dll": "2b5b7f4f42010c8e5d006736d5911a5aa7c320b5350d52dff3c9c507503bec75",
+    "1.6/Assemblies/NivarianCommander.dll": "14ea4040cc4e1e079f32b0b90520ccdff641d1578b0ab8937030928fa4514586",
+    "1.7/Assemblies/NivarianCommander.rimunity": "f3079ef81913eba8a454851fff6d0f6639a33b47b5f0c63a868f23e7fb843f57",
+    "1.7/Assemblies/RimUnity.Embedded.dll": "a0223c224d0e22835eb5be5516bc37bc98cab27383122a5f60ced40907e283c5"
   }
 }

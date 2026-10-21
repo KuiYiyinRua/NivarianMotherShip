@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <NMC_CaravanWarpDescription>Warp the entire caravan and its cargo to an energy field on the selected map. Plays a 4-second printing effect on arrival. Requires field recall research.</NMC_CaravanWarpDescription>
+  <NMC_CaravanWarpUnavailable>This caravan is no longer available for warp.</NMC_CaravanWarpUnavailable>
+</LanguageData>

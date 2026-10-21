@@ -1,22 +1,69 @@
-[h1]日本語｜ニヴァリアン母艦支援拡張[/h1]
-母艦の力をコロニーへ。Nivarian Race に19種の戦術支援、6枠のカスタムHUD、母艦ポイントショップ、空母と重力艦、全8段階のコンティニュアム戦役を追加します。
-[list]
-[*]軌道攻撃、太陽砲撃、浄化ビーム、シールドと力場、影による制御、遠征部隊、建築物の投影。
-[*]母艦1隻と駆逐艦8隻の一時支援艦隊。空母・重力艦で人員と貨物を輸送。
-[*]装甲・武器研究は3段階で20%／40%／60%強化。格納庫研究で艦載機上限を6機から8機へ。
-[*]購入・検索・寄付に対応するショップ。通電した通信ビーコンが必要で、7日ごとに最大60種を補充。
-[/list]
-[b]使い方[/b]：母艦支援画面の指揮官タブを開き、アップリンク端末で研究します。軍事アドオン導入時は戦役が研究の進行条件となり、後半には敵艦の増援も出現します。
-[b]対応する任務を完了せずに技術を研究する[/b]: 初期状態ではオフ。本拡張の研究に必要な任務条件のみを解除します。前提技術、資材、通常の研究は引き続き必要です。技術や任務を自動完了せず、支援の母艦レベル条件も維持します。オフにすると任務条件が戻りますが、完了済み研究は保持されます。
+[h1]Nivarian MotherShip | ニヴァリアン母艦支援拡張[/h1]
 
-[h2]Dependencies / 依赖 / 必須MOD / Зависимости / Dépendances[/h2]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077]Harmony[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=839005762]Humanoid Alien Races[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3624805128]Nivarian Race[/url] → MotherShip.
-[b]Optional[/b]: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3735573834]Nivarian Draconic Military[/url] (campaign / 战役 / 戦役 / кампания / campagne); Royalty (psycasts); [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3256974620]Milira Race[/url] + Ancot Library (starship batteries).
-[b]RimWorld 1.6 • v0.9.9 • Author / 作者 / 作者 / Автор / Auteur: 尹怨怨[/b]
-Nivarian Race & original mothership assets: keeptpa. Required mods are separate downloads. / 原版素材归 keeptpa；前置模组需另行订阅。
+[b]RimWorld 1.6 / 1.7 · v0.9.9-r8[/b]
 
-[h2]0.9.9[/h2]
-Storm Ship / Sage Ship / Warp Prism; two-phase warp; mission-only research option. 暴风舰爆炸25点（建筑×5），新增贤者舰与折跃棱镜、双阶段折跃及任务研究开关。
+[b]1.7 対応更新[/b]：前提MODもすべて1.7版を使用してください。RimUnityは同梱しています。1.7はシングルプレイ対応、マルチプレイ対応モジュールは1.6専用です。更新後はゲームを完全に再起動してください。
 
-[h2]GitHub[/h2]
-[url=https://github.com/KuiYiyinRua/NivarianMotherShip]GitHub · 完整源码 / Full source[/url]
+母艦の力をコロニーへ。Nivarian Race に19種類の戦術支援、カスタマイズ可能なHUD、ポイントショップ、建造可能な艦船、全8段階のコンティニュアム戦役を追加します。
+
+[h2]指揮官パネルと6枠のショートカット[/h2]
+
+支援のコスト、クールダウン、解放条件をひとつの画面で確認。軌道攻撃、シールド、フィールド、遠征部隊、建築物の投影など、よく使う支援を6枠のHUDに登録できます。
+
+[img]https://images.steamusercontent.com/ugc/15489195794634473878/2389AE6AC0A3CBBEAB80EADAA61D5ECE02AC861D/[/img]
+
+[h2]軌道からの火力支援[/h2]
+
+太陽砲撃で指定範囲を攻撃し、浄化ビームで戦場を制圧。状況に合わせて火力、敵の制御、防御支援を組み合わせられます。
+
+[img]https://images.steamusercontent.com/ugc/13957314486913219343/CDDA2CBF2DCD379C83CC7888D28B8F27FF83B738/[/img]
+
+[img]https://images.steamusercontent.com/ugc/10895602465823440559/0873701B198D87E744ADCC8A2BBE8E77167B872B/[/img]
+
+[h2]母艦と駆逐艦を呼び出す[/h2]
+
+母艦1隻と駆逐艦8隻からなる一時支援艦隊が、編隊を組んで戦場に到着します。
+
+[img]https://images.steamusercontent.com/ugc/9711618135852145695/7A39981D020A3B84D6A9E3AA8BFD10D211A4CB33/[/img]
+
+[h2]自分の艦隊を建造[/h2]
+
+空母、重力艦、ストームシップ、セージシップ、ワーププリズムがそれぞれの役割を担います。空母と重力艦は人員や貨物の輸送に対応。船体、武器、格納庫の研究で艦隊を強化できます。
+
+[img]https://images.steamusercontent.com/ugc/17035221992713199220/DFD96822BE1B9CB5CE1A73F0010EC5801457F794/[/img]
+
+[img]https://images.steamusercontent.com/ugc/13089885359472862840/441E4B436137A657659FA9B6FD90E9D48A17D456/[/img]
+
+[h2]ワーププリズムとエネルギーフィールド[/h2]
+
+ワーププリズムを飛行モードとフィールドモードに切り替え、ワープ先を確保。2段階のワープ演出が出発地点と到着地点で展開されます。
+
+[img]https://images.steamusercontent.com/ugc/12589288924769832198/424B93D5A0FECD45F25BC6F8F1E41C88CE75221C/[/img]
+
+[h2]母艦ポイントショップ[/h2]
+
+商品を検索してポイントで補給品を購入したり、物資を寄付したりできます。取引には通電中の軌道貿易ビーコンが必要です。在庫は7日ごとに更新され、最大60種類の商品が並びます。
+
+[img]https://images.steamusercontent.com/ugc/15505053462094303961/D43CBB85D1626E09D3D427408CDC34F87AF7A1F3/[/img]
+
+[h2]研究とコンティニュアム戦役[/h2]
+
+アップリンク端末で支援プロトコルを研究します。1.7ではNivarian Raceに統合された軍事コンテンツにより、全8段階の戦役が有効になります。1.6ではNivarian Draconic Militaryが必要で、未導入時は支援技術を直接研究できます。後半の任務には敵艦の増援も登場します。
+
+[h2]任意の研究設定[/h2]
+
+「対応する任務を完了せずに技術を研究する」は初期状態ではオフです。本拡張の研究に必要な任務条件だけを解除します。前提技術、資材、通常の研究は引き続き必要です。技術や任務を自動完了せず、支援の母艦レベル条件も維持します。オフに戻すと任務条件が復活し、完了済みの研究は保持されます。
+
+[h2]始め方[/h2]
+
+下記の前提MOD、本拡張の順に有効化してください。母艦支援画面の指揮官タブを開き、アップリンク端末で支援を解放します。
+
+[h2]前提MODと任意の連携[/h2]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077]Harmony[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=839005762]Humanoid Alien Races[/url] → [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3624805128]Nivarian Race[/url] → Nivarian MotherShip
+
+任意：[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3735573834]Nivarian Draconic Military[/url] は1.6の戦役用（1.7では本体に統合）、Royalty は標準のサイキャスト連携用（未導入時は代替能力を使用）、[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3256974620]Milira Race[/url] と Ancot Library は星間船バッテリー連携用です。1.6でrwmt.Multiplayerが有効な場合のみ、マルチプレイ対応モジュールを読み込みます。
+
+[i]拡張の作者：尹怨怨。Nivarian Race と元の母艦素材：keeptpa。前提MODは別途導入してください。画像は専用のデモ環境で撮影した実際のゲーム画面です。[/i]
+
+[url=https://github.com/KuiYiyinRua/NivarianMotherShip]ソースコードとリリース履歴[/url]

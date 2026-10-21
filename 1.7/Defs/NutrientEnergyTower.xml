@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase" MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>NMC_NutrientEnergyTower</defName>
+    <label>涅瓦莲能源塔</label>
+    <description>消耗食物营养、产出P点的能源设施，同时发电700W。缺少营养或停机时停止产出。通过“营养”页选择补给食物。
+
+解锁：母舰支援接口研究。获取：部署能源塔核心并交付建材。</description>
+    <thingClass>NivarianCommander.Building_NutrientEnergyTower</thingClass>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>NMC/Buildings/nutrient_energy_tower</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2.2,2.2)</drawSize>
+      <shadowData IsNull="True"/>
+    </graphicData>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <fillPercent>0.65</fillPercent>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>false</castEdgeShadows>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <canOverlapZones>false</canOverlapZones>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories><li>NivarianBuildings</li></thingCategories>
+    <inspectorTabs><li>ITab_BiosculpterNutritionStorage</li></inspectorTabs>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Mass>120</Mass>
+      <Flammability>0.2</Flammability>
+      <Beauty>4</Beauty>
+    </statBases>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <Nivarian_DragonCrystal>30</Nivarian_DragonCrystal>
+      <Nivarian_CryoCoolant>8</Nivarian_CryoCoolant>
+    </costList>
+    <researchPrerequisites><li>Nivarian_MothershipSupportInterface</li></researchPrerequisites>
+    <building>
+      <isEdifice>true</isEdifice>
+      <ai_chillDestination>false</ai_chillDestination>
+      <haulToContainerDuration>120</haulToContainerDuration>
+      <fixedStorageSettings>
+        <filter>
+          <categories><li>Foods</li></categories>
+          <specialFiltersToDisallow><li>AllowPlantFood</li></specialFiltersToDisallow>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+          <categories><li>Foods</li></categories>
+          <disallowedCategories><li>EggsFertilized</li></disallowedCategories>
+          <disallowedThingDefs>
+            <li>InsectJelly</li>
+            <li>MealLavish</li>
+            <li>MealLavish_Veg</li>
+            <li>MealLavish_Meat</li>
+            <li>HemogenPack</li>
+            <li>Chocolate</li>
+          </disallowedThingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>NivarianCommander.CompPowerPlant_NutrientTower</compClass>
+        <basePowerConsumption>-700</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <modExtensions>
+      <li Class="Nivarian_Race.Code.NivarianDefModExtension.DefExtension_NivarianAutoBuilder">
+        <atBuilderDef>Nivarian_SelfBuildingSiteCore</atBuilderDef>
+        <designDef>Nivarian_Category</designDef>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <WorkGiverDef>
+    <defName>NMC_FillNutrientEnergyTower</defName>
+    <label>为涅瓦莲能源塔补充营养</label>
+    <giverClass>NivarianCommander.WorkGiver_FillNutrientEnergyTower</giverClass>
+    <workType>Hauling</workType>
+    <verb>填充</verb>
+    <gerund>填充营养</gerund>
+    <priorityInType>109</priorityInType>
+    <requiredCapacities><li>Manipulation</li></requiredCapacities>
+  </WorkGiverDef>
+</Defs>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_SeydasControlFallback.label>Mind control</NMC_SeydasControlFallback.label>
+  <NMC_SeydasControlFallback.description>Make an enemy within 20 cells join the Nivarian survivors. Prefers high-value targets; mechanoids and leaders may be controlled. Costs 50 focus, cooldown 8 seconds.
+
+Allegiance persists after the legion leaves. Controlled units remain Nivarian survivors, not your colonists.</NMC_SeydasControlFallback.description>
+  <NMC_TebrusStormFallback.label>Tebrus psionic storm</NMC_TebrusStormFallback.label>
+  <NMC_TebrusStormFallback.description>Create a radius-6 psionic storm within 30 cells, only where at least three enemies gather. Costs 35 focus, cooldown 12 seconds.
+
+Lasts 4 seconds. Each second, enemies take 30 base burn damage and allies heal up to 30 injury points or drone durability. Affects downed and invisible units, not buildings.
+
+Cannot remove permanent scars, regrow limbs or cure disease.</NMC_TebrusStormFallback.description>
+</LanguageData>

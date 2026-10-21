@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <NMC_CaravanWarpDescription>キャラバン全員と携行品を選択したマップのエネルギーフィールドへ転送します。到着後に4秒間のプリント演出が再生されます。フィールド転送の研究が必要です。</NMC_CaravanWarpDescription>
+  <NMC_CaravanWarpUnavailable>このキャラバンは転送できません。</NMC_CaravanWarpUnavailable>
+</LanguageData>

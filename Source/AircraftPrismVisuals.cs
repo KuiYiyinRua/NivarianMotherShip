@@ -5,6 +5,14 @@ using LumiParticle.Pooling;
 using RimWorld.Planet;
 using UnityEngine;
 using Verse;
+#if RIMWORLD_1_7
+using GameObject = RimUnity.GameObject;
+using LineRenderer = RimUnity.LineRenderer;
+using Color = RimUnity.Color;
+using VisualObject = RimUnity.Object;
+#else
+using VisualObject = UnityEngine.Object;
+#endif
 
 namespace NivarianCommander
 {

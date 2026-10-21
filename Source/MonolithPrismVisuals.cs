@@ -4,6 +4,14 @@ using LumiParticle.Pooling;
 using RimWorld.Planet;
 using UnityEngine;
 using Verse;
+#if RIMWORLD_1_7
+using GameObject = RimUnity.GameObject;
+using LineRenderer = RimUnity.LineRenderer;
+using Color = RimUnity.Color;
+using VisualObject = RimUnity.Object;
+#else
+using VisualObject = UnityEngine.Object;
+#endif
 
 namespace NivarianCommander
 {
@@ -161,7 +169,7 @@ namespace NivarianCommander
             }
             catch (Exception error)
             {
-                if (beam.gameObject != null) UnityEngine.Object.Destroy(beam.gameObject);
+                if (beam.gameObject != null) VisualObject.Destroy(beam.gameObject);
                 Log.ErrorOnce("[NMC] Monolith Prism beam cleanup failed: " + error, 9401703);
             }
             finally

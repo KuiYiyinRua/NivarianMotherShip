@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <NMC_CarrierShip.label>Авианосец нивариан</NMC_CarrierShip.label>
+  <NMC_GravityFrigateShip.label>Гравитационный корабль нивариан</NMC_GravityFrigateShip.label>
+  <NMC_WarpPrismShip.label>Варп-корабль нивариан</NMC_WarpPrismShip.label>
+  <NMC_StormShipShip.label>Ниварианская «Буря»</NMC_StormShipShip.label>
+  <NMC_SageShipShip.label>Корабль-мудрец нивариан</NMC_SageShipShip.label>
+</LanguageData>
