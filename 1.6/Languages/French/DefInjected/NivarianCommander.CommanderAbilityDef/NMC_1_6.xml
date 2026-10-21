@@ -135,6 +135,8 @@ Le cristal ne prend aucune place au sol et ne bloque pas les déplacements. Il p
 
 Les copies ont la moitié des PV actuels de l'original et utilisent son énergie, carburant et munitions. L'original cesse de tirer mais reste vulnérable et réparable. Les dégâts des copies lui sont aussi appliqués : choisissez soigneusement.
 
-Copies non réparables ni déplaçables. Inscrivez, désinscrivez ou rappelez depuis la tourelle. Aucun remboursement d'énergie ni de recharge au rappel.</NMC_S19.description>
+Copies non réparables ni déplaçables. Inscrivez, désinscrivez ou rappelez depuis la tourelle. Aucun remboursement d'énergie ni de recharge au rappel.
+
+Compatible avec les bases de drones de défense : orbite, mitraillage et reconnaissance. L'effet de construction apparaît uniquement au point de projection. Recharge : 2 jours. Coût : 300P et 100V. Les drones d'origine sont rappelés ; leurs batteries alimentent la projection, puis la charge restante est restituée.</NMC_S19.description>
   <NMC_S19.researchLabel>Protocole de projection matricielle hyperdimensionnelle</NMC_S19.researchLabel>
 </LanguageData>

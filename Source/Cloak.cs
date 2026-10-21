@@ -56,10 +56,10 @@ namespace NivarianCommander
             foreach (var tower in towers)
             {
                 var properties = tower.TryGetComp<CompCommanderStructure>()?.Props;
-                if (tower.Spawned && !tower.Destroyed && tower is Building_NutrientEnergyTower energyTower && energyTower.IsOperating
+                if (tower.Spawned && !tower.Destroyed && tower is Building_NutrientEnergyTower energyTower
                     && properties != null && properties.cloakRadius > 0
-                    && SupportDiplomacy.Friendly(tower)
-                    && ShadowCloakRange.Contains(tower.OccupiedRect(), target.Position, properties.cloakRadius)) return true;
+                    && ShadowCloakRange.Contains(tower.OccupiedRect(), target.Position, properties.cloakRadius)
+                    && SupportDiplomacy.Friendly(tower) && energyTower.IsOperating) return true;
             }
             return false;
         }

@@ -105,7 +105,7 @@
   </NivarianCommander.CommanderAbilityDef>
   <NivarianCommander.CommanderAbilityDef>
     <defName>NMC_S08</defName>
-    <iconPath>Nivarian/Building/Core/building_core</iconPath>
+    <iconPath>NMC/Supports/shadow_core</iconPath>
     <number>8</number>
     <label>暗影核心</label>
     <group>暗影与控制</group>
@@ -243,7 +243,7 @@
   </NivarianCommander.CommanderAbilityDef>
   <NivarianCommander.CommanderAbilityDef>
     <defName>NMC_S17</defName>
-    <iconPath>Nivarian/Building/Core/building_core</iconPath>
+    <iconPath>NMC/Supports/hyperdimensional_monolith</iconPath>
     <number>17</number>
     <label>超维空间巨石</label>
     <group>设施与投射</group>
@@ -279,14 +279,16 @@
     <number>19</number>
     <label>超维空间矩阵投射</label>
     <group>设施与投射</group>
-    <description>将已登记炮塔投射至指定中心周围20格内。投影准备5秒后作战60秒，以本体当前生命值的50%出现。
+    <description>将已登记炮塔及防御无人机基站投射至指定中心周围20格内。投影在落点以涅瓦莲构建特效形成，准备5秒后作战60秒，以本体当前生命值的50%出现。
 
 本体停止射击并供应电力、燃料和弹药；投影受损也会伤及本体。投影不能维修或搬迁，可提前撤回。
 
-解锁：在上行链路研究“超维空间矩阵投射支援协议”，随后从指挥官支援面板调用。</description>
-    <powerCost>150</powerCost>
-    <volatileCost>50</volatileCost>
-    <cooldownTicks>420000</cooldownTicks>
+解锁：在上行链路研究“超维空间矩阵投射支援协议”，随后从指挥官支援面板调用。
+
+冷却2天，消耗300P和100V。无人机基站投射期间，本体无人机回收，现有电池转供投影；结束后剩余电量归还本体。</description>
+    <powerCost>300</powerCost>
+    <volatileCost>100</volatileCost>
+    <cooldownTicks>120000</cooldownTicks>
     <researchLabel>超维空间矩阵投射支援协议</researchLabel>
   </NivarianCommander.CommanderAbilityDef>
 </Defs>

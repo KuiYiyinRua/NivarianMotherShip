@@ -1,3 +1,35 @@
+# Release validation: 0.9.9-r7
+
+## 0.9.9-r7 · 2026-10-21
+
+- 优化超维空间巨石索敌与 tick：减少全图遍历、重复排序和分配，保留目标顺序、攻击频率、伤害及控制规则。
+- 优化普通/暗影能源塔的营养读取、补料判断、供能与生产 tick；减少重复查询，营养和运行状态仍实时计算。范围外的隐身查询也减少了能源塔状态检查。
+- 恢复暗影核心、超维空间巨石在支援面板中的原图标。
+- 矩阵投射调整为 2 天冷却（120,000 tick）、300P / 100V，旧档更长的剩余冷却会缩短。投影仅在落点显示 5 秒原生构建特效。
+- 矩阵投射支持三种军武防御无人机基站：投射时回收本体无人机、转供现有电池，结束时归还剩余电量；同步更新五语说明。
+- 巨石/能源塔双端回归通过 20,160 tick 短测与 120,120 tick 长测；长测完成 968 次真实攻击、18 次原生补料、480 组相同状态记录，未发现失步。测试为同机、单图、正常时间的 17 项隔离加载，未覆盖完整整合包、异步、多阵营或冷重连。
+- 单端优化回归 228 项、补料回归 165 项（含 4 次真实搬运）通过；投射功能此前候选通过 83 项单端检查，本次未追加投射专项双端测试。详见 Docs/TickPerformance.zh-CN.md。
+- 核心版本仍为 0.9.9，绑定版本仍为 0.9.8；五份联机适配 DLL 保持原样。更新后完全重启游戏，所有联机玩家使用相同文件。
+
+### English
+
+- Reduced monolith targeting/tick work and allocations while preserving target order, attack timing, damage and control rules.
+- Reduced repeated nutrition, refill, operation and production queries for both energy towers. Nutrition and operating state remain live; out-of-range cloak queries avoid unnecessary tower checks.
+- Restored the original Shadow Core and Hyperdimensional Monolith support-panel icons.
+- Matrix projection now costs 300P / 100V with a two-day (120,000-tick) cooldown; longer saved cooldowns are capped on load. A five-second native printing effect appears only at the destination.
+- Added projection support for three military defensive drone hubs, with source-drone recall, battery transfer and return of remaining charge. Updated all five languages.
+- Monolith/tower Multiplayer regressions passed 20,160-tick smoke and 120,120-tick soak runs. The soak recorded 968 actual volleys, 18 native deliveries and 480 identical paired states with no desync. Scope: two local clients, one map, normal time and 17 isolated loadout entries; no full modpack, async, multifaction or cold-rejoin coverage.
+- Single-player optimization and refill regressions passed 228 and 165 checks (including four real deliveries). The prior projection candidate passed 83 single-player checks; projection-specific Multiplayer was not retested in this release.
+- Core version remains 0.9.9, binding version 0.9.8; all five Multiplayer adapters are unchanged. Fully restart and use matching files on every peer.
+
+## Candidate identity
+
+Core SHA-256: `14EA4040CC4E1E079F32B0B90520CCDFF641D1578B0AB8937030928FA4514586`. Loaded MVID: `e2905447-a1e4-4477-a0bb-31f9682914ef`. The shipped DLL is the exact candidate used in both Multiplayer runs. Performance percentages in the detailed report are method microbenchmarks, not whole-game TPS gains.
+
+See [detailed results and scope](TickPerformance.zh-CN.md) and [Multiplayer probe source](../Tests/TickPerformanceMP/README.md). Historical runtime evidence is local under `BuildValidation/TickPerformanceMP-20261021`; it is not bundled into the mod archive.
+
+## Previous release evidence
+
 # Release validation: 0.9.9-r6
 
 ## 0.9.9-r6 · 2026-10-19

@@ -135,6 +135,8 @@ The crystal occupies no ground space and does not block movement. It can be depl
 
 Projections start with half their source's current HP and use its power, fuel and ammunition. Sources cease fire during projection but can still be damaged and repaired. Projection damage is also applied to the source; choose positions carefully.
 
-Projections cannot be repaired or moved. Register, unregister or recall them from the turret. Early recall refunds neither energy nor cooldown.</NMC_S19.description>
+Projections cannot be repaired or moved. Register, unregister or recall them from the turret. Early recall refunds neither energy nor cooldown.
+
+Also supports defense drone hubs (Orbit, Strafing and Recon). Native construction effects form only at the destination. Cooldown: 2 days. Cost: 300P and 100V. Source drones are recalled; their existing batteries supply the projection, and remaining charge returns on recall.</NMC_S19.description>
   <NMC_S19.researchLabel>Hyperdimensional matrix projection support protocol</NMC_S19.researchLabel>
 </LanguageData>

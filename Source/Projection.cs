@@ -16,6 +16,7 @@ namespace NivarianCommander
         public Thing source, projection;
         public Map sourceMap, targetMap;
         public int initialHP, remaining = 3900, bornLocalTick, damageReturned;
+        public bool dronePoolTransferred;
         internal bool retiring, destroying;
         internal int damageDepth;
         public void ExposeData()
@@ -24,6 +25,7 @@ namespace NivarianCommander
             Scribe_References.Look(ref sourceMap, "sourceMap"); Scribe_References.Look(ref targetMap, "targetMap");
             Scribe_Values.Look(ref initialHP, "initialHP"); Scribe_Values.Look(ref remaining, "remainingLocalTicks", 3900);
             Scribe_Values.Look(ref bornLocalTick, "bornLocalTick"); Scribe_Values.Look(ref damageReturned, "damageReturned");
+            Scribe_Values.Look(ref dronePoolTransferred, "dronePoolTransferred");
         }
     }
     public static class ProjectionContext
@@ -154,6 +156,7 @@ namespace NivarianCommander
             if (!(thing is Building) || !thing.Spawned || thing.Destroyed || thing.Faction != Faction.OfPlayer
                 || IsProjection(thing) || !thing.def.useHitPoints) return false;
             if (thing.TryGetComp<CompMonolithWeapon>() != null) return true;
+            if (ProjectionDrones.Eligible(thing)) return true;
             if (!(thing is Building_TurretGun) && thing.TryGetComp<CompAttachTurret>() == null) return false;
             string owner = thing.def.modContentPack?.PackageIdPlayerFacing ?? "";
             return owner.IndexOf("nivarian", StringComparison.OrdinalIgnoreCase) >= 0
@@ -187,6 +190,7 @@ namespace NivarianCommander
             var weapons = Weapons(link.projection).Where(w => w != null).Distinct().ToArray();
             try
             {
+                ProjectionDrones.ReturnPool(link);
                 if (destroyProjection && link.projection != null && !link.projection.Destroyed)
                     ProjectionContext.Run(link.targetMap, () => link.projection.Destroy(DestroyMode.Vanish));
                 foreach (var weapon in weapons)
@@ -217,7 +221,12 @@ namespace NivarianCommander
             {
                 if (!ValidSource(link) || link.projection?.Spawned != true || link.projection.Destroyed || link.projection.Map != map)
                 { Retire(link); continue; }
-                if (link.bornLocalTick != GenTicks.TicksGame && --link.remaining <= 0) Retire(link);
+                if (link.bornLocalTick != GenTicks.TicksGame)
+                {
+                    if (--link.remaining == 3600)
+                        map.mapDrawer.MapMeshDirty(link.projection.Position, MapMeshFlagDefOf.Things);
+                    if (link.remaining <= 0) Retire(link);
+                }
             }
         }
         public override void ExposeData()
@@ -371,8 +380,9 @@ namespace NivarianCommander
                             copyGun.TryGetComp<CompQuality>()?.SetQuality(gunQuality.Quality, ArtGenerationContext.Outsider);
                     }
                 }
+                foreach (var link in created) ProjectionDrones.TransferPool(link);
                 if (!NativeLedger.TryPay(power, volatileCost)) throw new InvalidOperationException(NmcText.Get("NMC_Text0412"));
-                CommanderState.Current.cooldowns[DefenseActions.Ability(19).defName] = 420000;
+                CommanderState.Current.cooldowns[ability.defName] = ability.cooldownTicks;
             }
             catch (Exception ex)
             {

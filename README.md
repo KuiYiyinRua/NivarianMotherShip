@@ -4,7 +4,7 @@
 
 A RimWorld 1.6 expansion for **Nivarian Race**. Extend the mothership with 19 tactical supports, a points shop, carrier, gravity ship, Storm Ship, Sage Ship and Warp Prism, and an eight-stage Continuum campaign.
 
-Release: **0.9.9-r6** (core version 0.9.9). Languages: Simplified Chinese, English, Russian, Japanese and French.
+Release: **0.9.9-r7** (core version 0.9.9). Languages: Simplified Chinese, English, Russian, Japanese and French.
 
 ## Installation
 
@@ -37,7 +37,7 @@ python Tools/Localization/verify.py
 
 Directory.Build.props supplies default dependency paths. Override HarmonyAssembly, NivarianRaceAssembly, LumiParticleAssembly or MultiplayerApiAssembly if your installation uses different folders. Builds write directly to the mod's assembly folders. Python tools use only the standard library.
 
-The 0.9.9-r6 package includes five optional Multiplayer adapters with 0.9.8 assembly identities. The main adapter includes caravan recall synchronization and the Continuum entry fix; the four ship adapters are unchanged. Core file/informational version is 0.9.9; its binding version remains 0.9.8. Rebuilding an adapter changes its MVID and requires revalidation with third-party patches that identify it by MVID. Additional adapter sources are in Multiplayer/ShipUpgradeSource, WarpPrismSource, StormShipSource and SageShipSource.
+The 0.9.9-r7 package includes five optional Multiplayer adapters with 0.9.8 assembly identities. The main adapter includes caravan recall synchronization and the Continuum entry fix; the four ship adapters are unchanged. Core file/informational version is 0.9.9; its binding version remains 0.9.8. Rebuilding an adapter changes its MVID and requires revalidation with third-party patches that identify it by MVID. Additional adapter sources are in Multiplayer/ShipUpgradeSource, WarpPrismSource, StormShipSource and SageShipSource.
 
 Translation contributors: see [localization maintenance](Docs/LOCALIZATION.md). Release verification and its limits are recorded in [release validation](Docs/VALIDATION.md).
 

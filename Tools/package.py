@@ -21,8 +21,8 @@ files.append(mod/'Directory.Build.props')
 for folder in ['Source','Multiplayer/Source','Multiplayer/ShipUpgradeSource','Multiplayer/WarpPrismSource','Multiplayer/StormShipSource','Multiplayer/SageShipSource']:
  files.extend(p for p in (mod/folder).glob('*') if p.is_file() and p.suffix in ['.cs','.csproj'])
 files.append(mod/'Tools/package.py')
-for folder in ['Tests/ContinuumEntry','Tests/NativeConstruction','Tests/ShadowFootprint','Tests/NutrientRefill']:
- files.extend(p for p in (mod/folder).glob('*') if p.is_file() and p.suffix in ['.cs','.csproj','.ps1'])
+for folder in ['Tests/ContinuumEntry','Tests/NativeConstruction','Tests/ShadowFootprint','Tests/NutrientRefill','Tests/Projection','Tests/TickPerformance','Tests/TickPerformanceMP']:
+ files.extend(p for p in (mod/folder).glob('*') if p.is_file() and p.suffix in ['.cs','.csproj','.ps1','.md'])
 files.extend(p for p in (mod/'Tools/Localization').glob('*') if p.is_file() and p.suffix in ['.py','.json'])
 files.extend(p for p in (mod/'Workshop').glob('*') if p.is_file() and p.suffix.lower() in ['.txt','.json','.png','.jpg'])
 for folder in ['Workshop/Gallery','Workshop/Screenshots']:

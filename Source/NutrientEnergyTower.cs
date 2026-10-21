@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Xml;
 using HarmonyLib;
+using Nivarian;
 using Nivarian_Race.Code.Comps.BuildingComps;
 using Nivarian_Race.Code.Defs;
 using RimWorld;
@@ -39,6 +40,14 @@ namespace NivarianCommander
             }
         }
         CompPowerPlant_NutrientTower generator;
+        CompFlickable flickable;
+        CompBreakdownable breakdownable;
+        int cachedCompCount = -1;
+        bool extendedFlick;
+        ThingDef rateDef;
+        NutrientEnergyTowerProperties rates;
+        Game ledgerGame;
+        GameComp_NivarianMotherShip ledger;
         static ThingDef raceDef, collectorDef;
         static LifeStageDef adultStage;
         static ResearchProjectDef supportResearch;
@@ -47,15 +56,53 @@ namespace NivarianCommander
         public Building_NutrientEnergyTower() { food = new NutrientTowerFoodContainer(this); }
         public bool StorageTabVisible => true;
         public bool IsContentsSuspended => true;
-        bool EnabledForColony => Spawned && Faction == Faction.OfPlayer && FlickUtility.WantsToBeOn(this);
+        void CacheComponents()
+        {
+            int count = AllComps.Count;
+            if (cachedCompCount == count) return;
+            cachedCompCount = count;
+            flickable = GetComp<CompFlickable>();
+            breakdownable = GetComp<CompBreakdownable>();
+            // Ordinary towers only have a flick switch. Preserve vanilla's
+            // full schedule/ritual/auto-power policy for extended definitions.
+            extendedFlick = GetComp<CompSchedule>() != null || GetComp<CompLightball>() != null
+                || GetComp<CompAutoPowered>() != null;
+        }
+        bool EnabledForColony
+        {
+            get
+            {
+                if (!Spawned || Faction != Faction.OfPlayer) return false;
+                CacheComponents();
+                return (flickable == null || flickable.SwitchIsOn)
+                    && (!extendedFlick || FlickUtility.WantsToBeOn(this));
+            }
+        }
+        GameComp_NivarianMotherShip Ledger
+        {
+            get
+            {
+                var game = Current.Game;
+                if (ledgerGame != game || ledger == null)
+                { ledgerGame = game; ledger = NativeLedger.Component; }
+                return ledger;
+            }
+        }
         internal bool CanReceiveNutrition => EnabledForColony && NutritionNeeded > 0d;
         // Gate both the dedicated work giver and vanilla general hauling. Keep
         // acceptance separate so active deliveries and explicit orders can fill
         // the configured target even when the reserve is already above half.
-        public bool HaulDestinationEnabled => CanReceiveNutrition && autoFillNutrition &&
-            NutritionStored < Math.Min(Capacity, nutritionTarget) * .5d;
-        public bool OperationPermitted => EnabledForColony && !this.IsBrokenDown() && !this.IsBurning() &&
-            SupportUnlocked && NativeLedger.Component != null;
+        public bool HaulDestinationEnabled
+        {
+            get
+            {
+                if (!autoFillNutrition || !EnabledForColony) return false;
+                double target = Math.Min(Capacity, nutritionTarget);
+                return target > 0d && NutritionStored < target * .5d;
+            }
+        }
+        public bool OperationPermitted => EnabledForColony && breakdownable?.BrokenDown != true && !this.IsBurning() &&
+            SupportUnlocked && Ledger != null;
         static bool SupportUnlocked
         {
             get
@@ -87,18 +134,33 @@ namespace NivarianCommander
             get
             {
                 double amount = containedNutrition;
-                foreach (var item in food)
+                var items = food.InnerListForReading;
+                for (int i = 0; i < items.Count; i++)
+                {
+                    var item = items[i];
                     if (!item.IsNotFresh()) amount += item.stackCount * (double)item.GetStatValue(StatDefOf.Nutrition);
+                }
                 return amount;
             }
         }
         public double NutritionNeeded => Math.Max(0d, Math.Min(Capacity, nutritionTarget) - NutritionStored);
-        public double RateMultiplier => def.GetModExtension<NutrientEnergyTowerProperties>()?.rateMultiplier ?? 1d;
+        public double RateMultiplier
+        {
+            get
+            {
+                if (rateDef != def)
+                { rateDef = def; rates = def.GetModExtension<NutrientEnergyTowerProperties>(); }
+                return rates?.rateMultiplier ?? 1d;
+            }
+        }
         public double DailyPower => PowerPerDay * RateMultiplier;
         public double DailyNutrition => NutritionPerDay * RateMultiplier;
         public float RatedWatts => -(def.GetCompProperties<CompProperties_Power>()?.PowerConsumption ?? 0f);
-        public bool HasNutrition => NutritionStored >= DailyNutrition / 60000d;
-        public bool IsOperating => OperationPermitted && HasNutrition && generator?.PowerOn == true;
+        // The fractional buffer alone usually funds thousands of ticks. Food
+        // remains live: no tick/UI cache can hide delivery, splitting or rot.
+        bool HasNutritionFor(double required) => containedNutrition >= required || NutritionStored >= required;
+        public bool HasNutrition => HasNutritionFor(DailyNutrition / 60000d);
+        public bool IsOperating => generator?.PowerOn == true && HasNutrition && OperationPermitted;
 
         public override void PostMake()
         {
@@ -109,6 +171,8 @@ namespace NivarianCommander
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
+            cachedCompCount = -1;
+            CacheComponents();
             generator = GetComp<CompPowerPlant_NutrientTower>();
             generator?.UpdateDesiredPowerOutput();
         }
@@ -121,11 +185,12 @@ namespace NivarianCommander
         public bool Accepts(Thing item) => FoodCountThatFits(item) > 0;
         internal int FoodCountThatFits(Thing item)
         {
-            if (!CanReceiveNutrition || item == null || item.def.ingestible == null ||
+            if (item == null || item.def.ingestible == null || !EnabledForColony ||
                 item.IsNotFresh() || nutritionSettings?.AllowedToAccept(item) != true ||
                 GetParentStoreSettings()?.AllowedToAccept(item) == false) return 0;
-            float value = item.GetStatValue(StatDefOf.Nutrition);
             double needed = NutritionNeeded;
+            if (needed <= 0d) return 0;
+            float value = item.GetStatValue(StatDefOf.Nutrition);
             if (value <= 0f || float.IsNaN(value) || float.IsInfinity(value) || value > needed) return 0;
             // The original vat rounds the last delivery up to a whole food item.
             return (int)Math.Min(int.MaxValue, Math.Ceiling(needed / value));
@@ -135,10 +200,10 @@ namespace NivarianCommander
         {
             base.Tick();
             if (generator == null) return;
-            if (!OperationPermitted || !HasNutrition) { generator.PowerOutput = 0f; return; }
+            double required = DailyNutrition / 60000d;
+            if (!OperationPermitted || !HasNutritionFor(required)) { generator.PowerOutput = 0f; return; }
             if (generator.PowerOutput <= 0f) generator.UpdateDesiredPowerOutput();
             if (!generator.PowerOn) return;
-            double required = DailyNutrition / 60000d;
             if (required <= 0d || double.IsNaN(required) || double.IsInfinity(required)) return;
             // Like the vat: convert a whole food unit into the numeric buffer
             // only when needed, retaining leftover nutrition for later ticks.
@@ -154,7 +219,7 @@ namespace NivarianCommander
             if (containedNutrition < required)
             { generator.PowerOutput = 0f; return; }
             containedNutrition = Math.Max(0d, containedNutrition - required);
-            if (!HasNutrition) generator.PowerOutput = 0f;
+            if (!HasNutritionFor(required)) generator.PowerOutput = 0f;
             if (++productionTicks >= 250)
             {
                 pendingPower += DailyPower * productionTicks / 60000d;
@@ -163,7 +228,7 @@ namespace NivarianCommander
                 if (whole > 0)
                 {
                     powerCurrency = powerCurrency ?? DefDatabase<NivarianMotherShipRequestCurrencyDef>.GetNamed("PowerCoin");
-                    NativeLedger.Component.AddCurrency(powerCurrency, whole);
+                    Ledger.AddCurrency(powerCurrency, whole);
                     pendingPower -= whole;
                 }
             }
