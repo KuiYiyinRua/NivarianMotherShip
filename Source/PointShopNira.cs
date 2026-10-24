@@ -9,11 +9,13 @@ using Theme = NivarianCommander.CommanderPanelTheme;
 
 namespace NivarianCommander
 {
-    // Native portrait + native projection shader + native typewriter, entirely local to this window.
+    // Native portrait/typewriter; 1.7 uses ordinary UI textures (see issue #1).
     public sealed class PointShopNira : IDisposable
     {
+#if !RIMWORLD_1_7
         static Material template;
         Material projection;
+#endif
         readonly StoryDialogTypewriter writer = new StoryDialogTypewriter();
         readonly NivarianStoryDialog dialog = new NivarianStoryDialog { speaker = NmcText.Get("NMC_Text0306"), uiTexturePath = "Nivarian/UI/nira" };
         readonly Dictionary<string, int> rotations = new Dictionary<string, int>();
@@ -38,6 +40,7 @@ namespace NivarianCommander
 
         public PointShopNira()
         {
+#if !RIMWORLD_1_7
             if (template == null) LumiAssetLoader.Instance?.GetMaterial("projectionEfx", out template, true, false);
             if (template != null)
             {
@@ -45,6 +48,7 @@ namespace NivarianCommander
                 projection.mainTexture = dialog.PortraitTexture;
                 projection.SetTexture("_ScanLineTex", dialog.PortraitTexture);
             }
+#endif
             Say("welcome");
         }
         public void Say(string kind)
@@ -68,9 +72,14 @@ namespace NivarianCommander
                 float portraitSize = Mathf.Min(60, rect.height - 16);
                 var portrait = new Rect(rect.x + 8, rect.y + 8, portraitSize, portraitSize);
                 Widgets.DrawBoxSolid(portrait, Theme.Ink); Theme.Frame(portrait, Theme.Gold);
+#if !RIMWORLD_1_7
                 if (projection != null && Event.current.type == EventType.Repaint)
                     Graphics.DrawTexture(portrait.ContractedBy(3), dialog.PortraitTexture, projection);
-                else Widgets.DrawTextureFitted(portrait.ContractedBy(3), dialog.PortraitTexture, 1f);
+                else
+#endif
+                    // A custom material can fail asynchronously in Waylith's render
+                    // thread. Do not submit it and rely on a UI try/catch to recover.
+                    Widgets.DrawTextureFitted(portrait.ContractedBy(3), dialog.PortraitTexture, 1f);
                 Text.Font = GameFont.Small; Text.Anchor = TextAnchor.UpperLeft;
                 GUI.color = Theme.Gold;
                 float bodyWidth = rect.width - portraitSize - 28;
@@ -103,6 +112,12 @@ namespace NivarianCommander
             }
             finally { Text.Font = oldFont; Text.Anchor = oldAnchor; Text.WordWrap = oldWrap; GUI.color = oldColor; }
         }
-        public void Dispose() { if (projection != null) UnityEngine.Object.Destroy(projection); projection = null; }
+        public void Dispose()
+        {
+#if !RIMWORLD_1_7
+            if (projection != null) UnityEngine.Object.Destroy(projection);
+            projection = null;
+#endif
+        }
     }
 }

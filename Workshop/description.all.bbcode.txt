@@ -1,8 +1,8 @@
 [h1]Nivarian MotherShip[/h1]
 
-[b]RimWorld 1.6 / 1.7 · v0.9.9-r9[/b]
+[b]RimWorld 1.6 / 1.7 · v0.9.9-r10[/b]
 
-[b]1.7 Continuum retry fix[/b]: Recover missing quest references and honor the three-day retry. Existing failure history credits time already waited; completed stages remain. Update Nivarian Race 1.7 and fully restart.
+[b]1.7 points-shop graphics compatibility[/b]: Portraits and merchandise now use ordinary UI textures, bypassing custom materials. Hologram and special material effects are disabled; trade logic is unchanged. 58 checks passed with RimUnity 0.1.16/0.1.17 on NVIDIA; the reported RX 560X still needs retesting. Fully restart after updating.
 
 [b]1.7 compatibility update[/b]: Use the 1.7 versions of all prerequisites. RimUnity is included. Multiplayer adapters remain available for 1.6 only; 1.7 is single-player. Fully restart the game after updating.
 
@@ -72,9 +72,9 @@ Optional: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3735573834
 
 [h1]涅瓦莲母舰支援拓展 | Nivarian MotherShip[/h1]
 
-[b]RimWorld 1.6 / 1.7 · v0.9.9-r9[/b]
+[b]RimWorld 1.6 / 1.7 · v0.9.9-r10[/b]
 
-[b]1.7 连续体重试修复[/b]：恢复丢失的任务引用，修复失败后三天不再生成。旧档可恢复失败记录时抵扣已等待时间，保留已完成阶段。请更新 Nivarian Race 1.7 前置并完全重启游戏。
+[b]1.7 点数商店图形兼容[/b]：头像和商品改用普通 UI 贴图，绕开自定义材质。停用全息与特殊材质效果，交易逻辑不变。RimUnity 0.1.16/0.1.17 在 NVIDIA 上共 58 项检查通过，报告问题的 RX 560X 仍需复测。更新后完全重启游戏。
 
 [b]1.7 兼容更新[/b]：请使用全部前置的 1.7 版本，RimUnity 已随包提供。1.7 当前支持单机，联机适配仅用于 1.6。更新后请完全重启游戏。
 
@@ -144,9 +144,9 @@ Optional: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3735573834
 
 [h1]Nivarian MotherShip | ニヴァリアン母艦支援拡張[/h1]
 
-[b]RimWorld 1.6 / 1.7 · v0.9.9-r9[/b]
+[b]RimWorld 1.6 / 1.7 · v0.9.9-r10[/b]
 
-[b]1.7 連続体ミッションの再試行修正[/b]：失われたクエスト参照を復元し、失敗後3日で再試行します。失敗履歴が残っていれば経過時間を反映し、完了済み段階を保持します。Nivarian Race 1.7を更新し、ゲームを完全に再起動してください。
+[b]1.7 ポイントショップの描画互換性[/b]：肖像と商品を通常のUIテクスチャで描画し、カスタム材質を回避します。ホログラムと特殊材質効果を無効化し、取引処理は維持します。NVIDIA上でRimUnity 0.1.16/0.1.17の計58項目を確認済み。報告元のRX 560Xでは再確認が必要です。更新後は完全に再起動してください。
 
 [b]1.7 対応更新[/b]：前提MODもすべて1.7版を使用してください。RimUnityは同梱しています。1.7はシングルプレイ対応、マルチプレイ対応モジュールは1.6専用です。更新後はゲームを完全に再起動してください。
 
@@ -216,9 +216,9 @@ Optional: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3735573834
 
 [h1]Nivarian MotherShip | Поддержка материнского корабля[/h1]
 
-[b]RimWorld 1.6 / 1.7 · v0.9.9-r9[/b]
+[b]RimWorld 1.6 / 1.7 · v0.9.9-r10[/b]
 
-[b]1.7: исправление повторных заданий Континуума[/b]. Восстанавливаются потерянные ссылки на задания и повторная выдача через три дня. При наличии истории неудачи учитывается уже прошедшее время; завершённые этапы сохраняются. Обновите Nivarian Race 1.7 и полностью перезапустите игру.
+[b]1.7: совместимость графики магазина очков[/b]. Портреты и товары используют обычные текстуры UI. Голограммы и эффекты материалов отключены; торговля сохранена. На NVIDIA пройдено 58 проверок с RimUnity 0.1.16/0.1.17. На RX 560X из отчёта нужна повторная проверка. Полностью перезапустите игру.
 
 [b]Совместимость с 1.7[/b]: Установите версии всех зависимостей для 1.7. RimUnity включён. В 1.7 поддерживается одиночная игра; сетевые модули предназначены только для 1.6. После обновления полностью перезапустите игру.
 
@@ -288,9 +288,9 @@ Optional: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3735573834
 
 [h1]Nivarian MotherShip | Soutien du vaisseau-mère[/h1]
 
-[b]RimWorld 1.6 / 1.7 · v0.9.9-r9[/b]
+[b]RimWorld 1.6 / 1.7 · v0.9.9-r10[/b]
 
-[b]1.7 : correction des missions du Continuum[/b]. Rétablit les références de quête perdues et la relance après trois jours. Si l’historique de l’échec existe, le délai déjà écoulé est déduit ; les étapes terminées sont conservées. Mettez Nivarian Race 1.7 à jour et redémarrez complètement le jeu.
+[b]1.7 : compatibilité graphique de la boutique de points[/b]. Portraits et articles utilisent des textures UI ordinaires sans matériaux personnalisés. Les hologrammes et effets spéciaux des matériaux sont désactivés ; les échanges sont inchangés. 58 contrôles réussis sur NVIDIA avec RimUnity 0.1.16/0.1.17. La RX 560X signalée reste à retester. Redémarrez complètement le jeu.
 
 [b]Compatibilité 1.7[/b] : Installez les versions 1.7 de toutes les dépendances. RimUnity est inclus. La version 1.7 prend en charge le jeu solo ; les modules multijoueurs restent réservés à la 1.6. Redémarrez complètement le jeu après la mise à jour.
 

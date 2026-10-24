@@ -1,9 +1,9 @@
 {
-  "release": "0.9.9-r9",
+  "release": "0.9.9-r10",
   "date": "2026-10-25",
   "game": "1.7.4985 rev1269",
-  "build": "Packaged 1.7 source rebuild checked against tested candidate; five-language verification; 1.6 core and five adapters unchanged from r8",
-  "runtime": "46 targeted single-player checks, including pending-retry and original-build stuck-save cold loads. Accelerated campaign timing. Known upstream errors retained. No actual user-save, full-modpack or 1.7 Multiplayer certification; points-shop graphics crash not confirmed fixed.",
+  "build": "Packaged 1.7 source rebuild checked against tested candidate; five-language verification; 1.6 core, five adapters and bundled runtime unchanged from r9",
+  "runtime": "58 isolated single-player checks: 29 each with embedded RimUnity 0.1.16 and standalone 0.1.17. Six shop open/close cycles with custom-material boundary checks. NVIDIA RTX 2080 Ti only; no reporter RX 560X, actual save, full-modpack or 1.7 Multiplayer certification. Baseline upstream error retained.",
   "assemblies": {
     "Multiplayer/Assemblies/NivarianCommander.Multiplayer.dll": "904cd6902541a1cad1efaebf54e35f29ef1f750da6d46e7ea827e5d4bfd57d72",
     "Multiplayer/Assemblies/NivarianCommander.SageShip.Multiplayer.dll": "65c844c99de8b3d5734ce32a4d8001e36e791b92bee12739e2ce48c7ca8b0918",
@@ -11,7 +11,7 @@
     "Multiplayer/Assemblies/NivarianCommander.StormShip.Multiplayer.dll": "befafe23a71ce90a696c3a1bf2c43cef84341933057c9fe67e0fbe71a19a6222",
     "Multiplayer/Assemblies/NivarianCommander.WarpPrism.Multiplayer.dll": "2b5b7f4f42010c8e5d006736d5911a5aa7c320b5350d52dff3c9c507503bec75",
     "1.6/Assemblies/NivarianCommander.dll": "14ea4040cc4e1e079f32b0b90520ccdff641d1578b0ab8937030928fa4514586",
-    "1.7/Assemblies/NivarianCommander.rimunity": "1d58397d48f1d296b79554f5bc19e2c1303d80a8de0bb2e082757c71c7c701c7",
+    "1.7/Assemblies/NivarianCommander.rimunity": "d8ea5688b69996ce2e5b32f0031a7a08e3e7f536ae6b5dc1858a9a6d961d63b4",
     "1.7/Assemblies/RimUnity.Embedded.dll": "52bba9de49ba75fa05f569640971758c655c172f0b87d224e5dce6c178cad7e9"
   }
 }

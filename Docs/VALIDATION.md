@@ -1,3 +1,15 @@
+# Release validation: 0.9.9-r10
+
+This release avoids the custom UI material path in the 1.7 points shop. Portraits and merchandise use ordinary textures; hologram and material-specific effects are disabled. Trade logic is unchanged. See [compatibility details](PointShopCompatibility.zh-CN.md) and the [regression probe](../Tests/PointShopCompat17/README.md).
+
+The original r9 core fails seven material-submission boundary assertions. The fixed candidate passes **58 checks**: 29 each with embedded RimUnity 0.1.16 and standalone 0.1.17, including six real shop open/close cycles, page switching, scrolling, injected icon materials and inspected screenshots. The test guard rejects custom-material submissions only in the isolated probe; the fixed shop submits zero such calls. This invariant test does not reproduce the reporter's driver crash.
+
+Tests used RimWorld 1.7.4985 rev1269 and NVIDIA RTX 2080 Ti. The reporter's RX 560X, actual save, full modpack and 1.7 Multiplayer remain untested. The upstream AncientHeavyBridge missing-def error also occurs on the baseline. The r9 Continuum fix remains included; the 1.6 core, five Multiplayer adapters and embedded runtime are unchanged.
+
+Core SHA-256: `D8EA5688B69996CE2E5B32F0031A7A08E3E7F536AE6B5DC1858A9A6D961D63B4`. Runtime SHA-256: `52BBA9DE49BA75FA05F569640971758C655C172F0B87D224E5DCE6C178CAD7E9`. Source rebuilt independently produces the identical core. Development evidence is under local `BuildValidation/PointShopCompat17-20261025`; release evidence is under `BuildValidation/PointShopRelease-20261025`. Prior results below apply to their named candidates.
+
+## Previous release evidence
+
 # Release validation: 0.9.9-r9
 
 This update ships the Continuum retry fix for **RimWorld 1.7.4985 rev1269**. It preserves the previous 1.6 core and five Multiplayer adapters. Shared source includes the fix; rebuilding the 1.6 source therefore produces an unshipped candidate. No 1.7 Multiplayer support is included.

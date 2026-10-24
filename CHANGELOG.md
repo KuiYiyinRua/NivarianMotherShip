@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.9.9-r10 · 2026-10-25 · 1.7 点数商店图形兼容
+
+- 为 issue #1 报告的 Vulkan 自定义 UI 材质管线错误加入兼容处理：1.7 商店头像和商品使用普通贴图，不提交全息或特殊图标材质。
+- 保留头像、打字对话、商品基础颜色和交易逻辑；全息投影及材质遮罩、发光等特殊效果停用。兼容层仅作用于本模组商店，无需修改依赖模组。
+- 嵌入式 RimUnity 0.1.16 和独立 0.1.17 各通过 29 项隔离单机检查，共 58 项、六轮商店开关。验证使用 NVIDIA RTX 2080 Ti；报告问题的 RX 560X、玩家实际存档和完整整合包仍待复测，不能据此确定上游或驱动的唯一责任。
+- 包含 r9 连续体任务重试修复；1.6 核心、五份联机适配 DLL 和随附运行库保持原样。不提供 1.7 联机支持。更新后完全退出并重启游戏。
+
+### English
+
+- Added a compatibility path for the Vulkan custom UI material pipeline error reported in issue #1. On 1.7, shop portraits and merchandise use ordinary textures without submitting hologram or special icon materials.
+- Preserves portraits, typewriter dialogue, base item colours and trade logic. Hologram, material-mask and glow effects are disabled within this shop. No dependency-mod changes are required.
+- Passed 29 isolated single-player checks each with embedded RimUnity 0.1.16 and standalone 0.1.17: 58 checks and six shop open/close cycles. Tests used an NVIDIA RTX 2080 Ti; the reporter's RX 560X, actual save and full modpack still require retesting. The log does not establish sole responsibility in the dependency or driver.
+- Includes the r9 Continuum retry fix. The 1.6 core, five Multiplayer adapters and bundled runtime are unchanged. No 1.7 Multiplayer support. Fully exit and restart after updating.
+
 ## 0.9.9-r9 · 2026-10-25 · 1.7 连续体任务重试修复
 
 - 修复连续体任务引用丢失后停在进行中、失败任务不再生成的问题；优先找回同基地、同阶段的有效任务，避免重复任务。

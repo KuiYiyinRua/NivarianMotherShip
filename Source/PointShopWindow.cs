@@ -246,7 +246,7 @@ namespace NivarianCommander
             if (count > 0) Widgets.DrawBoxSolid(new Rect(rect.x, rect.y + 8, 2, rect.height - 16), Theme.Gold);
             var icon = new Rect(rect.x + 8, rect.y + 14, 44, 44);
             Theme.Frame(icon.ExpandedBy(3), count > 0 ? Theme.Gold : Theme.Line);
-            Widgets.ThingIcon(icon, thing);
+            PointShopIcon.ThingIcon(icon, thing);
             if (Widgets.ButtonInvisible(icon)) Find.WindowStack.Add(new Dialog_InfoCard(thing.GetInnerIfMinified()));
             float controls = 104, textWidth = Math.Max(55, rect.width - controls - 76);
             var name = new Rect(rect.x + 65, rect.y + 5, textWidth, 25);
