@@ -1,3 +1,17 @@
+# Release validation: 0.9.9-r9
+
+This update ships the Continuum retry fix for **RimWorld 1.7.4985 rev1269**. It preserves the previous 1.6 core and five Multiplayer adapters. Shared source includes the fix; rebuilding the 1.6 source therefore produces an unshipped candidate. No 1.7 Multiplayer support is included.
+
+The original 1.7 core reproduced six failures in targeted campaign scenarios. The fixed candidate passed **46 checks**: 36 in the normal run, six after cold-loading a pending retry, and four after cold-loading a stuck save produced by the original core. The old save had completed stage four and failed stage five more than 180,000 ticks earlier, with its active quest reference missing. The fix regenerated stage five, retained completed progress and produced no duplicate quest during subsequent checks.
+
+Timing was accelerated through actual campaign ticks and world-component dispatch; this was not a natural three-day combat simulation. The user's actual save, a full modpack and 1.7 Multiplayer were not tested. Existing upstream AncientHeavyBridge errors and developer-mode configuration warnings remain in the raw logs. The separate remote-PC points-shop graphics crash is not confirmed fixed.
+
+The 1.7 core SHA-256 is `1D58397D48F1D296B79554F5BC19E2C1303D80A8DE0BB2E082757C71C7C701C7`. Bundled RimUnity SHA-256 is `52BBA9DE49BA75FA05F569640971758C655C172F0B87D224E5DCE6C178CAD7E9`, matching the current Nivarian Race prerequisite. Both old and new runtime payloads report 0.1.16, so the runtime hash is the relevant identity. Update the prerequisite and fully restart the game.
+
+Regression source: [ContinuumRetry17](../Tests/ContinuumRetry17/README.md). Development evidence is retained locally under `BuildValidation/ContinuumRetry17-20261024`; release packaging evidence is under `BuildValidation/ContinuumRelease-20261025`. Prior release results below apply to their named candidates.
+
+## Previous release evidence
+
 # Release validation: 0.9.9-r8
 
 RimWorld **1.7.4984 rev1242**, with the matching Nivarian Race 1.7 prerequisite. This release adds a separate 1.7 single-player build. The shipped 1.6 core and all five Multiplayer adapters are unchanged from r7; no 1.7 Multiplayer support is included.

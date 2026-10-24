@@ -1,6 +1,8 @@
 [h1]Nivarian MotherShip[/h1]
 
-[b]RimWorld 1.6 / 1.7 · v0.9.9-r8[/b]
+[b]RimWorld 1.6 / 1.7 · v0.9.9-r9[/b]
+
+[b]1.7 Continuum retry fix[/b]: Recover missing quest references and honor the three-day retry. Existing failure history credits time already waited; completed stages remain. Update Nivarian Race 1.7 and fully restart.
 
 [b]1.7 compatibility update[/b]: Use the 1.7 versions of all prerequisites. RimUnity is included. Multiplayer adapters remain available for 1.6 only; 1.7 is single-player. Fully restart the game after updating.
 

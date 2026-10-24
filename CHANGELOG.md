@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.9.9-r9 · 2026-10-25 · 1.7 连续体任务重试修复
+
+- 修复连续体任务引用丢失后停在进行中、失败任务不再生成的问题；优先找回同基地、同阶段的有效任务，避免重复任务。
+- 三天重试不再受首次第七天出现条件阻挡。可恢复失败记录的旧档会扣除已经等待的时间；超过三天后继续游戏即可重试。记录已完全丢失时重新安排三天等待。
+- 保留已完成阶段、仍有地图的基地和货物；已完成全部八阶段的战役不会重开。
+- 将 1.7 随附 RimUnity 运行库与当前前置对齐。请更新配套的 Nivarian Race 1.7，并完全重启游戏。
+- 原版复现 6 项失败，修复候选通过 46 项隔离单机检查，含待重试存档及原版故障存档的冷启动；计时为定向加速检查。未验证用户实际存档、完整整合包或 1.7 联机。
+- 仅更新 1.7 运行文件；1.6 核心和五份联机适配 DLL 保持原样。共享源码包含修复，但本次未发布新的 1.6 编译文件。积分商店图形崩溃尚未确认修复。
+
+### English
+
+- Fixed a stalled Continuum campaign when its quest reference is missing. Recover the live quest for the same site and stage before scheduling a retry, preventing duplicate missions.
+- The three-day retry no longer waits for the initial day-seven gate. Recoverable historical failures credit elapsed waiting time; overdue failures retry when simulation resumes. Missing history starts a fresh three-day wait.
+- Preserves completed stages, loaded sites and cargo. Completed eight-stage campaigns do not restart.
+- Aligned the bundled 1.7 RimUnity runtime with the current prerequisite. Update Nivarian Race 1.7 and fully restart the game.
+- The original build reproduced six failing checks; the fixed candidate passed 46 isolated single-player checks, including cold loads of a pending retry and an old-build stuck save. Timing uses targeted acceleration. No actual user-save, full-modpack or 1.7 Multiplayer certification.
+- Only 1.7 runtime files change. The 1.6 core and five Multiplayer adapters remain unchanged; shared source includes the fix but no rebuilt 1.6 binary ships. The separately reported points-shop graphics crash is not confirmed fixed.
+
 ## 0.9.9-r8 · 2026-10-21 · RimWorld 1.7 兼容
 
 - 新增 RimWorld 1.7 的独立程序集、资源和版本加载规则；保留 1.6 核心及五份联机适配 DLL。

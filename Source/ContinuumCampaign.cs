@@ -39,6 +39,16 @@ namespace NivarianCommander
             if (!CommanderProgression.CampaignEnabled || completedStage >= 8) return;
             if (activeStage > 0)
             {
+                // A removed/unresolved quest reference must not leave the campaign
+                // permanently active. Recover the existing live quest before retrying,
+                // so a missing reference alone cannot create a duplicate mission.
+                if (activeQuest == null && activeSite != null && !activeSite.Destroyed)
+                    activeQuest = Find.QuestManager.QuestsListForReading
+                        .Where(q => (!q.Historical || q.State == QuestState.EndedFailed)
+                            && q.PartsListForReading.OfType<QuestPart_ContinuumLocation>()
+                                .Any(p => p.site == activeSite && p.stage == activeStage))
+                        .OrderBy(q => q.Historical).ThenByDescending(q => q.id).FirstOrDefault();
+                if (activeQuest == null) { Resolve(false); return; }
                 // Migrate old timed missions in the deterministic world tick.
                 // Keep the serialized legacy counter for save compatibility only.
                 if (!persistentQuestMigrated)
@@ -55,8 +65,11 @@ namespace NivarianCommander
                     || (entered && activeSite.Map == null) || activeQuest?.Historical == true) Resolve(false);
                 return;
             }
-            if (retryRemaining > 0) { retryRemaining--; if (retryRemaining > 0) return; }
-            if (Find.TickManager.TicksGame < FirstDayTicks) return;
+            bool retrying = retryRemaining > 0;
+            if (retrying) { retryRemaining--; if (retryRemaining > 0) return; }
+            // The day-seven gate applies only to the first unsolicited mission.
+            // Existing campaigns and saved retries must honor their own deadline.
+            if (!retrying && attempts == 0 && completedStage == 0 && Find.TickManager.TicksGame < FirstDayTicks) return;
             TrySpawn();
         }
         // Multiplayer replaces this map read with an explicit host observation command.
@@ -139,7 +152,12 @@ namespace NivarianCommander
         {
             if (activeStage <= 0) return;
             int stage = activeStage;
+            attempts = Math.Max(1, attempts); // Older saves can omit this counter.
             var site = activeSite; var quest = activeQuest;
+            // A recovered historical failure has already spent time waiting. Do not
+            // restart its three-day delay every time an old stuck save is loaded.
+            int failedAgo = !success && quest?.State == QuestState.EndedFailed
+                ? Math.Max(0, quest.TicksSinceCleanup) : 0;
             activeSite = null; activeQuest = null; activeStage = 0; entered = false; missionRemaining = 0;
             if (quest != null && !quest.Historical) quest.End(success ? QuestEndOutcome.Success : QuestEndOutcome.Fail, sendLetter: false);
             if (success)
@@ -151,8 +169,9 @@ namespace NivarianCommander
             }
             else
             {
-                retryRemaining = RetryTicks;
-                Find.LetterStack.ReceiveLetter(NmcText.Get("NMC_Text0232"), NmcText.Get("NMC_Text0233", stage), LetterDefOf.NegativeEvent);
+                retryRemaining = Math.Max(0, RetryTicks - failedAgo);
+                if (failedAgo == 0)
+                    Find.LetterStack.ReceiveLetter(NmcText.Get("NMC_Text0232"), NmcText.Get("NMC_Text0233", stage), LetterDefOf.NegativeEvent);
             }
             // Leave loaded maps intact so retreating colonists and their cargo remain recoverable.
             if (site != null && !site.Destroyed && !site.HasMap) site.Destroy();
