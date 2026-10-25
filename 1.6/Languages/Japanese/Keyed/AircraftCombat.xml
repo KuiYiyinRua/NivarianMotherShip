@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <NMC_CarrierAttack>艦載機の集中攻撃</NMC_CarrierAttack>
+  <NMC_CarrierAttackDesc>見えるユニットまたは破壊可能な建物を指定します。発艦機と飛行中の艦載機が同じ目標を攻撃します。発艦範囲60マス、追撃範囲は空母から80マス。範囲外でも命令を保持し、解除または目標消失で終了します。</NMC_CarrierAttackDesc>
+  <NMC_CarrierMustFly>離陸とワープを完了してから攻撃目標を指定してください。</NMC_CarrierMustFly>
+  <NMC_CarrierFireAtWill>自動出撃</NMC_CarrierFireAtWill>
+  <NMC_CarrierAutoDesc>自動で艦載機を発艦させ敵を探します。指定目標が優先され、無効時も集中攻撃を続けます。帰還命令で集中攻撃と自動出撃を解除します。</NMC_CarrierAutoDesc>
+  <NMC_CarrierClearDesc>指定目標を解除します。自動出撃が有効なら艦載機は自動索敵に戻ります。</NMC_CarrierClearDesc>
+  <NMC_AircraftForcedTarget>指定目標：{0}</NMC_AircraftForcedTarget>
+</LanguageData>

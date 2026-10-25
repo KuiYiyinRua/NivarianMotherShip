@@ -1,8 +1,8 @@
 [h1]Nivarian MotherShip | Soutien du vaisseau-mère[/h1]
 
-[b]RimWorld 1.6 / 1.7 · v0.9.9-r11[/b]
+[b]RimWorld 1.6 / 1.7 · v0.9.9-r12[/b]
 
-[b]1.7 : correction des dons[/b]. Les conteneurs défectueux ne bloquent plus la liste ; les marchandises saines restent disponibles. Les données illisibles sont exclues avec un diagnostic. 110 contrôles réussis, dont des dons réels. Compatibilité graphique r10 incluse. Redémarrez complètement et retestez votre sauvegarde.
+[b]Combat naval[/b] : Les chasseurs concentrent leurs tirs sur la cible choisie ; les vaisseaux de tempête conservent leur cible. Les ennemis préfèrent contourner les montagnes mais peuvent les traverser. Tests 1.6 sur un même PC : 24 000/120 000 ticks sans désynchronisation en scène contrôlée. Tous les joueurs doivent mettre à jour et redémarrer.
 
 [b]Compatibilité 1.7[/b] : Installez les versions 1.7 de toutes les dépendances. RimUnity est inclus. La version 1.7 prend en charge le jeu solo ; les modules multijoueurs restent réservés à la 1.6. Redémarrez complètement le jeu après la mise à jour.
 

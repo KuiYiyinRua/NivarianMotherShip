@@ -4,7 +4,7 @@
 
 A RimWorld 1.6 / 1.7 expansion for **Nivarian Race**. Extend the mothership with 19 tactical supports, a points shop, carrier, gravity ship, Storm Ship, Sage Ship and Warp Prism, and an eight-stage Continuum campaign.
 
-Current release: **0.9.9-r11** (core version 0.9.9). Languages: Simplified Chinese, English, Russian, Japanese and French.
+Current release: **0.9.9-r12** (core version 0.9.9). Languages: Simplified Chinese, English, Russian, Japanese and French.
 
 ## Installation
 

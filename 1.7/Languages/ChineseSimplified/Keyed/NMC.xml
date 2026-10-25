@@ -562,7 +562,7 @@
   <NMC_WarpBusy>正在折跃（前摇4秒、后摇4秒），期间正常受伤</NMC_WarpBusy>
   <NMC_WarpDropUnavailable>涅瓦莲空投舱暂不可用</NMC_WarpDropUnavailable>
   <NMC_StormAttack>雷暴球攻击</NMC_StormAttack>
-  <NMC_StormAttackDesc>指定100格内敌人，每3秒发射雷暴球。直击20伤害、80%穿甲，随后造成3×3格爆炸，25伤害、35%穿甲；对建筑伤害×5。</NMC_StormAttackDesc>
+  <NMC_StormAttackDesc>指定一个可见单位或可受伤建筑。目标在100格内且射线畅通时开火；超出范围时保留指令。每3秒发射雷暴球：直击20伤害、80%穿甲，随后造成3×3格爆炸、25伤害、35%穿甲；对建筑伤害×5。</NMC_StormAttackDesc>
   <NMC_StormMustFly>需处于飞行状态，且未在折跃中</NMC_StormMustFly>
   <NMC_StormFireAtWill>自动开火</NMC_StormFireAtWill>
   <NMC_StormAutoDesc>升空后自动攻击射程内可见的敌人。指定的攻击目标不受此开关影响。</NMC_StormAutoDesc>

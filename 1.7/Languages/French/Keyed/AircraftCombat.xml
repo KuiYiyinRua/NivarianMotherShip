@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <NMC_CarrierAttack>Concentrer les intercepteurs</NMC_CarrierAttack>
+  <NMC_CarrierAttackDesc>Désignez une unité visible ou un bâtiment destructible. Les intercepteurs en vol et ceux qui décollent attaquent cette cible. Portée de lancement : 60 cases ; poursuite : 80 cases du porte-aéronefs. L&apos;ordre reste actif hors de portée jusqu&apos;à annulation ou perte de la cible.</NMC_CarrierAttackDesc>
+  <NMC_CarrierMustFly>Décollez et terminez le transfert avant de désigner une cible.</NMC_CarrierMustFly>
+  <NMC_CarrierFireAtWill>Sorties automatiques</NMC_CarrierFireAtWill>
+  <NMC_CarrierAutoDesc>Lance automatiquement les intercepteurs contre les ennemis. Une cible désignée reste prioritaire, même si cette option est désactivée. Le rappel annule la cible et désactive les sorties automatiques.</NMC_CarrierAutoDesc>
+  <NMC_CarrierClearDesc>Efface la cible désignée. Les intercepteurs reprennent la recherche de cibles si les sorties automatiques sont activées.</NMC_CarrierClearDesc>
+  <NMC_AircraftForcedTarget>Cible désignée : {0}</NMC_AircraftForcedTarget>
+</LanguageData>

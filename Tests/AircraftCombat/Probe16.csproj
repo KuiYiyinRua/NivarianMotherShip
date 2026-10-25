@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework><LangVersion>latest</LangVersion><AssemblyName>NMC.AircraftCombatProbe</AssemblyName>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Probe.cs" />
+    <Reference Include="Assembly-CSharp" HintPath="$(GameRoot)/RimWorldWin64_Data/Managed/Assembly-CSharp.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(GameRoot)/RimWorldWin64_Data/Managed/UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="UnityEngine.IMGUIModule" HintPath="$(GameRoot)/RimWorldWin64_Data/Managed/UnityEngine.IMGUIModule.dll" Private="false" />
+    <Reference Include="UnityEngine.ScreenCaptureModule" HintPath="$(GameRoot)/RimWorldWin64_Data/Managed/UnityEngine.ScreenCaptureModule.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(HarmonyAssembly)" Private="false" />
+    <Reference Include="NivarianCommander" HintPath="$(CommanderAssembly)" Private="false" />
+    <Reference Include="Nivarian_Race" HintPath="$(NivarianRaceAssembly)" Private="false" />
+    <Reference Include="LumiParticle" HintPath="$(LumiParticleAssembly)" Private="false" />
+  </ItemGroup>
+</Project>

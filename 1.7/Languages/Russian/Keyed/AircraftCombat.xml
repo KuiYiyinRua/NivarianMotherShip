@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <NMC_CarrierAttack>Сосредоточить огонь</NMC_CarrierAttack>
+  <NMC_CarrierAttackDesc>Выберите видимый отряд или разрушаемое строение. Новые и уже летящие перехватчики атакуют эту цель. Дальность запуска — 60 клеток, преследования — 80 клеток от авианосца. Приказ сохраняется вне дальности до отмены или потери цели.</NMC_CarrierAttackDesc>
+  <NMC_CarrierMustFly>Взлетите и завершите перенос перед назначением цели.</NMC_CarrierMustFly>
+  <NMC_CarrierFireAtWill>Автоматические вылеты</NMC_CarrierFireAtWill>
+  <NMC_CarrierAutoDesc>Автоматически выпускает перехватчики для атаки врагов. Назначенная цель имеет приоритет даже при отключённой автоматике. Возврат отменяет цель и отключает автоматические вылеты.</NMC_CarrierAutoDesc>
+  <NMC_CarrierClearDesc>Снимает назначенную цель. При включённых автоматических вылетах перехватчики снова выбирают цели самостоятельно.</NMC_CarrierClearDesc>
+  <NMC_AircraftForcedTarget>Назначенная цель: {0}</NMC_AircraftForcedTarget>
+</LanguageData>

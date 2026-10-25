@@ -67,7 +67,7 @@ namespace NivarianCommander
         public float HullHeading => heading + (HeavyFlight || IsWarpPrism ? 0f : 180f);
         public int FighterCount => hangar.Count + deployed.Count(p => p != null && !p.Destroyed);
         public Thing Thing => this;
-        public LocalTargetInfo TargetCurrentlyAimingAt => beamTarget;
+        public LocalTargetInfo TargetCurrentlyAimingAt => IsCarrier ? carrierTarget : IsStormShip ? stormTarget : beamTarget;
         public float TargetPriorityFactor => 1f;
         public bool ThreatDisabled(IAttackTargetSearcher searcher)
             => !Spawned || Destroyed || (Airborne && searcher?.CurrentEffectiveVerb?.IsMeleeAttack == true);
@@ -100,7 +100,7 @@ namespace NivarianCommander
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
-            if (!respawningAfterLoad) { flightPosition = Position.ToVector3Shifted(); heading = Rotation.AsAngle; }
+            if (!respawningAfterLoad) { flightPosition = Position.ToVector3Shifted(); heading = Rotation.AsAngle; ResetCombatRoute(); }
             if (!destination.IsValid) destination = Position;
             if (IsWarpPrism) map.GetComponent<WarpPrismFields>().Register(this);
         }
@@ -108,6 +108,7 @@ namespace NivarianCommander
         {
             base.Tick();
             if (!Spawned || Destroyed) return;
+            ValidateAttackOrders();
             if (hostileAutopilot && this.HostileTo(Faction.OfPlayer) && !AircraftHostileControl.Tick(this)) return;
             deployed.RemoveAll(p => p == null || p.Destroyed);
             if (IsCarrier) Manufacture();
@@ -146,12 +147,17 @@ namespace NivarianCommander
         void MoveFlight(IntVec3? waypoint = null)
         {
             var targetCell = waypoint ?? destination;
+            bool avoidMountains = hostileAutopilot && this.HostileTo(Faction.OfPlayer);
+            if (avoidMountains) targetCell = CombatWaypoint(targetCell);
             if (!targetCell.IsValid || targetCell == Position &&
                 (targetCell.ToVector3Shifted() - flightPosition).sqrMagnitude < .0001f) return;
             Vector3 next = targetCell.ToVector3Shifted();
             var delta = next - flightPosition; delta.y = 0;
             if (delta.sqrMagnitude > .001f) heading = Mathf.MoveTowardsAngle(heading, delta.AngleFlat(), 3f);
-            flightPosition = Vector3.MoveTowards(flightPosition, next, HeavyFlight ? .055f : IsSageShip ? .2875f : .23f);
+            var nextPosition = Vector3.MoveTowards(flightPosition, next, HeavyFlight ? .055f : IsSageShip ? .2875f : .23f);
+            if (avoidMountains && !AircraftFlightNavigation.InBounds(this, nextPosition.ToIntVec3()))
+            { ResetCombatRoute(); return; }
+            flightPosition = nextPosition;
             var cell = flightPosition.ToIntVec3();
             if (cell != Position && cell.InBounds(Map)) Position = cell;
         }
@@ -177,10 +183,11 @@ namespace NivarianCommander
         void LaunchDue()
         {
             if (launchClock > 0 || hangar.Count == 0) return;
-            Thing target = AircraftTargeting.Nearest(this, AircraftHostileControl.CarrierRange, false);
+            Thing target = CarrierAttackActions.LaunchTarget(this);
             if (target == null) return;
             var fighter = hangar[0]; hangar.Remove(fighter);
             fighter.BeginLaunch(this, deployed.Count % 2 == 0 ? -1f : 1f);
+            fighter.target = target;
             GenSpawn.Spawn(fighter, fighter.realPosition.ToIntVec3(), Map, WipeMode.Vanish);
             deployed.Add(fighter); launchClock = 60;
         }
@@ -351,6 +358,8 @@ namespace NivarianCommander
             else if (IsSageShip) text += "\n" + "NMC_SageStatus".Translate((sageAttackMode ? "NMC_SageOn" : "NMC_SageOff").Translate());
             else if (IsStormShip) text += "\n" + "NMC_StormStatus".Translate((weaponClock / 60f).ToString("F1"));
             else text += NmcText.Get("NMC_Text0297", (gravityCooldown / 60f).ToString("F1"));
+            var forced = IsCarrier ? carrierTarget : IsStormShip ? stormTarget : null;
+            if (forced != null) text += "\n" + "NMC_AircraftForcedTarget".Translate(forced.LabelCap);
             return text;
         }
         // The hull deliberately leaves IThingHolder to the native transporter comp.
@@ -379,6 +388,8 @@ namespace NivarianCommander
             ExposeWarpField();
             ExposeStormWeapon();
             ExposeSageWeapon();
+            ExposeCarrierAttack();
+            ExposeCombatRoute();
             Scribe_Values.Look(ref flightState, "nmcFlight"); Scribe_Values.Look(ref flightPosition, "nmcFlightPosition");
             Scribe_Values.Look(ref destination, "nmcDestination", IntVec3.Invalid); Scribe_Values.Look(ref heading, "nmcHeading");
             Scribe_Values.Look(ref landingRotation, "nmcLandingRotation", Rot4.North);

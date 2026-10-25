@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.9.9-r12 · 2026-10-25 · 舰船指定攻击与敌舰寻路
+
+- 航母新增「舰载机集火」：手动指定可见单位或可受伤建筑，新放飞和在空舰载机集中攻击该目标。增加自动出击开关；召回会清除指定目标并关闭自动出击，避免回收后立即再次放飞。
+- 航母保留超出作战范围的指令，目标回到范围后恢复执行；暴风舰的指定攻击也会持续锁定，不再因目标超出射程改打其他目标。死亡、销毁或离开地图的目标自动清除。手动目标也可以是中立或友方，请留意选择。
+- 连续体敌方航母及其他舰船优先绕开厚岩顶，并优先选择露天作战站位。山体只增加路线代价，所有舰船仍能穿山；必须穿越或绕行代价过高时仍可走山体路径。玩家手动移动保持直接飞行。
+- 更新 1.6、1.7 核心及 1.6 舰船联机适配。命令和路线状态支持存档；新增航母指令接入多人同步。
+- 1.6 与 1.7 单机专项各通过 47 项检查。1.6 本机隔离双端短测 24,375 tick、长测 120,105 tick 均通过；长测 480 份状态快照及随机数一致，记录 9,734 次舰载机发射、641 次雷暴球发射和 11,016 次实际伤害，未出现不同步或意外断线。
+- 双端验证范围为 16 项模组、单地图、同步时间、同阵营的受控场景；未覆盖玩家完整存档、整合包、跨电脑、多地图/异步时间及中途重新加入。不提供 1.7 联机支持。联机双方请更新到相同文件并完全退出、重启游戏。
+
+### English
+
+- Added carrier focus-fire orders for visible units and damageable buildings. Newly launched and airborne fighters share the selected target. Added automatic-sortie control; recalling fighters clears the order and disables automatic sorties to prevent immediate relaunch.
+- Carrier orders persist outside combat range and resume when the target returns. Storm Ships also retain forced targets outside weapon range instead of switching targets. Dead, destroyed or off-map targets clear automatically. Manual orders can target neutral or friendly objects; check your selection.
+- Continuum enemy carriers and other ships prefer routes and combat positions away from thick mountain roofs. Mountains increase route cost but remain traversable when required or when a detour costs too much. Player-directed flight remains direct.
+- Updated the 1.6 and 1.7 cores and the 1.6 ship Multiplayer adapter. Orders and route state are saved; new carrier commands are synchronized.
+- Passed 47 targeted single-player checks on each game version. Local isolated 1.6 host/client tests passed at 24,375 and 120,105 shared ticks. The longer run matched 480 state snapshots and RNG states, recording 9,734 fighter shots, 641 storm shots and 11,016 actual damage events without desync or unexpected disconnect.
+- Multiplayer coverage is a controlled 16-mod, single-map, synchronous-time, same-faction scenario. Player saves, full modpacks, separate computers, multiple maps/asynchronous time and rejoining were not tested. No 1.7 Multiplayer support. All players must use identical updated files and fully restart the game.
+
 ## 0.9.9-r11 · 2026-10-25 · 1.7 捐赠容器兼容修复
 
 - 修复 issue #2 中异常容器导致捐赠页面闪烁、持续刷红字的问题。容器持有者缺失、空子容器、枚举回调异常不再中断整个列表；循环节点会去重，异常父链和超限图会被拒绝。

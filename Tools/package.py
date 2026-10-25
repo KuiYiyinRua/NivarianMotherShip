@@ -23,7 +23,7 @@ for folder in ['Source','Multiplayer/Source','Multiplayer/ShipUpgradeSource','Mu
 files.append(mod/'Tools/package.py')
 files.append(mod/'Tools/Build-RimWorld17.ps1')
 files.extend(p for p in (mod/'Tools/RuntimeReferences').glob('*') if p.is_file() and p.suffix in ['.cs','.csproj'])
-for folder in ['Tests/DonationCompat17','Tests/PointShopCompat17','Tests/ContinuumRetry17','Tests/RimWorld17','Tests/ContinuumEntry','Tests/NativeConstruction','Tests/ShadowFootprint','Tests/NutrientRefill','Tests/Projection','Tests/TickPerformance','Tests/TickPerformanceMP']:
+for folder in ['Tests/AircraftCombat','Tests/AircraftCombatMP','Tests/DonationCompat17','Tests/PointShopCompat17','Tests/ContinuumRetry17','Tests/RimWorld17','Tests/ContinuumEntry','Tests/NativeConstruction','Tests/ShadowFootprint','Tests/NutrientRefill','Tests/Projection','Tests/TickPerformance','Tests/TickPerformanceMP']:
  files.extend(p for p in (mod/folder).glob('*') if p.is_file() and p.suffix in ['.cs','.csproj','.ps1','.md'])
 files.extend(p for p in (mod/'Tools/Localization').glob('*') if p.is_file() and p.suffix in ['.py','.json'])
 files.extend(p for p in (mod/'Workshop').glob('*') if p.is_file() and p.suffix.lower() in ['.txt','.json','.png','.jpg'])

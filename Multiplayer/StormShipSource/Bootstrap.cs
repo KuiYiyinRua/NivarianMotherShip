@@ -16,7 +16,13 @@ namespace NivarianCommander.StormShip.MultiplayerAdapter
                 new SyncType[] { map, typeof(Building_NivarianAircraft), typeof(bool) }).CancelIfAnyArgNull();
             MP.RegisterSyncMethod(typeof(StormShipActions), nameof(StormShipActions.ClearTarget),
                 new SyncType[] { map, typeof(Building_NivarianAircraft) }).CancelIfAnyArgNull();
-            Log.Message("[NMC-Storm-MP] Target, fire-at-will and clear-target commands synchronized with source map context; original adapters retained.");
+            MP.RegisterSyncMethod(typeof(CarrierAttackActions), nameof(CarrierAttackActions.SetTarget),
+                new SyncType[] { map, typeof(Building_NivarianAircraft), typeof(Thing) }).CancelIfAnyArgNull();
+            MP.RegisterSyncMethod(typeof(CarrierAttackActions), nameof(CarrierAttackActions.SetFireAtWill),
+                new SyncType[] { map, typeof(Building_NivarianAircraft), typeof(bool) }).CancelIfAnyArgNull();
+            MP.RegisterSyncMethod(typeof(CarrierAttackActions), nameof(CarrierAttackActions.ClearTarget),
+                new SyncType[] { map, typeof(Building_NivarianAircraft) }).CancelIfAnyArgNull();
+            Log.Message("[NMC-Storm-MP] Storm and carrier target, fire-at-will and clear-target commands synchronized with source map context.");
         }
     }
 }

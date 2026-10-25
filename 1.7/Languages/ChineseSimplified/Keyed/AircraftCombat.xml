@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <NMC_CarrierAttack>舰载机集火</NMC_CarrierAttack>
+  <NMC_CarrierAttackDesc>指定一个可见单位或可受伤建筑。新起飞和已在空中的舰载机集中攻击该目标。放飞范围60格，追击范围为距航母80格；超出范围时保留指令，取消或目标失效后结束。</NMC_CarrierAttackDesc>
+  <NMC_CarrierMustFly>升空并完成折跃后才能指定攻击目标。</NMC_CarrierMustFly>
+  <NMC_CarrierFireAtWill>自动出击</NMC_CarrierFireAtWill>
+  <NMC_CarrierAutoDesc>自动放飞舰载机并搜索敌人。手动指定目标优先，关闭此项仍会执行集火。召回会取消集火并关闭自动出击。</NMC_CarrierAutoDesc>
+  <NMC_CarrierClearDesc>清除手动指定的目标；开启自动出击时，舰载机恢复自行索敌。</NMC_CarrierClearDesc>
+  <NMC_AircraftForcedTarget>指定目标：{0}</NMC_AircraftForcedTarget>
+</LanguageData>

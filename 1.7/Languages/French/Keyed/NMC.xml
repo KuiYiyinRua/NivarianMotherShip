@@ -570,7 +570,7 @@ Le transfert utilise l'impression nivarian : 4 secondes au départ, puis 4 secon
   <NMC_WarpBusy>Transfert en cours (4 secondes au départ et 4 à l’arrivée) ; les dégâts restent actifs</NMC_WarpBusy>
   <NMC_WarpDropUnavailable>Capsule de largage nivarian indisponible</NMC_WarpDropUnavailable>
   <NMC_StormAttack>Attaque par orbe orageux</NMC_StormAttack>
-  <NMC_StormAttackDesc>Désigne un ennemi à 100 cases. Tir toutes les 3 s : 20 dégâts directs, pénétration 80 %, puis explosion de 3×3 cases, 15 dégâts, pénétration 35 %. Les deux infligent 5× aux bâtiments.</NMC_StormAttackDesc>
+  <NMC_StormAttackDesc>Désignez une unité visible ou un bâtiment destructible. Tire à 100 cases avec une ligne de vue dégagée ; l&apos;ordre reste actif hors de portée. Toutes les 3 secondes : 20 dégâts directs, pénétration 80 %, puis une explosion de 3×3 cases à 25 dégâts, pénétration 35 %. Dégâts aux bâtiments ×5.</NMC_StormAttackDesc>
   <NMC_StormMustFly>Le vaisseau doit être en vol et ne pas être en cours de saut</NMC_StormMustFly>
   <NMC_StormFireAtWill>Tir à volonté</NMC_StormFireAtWill>
   <NMC_StormAutoDesc>En vol, attaque automatiquement les ennemis visibles à portée. Les cibles désignées restent actives si cette option est désactivée.</NMC_StormAutoDesc>

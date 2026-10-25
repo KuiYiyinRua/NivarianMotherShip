@@ -108,16 +108,18 @@ namespace NivarianCommander
                 // Hold still inside the launch limit; reposition only when a
                 // moving target exits the narrow outer-range band.
                 float distance = ship.flightPosition.ToIntVec3().DistanceTo(target.Position);
-                if (distance >= CarrierStandOff - 1.5f && distance <= CarrierRange - .5f)
+                if (distance >= CarrierStandOff - 1.5f && distance <= CarrierRange - .5f
+                    && AircraftFlightNavigation.ClearFootprint(ship, ship.Position))
                     ship.destination = ship.Position;
                 else if (ship.combatRetargetWait == 30)
                     ship.destination = CarrierStation(ship, target);
             }
-            else
+            else if (ship.combatRetargetWait == 30)
             {
-                ship.combatOrbitPhase = Mathf.Repeat(ship.combatOrbitPhase + .018f, Mathf.PI * 2f);
+                ship.combatOrbitPhase = Mathf.Repeat(ship.combatOrbitPhase + .018f * 30f, Mathf.PI * 2f);
                 var offset = new Vector3(Mathf.Cos(ship.combatOrbitPhase), 0f, Mathf.Sin(ship.combatOrbitPhase)) * FrigateOrbitRadius;
-                ship.destination = InsideMap(ship, target.Position.ToVector3Shifted() + offset);
+                ship.destination = AircraftFlightNavigation.SafeDestination(ship,
+                    InsideMap(ship, target.Position.ToVector3Shifted() + offset));
             }
             return true;
         }
@@ -133,9 +135,11 @@ namespace NivarianCommander
             {
                 float a = angle + i * Mathf.PI * 2f / 32f;
                 var goal = InsideMap(ship, origin + new Vector3(Mathf.Cos(a), 0f, Mathf.Sin(a)) * CarrierStandOff);
+                if (!AircraftFlightNavigation.InBounds(ship, goal)) continue;
                 // Prefer an intact outer-range ring, then the closest station.
                 float score = Mathf.Abs(goal.DistanceTo(target.Position) - CarrierStandOff) * 10000f
-                    + goal.DistanceToSquared(ship.Position);
+                    + goal.DistanceToSquared(ship.Position)
+                    + (AircraftFlightNavigation.ClearFootprint(ship, goal) ? 0f : 1000000f);
                 if (score < bestScore) { bestScore = score; best = goal; }
             }
             return best;

@@ -1,3 +1,13 @@
+# Release validation: 0.9.9-r12
+
+Carrier focus-fire orders, persistent Storm Ship targets and soft mountain avoidance for enemy ships. Mountains remain traversable; player-directed movement remains direct. See [behavior and test scope](AircraftCombat.zh-CN.md), [single-player probe](../Tests/AircraftCombat/README.md) and [Multiplayer probe](../Tests/AircraftCombatMP/README.md).
+
+The frozen release binaries passed 47 single-player checks on 1.6 and 47 on 1.7. Local isolated 1.6 host/client runs passed at 24,375 and 120,105 shared ticks: 24 command phases per run, 48 native synchronized executions per peer and 97/480 matching state snapshot pairs. The longer run recorded 9,734 fighter shots, 641 storm shots and 11,016 actual target-damage events. RNG states matched; no desync or unexpected disconnect occurred.
+
+Coverage: 16 mods, one map, synchronous time, one faction, development mode off, controlled targets and crew. No full modpack, player-save, cross-PC, multi-map/asynchronous-time or rejoin validation. No 1.7 Multiplayer support. Test helpers are not shipped as runtime assemblies. Prior evidence below applies to its named release.
+
+## Previous release evidence
+
 # Release validation: 0.9.9-r11
 
 The 1.7 donation scan now isolates malformed containers and preserves healthy goods. The r10 baseline reproduces 13 failing checks; the candidate passes **110 checks**, 55 each with standalone RimUnity 0.1.17 and embedded 0.1.16. Coverage uses a real eligible home map, powered beacon and container fixtures, six donation-window cycles, actual review/submit callbacks, exact goods/credit, duplicate rejection and invalid-container rejection. See [details and limitations](DonationCompatibility.zh-CN.md) and the [probe](../Tests/DonationCompat17/README.md).

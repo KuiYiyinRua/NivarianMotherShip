@@ -33,6 +33,17 @@ namespace NivarianCommander
                 && (!(target is Pawn p) || !p.DeadOrDowned && !InvisibilityUtility.IsPsychologicallyInvisible(p))
                 && !target.Position.Fogged(source.Map) && !CommanderCloak.HiddenFrom(target, source)
                 && source.Position.DistanceToSquared(target.Position) <= range * range;
+        // Explicit fire orders may name neutral units or damageable structures as well as enemies.
+        // Range and temporary visibility do not erase a persistent order.
+        public static bool ForcedTargetExists(Thing source, Thing target)
+            => source != null && source.Spawned && !source.Destroyed && target != null && target != source
+                && target.Spawned && !target.Destroyed && target.Map == source.Map
+                && (target is Pawn pawn ? !pawn.Dead : target.def.useHitPoints
+                    && (target.def.category == ThingCategory.Building || target is Verse.AI.IAttackTarget));
+        public static bool ForcedTargetVisible(Thing source, Thing target)
+            => ForcedTargetExists(source, target) && !target.Position.Fogged(source.Map)
+                && (!(target is Pawn pawn) || !InvisibilityUtility.IsPsychologicallyInvisible(pawn))
+                && !CommanderCloak.HiddenFrom(target, source);
         // Manual gravity deliberately ignores faction and combat target eligibility.
         // Use the same predicate in the target picker and execution-time revalidation.
         public static bool GravityTargetValid(Thing source, Thing target)
@@ -86,7 +97,12 @@ namespace NivarianCommander
         }
         public static void Land(Map map, Building_NivarianAircraft ship, IntVec3 cell, Rot4 rotation)
         { if (Owned(map, ship)) ship.BeginLanding(cell, rotation); }
-        public static void Recall(Map map, Building_NivarianAircraft ship) { if (Owned(map, ship)) ship.RecallAll(false); }
+        public static void Recall(Map map, Building_NivarianAircraft ship)
+        {
+            if (!Owned(map, ship)) return;
+            if (ship.IsCarrier) { ship.carrierTarget = null; ship.carrierFireAtWill = false; }
+            ship.RecallAll(false);
+        }
         public static void Gravity(Map map, Building_NivarianAircraft ship, Thing target) { if (Owned(map, ship)) ship.UseGravity(target); }
         public static void ToggleManufacture(Map map, Building_NivarianAircraft ship)
         { if (Owned(map, ship) && ship.IsCarrier) ship.manufactureEnabled = !ship.manufactureEnabled; }
@@ -94,7 +110,11 @@ namespace NivarianCommander
         { if (Owned(map, ship) && ship.IsGravityFrigate) ship.automaticGravity = !ship.automaticGravity; }
         public static IEnumerable<Gizmo> Gizmos(Building_NivarianAircraft ship)
         {
-            if (ship.IsCarrier) yield return ship.DragonSteelGizmo;
+            if (ship.IsCarrier)
+            {
+                yield return ship.DragonSteelGizmo;
+                foreach (var gizmo in CarrierAttackActions.Gizmos(ship)) yield return gizmo;
+            }
             if (ship.IsWarpPrism) yield return WarpPrismActions.ModeGizmo(ship);
             if (ship.IsSageShip) foreach (var gizmo in SageShipActions.Gizmos(ship)) yield return gizmo;
             if (ship.IsStormShip) foreach (var gizmo in StormShipActions.Gizmos(ship)) yield return gizmo;

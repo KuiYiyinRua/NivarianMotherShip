@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <NMC_CarrierAttack>Focus interceptor attack</NMC_CarrierAttack>
+  <NMC_CarrierAttackDesc>Designate a visible unit or damageable building. New and airborne interceptors focus this target. Launch range: 60 cells; pursuit range from the carrier: 80 cells. Out-of-range orders remain active until cancelled or the target is lost.</NMC_CarrierAttackDesc>
+  <NMC_CarrierMustFly>Take off and finish folding before issuing an attack order.</NMC_CarrierMustFly>
+  <NMC_CarrierFireAtWill>Automatic sorties</NMC_CarrierFireAtWill>
+  <NMC_CarrierAutoDesc>Launch interceptors and select hostile targets automatically. A designated target takes priority even when this is off. Recall cancels the order and disables automatic sorties.</NMC_CarrierAutoDesc>
+  <NMC_CarrierClearDesc>Clear the designated target. Interceptors resume automatic targeting if automatic sorties are enabled.</NMC_CarrierClearDesc>
+  <NMC_AircraftForcedTarget>Forced target: {0}</NMC_AircraftForcedTarget>
+</LanguageData>

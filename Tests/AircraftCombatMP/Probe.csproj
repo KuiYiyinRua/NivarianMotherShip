@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net48</TargetFramework><LangVersion>latest</LangVersion><AssemblyName>NMC.AircraftCombatMPProbe</AssemblyName></PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp"><HintPath>$(GameRoot)/RimWorldWin64_Data/Managed/Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(GameRoot)/RimWorldWin64_Data/Managed/UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.IMGUIModule"><HintPath>$(GameRoot)/RimWorldWin64_Data/Managed/UnityEngine.IMGUIModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(HarmonyAssembly)</HintPath><Private>false</Private></Reference>
+    <Reference Include="Nivarian_Race"><HintPath>$(NivarianRaceAssembly)</HintPath><Private>false</Private></Reference>
+    <Reference Include="NivarianCommander"><HintPath>../../1.6/Assemblies/NivarianCommander.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0MultiplayerAPI"><HintPath>$(MultiplayerApiAssembly)</HintPath><Private>false</Private></Reference>
+    <Reference Include="Multiplayer"><HintPath>$(GameRoot)/Mods/Multiplayer/1.6/AssembliesCustom/Multiplayer.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="MultiplayerCommon"><HintPath>$(GameRoot)/Mods/Multiplayer/1.6/AssembliesCustom/MultiplayerCommon.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

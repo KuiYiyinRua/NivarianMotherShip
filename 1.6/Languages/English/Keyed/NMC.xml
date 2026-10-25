@@ -570,7 +570,7 @@ Warping uses the Nivarian building printing effect: 4 seconds at departure, then
   <NMC_WarpBusy>Warping (4-second departure and 4-second arrival); damage still applies</NMC_WarpBusy>
   <NMC_WarpDropUnavailable>Nivarian drop pod unavailable</NMC_WarpDropUnavailable>
   <NMC_StormAttack>Thunder orb attack</NMC_StormAttack>
-  <NMC_StormAttackDesc>Designate a hostile target within 100 cells. Fires every 3 seconds: 20 direct damage at 80% armor penetration, then a 3×3 blast for 15 damage at 35% penetration. Both deal 5× damage to buildings.</NMC_StormAttackDesc>
+  <NMC_StormAttackDesc>Designate a visible unit or damageable building. Fires within 100 cells and line of sight. Out-of-range orders remain active. Fires every 3 seconds: 20 direct damage at 80% penetration and a 3×3 blast for 25 damage at 35% penetration; both deal 5× damage to buildings.</NMC_StormAttackDesc>
   <NMC_StormMustFly>Must be in flight and not currently warping</NMC_StormMustFly>
   <NMC_StormFireAtWill>Fire at will</NMC_StormFireAtWill>
   <NMC_StormAutoDesc>Automatically attack visible hostiles in range while airborne. Explicit targets remain active when this is off.</NMC_StormAutoDesc>

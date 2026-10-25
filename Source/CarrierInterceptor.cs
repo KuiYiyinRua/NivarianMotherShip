@@ -44,7 +44,7 @@ namespace NivarianCommander
             if (!Spawned) return;
             if (carrier == null || carrier.Destroyed || !carrier.Spawned || carrier.Map != Map)
             { Destroy(); return; }
-            if (!carrier.CombatFlight || Position.DistanceToSquared(carrier.Position) > 6400) returning = true;
+            if (!carrier.CombatFlight || FieldWarp.Pending(carrier) || Position.DistanceToSquared(carrier.Position) > 6400) returning = true;
             if (returning)
             {
                 launchTicks = 0;
@@ -62,9 +62,19 @@ namespace NivarianCommander
             }
             if (fireWait > 0) fireWait--;
             if (retargetWait > 0) retargetWait--;
+            bool forced = carrier.carrierTarget != null;
             bool validTarget = AircraftTargeting.Valid(this, target, 90f)
                 && AircraftTargeting.Valid(carrier, target, 80f);
-            if (retargetWait == 0 || !validTarget)
+            if (forced)
+            {
+                var nextTarget = CarrierAttackActions.InRange(carrier, carrier.carrierTarget, 80f)
+                    ? carrier.carrierTarget : null;
+                if (nextTarget != target) burstLeft = 0;
+                target = nextTarget;
+            }
+            else if (!carrier.carrierFireAtWill || FieldWarp.Pending(carrier))
+            { target = null; burstLeft = 0; }
+            else if (retargetWait == 0 || !validTarget)
             {
                 // Each aircraft chooses from its own position. The home range is
                 // only a leash, and ties remain ordered by durable thing IDs.

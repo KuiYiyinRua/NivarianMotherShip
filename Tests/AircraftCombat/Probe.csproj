@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework><AssemblyName>NMC.AircraftCombatProbe</AssemblyName>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Probe.cs" />
+    <Reference Include="Assembly-CSharp" HintPath="$(GameRoot)/Assembly-CSharp.dll" Private="false" />
+    <Reference Include="UnityStubs" HintPath="$(GameRoot)/UnityStubs.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(HarmonyAssembly)" Private="false" />
+    <Reference Include="NivarianCommander" HintPath="$(CommanderAssembly)" Private="false" />
+    <Reference Include="Nivarian_Race" HintPath="$(GameRoot)/Mods/NivarianRace/1.7/Core/Assemblies/Nivarian_Race.rimunity" Private="false" />
+    <Reference Include="LumiParticle" HintPath="$(GameRoot)/Mods/NivarianRace/1.7/LumiParticle/Assemblies/LumiParticle.rimunity" Private="false" />
+  </ItemGroup>
+</Project>

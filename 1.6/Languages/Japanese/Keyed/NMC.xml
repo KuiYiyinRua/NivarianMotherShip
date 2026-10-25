@@ -570,7 +570,7 @@ Shiftを押しながら増減ボタンをクリックすると10個ずつ変更�
   <NMC_WarpBusy>転移中（出発4秒、到着4秒）。通常どおりダメージを受けます</NMC_WarpBusy>
   <NMC_WarpDropUnavailable>ニヴァリアン降下ポッドを利用できません</NMC_WarpDropUnavailable>
   <NMC_StormAttack>雷球攻撃</NMC_StormAttack>
-  <NMC_StormAttackDesc>100マス以内の敵を指定。3秒ごとに雷球を発射し、直撃20ダメージ・貫通80%、続いて3×3マスに15ダメージ・貫通35%の爆発。両方とも建築物には5倍。</NMC_StormAttackDesc>
+  <NMC_StormAttackDesc>見えるユニットまたは破壊可能な建物を指定します。射程100マスで射線が通ると射撃し、範囲外でも命令を保持します。3秒ごとに直撃20ダメージ・装甲貫通80%、3×3マスの爆発25ダメージ・貫通35%。建物には両方5倍。</NMC_StormAttackDesc>
   <NMC_StormMustFly>飛行中かつワープ中ではない時のみ攻撃可能</NMC_StormMustFly>
   <NMC_StormFireAtWill>自動射撃</NMC_StormFireAtWill>
   <NMC_StormAutoDesc>飛行中、射程内の見える敵を自動攻撃。OFFでも手動指定の目標は維持されます。</NMC_StormAutoDesc>

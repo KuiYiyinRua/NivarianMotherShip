@@ -22,8 +22,8 @@ namespace NivarianCommander
         internal void StormCombat()
         {
             if (FieldWarp.Pending(this) || weaponClock > 0) return;
-            Thing target = StormShipActions.ValidTarget(this, stormTarget) ? stormTarget : null;
-            if (target == null && stormFireAtWill)
+            Thing target = StormShipActions.CanFireAt(this, stormTarget) ? stormTarget : null;
+            if (stormTarget == null && stormFireAtWill)
             {
                 if (stormSearchTicks > 0) { stormSearchTicks--; return; }
                 // Stable tie-breaking, and bounded idle searches for the long-range weapon.
@@ -53,13 +53,15 @@ namespace NivarianCommander
     {
         // Keep explicit building orders separate from automatic target acquisition.
         public static bool ValidAutomaticTarget(Building_NivarianAircraft ship, Thing target)
-            => (target is Pawn || target is Building_Turret) && ValidTarget(ship, target);
+            => (target is Pawn || target is Building_Turret) && AircraftTargeting.Valid(ship, target, Building_NivarianAircraft.StormRange)
+                && CanFireAt(ship, target);
 
         static bool Owned(Map map, Building_NivarianAircraft ship) => map != null && ship != null
             && ship.IsStormShip && ship.Spawned && !ship.Destroyed && ship.Map == map && ship.Faction == Faction.OfPlayer;
-        public static bool ValidTarget(Building_NivarianAircraft ship, Thing target) => ship != null && ship.Spawned
-            && target != null && (target is Pawn || target.def.category == ThingCategory.Building || target is Verse.AI.IAttackTarget)
-            && (target is Pawn || target.def.useHitPoints) && AircraftTargeting.Valid(ship, target, Building_NivarianAircraft.StormRange)
+        public static bool ValidTarget(Building_NivarianAircraft ship, Thing target)
+            => AircraftTargeting.ForcedTargetVisible(ship, target);
+        public static bool CanFireAt(Building_NivarianAircraft ship, Thing target) => ValidTarget(ship, target)
+            && ship.Position.DistanceToSquared(target.Position) <= Building_NivarianAircraft.StormRange * Building_NivarianAircraft.StormRange
             && GenSight.LineOfSight(ship.Position, target.Position, ship.Map, true);
         public static void SetTarget(Map map, Building_NivarianAircraft ship, Thing target)
         {

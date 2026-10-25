@@ -51,6 +51,24 @@ for ix,locale in enumerate(locales):
   assert set(paths)==expected,(locale,folder,'Def coverage')
   for d in (d for d in defs if d['folder']==folder):
    assert paths[d['type'],d['path']]==value(byid[d['id']]),(locale,d['path'])
+# Aircraft combat strings are maintained in a separate Keyed file.
+aircraft_keys={'NMC_CarrierAttack','NMC_CarrierAttackDesc','NMC_CarrierMustFly','NMC_CarrierFireAtWill','NMC_CarrierAutoDesc','NMC_CarrierClearDesc','NMC_AircraftForcedTarget'}
+aircraft_reference=None
+for locale in locales:
+ actual={}
+ for e in ET.parse(mod/'1.6/Languages'/locale/'Keyed/AircraftCombat.xml').getroot():
+  assert e.tag not in actual,('duplicate aircraft key',locale,e.tag)
+  actual[e.tag]=e.text or ''
+ assert set(actual)==aircraft_keys,(locale,'aircraft key coverage')
+ if aircraft_reference is None:aircraft_reference=actual
+ for k,v in actual.items():
+  assert v and '\ufffd' not in v and 'TODO' not in v,(locale,k)
+  assert placeholders(v)==placeholders(aircraft_reference[k]),(locale,k,'placeholders')
+  assert marks(v)==marks(aircraft_reference[k]),(locale,k,'tags')
+ for file in ['NMC.xml','AircraftCombat.xml']:
+  a={e.tag:e.text for e in ET.parse(mod/'1.6/Languages'/locale/'Keyed'/file).getroot()}
+  b={e.tag:e.text for e in ET.parse(mod/'1.7/Languages'/locale/'Keyed'/file).getroot()}
+  assert a==b,(locale,file,'1.6/1.7 mismatch')
 version=ET.parse(mod/'About/About.xml').findtext('modVersion')
 for proj in [mod/'Source/NivarianCommander.csproj',mod/'Source/NivarianCommander.RimWorld17.csproj']:
  assert ET.parse(proj).findtext('PropertyGroup/Version')==version,('version mismatch',str(proj))
@@ -60,4 +78,4 @@ for proj in (mod/'Multiplayer').glob('*Source/*.csproj'):
 for folder in ['1.6','1.7','Royalty','NoRoyalty','About','Multiplayer']:
  for p in (mod/folder).rglob('*.xml'):
   if 'obj' not in p.parts:ET.parse(p)
-print(json.dumps({'status':'PASS','version':version,'languages':locales,'runtime_keys':len(keys),'def_fields':len(defs)},ensure_ascii=False))
+print(json.dumps({'status':'PASS','version':version,'languages':locales,'runtime_keys':len(keys),'aircraft_keys':len(aircraft_keys),'def_fields':len(defs)},ensure_ascii=False))
