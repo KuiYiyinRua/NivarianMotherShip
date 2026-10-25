@@ -1,8 +1,8 @@
 [h1]Nivarian MotherShip[/h1]
 
-[b]RimWorld 1.6 / 1.7 · v0.9.9-r10[/b]
+[b]RimWorld 1.6 / 1.7 · v0.9.9-r11[/b]
 
-[b]1.7 points-shop graphics compatibility[/b]: Portraits and merchandise now use ordinary UI textures, bypassing custom materials. Hologram and special material effects are disabled; trade logic is unchanged. 58 checks passed with RimUnity 0.1.16/0.1.17 on NVIDIA; the reported RX 560X still needs retesting. Fully restart after updating.
+[b]1.7 donation-page fix[/b]: Invalid or throwing containers no longer interrupt the list. Healthy goods remain available; unsafe containers are skipped with a diagnostic. 110 isolated checks passed, including real donations. Includes r10 graphics compatibility. Fully restart and retest with your save.
 
 [b]1.7 compatibility update[/b]: Use the 1.7 versions of all prerequisites. RimUnity is included. Multiplayer adapters remain available for 1.6 only; 1.7 is single-player. Fully restart the game after updating.
 

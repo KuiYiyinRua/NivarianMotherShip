@@ -1,3 +1,11 @@
+# Release validation: 0.9.9-r11
+
+The 1.7 donation scan now isolates malformed containers and preserves healthy goods. The r10 baseline reproduces 13 failing checks; the candidate passes **110 checks**, 55 each with standalone RimUnity 0.1.17 and embedded 0.1.16. Coverage uses a real eligible home map, powered beacon and container fixtures, six donation-window cycles, actual review/submit callbacks, exact goods/credit, duplicate rejection and invalid-container rejection. See [details and limitations](DonationCompatibility.zh-CN.md) and the [probe](../Tests/DonationCompat17/README.md).
+
+Core SHA-256: `1B472D11D929D21610B599B6DB1A219A0F9BB3BB02C7A67A3A8E55E1D39843CC`. The tested 1.7 payload is used unchanged for release. The 1.6 core, five Multiplayer adapters and embedded runtime remain unchanged. No reporter-save, full-modpack, RX 560X or 1.7 Multiplayer certification. The upstream AncientHeavyBridge baseline error remains. Earlier evidence below applies to its named release.
+
+## Previous release evidence
+
 # Release validation: 0.9.9-r10
 
 This release avoids the custom UI material path in the 1.7 points shop. Portraits and merchandise use ordinary textures; hologram and material-specific effects are disabled. Trade logic is unchanged. See [compatibility details](PointShopCompatibility.zh-CN.md) and the [regression probe](../Tests/PointShopCompat17/README.md).

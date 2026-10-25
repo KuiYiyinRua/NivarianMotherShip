@@ -1,8 +1,8 @@
 [h1]Nivarian MotherShip | Soutien du vaisseau-mère[/h1]
 
-[b]RimWorld 1.6 / 1.7 · v0.9.9-r10[/b]
+[b]RimWorld 1.6 / 1.7 · v0.9.9-r11[/b]
 
-[b]1.7 : compatibilité graphique de la boutique de points[/b]. Portraits et articles utilisent des textures UI ordinaires sans matériaux personnalisés. Les hologrammes et effets spéciaux des matériaux sont désactivés ; les échanges sont inchangés. 58 contrôles réussis sur NVIDIA avec RimUnity 0.1.16/0.1.17. La RX 560X signalée reste à retester. Redémarrez complètement le jeu.
+[b]1.7 : correction des dons[/b]. Les conteneurs défectueux ne bloquent plus la liste ; les marchandises saines restent disponibles. Les données illisibles sont exclues avec un diagnostic. 110 contrôles réussis, dont des dons réels. Compatibilité graphique r10 incluse. Redémarrez complètement et retestez votre sauvegarde.
 
 [b]Compatibilité 1.7[/b] : Installez les versions 1.7 de toutes les dépendances. RimUnity est inclus. La version 1.7 prend en charge le jeu solo ; les modules multijoueurs restent réservés à la 1.6. Redémarrez complètement le jeu après la mise à jour.
 

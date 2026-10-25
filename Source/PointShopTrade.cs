@@ -57,34 +57,117 @@ namespace NivarianCommander
             foreach (var beacon in Building_OrbitalTradeBeacon.AllPowered(map).OrderBy(b => b.thingIDNumber))
                 foreach (var cell in beacon.TradeableCells) cells.Add(cell);
             // Preserve other mods' extensions of the official orbital export path.
-            foreach (var thing in TradeUtility.AllLaunchableThingsForTrade(map))
-                if (DonationItem(thing) && thing.MapHeld == map && cells.Contains(thing.PositionHeld)) goods[thing.thingIDNumber] = thing;
+            try
+            {
+                foreach (var thing in TradeUtility.AllLaunchableThingsForTrade(map))
+                    if (DonationItem(thing) && thing.MapHeld == map && cells.Contains(thing.PositionHeld)) goods[thing.thingIDNumber] = thing;
+            }
+            catch (Exception ex) { DonationWarning(null, "orbital export scan", ex); }
             // Donations also accept valid items rejected by traders, including corpses and chunks.
             foreach (var cell in cells.OrderBy(c => c.z).ThenBy(c => c.x))
                 foreach (var root in cell.GetThingList(map).OrderBy(t => t.thingIDNumber))
                 {
                     if (DonationItem(root)) goods[root.thingIDNumber] = root;
                     if (root is Pawn || root is Corpse || root is MinifiedThing) continue;
-                    var owner = root.TryGetInnerInteractableThingOwner();
-                    if (owner == null) continue;
-                    var contents = new List<Thing>();
-                    ThingOwnerUtility.GetAllThingsRecursively(owner.Owner, contents, false, h => !(h is Pawn) && !(h is Corpse));
-                    foreach (var thing in contents)
-                        if (DonationItem(thing) && !ThingOwnerUtility.AnyParentIs<Pawn>(thing)) goods[thing.thingIDNumber] = thing;
+                    foreach (var thing in ContainerContents(root))
+                        if (DonationItem(thing) && SafeDonationParents(thing)) goods[thing.thingIDNumber] = thing;
                 }
             return goods.Values.OrderBy(t => t.thingIDNumber).ToList();
+        }
+
+        // Some mod containers return a ThingOwner without an Owner, null child
+        // holders, or throw while enumerating. Keep traversal state local: the
+        // vanilla recursive helper assumes valid holders and uses shared scratch.
+        static List<Thing> ContainerContents(Thing root)
+        {
+            var contents = new List<Thing>();
+            try
+            {
+                var owner = root.TryGetInnerInteractableThingOwner();
+                if (owner == null) return contents;
+                if (owner.Owner == null) throw new InvalidOperationException("Container has no owning holder.");
+                var pending = new Stack<IThingHolder>();
+                var visited = new HashSet<IThingHolder>(HolderIdentity.Instance);
+                var children = new List<IThingHolder>();
+                pending.Push(owner.Owner);
+                while (pending.Count > 0)
+                {
+                    var holder = pending.Pop();
+                    if (holder == null)
+                    {
+                        DonationWarning(root, "null child holder", null);
+                        continue;
+                    }
+                    if (holder is Pawn || holder is Corpse || !visited.Add(holder)) continue;
+                    if (visited.Count > 4096) throw new InvalidOperationException("Container holder graph exceeds 4096 nodes.");
+                    if (ThingOwnerUtility.AreImmediateContentsReal(holder))
+                    {
+                        var held = holder.GetDirectlyHeldThings();
+                        if (held != null) contents.AddRange(held);
+                    }
+                    children.Clear();
+                    holder.GetChildHolders(children);
+                    if (children.Count > 4096) throw new InvalidOperationException("Container has too many child holders.");
+                    // Preserve the native traversal order; de-duplicate the result
+                    // by thing ID at the donation boundary, without changing cargo.
+                    foreach (var child in children) pending.Push(child);
+                }
+            }
+            catch (Exception ex)
+            {
+                contents.Clear(); // Never offer a partially read failing container.
+                DonationWarning(root, "container scan", ex);
+            }
+            return contents;
+        }
+
+        sealed class HolderIdentity : IEqualityComparer<IThingHolder>
+        {
+            internal static readonly HolderIdentity Instance = new HolderIdentity();
+            public bool Equals(IThingHolder x, IThingHolder y) => ReferenceEquals(x, y);
+            public int GetHashCode(IThingHolder value) => System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(value);
+        }
+
+        static bool SafeDonationParents(Thing thing)
+        {
+            try
+            {
+                var seen = new HashSet<IThingHolder>(HolderIdentity.Instance);
+                for (var holder = thing.ParentHolder; holder != null; holder = holder.ParentHolder)
+                {
+                    if (holder is Pawn || holder is Corpse) return false;
+                    if (!seen.Add(holder) || seen.Count > 4096) throw new InvalidOperationException("Invalid container parent chain.");
+                }
+                return true;
+            }
+            catch (Exception ex) { DonationWarning(thing, "parent chain", ex); return false; }
+        }
+
+        static void DonationWarning(Thing thing, string operation, Exception ex)
+        {
+            string def = thing?.def?.defName ?? "unknown";
+            string type = thing?.GetType().FullName ?? "TradeUtility";
+            string mod = thing?.def?.modContentPack?.PackageId ?? "unknown";
+            string detail = ex == null ? "Ignored an empty holder." : ex.GetType().Name + ": " + ex.Message;
+            Log.WarningOnce("[NMC-Shop] Donation " + operation + " skipped unsafe data: " + def + " #" +
+                (thing?.thingIDNumber ?? 0) + " (" + type + ", mod=" + mod + "). " + detail,
+                GenText.StableStringHash("NMC-Shop/Donation/" + operation + "/" + def + "/" + type));
         }
 
         static bool DonationItem(Thing thing)
         {
             if (thing == null || thing.Destroyed || thing.stackCount <= 0 || thing.def.category != ThingCategory.Item) return false;
-            var inner = thing.GetInnerIfMinified();
-            if (inner is Pawn) return false;
-            // The corpse is the explicitly selected item, including its dead pawn. Never
-            // enumerate worn gear separately, or take a living pawn from a holder.
-            if (inner is Corpse corpse) return corpse.InnerPawn?.Dead == true && TryUnitValue(thing, out _);
-            var cargo = inner.TryGetInnerInteractableThingOwner();
-            return (cargo == null || cargo.Count == 0) && TryUnitValue(thing, out _);
+            try
+            {
+                var inner = thing.GetInnerIfMinified();
+                if (inner == null || inner is Pawn) return false;
+                // The corpse is the explicitly selected item, including its dead pawn. Never
+                // enumerate worn gear separately, or take a living pawn from a holder.
+                if (inner is Corpse corpse) return corpse.InnerPawn?.Dead == true && TryUnitValue(thing, out _);
+                var cargo = inner.TryGetInnerInteractableThingOwner();
+                return (cargo == null || cargo.Count == 0) && TryUnitValue(thing, out _);
+            }
+            catch (Exception ex) { DonationWarning(thing, "item eligibility", ex); return false; }
         }
 
         public static bool TryDropCell(Map map, out IntVec3 cell)

@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.9.9-r11 · 2026-10-25 · 1.7 捐赠容器兼容修复
+
+- 修复 issue #2 中异常容器导致捐赠页面闪烁、持续刷红字的问题。容器持有者缺失、空子容器、枚举回调异常不再中断整个列表；循环节点会去重，异常父链和超限图会被拒绝。
+- 读取失败的容器不参与本次捐赠，正常地面物资和其他容器继续显示。保留原生贸易扩展入口，并在其枚举失败时继续扫描信标覆盖范围；诊断日志按类型去重并记录对象和所属模组。
+- 原 r10 复现 13 项失败；修复候选在独立 RimUnity 0.1.17 和内嵌 0.1.16 下各通过 55 项隔离单机检查，共 110 项。包括六轮实际捐赠页面、正常容器物资捐赠、准确扣物和到账、防重复提交及异常物资拒绝。未取得报告者存档或完整整合包，仍请更新复测。
+- 保留 r10 图形兼容和 r9 连续体重试修复。仅更新 1.7 核心；1.6、五份联机适配和运行库不变，不提供 1.7 联机支持。更新后完全退出并重启游戏。
+
+### English
+
+- Fixed donation-page flicker and repeated window errors triggered by malformed containers in issue #2. Missing owners, null child holders and throwing callbacks no longer abort the list. Repeated holder nodes are de-duplicated; invalid parent chains and oversized graphs are rejected.
+- Containers that fail to read are excluded from that scan while healthy ground/container goods remain available. Native orbital-trade extensions are retained, with beacon-area scanning continuing if their enumeration fails. Diagnostics identify the object and its mod and are de-duplicated.
+- The r10 baseline reproduced 13 failed checks. The candidate passed 55 checks each with standalone RimUnity 0.1.17 and embedded 0.1.16: 110 checks including six actual donation-window cycles, real container-goods donations, exact quantities and credit, duplicate-request rejection and unsafe-goods rejection. The reporter's save and full modpack remain untested; please update and retest.
+- Includes r10 graphics compatibility and r9 Continuum retry fixes. Only the 1.7 core changes; the 1.6 core, five Multiplayer adapters and runtime are unchanged. No 1.7 Multiplayer support. Fully exit and restart after updating.
+
 ## 0.9.9-r10 · 2026-10-25 · 1.7 点数商店图形兼容
 
 - 为 issue #1 报告的 Vulkan 自定义 UI 材质管线错误加入兼容处理：1.7 商店头像和商品使用普通贴图，不提交全息或特殊图标材质。
