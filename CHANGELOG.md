@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.9.9-r13 · 2026-10-27 · 1.7 范围覆盖层透明度
+
+- 修复母舰着色器文件名与原版 `VertexColor.frag.glsl` 冲突，导致 TD Enhancement Pack - Continued 等使用原版顶点颜色材质的范围覆盖层不透明。为母舰顶点着色器添加唯一文件名前缀，保留自身特效的透明度和混合方式。
+- 此项仅调整 1.7 着色器资源及引用；安装更新后请完全退出并重新启动游戏。
+- 修复前复现 6 项失败；修复后在 1.7.4985 / RimUnity 0.1.16 与 1.7.4990 / RimUnity 0.1.19 各通过 19 项隔离单机检查，并核对游戏截图。未验证玩家完整存档、整合包或其他显卡。
+
+### English
+
+- Fixed a shader filename collision with Core's `VertexColor.frag.glsl` that made TD Enhancement Pack - Continued and other vertex-color overlays opaque. MotherShip vertex shader sources now use unique filenames, preserving the effects' alpha and blending.
+- This change updates only 1.7 shader assets and their references. Fully exit and restart the game after updating.
+- Reproduced six failures before the fix. Passed 19 isolated single-player checks each on 1.7.4985 / RimUnity 0.1.16 and 1.7.4990 / RimUnity 0.1.19, with in-game screenshot review. Player saves, full modpacks and other GPUs remain untested.
+
 ## 0.9.9-r12 · 2026-10-25 · 舰船指定攻击与敌舰寻路
 
 - 航母新增「舰载机集火」：手动指定可见单位或可受伤建筑，新放飞和在空舰载机集中攻击该目标。增加自动出击开关；召回会清除指定目标并关闭自动出击，避免回收后立即再次放飞。

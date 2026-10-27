@@ -1,6 +1,6 @@
 # Nivarian Race: MotherShip
 
-Version **0.9.9-r12**, pour RimWorld **1.6 / 1.7**. Langues : chinois simplifié, anglais, russe, japonais et français.
+Version **0.9.9-r13**, pour RimWorld **1.6 / 1.7**. Langues : chinois simplifié, anglais, russe, japonais et français.
 
 Ajoute 19 soutiens tactiques, une boutique à points, un porte-aéronefs, un vaisseau gravitationnel et une campagne du Continuum en huit étapes.
 

@@ -1,8 +1,8 @@
 [h1]Nivarian MotherShip[/h1]
 
-[b]RimWorld 1.6 / 1.7 · v0.9.9-r12[/b]
+[b]RimWorld 1.6 / 1.7 · v0.9.9-r13[/b]
 
-[b]Ship combat update[/b]: Carrier fighters can focus a selected target; Storm Ships retain forced targets. Enemy ships prefer open routes but can still cross mountains. 1.6 local host/client tests passed 24k/120k ticks without desync in a controlled scene. All players must update and fully restart.
+[b]1.7 overlay transparency fix[/b]: Fixed a shader filename collision that made TD Enhancement Pack - Continued overlays opaque. Coverage and fertility overlays now honor opacity settings. Fully exit and restart after updating.
 
 [b]1.7 compatibility update[/b]: Use the 1.7 versions of all prerequisites. RimUnity is included. Multiplayer adapters remain available for 1.6 only; 1.7 is single-player. Fully restart the game after updating.
 
@@ -72,9 +72,9 @@ Optional: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3735573834
 
 [h1]涅瓦莲母舰支援拓展 | Nivarian MotherShip[/h1]
 
-[b]RimWorld 1.6 / 1.7 · v0.9.9-r12[/b]
+[b]RimWorld 1.6 / 1.7 · v0.9.9-r13[/b]
 
-[b]舰船战斗更新[/b]：航母可指定舰载机集火，暴风舰持续锁定目标。敌舰优先绕开厚岩顶，但仍允许穿山。1.6 本机双端受控场景通过 2.4万/12万 tick 测试，未出现不同步。联机双方请同步更新并完全重启。
+[b]1.7 范围透明度修复[/b]：修复着色器文件名冲突导致 TD Enhancement Pack - Continued 覆盖层不透明的问题。建筑覆盖范围与肥沃度覆盖层恢复透明度设置。更新后请完全退出并重新启动游戏。
 
 [b]1.7 兼容更新[/b]：请使用全部前置的 1.7 版本，RimUnity 已随包提供。1.7 当前支持单机，联机适配仅用于 1.6。更新后请完全重启游戏。
 
@@ -144,9 +144,9 @@ Optional: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3735573834
 
 [h1]Nivarian MotherShip | ニヴァリアン母艦支援拡張[/h1]
 
-[b]RimWorld 1.6 / 1.7 · v0.9.9-r12[/b]
+[b]RimWorld 1.6 / 1.7 · v0.9.9-r13[/b]
 
-[b]艦船戦闘の更新[/b]：艦載機の集中攻撃と暴風艦の目標維持に対応。敵艦は厚い岩盤屋根を避ける経路を優先しますが、山の通過は可能です。1.6の同一PC・制御環境で2.4万／12万tickの二端末テストを同期ずれなく完了。全員更新し、完全に再起動してください。
+[b]1.7 オーバーレイの透明度修正[/b]：シェーダーファイル名の衝突により、TD Enhancement Pack - Continued の表示が不透明になる問題を修正。建物の範囲と肥沃度の表示に透明度設定が反映されます。更新後はゲームを完全に終了して再起動してください。
 
 [b]1.7 対応更新[/b]：前提MODもすべて1.7版を使用してください。RimUnityは同梱しています。1.7はシングルプレイ対応、マルチプレイ対応モジュールは1.6専用です。更新後はゲームを完全に再起動してください。
 
@@ -216,9 +216,9 @@ Optional: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3735573834
 
 [h1]Nivarian MotherShip | Поддержка материнского корабля[/h1]
 
-[b]RimWorld 1.6 / 1.7 · v0.9.9-r12[/b]
+[b]RimWorld 1.6 / 1.7 · v0.9.9-r13[/b]
 
-[b]Корабли[/b]: Истребители атакуют выбранную цель. Враги предпочитают обходить горы, но могут их пересекать. Тесты 1.6 на одном ПК: 24/120 тыс. тиков без рассинхронизации. Всем обновиться и перезапустить игру.
+[b]Прозрачность слоёв в 1.7[/b]: Исправлен конфликт имён файлов шейдеров, из-за которого слои TD Enhancement Pack - Continued становились непрозрачными. Настройка прозрачности снова применяется к зонам покрытия и плодородию. После обновления полностью перезапустите игру.
 
 [b]Совместимость с 1.7[/b]: Установите версии всех зависимостей для 1.7. RimUnity включён. В 1.7 поддерживается одиночная игра; сетевые модули предназначены только для 1.6. После обновления полностью перезапустите игру.
 
@@ -288,9 +288,9 @@ Optional: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3735573834
 
 [h1]Nivarian MotherShip | Soutien du vaisseau-mère[/h1]
 
-[b]RimWorld 1.6 / 1.7 · v0.9.9-r12[/b]
+[b]RimWorld 1.6 / 1.7 · v0.9.9-r13[/b]
 
-[b]Combat naval[/b] : Les chasseurs concentrent leurs tirs sur la cible choisie ; les vaisseaux de tempête conservent leur cible. Les ennemis préfèrent contourner les montagnes mais peuvent les traverser. Tests 1.6 sur un même PC : 24 000/120 000 ticks sans désynchronisation en scène contrôlée. Tous les joueurs doivent mettre à jour et redémarrer.
+[b]Transparence des couches en 1.7[/b] : Correction du conflit de noms de fichiers de shaders qui rendait opaques les couches de TD Enhancement Pack - Continued. Les zones de couverture et de fertilité respectent à nouveau le réglage de transparence. Quittez complètement le jeu puis relancez-le après la mise à jour.
 
 [b]Compatibilité 1.7[/b] : Installez les versions 1.7 de toutes les dépendances. RimUnity est inclus. La version 1.7 prend en charge le jeu solo ; les modules multijoueurs restent réservés à la 1.6. Redémarrez complètement le jeu après la mise à jour.
 

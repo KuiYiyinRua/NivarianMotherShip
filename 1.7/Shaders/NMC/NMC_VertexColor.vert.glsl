@@ -1,4 +1,5 @@
 #version 450
+// Keep this source paired with the uniquely named NMC fragment shader.
 layout(location = 0) in vec3 inPosition; // @vertex Position required
 layout(location = 1) in vec4 inColor; // @vertex Color required
 layout(push_constant) uniform Push { mat4 modelMatrix; } push;

@@ -1,3 +1,15 @@
+# Release validation: 0.9.9-r13
+
+The 1.7 overlay transparency fix renames MotherShip's vertex shader source files so Waylith no longer resolves Core's `VertexColor.frag.glsl` to the mod's effect shader. This restores the material opacity used by TD Enhancement Pack - Continued and other `CellBoolDrawer` overlays. See [fix and verification](TDOverlay17.zh-CN.md) and [regression tests](../Tests/TDOverlay17/README.md).
+
+The original assets reproduced six failed checks. The fixed assets passed 19 checks on RimWorld 1.7.4985 rev1269 / RimUnity 0.1.16 and another 19 on 1.7.4990 rev1069 / RimUnity 0.1.19 supplied by the updated Nivarian Race prerequisite. Screenshots confirm fertility transparency, reduced-opacity behavior, trade-beacon coverage and the unchanged MotherShip vertex-alpha sample. Core resolution, material `_Color`, actual TD geometry and all three MotherShip shader registrations were checked.
+
+All game assets in the package match the recorded test inputs. Core assemblies, the five 1.6 Multiplayer adapters and the embedded runtime are unchanged from r12; no C# rebuild or new Multiplayer test is claimed. The initial mismatched 4990 / 0.1.16 run is excluded. The upstream `AncientHeavyBridge` missing-def error occurs on the valid baseline and fixed runs. No player-save, full-modpack or other-GPU validation. No 1.7 Multiplayer support. Fully exit and restart the game after updating. For manual ZIP updates, replace the old mod folder; merging folders can leave the obsolete shader in place.
+
+Development evidence: `BuildValidation/TDOverlay17-20261027`; release package/readback evidence: `BuildValidation/TDOverlayRelease-20261027`. Prior evidence below applies to its named release.
+
+## Previous release evidence
+
 # Release validation: 0.9.9-r12
 
 Carrier focus-fire orders, persistent Storm Ship targets and soft mountain avoidance for enemy ships. Mountains remain traversable; player-directed movement remains direct. See [behavior and test scope](AircraftCombat.zh-CN.md), [single-player probe](../Tests/AircraftCombat/README.md) and [Multiplayer probe](../Tests/AircraftCombatMP/README.md).

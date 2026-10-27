@@ -2,8 +2,9 @@
 <Defs>
   <ShaderDef Name="NMC_VertexColorBase" Abstract="True">
     <shaderProgram>
-      <vertexShaderFileName>NMC/VertexColor.vert.glsl</vertexShaderFileName>
-      <fragmentShaderFileName>NMC/VertexColor.frag.glsl</fragmentShaderFileName>
+      <!-- Waylith searches mod overrides by basename, even across subfolders. -->
+      <vertexShaderFileName>NMC/NMC_VertexColor.vert.glsl</vertexShaderFileName>
+      <fragmentShaderFileName>NMC/NMC_VertexColor.frag.glsl</fragmentShaderFileName>
       <transparent>true</transparent><depthTest>true</depthTest><depthWrite>false</depthWrite>
       <cullMode>None</cullMode><renderQueue>3100</renderQueue>
       <blendMode>Custom</blendMode><blendSrcFactor>SrcAlpha</blendSrcFactor><blendDstFactor>OneMinusSrcAlpha</blendDstFactor>

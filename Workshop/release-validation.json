@@ -1,9 +1,9 @@
 {
-  "release": "0.9.9-r12",
-  "date": "2026-10-25",
-  "game": "1.6.4850 rev646 / 1.7.4985 rev1269",
-  "build": "Frozen tested 1.6 and 1.7 cores and ship MP adapter; isolated source rebuild and package hash verification",
-  "runtime": "47 SP checks per game version; 1.6 local two-client 24375/120105 ticks, 24 phases and 48 native commands per peer per run, 97/480 paired snapshots with identical RNG; no desync. Controlled 16-mod single-map synchronous-time scenario; full modpack/player save/cross-PC/multimap/async/rejoin/1.7 MP untested.",
+  "release": "0.9.9-r13",
+  "date": "2026-10-27",
+  "game": "1.7.4985 rev1269 / 1.7.4990 rev1069",
+  "build": "Asset-only patch; all assemblies unchanged from r12; exact shader assets verified against runtime inputs and packaged manifest",
+  "runtime": "Pre-fix: six failed checks. Fixed: 19 checks each on 1.7.4985 / RimUnity 0.1.16 and 1.7.4990 / RimUnity 0.1.19, plus actual screenshot review. Player save/full modpack/other GPUs untested; no 1.7 Multiplayer support.",
   "assemblies": {
     "Multiplayer/Assemblies/NivarianCommander.Multiplayer.dll": "904cd6902541a1cad1efaebf54e35f29ef1f750da6d46e7ea827e5d4bfd57d72",
     "Multiplayer/Assemblies/NivarianCommander.SageShip.Multiplayer.dll": "65c844c99de8b3d5734ce32a4d8001e36e791b92bee12739e2ce48c7ca8b0918",

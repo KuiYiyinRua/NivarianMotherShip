@@ -1,8 +1,8 @@
 [h1]Nivarian MotherShip | Soutien du vaisseau-mère[/h1]
 
-[b]RimWorld 1.6 / 1.7 · v0.9.9-r12[/b]
+[b]RimWorld 1.6 / 1.7 · v0.9.9-r13[/b]
 
-[b]Combat naval[/b] : Les chasseurs concentrent leurs tirs sur la cible choisie ; les vaisseaux de tempête conservent leur cible. Les ennemis préfèrent contourner les montagnes mais peuvent les traverser. Tests 1.6 sur un même PC : 24 000/120 000 ticks sans désynchronisation en scène contrôlée. Tous les joueurs doivent mettre à jour et redémarrer.
+[b]Transparence des couches en 1.7[/b] : Correction du conflit de noms de fichiers de shaders qui rendait opaques les couches de TD Enhancement Pack - Continued. Les zones de couverture et de fertilité respectent à nouveau le réglage de transparence. Quittez complètement le jeu puis relancez-le après la mise à jour.
 
 [b]Compatibilité 1.7[/b] : Installez les versions 1.7 de toutes les dépendances. RimUnity est inclus. La version 1.7 prend en charge le jeu solo ; les modules multijoueurs restent réservés à la 1.6. Redémarrez complètement le jeu après la mise à jour.
 

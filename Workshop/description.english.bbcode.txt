@@ -1,8 +1,8 @@
 [h1]Nivarian MotherShip[/h1]
 
-[b]RimWorld 1.6 / 1.7 · v0.9.9-r12[/b]
+[b]RimWorld 1.6 / 1.7 · v0.9.9-r13[/b]
 
-[b]Ship combat update[/b]: Carrier fighters can focus a selected target; Storm Ships retain forced targets. Enemy ships prefer open routes but can still cross mountains. 1.6 local host/client tests passed 24k/120k ticks without desync in a controlled scene. All players must update and fully restart.
+[b]1.7 overlay transparency fix[/b]: Fixed a shader filename collision that made TD Enhancement Pack - Continued overlays opaque. Coverage and fertility overlays now honor opacity settings. Fully exit and restart after updating.
 
 [b]1.7 compatibility update[/b]: Use the 1.7 versions of all prerequisites. RimUnity is included. Multiplayer adapters remain available for 1.6 only; 1.7 is single-player. Fully restart the game after updating.
 
